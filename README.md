@@ -29,8 +29,5 @@ This is the development repository of the BYU responsive template
 6. Footer - Use for Contact info, Social Media, or remove if unnecessary
 7. Copyright Info - Please state who or what organization manages the site and provide a contact link.
 
-    *===========   IMPORTANT	============*
-    *	Read the Style Guide at 			   *
-    *	https://web.byu.edu/styleguide 		*
-    *	for more information and resources.	*
-    *****************************************
+===========   IMPORTANT	============
+Read the Style Guide at https://web.byu.edu/styleguide for more information and resources.	
