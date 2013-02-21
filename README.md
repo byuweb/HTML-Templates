@@ -1,17 +1,8 @@
 byu-responsive-dev
 ==================
-
 Development for BYU responsive theme
 
-<<<<<<< HEAD
-
-*******		IMPORTANT	*****************
-*	Read the Style Guide at 		*
-*	https://web.byu.edu/styleguide 		*
-*	for more information and resources.	*
-*************************************************
-=======
-BYU HTML Templates
+BYU HTML Responsive Templates
 Version: 1.2
 Last Updated: February 21 2013
 
