@@ -1,5 +1,4 @@
-byu-responsive-dev
-==================
+### byu-responsive-dev
 Development for BYU responsive theme
 
 BYU HTML Responsive Templates
@@ -8,7 +7,7 @@ Last Updated: February 21 2013
 
 This is the development repository of the BYU responsive template  
 
-### Files:
+# Files:
 textonly.html - 
 
 
@@ -20,9 +19,7 @@ textonly.html -
     *	for more information and resources.	*
     *****************************************
 
-## Updated readme
-
-### Files:
+Files:
 
 + Page Type 2 - Primary Organizations (i.e. Colleges, Major Academic Units)
 + Page Type 3 - Secondary Organizations (i.e. Departments of Colleges)
