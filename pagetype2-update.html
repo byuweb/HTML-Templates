@@ -22,23 +22,27 @@
 </head>
 
 <body>
+
+  <a class="jump" href="#primary-nav">Jump to site navigation</a>
+
 	<header id="main-header">
+	
 		<div id="header-top" class="wrapper">
 			<div id="logo">
-				<h2><a href="http://www.byu.edu/">Brigham Young University</a><h2>
+				<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a><h2>
 			</div>
 		  
 		  <!-- This should link to your organization's home page -->
 			<h1><a href="#CHANGE-THIS-LINK" id="site-name">Primary Organization</a><h1>
 			
 			<div id="search-container">
-				<a href="http://home.byu.edu/home/cas" class="button">Login</a>
+				<a href="http://home.byu.edu/home/cas" class="button">Sign in</a>
 				
 				<!-- SEARCH - set up with GSA default; change URL in action if you want to use different product -->
 				<form method="get" action="http://gurgle2.byu.edu/search"> 
 					<!-- Change placeholder text to be specific for your implementation -->
 					<input type="text" name="q" id="search" placeholder="Search Organization" />
-					<input type="image" src="template/img/search-button.png" alt="Search" id="search-button"/>
+					<input type="submit" alt="Search" id="search-button" value="Search"/>
 					
 					<!-- Uncomment next line and insert your custom collection name -->
 					<!-- input type="hidden" name="site" value="default_collection_name" -->
@@ -49,128 +53,6 @@
 				</form>
 			</div>			
 		</div>
-		
-		<!-- Primary Nav -->
-		<nav id="primary-nav" class="no-js">
-			<ul>
-				<li><a href="">Mega Dropdown Menu</a>
-					<div class="mega">
-						<ul class="links">
-							<li class="featured">
-								<ul>
-									<li><a href="#">Featured Link 1</a></li>
-									<li><a href="#">Featured Link 2</a></li>
-								</ul>
-								
-							</li>
-							<li><a href="#">Link 1</a></li>
-							<li><a href="#">Link 2</a>
-								<ul class="sublinks">
-									<li><a href="#">Sublink 1</a></li>
-									<li><a href="#">Sublink 2</a></li>
-									<li><a href="#">Sublink 3</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Link 3</a></li>
-							<li><a href="#">Link 4</a></li>
-							<li><a href="#">Link 5</a></li>
-							<li><a href="#">Link 6</a></li>
-						</ul>
-						<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
-							<p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-						<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
-							<p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-					</div>
-				</li>
-				<li><a href="">Double Mega Dropdown Menu</a>
-					<div class="mega">
-						<ul class="links double">
-							<li class="featured">
-								<ul>
-									<li><a href="#">Featured Link 1</a></li>
-									<li><a href="#">Featured Link 2</a></li>
-								</ul>
-								
-							</li>
-							<div class="left">
-								<li><a href="#">Link 1</a></li>
-								<li><a href="#">Link 2</a>
-									<ul class="sublinks">
-										<li><a href="#">Sublink 1</a></li>
-										<li><a href="#">Sublink 2</a></li>
-										<li><a href="#">Sublink 3</a></li>
-										<li><a href="#">Sublink 4</a></li>
-										<li><a href="#">Sublink 5</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Link 3</a></li>
-								<li><a href="#">Link 4</a></li>
-								<li><a href="#">Link 5</a></li>
-								<li><a href="#">Link 6</a></li>
-							</div>
-							<div class="left">
-								<li><a href="#">Link 7</a></li>
-								<li><a href="#">Link 8</a></li>
-								<li><a href="#">Link 9</a></li>
-								<li><a href="#">Link 10</a></li>
-								<li><a href="#">Link 11</a></li>
-								<li><a href="#">Link 12</a></li>
-							</div>
-						</ul>
-						<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
-							<p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-						<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
-							<p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-					</div>
-				</li>
-				<li> <a href="">Basic Dropdown Menu</a>
-					<div class="sub">
-						<ul class="links">
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="">Link 3</a></li>
-							<li><a href="">Link 4</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a class="single" href="">Direct Menu Link</a></li>
-			</ul>
-		</nav>
-		
-		<!-- Secondary Nav -->
-		<nav id="secondary-nav" class="no-js">
-			<ul>
-				<li><a href="#">SecMenu1</a>
-					<ul class="sub">
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-					<li><a href="">Link 4</a></li></ul>
-				</li>
-				<li><a href="#">SecMenu2</a>
-					<ul class="sub">
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-					<li><a href="">Link 4</a></li></ul>
-				</li>
-				<li><a href="#">SecMenu3</a>
-					<ul class="sub">
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-					<li><a href="">Link 4</a></li></ul>
-				</li>
-			</ul>
-		</nav>
 
 	</header>
 	
@@ -192,6 +74,132 @@
 		<h2>Sub Title</h2>
 		<p>See the <a href="https://web.byu.edu/styleguide">Style Guide</a> for layouts and code snippets that you can copy and paste.</p>
   </div>
+
+
+	
+	<!-- Primary Nav -->
+	<nav id="primary-nav" class="no-js">
+		<ul>
+			<li><a href="">Mega Dropdown Menu</a>
+				<div class="mega">
+					<ul class="links">
+						<li class="featured">
+							<ul>
+								<li><a href="#">Featured Link 1</a></li>
+								<li><a href="#">Featured Link 2</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a>
+							<ul class="sublinks">
+								<li><a href="#">Sublink 1</a></li>
+								<li><a href="#">Sublink 2</a></li>
+								<li><a href="#">Sublink 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Link 5</a></li>
+						<li><a href="#">Link 6</a></li>
+					</ul>
+					<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+					<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+				</div>
+			</li>
+			<li><a href="">Double Mega Dropdown Menu</a>
+				<div class="mega">
+					<ul class="links double">
+						<li class="featured">
+							<ul>
+								<li><a href="#">Featured Link 1</a></li>
+								<li><a href="#">Featured Link 2</a></li>
+							</ul>
+							
+						</li>
+						<div class="left">
+							<li><a href="#">Link 1</a></li>
+							<li><a href="#">Link 2</a>
+								<ul class="sublinks">
+									<li><a href="#">Sublink 1</a></li>
+									<li><a href="#">Sublink 2</a></li>
+									<li><a href="#">Sublink 3</a></li>
+									<li><a href="#">Sublink 4</a></li>
+									<li><a href="#">Sublink 5</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Link 3</a></li>
+							<li><a href="#">Link 4</a></li>
+							<li><a href="#">Link 5</a></li>
+							<li><a href="#">Link 6</a></li>
+						</div>
+						<div class="left">
+							<li><a href="#">Link 7</a></li>
+							<li><a href="#">Link 8</a></li>
+							<li><a href="#">Link 9</a></li>
+							<li><a href="#">Link 10</a></li>
+							<li><a href="#">Link 11</a></li>
+							<li><a href="#">Link 12</a></li>
+						</div>
+					</ul>
+					<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+					<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+				</div>
+			</li>
+			<li> <a href="">Basic Dropdown Menu</a>
+				<div class="sub">
+					<ul class="links">
+						<li><a href="">Link 1</a></li>
+						<li><a href="">Link 2</a></li>
+						<li><a href="">Link 3</a></li>
+						<li><a href="">Link 4</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a class="single" href="">Direct Menu Link</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Secondary Nav -->
+	<nav id="secondary-nav" class="no-js">
+		<ul>
+			<li><a href="#">SecMenu1</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+			<li><a href="#">SecMenu2</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+			<li><a href="#">SecMenu3</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+		</ul>
+	</nav>
+
+
 	
 	<footer>
 		<div id="footer-links">

@@ -1,0 +1,139 @@
+/*** Type ***/
+
+
+
+// Mobile
+
+@mixin type-mobile() {
+
+
+
+}
+
+
+
+// Media queries enabled
+
+@mixin type-1() {
+
+}
+
+
+// 300 px
+
+@mixin type-300() {
+
+$baseSize:16; // 16px
+$fontSize:15; // 14px
+$lineHeight:20; // 18px
+
+body {
+  overflow-x: hidden; }
+.wf-active {
+  body, button, input, select, textarea {
+    font-family:'Open Sans', "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+    font-weight:normal; } }
+
+.wf-active {
+  h1,h2 {
+    font-family:'Crete Round', sans-serif;
+    font-weight:normal; }
+  h3, h4, .day span, a.baseline, #calendar > strong, a.more, .mybyu {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600; }
+  h2 {
+    font-size:1.65em; }
+  footer h2 {
+    font-size: 1.25em; } }
+
+#primary-nav-menu a {
+   font-size:($baseSize/$fontSize)+em; }
+
+}
+
+
+
+
+
+
+
+
+// 450 px
+
+@mixin type-450() {
+
+}
+
+
+
+
+
+
+
+
+// 600 px
+
+@mixin type-600() {
+
+}
+
+
+
+
+
+// 700 px
+
+@mixin type-700() {
+
+}
+
+
+
+
+
+
+
+// 800 px
+
+@mixin type-800() {
+
+$baseSize:16; // 16px
+$fontSize:14; // 14px
+$lineHeight:18; // 18px
+
+body {
+  //font-size:($fontSize/$baseSize) + em;
+  line-height:$lineHeight/$fontSize; }
+
+}
+
+
+
+
+
+// 1000 px
+
+@mixin type-1000() {
+
+}
+
+
+// 1040 px
+
+@mixin type-1040() {
+
+}
+
+
+// 1300 px
+
+@mixin type-1300() {
+
+}
+
+
+// 1560 px
+
+@mixin type-1560() {
+  
+}
