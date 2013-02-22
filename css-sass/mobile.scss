@@ -25,7 +25,8 @@
   padding-left:5%;
   border-bottom:1px solid $blue3;
   a.byu {
-    
+    @include ir();
+    background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
   }
   h1 {
     margin:0;
@@ -37,12 +38,8 @@
       display:block;
       margin-right:50%; } }
 
-a.mybyu, .open #search-button {
-  position:relative;
-  float:right;
+a.mybyu, a.sign-in, .open #search-button {
   margin-right:5%;
-  margin-top:.4em;
-  right:-.35em;
   background-color:$blue5;
   color:#fff;
   padding:.35em 1.5em;
@@ -54,12 +51,8 @@ a.mybyu, .open #search-button {
     cursor:pointer; } }
 
 #search-container {
-  width:2.5em;
-  height:2.5em;
-  position:absolute;
   right:5%;
   top:0;
-  z-index: 500;
   .search {
     @include ir();
     line-height:2.5em;
