@@ -9,59 +9,48 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	
 	<title>Your Organization</title>
-	<meta name="description" content="The home page of your organization" />
-	<meta name="author" content="Brigham Young University" />
+	<meta name="description" content="Description about your department." />
+	<meta name="author" content="Your Department Name" />
+	<meta name="keywords" content="keyword 1, keyword 2, keyword 3">
 	
 	<meta name="viewport" content="width=device-width" />
 	
-	<link rel="shortcut icon" href="template/favicon.ico" />
-	<link rel="stylesheet" href="template/css/style.css" />
+	<link rel="shortcut icon" href="template/img/favicon.ico" />
 
-	<script src="template/js/libs/modernizr-2.0-basic.min.js"></script>
+	<link rel="stylesheet" href="css/mobile.css" />
 	
 </head>
+
 <body>
 	<header id="main-header">
 		<div id="header-top" class="wrapper">
 			<div id="logo">
-				<a href="http://www.byu.edu/" class="byu"><img src="template/img/byu-logo.gif" alt="BYU Logo" /></a>
-			</div> 
-			<a href="/news/" id="site-name">Organization Title</a> 
+				<h2><a href="http://www.byu.edu/">Brigham Young University</a><h2>
+			</div>
+		  
+		  <!-- This should link to your organization's home page -->
+			<h1><a href="#CHANGE-THIS-LINK" id="site-name">Primary Organization</a><h1>
 			
 			<div id="search-container">
 				<a href="http://home.byu.edu/home/cas" class="button">Login</a>
-				<form method="get" action="http://unicomm.byu.edu/home/site/search">
+				
+				<!-- SEARCH - set up with GSA default; change URL in action if you want to use different product -->
+				<form method="get" action="http://gurgle2.byu.edu/search"> 
+					<!-- Change placeholder text to be specific for your implementation -->
 					<input type="text" name="q" id="search" placeholder="Search Organization" />
 					<input type="image" src="template/img/search-button.png" alt="Search" id="search-button"/>
+					
+					<!-- Uncomment next line and insert your custom collection name -->
+					<!-- input type="hidden" name="site" value="default_collection_name" -->
+					<!-- Insert your custom frontend name in place of default in next line -->
+					<input type="hidden" name="client" value="default_frontend">
+					<input type="hidden" name="output" value="xml_no_dtd">
+					<input type="hidden" name="proxystylesheet" value="default_frontend">
 				</form>
-			</div>
-			
-			<nav id="secondary-nav" class="no-js">
-				<ul>
-					<li><a href="#">SecMenu1</a>
-						<ul class="sub">
-						<li><a href="">Link 1</a></li>
-						<li><a href="">Link 2</a></li>
-						<li><a href="">Link 3</a></li>
-						<li><a href="">Link 4</a></li></ul>
-					</li>
-					<li><a href="#">SecMenu2</a>
-						<ul class="sub">
-						<li><a href="">Link 1</a></li>
-						<li><a href="">Link 2</a></li>
-						<li><a href="">Link 3</a></li>
-						<li><a href="">Link 4</a></li></ul>
-					</li>
-					<li><a href="#">SecMenu3</a>
-						<ul class="sub">
-						<li><a href="">Link 1</a></li>
-						<li><a href="">Link 2</a></li>
-						<li><a href="">Link 3</a></li>
-						<li><a href="">Link 4</a></li></ul>
-					</li>
-				</ul>
-			</nav>
+			</div>			
 		</div>
+		
+		<!-- Primary Nav -->
 		<nav id="primary-nav" class="no-js">
 			<ul>
 				<li><a href="">Mega Dropdown Menu</a>
@@ -155,17 +144,50 @@
 				<li><a class="single" href="">Direct Menu Link</a></li>
 			</ul>
 		</nav>
+		
+		<!-- Secondary Nav -->
+		<nav id="secondary-nav" class="no-js">
+			<ul>
+				<li><a href="#">SecMenu1</a>
+					<ul class="sub">
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li></ul>
+				</li>
+				<li><a href="#">SecMenu2</a>
+					<ul class="sub">
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li></ul>
+				</li>
+				<li><a href="#">SecMenu3</a>
+					<ul class="sub">
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li></ul>
+				</li>
+			</ul>
+		</nav>
+
 	</header>
 	
 	<div id="content" class="wrapper two-sidebars clearfix">
 		<div id="breadcrumb">
-				<div id="breadcrumb-home"><a href="#"><img alt="home" src="template/img/home.png"></a>
-					<div class="bread-drop">
-						<a href="www.byu.edu">BYU Home</a>
-						<a href="web.byu.edu">Web Community</a>
-						<a href="#">Templates</a></a>
-					</div></div>
-			› <a href="#">Sample Pages</a> › Two Sidebar Sample</div>
+			<div id="breadcrumb-home">
+			  <a href="#">Home</a>
+				<div class="bread-drop">
+					<a href="www.byu.edu">BYU Home</a>
+					<a href="#">Organization Home</a>
+					<a href="#">Two Pages Above</a> 
+				</div>
+			</div>
+			› <a href="#">One Page Above</a>
+			› This page's main title 
+		</div>
+		
 		<h1>Two Sidebar Sample </h1>
 		<h2>This is a sample page demonstrating the use of two sidebars</h2>
 	<div class="sidebar">
@@ -260,20 +282,6 @@
 	</footer>
 	<!--CONTENT END-->
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="template/js/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-	<script src="template/js/script.js"></script>
-	<!--[if lt IE 7 ]>
-	<script src="template/js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('.arrow a, header h1, #search-button');</script>
-	<![endif]-->
-	<script>
-		$(function () {
-			$('iframe').each(function() {
-				var url = $(this).attr("src")
-				$(this).attr("src",url+"?wmode=transparent")
-			});
-		});
-	</script>
+  <!-- Insert JS plugins here -->
 </body>
 </html>
