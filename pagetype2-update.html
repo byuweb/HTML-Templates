@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -10,19 +10,25 @@
 	<title>Page Title</title>
 	<meta name="description" content="Description about your department." />
 	<meta name="author" content="Your Department Name" />
-	<meta name="keywords" content="keyword 1, keyword 2, keyword 3">
+	<meta name="keywords" content="keyword 1, keyword 2, keyword 3" />
 	
 	<meta name="viewport" content="width=device-width" />
 	
-	<!-- Add your favicon here -->
-	<link rel="shortcut icon" href="template/img/favicon.ico" />
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="change-this-directory/img/favicon.ico" />
 	
-	<!-- Basic styles -->
+	<!-- Styles -->
 	<link rel="stylesheet" href="css/mobile.css" />
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="http://byuweb.github.com/Global-Assets/js/modernizr.basic.min.js"></script>
 	
 </head>
 
 <body>
+  <!--[if lt IE 7]>
+      <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
 
   <a class="jump" href="#primary-nav">Jump to site navigation</a>
 
@@ -256,7 +262,26 @@
 	</footer>
 	<!--CONTENT END-->
 	
-  <!-- Insert JS plugins here -->
+	
+	<!-- JS -->
+	
+  <!-- JQuery 1.9 -->
+  <script src="http://byuweb.github.com/Global-Assets/js/jquery-1.9.1.min.js"></script>
+  <script>window.jQuery || document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"><\/script>')</script>
+  
+  <!-- Add JQuery Migrate if needed -->
+  <!-- <script src="http://byuweb.github.com/Global-Assets/js/jquery-migrate-1.1.1.min.js"></script> -->
+  
+  <script src="js/script.js"></script>
+  
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 	
 </body>
 </html>
