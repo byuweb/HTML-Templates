@@ -22,7 +22,7 @@
 </head>
 
 <body>
-	<header id="main-header">
+	<header id="main-header" role="banner">
 		<div id="header-top" class="wrapper">
 			<div id="logo">
 				<h2><a href="http://www.byu.edu/">Brigham Young University</a><h2>
@@ -31,11 +31,11 @@
 		  <!-- This should link to your organization's home page -->
 			<h1><a href="#CHANGE-THIS-LINK" id="site-name">Primary Organization</a><h1>
 			
-			<div id="search-container">
+			<div id="search-container" role="search">
 				<a href="http://home.byu.edu/home/cas" class="button">Login</a>
 				
 				<!-- SEARCH - set up with GSA default; change URL in action if you want to use different product -->
-				<form method="get" action="http://gurgle2.byu.edu/search"> 
+				<form method="get" action="http://gurgle2.byu.edu/search" role="form"> 
 					<!-- Change placeholder text to be specific for your implementation -->
 					<input type="text" name="q" id="search" placeholder="Search Organization" />
 					<input type="image" src="template/img/search-button.png" alt="Search" id="search-button"/>
@@ -51,7 +51,7 @@
 		</div>
 		
 		<!-- Primary Nav -->
-		<nav id="primary-nav" class="no-js">
+		<nav id="primary-nav" role="navigation">
 			<ul>
 				<li><a href="">Mega Dropdown Menu</a>
 					<div class="mega">
@@ -146,7 +146,7 @@
 		</nav>
 		
 		<!-- Secondary Nav -->
-		<nav id="secondary-nav" class="no-js">
+		<nav id="secondary-nav" role="navigation">
 			<ul>
 				<li><a href="#">SecMenu1</a>
 					<ul class="sub">
@@ -174,8 +174,8 @@
 
 	</header>
 	
-	<div id="content" class="wrapper clearfix">
-		<div id="breadcrumb">
+	<div id="content" class="wrapper clearfix" role="main">
+		<div id="breadcrumb" role="navigation">
 			<div id="breadcrumb-home">
 			  <a href="#">Home</a>
 				<div class="bread-drop">
@@ -228,7 +228,7 @@
 		<p style="clear:both;padding-top:30px;"><a href="">Return to BYU News page.</a></p>
 	</div><!--end of content-->
     
-	<footer>
+	<footer role="contentinfo">
 		<div id="footer-links">
 			<div class="wrapper">
 				<div class="col alpha">

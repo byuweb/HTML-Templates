@@ -25,7 +25,7 @@
 
 </head>
 <body>
-	<header id="main-header">
+	<header id="main-header" role="banner">
 		<div id="header-top" class="wrapper">
 			<div id="logo">
 				<a href="http://www.byu.edu/" class="byu"><img src="template/img/byu-logo-small.gif" alt="BYU Logo" /></a> <a href="#" id="parent">Parent Organization</a>
@@ -34,11 +34,11 @@
 				<a href="#" id="site-name">Faculty Directory</a> 
 			 
 			
-			<div id="search-container">
+			<div id="search-container" role="search">
 				<a href="http://home.byu.edu/home/cas" class="button">Login</a>
 
 				<!-- SEARCH - set up with GSA default; change URL in action if you want to use different product -->
-				<form method="get" action="http://gurgle2.byu.edu/search"> 
+				<form method="get" action="http://gurgle2.byu.edu/search" role="form"> 
 					<!-- Change placeholder text to be specific for your implementation -->
 					<input type="text" name="q" id="search" placeholder="Search Directory" />
 					<input type="image" src="template/img/search-button.png" alt="Search" id="search-button" />
@@ -51,7 +51,7 @@
 				</form>
 			</div>
 
-			<nav id="secondary-nav" class="no-js">
+			<nav id="secondary-nav" role="navigation">
 				<ul>
 					<li><a href="#">SecMenu1</a>
 						<ul class="sub">
@@ -78,7 +78,7 @@
 			</nav>
 			
 		</div>
-		<nav id="primary-nav" class="no-js">
+		<nav id="primary-nav" role="navigation">
 			<ul>
 				<li><a href="">Mega Dropdown Menu</a>
 					<div class="mega">
@@ -173,8 +173,8 @@
 		</nav>
 	</header>
 	
-	<div id="content" class="wrapper clearfix">
-		<div id="breadcrumb">
+	<div id="content" class="wrapper clearfix" role="main">
+		<div id="breadcrumb" role="navigation">
 			<div id="breadcrumb-home"><a href="#"><img alt="home" src="template/img/home.png"></a>
 				<div class="bread-drop"> <a href="http://www.byu.edu">BYU Home</a> <a href="#">Organization Home</a> <a href="#">Two Pages Above</a> </div>
 			</div>
@@ -253,7 +253,7 @@
 <!-- end second row -->    
 	</div>
 	
-	<footer>
+	<footer role="contentinfo">
 		<div id="footer-links">
 			<div class="wrapper">
 				<div class="col alpha">
