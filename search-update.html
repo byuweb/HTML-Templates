@@ -58,8 +58,10 @@
 			<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
 
 			<div id="search-container" role="search">
-				<gcse:searchbox-only></gcse:searchbox-only> 
-                <gcse:search></gcse:search> 
+            	<!-- This search uses the BYU search page (v1) -->
+            	<gcse:searchbox-only resultsUrl="http://www.byu.edu/home/search" newWindow="false" queryParameterName="search">
+                
+                
 			</div>			
 		</div>
 
@@ -79,6 +81,10 @@
   		› This page's main title 
     </div>
 	
+    
+    	<!-- This search uses a layover to display search results -->
+                <gcse:search></gcse:search> 
+                
 		<h1>Main Title</h1>
 		<h2>Sub Title</h2>
 		<p>See the <a href="https://web.byu.edu/styleguide">Style Guide</a> for layouts and code snippets that you can copy and paste.</p>
