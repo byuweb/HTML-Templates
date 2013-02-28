@@ -19,6 +19,14 @@
 	<link rel="stylesheet" href="template/css/style.css" />
 
 	<script src="template/js/libs/modernizr-2.0-basic.min.js"></script>
+    
+    <script src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+        google.load('search', '2');
+        google.setOnLoadCallback(function(){
+          new google.search.CustomSearchControl().draw('search-container');
+        }, true);
+    </script>
 
 	<!-- Insert plugin stylesheets here -->
 	
@@ -36,18 +44,16 @@
 			<div id="search-container" role="search">
 				<a href="http://home.byu.edu/home/cas" class="button">Login</a>
 
-				<!-- SEARCH - set up with GSA default; change URL in action if you want to use different product -->
-				<form method="get" action="http://gurgle2.byu.edu/search"> 
-					<!-- Change placeholder text to be specific for your implementation -->
-					<input type="text" name="q" id="search" placeholder="Search Organization" />
-					<input type="image" src="template/img/search-button.png" alt="Search" id="search-button"/>
-					<!-- Uncomment next line and insert your custom collection name -->
-					<!-- input type="hidden" name="site" value="default_collection_name" -->
-					<!-- Insert your custom frontend name in place of default in next line -->
-					<input type="hidden" name="client" value="default_frontend">
-					<input type="hidden" name="output" value="xml_no_dtd">
-					<input type="hidden" name="proxystylesheet" value="default_frontend">
-				</form>
+				<!-- SEARCH - configured with Google Custom Search as default; change cx if you create your own department GCS -->
+				<script>
+                  (function() {
+                    	var cx = '009932716493032633443:hlqjz33kfkc';
+                    	var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+                   	 	gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+                    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+                  });
+                </script>
+				<gcse:search></gcse:search>
 			</div>
 
 			<nav id="secondary-nav" role="navigation">

@@ -1,1 +1,12 @@
-/* Style.css */
+
+/**Search Result Styling**/
+
+ 
+.gsc-results-wrapper-overlay,
+.gsc-results-wrapper-overlay table,
+.gsc-results-wrapper-overlay th,
+.gsc-results-wrapper-overlay td{border:0 1px 0 0;}
+
+___gcse_1, ___gcse_2{border:none;} 
+
+.gsc-search-box, .gsc-input{border:none;}
