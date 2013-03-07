@@ -20,6 +20,22 @@
 	<link rel="stylesheet" href="css/mobile.css" />
 	<link media="all and (min-width:200px)" rel="stylesheet" href="css/style.css">
 	
+	<!-- Scripts loaded via script loader. See notes in init.js file. -->
+	<script src="http://byuweb.github.com/Global-Assets/js/modernizr-lab.min.js"></script>
+	<script src="http://byuweb.github.com/Global-Assets/js/jquery-1.9.1.min.js"></script>
+	<script src="http://byuweb.github.com/Global-Assets/js/jquery-migrate-1.1.1.min.js"></script>
+	<script src="js/slider-update.js"></script>
+	<script>
+	$(function () {
+		$('#slider').anythingSlider({
+			expand       : true,
+			autoPlay     : true,
+			buildStartStop      : false
+		});
+
+	});
+	</script>
+	
 </head>
 
 <body>
@@ -39,7 +55,7 @@
 				<form method="get" action="http://gurgle2.byu.edu/search"> 
 					<!-- Change placeholder text to be specific for your implementation -->
 					<input type="text" name="q" id="search" placeholder="Search Organization" />
-					<input type="image" src="template/img/search-button.png" alt="Search" id="search-button"/>
+					<input type="image" src="img/search-button.png" alt="Search" id="search-button"/>
 					
 					<!-- Uncomment next line and insert your custom collection name -->
 					<!-- input type="hidden" name="site" value="default_collection_name" -->
@@ -296,10 +312,6 @@
 	<!--CONTENT END-->
 	
   <!-- Insert JS plugins here -->
-	
-	<!--To get the social media links, visit www.addthis.com to get a Username for analytics.-->
-	<script type="text/javascript">addThisUsername = '';</script>
-	<script src="template/js/plugins/addthis.js"></script>
 	
 </body>
 </html>
