@@ -192,6 +192,10 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 	position: relative;
 }
 
+#slider li.panel img {
+	margin-right:205px;
+}
+
 #feature
 {
 	overflow: hidden;
@@ -215,10 +219,11 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 {
 	padding: 48px 15px 48px 30px;
 	background: url('../img/feature-bg.png') no-repeat;
-	height: 297px;
-	position: absolute;
-	top: 0;
-	left: 690px;
+	height: 100%;
+	position:absolute;
+	right:0;
+	top:0;
+	width:205px;
 }
 
 #feature .anythingSlider
