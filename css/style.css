@@ -24,8 +24,8 @@ ___gcse_1, ___gcse_2{border:none;}
 /******* SET DEFAULT DIMENSIONS HERE ********/
 div.anythingSlider {
     display: block;
-    width: 940px;
-    height: 393px;
+    width: 1200px;
+    height: 543px;
     margin: 0 auto;
     padding: 0;
     overflow: hidden; /* needed for Opera and Safari */
@@ -192,13 +192,19 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 	position: relative;
 }
 
-#slider li.panel img {
-	margin-right:205px;
+#slider .feature-image {
+	margin-right:241px;
+}
+
+#slider .feature-image img {
+	width: 100%;
 }
 
 #feature
 {
 	overflow: hidden;
+	max-width: 1200px;
+	margin: 0 auto;
 	/* visibility: hidden; Why is this hidden? */
 }
 
@@ -218,7 +224,9 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 .feature-description
 {
 	padding: 48px 15px 48px 30px;
-	background: url('../img/feature-bg.png') no-repeat;
+	background: #eff6fc;
+	-webkit-box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);;
+    box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);;
 	height: 100%;
 	position:absolute;
 	right:0;
@@ -238,34 +246,30 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 
 #feature .anythingSlider .back
 {
-	top: auto;
-	left: auto;
-	right: 208px;
-	bottom: 7px;
+	top: 0;
+	left: 0;
+	width: 15%;
+	height: 100%;
 	z-index: 100;
 }
 
 #feature .anythingSlider .forward {
-    bottom: 6px;
-    left: auto;
-    right: 12px;
-    top: auto;
+	top: 0;
+	right: 241px;
+	width: 15%;
+	height: 100%;
     z-index: 12;
 }
 #feature .anythingSlider .arrow a {
-    background: url("../img/arrows.png") no-repeat scroll left top transparent;
-    height: 21px;
+    height: 100%;
     margin: 0;
-    width: 21px;
+    width: 100%;
 }
 #feature .anythingSlider .arrow a:hover {
-    background-position: 0 -21px;
-}
-#feature .anythingSlider .forward a {
-    background-position: 0 -42px;
+    background: url("../img/arrow-left.png") no-repeat scroll left transparent;
 }
 #feature .anythingSlider .forward a:hover {
-    background-position: 0 -63px;
+    background: url("../img/arrow-right.png") no-repeat scroll right transparent;
 }
 
 #feature .anythingControls {
