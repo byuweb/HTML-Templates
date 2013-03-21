@@ -16,7 +16,13 @@
 
 #header-top {
   position: relative;
-  z-index: 101; }
+  z-index: 101;
+  a.sign-in {
+    position: absolute;
+    top: .35em;
+    right: 0;
+    margin-right:0;
+  } }
 
 #logo {
   background-color:$blue2;
@@ -24,19 +30,21 @@
   height:2em;
   padding-left:5%;
   border-bottom:1px solid $blue3;
+  margin:0 -5.5555%;
   a.byu {
     @include ir();
     background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
   }
-  h1 {
+  h1, h2 {
     margin:0;
+  }
+  h1 {
     margin-left:-7px;
     text-indent: -999em;
     overflow: hidden;
     background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat; }
     a {
-      display:block;
-      margin-right:50%; } }
+      display:block;} }
 
 a.mybyu, a.sign-in, .open #search-button {
   margin-right:5%;

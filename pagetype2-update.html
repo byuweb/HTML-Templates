@@ -24,20 +24,7 @@
 	<!-- Scripts loaded via script loader. See notes in init.js file. -->
 	<script src="http://byuweb.github.com/Global-Assets/js/modernizr-lab.min.js"></script>
 	<script src="js/init.js"></script>
-    
-    <!-- -->
-    <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
-    <script>
-  		(function() {
-   			var cx = '009932716493032633443:hlqjz33kfkc';
-			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				'//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
- 		})();
-	</script>
-	
+    	
 </head>
 
 <body>
@@ -58,9 +45,12 @@
 			<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
 
 			<div id="search-container" role="search">
-				<gcse:searchbox-only></gcse:searchbox-only> 
-                <gcse:search></gcse:search> 
-			</div>			
+  			<!-- This is the default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). -->
+				<form action="http://home.byu.edu/home/search">
+				  <input type="search" name="search" />
+				  <input type="submit" value="Search" />
+				</form>
+			</div>
 		</div>
 
 	</header>
@@ -267,6 +257,23 @@
 		</div>
 	</footer>
 	<!--CONTENT END-->
+	
+  <!-- -->
+  <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
+  <script>
+		(function() {
+		  console.log('Hi there!');
+		  document.getElementById('search-container').innerHTML = '<gcse:searchbox-only></gcse:searchbox-only>';
+		
+ 			var cx = '009932716493032633443:hlqjz33kfkc';
+			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				'//www.google.com/cse/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+ 		})();
+	</script>
+
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>
