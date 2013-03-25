@@ -905,43 +905,50 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
   margin: 0;
   width: 100%; }
 
-#feature .anythingSlider .arrow a:hover {
-  background: url("../img/arrow-left.png") no-repeat scroll left transparent; }
+#feature .anythingSlider-hovered .arrow a {
+  background: url("../img/arrow-left.png") no-repeat scroll left transparent;
+  opacity: 0.25; }
 
-#feature .anythingSlider .forward a:hover {
-  background: url("../img/arrow-right.png") no-repeat scroll right transparent; }
+#feature .anythingSlider-hovered .forward a {
+  background: url("../img/arrow-right.png") no-repeat scroll right transparent;
+  opacity: 0.25; }
+
+#feature .anythingSlider-hovered .arrow a:hover {
+  opacity: 1; }
 
 #feature .anythingControls {
   right: 0;
-  bottom: 10px;
+  bottom: 27px;
   z-index: 1;
   position: absolute;
-  width: 241px; }
+  width: 100%; }
 
 #feature .thumbNav {
-  text-align: center; }
+  text-align: center;
+  margin-right: 241px; }
 
 #feature .thumbNav li {
   display: inline; }
 
 #feature .thumbNav li a {
-  width: 15px;
-  height: 15px;
-  background: #a8aeb3;
+  width: 32px;
+  height: 32px;
+  opacity: 0;
   text-indent: -9999em;
   border-radius: 0;
   padding: 0;
   margin: 0 4px;
   /*border: 1px solid #a8aeb3;*/ }
 
-#feature .thumbNav a:hover {
-  background: #5279a0; }
+#feature .anythingSlider-hovered .thumbNav li a {
+  background: #fff;
+  opacity: 0.25; }
 
-#feature .thumbNav a.cur {
+#feature .anythingSlider-hovered .thumbNav li a:hover {
+  opacity: 1; }
+
+#feature .anythingSlider .thumbNav a.cur {
   background: #147; }
-
-#feature .start-stop {
-  display: none; }
 
 /* End of slider styles */
 /* Header */
