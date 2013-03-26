@@ -85,6 +85,63 @@ a.mybyu, a.sign-in, .open #search-button {
   border:1px solid $blue5; }
 
 
+/* Google Custom Search */
+#search-container {
+  display: block;
+  border-top: 1px solid $blue4;
+  margin:0 -5.55%;
+  right:0;
+  padding: .25em 3%;
+  position: relative;
+  
+  // Wrapper for it all
+  .gsc-control-cse {
+    padding:0 1em;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border:none;
+    
+    $searchbutton-width: 3.75em;
+    background-image:    -moz-linear-gradient(right, $blue4 0%, $blue4 $searchbutton-width, #fff $searchbutton-width, #fff 100%); /* FF3.6+ */
+    background-image: -webkit-linear-gradient(right, $blue4 0%, $blue4 $searchbutton-width, #fff $searchbutton-width, #fff 100%); /* Chrome10+,Safari5.1+ */
+    background-image:         linear-gradient(right, $blue4 0%, $blue4 $searchbutton-width, #fff $searchbutton-width, #fff 100%); /* W3C */ 
+  }
+
+  // The search box
+  form.gsc-search-box {
+    margin-bottom: 0;
+    width:92%;
+    table.gsc-search-box, table.gsc-search-box td {
+      border:none;
+    }
+    td.gsc-input {
+      padding:0;
+      margin:0;
+    }
+    div.gsc-input-box {
+      border:none;
+      table, td {
+        border:none;
+        margin:0;
+      }
+    }
+  }
+  
+  // The search button
+  td.gsc-search-button {
+    padding:0;
+    input {
+      margin:0;
+      border:0;
+      padding:.75em 2em .75em 1.5em;
+      position: absolute;
+      top:.25em;
+      right:2.5%;
+      background: none;
+    }
+  }
+}
+
 /* Nav */
 /*#primary-nav, #secondary-nav {
  display:none; }
