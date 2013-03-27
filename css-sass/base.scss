@@ -94,8 +94,9 @@ a.mybyu, a.sign-in, .open #search-button {
   padding: .25em 3%;
   position: relative;
   
+  
   // Wrapper for it all
-  .gsc-control-cse {
+  .gsc-control-cse, form.basic-search {
     padding:0 1em;
     -moz-border-radius: 15px;
     border-radius: 15px;
@@ -103,16 +104,22 @@ a.mybyu, a.sign-in, .open #search-button {
     
     $searchbutton-width: 3.75em;
     
-    background-image: -webkit-radial-gradient(-5px center, 10px 20px, white 0%, white 90%, transparent 100%), -webkit-linear-gradient(top, $blue5, $blue4); /* Webkit */
+    background-image: -webkit-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%), -webkit-linear-gradient(top, $blue5, $blue4); /* Webkit */
+    background-image:    -moz-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),    -moz-linear-gradient(top, $blue5, $blue4); /* FF */
+    background-image:     -ms-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),     -ms-linear-gradient(top, $blue5, $blue4); /* IE */
+    background-image:      -o-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),      -o-linear-gradient(top, $blue5, $blue4); /* Opera */
+    background-image:         radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),         linear-gradient(top, $blue5, $blue4); /* W3C */
     background-size: $searchbutton-width 2.5em;
     background-position: right;
     background-repeat: no-repeat;
   }
+  
 
   // The search box
   form.gsc-search-box {
     margin-bottom: 0;
-    width:92%;
+    width:auto;
+    margin-right:2.5em;
     table.gsc-search-box, table.gsc-search-box td {
       border:none;
     }
@@ -142,6 +149,67 @@ a.mybyu, a.sign-in, .open #search-button {
       background: none;
     }
   }
+  
+  
+  // Generic search box
+  form.basic-search {
+    background-color: #fff;
+    position: relative;
+    padding-right:4em;
+    
+    #search {
+      width:100%;
+      border: none;
+      padding: 3px 0;
+      margin: 1px 0;
+    }
+    #search-submit {
+      position: absolute;
+      top:0;
+      right:0;
+      padding:  4px 0;
+      width:3.75em;
+      text-indent: -9999em;
+      overflow: hidden;
+      background-color: transparent;
+      border: none;
+      background-image: -webkit-radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:    -moz-radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:     -ms-radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:      -o-radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:         radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-size: 3em 20px;
+      background-repeat: no-repeat;
+      z-index:1;
+    }
+    &:after {
+      content: " ";
+      display: block;
+      width:3px;
+      height: 8px;
+      border-radius: 2px;
+      background-color: white;
+      position: absolute;
+      top:14px;
+      right:22px;
+      z-index: 10;
+      -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+           -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      z-index:0;
+    }
+  }
+  
+  div.gcse_wrapper {
+    z-index: 2;
+    position: absolute;
+    top:0px;
+    left:0px;
+    padding:3px 8px;
+  }
+
 }
 
 /* Nav */

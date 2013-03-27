@@ -46,9 +46,9 @@
 
 			<div id="search-container" role="search">
   			<!-- This is the default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). -->
-				<form action="http://home.byu.edu/home/search">
-				  <input type="search" name="search" />
-				  <input type="submit" value="Search" />
+				<form class="basic-search" action="http://home.byu.edu/home/search" role="form">
+				  <input id="search" type="search" name="search" />
+				  <input id="search-submit" type="submit" value="Search" />
 				</form>
 			</div>
 		</div>
@@ -257,12 +257,16 @@
 		</div>
 	</footer>
 	<!--CONTENT END-->
-	
-  <!-- -->
+
+
   <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
   <script>
 		(function() {
-		  document.getElementById('search-container').innerHTML = '<gcse:search></gcse:search>';
+      var search_container = document.getElementById('search-container');
+      var new_gcse = document.createElement('div');
+      new_gcse.className = 'gcse_wrapper';
+      new_gcse.innerHTML = '<gcse:search></gcse:search>';
+      search_container.appendChild(new_gcse);
 		
  			var cx = '009932716493032633443:hlqjz33kfkc';
 			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
