@@ -6,7 +6,6 @@ body em { font-style:italic; }
 body strong { font-weight:bold; }
 body, select, input, textarea { color: #444 }
 p a { text-decoration: underline}
-p { margin: 9px 0}
 	/* Blockquotes */
 blockquote { font-style:italic; margin:1.5em 10px; padding:.5em 10px; background-color:#f4f4f4; border:1px solid #dedede; box-shadow:2px 3px 5px 0 #dedede; -moz-box-shadow:2px 3px 5px 0 #dedede; -webkit-box-shadow:2px 3px 5px 0 #dedede; color:#333; margin:25px 20px 25px 0; padding:3px 25px;}
 blockquote:before { color:#bbb; content:"\201C"; font-size:3em; line-height:.1em; margin-right:.2em; vertical-align:-.4em;}
@@ -30,7 +29,7 @@ td { border-left:1px dotted #eee; border-right:1px dotted #eee;}
 th { background:#f9f9f9; border-right:1px solid #e9e9e9; border-left:1px solid #e9e9e9;}
 table caption { color:#888; text-align:left; margin:.15em .25em; font-style:italic;}
 tfoot { font-weight:bold;
-  td { color:#666; border-top-color:#666;} }
+td { color:#666; border-top-color:#666;} }
 td, td img { vertical-align:top}
 
 /* Lists */

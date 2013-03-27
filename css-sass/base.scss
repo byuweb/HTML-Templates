@@ -10,6 +10,9 @@
 @import "slider";
 
 
+
+
+
 /* Header */
 
 #main-header {
@@ -85,7 +88,12 @@ a.mybyu, a.sign-in, .open #search-button {
   border:1px solid $blue5; }
 
 
-/* Google Custom Search */
+
+
+
+
+
+/* Search */
 #search-container {
   display: block;
   border-top: 1px solid $blue4;
@@ -212,41 +220,20 @@ a.mybyu, a.sign-in, .open #search-button {
 
 }
 
+
+
+
+
+
+
 /* Nav */
-/*#primary-nav, #secondary-nav {
- display:none; }
- 
-#content {
-  #primary-nav, #secondary-nav {
-    display:block; }
-  li.featured, hr, div.highlight {
-      display: none; } }
 
-#primary-nav-menu {
- position:absolute;
- margin:0;
- padding:0 5%;
- a {
-   border-radius:3px 3px 0 0;
-   display:inline-block;
-   color:$grayC;
-   padding:.6em 1.4em .7em;
-   margin-left:-1em;
-   font-weight:bold;
-   text-decoration: none;
-   &:hover {
-     color:#fff; }
-   &.open {
-     text-decoration:none;
-     background-color:#fff;
-     color:$blue0; } } }
+#primary-nav {
+  
+}
 
-.click-off {
-  width: 1px;
-  height: 1px;
-  position: absolute;
-  top:-1px;
-  left: -1px; }*/
+
+
 
 
 
@@ -258,6 +245,12 @@ a.mybyu, a.sign-in, .open #search-button {
 
 #content {
   padding:1em 0 2em; }
+
+
+
+
+
+
 
   
 /* Calendar */
@@ -287,10 +280,23 @@ ul#calendars{list-style: none}
 a.baseline, #calendar > strong, a.more {font-weight: bold; margin-top:1.5em; padding-bottom:1.5em; display: block;}
 
 
+
+
+
+
+
+
+
 /* News */
 .news-item {padding:.25em 0 0}
 .briefs-item {padding:.1em 0 0}
 #briefs-container {border-bottom:1px solid #eee; padding-bottom:.75em; margin-bottom:.5em;}
+
+
+
+
+
+
 
 
 /* Footer */
