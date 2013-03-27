@@ -50,6 +50,11 @@
 				  <input id="search" type="search" name="search" />
 				  <input id="search-submit" type="submit" value="Search" />
 				</form>
+				
+				<!-- This container holds the Google custom search, if enabled -->
+				<div class="gcse-wrapper">
+				  <gcse:search></gcse:search>
+				</div>
 			</div>
 		</div>
 
@@ -261,13 +266,7 @@
 
   <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
   <script>
-		(function() {
-      var search_container = document.getElementById('search-container');
-      var new_gcse = document.createElement('div');
-      new_gcse.className = 'gcse_wrapper';
-      new_gcse.innerHTML = '<gcse:search></gcse:search>';
-      search_container.appendChild(new_gcse);
-		
+		(function() {		
  			var cx = '009932716493032633443:hlqjz33kfkc';
 			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
 			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
