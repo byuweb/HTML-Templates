@@ -96,10 +96,11 @@ a.mybyu, a.sign-in, .open #search-button {
 /* Search */
 #search-container {
   display: block;
-  border-top: 1px solid $blue4;
+  border-top: 1px solid $blue3;
+  background-color: $blue2;
   margin:0 -5.55%;
   right:0;
-  padding: .25em 3%;
+  padding: 5px 3% 6px;
   position: relative;
   
   
@@ -181,11 +182,11 @@ a.mybyu, a.sign-in, .open #search-button {
       overflow: hidden;
       background-color: transparent;
       border: none;
-      background-image: -webkit-radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
-      background-image:    -moz-radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
-      background-image:     -ms-radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
-      background-image:      -o-radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
-      background-image:         radial-gradient(21px 10px, 8px 8px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image: -webkit-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:    -moz-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:     -ms-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:      -o-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:         radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
       background-size: 3em 20px;
       background-repeat: no-repeat;
       z-index:1;
@@ -193,13 +194,13 @@ a.mybyu, a.sign-in, .open #search-button {
     &:after {
       content: " ";
       display: block;
-      width:3px;
-      height: 8px;
+      width:2px;
+      height: 7px;
       border-radius: 2px;
       background-color: white;
       position: absolute;
-      top:14px;
-      right:22px;
+      top:13px;
+      right:25px;
       z-index: 10;
       -webkit-transform: rotate(-45deg);
          -moz-transform: rotate(-45deg);
@@ -215,7 +216,7 @@ a.mybyu, a.sign-in, .open #search-button {
     position: absolute;
     top:0px;
     left:0px;
-    padding:3px 8px;
+    padding:4px 8px;
   }
 
 }
