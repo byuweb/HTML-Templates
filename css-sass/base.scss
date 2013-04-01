@@ -3,8 +3,12 @@
 @import "colors";
 @import "mixins";
 
+@import "prettify";
 @import "normalize";
 @import "boilerplate";
+
+@import "bootstrap-override";
+@import "font-awesome";
 
 @import "basics";
 @import "slider";
@@ -21,6 +25,9 @@
 #header-top {
   position: relative;
   z-index: 101;
+  h1 a {
+    color: #fff;
+  }
   a.sign-in {
     position: absolute;
     top: .35em;
