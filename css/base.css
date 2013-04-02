@@ -1303,6 +1303,9 @@ code, pre { padding: 0 3px 2px; font-family: Monaco,Menlo,Consolas,"Courier New"
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000367}}
 dd { margin-left: 10px; padding: 0 0 10px 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000371}}
+.bs-docs-separator { margin: 40px 0 39px; }
+
 /* Slider styles (just copied from old templates for simplicity) */
 /* AnythingSlider v1.5.10+ Default (base) theme By Chris Coyier: http://css-tricks.com with major improvements by Doug Neiner: http://pixelgraphics.us/ based on work by Remy Sharp: http://jqueryfordesigners.com/
 */
