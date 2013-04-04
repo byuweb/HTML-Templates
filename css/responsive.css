@@ -1,0 +1,13 @@
+/* Responsive CSS */
+.wf-active #header-top h1 { font-family: "Droid Serif", sans-serif; }
+
+.wf-active h1, .wf-active h2 { font-family: "Crete Round", sans-serif; font-weight: normal; }
+
+.wf-active body, .wf-active button, .wf-active input, .wf-active select, .wf-active textarea { font-family: "Open Sans", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; }
+
+/*#primary-nav, #secondary-nav { display:none; } 
+#content { #primary-nav, #secondary-nav { display:block; } li.featured, hr, div.highlight { display: none; } }
+
+#primary-nav-menu { position:absolute; margin:0; padding:0 5%; a { border-radius:3px 3px 0 0; display:inline-block; color:$grayC; padding:.6em 1.4em .7em; margin-left:-1em; font-weight:bold; text-decoration: none; &:hover { color:#fff; } &.open { text-decoration:none; background-color:#fff; color:$blue0; } } }
+
+.click-off { width: 1px; height: 1px; position: absolute; top:-1px; left: -1px; }*/

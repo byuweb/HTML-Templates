@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
@@ -7,7 +7,7 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	
-	<title>Page Title</title>
+	<title>BYU - Page Type 2</title>
 	<meta name="description" content="Description about your department." />
 	<meta name="author" content="Your Department Name" />
 	<meta name="keywords" content="keyword 1, keyword 2, keyword 3" />
@@ -18,26 +18,13 @@
 	<link rel="shortcut icon" href="change-this-directory/img/favicon.ico" />
 	
 	<!-- Styles -->
-	<link rel="stylesheet" href="css/mobile.css" />
-	<link media="all and (min-width:200px)" rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/base.css" />
+	<link media="all and (min-width:200px)" rel="stylesheet" href="css/responsive.css">
 	
 	<!-- Scripts loaded via script loader. See notes in init.js file. -->
 	<script src="http://byuweb.github.com/Global-Assets/js/modernizr-lab.min.js"></script>
 	<script src="js/init.js"></script>
-    
-    <!-- -->
-    <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
-    <script>
-  		(function() {
-   			var cx = '009932716493032633443:hlqjz33kfkc';
-			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				'//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
- 		})();
-	</script>
-	
+
 </head>
 
 <body>
@@ -46,10 +33,9 @@
   <![endif]-->
 
 	<header id="main-header" role="banner">
-	
 		<div id="header-top" class="wrapper">
 			<div id="logo">
-				<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a></h2>
+				<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a> <span></span></h2>
 			</div>
 		  
 		  <!-- This should link to your organization's home page -->
@@ -58,13 +44,22 @@
 			<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
 
 			<div id="search-container" role="search">
-				<gcse:searchbox-only></gcse:searchbox-only> 
-                <gcse:search></gcse:search> 
-			</div>			
+  			<!-- This is the default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). -->
+				<form class="basic-search" action="http://home.byu.edu/home/search" role="form">
+				  <input id="search" type="search" name="search" />
+				  <input id="search-submit" type="submit" value="Search" />
+				</form>
+				
+				<!-- This container holds the Google custom search, if enabled -->
+				<div class="gcse-wrapper">
+				  <gcse:search></gcse:search>
+				</div>
+			</div>
+			
 		</div>
-
 	</header>
 	
+
 	<div id="content" class="wrapper clearfix" role="main">
 		<div id="breadcrumb" role="navigation">
 			<div id="breadcrumb-home">
@@ -74,9 +69,7 @@
 					<a href="#">Organization Home</a>
 					<a href="#">Two Pages Above</a> 
 				</div>
-			</div>
-  		› <a href="#">One Page Above</a>
-  		› This page's main title 
+			</div> <a href="#">One Page Above</a> This page's main title 
     </div>
 	
 		<h1>Main Title</h1>
@@ -84,8 +77,6 @@
 		<p>See the <a href="https://web.byu.edu/styleguide">Style Guide</a> for layouts and code snippets that you can copy and paste.</p>
   </div>
 
-
-	
 	<!-- Primary Nav -->
 	<nav id="primary-nav" role="navigation">
 		<ul>
@@ -211,9 +202,6 @@
 			</li>
 		</ul>
 	</nav>
-
-
-	
 	<footer role="contentinfo">
 		<div id="footer-links">
 			<div class="wrapper">
@@ -267,6 +255,18 @@
 		</div>
 	</footer>
 	<!--CONTENT END-->
+  <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
+  <script>
+		(function() {		
+ 			var cx = '009932716493032633443:hlqjz33kfkc';
+			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				'//www.google.com/cse/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+ 		})();
+	</script>
+
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
   <script>

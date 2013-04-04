@@ -17,8 +17,25 @@
 	
 	<link rel="shortcut icon" href="template/img/favicon.ico" />
 
-	<link rel="stylesheet" href="css/mobile.css" />
-	<link media="all and (min-width:200px)" rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/base.css" />
+	<link media="all and (min-width:200px)" rel="stylesheet" href="css/responsive.css">
+	
+	<!-- Scripts loaded via script loader. See notes in init.js file. -->
+	<script src="http://byuweb.github.com/Global-Assets/js/modernizr-lab.min.js"></script>
+	<script src="http://byuweb.github.com/Global-Assets/js/jquery-1.9.1.min.js"></script>
+	<script src="http://byuweb.github.com/Global-Assets/js/jquery-migrate-1.1.1.min.js"></script>
+	<script src="js/slider-update.js"></script>
+	<script>
+	$(function () {
+		$('#slider').anythingSlider({
+			expand       : true,
+			autoPlay     : true,
+			resizeContents     : false,
+			buildStartStop      : false
+		});
+
+	});
+	</script>
 	
 </head>
 
@@ -39,7 +56,7 @@
 				<form method="get" action="http://gurgle2.byu.edu/search"> 
 					<!-- Change placeholder text to be specific for your implementation -->
 					<input type="text" name="q" id="search" placeholder="Search Organization" />
-					<input type="image" src="template/img/search-button.png" alt="Search" id="search-button"/>
+					<input type="image" src="img/search-button.png" alt="Search" id="search-button"/>
 					
 					<!-- Uncomment next line and insert your custom collection name -->
 					<!-- input type="hidden" name="site" value="default_collection_name" -->
@@ -184,24 +201,30 @@
 	<div id="feature">
 		<ul id="slider">
 			<li>
-				<img src="images/slider/feature-main.jpg" alt="" />
+				<div class="feature-image">
+					<img src="images/slider/feature-main.jpg" alt="" />
+				</div>
 				<div class="feature-description">
 					<h2><a href="#">Slider Feature 1</a></h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
 			</li>
 			<li>
-			<img src="images/slider/feature-main-2.jpg" alt="" />
+				<div class="feature-image">
+					<img src="images/slider/feature-main-2.jpg" alt="" />
+				</div>
 				<div class="feature-description">
 					<h2><a href="#">Slider Feature 2</a></h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
 			</li>
 			<li>
-			<img src="images/slider/feature-main-3.jpg" alt="" />
-			<div class="feature-description">
-				<h2><a href="#">Slider Feature 3</a></h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>				
+				<div class="feature-image">
+					<img src="images/slider/feature-main-3.jpg" alt="" />
+				</div>
+				<div class="feature-description">
+					<h2><a href="#">Slider Feature 3</a></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>				
 				</div>
 			</li>
 		</ul>
@@ -296,10 +319,6 @@
 	<!--CONTENT END-->
 	
   <!-- Insert JS plugins here -->
-	
-	<!--To get the social media links, visit www.addthis.com to get a Username for analytics.-->
-	<script type="text/javascript">addThisUsername = '';</script>
-	<script src="template/js/plugins/addthis.js"></script>
 	
 </body>
 </html>

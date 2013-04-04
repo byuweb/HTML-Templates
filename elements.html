@@ -1,125 +1,545 @@
-﻿<!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 	
-	<title>BYU Style</title>
-	<meta name="description" content="Description about your department. This text displays in the Google search results." />
+	<title>BYU - Page Elements</title>
+	<meta name="description" content="Description about your department." />
 	<meta name="author" content="Your Department Name" />
-	<meta name="keywords" content="keyword 1, keyword 2, keyword 3">
+	<meta name="keywords" content="keyword 1, keyword 2, keyword 3" />
 	
 	<meta name="viewport" content="width=device-width" />
 	
-	<link rel="shortcut icon" href="template/favicon.ico" />
-	<link rel="stylesheet" href="template/css/style.css" />
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="change-this-directory/img/favicon.ico" />
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/base.css" />
+	<link media="all and (min-width:200px)" rel="stylesheet" href="css/responsive.css">
+	
+	<!-- Scripts loaded via script loader. See notes in init.js file. -->
+	<script src="http://byuweb.github.com/Global-Assets/js/modernizr-lab.min.js"></script>
+	<script src="js/init.js"></script>
 
-	<script src="template/js/libs/modernizr-2.0-basic.min.js"></script>
-
-<!-- The following still needs work	
-	<script>
-		// TODO: CHANGE! Ex: var templateRoot = 'http://localhost/news/template/';
-		<!-- var webRoot = 'http://localhost/news/'; -->
-	<!-- </script> 
--->
 </head>
+
 <body>
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
 	<header id="main-header" role="banner">
 		<div id="header-top" class="wrapper">
 			<div id="logo">
-				<a href="http://www.byu.edu/" class="byu"><img src="template/img/byu-logo.gif" alt="BYU Logo" /></a>
-			</div> 
-			
-			<a href="#" id="site-name">BYU Template Styles</a> 
-			
-			<div id="search-container" role="search">
-				<a href="http://home.byu.edu/home/cas" class="button">Login</a>
-				
-				<form method="get" action="" role="form"> <!--TODO: SEARCH URL-->
-					<input type="text" name="q" id="search" placeholder="Search Department Name" />
-					<input type="image" src="template/img/search-button.png" alt="Search" id="search-button" value="Search" />
-				</form>
+				<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a> <span></span></h2>
 			</div>
-	
-			<nav id="secondary-nav" role="navigation">
-				<ul>
-					<li class="menuitem"><a href="#">SubMenu1</a>
-						<div class="sub links">
-						<a href="">Link 1</a>
-						<a href="">Link 2</a>
-						<a href="">Link 3</a>
-						<a href="">Link 4</a></div>
-					</li>
-					<li class="menuitem"><a href="#">SubMenu2</a>
-						<div class="sub links">
-						<a href="">Link 1</a>
-						<a href="">Link 2</a>
-						<a href="">Link 3</a>
-						<a href="">Link 4</a></div>
-					</li>
-					<li class="menuitem"><a href="#">SubMenu3</a>
-						<div class="sub links">
-						<a href="">Link 1</a>
-						<a href="">Link 2</a>
-						<a href="">Link 3</a>
-						<a href="">Link 4</a></div>
-					</li>
-				</ul>
-			</nav>
+		  
+		  <!-- This should link to your organization's home page -->
+			<h1><a href="#CHANGE-THIS-LINK" id="site-name">Elements</a></h1>
+
+			<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
+
+			<div id="search-container" role="search">
+  			<!-- This is the default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). -->
+				<form class="basic-search" action="http://home.byu.edu/home/search" role="form">
+				  <input id="search" type="search" name="search" />
+				  <input id="search-submit" type="submit" value="Search" />
+				</form>
+				
+				<!-- This container holds the Google custom search, if enabled -->
+				<div class="gcse-wrapper">
+				  <gcse:search></gcse:search>
+				</div>
+			</div>
 			
 		</div>
-		
-		<nav id="primary-nav" role="navigation">
-			<ul>
-				<li class="menuitem"><a href="">Mega Dropdown Menu</a>
-					<div class="mega">
-						<div class="links">
-							<div class="featured">
-							<a href="#">Featured Link 1</a>
-							<a href="#">Featured Link 2</a>
-							</div>
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<div class="sublinks">
-							<a href="#">Sublink 1</a>
-							<a href="#">Sublink 2</a>
-							<a href="#">Sublink 3</a>
-						</div>
-						<a href="#">Link 3</a>
-						<a href="#">Link 4</a>
-						<a href="#">Link 5</a>
-						<a href="#">Link 6</a></div>
-						<div class="img1"><a href="#"><span class="img menu-map.jpg" title=""></span></a><p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-						<div class="img2"><a href="#"><span class="img menu-contact-us.jpg" title=""></span></a><p><a href="#">Picture Link</a></p>
-						<p>Text text text text text.</p></div>
-					</div>
-				</li>
-			
-			<!-- Use this for a basic dropdown menu -->
-			<li class="menuitem">
-			<a href="">Basic Menu with Link</a>
-			<div class="sub"><div class="links">
-			<a href="">Link 1</a>
-			<a href="">Link 2</a>
-			<a href="">Link 3</a>
-			<a href="">Link 4</a>
-			</div></div>
-			</li>
-			
-			<li class="menuitem"><a href="">Direct Menu Link</a></li>		
-			
-			</ul> 
-		</nav>   <!--End of Main Menu -->
 	</header>
 	
+
 	<div id="content" class="wrapper two-sidebars clearfix">
 	<!--Add the Breadcrumb Code Here-->
+	
+	<section id="bootstrap">
+    <div class="page-header">
+      <h1>Built-in frameworks</h1>
+    </div>
+    
+    <h2>Bootstrap Styles</h2>
+    
+    <p>BYU's templates have <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a> built in.</p>
+    <p>This means you can forget wondering what sort of button styles to use, or whether there's a good jQuery dropdown plugin around. It's all there from the start. We've updated the <code>variables.less</code> file with colors, fonts, and sizes that are customized and compatible with BYU's style.</p>
+    
+    <h2>FontAwesome Icons</h2>
+    
+    <p>We've also included a <em>sweet</em> icon set for your UI pleasure. Again, no need to reinvent the wheel here.</p>
+    <p>The latest and greatest in icon design is vectors; specifically, icon fonts. They're scalable, colorable, and completely accessible. Yes, they're that good. Happy designing. You can also see some examples below.</p>
+    <p><a href="http://fortawesome.github.com/Font-Awesome/">Check out the full icon set and usage guidelines.</a></p>
+	 
+	 <div class="bs-docs-example">
+    <ul class="unstyled">
+      <li><i class="icon-bolt"></i> icon-bolt</li>
+      <li><i class="icon-calendar"></i> icon-calendar</li>
+      <li><i class="icon-cog"></i> icon-cog</li>
+      <li><i class="icon-comment"></i> icon-comment</li>
+      <li><i class="icon-envelope"></i> icon-envelope</li>
+      <li><i class="icon-flag"></i> icon-flag</li>
+      <li><i class="icon-heart"></i> icon-heart</li>
+      <li><i class="icon-home"></i> icon-home</li>
+      <li><i class="icon-lock"></i> icon-lock</li>
+      <li><i class="icon-magic"></i> icon-magic</li>
+      <li><i class="icon-ok"></i> icon-ok</li>
+      <li><i class="icon-pencil"></i> icon-pencil</li>
+      <li><i class="icon-print"></i> icon-print</li>
+      <li><i class="icon-refresh"></i> icon-refresh</li>
+      <li><i class="icon-remove"></i> icon-remove</li>
+      <li><i class="icon-search"></i> icon-search</li>
+      <li><i class="icon-shopping-cart"></i> icon-shopping-cart</li>
+      <li><i class="icon-trash"></i> icon-trash</li>
+      <li><i class="icon-caret-down"></i> icon-caret-down</li>
+      <li><i class="icon-caret-right"></i> icon-caret-right</li>
+    </ul>
+	 </div>
+	 <pre class="prettyprint"><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-bolt"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span><span class="pln"> Expeliarmus!</span>
+<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-calendar"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span> Calendar
+<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-cog"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span><span class="pln"> Settings</span>
+<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-comment"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span><span class="pln"> Say something!</span>
+...</pre>
+
+  <div class="bs-docs-example">
+    <ul class="unstyled">
+      <li><i class="icon-search"></i> [standard size]</li>
+      <li><i class="icon-search icon-large"></i> icon-large</li>
+      <li><i class="icon-search icon-2x"></i> icon-2x</li>
+      <li><i class="icon-search icon-3x"></i> icon-3x</li>
+    </ul>
+  </div>
+  <pre class="prettyprint"><span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span>
+<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search icon-large"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span>
+<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search icon-2x"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span>
+<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search icon-3x"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span></pre>
+    
+	</section>
+	
+<section id="typography">
+          <div class="page-header">
+            <h1>Typography</h1>
+          </div>
+
+          <h2 id="headings">Headings</h2>
+          <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are available.</p>
+          <div class="bs-docs-example">
+            <h1>h1. Heading 1</h1>
+            <h2>h2. Heading 2</h2>
+            <h3>h3. Heading 3</h3>
+            <h4>h4. Heading 4</h4>
+            <h5>h5. Heading 5</h5>
+            <h6>h6. Heading 6</h6>
+          </div>
+
+          <h2 id="body-copy">Body copy</h2>
+          <p>BYU's global default <code>font-size</code> is <strong>15px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
+          <div class="bs-docs-example">
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          </div>
+          <pre class="prettyprint"><span class="tag">&lt;p&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span></pre>
+
+          <h3>Lead body copy</h3>
+          <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+          <div class="bs-docs-example">
+            <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+          </div>
+          <pre class="prettyprint"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"lead"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span></pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2 id="emphasis">Emphasis</h2>
+          <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
+
+          <h3><code>&lt;small&gt;</code></h3>
+          <p>For de-emphasizing inline or blocks of text, <small>use the small tag.</small></p>
+          <div class="bs-docs-example">
+            <p><small>This line of text is meant to be treated as fine print.</small></p>
+          </div>
+<pre class="prettyprint"><span class="tag">&lt;p&gt;</span><span class="pln">
+  </span><span class="tag">&lt;small&gt;</span><span class="pln">This line of text is meant to be treated as fine print.</span><span class="tag">&lt;/small&gt;</span><span class="pln">
+</span><span class="tag">&lt;/p&gt;</span></pre>
+
+          <h3>Bold</h3>
+          <p>For emphasizing a snippet of text with a heavier font-weight.</p>
+          <div class="bs-docs-example">
+            <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+          </div>
+          <pre class="prettyprint"><span class="tag">&lt;strong&gt;</span><span class="pln">rendered as bold text</span><span class="tag">&lt;/strong&gt;</span></pre>
+
+          <h3>Italics</h3>
+          <p>For emphasizing a snippet of text with italics.</p>
+          <div class="bs-docs-example">
+            <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+          </div>
+          <pre class="prettyprint"><span class="tag">&lt;em&gt;</span><span class="pln">rendered as italicized text</span><span class="tag">&lt;/em&gt;</span></pre>
+
+          <p><span class="label label-info">Heads up!</span> Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc.</p>
+
+          <h3>Alignment classes</h3>
+          <p>Easily realign text to components with text alignment classes.</p>
+          <div class="bs-docs-example">
+            <p class="text-left">Left aligned text.</p>
+            <p class="text-center">Center aligned text.</p>
+            <p class="text-right">Right aligned text.</p>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-left"</span><span class="tag">&gt;</span><span class="pln">Left aligned text.</span><span class="tag">&lt;/p&gt;</span></li><li class="L1"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-center"</span><span class="tag">&gt;</span><span class="pln">Center aligned text.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-right"</span><span class="tag">&gt;</span><span class="pln">Right aligned text.</span><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+
+          <h3>Emphasis classes</h3>
+          <p>Convey meaning through color with a handful of emphasis utility classes.</p>
+          <div class="bs-docs-example">
+            <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+            <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+            <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+            <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"muted"</span><span class="tag">&gt;</span><span class="pln">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</span><span class="tag">&lt;/p&gt;</span></li><li class="L1"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-warning"</span><span class="tag">&gt;</span><span class="pln">Etiam porta sem malesuada magna mollis euismod.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-error"</span><span class="tag">&gt;</span><span class="pln">Donec ullamcorper nulla non metus auctor fringilla.</span><span class="tag">&lt;/p&gt;</span></li><li class="L3"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-info"</span><span class="tag">&gt;</span><span class="pln">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</span><span class="tag">&lt;/p&gt;</span></li><li class="L4"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-success"</span><span class="tag">&gt;</span><span class="pln">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</span><span class="tag">&lt;/p&gt;</span></li></ol></pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2 id="abbreviations">Abbreviations</h2>
+          <p>Stylized implementation of HTML's <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.</p>
+
+          <h3><code>&lt;abbr&gt;</code></h3>
+          <p>For expanded text on long hover of an abbreviation, include the <code>title</code> attribute.</p>
+          <div class="bs-docs-example">
+            <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
+          </div>
+          <pre class="prettyprint"><span class="tag">&lt;abbr</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"attribute"</span><span class="tag">&gt;</span><span class="pln">attr</span><span class="tag">&lt;/abbr&gt;</span></pre>
+
+          <h3><code>&lt;abbr class="initialism"&gt;</code></h3>
+          <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size.</p>
+          <div class="bs-docs-example">
+            <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
+          </div>
+          <pre class="prettyprint"><span class="tag">&lt;abbr</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"HyperText Markup Language"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"initialism"</span><span class="tag">&gt;</span><span class="pln">HTML</span><span class="tag">&lt;/abbr&gt;</span></pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2 id="addresses">Addresses</h2>
+          <p>Present contact information for the nearest ancestor or the entire body of work.</p>
+
+          <h3><code>&lt;address&gt;</code></h3>
+          <p>Preserve formatting by ending all lines with <code>&lt;br&gt;</code>.</p>
+          <div class="bs-docs-example">
+            <address>
+              <strong>Twitter, Inc.</strong><br>
+              795 Folsom Ave, Suite 600<br>
+              San Francisco, CA 94107<br>
+              <abbr title="Phone">P:</abbr> (123) 456-7890
+            </address>
+            <address>
+              <strong>Full Name</strong><br>
+              <a href="mailto:#">first.last@example.com</a>
+            </address>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;address&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;strong&gt;</span><span class="pln">Twitter, Inc.</span><span class="tag">&lt;/strong&gt;&lt;br&gt;</span></li><li class="L2"><span class="pln">  795 Folsom Ave, Suite 600</span><span class="tag">&lt;br&gt;</span></li><li class="L3"><span class="pln">  San Francisco, CA 94107</span><span class="tag">&lt;br&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;abbr</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Phone"</span><span class="tag">&gt;</span><span class="pln">P:</span><span class="tag">&lt;/abbr&gt;</span><span class="pln"> (123) 456-7890</span></li><li class="L5"><span class="tag">&lt;/address&gt;</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="tag">&lt;address&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;strong&gt;</span><span class="pln">Full Name</span><span class="tag">&lt;/strong&gt;&lt;br&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"mailto:#"</span><span class="tag">&gt;</span><span class="pln">first.last@example.com</span><span class="tag">&lt;/a&gt;</span></li><li class="L0"><span class="tag">&lt;/address&gt;</span></li></ol></pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <h2 id="blockquotes">Blockquotes</h2>
+          <p>For quoting blocks of content from another source within your document.</p>
+
+          <h3>Default blockquote</h3>
+          <p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr> as the quote. For straight quotes we recommend a <code>&lt;p&gt;</code>.</p>
+          <div class="bs-docs-example">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            </blockquote>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;blockquote&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="tag">&lt;/blockquote&gt;</span></li></ol></pre>
+
+          <h3>Blockquote options</h3>
+          <p>Style and content changes for simple variations on a standard blockquote.</p>
+
+          <h4>Naming a source</h4>
+          <p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code>.</p>
+          <div class="bs-docs-example">
+            <blockquote>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+            </blockquote>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;blockquote&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;small&gt;</span><span class="pln">Someone famous </span><span class="tag">&lt;cite</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Source Title"</span><span class="tag">&gt;</span><span class="pln">Source Title</span><span class="tag">&lt;/cite&gt;&lt;/small&gt;</span></li><li class="L3"><span class="tag">&lt;/blockquote&gt;</span></li></ol></pre>
+
+          <h4>Alternate displays</h4>
+          <p>Use <code>.pull-right</code> for a floated, right-aligned blockquote.</p>
+          <div class="bs-docs-example" style="overflow: hidden;">
+            <blockquote class="pull-right">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+            </blockquote>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;blockquote</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pull-right"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ...</span></li><li class="L2"><span class="tag">&lt;/blockquote&gt;</span></li></ol></pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+          <!-- Lists -->
+          <h2 id="lists">Lists</h2>
+
+          <h3>Unordered</h3>
+          <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
+          <div class="bs-docs-example">
+            <ul>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+              <li>Nulla volutpat aliquam velit
+                <ul>
+                  <li>Phasellus iaculis neque</li>
+                  <li>Purus sodales ultricies</li>
+                  <li>Vestibulum laoreet porttitor sem</li>
+                  <li>Ac tristique libero volutpat at</li>
+                </ul>
+              </li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+              <li>Eget porttitor lorem</li>
+            </ul>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+
+          <h3>Ordered</h3>
+          <p>A list of items in which the order <em>does</em> explicitly matter.</p>
+          <div class="bs-docs-example">
+            <ol>
+              <li>Lorem ipsum dolor sit amet</li>
+              <li>Consectetur adipiscing elit</li>
+              <li>Integer molestie lorem at massa</li>
+              <li>Facilisis in pretium nisl aliquet</li>
+              <li>Nulla volutpat aliquam velit</li>
+              <li>Faucibus porta lacus fringilla vel</li>
+              <li>Aenean sit amet erat nunc</li>
+              <li>Eget porttitor lorem</li>
+            </ol>
+          </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ol&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ol&gt;</span></li></ol></pre>
+
+        <h3>Unstyled</h3>
+        <p>Remove the default <code>list-style</code> and left padding on list items (immediate children only).</p>
+        <div class="bs-docs-example">
+          <ul class="unstyled">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit
+              <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+                <li>Ac tristique libero volutpat at</li>
+              </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ul>
+        </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"unstyled"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+
+        <h3>Inline</h3>
+        <p>Place all list items on a single line with <code>inline-block</code> and some light padding.</p>
+        <div class="bs-docs-example">
+          <ul class="inline">
+            <li>Lorem ipsum</li>
+            <li>Phasellus iaculis</li>
+            <li>Nulla volutpat</li>
+          </ul>
+        </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"inline"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ul&gt;</span></li></ol></pre>
+
+        <h3>Description</h3>
+        <p>A list of terms with their associated descriptions.</p>
+        <div class="bs-docs-example">
+          <dl>
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+          </dl>
+        </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;dl&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;dt&gt;</span><span class="pln">...</span><span class="tag">&lt;/dt&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;dd&gt;</span><span class="pln">...</span><span class="tag">&lt;/dd&gt;</span></li><li class="L3"><span class="tag">&lt;/dl&gt;</span></li></ol></pre>
+
+        <h4>Horizontal description</h4>
+        <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.</p>
+        <div class="bs-docs-example">
+          <dl class="dl-horizontal">
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+            <dt>Felis euismod semper eget lacinia</dt>
+            <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+          </dl>
+        </div>
+<pre class="prettyprint linenums"><ol class="linenums"><li class="L0"><span class="tag">&lt;dl</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dl-horizontal"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;dt&gt;</span><span class="pln">...</span><span class="tag">&lt;/dt&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;dd&gt;</span><span class="pln">...</span><span class="tag">&lt;/dd&gt;</span></li><li class="L3"><span class="tag">&lt;/dl&gt;</span></li></ol></pre>
+        <p>
+          <span class="label label-info">Heads up!</span>
+          Horizontal description lists will truncate terms that are too long to fit in the left column fix <code>text-overflow</code>. In narrower viewports, they will change to the default stacked layout.
+        </p>
+      </section>  	
+	
+	
+	
+	 <section id="buttons">
+          <div class="page-header">
+            <h1>Buttons</h1>
+          </div>
+
+          <h2>Default buttons</h2>
+          <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>Button</th>
+                <th>class=""</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><button type="button" class="btn">Default</button></td>
+                <td><code>btn</code></td>
+                <td>Standard gray button with gradient</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-primary">Primary</button></td>
+                <td><code>btn btn-primary</code></td>
+                <td>Provides extra visual weight and identifies the primary action in a set of buttons</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-info">Info</button></td>
+                <td><code>btn btn-info</code></td>
+                <td>Used as an alternative to the default styles</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-success">Success</button></td>
+                <td><code>btn btn-success</code></td>
+                <td>Indicates a successful or positive action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-warning">Warning</button></td>
+                <td><code>btn btn-warning</code></td>
+                <td>Indicates caution should be taken with this action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-danger">Danger</button></td>
+                <td><code>btn btn-danger</code></td>
+                <td>Indicates a dangerous or potentially negative action</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+                <td><code>btn btn-inverse</code></td>
+                <td>Alternate dark gray button, not tied to a semantic action or use</td>
+              </tr>
+              <tr>
+                <td><button type="button" class="btn btn-link">Link</button></td>
+                <td><code>btn btn-link</code></td>
+                <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Cross browser compatibility</h4>
+          <p>IE9 doesn't crop background gradients on rounded corners, so we remove it. Related, IE9 jankifies disabled <code>button</code> elements, rendering text gray with a nasty text-shadow that we cannot fix.</p>
+
+
+          <h2>Button sizes</h2>
+          <p>Fancy larger or smaller buttons? Add <code>.btn-large</code>, <code>.btn-small</code>, or <code>.btn-mini</code> for additional sizes.</p>
+          <div class="bs-docs-example">
+            <p>
+              <button type="button" class="btn btn-large btn-primary">Large button</button>
+              <button type="button" class="btn btn-large">Large button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary">Default button</button>
+              <button type="button" class="btn">Default button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-small btn-primary">Small button</button>
+              <button type="button" class="btn btn-small">Small button</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-mini btn-primary">Mini button</button>
+              <button type="button" class="btn btn-mini">Mini button</button>
+            </p>
+          </div>
+
+          <p>Create block level buttons—those that span the full width of a parent— by adding <code>.btn-block</code>.</p>
+          <div class="bs-docs-example">
+            <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
+              <button type="button" class="btn btn-large btn-block btn-primary">Block level button</button>
+              <button type="button" class="btn btn-large btn-block">Block level button</button>
+            </div>
+          </div>
+
+
+
+          <h2>Disabled state</h2>
+          <p>Make buttons look unclickable by fading them back 50%.</p>
+
+          <h3>Anchor element</h3>
+          <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
+          <p class="bs-docs-example">
+            <a href="#" class="btn btn-large btn-primary disabled">Primary link</a>
+            <a href="#" class="btn btn-large disabled">Link</a>
+          </p>
+
+          <p>
+            <span class="label label-info">Heads up!</span>
+            We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
+          </p>
+
+          <h3>Button element</h3>
+          <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
+          <p class="bs-docs-example">
+            <button type="button" class="btn btn-large btn-primary disabled" disabled="disabled">Primary button</button>
+            <button type="button" class="btn btn-large" disabled="">Button</button>
+          </p>
+
+
+          <h2>One class, multiple tags</h2>
+          <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code>, <code>&lt;button&gt;</code>, or <code>&lt;input&gt;</code> element.</p>
+          <form class="bs-docs-example">
+            <a class="btn" href="">Link</a>
+            <button class="btn" type="submit">Button</button>
+            <input class="btn" type="button" value="Input">
+            <input class="btn" type="submit" value="Submit">
+          </form>
+
+          <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
+
+        </section>
 		
 		<div class="container showgrid"> 
       <h1>HTML elements</h1>
@@ -426,13 +846,138 @@ pre tab</pre>
 	</tbody>
 </table>
 	
-	</div>
+</div>
+
+	<!-- Primary Nav -->
+	<nav id="primary-nav" role="navigation">
+		<ul>
+			<li><a href="">Mega Dropdown Menu</a>
+				<div class="mega">
+					<ul class="links">
+						<li class="featured">
+							<ul>
+								<li><a href="#">Featured Link 1</a></li>
+								<li><a href="#">Featured Link 2</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a>
+							<ul class="sublinks">
+								<li><a href="#">Sublink 1</a></li>
+								<li><a href="#">Sublink 2</a></li>
+								<li><a href="#">Sublink 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Link 5</a></li>
+						<li><a href="#">Link 6</a></li>
+					</ul>
+					<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+					<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+				</div>
+			</li>
+			<li><a href="">Double Mega Dropdown Menu</a>
+				<div class="mega">
+					<ul class="links double">
+						<li class="featured">
+							<ul>
+								<li><a href="#">Featured Link 1</a></li>
+								<li><a href="#">Featured Link 2</a></li>
+							</ul>
+							
+						</li>
+						<li class="left">
+						  <ul>
+  							<li><a href="#">Link 1</a></li>
+  							<li><a href="#">Link 2</a>
+  								<ul class="sublinks">
+  									<li><a href="#">Sublink 1</a></li>
+  									<li><a href="#">Sublink 2</a></li>
+  									<li><a href="#">Sublink 3</a></li>
+  									<li><a href="#">Sublink 4</a></li>
+  									<li><a href="#">Sublink 5</a></li>
+  								</ul>
+  							</li>
+  							<li><a href="#">Link 3</a></li>
+  							<li><a href="#">Link 4</a></li>
+  							<li><a href="#">Link 5</a></li>
+  							<li><a href="#">Link 6</a></li>
+  						</ul>
+						</li>
+						<li class="left">
+						  <ul>
+  							<li><a href="#">Link 7</a></li>
+  							<li><a href="#">Link 8</a></li>
+  							<li><a href="#">Link 9</a></li>
+  							<li><a href="#">Link 10</a></li>
+  							<li><a href="#">Link 11</a></li>
+  							<li><a href="#">Link 12</a></li>
+						  </ul>
+						</li>
+					</ul>
+					<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+					<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+				</div>
+			</li>
+			<li> <a href="">Basic Dropdown Menu</a>
+				<div class="sub">
+					<ul class="links">
+						<li><a href="">Link 1</a></li>
+						<li><a href="">Link 2</a></li>
+						<li><a href="">Link 3</a></li>
+						<li><a href="">Link 4</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a class="single" href="">Direct Menu Link</a></li>
+		</ul>
+	</nav>
 	
+	<!-- Secondary Nav -->
+	<nav id="secondary-nav" role="navigation">
+		<ul>
+			<li><a href="#">SecMenu1</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+			<li><a href="#">SecMenu2</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+			<li><a href="#">SecMenu3</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+		</ul>
+	</nav>
 	<footer role="contentinfo">
 		<div id="footer-links">
 			<div class="wrapper">
-				<div class="col alpha">
-					<h2>Footer Column 1 </h2>					
+				<div class="col alpha">	
+					<h2>Footer Column 1</h2>				
 					<a href="">Link 1</a>
 					<a href="">Link 2</a>
 					<a href="">Link 3</a>
@@ -445,66 +990,65 @@ pre tab</pre>
 					<a href="">Link 3</a>
 					<a href="">Link 4</a>
 				</div>
+				
 				<div class="col double">
 					<h2>Footer Double Column</h2>
 					<div class="left alpha">
-					<a href="">Left Link 1</a>
-					<a href="">Left Link 2</a>
-					<a href="">Left Link 3</a>
-					<a href="">Left Link 4</a>
-					
-					</div>
-					<div class="right omega">
-					<a href="">Right Link 1</a>
-					<a href="">Right Link 2</a>
-					<a href="">Right Link 3</a>
-					<a href="">Right Link 4</a>
+						<a href="">Left Link 1</a>
+						<a href="">Left Link 2</a>
+						<a href="">Left Link 3</a>
+						<a href="">Left Link 4</a>
+						</div>
+						
+						<div class="right omega">
+						<a href="">Right Link 1</a>
+						<a href="">Right Link 2</a>
+						<a href="">Right Link 3</a>
+						<a href="">Right Link 4</a>
 					</div>
 				</div>
+								
+					
 				<div class="col omega">
-					<h2>Footer Column 3</h2>
-					<div class="col omega">
-					
-					<!--Use this if you use social media; otherwise, please delete-->
-					<h2>Follow</h2>
-					<a href="http://www.facebook.com/byu" id="follow-facebook">facebook.com/byu</a>
-					<a href="http://www.twitter.com/byu" id="follow-twitter">twitter.com/byu</a>
-					<a href="http://www.youtube.com/byunews" id="follow-youtube">youtube.com/byunews</a>
-					
-					<h2>Share</h2>
-					<!-- AddThis Button BEGIN -->
-					<div class="addthis_toolbox addthis_default_style ">
-		<a class="addthis_button_facebook at300b" title="Send to Facebook" href="#"><span class="at300bs at15nc at15t_facebook"></span>Facebook</a>
-		<a class="addthis_button_twitter at300b" title="Tweet This" href="#"><span class="at300bs at15nc at15t_twitter"></span>Tweet</a>
-		<a class="addthis_button_email at300b" title="Email" href="#"><span class="at300bs at15nc at15t_email"></span>Email</a>
-		<a class="addthis_button_compact at300m" href="#"><span class="at300bs at15nc at15t_compact"></span>Share</a>
-					<div class="atclear"></div></div>
-					<!-- AddThis Button END -->
+					<h2>Footer Column 4</h2>
+					<a href="">Link 1</a>
+					<a href="">Link 2</a>
+					<a href="">Link 3</a>
+					<a href="">Link 4</a>
 				</div>
-				</div>
+				
 			</div>
 		</div>
-		 
-</body> 		
-		
 		
 		<div id="footer-bottom">
-		<p><a href="http://byui.edu/">BYU-Idaho</a> <a href="http://byuh.edu/">BYU-Hawaii</a> <a href="http://www.ldsbc.edu/">LDS Business College</a> <a href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a></p>
-		<p><a href="http://home.byu.edu/home/copyright">Copyright&#169; 2011, All Rights Reserved</a></p>
+			<p><a href="http://byui.edu/">BYU-Idaho</a> <a href="http://byuh.edu/">BYU-Hawaii</a> <a href="http://www.ldsbc.edu/">LDS Business College</a> <a href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a></p>
+			<p><a href="http://home.byu.edu/home/copyright">Copyright&#169; 2011, All Rights Reserved</a></p>
 		</div>
-		
 	</footer>
-	
-	
-	
 	<!--CONTENT END-->
+
+<script src="js/prettify.js"></script>
+
+  <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
+  <script>
+		(function() {		
+ 			var cx = '009932716493032633443:hlqjz33kfkc';
+			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				'//www.google.com/cse/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+ 		})();
+	</script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 	
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script>!window.jQuery && document.write(unescape('%3Cscript src="template/js/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-	<script src="template/js/script.js"></script>
-	<!--[if lt IE 7 ]>
-	<script src="template/js/libs/dd_belatedpng.js"></script>
-	<script> DD_belatedPNG.fix('.arrow a, header h1, #search-button');</script>
-	<![endif]-->
 </body>
 </html>
