@@ -1974,6 +1974,9 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 #slider li {
   position: relative; }
 
+#slider .feature-image {
+  margin-right: 241px; }
+
 #slider .feature-image img {
   width: 100%; }
 
@@ -1993,15 +1996,11 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
   color: #036; }
 
 .feature-description {
-  padding: 20px 0;
+  padding: 20px;
   background: #eff6fc;
   -webkit-box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
   box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
-  width: 100%;
-  text-align: center; }
-
-.feature-description p {
-  display: none; }
+  width: 100%; }
 
 #feature .anythingSlider {
   padding: 0; }
@@ -2018,7 +2017,7 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 
 #feature .anythingSlider .forward {
   top: 0;
-  right: 0px;
+  right: 241px;
   width: 15%;
   height: 100%;
   z-index: 12; }
@@ -2041,14 +2040,14 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 
 #feature .anythingControls {
   right: 0;
-  bottom: 50%;
+  bottom: 27px;
   z-index: 1;
   position: absolute;
   width: 100%; }
 
 #feature .thumbNav {
   text-align: center;
-  margin-right: 0; }
+  margin-right: 241px; }
 
 #feature .thumbNav li {
   display: inline; }
