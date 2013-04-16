@@ -40,160 +40,35 @@
 </head>
 
 <body>
+  <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  <![endif]-->
+
 	<header id="main-header" role="banner">
 		<div id="header-top" class="wrapper">
 			<div id="logo">
-				<h2><a href="http://www.byu.edu/">Brigham Young University</a></h2>
+				<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a> <span></span></h2>
 			</div>
 		  
 		  <!-- This should link to your organization's home page -->
 			<h1><a href="#CHANGE-THIS-LINK" id="site-name">Primary Organization</a></h1>
-			
-			<div id="search-container" role="search">
-				<a href="http://home.byu.edu/home/cas" class="button">Login</a>
-				
-				<!-- SEARCH - set up with GSA default; change URL in action if you want to use different product -->
-				<form method="get" action="http://gurgle2.byu.edu/search"> 
-					<!-- Change placeholder text to be specific for your implementation -->
-					<input type="text" name="q" id="search" placeholder="Search Organization" />
-					<input type="image" src="img/search-button.png" alt="Search" id="search-button"/>
-					
-					<!-- Uncomment next line and insert your custom collection name -->
-					<!-- input type="hidden" name="site" value="default_collection_name" -->
-					<!-- Insert your custom frontend name in place of default in next line -->
-					<input type="hidden" name="client" value="default_frontend">
-					<input type="hidden" name="output" value="xml_no_dtd">
-					<input type="hidden" name="proxystylesheet" value="default_frontend">
-				</form>
-			</div>			
-		</div>
-		
-		<!-- Primary Nav -->
-		<nav id="primary-nav" role="navigation">
-			<ul>
-				<li><a href="">Mega Dropdown Menu</a>
-					<div class="mega">
-						<ul class="links">
-							<li class="featured">
-								<ul>
-									<li><a href="#">Featured Link 1</a></li>
-									<li><a href="#">Featured Link 2</a></li>
-								</ul>
-								
-							</li>
-							<li><a href="#">Link 1</a></li>
-							<li><a href="#">Link 2</a>
-								<ul class="sublinks">
-									<li><a href="#">Sublink 1</a></li>
-									<li><a href="#">Sublink 2</a></li>
-									<li><a href="#">Sublink 3</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Link 3</a></li>
-							<li><a href="#">Link 4</a></li>
-							<li><a href="#">Link 5</a></li>
-							<li><a href="#">Link 6</a></li>
-						</ul>
-						<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
-							<p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-						<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
-							<p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-					</div>
-				</li>
-				<li><a href="">Double Mega Dropdown Menu</a>
-					<div class="mega">
-						<ul class="links double">
-							<li class="featured">
-								<ul>
-									<li><a href="#">Featured Link 1</a></li>
-									<li><a href="#">Featured Link 2</a></li>
-								</ul>
-								
-							</li>
-							<li class="left">
-  							<ul>
-  								<li><a href="#">Link 1</a></li>
-  								<li><a href="#">Link 2</a>
-  									<ul class="sublinks">
-  										<li><a href="#">Sublink 1</a></li>
-  										<li><a href="#">Sublink 2</a></li>
-  										<li><a href="#">Sublink 3</a></li>
-  										<li><a href="#">Sublink 4</a></li>
-  										<li><a href="#">Sublink 5</a></li>
-  									</ul>
-  								</li>
-  								<li><a href="#">Link 3</a></li>
-  								<li><a href="#">Link 4</a></li>
-  								<li><a href="#">Link 5</a></li>
-  								<li><a href="#">Link 6</a></li>
-  							</ul>
-							</li>
-							<li class="left">
-  							<ul>
-  								<li><a href="#">Link 7</a></li>
-  								<li><a href="#">Link 8</a></li>
-  								<li><a href="#">Link 9</a></li>
-  								<li><a href="#">Link 10</a></li>
-  								<li><a href="#">Link 11</a></li>
-  								<li><a href="#">Link 12</a></li>
-  							</ul>
-							</li>
-						</ul>
-						<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
-							<p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-						<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
-							<p><a href="#">Picture Link</a></p>
-							<p>Text text text text text.</p>
-						</div>
-					</div>
-				</li>
-				<li> <a href="">Basic Dropdown Menu</a>
-					<div class="sub">
-						<ul class="links">
-							<li><a href="">Link 1</a></li>
-							<li><a href="">Link 2</a></li>
-							<li><a href="">Link 3</a></li>
-							<li><a href="">Link 4</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a class="single" href="">Direct Menu Link</a></li>
-			</ul>
-		</nav>
-		
-		<!-- Secondary Nav -->
-		<nav id="secondary-nav" role="navigation">
-			<ul>
-				<li><a href="#">SecMenu1</a>
-					<ul class="sub">
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-					<li><a href="">Link 4</a></li></ul>
-				</li>
-				<li><a href="#">SecMenu2</a>
-					<ul class="sub">
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-					<li><a href="">Link 4</a></li></ul>
-				</li>
-				<li><a href="#">SecMenu3</a>
-					<ul class="sub">
-					<li><a href="">Link 1</a></li>
-					<li><a href="">Link 2</a></li>
-					<li><a href="">Link 3</a></li>
-					<li><a href="">Link 4</a></li></ul>
-				</li>
-			</ul>
-		</nav>
 
+			<a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
+
+			<div id="search-container" role="search">
+  			<!-- This is the default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). -->
+				<form class="basic-search" action="http://home.byu.edu/home/search" role="form">
+				  <input id="search" type="search" name="search" />
+				  <input id="search-submit" type="submit" value="Search" />
+				</form>
+				
+				<!-- This container holds the Google custom search, if enabled -->
+				<div class="gcse-wrapper">
+				  <gcse:search></gcse:search>
+				</div>
+			</div>
+			
+		</div>
 	</header>
 	
 	<div id="content" class="wrapper clearfix" role="main">
@@ -260,6 +135,132 @@
 			<strong><a href="#" class="baseline">Full News Page</a></strong>
 		</div>
     </div>
+	
+	<!-- Primary Nav -->
+	<nav id="primary-nav" role="navigation">
+		<ul>
+			<li><a href="">Mega Dropdown Menu</a>
+				<div class="mega">
+					<ul class="links">
+						<li class="featured">
+							<ul>
+								<li><a href="#">Featured Link 1</a></li>
+								<li><a href="#">Featured Link 2</a></li>
+							</ul>
+							
+						</li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a>
+							<ul class="sublinks">
+								<li><a href="#">Sublink 1</a></li>
+								<li><a href="#">Sublink 2</a></li>
+								<li><a href="#">Sublink 3</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li><a href="#">Link 5</a></li>
+						<li><a href="#">Link 6</a></li>
+					</ul>
+					<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+					<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+				</div>
+			</li>
+			<li><a href="">Double Mega Dropdown Menu</a>
+				<div class="mega">
+					<ul class="links double">
+						<li class="featured">
+							<ul>
+								<li><a href="#">Featured Link 1</a></li>
+								<li><a href="#">Featured Link 2</a></li>
+							</ul>
+							
+						</li>
+						<li class="left">
+						  <ul>
+  							<li><a href="#">Link 1</a></li>
+  							<li><a href="#">Link 2</a>
+  								<ul class="sublinks">
+  									<li><a href="#">Sublink 1</a></li>
+  									<li><a href="#">Sublink 2</a></li>
+  									<li><a href="#">Sublink 3</a></li>
+  									<li><a href="#">Sublink 4</a></li>
+  									<li><a href="#">Sublink 5</a></li>
+  								</ul>
+  							</li>
+  							<li><a href="#">Link 3</a></li>
+  							<li><a href="#">Link 4</a></li>
+  							<li><a href="#">Link 5</a></li>
+  							<li><a href="#">Link 6</a></li>
+  						</ul>
+						</li>
+						<li class="left">
+						  <ul>
+  							<li><a href="#">Link 7</a></li>
+  							<li><a href="#">Link 8</a></li>
+  							<li><a href="#">Link 9</a></li>
+  							<li><a href="#">Link 10</a></li>
+  							<li><a href="#">Link 11</a></li>
+  							<li><a href="#">Link 12</a></li>
+						  </ul>
+						</li>
+					</ul>
+					<div class="highlight"><a href="#"><span class="img menu1.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+					<div class="highlight"><a href="#"><span class="img menu2.jpg" title=""></span></a>
+						<p><a href="#">Picture Link</a></p>
+						<p>Text text text text text.</p>
+					</div>
+				</div>
+			</li>
+			<li> <a href="">Basic Dropdown Menu</a>
+				<div class="sub">
+					<ul class="links">
+						<li><a href="">Link 1</a></li>
+						<li><a href="">Link 2</a></li>
+						<li><a href="">Link 3</a></li>
+						<li><a href="">Link 4</a></li>
+					</ul>
+				</div>
+			</li>
+			<li><a class="single" href="">Direct Menu Link</a></li>
+		</ul>
+	</nav>
+	
+	<!-- Secondary Nav -->
+	<nav id="secondary-nav" role="navigation">
+		<ul>
+			<li><a href="#">SecMenu1</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+			<li><a href="#">SecMenu2</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+			<li><a href="#">SecMenu3</a>
+				<ul class="sub">
+				<li><a href="">Link 1</a></li>
+				<li><a href="">Link 2</a></li>
+				<li><a href="">Link 3</a></li>
+				<li><a href="">Link 4</a></li></ul>
+			</li>
+		</ul>
+	</nav>
     
 	<footer role="contentinfo">
 		<div id="footer-links">
@@ -317,8 +318,26 @@
 		</div>
 	</footer>
 	<!--CONTENT END-->
-	
-  <!-- Insert JS plugins here -->
+  <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
+  <script>
+		(function() {		
+ 			var cx = '009932716493032633443:hlqjz33kfkc';
+			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				'//www.google.com/cse/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+ 		})();
+	</script>
+
+
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
 	
 </body>
 </html>
