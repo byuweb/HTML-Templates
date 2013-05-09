@@ -1,9 +1,8 @@
 /* Responsive CSS */
 
-@import "slider-responsive";
 
 .wf-active #header-top h1 {
-  font-family: 'Droid Serif', sans-serif;
+  font-family: 'Droid Serif', 'Crete Round', sans-serif;
 }
 
 .wf-active h1, .wf-active h2 {
@@ -16,6 +15,9 @@
   font-size: 15px;
   line-height: 20px;
 }
+
+@import "slider-responsive";
+@import "nav";
 
 
 /*#primary-nav, #secondary-nav {
