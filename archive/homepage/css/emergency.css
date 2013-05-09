@@ -1,0 +1,127 @@
+body {
+	width:100%;
+	margin:0;
+	padding:0;
+	background-color:#C0C0C0;
+	font-size:62.5%;
+	font-family:Verdana, Arial;
+  background-image:none;
+}
+
+#container {
+	margin:0 auto;
+	padding:0;
+	width:1004px;
+	background:url('../img/leftbarbg.gif') repeat-y left;
+}
+
+h1 {
+	background:url('../img/h1bg.png') repeat-y center;color:white;text-align:center; text-transform:uppercase;
+	font-size:1.9em;
+	margin:1em 0 2px;
+  font-family:Verdana;
+}
+
+h2{
+	color:#293e5d;
+	font-size:1.42em;
+	font-weight:bold;
+	font-family:Verdana;
+	margin:10px 0 0px;
+}
+
+h3{
+	color:#293e5d;
+	font-size:1.2em;
+	font-weight:bold;
+	font-family:Verdana;
+	margin:10px 0 0px;
+}
+
+p {
+	line-height:1.25;
+	color:#293e5d;
+	font-size:1.1em;
+}
+
+p.updated {
+	/*color:#003399;*/
+	font-weight:bold;
+}
+
+#mainRight ul li {
+
+font-size:1.1em;
+color:#293e5d;
+line-height:1.5;
+
+}
+
+#leftColumn {
+	background:#b5bac6 url('../img/leftcolumnbg.gif') repeat-x top;
+	width:146px;
+	min-height:308px;
+	float:left;
+	padding-left:10px;
+	padding-top:53px;
+	margin-top:0em;
+}
+
+#leftColumn h3 {
+	color:white;
+	font-size:1em;
+	margin-top:0;
+}
+
+#leftColumn ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+#leftColumn ul li {
+	padding-bottom:1px;
+}
+
+#leftColumn ul li a {
+	text-decoration:none;
+	font-size:1em;
+	color:#293c5a;
+	font-family:Arial;
+	font-weight:bold;
+}
+
+#leftColumn ul li a:hover {	
+	text-decoration:underline;
+}
+
+#mainBody {
+	padding-bottom:18px;float:left;background:white url('../img/maintopbg.png') repeat-x top;min-height:358px;width:848px;margin-top:0em;
+}
+
+#mainLeft {
+	padding-right:12px;float:left;width:46%;border-top:1px #b0bac6 solid;border-right:1px #b0bac6 solid;margin-left:15px;min-height:300px;
+}
+
+#mainRight {
+	float:left;width:47%;margin-left:-1px;border-top:1px #b0bac6 solid;border-left:1px #b0bac6 solid;padding-left:15px;
+}
+
+#footer {
+	background:white url('../img/footertopbg.gif') repeat-x;width:100%;clear:both;padding-top:28px;padding-bottom:5px;text-align:center;color:#8f9aa4;height:70px;
+}
+
+#footer a {
+	text-decoration:none;color:#8f9aa4;
+
+}
+
+#footer a:hover {
+	text-decoration:underline;
+}
+.wrapper {
+  padding-left:0px;
+  padding-right:0px;
+  width:1004px;
+}
+#content {overflow:visible}

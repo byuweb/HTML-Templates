@@ -1,0 +1,56 @@
+name        = BYU Theme
+screenshot  = screenshot.png
+description = Brigham Young University's theme for Drupal. Built using the <a href="http://drupal.org/node/873778">Zen</a> theme.
+core        = 7.x
+base theme  = zen
+version = 7.x-1.x-beta
+
+stylesheets[all][]        = css/style.css
+stylesheets[all][]        = css/byu-drupal.css
+
+;Mobile Stylesheets to add once decided
+;stylesheets[handheld][]  = css/mobile.css
+;stylesheets[only screen and (max-device-width: 480px)][] = css/iphone.css
+
+;stylesheets-conditional[IE][all][]       = css/ie.css
+stylesheets-conditional[lte IE 7][all][]  = css/ie7.css
+stylesheets-conditional[lte IE 6][all][]  = css/ie6.css
+
+scripts[] = js/modernizr-1.7.min.js
+scripts[] = js/script.js
+
+regions[header-topright]	= Header: Search and Login area
+regions[help]           	= Help
+regions[featured]    		= Featured News
+regions[content]        	= Content
+regions[sidebar_first]  	= Left sidebar
+regions[sidebar_second] 	= Right sidebar
+regions[footer-column1]	= Footer Column 1
+regions[footer-column2]	= Footer Column 2
+regions[footer-column3]	= Footer Column 3
+regions[footer-column4]	= Footer Column 4
+regions[footer-column5]	= Footer Column 5
+regions[footer-bottom]	= Footer Bottom
+
+features[] = logo
+features[] = name
+features[] = favicon
+features[] = main_menu
+features[] = secondary_menu
+
+; Set the default values of settings on the theme-settings.php form.
+
+settings[parent_org]               = 'Parent Organization'
+settings[parent_org_link]          = 'Parent Organization URL'
+settings[zen_breadcrumb]           = yes
+settings[zen_breadcrumb_home]      = 1
+settings[zen_breadcrumb_trailing]  = 0
+settings[zen_breadcrumb_title]     = 1
+settings[zen_jump_link_target]     = main-menu
+settings[zen_rebuild_registry]     = 0
+settings[zen_wireframes]           = 0
+
+; To make this sub-theme an admin theme with shortcut links next to titles,
+; uncomment the line below.
+
+;settings[shortcut_module_link]    = 1
