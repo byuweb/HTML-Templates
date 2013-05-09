@@ -1,0 +1,998 @@
+/* Style.css
+ * Responsive styles built by the BYU web community
+ * Updated 20 Mar 2012
+ */
+ 
+@import "colors";
+@import "mixins";
+
+
+@media all and (min-width:300px) {
+
+  @import "flexslider";
+
+  $touchButtonSize:44px;
+  $mouseButtonSize:32px;
+
+body {
+  font-family:'Open Sans', "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+  font-weight:normal;
+  overflow-x: hidden; }
+
+
+.wf-active {
+  h1,h2 {
+    font-family:'Crete Round', sans-serif;
+    font-weight:normal; }
+  h3, h4, #calendar .day span, a.baseline, #calendar > strong, a.more {
+    font-family:'Open Sans', sans-serif;
+    font-weight: 600; }
+  h2 {
+    font-size:1.65em; } }
+    
+#logo {
+  @include byu-gradient(100px 20px);
+  h1 {
+    background-image: url('../img/logo.png');
+    width:90px; } }
+
+
+#search-container {
+  background-color: $blue0; }
+
+a.mybyu {
+  color: white;
+  display: block;
+  @include linear-gradient($blue5, $blue3);
+  @include border-radius(14px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset,0 1px 8px rgba(0, 0, 0, 0.2);
+  padding: 4px 28px;
+  //float: left;
+  //margin-right: 12px;
+  text-decoration: none;
+  font-weight: bold; }
+
+
+.flexslider {
+  position:relative;
+  padding:0 0 ($touchButtonSize - 9px);
+  margin:0 0 1.25em;
+  border:none;
+  .no-touch & {
+    padding-bottom:$mouseButtonSize;}
+  .feature-description {
+    padding-bottom:.5em; }
+  .slides li {
+    padding-top:1em;
+    > a, > div {
+      display:block; } } }
+
+.flex-control-nav {
+  display:block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  li {
+    margin: 0 0 0 5px;
+    display: inline-block;
+    zoom: 1;
+    &:first-child {
+      margin: 0;
+      .touch & a {
+        background-position:28px -176px;
+        &:hover, &:focus, &.active {
+          background-position:28px -220px; } } }
+    &:last-child {
+      .touch & a {
+        background-position:0px -176px;
+        &:hover, &:focus, &.active {
+          background-position:0px -220px; } } }
+    a {
+      width: $touchButtonSize;
+      height: $touchButtonSize;
+      display: block;
+      background: transparent url('../img/slider-controls.png') 14px -176px no-repeat;
+      cursor: pointer;
+      text-indent: -999em;
+      .no-touch & {
+        width:$mouseButtonSize;
+        height:$mouseButtonSize;
+        background-position:8px -182px; }
+      &:hover, &:focus, &.active {
+        background-position:14px -220px;
+        .no-touch & {
+          background-position:8px -226px; } }
+      &.active {
+        cursor: default; } } } }
+
+.flex-direction-nav {
+  li {
+    a {
+      margin:0 !important;
+      width: $touchButtonSize;
+      height: $touchButtonSize;
+      display: block;
+      background: transparent url('../img/slider-controls.png') 0px 0px no-repeat;;
+      position: absolute;
+      cursor: pointer;
+      top:auto;
+      bottom:0;
+      text-indent: -999em;
+      .no-touch & {
+        width:$mouseButtonSize;
+        height:$mouseButtonSize;
+        background-position:0px -6px; }
+      &:hover, &:focus {
+        background-position:0px -44px;
+        .no-touch & {
+          background-position:0px -50px; } } }
+    .next {
+      right:0;
+      background-position:28px -88px;
+      .no-touch & {
+        background-position:14px -94px; }
+      &:hover, &:focus {
+        background-position:28px -132px;
+        .no-touch & {
+          background-position:14px -138px; } } }
+    .prev {
+      left:0; } } }
+
+#primary-nav, #secondary-nav {
+  background-color:#fff;
+  width:100%;
+  &.open {
+    display:block;
+    position:absolute;
+    z-index:2000; } }
+.highlight {
+  display:none; }
+
+
+#content.menu-open {
+  margin-top:52em; }
+
+$s-height: 220px;
+$s-padding: 10px;
+#main-header { 
+  z-index:1000;
+  .flex-container {
+    padding:0; } }
+
+#secondary-nav {
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color: #fff;
+  ul.slides {
+    background-color: #fff;
+    padding:0;
+    > li {
+      padding-top:.5em;
+      padding-bottom:3em;
+      > a {
+        border-bottom:1px solid $blue7;
+        border-top:1px solid $blue10;
+        padding:.4em 0 .5em;
+        background-color:$blue11;
+        position:absolute;
+        bottom:0;
+        width:100%;
+        color: $blue2;
+        text-align: center;
+        &:hover {
+          text-decoration: none; } } } }
+  .sub {
+    padding-left:4%;
+    li {
+      background-color: #fff;
+      width:24%;
+      height:6.5em;
+      float:left; }
+    a {
+      padding:2px;
+      font-weight:bold;
+      font-size:12px;
+      padding-top:52px;
+      width:auto;
+      text-align:center;
+      &:visited {
+        color:$blue4; }
+      &.next {
+        width:30px; } } }
+  li#mobile .sub li {
+    width:32%;
+    a {
+      padding-top: 68px;
+      &:before {
+        width:75px;
+        height:65px;
+        margin-left:-38px; } } }
+  .flex-direction-nav li {
+    .prev{
+      left:5%; }
+    .next {
+      right:5%; } } }
+
+.sub a {
+  position: relative;
+  &:before	{
+    content:" ";
+    display:block;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-25px;
+    background:transparent url('../img/icons.png') 0px 0px no-repeat; } }
+
+// Icons for all of the links
+ a.admission:before {background-position: 0px -50px }
+    a.alumni:before {background-position: 0px -100px }
+     a.apply:before {background-position: 0px -150px }
+ a.athletics:before {background-position: 0px -200px }
+a.activities:before {background-position: 0px -250px }
+  a.benefits:before {background-position: 0px -300px }
+a.blackboard:before {background-position: 0px -350px }
+     a.books:before {background-position: 0px -400px }
+ a.bookstore:before {background-position: 0px -450px }
+
+  a.calendar:before {background-position: -50px  0px }
+   a.catalog:before {background-position: -50px -50px  }
+ a.checklist:before {background-position: -50px -100px }
+    a.church:before {background-position: -50px -150px }
+  a.colleges:before {background-position: -50px -200px }
+     a.coned:before {background-position: -50px -250px }
+a.conference:before {background-position: -50px -300px }
+      a.cost:before {background-position: -50px -350px }
+    a.career:before {background-position: -50px -400px }
+       a.ctl:before {background-position: -50px -450px }
+
+a.departments:before {background-position: -100px  0px }
+     a.dining:before {background-position: -100px -50px  }
+  a.directory:before {background-position: -100px -100px }
+  a.financial:before {background-position: -100px -150px }
+     a.giving:before {background-position: -100px -200px }
+  a.gradebook:before {background-position: -100px -250px }
+   a.graduate:before {background-position: -100px -300px }
+    a.housing:before {background-position: -100px -350px }
+a.information:before {background-position: -100px -400px }
+       a.jobs:before {background-position: -100px -450px }
+
+    a.library:before {background-position: -150px  0px }
+        a.pay:before {background-position: -150px -50px  }
+    a.profile:before {background-position: -150px -100px }
+    a.ratings:before {background-position: -150px -150px }
+   a.register:before {background-position: -150px -200px }
+       a.roll:before {background-position: -150px -250px }
+   a.schedule:before {background-position: -150px -300px }
+a.scholarship:before {background-position: -150px -350px }
+   a.syllabus:before {background-position: -150px -400px }
+    a.testing:before {background-position: -150px -450px }
+
+a.transcript:before {background-position: -200px  0px }
+  a.transfer:before {background-position: -200px -50px }
+   a.website:before {background-position: -200px -100px }
+    a.y-time:before {background-position: -200px -150px }
+
+   a.events-m:before {background-position: -275px 0px }
+       a.ls-m:before {background-position: -275px -75px  }
+a.directory-m:before {background-position: -275px -150px }
+      a.map-m:before {background-position: -275px -225px }
+ a.schedule-m:before {background-position: -275px -300px }
+     a.news-m:before {background-position: -275px -375px }
+   a.sports-m:before {background-position: -200px -375px }
+  a.library-m:before {background-position: -200px -300px }
+
+
+// Style the current date in the events icon
+a.events-m {
+  .date, .day {
+     position: absolute;
+     font-size: 11px;
+     top:-6px;
+     width:100%;
+     left:50%;
+     margin-left:-50%;
+     color:$blue7; }
+   .date {
+     color:#888;
+     top:17px;
+     font-size: 30px; } }
+
+
+
+
+
+#primary-nav{
+  top:31.5em;
+  overflow-y: visible;
+  width:200%;
+  border-bottom: 2px solid $blue5;
+  ul {
+    border-bottom: 1px solid #fff; }
+  a {
+    display: block;
+    color: $blue2;
+    padding:.75em 5%;
+    font-weight: bold;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid $blue7;
+    background: $blue9 url("../img/slider-controls.png") 95% -88px no-repeat;
+    &:hover {
+      text-decoration: none;
+      background: $blue9 url("../img/slider-controls.png") 95% -132px no-repeat; }
+    &:active {
+      color:$red0; } }
+  li {
+    width:50%;}
+  .mega {
+    position:absolute;
+    top:0;
+    left: 50%;
+    width:50%;
+    display: none;
+    z-index:101;
+    .featured, hr {
+      display: none; }
+    ul {
+      list-style: none; }
+    li {
+      width:100%; }
+    h3 {
+      padding-left:10%;
+      font-family:'Open Sans', "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+      color: $blue0;
+      font-weight: bold;
+      font-size: 1em;  }
+    .back {
+      position: absolute;
+      width:100%;
+      height:2em;
+      top:-1px;
+      left:0;
+      text-indent: -999em;
+      background: transparent url("../img/slider-controls.png") 4% 0px no-repeat;
+      border-bottom: 1px solid $blue9;
+      &:hover {
+        background-color: transparent;
+        background-position: 4% -44px; } }
+    a {
+      font-weight: normal;
+      width:94%;
+      float:left;
+      padding:.35em 1% .5em 5%;
+      margin-right:1%;
+      background-color: #fff;
+      background-image: none;
+      border-bottom: none;
+      &:hover {
+        color:$blue0;
+        background-color: $yellow1; }
+      &:active {
+        color:$red0; } } }
+  &.sub-open {
+    left:-100%; }
+  li.open {
+    .mega {
+      display: block;
+      @include clearfix();
+      background-color: #fff;
+      padding-bottom:1em;
+      border-bottom:2px solid $blue0; } } }
+
+
+#calendar, #news {
+  padding-top:1.5em;
+  padding-bottom:2em;
+  h2 {
+    margin:0 0 .5em; } }
+
+.day {
+  overflow: hidden;
+  margin:0 0 .25em;
+  span.date {
+    font-size:1.5em;
+    .wf-active & {
+      font-family: 'Crete Round', sans-serif;
+      font-weight: normal; } } 
+  h3 {
+    font-size: 1em;
+    clear: both;
+    margin-top: 0; }
+  a {
+    width:70%;
+    float: left;
+    margin-bottom: .5em;
+    padding-left: 14px;
+    text-indent: -8px; }
+  .time {
+    float: right;
+    clear: right;
+    color: #888;
+    margin-bottom:0 !important; } }
+    
+#calendars {
+  margin:1.5em 0;
+  padding:.75em 0;
+  clear: both;
+  border-top: solid 1px #DDD;
+  border-bottom: solid 1px #DDD;
+  overflow: hidden; }
+
+
+.briefs-item {
+  padding:.5em 0 1em; }
+.news-item {
+  padding: 1em 0;
+  border-bottom:1px solid #eee; }
+
+
+} // END 300px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:450px) {
+
+#logo {
+  @include byu-gradient(140px 20px);
+  h1 {
+    width:auto; } }
+
+.slides li > a, .feature-description {
+  width:350px;
+  margin:0 auto; }
+
+#primary-nav {
+  top:24em;
+  .mega ul.double li.left {
+    width:50%;
+    float:left;
+    a {
+      padding-left:10%;
+      width:89% } } }
+
+#content {
+  &.menu-open {
+    margin-top:45em; }
+ .flex-direction-nav {
+    position:absolute;
+    top:138px;
+    width:100%; } }
+
+#secondary-nav {
+  .sub {
+    padding-left:1%; }
+  .sub li {
+    width:16.5%; }
+  li#mobile .sub li {
+    width:24.5%; } }
+
+.briefs-item {
+  padding:.25em 0;
+  @include clearfix();
+  img {
+    padding:0 1em 1em 0; }
+  a {
+    float: left;
+    clear: both; }
+  h3 { 
+    margin: 0;
+    a {
+      float:none; } } }
+    
+} // END 450px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$image-width:74.361702%;
+
+@media all and (max-width:599px) {
+
+// Reset description stuff to white if the screen gets smaller again
+.feature-description {
+  background-color:transparent !important;
+  background-image:none !important;
+  border-left:none !important; }
+}
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:600px) {
+
+a.mybyu {
+  position: absolute;
+  top:0;
+  right:3em; }
+
+header #primary-nav-menu {
+  right:1%;
+  a {
+    color: $blue9; } }
+
+#content {
+  &.menu-open {
+    margin-top:0; } }
+
+#primary-nav {
+  top:5.5em; }
+
+#main-header .flex-container {
+  position: absolute;
+  top:0;
+  left:0; }
+#secondary-nav {
+  display: block !important;
+  margin:0;
+  padding:0;
+  top:3.4em;
+  left:5%;
+  font-size: 14px;
+  overflow: visible !important;
+  background-color: transparent;
+  #mobile, .clone {
+    display:none !important; }
+  ul.slides {
+    width:100% !important;
+    background-color: transparent;
+    -webkit-transform: none !important;
+       -moz-transform: none !important;
+         ms-transform: none !important;
+          o-transform: none !important;
+            transform: none !important;
+    > li {
+      padding:0;
+      width:auto !important;
+      > a {
+        font-weight: normal;
+        border:none;
+        padding:.5em .6em;
+        background-color:transparent;
+        position:relative;
+        width:auto;
+        color: $blue9;
+        text-align:left;
+        &:hover {
+          color: #fff; }
+        .wf-active & {
+          font-weight: 600; } } } }
+  .sub {
+    display: none; }
+  li#alumni {
+    &.open .sub {
+      left:auto;
+      right:0; } }
+  li.open {
+    overflow: visible;
+    .sub {
+      display: block;
+      position: absolute;
+      top:2.25em;
+      left:0;
+      width:16em;
+      padding:.75em 0;
+      background-color:#fff;
+      @include box-shadow(0px -2px 10px);
+      border-bottom: 3px solid $blue4;
+      li {
+        float:none;
+        height: auto;
+        width: auto; }
+      a {
+        padding:.35em 1.25em .5em;
+        font-size: 1em;
+        text-align: left;
+        &:hover {
+          text-decoration: none;
+          background-color: $blue4;
+          color: #fff; } } } }
+  ul.slides li.open > a {
+    position: relative;
+    z-index: 10;
+    @include border-radius(3px 3px 0 0);
+    background-color: #fff;
+    color: $blue0; }
+  .flex-direction-nav { 
+    display: none !important; } }
+
+.sub a:before	{
+    background:none; }
+
+a.events-m {
+  .date, .day { 
+    display: none; } }
+
+
+
+
+
+.flexslider {
+  padding-bottom:50px;
+  margin-bottom:.25em;
+  .no-touch & {
+    padding-bottom:44px;
+    margin-bottom:.75em; }
+  .slides li {
+    padding-top:0;
+    > a {
+      margin-left:0;
+      width:$image-width;
+      padding-right:(100% - $image-width);
+      &.wide {
+        width:100%;
+        padding-right:0;
+        img {
+          width:100%;
+          max-width:100%; } }
+      img {
+        width:100%;
+        max-width:100%; } } } }
+
+.feature-description {
+  background-color: $blue10;
+  height:395px;
+  width:210px;
+  padding:0 1em 0 1.5em;
+  margin:0 !important;
+  position:absolute;
+  top:0;
+  right:0;
+  @include transition('width .5s');
+  @include transition('padding .5s');
+  @include box-shadow(0px 0px 8px, .25);
+  h2 {
+    font-size:.95em;
+    margin-bottom:0;
+    font-weight:normal; }
+  p {
+    font-size:.8em; }
+  h2 + p {
+    margin-top:0; }
+  &.lightText {
+    a, a:link, a:hover, a:visited, a:active, a:focus {
+      color:$blue8; }
+    p {
+      color:rgba(255,255,255,.55); } } }
+      
+.flex-direction-nav {
+  bottom:0; }
+
+.cssgradients .full .feature-description {
+  @include radial-gradient();
+  border-left:1px solid rgba(255,255,255,.5); }
+
+
+#calendar, #news {
+  width:40%;
+  float:left;
+  border-top:none;
+  border-bottom:none;
+  h2 {
+    font-size: 1.5em;
+    border-bottom:1px solid #ddd;
+    margin-bottom:18px; } }
+  
+
+.day {
+  font-size: .9em;
+  clear:both;
+  padding-top:0;
+  margin-bottom:.75em;
+  overflow:hidden;
+  h3 {
+    margin-top:0; }
+  .date {
+    font-size:1.5em; }
+  a {
+    width:60%;
+    float:left;
+    clear:both;
+    margin-bottom:.75em; }
+  .time {
+    clear:none;
+    width:34%;
+    float:right;
+    text-align:right; } }
+
+#calendars {
+  clear:both; }
+  
+
+
+
+#news {
+  padding-right:0;
+  h2 {
+    width:93.3%; } }
+  
+.briefs-item {
+  padding-bottom: 1em;
+  img {
+    padding:0; }
+  a {
+    float: none; }
+  h3 {
+    margin-top: .25em;
+    font-size:.9em; 
+    margin-right:-.5em; } }
+  
+
+footer {clear:both;}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:700px) {
+
+.slides li.full > a {
+  width:100%;
+  padding-right:0;
+  img {
+    width:auto;
+    max-width:100%; } }
+
+.feature-description {
+  padding:0 1em 0 1.5em;
+  h2 {
+    margin-bottom:.5em;
+    .wf-active & {
+      font-size:1.5em; } }
+  p {
+    font-size:1em; } }
+
+.day {
+  a {
+    width:65%; }
+  .time {
+    width:34%; } }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:800px) {
+
+
+
+$baseSize:16; // 16px
+$fontSize:14; // 14px
+$lineHeight:18; // 18px
+
+body {
+  font-size:($fontSize/$baseSize) + em;
+  line-height:$lineHeight/$fontSize; }
+
+#logo {
+  height:39px; }
+#search-container {
+  padding-top: 5px;
+  font-size: 15px; 
+  padding-bottom:5px; }
+
+.flexslider {
+  padding-bottom:0 !important;
+  .slides li > a img {
+    max-width:699px; }
+  .feature-description {
+    padding:0 1.5em 0 2em; }
+  .flex-direction-nav, .flex-control-nav {
+    width:210px;
+    position:absolute;
+    right:0;
+    padding:0 1em 0 1.5em; }
+  .flex-direction-nav li {
+    a.next {
+      right:.75em; }
+    a.prev {
+      left:1.25em; } } }
+
+.flexslider {
+  .feature-description, .flex-control-nav, .flex-direction-nav {
+    width:(100% - $image-width + 2%);
+    padding:.25em 3% 0 4%; }
+  .flex-direction-nav, .flex-control-nav {
+    padding-top:0;
+    margin-bottom:.25em;
+    bottom:.25em; } }
+
+.briefs-item h3 {
+  font-size: 1em; }
+
+.day {
+  font-size: 1em;
+  a {
+    width:65%; }
+  .time {
+    width:27%; } }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:900px) {
+
+.flexslider {
+  .feature-description, .flex-control-nav, .flex-direction-nav {
+    width:(100% - $image-width - 3.5%);
+    padding:.5em 3% 0 4%; }
+  .flex-direction-nav, .flex-control-nav {
+    padding-top:0; } }
+
+.day {
+  a {
+    width:75%; }
+  .time {
+    width:24%; } }
+
+}
+
+
+
+@media all and (min-width:1020px) {
+
+.flexslider {
+  .feature-description, .flex-control-nav, .flex-direction-nav {
+    width:(100% - $image-width - 4.75%);
+    padding:1em 2% 0 3%; }
+  .flex-direction-nav {
+    padding-top:0; } }
+
+.flex-container {
+  margin:0 auto;
+  width:940px; }
+  
+#calendar {
+  width:30%; }
+  
+#news {
+  width:54%; }
+.briefs-item {
+   width:28.368%;
+   float:left;
+   margin-right:4.1%; }
+#news-container {
+  clear:both; }
+.news-item {
+  width:44.602%;
+  float:left;
+  margin-right:4.1%; }
+.baseline {
+  clear:both; }
+
+}
+
+@media all and (min-width:1040px) {
+
+#content {
+  width:1040px;
+  margin:0 auto;}
+
+}
