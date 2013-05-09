@@ -1,0 +1,10 @@
+/*************/
+/* IE7 FIXES */
+/*************/
+
+#Content ul li{list-style-image:url(templates/images/lightBlueBulletShort.gif);list-style-position:outside;}
+#Wrapper #Content #wrap{ display:table-cell; width:977px;}
+#content_top img{padding:6px;float:right;}
+#content_top h2{font-size:14px; font-weight:bold; padding:4px 8px; color:#6f6c64; }
+#footer{width:100%;text-align:center;margin:auto auto auto 0px;background-color:#fff;font-size:1em;color:#617590;padding:.5em 0em;}
+#BottomBar{margin-top:2.5em;background-color:#fff;}

@@ -1,0 +1,118 @@
+ul li.collapsed{ list-style:none;}
+#search-container > div > div {float: left;}
+#user-login-form .item-list, #edit-cas-login-redirection-message {display:none;margin:0;}
+#user-login-form #edit-actions {margin:0}
+#block-system-user-menu .content li {
+	list-style-type: none;
+}
+#search-container #block-user-login form {
+	box-shadow: none;
+	background-image: none;
+}
+#block-system-user-menu .content a {
+    color: #fff;
+    display: block;
+    background: #628cb6;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #628cb6), color-stop(100%, #336699));
+	background-image: -webkit-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -moz-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -o-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -ms-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: linear-gradient(top, #628cb6 0%, #336699 100%);
+	border-radius:14px;
+	box-shadow:
+		0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		0 1px 8px rgba(0, 0, 0, 0.2); 	
+    padding: 5px 28px;
+    float: left;
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#block-system-user-menu .content a:hover {
+    background: #369;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#369),color-stop(100%,#147));
+    background-image: -webkit-linear-gradient(top,#369 0,#147 100%);
+    background-image: -moz-linear-gradient(top,#369 0,#147 100%);
+    background-image: -o-linear-gradient(top,#369 0,#147 100%);
+    background-image: -ms-linear-gradient(top,#369 0,#147 100%);
+    background-image: linear-gradient(top,#369 0,#147 100%);
+}
+.no-js #primary-nav ul li:hover.nochild a, #primary-nav ul li.hover.nochild a { border-radius: 4px;}
+#primary-nav ul li .sub .sub {
+	float: none;
+	position: static;
+	padding: 0;
+	box-shadow: none; 
+	-moz-box-shadow: none; 
+	-webkit-box-shadow: none; 
+	border: none;
+}
+#primary-nav ul li ul .featured a {
+ font-size: 14px;
+ font-weight: bold;
+}
+#primary-nav ul li ul {
+ /*background: #eff6fc;*/
+ width: 220px;
+ float: left;
+ padding: 10px 0;
+ /*border: solid 1px #e0edf9;*/
+}
+#primary-nav ul li ul a {
+  padding: 3px 12px;
+  line-height: 1.35;
+}
+#primary-nav ul li .sub ul a:hover, .no-js #primary-nav  ul li .sub ul a:hover {
+  color: #fff;
+  background: #369;
+  background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#036),color-stop(100%,#025));
+  background-image: -webkit-linear-gradient(top,#036 0,#025 100%);
+  background-image: -moz-linear-gradient(top,#036 0,#025 100%);
+  background-image: -o-linear-gradient(top,#036 0,#025 100%);
+  background-image: -ms-linear-gradient(top,#036 0,#025 100%);
+  background-image: linear-gradient(top,#036 0,#025 100%);
+}
+#primary-nav ul li ul li ul { margin: -2px 0 2px; border: 0; padding: 0; float: none; }
+#primary-nav ul li ul li ul li {list-style-type:none;}
+#primary-nav ul li ul li ul li a { padding: 1px 12px 1px 24px;}
+#primary-nav ul li ul li ul li a:before {
+  content: '\25B8';
+  position: absolute;
+  left: 12px;
+  top: 2px;
+  font-size: 10px;
+  list-style-type:none;
+}
+
+#block-user-login input.form-submit{
+    color: #fff;
+    display: block;
+    background: #628cb6;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #628cb6), color-stop(100%, #336699));
+	background-image: -webkit-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -moz-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -o-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -ms-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: linear-gradient(top, #628cb6 0%, #336699 100%);
+	border-radius:14px;
+	box-shadow:
+		0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		0 1px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px 28px;
+	border: none;
+    float: left;
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#block-user-login input.form-submit:hover {
+    background: #369;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#369),color-stop(100%,#147));
+    background-image: -webkit-linear-gradient(top,#369 0,#147 100%);
+    background-image: -moz-linear-gradient(top,#369 0,#147 100%);
+    background-image: -o-linear-gradient(top,#369 0,#147 100%);
+    background-image: -ms-linear-gradient(top,#369 0,#147 100%);
+    background-image: linear-gradient(top,#369 0,#147 100%);
+}

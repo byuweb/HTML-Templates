@@ -1,0 +1,40 @@
+/***SOCIAL MEDIA***/
+#footer-links .addthis_toolbox a {
+  padding-left: 0;
+  text-index: 0;
+}
+
+#footer-links .addthis_toolbox a span {
+  padding-right: 10px;
+  margin: 0;
+}
+
+a#follow-facebook {
+  background: url("../../img/social-icons.png") no-repeat 0px -16px;
+  padding-left: 26px;
+  height: 16px;
+}
+
+a#follow-facebook:hover {
+  background: url("../../img/social-icons.png") no-repeat 0px 0px;
+}
+
+a#follow-twitter {
+  background: url("../../img/social-icons.png") no-repeat 0px -80px;
+  padding-left: 26px;
+  height: 16px;
+}
+
+a#follow-twitter:hover {
+  background: url("../../img/social-icons.png") no-repeat 0px -64px;
+}
+
+a#follow-youtube {
+  background: url("../../img/social-icons.png") no-repeat 0px -48px;
+  padding-left: 26px;
+  height: 16px;
+}
+
+a#follow-youtube:hover {
+  background: url("../../img/social-icons.png") no-repeat 0px -32px;
+}

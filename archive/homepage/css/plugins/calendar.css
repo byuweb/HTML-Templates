@@ -1,0 +1,73 @@
+/*** CALENDAR ***/
+#calendar h2
+{
+	font: bold 16px Arial, Helvetica, sans-serif;
+	color: #888;
+	padding: 32px 6px 5px;
+	margin: 0 0 15px;
+	border-bottom: 1px solid #DDD;
+}
+
+#calendar
+{	
+	background: url('../../img/margin.png') no-repeat right 22px;
+	display: inline;
+	float: left;
+	
+	min-height: 416px;	
+	width: 296px;
+
+	margin-right: 23px;
+	padding: 0 57px 27px 0;
+}
+
+#calendar .day
+{
+	margin-bottom: 18px;
+	overflow: hidden;
+	*zoom: 1;
+}
+
+#calendar .date
+{
+	font-size: 20px;
+	padding-right: 6px;
+}
+
+#calendar h3
+{
+	clear: both;
+	font-size: 14px;
+	margin-top: 0;
+}
+
+#calendar a
+{
+	float: left;
+	width: 206px;
+	margin-bottom: 4px;
+	padding-left: 14px;
+	text-indent: -8px;
+}
+
+#calendar .time
+{
+	float: right;
+	clear: right;
+	color: #888;
+}
+
+#calendars
+{
+	border-top: solid 1px #ddd;
+	border-bottom: solid 1px #ddd;
+	padding: 12px 0;
+	margin: 0 0 12px;
+	overflow: hidden;
+	*zoom: 1;	
+}
+
+#calendars li
+{
+	list-style: none;
+}

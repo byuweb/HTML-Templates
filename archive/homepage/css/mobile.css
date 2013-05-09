@@ -1,0 +1,181 @@
+/* BYU Mobile Stylesheet
+* Last Updated: 29 Sep 2011
+* Written by: BYU Web Community
+* web.byu.edu
+*/
+
+/*! normalize.css 2011-08-12T17:28 UTC · http://github.com/necolas/normalize.css */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {display:block}
+audio, canvas, video {display:inline-block; *display:inline; *zoom:1 }
+audio:not([controls]) {display:none}
+[hidden] {display:none}
+html {font-size:100%; overflow-y:scroll; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%}
+body {margin:0}
+body, button, input, select, textarea {font-family:"Lucida Grande","Lucida Sans Unicode",sans-serif}
+a:focus {outline:thin dotted}
+a:hover, a:active {outline:0}
+abbr[title] {border-bottom:1px dotted}
+b, strong {font-weight:bold}
+blockquote {margin:1em 40px}
+dfn {font-style:italic}
+mark {background:#ff0; color:#000}
+pre, code, kbd, samp {font-family:monospace,serif; _font-family:'courier new',monospace; font-size:1em}
+pre {white-space:pre; white-space:pre-wrap; word-wrap:break-word}
+q {quotes:none}
+q:before, q:after {content:''; content:none}
+small {font-size:75%}
+sub, sup {font-size:75%; line-height:0; position:relative; vertical-align:baseline}
+sup {top:-0.5em}
+sub {bottom:-0.25em}
+ul, ol {margin:0; padding:0}
+dd {margin:0}
+nav ul, nav ol {list-style:none; list-style-image:none}
+img {border:0; -ms-interpolation-mode:bicubic}
+svg:not(:root) {overflow:hidden}
+figure {margin:0}
+form {margin:0}
+fieldset {margin:0 2px; padding:.35em .625em .75em}
+legend {border:0; *margin-left:-7px }
+button, input, select, textarea {font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle }
+button, input {line-height:normal; *overflow:visible }
+table button, table input {*overflow:auto}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {cursor:pointer; -webkit-appearance:button}
+input[type="checkbox"], input[type="radio"] {box-sizing:border-box; padding:0}
+input[type="search"] {-webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box}
+input[type="search"]::-webkit-search-decoration {-webkit-appearance:none}
+button::-moz-focus-inner, input::-moz-focus-inner {border:0; padding:0}
+textarea {overflow:auto; vertical-align:top}
+table {border-collapse:collapse; border-spacing:0}
+
+/* Text */
+html {font-size:100%;line-height:1.125;}
+body {
+    color: #444;
+    font: .8125em "Lucida Grande","Lucida Sans",Helvetica,Arial,sans-serif;
+}
+h1 { font:bold 2.25em/1 "Palatino Linotype","Palatino",Times,"Times New Roman",serif; margin:18px 0; color:#036;}
+h2 { font:bold 24px/27px "Palatino Linotype","Palatino",Times,"Times New Roman",serif; margin:18px 0 9px;}
+h3 { font:bold 15px/18px Helvetica,Arial,sans-serif }
+h4 { font:bold 13px/18px "Lucida Grande","Lucida Sans",Helvetica,Arial,sans-serif }
+h5 { font:13px/18px "Lucida Grande","Lucida Sans",Helvetica,Arial,sans-serif }
+h6 { font:italic 13px/18px "Lucida Grande","Lucida Sans",Helvetica,Arial,sans-serif }
+h2, h3, h4, h5, h6 { color: #444 }
+h3, h4, h5, h6 { margin: 9px 0 }
+h1+h2, h3+h4, h4+h5, h5+h6 { margin-top: -9px }
+body em { font-weight:bold;}
+body strong { font-style:italic;}
+body, select, input, textarea { color: #444 }
+p a { text-decoration: underline}
+p { margin: 9px 0}
+
+/* Links */
+a { color:#369; text-decoration:none;}
+a:hover { color:#025; text-decoration:underline;}
+a:active { color: #c00}
+a.visited { color: #539}
+a.button {
+    color: #fff;
+    display: block;
+    background: #628cb6;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #628cb6), color-stop(100%, #336699));
+	background-image: -webkit-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -moz-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -o-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -ms-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: linear-gradient(top, #628cb6 0%, #336699 100%);
+	border-radius:14px;
+	box-shadow:
+		0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		0 1px 8px rgba(0, 0, 0, 0.2);
+    padding: 5px 28px;
+    float: left;
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+a.button:hover {
+    background: #369;
+    background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#369),color-stop(100%,#147));
+    background-image: -webkit-linear-gradient(top,#369 0,#147 100%);
+    background-image: -moz-linear-gradient(top,#369 0,#147 100%);
+    background-image: -o-linear-gradient(top,#369 0,#147 100%);
+    background-image: -ms-linear-gradient(top,#369 0,#147 100%);
+    background-image: linear-gradient(top,#369 0,#147 100%);
+}
+
+/* Blockquotes */
+blockquote {
+    font-style: italic;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    background-color: #f4f4f4;
+    border: 1px solid #dedede;
+    box-shadow: 2px 3px 5px 0 #dedede;
+	-moz-box-shadow: 2px 3px 5px 0 #dedede;
+	-webkit-box-shadow: 2px 3px 5px 0 #dedede;
+    color: #333;
+    margin: 25px 20px 25px 0;
+    padding: 3px 25px;
+}
+blockquote:before {
+    color: #bbb;
+    content: "\201C";
+    font-size: 3em;
+    line-height: .1em;
+    margin-right: .2em;
+    vertical-align: -.4em;
+}
+blockquote:after {
+    color: #bbb;
+    content: "\201D";
+    font-size: 3em;
+    line-height: .1em;
+    vertical-align: -.45em;
+}
+blockquote :first-child { display: inline }
+
+/* Tables */
+table { border-collapse:collapse; border-spacing:0; margin:0 0 9px;}
+table, td, th { border:1px solid #ddd}
+td, th { padding:.125em .5em; text-align:left; vertical-align:top;}
+td { border-left:1px dotted #eee; border-right:1px dotted #eee;}
+th { background:#f9f9f9; border-right:1px solid #e9e9e9; border-left:1px solid #e9e9e9;}
+table caption { color:#888; text-align:left; margin:.15em .25em; font-style:italic;}
+tfoot { font-weight:bold}
+tfoot td { color:#666; border-top-color:#666;}
+td, td img { vertical-align:top}
+
+/* Lists */
+ul, ol { margin-left: 1.5em }
+ol { list-style-type:decimal; margin-left:2em;}
+ol ol { list-style-type: lower-alpha }
+ol ol ol { list-style-type: lower-roman }
+ol ol ol ol { list-style-type: decimal }
+ol ol ol ol ol { list-style-type: lower-alpha }
+ol ol ol ol ol ol { list-style-type: lower-roman }  
+ul { list-style-type:disc; margin-left:2em;}
+ul ul { list-style-type: circle }
+ul ul ul { list-style-type: disc }
+ul ul ul ul { list-style-type: circle }
+ul ul ul ul ul { list-style-type: disc }
+ul ul ul ul ul ul { list-style-type: circle }
+ul ul { margin-top:.25em; margin-bottom:.25em;}
+nav ul, nav ul ul { list-style:none}
+nav ul, nav li { margin:0;}
+dt { font-weight: bold }
+dd { padding: 0 0 .75em 1em }
+
+
+/* Mobile stuff */
+body {margin:0 5%;}
+
+
+
+
+/* The end stuff */
+.alpha { margin-left: 0!important }
+.omega { margin-right: 0!important }
+
+.clearfix:after, #primary-nav ul:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0;}
+* html .clearfix, * html #primary-nav ul, #primary-nav * html ul { zoom: 1 }
+*:first-child+html .clearfix, *:first-child+html #primary-nav ul, #primary-nav *:first-child+html ul { zoom: 1 }

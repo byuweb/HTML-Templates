@@ -1,0 +1,175 @@
+@import "compass";
+@import "global-colors";
+
+/* BYU Template Stylesheet
+* Last Updated: 22 Sep 2011
+* Written by: BYU Web Community
+* Theme: BYU
+* web.byu.edu
+*/
+
+@import "normalize";
+@import "basic";
+@import "header";
+@import "nav";
+
+
+/* Header */
+/*
+#main-header { background: url("../img/header-bg.png") no-repeat scroll center top #025;
+	position:relative;
+	z-index: 500;
+	min-width: 1004px;
+}
+#header-top {
+	height: 90px;
+	padding: 0;
+	position: relative;
+	z-index: 500;
+}
+#header-top h1 {
+     background: url("../img/byulogo.png") no-repeat scroll 16px 4px #025;
+     height: 90px;
+     margin: 0;
+     padding: 0;
+     text-indent: -9999px;
+     background-color: transparent;
+ }
+#logo {
+    top: 12px;
+    left: 20px;
+    position: absolute;
+}
+#parent {
+    color: #fefefe;
+    bottom: 4px;
+    left: 76px;
+    position: absolute;
+    font-size: 15px;
+    font-family: "Lucida Grande","Lucida Sans Unicode",sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#site-name {
+	position: absolute;
+	top: 50px;
+	left: 33px;
+	font-size: 36px;
+	font-family: "Palatino Linotype","Palatino",Times,"Times New Roman",serif;
+	color: #fefefe;
+	font-weight: normal;
+	text-decoration: none;
+} 
+*/
+
+/* Search */
+/*
+#search-container {
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+#search-container form { 
+	display: inline-block;
+	background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #628cb6), color-stop(100%, #336699));
+	background-image: -webkit-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -moz-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -o-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: -ms-linear-gradient(top, #628cb6 0%, #336699 100%);
+	background-image: linear-gradient(top, #628cb6 0%, #336699 100%);
+	border-radius:14px;
+	box-shadow:
+		0 1px 0 rgba(255, 255, 255, 0.25) inset,
+		0 1px 8px rgba(0, 0, 0, 0.2); 
+	padding: 0;
+}
+#search {
+    background-color: #eee;
+    font-size: 12px;
+    height: 20px;
+    padding: 3px 10px;
+    border: none;
+    margin-right: 34px;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+#search:focus { background-color: #fff }
+#search-button {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 6px;
+}
+*/
+
+
+/* Breadcrumb */
+#breadcrumb {margin-top: 15px;}
+#breadcrumb-home{
+    list-style-type:none;
+    margin:0 3px 0 0;
+    float:left;
+    position:relative;
+    bottom:3px;
+    z-index: 1;
+    }
+#breadcrumb .bread-drop{
+    display:none;
+    background: #F4F2F1;
+    border: 1px solid #EEEBE9;
+    padding:9px 0 ;
+    position:absolute;
+    width:180px;
+    }
+#breadcrumb #breadcrumb-home:hover .bread-drop{display:block;}
+.bread-drop a { display:block; padding:3px 12px;}
+
+/* Sidebar stuff */
+.one-sidebar #main-content { float:left; margin-right:20px; width:620px;}
+.two-sidebars #main-content { float:left; margin-right:20px; width:460px;}
+.sidebar { float:left; margin-right:20px; width:220px;}
+
+/* Footer */
+footer { font-size: 12px }
+footer p { margin:0; padding:0;}
+footer a { text-decoration: none }
+footer a:hover { text-decoration: underline }
+#footer-links { color:#777; overflow:hidden; padding-bottom:17px; *zoom:1;}
+#footer-links h2 { font:bold 12px/16px Arial, Helvetica; border-bottom:1px solid #ccc; color:#777; margin:0 0 9px; padding:14px 0 3px;}
+#footer-links h3 { margin:9px 0 2px; color:#999; font-size:12px; font-weight:normal;}
+#footer-links .col { width:160px; margin-right:24px; float:left; display:inline;}
+#footer-links .double { width:344px; margin-right:24px;}
+#footer-links .left { width:160px; margin-right:24px; float:left; display:inline;}
+#footer-links .right { width:160px; float:left; display:inline;}
+#footer-links a { display:block; line-height:14px; margin-bottom:4px; padding-left:5px; text-indent:-5px; float:none; color:#888;}
+#footer-links a:hover { color:#025}
+#footer-bottom { color:#7e7b76; line-height:22px; padding:0 16px 16px; text-align:center;}
+#footer-bottom a { margin:0 6px; color:#7e7b76;}
+
+
+#content {
+    margin-bottom: 27px;
+    overflow: hidden;
+    *zoom: 1 ;
+	padding-bottom: 20px;
+
+	background:#fff;
+	box-shadow: 0 0 30px 0px #dedede;
+	-moz-box-shadow: 0 0 30px 0px #dedede;
+	-webkit-box-shadow: 0 0 30px 0px #dedede;
+	margin-bottom: 27px;
+	overflow: hidden;
+}
+
+/* The end stuff */
+.alpha { margin-left: 0!important }
+.omega { margin-right: 0!important }
+
+@media screen and (max-width:996px) { 
+    body { background: none }
+}
+.clearfix:after, #primary-nav ul:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0;}
+* html .clearfix, * html #primary-nav ul, #primary-nav * html ul { zoom: 1 }
+*:first-child+html .clearfix, *:first-child+html #primary-nav ul, #primary-nav *:first-child+html ul { zoom: 1 }

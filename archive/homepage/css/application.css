@@ -1,0 +1,29 @@
+#header-top{
+  height: 38px;
+}
+
+#search-container {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+body {
+  background:none;
+}
+
+.statusMsg {
+	
+}
+
+.status {
+	
+}
+
+.errorMsg {
+	
+}
+
+.error {
+	
+}

@@ -1,0 +1,206 @@
+/* Feedback Form */
+/* jQuery.Rating Plugin CSS - http://www.fyneworks.com/jquery/star-rating/ */
+div.star-rating {
+  float: left;
+  width: 15px;
+  height: 15px;
+  text-indent: -999em;
+  cursor: pointer;
+  display: block;
+  background: transparent;
+  overflow: hidden;
+}
+
+div.rating-cancel {
+  display: none;
+}
+
+div.star-rating, div.star-rating a {
+  background: url("../img/star.gif") no-repeat 0 0px;
+}
+
+div.rating-cancel a, div.star-rating a {
+  display: block;
+  width: 15px;
+  height: 100%;
+  background-position: 0 0px;
+  border: 0;
+}
+
+div.star-rating-on a {
+  background-position: 0 -15px !important;
+}
+
+div.star-rating-hover a {
+  background-position: 0 -30px;
+}
+
+/* Read Only CSS */
+div.star-rating-readonly a {
+  cursor: default !important;
+}
+
+/* Partial Star CSS */
+div.star-rating {
+  background: transparent!important;
+  overflow: hidden !important;
+}
+
+/* END jQuery.Rating Plugin CSS */
+#rating {
+  display: none;
+  background: #ffc;
+  padding: 5px;
+  z-index: 10000;
+  width: 525px;
+  position: relative;
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #553;
+  border-left: 1px solid #998;
+  border-right: 1px solid #776;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-: 0 0px 4px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+#rating td.label {
+  color: #036;
+  font-size: 14px;
+  text-align: right;
+  font-weight: bold;
+  padding: 4px 10px 0;
+}
+
+#feedbackTable {
+  margin: 0 5px;
+}
+
+#starbox {
+  width: 65%;
+  min-width: 150px;
+}
+
+#starbox label {
+  display: none;
+}
+
+#rating td.input {
+  padding-top: 5px;
+}
+
+#closebox {
+  display: block;
+  position: absolute;
+  right: 20px;
+  bottom: 5px;
+  text-align: right;
+  width: 100px;
+}
+
+#commentlabel a {
+  display: block;
+  font-size: 13px;
+  margin: 10px 0;
+}
+
+#commentbox textarea {
+  width: 95%;
+  height: 70px;
+}
+
+#emailbox p {
+  margin: 5px 0;
+}
+
+tr#submit {
+  position: relative;
+}
+
+#feedbacksubmit {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
+  padding: 3px 10px;
+  font-family: 'CartoGothic', Helvetica, Arial, sans-serif;
+  border: 1px solid #470;
+  margin: 0;
+  position: relative;
+  left: -2px;
+  background: #79ae00;
+  /* old browsers */
+  background: -moz-linear-gradient(top, #ffff99 4%, #cdcf00 4%, #5ea300 100%);
+  /* firefox */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(4%, #ffff99), color-stop(4%, #cdcf00), color-stop(100%, #5ea300));
+  /* webkit */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFF99', endColorstr='#5EA300',GradientType=0 );
+  /* ie */
+  background: -o-linear-gradient(top, #ffff99 4%, #cdcf00 4%, #5ea300 100%);
+  /* opera */
+  -webkit-border-radius: 14px;
+  -moz-border-radius: 14px;
+  border-radius: 14px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  -webkit-text-shadow: 0 0 5px rgba(6, 61, 0, 0.5);
+  -moz-text-shadow: 0 0 5px rgba(6, 61, 0, 0.5);
+  text-shadow: 0 0 5px rgba(6, 61, 0, 0.5);
+}
+
+#rating #thanksbox {
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.moreinfolink {
+  display: block;
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+#rating h4 {
+  text-transform: none;
+  margin: 0;
+}
+
+#rating table,
+#rating tr,
+#rating td {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Feedback */
+#rating {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+div.star-rating div.label {
+  position: absolute;
+  text-indent: 0;
+  top: -3px;
+  left: 88px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #555;
+  background-color: #FFC;
+  width: 150px;
+  display: none;
+}
+
+div.star-rating-hover div.label, div.star-rating-on div.label {
+  display: block;
+}
+
+.star-rating-control {
+  position: relative;
+}
