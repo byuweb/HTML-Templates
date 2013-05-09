@@ -165,6 +165,12 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
     -webkit-transition-duration: 0;
 }
 
+
+
+
+
+
+
 /** MODIFICATIONS **/
 #slider
 {
@@ -175,10 +181,6 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 #slider li
 {
 	position: relative;
-}
-
-#slider .feature-image {
-	margin-right:241px;
 }
 
 #slider .feature-image img {
@@ -208,16 +210,14 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 
 .feature-description
 {
-	padding: 48px 15px 48px 30px;
+	padding: 20px 0;
 	background: #eff6fc;
-	-webkit-box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);;
-    box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);;
-	height: 100%;
-	position:absolute;
-	right:0;
-	top:0;
-	width:205px;
+	-webkit-box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);
+    box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);
+	width: 100%;
+	text-align: center;
 }
+.feature-description p {display:none;}
 
 #feature .anythingSlider
 {
@@ -240,7 +240,7 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 
 #feature .anythingSlider .forward {
 	top: 0;
-	right: 241px;
+	right: 0px;
 	width: 15%;
 	height: 100%;
     z-index: 12;
@@ -264,7 +264,7 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 
 #feature .anythingControls {
 	right: 0;
-	bottom: 27px;
+	bottom: 50%;
 	z-index: 1;
 	position: absolute;
 	width: 100%;
@@ -272,7 +272,7 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 
 #feature .thumbNav {
 	text-align: center;
-	margin-right: 241px;
+	margin-right: 0;
 }
 
 #feature .thumbNav li {
