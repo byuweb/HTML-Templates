@@ -479,10 +479,10 @@ body {
 /* Primary Nav */
 #primary-nav {
   @extend %sidenav;
-  .mega {
+  .mega, .sub {
     @extend %submenu;
   }
-  li.hover .mega {
+  li.hover .mega, li.hover .sub {
     @extend %activemenu;
   }
 
