@@ -1,7 +1,6 @@
 @import "compass";
 @import "colors";
 
-
 /*
 nav ul {
 	list-style: none;
@@ -24,9 +23,7 @@ nav li .sub {
 	float: none;
 	position: static;
 	padding: 0;
-	box-shadow: none; 
-	-moz-box-shadow: none; 
-	-webkit-box-shadow: none; 
+	@include box-shadow(none);
 	border: none;
 }
 #primary-nav ul li ul .featured a {
@@ -45,7 +42,7 @@ nav li .sub {
 #primary-nav ul li .sub ul a:hover, .no-js #primary-nav  ul li .sub ul a:hover {
   color: #fff;
   background: $blue4;
-	@include background-image(linear-gradient($blue2, $blue1));
+  @include background-image(linear-gradient($blue2, $blue1));
 }
 #primary-nav ul li ul li ul { margin: -2px 0 2px; border: 0; padding: 0; float: none; }
 #primary-nav ul li ul li ul li {list-style-type:none;}
@@ -87,10 +84,6 @@ color: $blue1;
 	width: 93%;
 }
 
-.wrapper,#primary-nav ul {
-	margin: 0 auto;
-	padding: 0 32px;
-}
 #primary-nav ul ul {
 	width: auto;
 	margin: 0;
@@ -371,10 +364,6 @@ html.ie8 #primary-nav .links .featured a {
 
 /* Side slide nav */
 
-html {
-  background: $blue2;
-}
-
 body {
   @include transition(left 0.2s ease);
   position: relative;
@@ -418,10 +407,6 @@ body {
   }
   
 }
-
-
-
-
 
 /* Side Navigation */
 
@@ -490,8 +475,6 @@ body {
 %activemenu {
   max-height:1500px;
 }
-
-
 
 /* Primary Nav */
 #primary-nav {
@@ -915,8 +898,3 @@ nav li .sub {
 */
 
 }
-
-
-
-
-

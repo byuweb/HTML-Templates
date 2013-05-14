@@ -1,5 +1,9 @@
 /* Responsive CSS */
+$break-large: 768px;
 
+@import "slider-responsive";
+@import "nav";
+@import "mixins";
 
 .wf-active #header-top h1 {
   font-family: 'Droid Serif', 'Crete Round', sans-serif;
@@ -15,10 +19,6 @@
   font-size: 15px;
   line-height: 20px;
 }
-
-@import "slider-responsive";
-@import "nav";
-
 
 /*#primary-nav, #secondary-nav {
  display:none; }
@@ -54,3 +54,53 @@
   position: absolute;
   top:-1px;
   left: -1px; }*/
+  
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : $break-large) {
+	body{
+	background: url("../img/body-linen.png");
+	color: #444;
+	min-width: 992px;
+	}
+
+	.wrapper{ 
+		max-width: 940px;
+		margin: 0 auto;
+		padding: 0 32px; }
+	
+	#header-top{
+		height: 90px;
+		padding: 0;
+		position: relative;
+		z-index: 500; 
+	 h1{ margin:0 }
+	 }	
+	
+	#site-name{
+		top: 50px;
+		left: 33px;
+		font-size: 36px;
+		font-weight: normal;
+		text-decoration: none;}
+		
+	#content{
+		background: #fff;
+		margin-bottom: 27px;
+		overflow: hidden;
+		padding-bottom: 20px;
+		@include box-shadow(0 0 30px 0px, .7, #dedede);
+	}
+		
+	
+	#logo{
+		background: transparent url($asset-base + 'img/byu-logo.png') 0px 0px no-repeat;
+		border:none;
+		height:auto;
+		left: 20px;
+		margin: 0;
+		padding: 0;
+		top: 12px;
+		}
+	
+}
+	
