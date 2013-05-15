@@ -2611,6 +2611,7 @@ a.mybyu:hover, a.sign-in:hover, .open #search-button:hover {
   position: relative;
   padding-right: 4em;
   margin-left: 60px;
+  margin-bottom: 0px;
 }
 #search-container form.basic-search #search {
   width: 100%;
