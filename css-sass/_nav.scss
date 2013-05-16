@@ -525,7 +525,9 @@ body {
   body.sideNav {
     left: 75%;
     #main-header, #content, footer {
-      @include box-shadow( -5px 0px 5px $blue0);
+      @include box-shadow( -5px 0px 8px rgba($blue0, .65) );
+      z-index: 2;
+      position: relative;
     }
   }
   
@@ -537,6 +539,7 @@ body {
     padding-top:1em;
     @include box-shadow(inset -5px 3px 10px $blue0); 
     display: none;
+    z-index: 1;
     .sideNav & {
       display: block;
     }    

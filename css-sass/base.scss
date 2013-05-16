@@ -14,6 +14,16 @@
 
 @import "slider";
 
+
+
+html {
+	background:$blue1;
+	overflow-x:hidden;
+}
+
+
+
+
 /* Header */
 
 #main-header {
@@ -38,7 +48,7 @@
   height:2em;
   padding-left:5%;
   border-bottom:1px solid $blue3;
-  margin:0 -5.5555%;
+  //margin:0 -5.5555%;
   a.byu {
     @include ir();
     background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
@@ -102,7 +112,7 @@ a.mybyu, a.sign-in, .open #search-button {
   display: block;
   border-top: 1px solid $blue3;
   background-color: $blue2;
-  margin:0 -5.55%;
+  //margin:0 -5.55%;
   right:0;
   padding: 5px 3% 6px;
   position: relative;
@@ -241,7 +251,8 @@ a.mybyu, a.sign-in, .open #search-button {
 #primary-nav {}
 
 /* Main Content */
-.wrapper { margin: 0 5%;}
+.wrapper {
+  margin: 0; }
 
 #content { padding:1em 0 2em; }
 
