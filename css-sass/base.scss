@@ -168,6 +168,20 @@ a.mybyu, a.sign-in, .open #search-button {
     }
   }
   
+  .gsc-results-wrapper-overlay {
+	padding: 5%;
+	width: 80%;
+	left: 5.5%;
+  }
+  
+  .gsc-table-result, .gsc-thumbnail-inside, .gsc-url-top {
+	padding-left: 0px;
+  }
+  
+  table, td, th{
+	border: none;
+  }
+  
   // The search button
   td.gsc-search-button {
     padding:0;
