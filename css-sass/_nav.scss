@@ -628,6 +628,17 @@ body {
   #primary-nav {
     padding-left: 2em;
     @extend %tab-nav;
+	.sub { 
+		box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
+		-moz-box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
+		-webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
+		border: 1px solid #369;
+		border-top: 0;
+		margin-top: 0; 
+		padding: 10px;
+		width: 222px;
+		display: none;
+	}
     .mega {
       @extend %tab-nav-submenu;
       width: 100%;

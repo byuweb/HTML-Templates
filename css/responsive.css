@@ -599,6 +599,16 @@ body {
 
   #primary-nav {
     padding-left: 2em; }
+    #primary-nav .sub {
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+      -moz-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+      -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.7);
+      border: 1px solid #369;
+      border-top: 0;
+      margin-top: 0;
+      padding: 10px;
+      width: 222px;
+      display: none; }
     #primary-nav .mega {
       width: 100%;
       position: absolute;
@@ -895,10 +905,13 @@ body {
     background: url("../img/body-linen.png");
     color: #444; }
 
-  .wrapper {
+  header .wrapper, #content, footer .wrapper, #primary-nav {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 32px; }
+
+  #main-header {
+    background: url("../img/header-bg.png") no-repeat scroll center top #002255; }
 
   #header-top {
     height: 90px;
@@ -934,9 +947,9 @@ body {
 
   #content {
     background: #fff;
-    margin-bottom: 27px;
     overflow: hidden;
-    padding-bottom: 20px;
+    padding-top: 18px;
+    padding-bottom: 27px;
     -webkit-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7);
     -moz-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7);
     box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); }
