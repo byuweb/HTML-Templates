@@ -123,5 +123,27 @@ $break-large: 768px;
 		top: 12px;
 		}
 	
+<<<<<<< HEAD
+=======
+	#footer-links{
+	 .col{
+		display:inline-block;
+		vertical-align:top;
+		width:18%;}
+		.double{
+			width:36%;
+			.right, .left{
+				width:49%; 
+				display:inline-block;
+			}
+		}
+	 h2{margin:0} 
+	}
+	
+	.alpha{margin-left:0}
+	.omega{margin-right:0}
+
+	
+>>>>>>> origin/master
 }
 	

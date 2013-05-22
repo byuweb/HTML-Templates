@@ -15,6 +15,7 @@
 @import "slider";
 
 
+<<<<<<< HEAD
 
 html {
 	background:$blue1;
@@ -24,6 +25,8 @@ html {
 
 
 
+=======
+>>>>>>> origin/master
 /* Header */
 
 #main-header {
@@ -101,12 +104,6 @@ a.mybyu, a.sign-in, .open #search-button {
   color:#fff;
   border:1px solid $blue5; }
 
-
-
-
-
-
-
 /* Search */
 #search-container {
   display: block;
@@ -128,8 +125,7 @@ a.mybyu, a.sign-in, .open #search-button {
        -moz-box-shadow: 0px 3px 0px $blue2;
             box-shadow: 0px 3px 0px $blue2;
     
-    $searchbutton-width: 3.75em;
-    
+    $searchbutton-width: 3.75em; 
     background-image: -webkit-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%), -webkit-linear-gradient(top, $blue5, $blue4); /* Webkit */
     background-image:    -moz-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),    -moz-linear-gradient(top, $blue5, $blue4); /* FF */
     background-image:     -ms-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),     -ms-linear-gradient(top, $blue5, $blue4); /* IE */
@@ -140,7 +136,6 @@ a.mybyu, a.sign-in, .open #search-button {
     background-repeat: no-repeat;
   }
   
-
   // The search box
   form.gsc-search-box {
     margin-bottom: 0;
@@ -198,7 +193,6 @@ a.mybyu, a.sign-in, .open #search-button {
       background: none;
     }
   }
-  
   
   // Generic search box
   form.basic-search {
@@ -264,7 +258,10 @@ a.mybyu, a.sign-in, .open #search-button {
 }
 
 /* Nav */
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 #primary-nav {}
 
 /* Main Content */
@@ -301,24 +298,10 @@ ul#calendars{list-style: none}
 a.baseline, #calendar > strong, a.more {font-weight: bold; margin-top:1.5em; padding-bottom:1.5em; display: block;}
 
 
-
-
-
-
-
-
-
 /* News */
 .news-item {padding:.25em 0 0}
 .briefs-item {padding:.1em 0 0}
 #briefs-container {border-bottom:1px solid #eee; padding-bottom:.75em; margin-bottom:.5em;}
-
-
-
-
-
-
-
 
 /* Footer */
 footer {
