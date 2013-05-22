@@ -18,7 +18,6 @@ body {
 
 
 /* Menu button */
-
 .menu-button {
   position: absolute;
   width: 1.75em;
@@ -170,17 +169,16 @@ body {
   }
   
   .nav-container {
-    width: 75%;
-    position: absolute;
-    top:0;
-    right: 100%;
-    padding-top:1em;
-    @include box-shadow(inset -5px 3px 10px $blue0); 
     display: none;
+	height:100%;
+    padding-top:1em;
+    position: absolute;
+    right: 100%;
+    top:0;
+    width: 75%;
     z-index: 1;
-    .sideNav & {
-      display: block;
-    }    
+    background-color: $blue1;
+    .sideNav & { display: block;}    
   }
 
 }
@@ -283,7 +281,7 @@ body {
       @include border-radius(0 0 3px 3px);
       padding: 1em 0 2em;
 	  width: 920px;
-	  left:481px;
+	  left:auto;
       ul.links {
         margin-left: 1%;
       }
@@ -366,12 +364,11 @@ body {
     }
   }
   
-/* All of this jazz is just Legacy stuff if you need to reference. Otherwise, delete it.*/  
-  
- /*
-nav ul {
-	list-style: none;
 }
+
+/* All of this jazz is just Legacy stuff if you need to reference. Otherwise, delete it.
+ 
+nav ul { list-style: none;}
 nav > ul > li {
 	float: left
 }
@@ -722,386 +719,9 @@ html.ie8 #primary-nav .links .featured a {
 #primary-nav ul.double li ul {
 	width: 200px;
 }
-
-
-<<<<<<< HEAD
-
-
-
-
-/* Side slide nav */
-
-body {
-  @include transition(left 0.2s ease);
-  position: relative;
-  left:0;
-}
-
-#main-header{
-  position: relative;
-}
-
-
-/* Menu button */
-
-.menu-button {
-  position: absolute;
-  width: 1.75em;
-  height: 1.5em;
-  padding: .5em;
-  bottom:0;
-  left:0;
-  @include border-radius(3px);
-  border:1px solid $blue2;
-  text-indent: -999em;
-  overflow: hidden;
-  display: none;
-  &:hover {
-    background-color: $blue2;
-    border-color: $blue3;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: .6em;
-    width: 1.5em;
-    margin-left:-.75em;
-    height: 0.2em;
-    background: #fff;
-    @include border-radius(1px);
-    @include box-shadow(0 0.55em 0 0 #fff/*, 0 1.1em 0 0 #fff*/);
-  }
-  
-}
-
-/* Side Navigation */
-
-%sidenav {
-  font-size: 1.2em;
-    a {
-    color: #fff;
-    padding: 1em 5%;
-    display: block;
-    @include text-shadow(0px -1px 0px #000);
-    &:hover {
-      text-decoration: none;
-      background-color: $blue0;
-    }
-  }
-  > ul {
-    padding:0;
-    background: $blue2;
-    border-right: 1px solid $blue3;
-  }
-
-  li {
-    display: block;
-    float:none;
-    padding:0;
-    border-bottom: 1px solid $blue1;
-    border-top: 1px solid $blue3;
-    overflow: hidden;
-    &.left, &.right {
-      padding: 0;
-    }
-    &.hover {
-      background-color: $blue0;
-    }
-  }
-}
-
-
-
-%submenu {
-  max-height:0px;
-  @include transition(max-height 0.2s ease);
-  background-color:$blue1;
-  margin: 0;
-  position: relative;
-  a {
-    padding-left:1.75em;
-    border-top: 1px solid $blue2;
-    border-bottom: 1px solid $blue0;
-    padding:.65em 10%;
-    padding-right:5%;
-    color: $blue9;
-    &:hover {
-      color: #fff;
-    }
-  }
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-  li {
-    border: none;
-  }
-}
-
-%activemenu {
-  max-height:1500px;
-}
-
-/* Primary Nav */
-#primary-nav {
-  @extend %sidenav;
-  .mega, .sub {
-    @extend %submenu;
-  }
-  li.hover .mega, li.hover .sub {
-    @extend %activemenu;
-  }
-
-  .highlight, .featured, hr {
-    display: none;
-  }
-}
-
-/* Secondary Nav */
-#secondary-nav {
-  @extend %sidenav;
-  > ul {
-    background-color: $blue4;
-  }
-  .sub {
-    @extend %submenu;
-  }
-  a:hover {
-    background-color: $blue3;
-  }
-  li {
-    border-top-color: $blue5;
-    border-bottom-color: $blue3;
-    &.hover .sub {
-      @extend %activemenu;
-    }
-  }
-  ul {
-    padding: 0;
-  }
-}
-
-
-
-@media all and (min-width:275px) {
-  .menu-button {
-    display: block;
-  }
-  
-  body.sideNav {
-    left: 75%;
-    #main-header, #content, footer {
-      @include box-shadow( -5px 0px 8px rgba($blue0, .65) );
-      z-index: 2;
-      position: relative;
-    }
-  }
-  
-  .nav-container {
-    width: 75%;
-    position: absolute;
-    top:0;
-    right: 100%;
-    padding-top:1em;
-    @include box-shadow(inset -5px 3px 10px $blue0); 
-    display: none;
-    z-index: 1;
-    .sideNav & {
-      display: block;
-    }    
-  }
-
-}
-
-
-@media all and (min-width:750px) {
-  .menu-button {
-    display: none;
-  }
-  body.sideNav {
-    left: 0;
-  }
-  
-  .nav-container {
-    position: relative;
-    top:0;
-    left:0;
-    right:auto;
-    width:auto;
-    display: block;
-    padding-top: 0;
-    @include box-shadow(0px 1px 8px rgba(#000, 0.35));
-    background-color: $blue0;
-    border-top: 1px solid $blue3;
-    border-bottom: 1px solid $blue3;
-	overflow:auto;
-  }
-
-  
-  %tab-nav {
-    font-size: 1em;
-    > ul {
-      background: transparent;
-      > li {
-        float:left;
-      }
-    }
-    li {
-      border-top: 0px solid transparent;
-      border-bottom: 0px solid transparent;
-      &.hover {
-        overflow: visible;
-        > a {
-          @include border-radius(3px 3px 0 0);
-          position: relative;
-          z-index: 2;
-          box-shadow: 0px 3px 0px #fff;
-        }
-        a {
-          background: #fff;
-          color: $blue0;
-          @include text-shadow(none);
-        }
-        ul a:hover {
-          background: $blue2;
-        }
-      }
-    }
-    a {
-      padding: .6em .75em;
-    }
-  }
-  
-  %tab-nav-submenu {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    width: 15em;
-    padding:.5em 0 1em;
-    @include border-radius(3px);
-    @include box-shadow(0px 0px 12px rgba(#000, 0.5));
-    z-index: 1;
-    border-bottom: 2px solid $blue2;
-    a {
-      border-bottom: 0px solid transparent;
-      border-top: 0px solid transparent;
-      padding: .5em 1.5em;
-    }
-  }
-
-  
-  #primary-nav {
-    padding-left: 2em;
-    @extend %tab-nav;
-	.sub { 
-		box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
-		-moz-box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
-		-webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
-		border: 1px solid #369;
-		border-top: 0;
-		margin-top: 0; 
-		padding: 10px;
-		width: 222px;
-		display: none;
-	}
-    .mega {
-      @extend %tab-nav-submenu;
-      width: 100%;
-      position: absolute;
-      left: 0;
-      top: 2.5em;
-      @include border-radius(0 0 3px 3px);
-      padding: 1em 0 2em;
-      ul.links {
-        margin-left: 1%;
-      }
-    }
-    li.hover .mega {
-      display: block;
-    }
-    .highlight, .featured, hr {
-      display: block;
-    }
-    .links, .highlight {
-      width: 30%;
-      float: left;
-    }
-    hr {
-      border:none;
-      border-top: 1px solid #ddd;
-    }
-    .featured {
-      font-weight: bold;
-    }
-    .links {
-      &.double {
-        width: 63%;
-        .featured {
-          a {
-            padding-left: 5%;
-            padding-right: 5%;
-          }
-          .sublinks {
-            padding-left: 5%;
-          }
-        }
-        .left {
-          float: left;
-          width: 50%;
-        }
-      }
-      a {
-        padding:.35em 10%;
-      }
-      ul.sublinks {
-        padding-bottom: .25em;
-        padding-left: 10%;
-        a {
-          padding: .25em 10%;
-        }
-      }
-    }
-    .highlight {
-      padding-left: 3%;
-      font-size: 1.1em;
-      a {
-        padding: 0;
-        color: $blue2;
-        &:hover {
-          color: $blue0;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-  
-  #secondary-nav {
-    position: absolute;
-    top:-3.2em;
-    right: .5em;
-    z-index: 501;
-    @extend %tab-nav;
-    .sub {
-      @extend %tab-nav-submenu;
-    }
-    li.hover .sub {
-      display: block;
-    }
-    a {
-      color: $blue8;
-      &:hover {
-        background: transparent;
-        color: #fff;
-      }
-    }
-  }
-  
-/*
-  nav ul { list-style: none; }
-=======
+		
 nav ul { list-style: none; }
->>>>>>> Fixed More menu and Footers items
+
 nav > ul > li { float: left }
 nav li .sub { 
 	box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
@@ -1281,5 +901,3 @@ nav li .sub {
     border: solid 1px #dad9d7;
 }
 */
-
-}
