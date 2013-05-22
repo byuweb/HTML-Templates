@@ -1,9 +1,11 @@
 /* Responsive CSS */
+$break-large: 768px;
 
 @import "slider-responsive";
+@import "nav";
 
 .wf-active #header-top h1 {
-  font-family: 'Droid Serif', sans-serif;
+  font-family: 'Droid Serif', 'Crete Round', sans-serif;
 }
 
 .wf-active h1, .wf-active h2 {
@@ -51,3 +53,94 @@
   position: absolute;
   top:-1px;
   left: -1px; }*/
+  
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : $break-large) {
+	body{
+	background: url("../img/body-linen.png");
+	color: #444;
+	}
+
+	header .wrapper, #content, footer .wrapper, #primary-nav { 
+		max-width: 940px;
+		margin: 0 auto;
+		padding: 0 32px; }
+		
+	#main-header {
+		background: url("../img/header-bg.png") no-repeat scroll center top #025;
+	}
+	
+	#header-top{
+		height: 90px;
+		position: relative;
+		z-index: 500; 
+		h1{ margin:0 }
+		a.sign-in {right: 5%;}
+		#search-container{
+			border-top: none;
+			background: none;
+			padding: 0;
+			position: absolute;
+			right: 17%;
+			top: .35em;
+			
+			div.gcse-wrapper {padding:0;}
+			td.gsc-search-button input {
+				top: 0;
+				right: 0;
+			}
+			form.gsc-search-box {
+				margin-bottom: 6px;
+			}
+			.gsc-control-cse, #search-container form.basic-search {box-shadow: none;}
+		}
+	 }	
+	
+	#site-name{
+		top: 50px;
+		left: 33px;
+		font-size: 36px;
+		font-weight: normal;
+		text-decoration: none;
+	}
+		
+	#content{
+		background: #fff;
+		overflow: hidden;
+		padding-top: 18px;
+		padding-bottom: 27px;
+		@include box-shadow(0 0 30px 0px, .7, #dedede);
+	}
+		
+	
+	#logo{
+		background: transparent url($asset-base + 'img/byu-logo.png') 0px 0px no-repeat;
+		border:none;
+		height:auto;
+		left: 20px;
+		margin: 0;
+		padding: 0;
+		top: 12px;
+		}
+	
+	#footer-links{
+	 .col{
+		display:inline-block;
+		vertical-align:top;
+		width:18%;}
+		.double{
+			width:36%;
+			.right, .left{
+				width:49%; 
+				display:inline-block;
+			}
+		}
+	 h2{margin:0} 
+	}
+	
+	.alpha{margin-left:0}
+	.omega{margin-right:0}
+
+	
+}
+	
