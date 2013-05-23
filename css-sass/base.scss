@@ -14,6 +14,13 @@
 
 @import "slider";
 
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 /* Header */
 #main-header { background-color: $blue0;}
 
@@ -286,7 +293,7 @@ a.baseline, #calendar > strong, a.more {font-weight: bold; margin-top:1.5em; pad
 #briefs-container {border-bottom:1px solid #eee; padding-bottom:.75em; margin-bottom:.5em;}
 
 /* Footer */
-footer {
+body > footer {
   background-color:#eeebe9;
   border-top:1px solid #fff;
   border-bottom:2px solid transparent;

@@ -71,6 +71,7 @@ $break-large: 768px;
 		
 	#content{
 		background: #fff;
+		margin-top:40px;
 		overflow: hidden;
 		padding-top: 18px;
 		padding-bottom: 27px;
@@ -87,6 +88,7 @@ $break-large: 768px;
 		padding: 0;
 		top: 12px;
 		}
+	#content{overflow:auto;}
 	
 	#footer-links{
 	 .col{
@@ -105,5 +107,14 @@ $break-large: 768px;
 	
 	.alpha{margin-left:0}
 	.omega{margin-right:0}
+	#content{
+		min-height:100%;position:relative;}
+	body > footer{
+		width:100%;
+        position: absolute;
+		height: 80px;
+		clear:both;
+		top:100%;
+	}
 
 }

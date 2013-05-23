@@ -195,18 +195,24 @@ body { -webkit-transition: left 0.2s ease; -moz-transition: left 0.2s ease; -ms-
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000364}}
   #site-name { top: 50px; left: 33px; font-size: 36px; font-weight: normal; text-decoration: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000372}}
-  #content { background: #fff; overflow: hidden; padding-top: 18px; padding-bottom: 27px; -webkit-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); -moz-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000381}}
+  #content { background: #fff; margin-top: 40px; overflow: hidden; padding-top: 18px; padding-bottom: 27px; -webkit-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); -moz-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000382}}
   #logo { background: transparent url("http://home.byu.edu/home/sites/default/files/global/img/byu-logo.png") 0px 0px no-repeat; border: none; height: auto; left: 20px; margin: 0; padding: 0; top: 12px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000392}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000391}}
+  #content { overflow: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000394}}
   #footer-links .col { display: inline-block; vertical-align: top; width: 18%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000396}}
-  #footer-links .double { width: 36%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000398}}
+  #footer-links .double { width: 36%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003100}}
   #footer-links .double .right, #footer-links .double .left { width: 49%; display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003103}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003105}}
   #footer-links h2 { margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003108}}
   .alpha { margin-left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003107}}
-  .omega { margin-right: 0; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003109}}
+  .omega { margin-right: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003110}}
+  #content { min-height: 100%; position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003112}}
+  body > footer { width: 100%; position: absolute; height: 80px; clear: both; top: 100%; } }
