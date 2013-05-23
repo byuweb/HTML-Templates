@@ -1,4 +1,7 @@
-/* Responsive CSS */
+/* Responsive CSS 
+* This is not only for layouts, but also any additional features such as CSS3 for any elements already declared in base.css
+*/
+
 $break-large: 768px;
 
 @import "slider-responsive";
@@ -18,6 +21,10 @@ $break-large: 768px;
   font-size: 15px;
   line-height: 20px;
 }
+
+a.mybyu, a.sign-in, .open #search-button {
+  @include transition(background-color .3s);
+  }
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : $break-large) {
@@ -72,12 +79,12 @@ $break-large: 768px;
 	#content{
 		background: #fff;
 		margin-top:40px;
-		overflow: hidden;
 		padding-top: 18px;
 		padding-bottom: 27px;
+		position: relative;
+		min-height:100%;
 		@include box-shadow(0 0 30px 0px, .7, #dedede);
 	}
-		
 	
 	#logo{
 		background: transparent url($asset-base + 'img/byu-logo.png') 0px 0px no-repeat;
@@ -88,7 +95,6 @@ $break-large: 768px;
 		padding: 0;
 		top: 12px;
 		}
-	#content{overflow:auto;}
 	
 	#footer-links{
 	 .col{
@@ -104,17 +110,18 @@ $break-large: 768px;
 		}
 	 h2{margin:0} 
 	}
-	
+	 
 	.alpha{margin-left:0}
 	.omega{margin-right:0}
-	#content{
-		min-height:100%;position:relative;}
+
 	body > footer{
-		width:100%;
-        position: absolute;
-		height: 80px;
-		clear:both;
-		top:100%;
+
 	}
+	
+	#footer-bottom{
+		a{display:inline-block;}
+				
+	}
+	
 
 }
