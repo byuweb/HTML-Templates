@@ -15,8 +15,7 @@
 @import "slider";
 
 /* Header */
-#main-header {
-  background-color: $blue0; }
+#main-header { background-color: $blue0;}
 
 #header-top {
   position: relative;
@@ -62,8 +61,11 @@ a.mybyu, a.sign-in, .open #search-button {
   font-weight: bold;
   border-radius:1em;
   border:none;
+  @include transition(background-color .3s);
   &:hover {
-    cursor:pointer; } }
+	background-color: $blue4;
+    cursor:pointer; } 
+}
 
 #search-container {
   right:5%; 
