@@ -264,6 +264,12 @@ body {
   #primary-nav {
     padding-left: 2em;
     @extend %tab-nav;
+	>ul{
+		width: 940px;
+		margin: 0 auto;
+		padding: 0 32px;	
+		position: relative;
+	}
 	.sub { 
 		box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
 		-moz-box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
@@ -281,7 +287,8 @@ body {
       @include border-radius(0 0 3px 3px);
       padding: 1em 0 2em;
 	  width: 920px;
-	  left:auto;
+	  left:32px;
+	
       ul.links {
         margin-left: 1%;
       }
