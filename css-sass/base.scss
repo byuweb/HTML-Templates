@@ -14,17 +14,12 @@
 
 @import "slider";
 
-html{
-  height: 100%;
-}
-body {
-  min-height: 100%;
-}
+h1, h2{margin:0}
 
 /* Header */
 #main-header { background-color: $blue0;}
 
-#header-top {
+#header-top { 
   position: relative;
   z-index: 101;
   h1 a {
