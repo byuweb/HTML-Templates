@@ -14,7 +14,7 @@ $break-large: 768px;
 .wf-active h1, .wf-active h2 {
   font-family: 'Crete Round', sans-serif;
   font-weight: normal;
-}
+} 
 
 .wf-active body, .wf-active button, .wf-active input, .wf-active select, .wf-active textarea {
   font-family: 'Open Sans', "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
@@ -33,11 +33,11 @@ a.mybyu, a.sign-in, .open #search-button {
 	color: #444;
 	}
 
-	header .wrapper, #content, footer .wrapper, #primary-nav { 
+	.wrapper{ 
 		max-width: 940px;
 		margin: 0 auto;
 		padding: 0 32px; }
-		
+	
 	#main-header {
 		background: url("../img/header-bg.png") no-repeat scroll center top #025;
 	}
@@ -95,6 +95,56 @@ a.mybyu, a.sign-in, .open #search-button {
 		padding: 0;
 		top: 12px;
 		}
+		
+	#breadcrumb{
+		.bread-drop{
+			background-color: $grayE; 
+			border: 1px solid $grayC;
+			display:none;
+			margin: -1px 0 0 -1px;
+			padding:10px;
+			position:absolute;
+			@include border-radius(0 3px 3px 3px);
+			&:before{
+				background-color: $grayE;
+				content:" ";
+				height:1px; 
+				left:0;
+				margin-top: -1px;
+				position:absolute;
+				top:0;
+				width:20px;
+			}
+		}
+		
+		#breadcrumb-home{
+			display:inline-block;
+			position:relative;
+			
+			&:after {
+				background-color: #FFF;
+				box-shadow: -2px 2px 0 $grayE;
+				border: 1px solid $grayC;
+				border-bottom-left-radius: 5px;
+				border-width: 0 0 1px 1px;
+				display:none;
+				content: " ";
+				position: absolute;
+				bottom:0;
+				right:-6px;
+				height: 5px;
+				width: 5px;
+			}
+			&:hover{ 
+				background-color: $grayE;
+				border: 1px solid $grayC;
+				border-bottom: 1px solid $grayE;
+				@include border-radius(3px 3px 3px 0);
+				&:after{display:block;}
+				.bread-drop{display:block;}	
+			}
+		}
+	}
 	
 	#footer-links{
 	 .col{
