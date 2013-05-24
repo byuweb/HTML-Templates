@@ -2,13 +2,9 @@
 * All search box definitions will go in here
 *
 */
-
+@import "colors";
+@import "mixins";
 /*Basic Form*/
-
-
-/*Google Form*/
-
-/* Search */
 #search-container {
   display: block;
   border-top: 1px solid $blue3;
@@ -17,8 +13,35 @@
   right:0;
   padding: 5px 3% 6px;
   position: relative;
+  top:0;
+ 
+  .search {
+    @include ir();
+    line-height:2.5em;
+    background:transparent url('../img/search.png') .45em center no-repeat; } 
+}
+
+#searchForm {
+  clear: left;
+  padding:0;
+  border-top:1px solid transparent;
+  margin-top:1em;  
+  margin:1em 5% 4em;
+  #q {
+    font-size:1.25em;
+    padding:.5em 1em; } 
+}
+
+#search-button {
+  padding:.35em 1.5em;
+  margin:.25em 0;
+  background-color:$blue4;
+  color:#fff;
+  border:1px solid $blue5; }
   
-  
+
+/*Google Form*/
+		
   // Wrapper for it all
   .gsc-control-cse, form.basic-search {
     padding:0 1em;
@@ -79,9 +102,7 @@
   
 .gsc-table-result, .gsc-above-wrapper-area-container {
 	border:none;
-	td, th{
-		border:none;	
-	}
+	td, th{ border:none;}
 }
   
   // The search button
@@ -158,5 +179,3 @@
     padding:4px 8px;
     margin-left: 60px;
   }
-
-}

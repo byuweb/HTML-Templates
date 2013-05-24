@@ -1,7 +1,6 @@
 // Basics.scss //
-
+@import "colors";
 /*** Base tags ***/
-
 body em { font-style:italic; }
 body strong { font-weight:bold; }
 body, select, input, textarea { color: #444 }

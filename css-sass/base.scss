@@ -3,6 +3,7 @@
 */
 
 @import "colors";
+@import "basics";
 
 @import "prettify";
 @import "normalize";
@@ -31,9 +32,6 @@ h1, h2{margin:0}
   border-bottom:1px solid $blue3;
   height:2em;
   padding:.35em 5%;
-  a.byu {
-    background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
-  }
   h2 { margin:0;}
   a {  display:block;}
 }
@@ -51,31 +49,6 @@ a.mybyu, a.sign-in, .open #search-button {
 	background-color: $blue4;
     cursor:pointer; } 
 }
-
-#search-container {
-  right:5%; 
-  top:0;
-  .search {
-    @include ir();
-    line-height:2.5em;
-    background:transparent url('../img/search.png') .45em center no-repeat; } }
-
-#searchForm {
-  clear: left;
-  padding:0;
-  border-top:1px solid transparent;
-  margin-top:1em;  
-  margin:1em 5% 4em;
-  #q {
-    font-size:1.25em;
-    padding:.5em 1em; } }
-
-#search-button {
-  padding:.35em 1.5em;
-  margin:.25em 0;
-  background-color:$blue4;
-  color:#fff;
-  border:1px solid $blue5; }
 
 /* Main Content */
 .wrapper {

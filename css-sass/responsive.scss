@@ -2,16 +2,15 @@
 * This is not only for layouts, but also any additional features such as CSS3 for any elements already declared in base.css
 */
 
-@import "font-awesome";
-
-@import "basics";
-@import "bootstrap-override";
-
+@import "colors";
 @import "mixins";
-@import "nav";
+
+@import "bootstrap-override";
+@import "font-awesome";
+@import "nav"; 
 
 @import "search";
-@import "slider";
+@import "slider"; 
 @import "slider-responsive";
 
 
