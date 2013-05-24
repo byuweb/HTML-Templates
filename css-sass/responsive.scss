@@ -2,11 +2,22 @@
 * This is not only for layouts, but also any additional features such as CSS3 for any elements already declared in base.css
 */
 
-$break-large: 768px;
+@import "font-awesome";
 
-@import "slider-responsive";
+@import "basics";
+@import "bootstrap-override";
+
+@import "mixins";
 @import "nav";
 
+@import "search";
+@import "slider";
+@import "slider-responsive";
+
+
+$break-large: 768px;
+
+/*These will apply to all browsers that understand media queries. Includes CSS3 as we are assuming any browser that can understand MQ, can also understand CSS3*/
 .wf-active #header-top h1 {
   font-family: 'Droid Serif', 'Crete Round', sans-serif;
 }
@@ -26,7 +37,15 @@ a.mybyu, a.sign-in, .open #search-button {
   @include transition(background-color .3s);
   }
 
-/* Desktops and laptops ----------- */
+  #logo {
+	a.byu {
+		@include ir();
+		background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
+	}
+	}
+  
+  
+/* ------------ Desktops and laptops ----------- */
 @media only screen and (min-width : $break-large) {
 	body{
 	background: url("../img/body-linen.png");

@@ -1,19 +1,12 @@
-/* Mobile.css */
+/* Base.css 
+* The lowest common demoninator style definitions which all browsers will load. No CSS3.
+*/
 
 @import "colors";
-@import "mixins";
 
 @import "prettify";
 @import "normalize";
 @import "boilerplate";
-
-@import "font-awesome";
-
-@import "basics";
-@import "bootstrap-override";
-
-@import "search";
-@import "slider";
 
 h1, h2{margin:0}
 
@@ -22,7 +15,7 @@ h1, h2{margin:0}
 
 #header-top { 
   position: relative;
-  z-index: 101;
+  z-index: 10;
   h1 a {
     color: #fff;
   }
@@ -34,13 +27,11 @@ h1, h2{margin:0}
   } }
 
 #logo {
-  background-color:$blue2;
-  padding:.35em 5%;
-  height:2em;
-  padding-left:5%;
+  background-color:$blue2; 
   border-bottom:1px solid $blue3;
+  height:2em;
+  padding:.35em 5%;
   a.byu {
-    @include ir();
     background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
   }
   h2 { margin:0;}
@@ -56,7 +47,6 @@ a.mybyu, a.sign-in, .open #search-button {
   margin-right:5%;
   padding:.35em 1.5em;
   text-decoration: none;
-  @include transition(background-color .3s);
   &:hover {
 	background-color: $blue4;
     cursor:pointer; } 
