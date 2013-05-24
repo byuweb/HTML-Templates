@@ -47,8 +47,8 @@ a.mybyu, a.sign-in, .open #search-button {
 /* ------------ Desktops and laptops ----------- */
 @media only screen and (min-width : $break-large) {
 	body{
-	background: url("../img/body-linen.png");
-	color: #444;
+		background: url("../img/body-linen.png");
+		color: #444;
 	}
 
 	.wrapper{ 
@@ -195,6 +195,5 @@ a.mybyu, a.sign-in, .open #search-button {
 		a{display:inline-block;}
 		
 	}
-	
 
 }

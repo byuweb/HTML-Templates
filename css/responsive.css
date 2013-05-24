@@ -1069,65 +1069,47 @@ body { -webkit-transition: left 0.2s ease; -moz-transition: left 0.2s ease; -ms-
 * All search box definitions will go in here
 *
 */
-/*Basic Form*/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\000038}}
-#search-container { display: block; border-top: 1px solid #114477; background-color: #003366; right: 0; padding: 5px 3% 6px; position: relative; top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000318}}
-#search-container .search { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; line-height: 2.5em; background: transparent url("../img/search.png") 0.45em center no-repeat; }
+/**
+* Basic Search Form
+* If for some reasons that the search cannot load from Google, or the browser doesn't support JS, then they can still use the default search form.
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000314}}
+#search-container { border-top: 1px solid #114477; background-color: #003366; display: block; padding: 5px 3% 6px; position: relative; right: 0; top: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000324}}
-#searchForm { clear: left; padding: 0; border-top: 1px solid transparent; margin-top: 1em; margin: 1em 5% 4em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000330}}
-#searchForm #q { font-size: 1.25em; padding: .5em 1em; }
+.search { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; line-height: 2.5em; background: transparent url("../img/search.png") 0.45em center no-repeat; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000335}}
-#search-button { padding: .35em 1.5em; margin: .25em 0; background-color: #336699; color: #fff; border: 1px solid #628cb6; }
+/*The search button on the basic form*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000331}}
+#search-submit { background-color: #336699; border: 1px solid #628cb6; color: #fff; margin: .25em 0; padding: .35em 1.5em; -webkit-border-radius: 1em; -moz-border-radius: 1em; border-radius: 1em; }
 
-/*Google Form*/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000346}}
-.gsc-control-cse, form.basic-search { padding: 0 1em; -moz-border-radius: 15px; border-radius: 15px; border: none; -webkit-box-shadow: 0px 3px 0px #003366; -moz-box-shadow: 0px 3px 0px #003366; box-shadow: 0px 3px 0px #003366; background-image: -webkit-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%), -webkit-linear-gradient(top, #628cb6, #336699); /* Webkit */ background-image: -moz-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%), -moz-linear-gradient(top, #628cb6, #336699); /* FF */ background-image: -ms-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%), -ms-linear-gradient(top, #628cb6, #336699); /* IE */ background-image: -o-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%), -o-linear-gradient(top, #628cb6, #336699); /* Opera */ background-image: radial-gradient(-5px center, 10px 20px, #ffffff 0%, #ffffff 80%, transparent 100%), linear-gradient(top, #628cb6, #336699); /* W3C */ background-size: 3.75em 2.5em; background-position: right; background-repeat: no-repeat; }
+/*
+#searchForm { clear: left; padding:0; border-top:1px solid transparent; margin-top:1em;   margin:1em 5% 4em; #q { font-size:1.25em; padding:.5em 1em; } 
+} */
+/* Overwrites the Google Custom Search Form*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000357}}
+.gsc-control-cse { border: none !important; padding: 0 !important; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000367}}
-form.gsc-search-box { margin-bottom: 0; width: auto; margin-right: 2.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000371}}
-form.gsc-search-box table.gsc-search-box, form.gsc-search-box table.gsc-search-box td { border: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000374}}
-form.gsc-search-box td.gsc-input { padding: 0; margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000377}}
-form.gsc-search-box td.gsc-input input:focus { border: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000384}}
-form.gsc-search-box div.gsc-input-box { border: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000386}}
-form.gsc-search-box div.gsc-input-box table, form.gsc-search-box div.gsc-input-box td { border: none; margin: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000393}}
-.gsc-thumbnail-inside, .gsc-url-top { padding-left: 0px; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000397}}
-.gsc-results-wrapper-overlay { padding: 5%; width: 80%; left: 5.5%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003103}}
-.gsc-table-result, .gsc-above-wrapper-area-container { border: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003105}}
-.gsc-table-result td, .gsc-table-result th, .gsc-above-wrapper-area-container td, .gsc-above-wrapper-area-container th { border: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003109}}
-td.gsc-search-button { padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003111}}
-td.gsc-search-button input { margin: 0; border: 0; padding: .75em 2em .75em 1.5em; position: absolute; top: .25em; right: 2.5%; background: none; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003123}}
-form.basic-search { background-color: #fff; position: relative; padding-right: 4em; margin-left: 60px; margin-bottom: 0px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003129}}
-form.basic-search #search { width: 100%; border: none; padding: 3px 0; margin: 1px 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003135}}
-form.basic-search #search-submit { position: absolute; top: 0; right: 0; padding: 4px 0; width: 3.75em; text-indent: -9999em; overflow: hidden; background-color: transparent; border: none; background-image: -webkit-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-image: -moz-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-image: -ms-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-image: -o-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-image: radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, #ffffff 68%, #ffffff 90%, transparent 100%); background-size: 3em 20px; background-repeat: no-repeat; z-index: 1; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003154}}
-form.basic-search:after { content: " "; display: block; width: 2px; height: 7px; border-radius: 2px; background-color: white; position: absolute; top: 13px; right: 25px; z-index: 10; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); z-index: 0; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\00003174}}
-div.gcse-wrapper { z-index: 2; position: absolute; top: 0px; left: 0px; padding: 4px 8px; margin-left: 60px; }
-
+/*
+	@include box-shadow(0px 3px 0px $blue2); @include border-radius(15px);
+	@include byu-gradient;
+ background-image:         radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),         linear-gradient(top, $blue5, $blue4); background-size: $searchbutton-width 2.5em; background-position: right; background-repeat: no-repeat; } 
+/** The Google Custom Search Box 	These definitions all load from Google via AJAX. So in order to not have our definitions overwritten, we need to define them as !important. */
+/* form.gsc-search-box { margin-bottom: 0; margin-right:2.5em; width:auto; table.gsc-search-box, table.gsc-search-box td { border:none;} td.gsc-input { padding:0; margin:0; input:focus { border:none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; } } div.gsc-input-box { border:none; table, td { border:none; margin:0; } } } 
+.gsc-thumbnail-inside, .gsc-url-top {
+	padding-left:0px;
+} 
+.gsc-results-wrapper-overlay {
+	padding: 5%;
+	width: 80%;
+	left: 5.5%;
+} 
+.gsc-table-result, .gsc-above-wrapper-area-container {
+	border:none;
+	td, th{ border:none;}
+}  // The search button td.gsc-search-button { padding:0; input { margin:0; border:0; padding:.75em 2em .75em 1.5em; position: absolute; top:.25em; right:2.5%; background: none; } }  // Generic search box form.basic-search { background-color: #fff; position: relative; padding-right:4em; margin-left:60px;
+	margin-bottom:0px; #search { width:100%; border: none; padding: 3px 0; margin: 1px 0; }
+	 #search-submit { position: absolute; top:0; right:0; padding:  4px 0; width:3.75em; text-indent: -9999em; overflow: hidden; background-color: transparent; border: none; background-image: -webkit-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-image:    -moz-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-image:     -ms-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-image:      -o-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-image:         radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%); background-size: 3em 20px; background-repeat: no-repeat; z-index:1; } &:after { content: " "; display: block; width:2px; height: 7px; border-radius: 2px; background-color: white; position: absolute; top:13px; right:25px; z-index: 10; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); z-index:0; } }  div.gcse-wrapper { z-index: 2; position: absolute; top:0px; left:0px; padding:4px 8px; margin-left: 60px; } */
 /* Slider styles (just copied from old templates for simplicity) */
 /* AnythingSlider v1.5.10+ Default (base) theme By Chris Coyier: http://css-tricks.com with major improvements by Doug Neiner: http://pixelgraphics.us/ based on work by Remy Sharp: http://jqueryfordesigners.com/
 */

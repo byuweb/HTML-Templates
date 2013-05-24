@@ -2,25 +2,42 @@
 * All search box definitions will go in here
 *
 */
+
 @import "colors";
 @import "mixins";
-/*Basic Form*/
+
+/**
+* Basic Search Form
+* If for some reasons that the search cannot load from Google, or the browser doesn't support JS, then they can still use the default search form.
+*/
+
 #search-container {
-  display: block;
   border-top: 1px solid $blue3;
   background-color: $blue2;
-  //margin:0 -5.55%;
-  right:0;
+  display: block;
   padding: 5px 3% 6px;
   position: relative;
-  top:0;
- 
-  .search {
-    @include ir();
-    line-height:2.5em;
-    background:transparent url('../img/search.png') .45em center no-repeat; } 
+  right:0;
+  top:0; 
 }
 
+.search {
+    @include ir();
+    line-height:2.5em;
+    background:transparent url('../img/search.png') .45em center no-repeat; 
+}
+
+/*The search button on the basic form*/
+#search-submit{
+  background-color:$blue4;
+  border:1px solid $blue5; 		
+  color:#fff;
+  margin:.25em 0;
+  padding:.35em 1.5em;
+  @include border-radius(1em);
+}
+
+/*
 #searchForm {
   clear: left;
   padding:0;
@@ -31,46 +48,38 @@
     font-size:1.25em;
     padding:.5em 1em; } 
 }
+ */
 
-#search-button {
-  padding:.35em 1.5em;
-  margin:.25em 0;
-  background-color:$blue4;
-  color:#fff;
-  border:1px solid $blue5; }
-  
-
-/*Google Form*/
+/* Overwrites the Google Custom Search Form*/
+    $searchbutton-width: 3.75em; 
 		
   // Wrapper for it all
-  .gsc-control-cse, form.basic-search {
-    padding:0 1em;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    border:none;
-    -webkit-box-shadow: 0px 3px 0px $blue2;
-       -moz-box-shadow: 0px 3px 0px $blue2;
-            box-shadow: 0px 3px 0px $blue2;
-    
-    $searchbutton-width: 3.75em; 
-    background-image: -webkit-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%), -webkit-linear-gradient(top, $blue5, $blue4); /* Webkit */
-    background-image:    -moz-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),    -moz-linear-gradient(top, $blue5, $blue4); /* FF */
-    background-image:     -ms-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),     -ms-linear-gradient(top, $blue5, $blue4); /* IE */
-    background-image:      -o-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),      -o-linear-gradient(top, $blue5, $blue4); /* Opera */
-    background-image:         radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),         linear-gradient(top, $blue5, $blue4); /* W3C */
+  .gsc-control-cse{
+    border:none !important;
+	padding:0 !important;
+  }
+	
+/*
+	@include box-shadow(0px 3px 0px $blue2);
+    @include border-radius(15px);
+	@include byu-gradient;
+
+    background-image:         radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),         linear-gradient(top, $blue5, $blue4);
     background-size: $searchbutton-width 2.5em;
     background-position: right;
     background-repeat: no-repeat;
   }
   
-  // The search box
+/**
+ *  The Google Custom Search Box
+ *	These definitions all load from Google via AJAX. So in order to not have our definitions overwritten, we need to define them as !important.
+ */
+/*
   form.gsc-search-box {
     margin-bottom: 0;
-    width:auto;
     margin-right:2.5em;
-    table.gsc-search-box, table.gsc-search-box td {
-      border:none;
-    }
+    width:auto;
+    table.gsc-search-box, table.gsc-search-box td { border:none;}
     td.gsc-input {
       padding:0;
       margin:0;
@@ -132,6 +141,7 @@
       padding: 3px 0;
       margin: 1px 0;
     }
+	
     #search-submit {
       position: absolute;
       top:0;
@@ -179,3 +189,4 @@
     padding:4px 8px;
     margin-left: 60px;
   }
+  */
