@@ -1,0 +1,162 @@
+/**
+* All search box definitions will go in here
+*
+*/
+
+/*Basic Form*/
+
+
+/*Google Form*/
+
+/* Search */
+#search-container {
+  display: block;
+  border-top: 1px solid $blue3;
+  background-color: $blue2;
+  //margin:0 -5.55%;
+  right:0;
+  padding: 5px 3% 6px;
+  position: relative;
+  
+  
+  // Wrapper for it all
+  .gsc-control-cse, form.basic-search {
+    padding:0 1em;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border:none;
+    -webkit-box-shadow: 0px 3px 0px $blue2;
+       -moz-box-shadow: 0px 3px 0px $blue2;
+            box-shadow: 0px 3px 0px $blue2;
+    
+    $searchbutton-width: 3.75em; 
+    background-image: -webkit-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%), -webkit-linear-gradient(top, $blue5, $blue4); /* Webkit */
+    background-image:    -moz-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),    -moz-linear-gradient(top, $blue5, $blue4); /* FF */
+    background-image:     -ms-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),     -ms-linear-gradient(top, $blue5, $blue4); /* IE */
+    background-image:      -o-radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),      -o-linear-gradient(top, $blue5, $blue4); /* Opera */
+    background-image:         radial-gradient(-5px center, 10px 20px, white 0%, white 80%, transparent 100%),         linear-gradient(top, $blue5, $blue4); /* W3C */
+    background-size: $searchbutton-width 2.5em;
+    background-position: right;
+    background-repeat: no-repeat;
+  }
+  
+  // The search box
+  form.gsc-search-box {
+    margin-bottom: 0;
+    width:auto;
+    margin-right:2.5em;
+    table.gsc-search-box, table.gsc-search-box td {
+      border:none;
+    }
+    td.gsc-input {
+      padding:0;
+      margin:0;
+      input:focus {
+        border:none;
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
+      }
+    }
+    div.gsc-input-box {
+      border:none;
+      table, td {
+        border:none;
+        margin:0;
+      }
+    }
+  }
+  
+.gsc-thumbnail-inside, .gsc-url-top {
+	padding-left:0px;
+}
+  
+.gsc-results-wrapper-overlay {
+	padding: 5%;
+	width: 80%;
+	left: 5.5%;
+}
+  
+.gsc-table-result, .gsc-above-wrapper-area-container {
+	border:none;
+	td, th{
+		border:none;	
+	}
+}
+  
+  // The search button
+  td.gsc-search-button {
+    padding:0;
+    input {
+      margin:0;
+      border:0;
+      padding:.75em 2em .75em 1.5em;
+      position: absolute;
+      top:.25em;
+      right:2.5%;
+      background: none;
+    }
+  }
+  
+  // Generic search box
+  form.basic-search {
+    background-color: #fff;
+    position: relative;
+    padding-right:4em;
+    margin-left:60px;
+	margin-bottom:0px;
+    #search {
+      width:100%;
+      border: none;
+      padding: 3px 0;
+      margin: 1px 0;
+    }
+    #search-submit {
+      position: absolute;
+      top:0;
+      right:0;
+      padding:  4px 0;
+      width:3.75em;
+      text-indent: -9999em;
+      overflow: hidden;
+      background-color: transparent;
+      border: none;
+      background-image: -webkit-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:    -moz-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:     -ms-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:      -o-radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-image:         radial-gradient(21px 10px, 6px 6px, transparent 0%, transparent 58%, white 68%, white 90%, transparent 100%);
+      background-size: 3em 20px;
+      background-repeat: no-repeat;
+      z-index:1;
+    }
+    &:after {
+      content: " ";
+      display: block;
+      width:2px;
+      height: 7px;
+      border-radius: 2px;
+      background-color: white;
+      position: absolute;
+      top:13px;
+      right:25px;
+      z-index: 10;
+      -webkit-transform: rotate(-45deg);
+         -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+           -o-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+      z-index:0;
+    }
+  }
+  
+  div.gcse-wrapper {
+    z-index: 2;
+    position: absolute;
+    top:0px;
+    left:0px;
+    padding:4px 8px;
+    margin-left: 60px;
+  }
+
+}
