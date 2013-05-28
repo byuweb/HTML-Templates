@@ -274,15 +274,15 @@ body {
 		position: relative;
 	}
 	.sub { 
-		box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
-		-moz-box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
-		-webkit-box-shadow: 0 1px 8px rgba(0,0,0,0.7); 
-		border: 1px solid #369;
-		border-top: 0;
+		background-color: #fff;
+		border-bottom: 3px solid #369;
+		box-shadow: 0 1px 8px rgba(0,0,0,0.7);
+		display:none;
 		margin-top: 0; 
 		padding: 10px;
+		position: absolute;
 		width: 222px;
-		display: none;
+		a {border:none;}
 	}
     .mega {
       @extend %tab-nav-submenu;
@@ -291,17 +291,12 @@ body {
       padding: 1em 0 2em;
 	  width: 920px;
 	  left:32px;
+      ul.links { margin-left: 1%; }
+    }
 	
-      ul.links {
-        margin-left: 1%;
-      }
-    }
-    li.hover .mega {
-      display: block;
-    }
-    .highlight, .featured, hr {
-      display: block;
-    }
+    li.hover .mega, li.hover .sub { display: block; }
+    .highlight, .featured, hr { display: block; }
+	
     .links, .highlight {
       width: 30%;
       float: left;
@@ -310,9 +305,7 @@ body {
       border:none;
       border-top: 1px solid #ddd;
     }
-    .featured {
-      font-weight: bold;
-    }
+    .featured { font-weight: bold; }
     .links {
       &.double {
         width: 63%;
