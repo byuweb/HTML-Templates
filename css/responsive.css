@@ -2225,12 +2225,27 @@ div.gsc-control-cse.gsc-control-cse-en {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000376}}
 table.gsc-search-box {
-  width: 50% !important;
+  position: absolute;
+  right: 0;
   background: none !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000379}}
-table.gsc-search-box * {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000380}}
+table.gsc-search-box table, table.gsc-search-box td, table.gsc-search-box th {
   border: none !important;
+}
+
+/**/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000383}}
+.gsc-input-box {
+  border: none !important;
+  background: none !important;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/wamp\/www\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000388}}
+input.gsc-search-button {
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  border-radius: 1em;
 }
 
 /*

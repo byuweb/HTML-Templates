@@ -67,18 +67,25 @@ $searchbutton-width: 3.75em;
 
   // Wrapper for it all
  div.gsc-control-cse.gsc-control-cse-en {
-	 background: none !important;
+	background: none !important;
 	background-color: none !important;
     border:none !important;
 	padding:0 !important;
   }
 	
   table.gsc-search-box{
-		  width:50% !important;
-	   background:none !important;
-	  & *{border:none !important;}
-	  
-	  }
+	position: absolute;
+	right: 0;
+	background: none !important;
+	& table, & td,& th {border:none !important;}
+}
+/**/
+.gsc-input-box{
+	border: none !important;
+	background: none !important;
+	}
+	
+input.gsc-search-button{@include border-radius(1em);}
   
   
 /*
