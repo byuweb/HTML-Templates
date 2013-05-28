@@ -21,14 +21,21 @@
   top:0; 
 }
 
-.search {
-    @include ir();
-    line-height:2.5em;
-    background:transparent url('../img/search.png') .45em center no-repeat; 
+@media only screen and (min-width : $break-large) {
+#search-container{
+	border-top: none;
+	background: none;
+	padding: 0;
+	position: absolute;
+	right: 17%;
+	}
+
 }
 
-/*The search button on the basic form*/
-#search-submit{
+/*The basic search container*/
+#basic-search{float:right;}
+#search { margin:0; @include border-radius(1em); }/*The search input box*/
+#search-submit{ /*The search button on the basic form*/
   background-color:$blue4;
   border:1px solid $blue5; 		
   color:#fff;
@@ -50,15 +57,23 @@
 }
  */
 
-/* Overwrites the Google Custom Search Form*/
-    $searchbutton-width: 3.75em; 
+/**
+*Overwrites the Google Custom Search Form
+*/
+$searchbutton-width: 3.75em; 
 		
+.gcse-wrapper {padding:0;}
+.gsc-control-cse, #search-container form.basic-search {box-shadow: none;}
+
   // Wrapper for it all
-  .gsc-control-cse{
+ .cse .gsc-control-cse, .gsc-control-cse{
+	backgrond-color: none !important;
     border:none !important;
 	padding:0 !important;
   }
 	
+  .gsc-input{}
+  
 /*
 	@include box-shadow(0px 3px 0px $blue2);
     @include border-radius(15px);
