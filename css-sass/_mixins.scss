@@ -76,16 +76,16 @@ zoom:1;
 }
 
 // box-shadow
-@mixin box-shadow($properties, $alpha: 1, $color: #fff) {
+@mixin box-shadow($properties, $alpha: .5, $color: #000, $shadow2: 0 1.1em 0 0) {
 	@if $properties == none {
 	 -webkit-box-shadow:none;
 		-moz-box-shadow:none;
 			 box-shadow:none;	
 	}
 	@else if $alpha == 1 {
-	 -webkit-box-shadow: $properties $color, 0 1.1em 0 0 $color;
-		-moz-box-shadow: $properties $color, 0 1.1em 0 0 $color;
-			 box-shadow: $properties $color, 0 1.1em 0 0 $color;
+	 -webkit-box-shadow: $properties $color, $shadow2 $color;
+		-moz-box-shadow: $properties $color, $shadow2 $color;
+			 box-shadow: $properties $color, $shadow2 $color;
 	}		
 	@else {
 	 -webkit-box-shadow: $properties rgba($color, $alpha);
