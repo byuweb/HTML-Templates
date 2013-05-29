@@ -75,8 +75,8 @@ zoom:1;
 		 border-radius: $properties;
 }
 
-// box-shadow
-@mixin box-shadow($properties, $alpha: .5, $color: #000, $shadow2: 0 1.1em 0 0) {
+// box-shadow (conflicts with compass; see next function for compatible version)
+/*@mixin box-shadow($properties, $alpha: .5, $color: #000, $shadow2: 0 1.1em 0 0) {
 	@if $properties == none {
 	 -webkit-box-shadow:none;
 		-moz-box-shadow:none;
@@ -92,6 +92,11 @@ zoom:1;
 		-moz-box-shadow: $properties rgba($color, $alpha);
 			 box-shadow: $properties rgba($color, $alpha);
 	}
+}*/
+@mixin box-shadow($properties) {
+	 -webkit-box-shadow: $properties;
+		-moz-box-shadow: $properties;
+			 box-shadow: $properties;
 }
 
 // opacity

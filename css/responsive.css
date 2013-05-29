@@ -1,6 +1,23 @@
 /* Responsive CSS 
 * This is not only for layouts, but also any additional features such as CSS3 for any elements already declared in base.css
 */
+/*@mixin box-shadow($properties, $alpha: .5, $color: #000, $shadow2: 0 1.1em 0 0) {
+	@if $properties == none {
+	 -webkit-box-shadow:none;
+		-moz-box-shadow:none;
+			 box-shadow:none;	
+	}
+	@else if $alpha == 1 {
+	 -webkit-box-shadow: $properties $color, $shadow2 $color;
+		-moz-box-shadow: $properties $color, $shadow2 $color;
+			 box-shadow: $properties $color, $shadow2 $color;
+	}		
+	@else {
+	 -webkit-box-shadow: $properties rgba($color, $alpha);
+		-moz-box-shadow: $properties rgba($color, $alpha);
+			 box-shadow: $properties rgba($color, $alpha);
+	}
+}*/
 .btn-info {
   color: #114477;
   text-shadow: #fff 0px -1px 0px; }
@@ -1077,6 +1094,23 @@ ul.icons {
   content: "\f115"; }
 
 /* @import "compass"; */
+/*@mixin box-shadow($properties, $alpha: .5, $color: #000, $shadow2: 0 1.1em 0 0) {
+	@if $properties == none {
+	 -webkit-box-shadow:none;
+		-moz-box-shadow:none;
+			 box-shadow:none;	
+	}
+	@else if $alpha == 1 {
+	 -webkit-box-shadow: $properties $color, $shadow2 $color;
+		-moz-box-shadow: $properties $color, $shadow2 $color;
+			 box-shadow: $properties $color, $shadow2 $color;
+	}		
+	@else {
+	 -webkit-box-shadow: $properties rgba($color, $alpha);
+		-moz-box-shadow: $properties rgba($color, $alpha);
+			 box-shadow: $properties rgba($color, $alpha);
+	}
+}*/
 /* Side slider navigation */
 body {
   -webkit-transition: left 0.2s ease;
@@ -1120,9 +1154,9 @@ body {
     -webkit-border-radius: 1px;
     -moz-border-radius: 1px;
     border-radius: 1px;
-    -webkit-box-shadow: 0 0.55em 0 0 white, 0 1.1em 0 0 white;
-    -moz-box-shadow: 0 0.55em 0 0 white, 0 1.1em 0 0 white;
-    box-shadow: 0 0.55em 0 0 white, 0 1.1em 0 0 white; }
+    -webkit-box-shadow: 0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff;
+    -moz-box-shadow: 0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff;
+    box-shadow: 0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff; }
 
 /* Side Navigation */
 #primary-nav, #secondary-nav {
@@ -1205,9 +1239,9 @@ body {
   body.sideNav {
     left: 75%; }
     body.sideNav #main-header, body.sideNav #content, body.sideNav footer {
-      -webkit-box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65) rgba(0, 0, 0, 0.5);
-      -moz-box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65) rgba(0, 0, 0, 0.5);
-      box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65) rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65);
+      -moz-box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65);
+      box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65);
       z-index: 2;
       position: relative; }
 
@@ -1243,9 +1277,9 @@ body {
     right: auto;
     top: 90px;
     width: 100%;
-    -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35); }
 
   #primary-nav, #secondary-nav {
     font-size: 1em; }
@@ -1291,9 +1325,9 @@ body {
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5);
-    -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5) rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
     z-index: 1;
     border-bottom: 2px solid #003366; }
     #primary-nav .mega a, #secondary-nav .sub a {
@@ -1762,12 +1796,38 @@ a.mybyu, a.sign-in, .open #search-button {
     #header-top h1 {
       margin: 0; }
     #header-top a.sign-in {
-      right: 5%; }
+      right: 5%;
+      background: #4a79a7;
+      background: -webkit-linear-gradient(top, #628cb6, #336699);
+      background: -moz-linear-gradient(top, #628cb6, #336699);
+      background: -ms-linear-gradient(top, #628cb6, #336699);
+      background: -o-linear-gradient(top, #628cb6, #336699);
+      background: linear-gradient(top, #628cb6, #336699);
+      -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); }
 
   /**
   * All search box definitions will go in here
   *
   */
+  /*@mixin box-shadow($properties, $alpha: .5, $color: #000, $shadow2: 0 1.1em 0 0) {
+  	@if $properties == none {
+  	 -webkit-box-shadow:none;
+  		-moz-box-shadow:none;
+  			 box-shadow:none;	
+  	}
+  	@else if $alpha == 1 {
+  	 -webkit-box-shadow: $properties $color, $shadow2 $color;
+  		-moz-box-shadow: $properties $color, $shadow2 $color;
+  			 box-shadow: $properties $color, $shadow2 $color;
+  	}		
+  	@else {
+  	 -webkit-box-shadow: $properties rgba($color, $alpha);
+  		-moz-box-shadow: $properties rgba($color, $alpha);
+  			 box-shadow: $properties rgba($color, $alpha);
+  	}
+  }*/
   /**
   * Basic Search Form
   * If for some reasons that the search cannot load from Google, or the browser doesn't support JS, then they can still use the default search form.
@@ -1780,15 +1840,18 @@ a.mybyu, a.sign-in, .open #search-button {
     right: 0;
     width: 250px;
     padding: 0;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em;
     background: #4a79a7;
     background: -webkit-linear-gradient(top, #628cb6, #336699);
     background: -moz-linear-gradient(top, #628cb6, #336699);
     background: -ms-linear-gradient(top, #628cb6, #336699);
     background: -o-linear-gradient(top, #628cb6, #336699);
     background: linear-gradient(top, #628cb6, #336699);
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-    border-radius: 1em; }
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); }
     #search-container #basic-search {
       margin: 0;
       width: 250px; }
@@ -1804,7 +1867,21 @@ a.mybyu, a.sign-in, .open #search-button {
         margin: 0;
         padding-left: 0; }
     #search-container .gcse-wrapper {
-      display: none; }
+      background: none; }
+      #search-container .gcse-wrapper .gsc-control-cse td.gsc-search-button {
+        padding: 0; }
+        #search-container .gcse-wrapper .gsc-control-cse td.gsc-search-button input.gsc-search-button-v2 {
+          background: none;
+          border: none;
+          text-indent: -1000px;
+          overflow: hidden;
+          margin: 0;
+          padding: 8px 1.5em;
+          zoom: 1;
+          opacity: 0;
+          filter: alpha(opacity=0); }
+      #search-container .gcse-wrapper .gsc-control-cse table td .gsc-input-box {
+        background: none; }
 
   #header-top a.sign-in {
     position: absolute;

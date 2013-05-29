@@ -63,7 +63,11 @@ a.mybyu, a.sign-in, .open #search-button {
 		position: relative;
 		z-index: 500; 
 		h1{ margin:0 }
-		a.sign-in {right: 5%;}
+		a.sign-in {
+			right: 5%;
+			@include linear-gradient($blue5,$blue4);
+			@include box-shadow(#{"0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2)"});
+		}
 	 }	
 	 
 	@import "search";
@@ -84,7 +88,7 @@ a.mybyu, a.sign-in, .open #search-button {
 		padding-bottom: 27px;
 		position: relative;
 		min-height:100%;
-		@include box-shadow(0 0 30px 0px, .7, #dedede);
+		@include box-shadow(0 0 30px 0px rgba(222, 222, 222, 0.7));
 	}
 	
 	#logo{
