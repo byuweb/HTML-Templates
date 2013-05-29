@@ -204,6 +204,7 @@ body {
     top:90px;
     width:100%;
     @include box-shadow(0px 1px 8px rgba(#000, 0.35));
+	z-index: 600;
   }
 
   
@@ -351,7 +352,7 @@ body {
   #secondary-nav {
     position: absolute;
 	bottom: 42px;
-	right:112px;
+	right:9px;
     @extend %tab-nav;
     .sub {
       @extend %tab-nav-submenu;
@@ -372,3 +373,10 @@ body {
   
 }
 
+/* Small adjustments for when the screen is wider than max body width */
+@media all and (min-width:940px) {
+	#secondary-nav {
+		right: 50%;
+		margin-right: -470px;
+	}
+}

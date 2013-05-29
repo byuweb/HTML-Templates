@@ -1279,7 +1279,8 @@ body {
     width: 100%;
     -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
-    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35); }
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
+    z-index: 600; }
 
   #primary-nav, #secondary-nav {
     font-size: 1em; }
@@ -1405,7 +1406,7 @@ body {
   #secondary-nav {
     position: absolute;
     bottom: 42px;
-    right: 112px; }
+    right: 9px; }
     #secondary-nav li.hover .sub {
       display: block;
       position: absolute; }
@@ -1415,6 +1416,11 @@ body {
       #secondary-nav a:hover {
         background: transparent;
         color: #fff; } }
+/* Small adjustments for when the screen is wider than max body width */
+@media all and (min-width: 940px) {
+  #secondary-nav {
+    right: 50%;
+    margin-right: -470px; } }
 /* Slider styles (just copied from old templates for simplicity) */
 /*
     AnythingSlider v1.5.10+ Default (base) theme
