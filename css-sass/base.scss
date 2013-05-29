@@ -36,7 +36,7 @@ h1, h2{margin:0}
   a {  display:block;}
 }
 
-a.mybyu, a.sign-in, .open #search-button {
+a.mybyu, a.sign-in, .open #search-button, #search-submit {
   background-color:$blue5;
   border:none;
   border-radius:1em;
@@ -48,6 +48,48 @@ a.mybyu, a.sign-in, .open #search-button {
   &:hover {
 	background-color: $blue4;
     cursor:pointer; } 
+}
+
+/* Search box styling for mobile */
+#search-container {
+	position: relative;
+	padding-bottom: 4px;
+
+	#basic-search #search {margin-bottom: 0;}
+	.gcse-wrapper {
+		position:absolute;
+		top:0;
+		background: $blue0;
+		
+		.gsc-control-cse {
+			background: none;
+			border: none;
+			padding: 0;
+							
+			input.gsc-search-button-v2 {margin:0;}
+			
+			table {
+				border: none;
+				margin: 0;
+				
+				td {
+					border:none;
+					
+					.gsc-input-box {
+						background: #fff;
+						border-radius: 2px;
+						border: none;
+						padding:1px;
+						
+						.gsib_a {
+							padding: 0;
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Main Content */
