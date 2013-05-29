@@ -54,9 +54,18 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 #search-container {
 	position: relative;
 	padding-bottom: 4px;
+	width: 90%;
+	margin-left: 10%;
 
-	#basic-search #search {margin-bottom: 0;}
+	#basic-search {
+		width: 100%;
+		
+		#search {
+			margin-bottom: 0;
+		}
+	}
 	.gcse-wrapper {
+		width: 100%;
 		position:absolute;
 		top:0;
 		background: $blue0;

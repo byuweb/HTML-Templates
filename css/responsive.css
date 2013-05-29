@@ -18,12 +18,15 @@
 			 box-shadow: $properties rgba($color, $alpha);
 	}
 }*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\000031}}
 .btn-info {
   color: #114477;
   text-shadow: #fff 0px -1px 0px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\000034}}
   .btn-info:hover {
     color: #002255; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\000039}}
 .bs-docs-example {
   position: relative;
   margin: 15px 0;
@@ -34,6 +37,7 @@
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000319}}
 .bs-docs-example:after {
   content: "Example";
   position: absolute;
@@ -49,14 +53,17 @@
   -moz-border-radius: 4px 0 4px 0;
   border-radius: 4px 0 4px 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000334}}
 .bs-docs-example + .prettyprint {
   margin-top: -20px;
   padding-top: 15px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000338}}
 h3 code {
   font-size: 15px;
   font-weight: normal; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000342}}
 pre {
   display: block;
   padding: 9.5px;
@@ -74,6 +81,7 @@ pre {
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000359}}
 code, pre {
   padding: 0 3px 2px;
   font-family: Monaco,Menlo,Consolas,"Courier New",monospace;
@@ -82,10 +90,12 @@ code, pre {
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000367}}
 dd {
   margin-left: 10px;
   padding: 0 0 10px 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_bootstrap-override\.scss}line{font-family:\0000371}}
 .bs-docs-separator {
   margin: 40px 0 39px; }
 
@@ -120,6 +130,7 @@ dd {
 
 /*  Font Awesome styles
     ------------------------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\0000343}}
 [class^="icon-"],
 [class*=" icon-"] {
   font-family: FontAwesome;
@@ -139,6 +150,7 @@ dd {
   margin-top: 0; }
 
 /* more sprites.less reset */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\0000375}}
 .icon-white,
 .nav-pills > .active > a > [class^="icon-"],
 .nav-pills > .active > a > [class*=" icon-"],
@@ -154,6 +166,7 @@ dd {
 .dropdown-submenu:hover > a > [class*=" icon-"] {
   background-image: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\0000380}}
 [class^="icon-"]:before,
 [class*=" icon-"]:before {
   text-decoration: inherit;
@@ -161,33 +174,40 @@ dd {
   speak: none; }
 
 /* makes sure icons active on rollover in links */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\0000389}}
 a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline-block; }
 
 /* makes the font 33% larger relative to the icon container */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\0000395}}
 .icon-large:before {
   vertical-align: -10%;
   font-size: 1.3333333333333333em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003102}}
 .btn [class^="icon-"],
 .btn [class*=" icon-"], .nav [class^="icon-"],
 .nav [class*=" icon-"] {
   display: inline;
   /* keeps button heights with and without icons the same */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003105}}
   .btn [class^="icon-"].icon-large,
   .btn [class*=" icon-"].icon-large, .nav [class^="icon-"].icon-large,
   .nav [class*=" icon-"].icon-large {
     line-height: .9em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003106}}
   .btn [class^="icon-"].icon-spin,
   .btn [class*=" icon-"].icon-spin, .nav [class^="icon-"].icon-spin,
   .nav [class*=" icon-"].icon-spin {
     display: inline-block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003112}}
 .nav-tabs [class^="icon-"],
 .nav-tabs [class*=" icon-"], .nav-pills [class^="icon-"],
 .nav-pills [class*=" icon-"] {
   /* keeps button heights with and without icons the same */ }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003114}}
   .nav-tabs [class^="icon-"], .nav-tabs [class^="icon-"].icon-large,
   .nav-tabs [class*=" icon-"],
   .nav-tabs [class*=" icon-"].icon-large, .nav-pills [class^="icon-"], .nav-pills [class^="icon-"].icon-large,
@@ -195,28 +215,34 @@ a [class*=" icon-"] {
   .nav-pills [class*=" icon-"].icon-large {
     line-height: .9em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003120}}
 li [class^="icon-"],
 li [class*=" icon-"], .nav li [class^="icon-"],
 .nav li [class*=" icon-"] {
   display: inline-block;
   width: 1.25em;
   text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003124}}
   li [class^="icon-"].icon-large,
   li [class*=" icon-"].icon-large, .nav li [class^="icon-"].icon-large,
   .nav li [class*=" icon-"].icon-large {
     /* increased font size for icon-large */
     width: 1.5625em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003131}}
 ul.icons {
   list-style-type: none;
   text-indent: -.75em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003137}}
   ul.icons li [class^="icon-"],
   ul.icons li [class*=" icon-"] {
     width: .75em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003143}}
 .icon-muted {
   color: #eeeeee; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003150}}
 .icon-border {
   border: solid 1px #eeeeee;
   padding: .2em .25em .15em;
@@ -224,70 +250,88 @@ ul.icons {
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003159}}
 .icon-2x {
   font-size: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003161}}
   .icon-2x.icon-border {
     border-width: 2px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003166}}
 .icon-3x {
   font-size: 3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003168}}
   .icon-3x.icon-border {
     border-width: 3px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003173}}
 .icon-4x {
   font-size: 4em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003175}}
   .icon-4x.icon-border {
     border-width: 4px;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003185}}
 .pull-right {
   float: right; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003186}}
 .pull-left {
   float: left; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003190}}
 [class^="icon-"].pull-left,
 [class*=" icon-"].pull-left {
   margin-right: .3em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003193}}
 [class^="icon-"].pull-right,
 [class*=" icon-"].pull-right {
   margin-left: .3em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003202}}
 .btn [class^="icon-"].pull-left.icon-2x, .btn [class^="icon-"].pull-right.icon-2x,
 .btn [class*=" icon-"].pull-left.icon-2x,
 .btn [class*=" icon-"].pull-right.icon-2x {
   margin-top: .18em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003204}}
 .btn [class^="icon-"].icon-spin.icon-large,
 .btn [class*=" icon-"].icon-spin.icon-large {
   line-height: .8em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003212}}
 .btn.btn-small [class^="icon-"].pull-left.icon-2x, .btn.btn-small [class^="icon-"].pull-right.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-left.icon-2x,
 .btn.btn-small [class*=" icon-"].pull-right.icon-2x {
   margin-top: .25em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003219}}
 .btn.btn-large [class^="icon-"],
 .btn.btn-large [class*=" icon-"] {
   margin-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003222}}
   .btn.btn-large [class^="icon-"].pull-left.icon-2x, .btn.btn-large [class^="icon-"].pull-right.icon-2x,
   .btn.btn-large [class*=" icon-"].pull-left.icon-2x,
   .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
     margin-top: .05em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003224}}
   .btn.btn-large [class^="icon-"].pull-left.icon-2x,
   .btn.btn-large [class*=" icon-"].pull-left.icon-2x {
     margin-right: .2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003225}}
   .btn.btn-large [class^="icon-"].pull-right.icon-2x,
   .btn.btn-large [class*=" icon-"].pull-right.icon-2x {
     margin-left: .2em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003230}}
 .icon-spin {
   display: inline-block;
   -moz-animation: spin 2s infinite linear;
@@ -345,751 +389,1000 @@ ul.icons {
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003268}}
 .icon-glass:before {
   content: "\f000"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003269}}
 .icon-music:before {
   content: "\f001"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003270}}
 .icon-search:before {
   content: "\f002"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003271}}
 .icon-envelope:before {
   content: "\f003"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003272}}
 .icon-heart:before {
   content: "\f004"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003273}}
 .icon-star:before {
   content: "\f005"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003274}}
 .icon-star-empty:before {
   content: "\f006"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003275}}
 .icon-user:before {
   content: "\f007"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003276}}
 .icon-film:before {
   content: "\f008"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003277}}
 .icon-th-large:before {
   content: "\f009"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003278}}
 .icon-th:before {
   content: "\f00a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003279}}
 .icon-th-list:before {
   content: "\f00b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003280}}
 .icon-ok:before {
   content: "\f00c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003281}}
 .icon-remove:before {
   content: "\f00d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003282}}
 .icon-zoom-in:before {
   content: "\f00e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003284}}
 .icon-zoom-out:before {
   content: "\f010"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003285}}
 .icon-off:before {
   content: "\f011"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003286}}
 .icon-signal:before {
   content: "\f012"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003287}}
 .icon-cog:before {
   content: "\f013"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003288}}
 .icon-trash:before {
   content: "\f014"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003289}}
 .icon-home:before {
   content: "\f015"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003290}}
 .icon-file:before {
   content: "\f016"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003291}}
 .icon-time:before {
   content: "\f017"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003292}}
 .icon-road:before {
   content: "\f018"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003293}}
 .icon-download-alt:before {
   content: "\f019"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003294}}
 .icon-download:before {
   content: "\f01a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003295}}
 .icon-upload:before {
   content: "\f01b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003296}}
 .icon-inbox:before {
   content: "\f01c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003297}}
 .icon-play-circle:before {
   content: "\f01d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003298}}
 .icon-repeat:before {
   content: "\f01e"; }
 
 /* \f020 doesn't work in Safari. all shifted one down */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003301}}
 .icon-refresh:before {
   content: "\f021"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003302}}
 .icon-list-alt:before {
   content: "\f022"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003303}}
 .icon-lock:before {
   content: "\f023"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003304}}
 .icon-flag:before {
   content: "\f024"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003305}}
 .icon-headphones:before {
   content: "\f025"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003306}}
 .icon-volume-off:before {
   content: "\f026"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003307}}
 .icon-volume-down:before {
   content: "\f027"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003308}}
 .icon-volume-up:before {
   content: "\f028"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003309}}
 .icon-qrcode:before {
   content: "\f029"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003310}}
 .icon-barcode:before {
   content: "\f02a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003311}}
 .icon-tag:before {
   content: "\f02b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003312}}
 .icon-tags:before {
   content: "\f02c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003313}}
 .icon-book:before {
   content: "\f02d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003314}}
 .icon-bookmark:before {
   content: "\f02e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003315}}
 .icon-print:before {
   content: "\f02f"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003317}}
 .icon-camera:before {
   content: "\f030"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003318}}
 .icon-font:before {
   content: "\f031"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003319}}
 .icon-bold:before {
   content: "\f032"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003320}}
 .icon-italic:before {
   content: "\f033"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003321}}
 .icon-text-height:before {
   content: "\f034"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003322}}
 .icon-text-width:before {
   content: "\f035"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003323}}
 .icon-align-left:before {
   content: "\f036"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003324}}
 .icon-align-center:before {
   content: "\f037"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003325}}
 .icon-align-right:before {
   content: "\f038"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003326}}
 .icon-align-justify:before {
   content: "\f039"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003327}}
 .icon-list:before {
   content: "\f03a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003328}}
 .icon-indent-left:before {
   content: "\f03b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003329}}
 .icon-indent-right:before {
   content: "\f03c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003330}}
 .icon-facetime-video:before {
   content: "\f03d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003331}}
 .icon-picture:before {
   content: "\f03e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003333}}
 .icon-pencil:before {
   content: "\f040"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003334}}
 .icon-map-marker:before {
   content: "\f041"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003335}}
 .icon-adjust:before {
   content: "\f042"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003336}}
 .icon-tint:before {
   content: "\f043"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003337}}
 .icon-edit:before {
   content: "\f044"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003338}}
 .icon-share:before {
   content: "\f045"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003339}}
 .icon-check:before {
   content: "\f046"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003340}}
 .icon-move:before {
   content: "\f047"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003341}}
 .icon-step-backward:before {
   content: "\f048"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003342}}
 .icon-fast-backward:before {
   content: "\f049"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003343}}
 .icon-backward:before {
   content: "\f04a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003344}}
 .icon-play:before {
   content: "\f04b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003345}}
 .icon-pause:before {
   content: "\f04c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003346}}
 .icon-stop:before {
   content: "\f04d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003347}}
 .icon-forward:before {
   content: "\f04e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003349}}
 .icon-fast-forward:before {
   content: "\f050"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003350}}
 .icon-step-forward:before {
   content: "\f051"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003351}}
 .icon-eject:before {
   content: "\f052"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003352}}
 .icon-chevron-left:before {
   content: "\f053"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003353}}
 .icon-chevron-right:before {
   content: "\f054"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003354}}
 .icon-plus-sign:before {
   content: "\f055"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003355}}
 .icon-minus-sign:before {
   content: "\f056"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003356}}
 .icon-remove-sign:before {
   content: "\f057"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003357}}
 .icon-ok-sign:before {
   content: "\f058"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003358}}
 .icon-question-sign:before {
   content: "\f059"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003359}}
 .icon-info-sign:before {
   content: "\f05a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003360}}
 .icon-screenshot:before {
   content: "\f05b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003361}}
 .icon-remove-circle:before {
   content: "\f05c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003362}}
 .icon-ok-circle:before {
   content: "\f05d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003363}}
 .icon-ban-circle:before {
   content: "\f05e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003365}}
 .icon-arrow-left:before {
   content: "\f060"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003366}}
 .icon-arrow-right:before {
   content: "\f061"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003367}}
 .icon-arrow-up:before {
   content: "\f062"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003368}}
 .icon-arrow-down:before {
   content: "\f063"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003369}}
 .icon-share-alt:before {
   content: "\f064"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003370}}
 .icon-resize-full:before {
   content: "\f065"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003371}}
 .icon-resize-small:before {
   content: "\f066"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003372}}
 .icon-plus:before {
   content: "\f067"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003373}}
 .icon-minus:before {
   content: "\f068"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003374}}
 .icon-asterisk:before {
   content: "\f069"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003375}}
 .icon-exclamation-sign:before {
   content: "\f06a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003376}}
 .icon-gift:before {
   content: "\f06b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003377}}
 .icon-leaf:before {
   content: "\f06c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003378}}
 .icon-fire:before {
   content: "\f06d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003379}}
 .icon-eye-open:before {
   content: "\f06e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003381}}
 .icon-eye-close:before {
   content: "\f070"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003382}}
 .icon-warning-sign:before {
   content: "\f071"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003383}}
 .icon-plane:before {
   content: "\f072"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003384}}
 .icon-calendar:before {
   content: "\f073"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003385}}
 .icon-random:before {
   content: "\f074"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003386}}
 .icon-comment:before {
   content: "\f075"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003387}}
 .icon-magnet:before {
   content: "\f076"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003388}}
 .icon-chevron-up:before {
   content: "\f077"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003389}}
 .icon-chevron-down:before {
   content: "\f078"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003390}}
 .icon-retweet:before {
   content: "\f079"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003391}}
 .icon-shopping-cart:before {
   content: "\f07a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003392}}
 .icon-folder-close:before {
   content: "\f07b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003393}}
 .icon-folder-open:before {
   content: "\f07c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003394}}
 .icon-resize-vertical:before {
   content: "\f07d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003395}}
 .icon-resize-horizontal:before {
   content: "\f07e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003397}}
 .icon-bar-chart:before {
   content: "\f080"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003398}}
 .icon-twitter-sign:before {
   content: "\f081"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003399}}
 .icon-facebook-sign:before {
   content: "\f082"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003400}}
 .icon-camera-retro:before {
   content: "\f083"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003401}}
 .icon-key:before {
   content: "\f084"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003402}}
 .icon-cogs:before {
   content: "\f085"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003403}}
 .icon-comments:before {
   content: "\f086"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003404}}
 .icon-thumbs-up:before {
   content: "\f087"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003405}}
 .icon-thumbs-down:before {
   content: "\f088"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003406}}
 .icon-star-half:before {
   content: "\f089"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003407}}
 .icon-heart-empty:before {
   content: "\f08a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003408}}
 .icon-signout:before {
   content: "\f08b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003409}}
 .icon-linkedin-sign:before {
   content: "\f08c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003410}}
 .icon-pushpin:before {
   content: "\f08d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003411}}
 .icon-external-link:before {
   content: "\f08e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003413}}
 .icon-signin:before {
   content: "\f090"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003414}}
 .icon-trophy:before {
   content: "\f091"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003415}}
 .icon-github-sign:before {
   content: "\f092"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003416}}
 .icon-upload-alt:before {
   content: "\f093"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003417}}
 .icon-lemon:before {
   content: "\f094"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003418}}
 .icon-phone:before {
   content: "\f095"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003419}}
 .icon-check-empty:before {
   content: "\f096"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003420}}
 .icon-bookmark-empty:before {
   content: "\f097"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003421}}
 .icon-phone-sign:before {
   content: "\f098"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003422}}
 .icon-twitter:before {
   content: "\f099"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003423}}
 .icon-facebook:before {
   content: "\f09a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003424}}
 .icon-github:before {
   content: "\f09b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003425}}
 .icon-unlock:before {
   content: "\f09c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003426}}
 .icon-credit-card:before {
   content: "\f09d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003427}}
 .icon-rss:before {
   content: "\f09e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003429}}
 .icon-hdd:before {
   content: "\f0a0"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003430}}
 .icon-bullhorn:before {
   content: "\f0a1"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003431}}
 .icon-bell:before {
   content: "\f0a2"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003432}}
 .icon-certificate:before {
   content: "\f0a3"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003433}}
 .icon-hand-right:before {
   content: "\f0a4"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003434}}
 .icon-hand-left:before {
   content: "\f0a5"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003435}}
 .icon-hand-up:before {
   content: "\f0a6"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003436}}
 .icon-hand-down:before {
   content: "\f0a7"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003437}}
 .icon-circle-arrow-left:before {
   content: "\f0a8"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003438}}
 .icon-circle-arrow-right:before {
   content: "\f0a9"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003439}}
 .icon-circle-arrow-up:before {
   content: "\f0aa"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003440}}
 .icon-circle-arrow-down:before {
   content: "\f0ab"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003441}}
 .icon-globe:before {
   content: "\f0ac"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003442}}
 .icon-wrench:before {
   content: "\f0ad"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003443}}
 .icon-tasks:before {
   content: "\f0ae"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003445}}
 .icon-filter:before {
   content: "\f0b0"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003446}}
 .icon-briefcase:before {
   content: "\f0b1"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003447}}
 .icon-fullscreen:before {
   content: "\f0b2"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003449}}
 .icon-group:before {
   content: "\f0c0"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003450}}
 .icon-link:before {
   content: "\f0c1"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003451}}
 .icon-cloud:before {
   content: "\f0c2"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003452}}
 .icon-beaker:before {
   content: "\f0c3"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003453}}
 .icon-cut:before {
   content: "\f0c4"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003454}}
 .icon-copy:before {
   content: "\f0c5"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003455}}
 .icon-paper-clip:before {
   content: "\f0c6"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003456}}
 .icon-save:before {
   content: "\f0c7"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003457}}
 .icon-sign-blank:before {
   content: "\f0c8"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003458}}
 .icon-reorder:before {
   content: "\f0c9"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003459}}
 .icon-list-ul:before {
   content: "\f0ca"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003460}}
 .icon-list-ol:before {
   content: "\f0cb"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003461}}
 .icon-strikethrough:before {
   content: "\f0cc"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003462}}
 .icon-underline:before {
   content: "\f0cd"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003463}}
 .icon-table:before {
   content: "\f0ce"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003465}}
 .icon-magic:before {
   content: "\f0d0"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003466}}
 .icon-truck:before {
   content: "\f0d1"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003467}}
 .icon-pinterest:before {
   content: "\f0d2"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003468}}
 .icon-pinterest-sign:before {
   content: "\f0d3"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003469}}
 .icon-google-plus-sign:before {
   content: "\f0d4"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003470}}
 .icon-google-plus:before {
   content: "\f0d5"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003471}}
 .icon-money:before {
   content: "\f0d6"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003472}}
 .icon-caret-down:before {
   content: "\f0d7"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003473}}
 .icon-caret-up:before {
   content: "\f0d8"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003474}}
 .icon-caret-left:before {
   content: "\f0d9"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003475}}
 .icon-caret-right:before {
   content: "\f0da"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003476}}
 .icon-columns:before {
   content: "\f0db"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003477}}
 .icon-sort:before {
   content: "\f0dc"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003478}}
 .icon-sort-down:before {
   content: "\f0dd"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003479}}
 .icon-sort-up:before {
   content: "\f0de"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003481}}
 .icon-envelope-alt:before {
   content: "\f0e0"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003482}}
 .icon-linkedin:before {
   content: "\f0e1"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003483}}
 .icon-undo:before {
   content: "\f0e2"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003484}}
 .icon-legal:before {
   content: "\f0e3"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003485}}
 .icon-dashboard:before {
   content: "\f0e4"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003486}}
 .icon-comment-alt:before {
   content: "\f0e5"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003487}}
 .icon-comments-alt:before {
   content: "\f0e6"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003488}}
 .icon-bolt:before {
   content: "\f0e7"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003489}}
 .icon-sitemap:before {
   content: "\f0e8"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003490}}
 .icon-umbrella:before {
   content: "\f0e9"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003491}}
 .icon-paste:before {
   content: "\f0ea"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003492}}
 .icon-lightbulb:before {
   content: "\f0eb"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003493}}
 .icon-exchange:before {
   content: "\f0ec"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003494}}
 .icon-cloud-download:before {
   content: "\f0ed"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003495}}
 .icon-cloud-upload:before {
   content: "\f0ee"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003497}}
 .icon-user-md:before {
   content: "\f0f0"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003498}}
 .icon-stethoscope:before {
   content: "\f0f1"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003499}}
 .icon-suitcase:before {
   content: "\f0f2"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003500}}
 .icon-bell-alt:before {
   content: "\f0f3"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003501}}
 .icon-coffee:before {
   content: "\f0f4"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003502}}
 .icon-food:before {
   content: "\f0f5"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003503}}
 .icon-file-alt:before {
   content: "\f0f6"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003504}}
 .icon-building:before {
   content: "\f0f7"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003505}}
 .icon-hospital:before {
   content: "\f0f8"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003506}}
 .icon-ambulance:before {
   content: "\f0f9"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003507}}
 .icon-medkit:before {
   content: "\f0fa"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003508}}
 .icon-fighter-jet:before {
   content: "\f0fb"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003509}}
 .icon-beer:before {
   content: "\f0fc"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003510}}
 .icon-h-sign:before {
   content: "\f0fd"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003511}}
 .icon-plus-sign-alt:before {
   content: "\f0fe"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003513}}
 .icon-double-angle-left:before {
   content: "\f100"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003514}}
 .icon-double-angle-right:before {
   content: "\f101"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003515}}
 .icon-double-angle-up:before {
   content: "\f102"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003516}}
 .icon-double-angle-down:before {
   content: "\f103"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003517}}
 .icon-angle-left:before {
   content: "\f104"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003518}}
 .icon-angle-right:before {
   content: "\f105"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003519}}
 .icon-angle-up:before {
   content: "\f106"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003520}}
 .icon-angle-down:before {
   content: "\f107"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003521}}
 .icon-desktop:before {
   content: "\f108"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003522}}
 .icon-laptop:before {
   content: "\f109"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003523}}
 .icon-tablet:before {
   content: "\f10a"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003524}}
 .icon-mobile-phone:before {
   content: "\f10b"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003525}}
 .icon-circle-blank:before {
   content: "\f10c"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003526}}
 .icon-quote-left:before {
   content: "\f10d"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003527}}
 .icon-quote-right:before {
   content: "\f10e"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003529}}
 .icon-spinner:before {
   content: "\f110"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003530}}
 .icon-circle:before {
   content: "\f111"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003531}}
 .icon-reply:before {
   content: "\f112"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003532}}
 .icon-github-alt:before {
   content: "\f113"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003533}}
 .icon-folder-close-alt:before {
   content: "\f114"; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_font-awesome\.scss}line{font-family:\00003534}}
 .icon-folder-open-alt:before {
   content: "\f115"; }
 
@@ -1112,6 +1405,7 @@ ul.icons {
 	}
 }*/
 /* Side slider navigation */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\000039}}
 body {
   -webkit-transition: left 0.2s ease;
   -moz-transition: left 0.2s ease;
@@ -1121,17 +1415,19 @@ body {
   position: relative;
   left: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000315}}
 #main-header {
   position: relative; }
 
 /* Menu button */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000321}}
 .menu-button {
   position: absolute;
   width: 1.75em;
   height: 1.5em;
   padding: .5em;
-  bottom: 0;
-  left: 0;
+  bottom: 13px;
+  left: 18px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -1139,9 +1435,11 @@ body {
   text-indent: -999em;
   overflow: hidden;
   display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000333}}
   .menu-button:hover {
     background-color: #003366;
     border-color: #114477; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000337}}
   .menu-button:before {
     content: "";
     position: absolute;
@@ -1159,8 +1457,10 @@ body {
     box-shadow: 0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff; }
 
 /* Side Navigation */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000354}}
 #primary-nav, #secondary-nav {
   font-size: 1.2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000356}}
   #primary-nav a, #secondary-nav a {
     color: #fff;
     padding: 1em 5%;
@@ -1168,13 +1468,16 @@ body {
     -webkit-text-shadow: 0px -1px 0px black black;
     -moz-text-shadow: 0px -1px 0px black black;
     text-shadow: 0px -1px 0px black black; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000361}}
     #primary-nav a:hover, #secondary-nav a:hover {
       text-decoration: none;
       background-color: #001948; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000366}}
   #primary-nav > ul, #secondary-nav > ul {
     padding: 0;
     background: #003366;
     border-right: 1px solid #114477; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000372}}
   #primary-nav li, #secondary-nav li {
     display: block;
     float: none;
@@ -1182,11 +1485,14 @@ body {
     border-bottom: 1px solid #002255;
     border-top: 1px solid #114477;
     overflow: hidden; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000379}}
     #primary-nav li.left, #secondary-nav li.left, #primary-nav li.right, #secondary-nav li.right {
       padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000382}}
     #primary-nav li.hover, #secondary-nav li.hover {
       background-color: #001948; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000388}}
 #primary-nav .mega, #primary-nav .sub, #secondary-nav .sub {
   max-height: 0px;
   -webkit-transition: max-height 0.2s ease;
@@ -1197,6 +1503,7 @@ body {
   background-color: #002255;
   margin: 0;
   position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\0000394}}
   #primary-nav .mega a, #primary-nav .sub a, #secondary-nav .sub a {
     padding-left: 1.75em;
     border-top: 1px solid #003366;
@@ -1204,40 +1511,53 @@ body {
     padding: .65em 10%;
     padding-right: 5%;
     color: #e0edf9; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003101}}
     #primary-nav .mega a:hover, #primary-nav .sub a:hover, #secondary-nav .sub a:hover {
       color: #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003105}}
   #primary-nav .mega ul, #primary-nav .sub ul, #secondary-nav .sub ul {
     padding: 0;
     margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003106}}
     #primary-nav .mega ul .sublinks, #primary-nav .sub ul .sublinks, #secondary-nav .sub ul .sublinks {
       padding-left: 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003112}}
   #primary-nav .mega li, #primary-nav .sub li, #secondary-nav .sub li {
     border: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003117}}
 #primary-nav li.hover .mega, #primary-nav li.hover .sub, #secondary-nav li.hover .sub {
   max-height: 1500px; }
 
 /* Primary Nav */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003131}}
 #primary-nav .highlight, #primary-nav .featured, #primary-nav hr {
   display: none; }
 
 /* Secondary Nav */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003139}}
 #secondary-nav > ul {
   background-color: #336699; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003145}}
 #secondary-nav a:hover {
   background-color: #114477; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003148}}
 #secondary-nav li {
   border-top-color: #628cb6;
   border-bottom-color: #114477; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003155}}
 #secondary-nav ul {
   padding: 0; }
 
 @media all and (min-width: 275px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003161}}
   .menu-button {
     display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003165}}
   body.sideNav {
     left: 75%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003167}}
     body.sideNav #main-header, body.sideNav #content, body.sideNav footer {
       -webkit-box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65);
       -moz-box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65);
@@ -1245,6 +1565,7 @@ body {
       z-index: 2;
       position: relative; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003174}}
   .nav-container {
     display: none;
     height: 100%;
@@ -1255,16 +1576,20 @@ body {
     width: 75%;
     z-index: 1;
     background-color: #002255; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003184}}
     .sideNav .nav-container {
       display: block; } }
 /*Full Screen Menus*/
 @media all and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003191}}
   .menu-button {
     display: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003192}}
   body.sideNav {
     left: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003194}}
   .nav-container {
     background-color: #001948;
     border-top: 1px solid #114477;
@@ -1282,17 +1607,23 @@ body {
     box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35);
     z-index: 600; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003211}}
   #primary-nav, #secondary-nav {
     font-size: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003213}}
     #primary-nav > ul, #secondary-nav > ul {
       background: transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003215}}
       #primary-nav > ul > li, #secondary-nav > ul > li {
         float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003219}}
     #primary-nav li, #secondary-nav li {
       border-top: 0px solid transparent;
       border-bottom: 0px solid transparent; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003222}}
       #primary-nav li.hover, #secondary-nav li.hover {
         overflow: visible; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003224}}
         #primary-nav li.hover > a, #secondary-nav li.hover > a {
           -webkit-border-radius: 3px 3px 0 0;
           -moz-border-radius: 3px 3px 0 0;
@@ -1300,17 +1631,21 @@ body {
           position: relative;
           z-index: 2;
           box-shadow: 0px 3px 0px #fff; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003230}}
         #primary-nav li.hover a, #secondary-nav li.hover a {
           background: #fff;
           color: #001948;
           -webkit-text-shadow: none;
           -moz-text-shadow: none;
           text-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003235}}
         #primary-nav li.hover ul a:hover, #secondary-nav li.hover ul a:hover {
           background: #003366; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003240}}
     #primary-nav a, #secondary-nav a {
       padding: .6em .75em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003245}}
   #primary-nav .mega, #secondary-nav .sub {
     display: none;
     position: absolute;
@@ -1331,18 +1666,22 @@ body {
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5);
     z-index: 1;
     border-bottom: 2px solid #003366; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003261}}
     #primary-nav .mega a, #secondary-nav .sub a {
       border-bottom: 0px solid transparent;
       border-top: 0px solid transparent;
       padding: .5em 1.5em; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003268}}
   #primary-nav {
     padding-left: 2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003271}}
     #primary-nav > ul {
       width: 940px;
       margin: 0 auto;
       padding: 0 32px;
       position: relative; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003277}}
     #primary-nav .sub {
       background-color: #fff;
       border-bottom: 3px solid #369;
@@ -1352,8 +1691,10 @@ body {
       padding: 10px;
       position: absolute;
       width: 222px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003286}}
       #primary-nav .sub a {
         border: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003288}}
     #primary-nav .mega {
       position: absolute;
       -webkit-border-radius: 0 0 3px 3px;
@@ -1362,62 +1703,83 @@ body {
       padding: 1em 0 2em;
       width: 920px;
       left: 32px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003295}}
       #primary-nav .mega ul.links {
         margin-left: 1%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003298}}
     #primary-nav li.hover .mega, #primary-nav li.hover .sub {
       display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003299}}
     #primary-nav .highlight, #primary-nav .featured, #primary-nav hr {
       display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003301}}
     #primary-nav .links, #primary-nav .highlight {
       width: 30%;
       float: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003305}}
     #primary-nav hr {
       border: none;
       border-top: 1px solid #ddd; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003309}}
     #primary-nav .featured {
       font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003311}}
     #primary-nav .links.double {
       width: 63%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003314}}
       #primary-nav .links.double .featured a {
         padding-left: 5%;
         padding-right: 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003318}}
       #primary-nav .links.double .featured .sublinks {
         padding-left: 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003322}}
       #primary-nav .links.double .left {
         float: left;
         width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003327}}
     #primary-nav .links a {
       padding: .35em 10%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003330}}
     #primary-nav .links ul.sublinks {
       padding-bottom: .25em;
       padding-left: 10%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003333}}
       #primary-nav .links ul.sublinks a {
         padding: .25em 10%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003338}}
     #primary-nav .highlight {
       padding-left: 3%;
       font-size: 1.1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003341}}
       #primary-nav .highlight a {
         padding: 0;
         color: #003366; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003344}}
         #primary-nav .highlight a:hover {
           color: #001948;
           text-decoration: underline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003352}}
   #secondary-nav {
     position: absolute;
     bottom: 42px;
     right: 9px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003360}}
     #secondary-nav li.hover .sub {
       display: block;
       position: absolute; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003364}}
     #secondary-nav a {
       display: inline-block;
       color: #d1e4f6; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003367}}
       #secondary-nav a:hover {
         background: transparent;
         color: #fff; } }
 /* Small adjustments for when the screen is wider than max body width */
 @media all and (min-width: 940px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_nav\.scss}line{font-family:\00003378}}
   #secondary-nav {
     right: 50%;
     margin-right: -470px; } }
@@ -1429,6 +1791,7 @@ body {
     based on work by Remy Sharp: http://jqueryfordesigners.com/
 */
 /******* SET DEFAULT DIMENSIONS HERE ********/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000310}}
 div.anythingSlider {
   display: block;
   width: 1200px;
@@ -1440,39 +1803,49 @@ div.anythingSlider {
 
 /****** SET COLORS HERE *******/
 /* Default State */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000321}}
 div.anythingSlider .thumbNav a.cur, div.anythingSlider .thumbNav a {
   background: #777;
   color: #000; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000325}}
 div.anythingSlider .start-stop {
   background-color: #040;
   color: #fff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000329}}
 div.anythingSlider .start-stop.playing {
   background-color: #800; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000332}}
 div.anythingSlider .start-stop:hover, div.anythingSlider .start-stop.hover {
   color: #ddd; }
 
 /* Active State */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000337}}
 div.anythingSlider.activeSlider .anythingWindow {
   border-color: #7C9127; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000340}}
 div.anythingSlider.activeSlider .thumbNav a.cur, div.anythingSlider.activeSlider .thumbNav a {
   background-color: #7C9127; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000343}}
 div.anythingSlider .start-stop {
   background-color: #080;
   color: #fff; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000347}}
 div.anythingSlider .start-stop.playing {
   background-color: #d00; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000350}}
 div.anythingSlider .start-stop:hover, div.anythingSlider .start-stop.hover {
   color: #fff; }
 
 /**** DO NOT CHANGE BELOW THIS LINE ****/
 /* anythingSlider viewport window */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000356}}
 div.anythingSlider .anythingWindow {
   overflow: hidden;
   position: relative;
@@ -1480,11 +1853,13 @@ div.anythingSlider .anythingWindow {
   height: 100%; }
 
 /* wrapper: 45px right & left padding for the arrows, 28px @ bottom for navigation */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000363}}
 div.anythingSlider {
   position: relative;
   padding: 0 0px 28px 0px; }
 
 /* anythingSlider base */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000368}}
 .anythingBase {
   background: transparent;
   list-style: none;
@@ -1494,6 +1869,7 @@ div.anythingSlider {
   margin: 0;
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000377}}
 .anythingBase .panel {
   background: transparent;
   display: block;
@@ -1503,11 +1879,13 @@ div.anythingSlider {
   margin: 0; }
 
 /* Navigation Arrows */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000387}}
 div.anythingSlider .arrow {
   top: 50%;
   position: absolute;
   display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\0000392}}
 div.anythingSlider .arrow a {
   display: block;
   height: 120px;
@@ -1518,47 +1896,60 @@ div.anythingSlider .arrow a {
   outline: 0;
   background: url(../images/arrows-default.png) no-repeat; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003101}}
 div.anythingSlider .arrow a span {
   display: block;
   text-indent: -9999px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003102}}
 div.anythingSlider .forward {
   right: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003103}}
 div.anythingSlider .back {
   left: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003104}}
 div.anythingSlider .forward a {
   background-position: 0 -40px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003105}}
 div.anythingSlider .back a {
   background-position: -88px -40px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003106}}
 div.anythingSlider .forward a:hover, div.anythingSlider .forward a.hover {
   background-position: 0 -240px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003107}}
 div.anythingSlider .back a:hover, div.anythingSlider .back a.hover {
   background-position: -88px -240px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003108}}
 div.anythingSlider .forward.disabled {
   display: none; }
 
 /* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003109}}
 div.anythingSlider .back.disabled {
   display: none; }
 
 /* Navigation Links */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003112}}
 div.anythingSlider .anythingControls {
   outline: 0;
   display: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003113}}
 div.anythingSlider .thumbNav {
   margin: 0;
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003114}}
 div.anythingSlider .thumbNav li {
   display: inline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003115}}
 div.anythingSlider .thumbNav a {
   font: 11px/18px Georgia, Serif;
   display: inline-block;
@@ -1574,18 +1965,22 @@ div.anythingSlider .thumbNav a {
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003130}}
 div.anythingSlider .thumbNav a:hover {
   background-image: none; }
 
 /* slider autoplay right-to-left, reverse order of nav links to look better */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003135}}
 div.anythingSlider.rtl .thumbNav a {
   float: right; }
 
 /* reverse order of nav links */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003136}}
 div.anythingSlider.rtl .thumbNav {
   float: left; }
 
 /* move nav link group to left */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003137}}
 div.anythingSlider.rtl .anythingWindow {
   direction: ltr;
   unicode-bidi: bidi-override; }
@@ -1593,6 +1988,7 @@ div.anythingSlider.rtl .anythingWindow {
 /* div.anythingSlider.rtl .start-stop { float: right; } */
 /* move start/stop button - in case you want to switch sides */
 /* Autoplay Start/Stop button */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003144}}
 div.anythingSlider .start-stop {
   /*background-image: url(../images/cellshade.png);*/
   background-repeat: repeat-x;
@@ -1608,9 +2004,11 @@ div.anythingSlider .start-stop {
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003159}}
 div.anythingSlider .start-stop:hover, div.anythingSlider .start-stop.hover {
   background-image: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003161}}
 div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thumbNav a, div.anythingSlider .arrow a, div.anythingSlider .start-stop {
   transition-duration: 0;
   -o-transition-duration: 0;
@@ -1618,31 +2016,38 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
   -webkit-transition-duration: 0; }
 
 /** MODIFICATIONS **/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003176}}
 #slider {
   list-style: none;
   margin: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003182}}
 #slider li {
   position: relative; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003186}}
 #slider .feature-image img {
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003191}}
 #feature {
   overflow: hidden;
   max-width: 1200px;
   margin: 0 auto;
   /* visibility: hidden; Why is this hidden? */ }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003199}}
 #feature h2 {
   font: bold 20px/1.3 Arial, Helvetica, sans-serif;
   border: 0;
   padding: 0;
   margin: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003207}}
 #feature h2 a {
   color: #036; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003212}}
 .feature-description {
   padding: 20px 0;
   background: #eff6fc;
@@ -1651,15 +2056,19 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
   width: 100%;
   text-align: center; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003220}}
 .feature-description p {
   display: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003223}}
 #feature .anythingSlider {
   padding: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003228}}
 #feature .anythingSlider.activeSlider .anythingWindow {
   border: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003233}}
 #feature .anythingSlider .back {
   top: 0;
   left: 0;
@@ -1667,6 +2076,7 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
   height: 100%;
   z-index: 100; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003241}}
 #feature .anythingSlider .forward {
   top: 0;
   right: 0px;
@@ -1674,22 +2084,27 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
   height: 100%;
   z-index: 12; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003248}}
 #feature .anythingSlider .arrow a {
   height: 100%;
   margin: 0;
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003253}}
 #feature .anythingSlider-hovered .arrow a {
   background: url("../img/arrow-left.png") no-repeat scroll left transparent;
   opacity: 0.25; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003257}}
 #feature .anythingSlider-hovered .forward a {
   background: url("../img/arrow-right.png") no-repeat scroll right transparent;
   opacity: 0.25; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003261}}
 #feature .anythingSlider-hovered .arrow a:hover {
   opacity: 1; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003265}}
 #feature .anythingControls {
   right: 0;
   bottom: 50%;
@@ -1697,13 +2112,16 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
   position: absolute;
   width: 100%; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003273}}
 #feature .thumbNav {
   text-align: center;
   margin-right: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003278}}
 #feature .thumbNav li {
   display: inline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003282}}
 #feature .thumbNav li a {
   width: 32px;
   height: 32px;
@@ -1714,22 +2132,27 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
   margin: 0 4px;
   /*border: 1px solid #a8aeb3;*/ }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003293}}
 #feature .anythingSlider-hovered .thumbNav li a {
   background: #fff;
   opacity: 0.25; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003298}}
 #feature .anythingSlider-hovered .thumbNav li a:hover {
   opacity: 1; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider\.scss}line{font-family:\00003303}}
 #feature .anythingSlider .thumbNav a.cur {
   background: #147; }
 
 /* End of slider styles */
 @media all and (min-width: 840px) {
   /** RESPONSIVE MODIFICATIONS **/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider-responsive\.scss}line{font-family:\000034}}
   #slider .feature-image {
     margin-right: 241px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider-responsive\.scss}line{font-family:\000038}}
   .feature-description {
     padding: 48px 15px 48px 30px;
     height: 100%;
@@ -1739,32 +2162,40 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
     width: 205px;
     text-align: left; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider-responsive\.scss}line{font-family:\0000317}}
   .feature-description p {
     display: inline; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider-responsive\.scss}line{font-family:\0000319}}
   #feature .anythingSlider .forward {
     right: 241px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider-responsive\.scss}line{font-family:\0000321}}
   #feature .anythingControls {
     bottom: 27px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_slider-responsive\.scss}line{font-family:\0000323}}
   #feature .thumbNav {
     margin-right: 241px; }
 
   /* End of slider styles */ }
 /*These will apply to all browsers that understand media queries. Includes CSS3 as we are assuming any browser that can understand MQ, can also understand CSS3*/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000319}}
 .wf-active #header-top h1 {
   font-family: 'Droid Serif', 'Crete Round', sans-serif; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000323}}
 .wf-active h1, .wf-active h2 {
   font-family: 'Crete Round', sans-serif;
   font-weight: normal; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000328}}
 .wf-active body, .wf-active button, .wf-active input, .wf-active select, .wf-active textarea {
   font-family: 'Open Sans', "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
   font-size: 15px;
   line-height: 20px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000334}}
 a.mybyu, a.sign-in, .open #search-button {
   -webkit-transition: background-color 0.3s;
   -moz-transition: background-color 0.3s;
@@ -1772,6 +2203,7 @@ a.mybyu, a.sign-in, .open #search-button {
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000339}}
 #logo a.byu {
   display: block;
   text-indent: -999em;
@@ -1783,24 +2215,30 @@ a.mybyu, a.sign-in, .open #search-button {
 
 /* ------------ Desktops and laptops ----------- */
 @media only screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000349}}
   body {
     background: url("../img/body-linen.png");
     color: #444; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000354}}
   .wrapper {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 32px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000359}}
   #main-header {
     background: url("../img/header-bg.png") no-repeat scroll center top #002255; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000361}}
   #header-top {
     height: 90px;
     position: relative;
     z-index: 500; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000365}}
     #header-top h1 {
       margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000366}}
     #header-top a.sign-in {
       right: 5%;
       background: #4a79a7;
@@ -1839,6 +2277,7 @@ a.mybyu, a.sign-in, .open #search-button {
   * If for some reasons that the search cannot load from Google, or the browser doesn't support JS, then they can still use the default search form.
   */
   /* The width of the entire search container, used to position the Sign In button, if there is one */
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000316}}
   #search-container {
     display: inline-block;
     position: absolute;
@@ -1858,24 +2297,30 @@ a.mybyu, a.sign-in, .open #search-button {
     -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2);
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000327}}
     #search-container #basic-search {
       margin: 0;
       width: 250px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000331}}
       #search-container #basic-search #search {
         -webkit-border-radius: 1em;
         -moz-border-radius: 1em;
         border-radius: 1em;
         width: 80%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000336}}
       #search-container #basic-search #search-submit {
         background: url(../img/search-button.png) 50% 50% no-repeat;
         overflow: hidden;
         text-indent: -1000px;
         margin: 0;
         padding-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000345}}
     #search-container .gcse-wrapper {
       background: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000350}}
       #search-container .gcse-wrapper .gsc-control-cse td.gsc-search-button {
         padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000353}}
         #search-container .gcse-wrapper .gsc-control-cse td.gsc-search-button input.gsc-search-button-v2 {
           background: none;
           border: none;
@@ -1886,13 +2331,16 @@ a.mybyu, a.sign-in, .open #search-button {
           zoom: 1;
           opacity: 0;
           filter: alpha(opacity=0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000364}}
       #search-container .gcse-wrapper .gsc-control-cse table td .gsc-input-box {
         background: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/_search\.scss}line{font-family:\0000371}}
   #header-top a.sign-in {
     position: absolute;
     right: 259px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000375}}
   #site-name {
     top: 10px;
     left: 25px;
@@ -1901,6 +2349,7 @@ a.mybyu, a.sign-in, .open #search-button {
     font-weight: normal;
     text-decoration: none; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000384}}
   #content {
     background: #fff;
     margin-top: 40px;
@@ -1912,6 +2361,7 @@ a.mybyu, a.sign-in, .open #search-button {
     -moz-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7);
     box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000394}}
   #logo {
     background: transparent url("http://home.byu.edu/home/sites/default/files/global/img/byu-logo.png") 0px 0px no-repeat;
     border: none;
@@ -1921,6 +2371,7 @@ a.mybyu, a.sign-in, .open #search-button {
     padding: 0;
     top: 12px; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003105}}
   #breadcrumb .bread-drop {
     background-color: #eeeeee;
     border: 1px solid #cccccc;
@@ -1932,6 +2383,7 @@ a.mybyu, a.sign-in, .open #search-button {
     -webkit-border-radius: 0 3px 3px 3px;
     -moz-border-radius: 0 3px 3px 3px;
     border-radius: 0 3px 3px 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003114}}
     #breadcrumb .bread-drop:before {
       background-color: #eeeeee;
       content: " ";
@@ -1941,12 +2393,15 @@ a.mybyu, a.sign-in, .open #search-button {
       position: absolute;
       top: 0;
       width: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003124}}
     #breadcrumb .bread-drop li {
       margin-bottom: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003127}}
   #breadcrumb #breadcrumb-home {
     display: inline-block;
     position: relative;
     padding: 1px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003131}}
     #breadcrumb #breadcrumb-home:after {
       background-color: #FFF;
       box-shadow: -2px 2px 0 #eeeeee;
@@ -1960,6 +2415,7 @@ a.mybyu, a.sign-in, .open #search-button {
       right: -6px;
       height: 5px;
       width: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003145}}
     #breadcrumb #breadcrumb-home:hover {
       background-color: #eeeeee;
       border: 1px solid #cccccc;
@@ -1968,30 +2424,40 @@ a.mybyu, a.sign-in, .open #search-button {
       -webkit-border-radius: 3px 3px 3px 0;
       -moz-border-radius: 3px 3px 3px 0;
       border-radius: 3px 3px 3px 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003151}}
       #breadcrumb #breadcrumb-home:hover:after {
         display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003152}}
       #breadcrumb #breadcrumb-home:hover .bread-drop {
         display: block; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003158}}
   #footer-links .col {
     display: inline-block;
     vertical-align: top;
     width: 18%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003162}}
   #footer-links .double {
     width: 36%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003164}}
     #footer-links .double .right, #footer-links .double .left {
       width: 49%;
       display: inline-block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003169}}
   #footer-links h2 {
     margin: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003172}}
   .alpha {
     margin-left: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003173}}
   .omega {
     margin-right: 0; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003179}}
   #footer-bottom {
     text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003181}}
     #footer-bottom a {
       display: inline-block; } }

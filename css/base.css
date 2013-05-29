@@ -638,10 +638,15 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 /* Search box styling for mobile */
 #search-container {
   position: relative;
-  padding-bottom: 4px; }
-  #search-container #basic-search #search {
-    margin-bottom: 0; }
+  padding-bottom: 4px;
+  width: 90%;
+  margin-left: 10%; }
+  #search-container #basic-search {
+    width: 100%; }
+    #search-container #basic-search #search {
+      margin-bottom: 0; }
   #search-container .gcse-wrapper {
+    width: 100%;
     position: absolute;
     top: 0;
     background: #001948; }
