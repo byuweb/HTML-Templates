@@ -9,7 +9,6 @@
 @import "font-awesome";
 @import "nav"; 
 
-@import "search";
 @import "slider"; 
 @import "slider-responsive";
 
@@ -46,6 +45,7 @@ a.mybyu, a.sign-in, .open #search-button {
   
 /* ------------ Desktops and laptops ----------- */
 @media only screen and (min-width : $break-large) {
+	
 	body{
 		background: url("../img/body-linen.png");
 		color: #444;
@@ -65,6 +65,8 @@ a.mybyu, a.sign-in, .open #search-button {
 		h1{ margin:0 }
 		a.sign-in {right: 5%;}
 	 }	
+	 
+	@import "search";
 	
 	#site-name{
 		top:  10px;

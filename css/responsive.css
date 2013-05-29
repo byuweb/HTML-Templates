@@ -1381,14 +1381,6 @@ body {
       #secondary-nav a:hover {
         background: transparent;
         color: #fff; } }
-/**
-* All search box definitions will go in here
-*
-*/
-/**
-* Basic Search Form
-* If for some reasons that the search cannot load from Google, or the browser doesn't support JS, then they can still use the default search form.
-*/
 /* Slider styles (just copied from old templates for simplicity) */
 /*
     AnythingSlider v1.5.10+ Default (base) theme
@@ -1771,6 +1763,52 @@ a.mybyu, a.sign-in, .open #search-button {
       margin: 0; }
     #header-top a.sign-in {
       right: 5%; }
+
+  /**
+  * All search box definitions will go in here
+  *
+  */
+  /**
+  * Basic Search Form
+  * If for some reasons that the search cannot load from Google, or the browser doesn't support JS, then they can still use the default search form.
+  */
+  /* The width of the entire search container, used to position the Sign In button, if there is one */
+  #search-container {
+    display: inline-block;
+    position: absolute;
+    top: 5.25px;
+    right: 0;
+    width: 250px;
+    padding: 0;
+    background: #4a79a7;
+    background: -webkit-linear-gradient(top, #628cb6, #336699);
+    background: -moz-linear-gradient(top, #628cb6, #336699);
+    background: -ms-linear-gradient(top, #628cb6, #336699);
+    background: -o-linear-gradient(top, #628cb6, #336699);
+    background: linear-gradient(top, #628cb6, #336699);
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    border-radius: 1em; }
+    #search-container #basic-search {
+      margin: 0;
+      width: 250px; }
+      #search-container #basic-search #search {
+        -webkit-border-radius: 1em;
+        -moz-border-radius: 1em;
+        border-radius: 1em;
+        width: 80%; }
+      #search-container #basic-search #search-submit {
+        background: url(../img/search-button.png) 50% 50% no-repeat;
+        overflow: hidden;
+        text-indent: -1000px;
+        margin: 0;
+        padding-left: 0; }
+    #search-container .gcse-wrapper {
+      display: none; }
+
+  #header-top a.sign-in {
+    position: absolute;
+    right: 259px; }
 
   #site-name {
     top: 10px;

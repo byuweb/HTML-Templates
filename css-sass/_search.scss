@@ -11,6 +11,40 @@
 * If for some reasons that the search cannot load from Google, or the browser doesn't support JS, then they can still use the default search form.
 */
 
+$search-width: 250px; /* The width of the entire search container, used to position the Sign In button, if there is one */
+
 #search-container {
+	display: inline-block;
+	position: absolute;
+	top: 5.25px;
+	right: 0;
+	width: $search-width;
+	padding: 0;
+	@include linear-gradient($blue5,$blue4);
+	@include border-radius(1em);
 	
+	#basic-search{
+		margin: 0;
+		width: $search-width;
+		
+		#search {
+			@include border-radius(1em);
+			width: 80%;
+		}
+	
+		#search-submit {
+			background: url(../img/search-button.png) 50% 50% no-repeat;
+			overflow: hidden;
+			text-indent: -1000px;
+			margin: 0;
+			padding-left:0;
+		}
+	}
+	
+	.gcse-wrapper {display:none;}
+}
+
+#header-top a.sign-in {
+	position: absolute;
+	right: $search-width+9px;
 }
