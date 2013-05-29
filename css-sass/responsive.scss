@@ -51,7 +51,7 @@ a.mybyu, a.sign-in, .open #search-button {
 		color: #444;
 	}
 
-	.wrapper{ 
+	.wrapper, body > footer .wrapper{ 
 		max-width: 940px;
 		margin: 0 auto;
 		padding: 0 32px; }
@@ -173,7 +173,10 @@ a.mybyu, a.sign-in, .open #search-button {
 	.omega{margin-right:0}
 
 	body > footer{
-
+		.wrapper {
+			padding-top: 9px;
+			padding-bottom: 18px;
+		}
 	}
 	
 	#footer-bottom{

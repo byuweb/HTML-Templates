@@ -166,7 +166,11 @@ body > footer {
     margin:1em 0 0; }
   p {
     color:$brown1;
-    font-size:.95em; } }
+    font-size:.95em; }
+  .wrapper {
+    margin: 9px 5%;
+  }
+}
 
 #footer-links {
   border-bottom:1px solid #ccc;
@@ -184,7 +188,5 @@ body > footer {
 #footer-bottom {
   background-color:#e5e2df;
   border-top:1px solid #fff;
-  padding-top:.5em;
-  padding-bottom:1em;
-  padding-left:5%;
-  padding-right:5%; }
+  padding-bottom:1.5em;
+ }

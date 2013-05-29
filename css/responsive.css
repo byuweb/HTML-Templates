@@ -2221,7 +2221,7 @@ a.mybyu, a.sign-in, .open #search-button {
     color: #444; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\0000354}}
-  .wrapper {
+  .wrapper, body > footer .wrapper {
     max-width: 940px;
     margin: 0 auto;
     padding: 0 32px; }
@@ -2455,9 +2455,14 @@ a.mybyu, a.sign-in, .open #search-button {
   .omega {
     margin-right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003176}}
+  body > footer .wrapper {
+    padding-top: 9px;
+    padding-bottom: 18px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003182}}
   #footer-bottom {
     text-align: center; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/css-sass\/responsive\.scss}line{font-family:\00003184}}
     #footer-bottom a {
       display: inline-block; } }
