@@ -113,8 +113,8 @@ a.mybyu, a.sign-in, .open #search-button {
 	#header-top{
 		height: 90px;
 		position: relative;
-		z-index: 500; 
-		h1{ margin:0 }
+		z-index: 1; 
+		h1{ margin:0;}
 		a.sign-in {
 			right: 5%;
 			@include linear-gradient($blue5,$blue4);
