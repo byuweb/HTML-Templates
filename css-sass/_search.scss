@@ -6,10 +6,7 @@
 @import "colors";
 @import "mixins";
 
-/**
-* Basic Search Form
-* If for some reasons that the search cannot load from Google, or the browser doesn't support JS, then they can still use the default search form.
-*/
+
 
 $search-width: 250px; /* The width of the entire search container, used to position the Sign In button, if there is one */
 
@@ -24,6 +21,7 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 	@include linear-gradient($blue5,$blue4);
 	@include box-shadow(#{"0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2)"});
 	
+/** Basic Search Form **/
 	#basic-search{
 		margin: 0;
 		width: $search-width;
@@ -41,15 +39,13 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 			padding-left:0;
 		}
 	}
-	
+/** Google Search Form **/	
 	.gcse-wrapper {
 		background: none;
-		
 		.gsc-control-cse {
-		
+			table td .gsc-input-box { background: none;}
 			td.gsc-search-button {
-				padding: 0;
-								
+				padding: 0;				
 				input.gsc-search-button-v2 {
 					background: none;
 					border: none;
@@ -59,11 +55,7 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 					padding: 8px 1.5em;
 					@include opacity(0);
 				}
-			}
-			
-			table td .gsc-input-box {
-				background: none;
-			}
+			}		
 		}
 	}
 }
