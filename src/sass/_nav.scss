@@ -174,14 +174,11 @@ body.sideNav {
     @include box-shadow(0px 1px 8px rgba(#000, 0.35));
   }
 
-  
   %tab-nav {
     font-size: 1em;
     > ul {
       background: transparent;
-      > li {
-        float:left;
-      }
+      > li { float:left; }
     }
     li {
       border-top: 0px solid transparent;
@@ -210,20 +207,17 @@ body.sideNav {
   }
   
   %tab-nav-submenu {
-    display: none;
-    position: absolute;
 	background-color: #fff;
+    border-bottom: 2px solid $blue2;
+    display: none;
 	font-size: 13px;
-	padding: 10px;
-	width: 920px;
-	left: 32px;
-    background-color: #fff;
-    width: 15em;
+	left: 0;
+    position: absolute;
     padding:.5em 0 1em;
+    width: 15em;
+    z-index: 1;
     @include border-radius(3px);
     @include box-shadow(0px 0px 12px rgba(#000, 0.5));
-    z-index: 1;
-    border-bottom: 2px solid $blue2;
     a {
 	  display: block;
 	  border: 0;
@@ -237,9 +231,16 @@ body.sideNav {
 	>ul{
 		width: 940px;
 		margin: 0 auto;
-		padding: 0 32px;	
 		position: relative;
 	}
+	.mega {
+      @extend %tab-nav-submenu;
+      position: absolute;
+      padding: 1em 0 2em;
+	  width: 920px;
+      @include border-radius(0 0 3px 3px);
+      ul.links { margin-left: 1%; }
+    }
 	.sub { 
 		background-color: #fff;
 		border-bottom: 3px solid #369;
@@ -251,16 +252,6 @@ body.sideNav {
 		width: 222px;
 		a {border:none;}
 	}
-    .mega {
-      @extend %tab-nav-submenu;
-      position: absolute;
-      @include border-radius(0 0 3px 3px);
-      padding: 1em 0 2em;
-	  width: 920px;
-	  left:32px;
-      ul.links { margin-left: 1%; }
-    }
-	
     li.hover .mega, li.hover .sub { display: block; }
     .highlight, .featured, hr { display: block; }
 	
