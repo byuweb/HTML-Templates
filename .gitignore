@@ -1,4 +1,5 @@
 .sass-cache
 processform.php
 .DS_Store
-/nbproject/private/
+/nbproject
+/node_modules

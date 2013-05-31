@@ -2,6 +2,8 @@
 * This is not only for layouts, but also any additional features such as CSS3 for any elements already declared in base.css
 */
 
+@import "compass";
+
 @import "colors";
 @import "mixins";
 
@@ -117,8 +119,8 @@ a.mybyu, a.sign-in, .open #search-button {
 		h1{ margin:0;}
 		a.sign-in {
 			right: 5%;
-			@include linear-gradient($blue5,$blue4);
-			@include box-shadow(#{"0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2)"});
+			@include vertical-gradient($blue5, $blue4);
+			@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
 		}
 	 }	
 	 

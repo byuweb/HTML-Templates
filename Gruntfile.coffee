@@ -15,14 +15,11 @@ module.exports = (grunt) ->
       options:
         style: 'compact',
         compass: 'config.rb'
+        debugInfo: true
       compile:
-        files:[
-          expand: true,
-          cwd: 'src/sass/',
-          src: ['**/*.scss', '**/*.sass'],
-          dest: 'css/',
-          ext: '.css'
-        ]
+        files:
+          'css/base.css' : 'src/sass/base.scss'
+          'css/responsive.css' : 'src/sass/responsive.scss'
   
     jade:
       options:
@@ -31,7 +28,7 @@ module.exports = (grunt) ->
         files:[
           expand: true,
           cwd: 'src/jade/',
-          src: ['**/*.jade'],
+          src: ['**/*.html.jade'],
           dest: '',
           ext: '.html'
         ]
@@ -48,7 +45,7 @@ module.exports = (grunt) ->
             return [lrSnippet, folderMount(connect, '.')]
     regarde:
       sass:
-        files: ['src/css/**/*.sass', 'src/css/**/*.scss']
+        files: ['src/sass/**/*.sass', 'src/sass/**/*.scss']
         tasks: ['sass', 'livereload']
       jade:
         files: ['src/jade/**/*.jade']

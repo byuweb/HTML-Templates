@@ -3,6 +3,7 @@
 *
 */
 
+@import "compass";
 @import "colors";
 @import "mixins";
 
@@ -18,8 +19,8 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 	width: $search-width;
 	padding: 0;
 	@include border-radius(1em);
-	@include linear-gradient($blue5,$blue4);
-	@include box-shadow(#{"0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2)"});
+	@include vertical-gradient($blue5,$blue4);
+	@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
 	
 /** Basic Search Form **/
 	#basic-search{
