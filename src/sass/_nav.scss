@@ -12,9 +12,7 @@ body {
   left:0;
 }
 
-#main-header{
-  position: relative;
-}
+#main-header{ position: relative; }
 
 
 /* Menu button */
@@ -76,21 +74,17 @@ body {
     border-bottom: 1px solid $blue1;
     border-top: 1px solid $blue3;
     overflow: hidden;
-    &.left, &.right {
-      padding: 0;
-    }
-    &.hover {
-      background-color: $blue0;
-    }
+    &.left, &.right { padding: 0; }
+    &.hover { background-color: $blue0; }
   }
 }
 
 %submenu {
-  max-height:0px;
-  @include transition(max-height 0.2s ease);
   background-color:$blue1;
   margin: 0;
+  max-height:0px;
   position: relative;
+  @include transition(max-height 0.2s ease);
   a {
     padding-left:1.75em;
     border-top: 1px solid $blue2;
@@ -98,71 +92,44 @@ body {
     padding:.65em 10%;
     padding-right:5%;
     color: $blue9;
-    &:hover {
-      color: #fff;
-    }
+    &:hover { color: #fff; }
   }
   ul {
-	.sublinks{
-		padding-left: 5%;
-	}
+	.sublinks{ padding-left: 5%;}
     padding: 0;
     margin: 0;
   }
-  li {
-    border: none;
-  }
+  li { border: none; }
 }
 
-%activemenu {
-  max-height:1500px;
-}
+%activemenu {  max-height:1500px;}
 
 /* Primary Nav */
 #primary-nav {
   @extend %sidenav;
-  .mega, .sub {
-    @extend %submenu;
-  }
-  li.hover .mega, li.hover .sub {
-    @extend %activemenu;
-  }
-
-  .highlight, .featured, hr {
-    display: none;
-  }
+  .mega, .sub { @extend %submenu; }
+  li.hover .mega, li.hover .sub { @extend %activemenu;}
+  .highlight, .featured, hr { display: none; }
 }
 
 /* Secondary Nav */
 #secondary-nav {
   @extend %sidenav;
-  > ul {
-    background-color: $blue4;
-  }
-  .sub {
-    @extend %submenu;
-  }
-  a:hover {
-    background-color: $blue3;
-  }
+  > ul { background-color: $blue4; }
+  .sub { @extend %submenu; }
+  a:hover { background-color: $blue3;}
+  ul { padding: 0;}
   li {
     border-top-color: $blue5;
     border-bottom-color: $blue3;
-    &.hover .sub {
-      @extend %activemenu;
-    }
-  }
-  ul {
-    padding: 0;
+    &.hover .sub { @extend %activemenu; }
   }
 }
 
+
 @media all and (min-width:275px) {
-  .menu-button {
-    display: block;
-  }
-  
-  body.sideNav {
+.menu-button { display: block;}
+body.sideNav {
     left: 75%;
     #main-header, #content, footer {
       @include box-shadow( -5px 0px 8px rgba($blue0, .65) );
@@ -183,8 +150,8 @@ body {
     background-color: $blue1;
     .sideNav & { display: block;}    
   }
-
 }
+
 
 /*Full Screen Menus*/
 @media all and (min-width:$break-large) {
@@ -249,7 +216,6 @@ body {
 	font-size: 13px;
 	padding: 10px;
 	width: 920px;
-	height: 371px;
 	left: 32px;
     background-color: #fff;
     width: 15em;
@@ -259,8 +225,8 @@ body {
     z-index: 1;
     border-bottom: 2px solid $blue2;
     a {
-      border-bottom: 0px solid transparent;
-      border-top: 0px solid transparent;
+	  display: block;
+	  border: 0;
       padding: .5em 1.5em;
     }
   }
@@ -354,15 +320,14 @@ body {
 	bottom: 42px;
 	right:9px;
     @extend %tab-nav;
-    .sub {
-      @extend %tab-nav-submenu;
-    }
+    .sub { @extend %tab-nav-submenu; }
     li.hover .sub {
       display: block;
 	  position: absolute;
+	  left:auto;
     }
     a {
-		display:inline-block;
+	  display:inline-block;
       color: $blue8;
       &:hover {
         background: transparent;
