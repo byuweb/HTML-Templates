@@ -121,37 +121,34 @@ dl, menu, ol, ul { padding: 0; }
 body, button, input, select, textarea { color: #444; font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; -webkit-text-size-adjust: 100%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000371}}
-body { width: 100%; min-height: 100%; }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000372}}
-html { height: 100%; }
+html, body { width: 100%; overflow-x: hidden; }
 
 /* Type */
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000376}}
 #header-top h1 { font-size: 2.4em; line-height: 40px; margin: 30px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000377}}
 h1 { font-size: 2.2em; line-height: 40px; margin: 30px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000378}}
 h2 { font-size: 1.8em; line-height: 30px; margin: 30px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000379}}
 h3 { font-size: 1.3em; line-height: 30px; margin: 30px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000380}}
 h4 { font-size: 1.15em; line-height: 20px; margin: 20px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000381}}
 h5 { font-size: 1em; line-height: 20px; margin: 20px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000383}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000382}}
 h6 { font-size: .9em; line-height: 20px; margin: 20px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000383}}
 h2, h3, h4, h5, h6 { color: #444; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000384}}
 p, pre { margin: 10px 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_prettify\.scss}line{font-family:\000031}}

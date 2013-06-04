@@ -14,9 +14,6 @@
 @import "slider"; 
 @import "slider-responsive";
 
-
-$break-large: 768px;
-
 /*These will apply to all browsers that understand media queries. Includes CSS3 as we are assuming any browser that can understand MQ, can also understand CSS3*/
 .wf-active #header-top h1 {
   font-family: 'Droid Serif', 'Crete Round', sans-serif;
@@ -96,7 +93,8 @@ a.mybyu, a.sign-in, .open #search-button {
 			}
 		}
 	}  
-  
+	
+$break-large: 768px;  
 /* ------------ Desktops and laptops ----------- */
 @media only screen and (min-width : $break-large) {
 	
@@ -106,7 +104,7 @@ a.mybyu, a.sign-in, .open #search-button {
 	}
 
 	.wrapper, body > footer .wrapper{ 
-		max-width: 940px;
+		max-width: 960px;
 		margin: 0 auto;
 		padding: 0 32px; }
 	
