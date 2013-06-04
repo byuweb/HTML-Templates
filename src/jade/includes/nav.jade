@@ -1,0 +1,89 @@
+mixin secondaryMenuItem(title, num)
+  li
+    a(href='#') #{title}
+    ul.sub
+      mixin addLinks(1,4)
+
+mixin addLinks(start, end, title)
+  - if (title == undefined) title = 'Links';
+  - for (var i = start; i <= end; i++) {
+    li: a(href='') #{title} #{i}
+  - }
+
+//
+ Primary Nav 
+nav#primary-nav(role='navigation')
+  ul
+    li
+      a(href='') Mega Dropdown Menu
+      .mega
+        ul.links
+          li.featured
+            ul
+              mixin addLinks(1,2,'Featured Link')
+          li
+            a(href='#') Link 1
+          li
+            a(href='#') Link 2
+            ul.sublinks
+              mixin addLinks(1,3,'Sublink')
+          mixin addLinks(3,6)
+        .highlight
+          a(href='#')
+            span.img.menu1.jpg(title='')
+          p
+            a(href='#') Picture Link
+          p Text text text text text.
+        .highlight
+          a(href='#')
+            span.img.menu2.jpg(title='')
+          p
+            a(href='#') Picture Link
+          p Text text text text text.
+    li
+      a(href='') Double Mega Dropdown Menu
+      .mega
+        ul.links.double
+          li.featured
+            ul
+              mixin addLinks(1,2,'Featured Link')
+          li.left
+            ul
+              li
+                a(href='#') Link 1
+              li
+                a(href='#') Link 2
+                ul.sublinks
+                  mixin addLinks(1,5,'Sublink')
+              mixin addLinks(3,6)
+          li.left
+            ul
+              mixin addLinks(7,12)
+        .highlight
+          a(href='#')
+            span.img.menu1.jpg(title='')
+          p
+            a(href='#') Picture Link
+          p Text text text text text.
+        .highlight
+          a(href='#')
+            span.img.menu2.jpg(title='')
+          p
+            a(href='#') Picture Link
+          p Text text text text text.
+    li
+      a(href='') Basic Dropdown Menu
+      .sub
+        ul.links
+          mixin addLinks(1,4)
+    li
+      a.single(href='') Direct Menu Link
+
+
+//
+   Secondary Nav 
+nav#secondary-nav(role='navigation')
+  ul
+    mixin secondaryMenuItem('SecMenu1', 4)
+    mixin secondaryMenuItem('SecMenu2', 4)
+    mixin secondaryMenuItem('SecMenu3', 4)
