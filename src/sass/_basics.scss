@@ -3,6 +3,7 @@
 @import "colors";
 
 /*** Base tags ***/
+html,body{ width:100%; overflow-x:hidden;}
 body em { font-style:italic; }
 body strong { font-weight:bold; }
 body, select, input, textarea { color: #444 }
@@ -68,14 +69,7 @@ body, button, input, select, textarea {
   line-height:$lineHeight + px;
   -webkit-text-size-adjust:100%; }
 
-html,body{ width:100%; overflow-x:hidden;}
-
-.wrapper{margin:0 32px}
-
-/* Type */
 #header-top 
-/*TODO: Why is h1 defined twice?*/
-h1 { font-size:  2.4em; line-height:40px; margin:30px 32px 10px; } // 36px
 h1 { font-size:  2.2em; line-height:40px; margin:30px 32px 10px; } // 33px
 h2 { font-size:  1.8em; line-height:30px; margin:30px 32px 10px; } // 27px
 h3 { font-size:  1.3em; line-height:30px; margin:30px 32px 10px; } // 19.5px

@@ -24,7 +24,7 @@ h1, h2{margin:0}
   a.sign-in {
     position: absolute;
     top: .35em;
-	right:0;
+	right:5%;
   } 
 }
 
@@ -34,7 +34,7 @@ h1, h2{margin:0}
   height:2em;
   padding:.35em 5%;
   h2 { margin:0;}
-  a {  display:block;}
+  a  { display:block;}
 }
 
 a.mybyu, a.sign-in, .open #search-button, #search-submit {
@@ -101,10 +101,9 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 }
 
 /* Main Content */
-.wrapper {
-  margin: 0; }
+.wrapper { margin: 0; }
 
-#content { padding:1em 32px 2em;
+#content { padding:1em 5% 2em;
 	h1{color: $blue1;}
 }
 
