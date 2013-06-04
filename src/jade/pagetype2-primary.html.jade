@@ -1,1 +1,26 @@
-!!! 5
+- var pageTitle = 'BYU - Page Type 2'
+- var heading = 'Primary Organization'
+- var byulink = ''
+
+include includes/header
+
+#content.wrapper.clearfix(role='main')
+    #breadcrumb(role='navigation')
+        #breadcrumb-home
+          a(href='#') Home
+          .bread-drop
+            a(href='www.byu.edu') BYU Home
+            a(href='#') Organization Home
+            a(href='#') Two Pages Above
+        a(href='#') One Page Above
+        | This page's main title
+      h1 Main Title
+      h2 Sub Title
+      p
+        | See the 
+        a(href='https://web.byu.edu/styleguide') Style Guide 
+        | for layouts and code snippets that you can copy and paste.
+
+include includes/nav
+include includes/footer
+include includes/end-scripts
