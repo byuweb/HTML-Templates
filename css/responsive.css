@@ -920,154 +920,151 @@ ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] { width: .75em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\000039}}
 body { -webkit-transition: left 0.2s ease; -moz-transition: left 0.2s ease; -o-transition: left 0.2s ease; transition: left 0.2s ease; position: relative; left: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000315}}
-#main-header { position: relative; }
-
 /* Menu button */
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000316}}
 .menu-button { border: 1px solid #003366; bottom: 2em; display: none; height: 1.5em; left: 32px; overflow: hidden; padding: .5em; position: relative; text-indent: -999em; width: 1.75em; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000328}}
 .menu-button:hover { background-color: #003366; border-color: #114477; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000332}}
 .menu-button:before { content: ""; position: absolute; left: 50%; top: .6em; width: 1.5em; margin-left: -.75em; height: 0.2em; background: #fff; -webkit-border-radius: 1px; -moz-border-radius: 1px; -ms-border-radius: 1px; -o-border-radius: 1px; border-radius: 1px; -webkit-box-shadow: 0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff; -moz-box-shadow: 0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff; box-shadow: 0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff; }
 
 /* Side Navigation */
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000349}}
 #primary-nav, #secondary-nav { font-size: 1.2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000351}}
 #primary-nav a, #secondary-nav a { color: #fff; padding: 1em 5%; display: block; text-shadow: 0px -1px 0px black; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000356}}
 #primary-nav a:hover, #secondary-nav a:hover { text-decoration: none; background-color: #001948; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000361}}
 #primary-nav > ul, #secondary-nav > ul { padding: 0; background: #003366; border-right: 1px solid #114477; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000367}}
 #primary-nav li, #secondary-nav li { display: block; float: none; padding: 0; border-bottom: 1px solid #002255; border-top: 1px solid #114477; overflow: hidden; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000374}}
 #primary-nav li.left, #secondary-nav li.left, #primary-nav li.right, #secondary-nav li.right { padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000375}}
 #primary-nav li.hover, #secondary-nav li.hover { background-color: #001948; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000379}}
 #primary-nav .mega, #primary-nav .sub, #secondary-nav .sub { background-color: #002255; margin: 0; max-height: 0px; position: relative; -webkit-transition: max-height 0.2s ease; -moz-transition: max-height 0.2s ease; -o-transition: max-height 0.2s ease; transition: max-height 0.2s ease; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000385}}
 #primary-nav .mega a, #primary-nav .sub a, #secondary-nav .sub a { padding-left: 1.75em; border-top: 1px solid #003366; border-bottom: 1px solid #001948; padding: .65em 10%; padding-right: 5%; color: #e0edf9; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000392}}
 #primary-nav .mega a:hover, #primary-nav .sub a:hover, #secondary-nav .sub a:hover { color: #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000397}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000394}}
 #primary-nav .mega ul, #primary-nav .sub ul, #secondary-nav .sub ul { padding: 0; margin: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000395}}
 #primary-nav .mega ul .sublinks, #primary-nav .sub ul .sublinks, #secondary-nav .sub ul .sublinks { padding-left: 5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\0000399}}
 #primary-nav .mega li, #primary-nav .sub li, #secondary-nav .sub li { border: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003105}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003102}}
 #primary-nav li.hover .mega, #primary-nav li.hover .sub, #secondary-nav li.hover .sub { max-height: 1500px; }
 
 /* Primary Nav */
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003109}}
 #primary-nav .highlight, #primary-nav .featured, #primary-nav hr { display: none; }
 
 /* Secondary Nav */
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003115}}
 #secondary-nav > ul { background-color: #336699; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003120}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003117}}
 #secondary-nav a:hover { background-color: #114477; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003118}}
 #secondary-nav ul { padding: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003119}}
 #secondary-nav li { border-top-color: #628cb6; border-bottom-color: #114477; }
 
-@media all and (min-width: 275px) { @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003131}}
+@media all and (min-width: 275px) { @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003128}}
   .menu-button { display: inline-block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003129}}
   body.sideNav { left: 75%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003131}}
   body.sideNav #main-header, body.sideNav #content, body.sideNav footer { -webkit-box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65); -moz-box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65); box-shadow: -5px 0px 8px rgba(0, 25, 72, 0.65); z-index: 2; position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003138}}
   .nav-container { display: none; height: 100%; padding-top: 1em; position: absolute; right: 100%; top: 0; width: 75%; z-index: 1; background-color: #002255; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003148}}
   .sideNav .nav-container { display: block; } }
 /*Full Screen Menus*/
-@media all and (min-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003158}}
+@media all and (min-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003155}}
   .menu-button { display: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003156}}
   body.sideNav { left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003158}}
   .nav-container { background-color: #001948; border-top: 1px solid #114477; border-bottom: 1px solid #114477; display: block; height: auto; left: 0; padding-top: 0; position: absolute; right: auto; top: 90px; width: 100%; z-index: 2; -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35); -moz-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35); box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.35); }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003174}}
   #primary-nav, #secondary-nav { font-size: 1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003176}}
   #primary-nav > ul, #secondary-nav > ul { background: transparent; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003181}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003178}}
   #primary-nav > ul > li, #secondary-nav > ul > li { float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003180}}
   #primary-nav li, #secondary-nav li { border-top: 0px solid transparent; border-bottom: 0px solid transparent; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003186}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003183}}
   #primary-nav li.hover, #secondary-nav li.hover { overflow: visible; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003185}}
   #primary-nav li.hover > a, #secondary-nav li.hover > a { -webkit-border-radius: 3px 3px 0 0; -moz-border-radius: 3px 3px 0 0; -ms-border-radius: 3px 3px 0 0; -o-border-radius: 3px 3px 0 0; border-radius: 3px 3px 0 0; position: relative; z-index: 2; box-shadow: 0px 3px 0px #fff; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003191}}
   #primary-nav li.hover a, #secondary-nav li.hover a { background: #fff; color: #001948; text-shadow: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003199}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003196}}
   #primary-nav li.hover ul a:hover, #secondary-nav li.hover ul a:hover { background: #003366; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003204}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003201}}
   #primary-nav a, #secondary-nav a { padding: .6em .75em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003209}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003206}}
   #primary-nav .mega, #secondary-nav .sub { background-color: #fff; border-bottom: 2px solid #003366; display: none; font-size: 13px; left: 0; position: absolute; padding: .5em 0 1em; width: 15em; z-index: 1; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); -moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.5); }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003218}}
   #primary-nav .mega a, #secondary-nav .sub a { display: block; border: 0; padding: .5em 1.5em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003225}}
   #primary-nav { padding-left: 2em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003228}}
   #primary-nav > ul { width: 940px; margin: 0 auto; position: relative; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003233}}
   #primary-nav .mega { position: absolute; padding: 1em 0 2em; width: 920px; -webkit-border-radius: 0 0 3px 3px; -moz-border-radius: 0 0 3px 3px; -ms-border-radius: 0 0 3px 3px; -o-border-radius: 0 0 3px 3px; border-radius: 0 0 3px 3px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003239}}
   #primary-nav .mega ul.links { margin-left: 1%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003241}}
   #primary-nav .sub { background-color: #fff; border-bottom: 3px solid #369; box-shadow: 0 1px 8px rgba(0, 0, 0, 0.7); display: none; margin-top: 0; padding: 10px; position: absolute; width: 222px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003253}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003250}}
   #primary-nav .sub a { border: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003252}}
   #primary-nav li.hover .mega, #primary-nav li.hover .sub { display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003253}}
   #primary-nav .highlight, #primary-nav .featured, #primary-nav hr { display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003255}}
   #primary-nav .links, #primary-nav .highlight { width: 30%; float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003262}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003259}}
   #primary-nav hr { border: none; border-top: 1px solid #ddd; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003266}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003263}}
   #primary-nav .featured { font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003268}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003265}}
   #primary-nav .links.double { width: 63%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003268}}
   #primary-nav .links.double .featured a { padding-left: 5%; padding-right: 5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003275}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003272}}
   #primary-nav .links.double .featured .sublinks { padding-left: 5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003276}}
   #primary-nav .links.double .left { float: left; width: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003284}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003281}}
   #primary-nav .links a { padding: .35em 10%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003287}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003284}}
   #primary-nav .links ul.sublinks { padding-bottom: .25em; padding-left: 10%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003287}}
   #primary-nav .links ul.sublinks a { padding: .25em 10%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003292}}
   #primary-nav .highlight { padding-left: 3%; font-size: 1.1em; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003295}}
   #primary-nav .highlight a { padding: 0; color: #003366; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003298}}
   #primary-nav .highlight a:hover { color: #001948; text-decoration: underline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003306}}
   #secondary-nav { position: absolute; bottom: 42px; right: 9px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003312}}
   #secondary-nav li.hover .sub { display: block; position: absolute; left: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003317}}
   #secondary-nav a { display: inline-block; color: #d1e4f6; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003323}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003320}}
   #secondary-nav a:hover { background: transparent; color: #fff; } }
 /* Small adjustments for when the screen is wider than max body width */
-@media all and (min-width: 940px) { @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003334}}
+@media all and (min-width: 940px) { @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003331}}
   #secondary-nav { right: 50%; margin-right: -470px; } }
 /* Slider styles (just copied from old templates for simplicity) */
 /* AnythingSlider v1.5.10+ Default (base) theme By Chris Coyier: http://css-tricks.com with major improvements by Doug Neiner: http://pixelgraphics.us/ based on work by Remy Sharp: http://jqueryfordesigners.com/
@@ -1323,11 +1320,11 @@ a.mybyu, a.sign-in, .open #search-button { -webkit-transition: background-color 
 @media -sass-debug-info{filename{}line{font-family:\00003109}}
   #main-header { background: url("../img/header-bg.png") no-repeat scroll center top #002255; }
 @media -sass-debug-info{filename{}line{font-family:\00003111}}
-  #header-top { height: 90px; position: relative; z-index: 5; }
-@media -sass-debug-info{filename{}line{font-family:\00003115}}
+  #header-top { height: 90px; z-index: 5; }
+@media -sass-debug-info{filename{}line{font-family:\00003114}}
   #header-top h1 { margin: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003116}}
-  #header-top a.sign-in { right: 5%; background: #4a79a7; background: -webkit-linear-gradient(top, #628cb6, #336699); background: -moz-linear-gradient(top, #628cb6, #336699); background: -ms-linear-gradient(top, #628cb6, #336699); background: -o-linear-gradient(top, #628cb6, #336699); background: linear-gradient(top, #628cb6, #336699); -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); }
+@media -sass-debug-info{filename{}line{font-family:\00003115}}
+  #header-top a.sign-in { right: 220px; background: #4a79a7; background: -webkit-linear-gradient(top, #628cb6, #336699); background: -moz-linear-gradient(top, #628cb6, #336699); background: -ms-linear-gradient(top, #628cb6, #336699); background: -o-linear-gradient(top, #628cb6, #336699); background: linear-gradient(top, #628cb6, #336699); -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); }
   /** All search box definitions will go in here  */
   /* The width of the entire search container, used to position the Sign In button, if there is one */
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000314}}
@@ -1348,27 +1345,27 @@ a.mybyu, a.sign-in, .open #search-button { -webkit-transition: background-color 
   #search-container .gcse-wrapper .gsc-control-cse td.gsc-search-button input.gsc-search-button-v2 { background: none; border: none; text-indent: -1000px; overflow: hidden; margin: 0; padding: 8px 1.5em; zoom: 1; opacity: 0; filter: alpha(opacity=0); }
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000364}}
   #header-top a.sign-in { position: absolute; right: 259px; }
-@media -sass-debug-info{filename{}line{font-family:\00003125}}
+@media -sass-debug-info{filename{}line{font-family:\00003124}}
   #site-name { top: 10px; left: 25px; position: relative; font-size: 36px; font-weight: normal; text-decoration: none; }
-@media -sass-debug-info{filename{}line{font-family:\00003134}}
+@media -sass-debug-info{filename{}line{font-family:\00003133}}
   #content { background: #fff; margin-top: 40px; padding-top: 18px; padding-bottom: 27px; position: relative; min-height: 100%; -webkit-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); -moz-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); }
-@media -sass-debug-info{filename{}line{font-family:\00003144}}
+@media -sass-debug-info{filename{}line{font-family:\00003143}}
   #logo { background: transparent url("http://home.byu.edu/home/sites/default/files/global/img/byu-logo.png") 0px 0px no-repeat; border: none; height: auto; left: 20px; margin: 0; padding: 0; top: 12px; }
-@media -sass-debug-info{filename{}line{font-family:\00003155}}
+@media -sass-debug-info{filename{}line{font-family:\00003154}}
   #footer-links .col { display: inline-block; vertical-align: top; width: 18%; }
-@media -sass-debug-info{filename{}line{font-family:\00003159}}
+@media -sass-debug-info{filename{}line{font-family:\00003158}}
   #footer-links .double { width: 36%; }
-@media -sass-debug-info{filename{}line{font-family:\00003161}}
+@media -sass-debug-info{filename{}line{font-family:\00003160}}
   #footer-links .double .right, #footer-links .double .left { width: 49%; display: inline-block; }
-@media -sass-debug-info{filename{}line{font-family:\00003166}}
+@media -sass-debug-info{filename{}line{font-family:\00003165}}
   #footer-links h2 { margin: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003169}}
+@media -sass-debug-info{filename{}line{font-family:\00003168}}
   .alpha { margin-left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003170}}
+@media -sass-debug-info{filename{}line{font-family:\00003169}}
   .omega { margin-right: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003173}}
+@media -sass-debug-info{filename{}line{font-family:\00003172}}
   body > footer .wrapper { padding-top: 9px; padding-bottom: 18px; }
-@media -sass-debug-info{filename{}line{font-family:\00003179}}
+@media -sass-debug-info{filename{}line{font-family:\00003178}}
   #footer-bottom { text-align: center; }
-@media -sass-debug-info{filename{}line{font-family:\00003181}}
+@media -sass-debug-info{filename{}line{font-family:\00003180}}
   #footer-bottom a { display: inline-block; } }

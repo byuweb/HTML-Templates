@@ -20,13 +20,11 @@ h1, h2{margin:0}
 #header-top { 
   position: relative;
   z-index: 10;
-  h1 a {
-    color: #fff;
-  }
+  h1 a { color: #fff; }
   a.sign-in {
     position: absolute;
     top: .35em;
-    right: 32px;
+	right:0;
   } 
 }
 
@@ -45,7 +43,6 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
   border-radius:1em;
   color:#fff;
   font-weight: bold;
-  margin-right:5%;
   padding:.35em 1.5em;
   text-decoration: none;
   &:hover {
