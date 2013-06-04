@@ -30,9 +30,7 @@
   line-height: 20px;
 }
 
-a.mybyu, a.sign-in, .open #search-button {
-  @include transition(background-color .3s);
-  }
+a.mybyu, a.sign-in, .open #search-button { @include transition(background-color .3s);  }
 
   #logo {
 	a.byu {

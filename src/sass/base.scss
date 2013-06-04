@@ -11,6 +11,7 @@
 @import "normalize";
 @import "boilerplate";
 
+
 h1, h2{margin:0}
 
 /* Header */
@@ -25,9 +26,9 @@ h1, h2{margin:0}
   a.sign-in {
     position: absolute;
     top: .35em;
-    right: 0;
-    margin-right:0;
-  } }
+    right: 32px;
+  } 
+}
 
 #logo {
   background-color:$blue2; 
@@ -55,9 +56,8 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 /* Search box styling for mobile */
 #search-container {
 	position: relative;
-	padding-bottom: 4px;
-	width: 90%;
-	margin-left: 10%;
+	width: 80%;
+	margin-left: 86px;
 
 	#basic-search {
 		width: 100%;
@@ -132,8 +132,7 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
   border-top:4px solid #f7f7f7;
   margin-top:1px;
   padding-bottom:1em; }
-#calendar, #news, #feature {
-  border-bottom:1px solid #ccc; }
+#calendar, #news, #feature { border-bottom:1px solid #ccc; }
 ul#calendars{list-style: none}
 .day {padding:.75em 0 0}
 a.baseline, #calendar > strong, a.more {font-weight: bold; margin-top:1.5em; padding-bottom:1.5em; display: block;}

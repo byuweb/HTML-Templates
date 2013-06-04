@@ -17,17 +17,17 @@ body {
 
 /* Menu button */
 .menu-button {
-  position: absolute;
-  width: 1.75em;
-  height: 1.5em;
-  padding: .5em;
-  bottom:13px;
-  left:18px;
-  @include border-radius(3px);
   border:1px solid $blue2;
-  text-indent: -999em;
-  overflow: hidden;
+  bottom:2em;
   display: none;
+  height: 1.5em;
+  left:32px;
+  overflow: hidden;
+  padding: .5em;
+  position: relative;
+  text-indent: -999em;
+  width: 1.75em;
+  @include border-radius(3px);
   &:hover {
     background-color: $blue2;
     border-color: $blue3;
@@ -128,7 +128,7 @@ body {
 
 
 @media all and (min-width:275px) {
-.menu-button { display: block;}
+.menu-button { display: inline-block;}
 body.sideNav {
     left: 75%;
     #main-header, #content, footer {
