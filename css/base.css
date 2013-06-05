@@ -3,148 +3,151 @@
 */
 /*** Base tags ***/
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\000036}}
-html, body { width: 100%; overflow-x: hidden; }
+html, body { width: 100%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\000037}}
-body em { font-style: italic; }
+body { overflow-x: hidden; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\000038}}
-body strong { font-weight: bold; }
+body em { font-style: italic; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\000039}}
-body, select, input, textarea { color: #444444; }
+body strong { font-weight: bold; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000310}}
+body, select, input, textarea { color: #444444; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000311}}
 p a { text-decoration: underline; }
 
 /* Blockquotes */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000313}}
 blockquote { font-style: italic; margin: 1.5em 10px; padding: .5em 10px; background-color: #f4f4f4; border: 1px solid #dedede; box-shadow: 2px 3px 5px 0 #dedede; -moz-box-shadow: 2px 3px 5px 0 #dedede; -webkit-box-shadow: 2px 3px 5px 0 #dedede; color: #333; margin: 25px 20px 25px 0; padding: 3px 25px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000314}}
 blockquote:before { color: #bbb; content: "\201C"; font-size: 3em; line-height: .1em; margin-right: .2em; vertical-align: -.4em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000314}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000315}}
 blockquote:after { color: #bbb; content: "\201D"; font-size: 3em; line-height: .1em; vertical-align: -.45em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000315}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000316}}
 blockquote :first-child { display: inline; }
 
 /* Links */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000319}}
 a, a:link { color: #336699; text-decoration: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000320}}
 a:hover { color: #002255; text-decoration: underline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000321}}
 a:active { color: #c00; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000322}}
 a:visited { color: #539; }
 
 /* Images */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000325}}
 img { max-width: 100%; }
 
 /* Tables */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000328}}
 table { border-collapse: collapse; border-spacing: 0; margin: 0 0 9px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000329}}
 table, td, th { border: 1px solid #ddd; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000330}}
 td, th { padding: .125em .5em; text-align: left; vertical-align: top; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000331}}
 td { border-left: 1px dotted #eee; border-right: 1px dotted #eee; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000332}}
 th { background: #f9f9f9; border-right: 1px solid #e9e9e9; border-left: 1px solid #e9e9e9; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000333}}
 table caption { color: #888; text-align: left; margin: .15em .25em; font-style: italic; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000333}}
-tfoot { font-weight: bold; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000334}}
+tfoot { font-weight: bold; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000335}}
 tfoot td { color: #666; border-top-color: #666; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000335}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000336}}
 td, td img { vertical-align: top; }
 
 /* Lists */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000339}}
-ol { list-style-type: decimal; margin-left: 2em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000340}}
-ol ol { list-style-type: lower-alpha; }
+ol { list-style-type: decimal; margin-left: 2em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000341}}
-ol ol ol { list-style-type: lower-roman; }
+ol ol { list-style-type: lower-alpha; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000342}}
-ol ol ol ol { list-style-type: decimal; }
+ol ol ol { list-style-type: lower-roman; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000343}}
-ol ol ol ol ol { list-style-type: lower-alpha; }
+ol ol ol ol { list-style-type: decimal; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000344}}
+ol ol ol ol ol { list-style-type: lower-alpha; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000345}}
 ol ol ol ol ol ol { list-style-type: lower-roman; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000345}}
-ul { list-style-type: disc; margin-left: 2em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000346}}
-ul ul { list-style-type: circle; }
+ul { list-style-type: disc; margin-left: 2em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000347}}
-ul ul ul { list-style-type: disc; }
+ul ul { list-style-type: circle; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000348}}
-ul ul ul ul { list-style-type: circle; }
+ul ul ul { list-style-type: disc; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000349}}
-ul ul ul ul ul { list-style-type: disc; }
+ul ul ul ul { list-style-type: circle; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000350}}
+ul ul ul ul ul { list-style-type: disc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000351}}
 ul ul ul ul ul ul { list-style-type: circle; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000352}}
 ul ul { margin-top: .25em; margin-bottom: .25em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000352}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000353}}
 nav ul, nav ul ul { list-style: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000354}}
 nav ul, nav li { margin: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000355}}
 dt { font-weight: bold; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000356}}
 dd { padding: 0 0 0.75em 1em; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000357}}
 dl, menu, ol, ul { padding: 0; }
 
 /*** Type ***/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000366}}
 body, button, input, select, textarea { color: #444; font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; -webkit-text-size-adjust: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000374}}
 #header-top h1 { font-size: 2.2em; line-height: 40px; margin: 30px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000375}}
 h2 { font-size: 1.8em; line-height: 30px; margin: 30px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000376}}
 h3 { font-size: 1.3em; line-height: 30px; margin: 30px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000377}}
 h4 { font-size: 1.15em; line-height: 20px; margin: 20px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000377}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000378}}
 h5 { font-size: 1em; line-height: 20px; margin: 20px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000379}}
 h6 { font-size: .9em; line-height: 20px; margin: 20px 32px 10px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000380}}
 h2, h3, h4, h5, h6 { color: #444; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000381}}
 p, pre { margin: 10px 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_prettify\.scss}line{font-family:\000031}}
