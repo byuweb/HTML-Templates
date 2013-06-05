@@ -30,6 +30,8 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 		#search {
 			@include border-radius(1em);
 			width: 80%;
+			border: 0;
+			padding: 5px;
 		}
 	
 		#search-submit {
