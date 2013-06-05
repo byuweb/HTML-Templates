@@ -90,7 +90,11 @@ a.mybyu, a.sign-in, .open #search-button { @include transition(background-color 
 				.bread-drop{display:block;}	
 			}
 		}
-	}  
+	} 
+
+div.gsc-thumbnail-inside, div.gsc-url-top {
+	padding-left: 0px;
+}	
 	
 $break-large: 768px;  
 /* ------------ Desktops and laptops ----------- */
