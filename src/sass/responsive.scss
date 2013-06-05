@@ -7,10 +7,16 @@
 @import "colors";
 @import "mixins";
 
-/* Twitter Bootstrap (Scss version) */
-/* Import the stuff that's useful */
 
-	// Core variables and mixins
+
+
+
+
+/*	Twitter Bootstrap (Scss version)
+	Loaded first, so it can be overrridden easily.
+	Only uncomment the stuff that you really need */
+
+// Core variables and mixins
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
 
@@ -63,94 +69,35 @@
 // Utility classes
 	@import "bootstrap/utilities"; // Has to be last to override when necessary
 
+
+
+
+/* BYU Styles */
+
 @import "bootstrap-override";
 @import "font-awesome";
-@import "nav"; 
+@import "type";
+@import "breadcrumb";
+@import "nav";
 
 @import "slider"; 
 @import "slider-responsive";
 
-/*These will apply to all browsers that understand media queries. Includes CSS3 as we are assuming any browser that can understand MQ, can also understand CSS3*/
-.wf-active #header-top h1 {
-  font-family: 'Droid Serif', 'Crete Round', sans-serif;
-}
 
-.wf-active h1, .wf-active h2 {
-  font-family: 'Crete Round', sans-serif;
-  font-weight: normal;
-} 
 
-.wf-active body, .wf-active button, .wf-active input, .wf-active select, .wf-active textarea {
-  font-family: 'Open Sans', "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-}
+
+
+
 
 a.mybyu, a.sign-in, .open #search-button { @include transition(background-color .3s);  }
 
-  #logo {
+#logo {
 	a.byu {
 		@include ir();
 		background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
 	}
-	}
+}
   
-#breadcrumb{
-		.bread-drop{
-			background-color: $grayE; 
-			border: 1px solid $grayC;
-			display:none;
-			margin: -1px 0 0 -1px;
-			padding:10px;
-			position:absolute;
-			white-space:nowrap;
-			@include border-radius(0 3px 3px 3px);
-			&:before{
-				background-color: $grayE;
-				content:" ";
-				height:1px; 
-				left:0;
-				margin-top: -1px;
-				position:absolute;
-				top:0;
-				width:20px;
-			}
-			li{margin-bottom:5px;}
-		}
-		
-		#breadcrumb-home{
-			display:inline-block;
-			position:relative;
-			padding:1px;
-			&:after {
-				background-color: #FFF;
-				box-shadow: -2px 2px 0 $grayE;
-				border: 1px solid $grayC;
-				border-bottom-left-radius: 5px;
-				border-width: 0 0 1px 1px;
-				display:none;
-				content: " ";
-				position: absolute;
-				bottom:0;
-				right:-6px;
-				height: 5px;
-				width: 5px;
-			}
-			&:hover{ 
-				background-color: $grayE;
-				border: 1px solid $grayC;
-				border-bottom: 1px solid $grayE;
-				padding:0px;
-				@include border-radius(3px 3px 3px 0);
-				&:after{display:block;}
-				.bread-drop{display:block;}	
-			}
-		}
-	} 
-
-div.gsc-thumbnail-inside, div.gsc-url-top {
-	padding-left: 0px;
-}	
 	
 $break-large: 768px;  
 /* ------------ Desktops and laptops ----------- */
