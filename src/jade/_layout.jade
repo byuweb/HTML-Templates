@@ -100,19 +100,22 @@ html.no-js(lang="en")
 
 					a.sign-in.button(href='http://home.byu.edu/home/cas') Sign in
 
-					block search
-						#search-container(role='search')
-
-							//
-								| The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. 
-								| If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). 
-							form#basic-search(action='http://home.byu.edu/home/search', role='form')
-								input#search(type='search', name='search')
-								input#search-submit(type='submit', value='Search')
-							
-							// This container holds the Google custom search, if enabled 
-							.gcse-wrapper
-								gcse:search
+		//-	===============
+		//-	SEARCH
+		//-	===============
+		block search
+			#search-container(role='search')
+		
+				//
+					| The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. 
+					| If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). 
+				form#basic-search(action='http://home.byu.edu/home/search', role='form')
+					input#search(type='search', name='search')
+					input#search-submit(type='submit', value='Search')
+				
+				// This container holds the Google custom search, if enabled 
+				.gcse-wrapper
+					gcse:search
 
 
 
