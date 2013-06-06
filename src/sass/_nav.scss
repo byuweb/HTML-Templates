@@ -130,8 +130,9 @@ body.sideNav {
     left: 75%;
     #main-header, #content, footer {
       @include box-shadow( -5px 0px 8px rgba($blue0, .65) );
-      z-index: 2;
       position: relative;
+	  x-overflow:display;
+      z-index: 2;
     }
   }
   
