@@ -375,98 +375,98 @@ a.mybyu:hover, a.sign-in:hover, .open #search-button:hover, #search-submit:hover
 
 /* Search box styling for mobile */
 @media -sass-debug-info{filename{}line{font-family:\0000354}}
-#search-container { position: relative; width: 80%; margin-left: 86px; }
-@media -sass-debug-info{filename{}line{font-family:\0000359}}
+#search-container { position: relative; float: right; width: 100%; margin-left: 86px; }
+@media -sass-debug-info{filename{}line{font-family:\0000360}}
 #search-container #basic-search { width: 100%; }
-@media -sass-debug-info{filename{}line{font-family:\0000362}}
+@media -sass-debug-info{filename{}line{font-family:\0000363}}
 #search-container #basic-search #search { margin-bottom: 0; }
-@media -sass-debug-info{filename{}line{font-family:\0000366}}
+@media -sass-debug-info{filename{}line{font-family:\0000367}}
 #search-container .gcse-wrapper { width: 100%; position: absolute; top: 0; background: #001948; }
-@media -sass-debug-info{filename{}line{font-family:\0000372}}
+@media -sass-debug-info{filename{}line{font-family:\0000373}}
 #search-container .gcse-wrapper .gsc-control-cse { background: none; border: none; padding: 0; }
-@media -sass-debug-info{filename{}line{font-family:\0000377}}
+@media -sass-debug-info{filename{}line{font-family:\0000378}}
 #search-container .gcse-wrapper .gsc-control-cse input.gsc-search-button-v2 { margin: 0; }
-@media -sass-debug-info{filename{}line{font-family:\0000379}}
+@media -sass-debug-info{filename{}line{font-family:\0000380}}
 #search-container .gcse-wrapper .gsc-control-cse table { border: none; margin: 0; }
-@media -sass-debug-info{filename{}line{font-family:\0000383}}
+@media -sass-debug-info{filename{}line{font-family:\0000384}}
 #search-container .gcse-wrapper .gsc-control-cse table td { border: none; }
-@media -sass-debug-info{filename{}line{font-family:\0000386}}
+@media -sass-debug-info{filename{}line{font-family:\0000387}}
 #search-container .gcse-wrapper .gsc-control-cse table td .gsc-input-box { background: #fff; border-radius: 2px; border: none; padding: 1px; }
-@media -sass-debug-info{filename{}line{font-family:\0000392}}
+@media -sass-debug-info{filename{}line{font-family:\0000393}}
 #search-container .gcse-wrapper .gsc-control-cse table td .gsc-input-box .gsib_a { padding: 0; margin: 0; }
 
 /* Main Content */
-@media -sass-debug-info{filename{}line{font-family:\00003104}}
+@media -sass-debug-info{filename{}line{font-family:\00003105}}
 .wrapper { margin: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003106}}
-#content { padding: 1em 5% 2em; }
 @media -sass-debug-info{filename{}line{font-family:\00003107}}
+#content { padding: 1em 5% 2em; }
+@media -sass-debug-info{filename{}line{font-family:\00003108}}
 #content h1 { color: #002255; }
 
 /* Calendar */
-@media -sass-debug-info{filename{}line{font-family:\00003113}}
+@media -sass-debug-info{filename{}line{font-family:\00003114}}
 #calendar h2 { margin-bottom: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003116}}
+@media -sass-debug-info{filename{}line{font-family:\00003117}}
 .day a, .day span { display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003118}}
+@media -sass-debug-info{filename{}line{font-family:\00003119}}
 .day span.date { margin-right: .33em; display: inline; font-weight: normal; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003123}}
+@media -sass-debug-info{filename{}line{font-family:\00003124}}
 #calendars { margin: 0; padding: .5em 0 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003127}}
+@media -sass-debug-info{filename{}line{font-family:\00003128}}
 #calendar, #news { border-top: 4px solid #f7f7f7; margin-top: 1px; padding-bottom: 1em; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003131}}
+@media -sass-debug-info{filename{}line{font-family:\00003132}}
 #calendar, #news, #feature { border-bottom: 1px solid #ccc; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003132}}
+@media -sass-debug-info{filename{}line{font-family:\00003133}}
 ul#calendars { list-style: none; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003133}}
+@media -sass-debug-info{filename{}line{font-family:\00003134}}
 .day { padding: .75em 0 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003134}}
+@media -sass-debug-info{filename{}line{font-family:\00003135}}
 a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top: 1.5em; padding-bottom: 1.5em; display: block; }
 
 /* News */
-@media -sass-debug-info{filename{}line{font-family:\00003138}}
+@media -sass-debug-info{filename{}line{font-family:\00003139}}
 .news-item { padding: .25em 0 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003139}}
+@media -sass-debug-info{filename{}line{font-family:\00003140}}
 .briefs-item { padding: .1em 0 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003140}}
+@media -sass-debug-info{filename{}line{font-family:\00003141}}
 #briefs-container { border-bottom: 1px solid #eee; padding-bottom: .75em; margin-bottom: .5em; }
 
 /* Footer */
-@media -sass-debug-info{filename{}line{font-family:\00003143}}
+@media -sass-debug-info{filename{}line{font-family:\00003144}}
 body > footer { background-color: #eeebe9; border-top: 1px solid #fff; border-bottom: 2px solid transparent; }
-@media -sass-debug-info{filename{}line{font-family:\00003147}}
+@media -sass-debug-info{filename{}line{font-family:\00003148}}
 body > footer a, body > footer a:link, body > footer a:visited { color: #807b73; display: block; padding: .35em 1%; font-size: .95em; }
-@media -sass-debug-info{filename{}line{font-family:\00003152}}
+@media -sass-debug-info{filename{}line{font-family:\00003153}}
 body > footer a:hover, body > footer a:active, body > footer a:focus { color: #66625c; }
-@media -sass-debug-info{filename{}line{font-family:\00003154}}
+@media -sass-debug-info{filename{}line{font-family:\00003155}}
 body > footer h2 { color: #66625c; margin-top: 1.5em; font-size: 1em; border-bottom: 1px solid #cccac6; }
-@media -sass-debug-info{filename{}line{font-family:\00003159}}
+@media -sass-debug-info{filename{}line{font-family:\00003160}}
 body > footer h3 { font-weight: normal; color: #66625c; font-size: .95em; margin: 1em 0 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003164}}
+@media -sass-debug-info{filename{}line{font-family:\00003165}}
 body > footer p { color: #807b73; font-size: .95em; }
-@media -sass-debug-info{filename{}line{font-family:\00003167}}
+@media -sass-debug-info{filename{}line{font-family:\00003168}}
 body > footer .wrapper { margin: 9px 5%; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003172}}
+@media -sass-debug-info{filename{}line{font-family:\00003173}}
 #footer-links { border-bottom: 1px solid #ccc; padding-bottom: 1.5em; }
-@media -sass-debug-info{filename{}line{font-family:\00003175}}
+@media -sass-debug-info{filename{}line{font-family:\00003176}}
 #footer-links div.alpha { margin-top: 0; border-top: none; }
-@media -sass-debug-info{filename{}line{font-family:\00003177}}
+@media -sass-debug-info{filename{}line{font-family:\00003178}}
 #footer-links .addthis_default_style a { clear: left; padding: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003179}}
+@media -sass-debug-info{filename{}line{font-family:\00003180}}
 #footer-links .addthis_toolbox a { padding-left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003181}}
+@media -sass-debug-info{filename{}line{font-family:\00003182}}
 #footer-links .addthis_toolbox a span { padding-right: 10px; margin: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003185}}
+@media -sass-debug-info{filename{}line{font-family:\00003186}}
 #footer-bottom { background-color: #e5e2df; border-top: 1px solid #fff; padding-bottom: 1.5em; }
