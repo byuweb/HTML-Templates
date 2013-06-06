@@ -88,13 +88,13 @@ textarea { overflow: auto; vertical-align: top; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_reset\.scss}line{font-family:\00003213}}
   h2, h3 { page-break-after: avoid; } }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_scaffolding\.scss}line{font-family:\000039}}
-body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #333333; background-color: white; }
+body { margin: 0; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; color: #333333; background-color: white; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_scaffolding\.scss}line{font-family:\0000322}}
-a { color: #0088cc; text-decoration: none; }
+a { color: #4477aa; text-decoration: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_scaffolding\.scss}line{font-family:\0000327}}
-a:hover, a:focus { color: #005580; text-decoration: underline; }
+a:hover, a:focus { color: #114477; text-decoration: underline; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_scaffolding\.scss}line{font-family:\0000337}}
 .img-rounded { -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
@@ -299,7 +299,7 @@ a:hover, a:focus { color: #005580; text-decoration: underline; }
 p { margin: 0 0 10px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000312}}
-.lead { margin-bottom: 20px; font-size: 21px; font-weight: 200; line-height: 30px; }
+.lead { margin-bottom: 20px; font-size: 22.5px; font-weight: 200; line-height: 30px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000324}}
 small { font-size: 85%; }
@@ -361,34 +361,34 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-weight: normal
 h1, h2, h3 { line-height: 40px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000377}}
-h1 { font-size: 38.5px; }
+h1 { font-size: 41.25px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000378}}
-h2 { font-size: 31.5px; }
+h2 { font-size: 33.75px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000379}}
-h3 { font-size: 24.5px; }
+h3 { font-size: 26.25px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000380}}
-h4 { font-size: 17.5px; }
+h4 { font-size: 18.75px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000381}}
-h5 { font-size: 14px; }
+h5 { font-size: 15px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000382}}
-h6 { font-size: 11.9px; }
+h6 { font-size: 12.75px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000384}}
-h1 small { font-size: 24.5px; }
+h1 small { font-size: 26.25px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000385}}
-h2 small { font-size: 17.5px; }
+h2 small { font-size: 18.75px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000386}}
-h3 small { font-size: 14px; }
+h3 small { font-size: 15px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000387}}
-h4 small { font-size: 14px; }
+h4 small { font-size: 15px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\0000393}}
 .page-header { padding-bottom: 9px; margin: 20px 0 30px; border-bottom: 1px solid #eeeeee; }
@@ -445,7 +445,7 @@ abbr.initialism { font-size: 90%; text-transform: uppercase; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\00003192}}
 blockquote { padding: 0 0 0 15px; margin: 0 0 20px; border-left: 5px solid #eeeeee; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\00003196}}
-blockquote p { margin-bottom: 0; font-size: 17.5px; font-weight: 300; line-height: 1.25; }
+blockquote p { margin-bottom: 0; font-size: 18.75px; font-weight: 300; line-height: 1.25; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\00003202}}
 blockquote small { display: block; line-height: 20px; color: #999999; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_type\.scss}line{font-family:\00003206}}
@@ -466,13 +466,13 @@ q:before, q:after, blockquote:before, blockquote:after { content: ""; }
 address { display: block; margin-bottom: 20px; font-style: normal; line-height: 20px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_code\.scss}line{font-family:\000038}}
-code, pre { padding: 0 3px 2px; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; font-size: 12px; color: #333333; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+code, pre { padding: 0 3px 2px; font-family: Monaco, Menlo, Consolas, "Courier New", monospace; font-size: 13px; color: #333333; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_code\.scss}line{font-family:\0000317}}
 code { padding: 2px 4px; color: #d14; background-color: #f7f7f9; border: 1px solid #e1e1e8; white-space: nowrap; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_code\.scss}line{font-family:\0000326}}
-pre { display: block; padding: 9.5px; margin: 0 0 10px; font-size: 13px; line-height: 20px; word-break: break-all; word-wrap: break-word; white-space: pre; white-space: pre-wrap; background-color: #f5f5f5; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.15); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+pre { display: block; padding: 9.5px; margin: 0 0 10px; font-size: 14px; line-height: 20px; word-break: break-all; word-wrap: break-word; white-space: pre; white-space: pre-wrap; background-color: #f5f5f5; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.15); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_code\.scss}line{font-family:\0000342}}
 pre.prettyprint { margin-bottom: 20px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_code\.scss}line{font-family:\0000347}}
@@ -488,12 +488,12 @@ form { margin: 0 0 20px; }
 fieldset { padding: 0; margin: 0; border: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\0000321}}
-legend { display: block; width: 100%; padding: 0; margin-bottom: 20px; font-size: 21px; line-height: 40px; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5; }
+legend { display: block; width: 100%; padding: 0; margin-bottom: 20px; font-size: 22.5px; line-height: 40px; color: #333333; border: 0; border-bottom: 1px solid #e5e5e5; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\0000333}}
 legend small { font-size: 15px; color: #999999; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\0000344}}
-label, input, button, select, textarea { font-size: 14px; font-weight: normal; line-height: 20px; }
+label, input, button, select, textarea { font-size: 15px; font-weight: normal; line-height: 20px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\0000350}}
 input, button, select, textarea { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -502,7 +502,7 @@ input, button, select, textarea { font-family: "Helvetica Neue", Helvetica, Aria
 label { display: block; margin-bottom: 5px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\0000380}}
-select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { display: inline-block; height: 20px; padding: 4px 6px; margin-bottom: 10px; font-size: 14px; line-height: 20px; color: #555555; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; vertical-align: middle; }
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { display: inline-block; height: 20px; padding: 4px 6px; margin-bottom: 10px; font-size: 15px; line-height: 20px; color: #555555; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; vertical-align: middle; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\0000396}}
 input, textarea, .uneditable-input { width: 206px; }
@@ -717,13 +717,13 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003423}}
 .input-append, .input-prepend { display: inline-block; margin-bottom: 10px; vertical-align: middle; font-size: 0; white-space: nowrap; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003435}}
-.input-append input, .input-append select, .input-append .uneditable-input, .input-append .dropdown-menu, .input-append .popover, .input-prepend input, .input-prepend select, .input-prepend .uneditable-input, .input-prepend .dropdown-menu, .input-prepend .popover { font-size: 14px; }
+.input-append input, .input-append select, .input-append .uneditable-input, .input-append .dropdown-menu, .input-append .popover, .input-prepend input, .input-prepend select, .input-prepend .uneditable-input, .input-prepend .dropdown-menu, .input-prepend .popover { font-size: 15px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003441}}
 .input-append input, .input-append select, .input-append .uneditable-input, .input-prepend input, .input-prepend select, .input-prepend .uneditable-input { position: relative; margin-bottom: 0; *margin-left: 0; vertical-align: top; -webkit-border-radius: 0 4px 4px 0; -moz-border-radius: 0 4px 4px 0; border-radius: 0 4px 4px 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003448}}
 .input-append input:focus, .input-append select:focus, .input-append .uneditable-input:focus, .input-prepend input:focus, .input-prepend select:focus, .input-prepend .uneditable-input:focus { z-index: 2; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003452}}
-.input-append .add-on, .input-prepend .add-on { display: inline-block; width: auto; height: 20px; min-width: 16px; padding: 4px 5px; font-size: 14px; font-weight: normal; line-height: 20px; text-align: center; text-shadow: 0 1px 0 white; background-color: #eeeeee; border: 1px solid #ccc; }
+.input-append .add-on, .input-prepend .add-on { display: inline-block; width: auto; height: 20px; min-width: 16px; padding: 4px 5px; font-size: 15px; font-weight: normal; line-height: 20px; text-align: center; text-shadow: 0 1px 0 white; background-color: #eeeeee; border: 1px solid #ccc; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003468}}
 .input-append .add-on, .input-append .btn, .input-append .btn-group > .dropdown-toggle, .input-prepend .add-on, .input-prepend .btn, .input-prepend .btn-group > .dropdown-toggle { vertical-align: top; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_forms\.scss}line{font-family:\00003472}}
@@ -1363,10 +1363,10 @@ table td[class*="span"], table th[class*="span"], .row-fluid table td[class*="sp
 .dropdown-menu > li > a { display: block; padding: 3px 20px; clear: both; font-weight: normal; line-height: 20px; color: #333333; white-space: nowrap; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_dropdowns\.scss}line{font-family:\0000391}}
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a { text-decoration: none; color: white; background-color: #0081c2; background-image: -moz-linear-gradient(top, #0088cc, #0077b3); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3)); background-image: -webkit-linear-gradient(top, #0088cc, #0077b3); background-image: -o-linear-gradient(top, #0088cc, #0077b3); background-image: linear-gradient(to bottom, #0088cc, #0077b3); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0077B3', GradientType=0); }
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a { text-decoration: none; color: white; background-color: #4171a2; background-image: -moz-linear-gradient(top, #4477aa, #3d6a98); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4477aa), to(#3d6a98)); background-image: -webkit-linear-gradient(top, #4477aa, #3d6a98); background-image: -o-linear-gradient(top, #4477aa, #3d6a98); background-image: linear-gradient(to bottom, #4477aa, #3d6a98); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4477AA', endColorstr='#FF3D6A98', GradientType=0); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_dropdowns\.scss}line{font-family:\00003101}}
-.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: white; text-decoration: none; outline: 0; background-color: #0081c2; background-image: -moz-linear-gradient(top, #0088cc, #0077b3); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3)); background-image: -webkit-linear-gradient(top, #0088cc, #0077b3); background-image: -o-linear-gradient(top, #0088cc, #0077b3); background-image: linear-gradient(to bottom, #0088cc, #0077b3); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0077B3', GradientType=0); }
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus { color: white; text-decoration: none; outline: 0; background-color: #4171a2; background-image: -moz-linear-gradient(top, #4477aa, #3d6a98); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#4477aa), to(#3d6a98)); background-image: -webkit-linear-gradient(top, #4477aa, #3d6a98); background-image: -o-linear-gradient(top, #4477aa, #3d6a98); background-image: linear-gradient(to bottom, #4477aa, #3d6a98); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF4477AA', endColorstr='#FF3D6A98', GradientType=0); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_dropdowns\.scss}line{font-family:\00003113}}
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus { color: #999999; }
@@ -1449,7 +1449,7 @@ table td[class*="span"], table th[class*="span"], .row-fluid table td[class*="sp
 button.close { padding: 0; cursor: pointer; background: transparent; border: 0; -webkit-appearance: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\0000310}}
-.btn { display: inline-block; *display: inline; /* IE7 inline-block hack */ *zoom: 1; padding: 4px 12px; margin-bottom: 0; font-size: 14px; line-height: 20px; text-align: center; vertical-align: middle; cursor: pointer; color: #333333; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); background-color: whitesmoke; background-image: -moz-linear-gradient(top, white, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, white, #e6e6e6); background-image: -o-linear-gradient(top, white, #e6e6e6); background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0); border-color: #e6e6e6 #e6e6e6 #bfbfbf; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #e6e6e6; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); border: 1px solid #cccccc; *border: 0; border-bottom-color: #b3b3b3; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; *margin-left: .3em; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
+.btn { display: inline-block; *display: inline; /* IE7 inline-block hack */ *zoom: 1; padding: 4px 12px; margin-bottom: 0; font-size: 15px; line-height: 20px; text-align: center; vertical-align: middle; cursor: pointer; color: #333333; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); background-color: whitesmoke; background-image: -moz-linear-gradient(top, white, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(white), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, white, #e6e6e6); background-image: -o-linear-gradient(top, white, #e6e6e6); background-image: linear-gradient(to bottom, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE6E6E6', GradientType=0); border-color: #e6e6e6 #e6e6e6 #bfbfbf; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #e6e6e6; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); border: 1px solid #cccccc; *border: 0; border-bottom-color: #b3b3b3; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; *margin-left: .3em; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003513}}
 .btn:hover, .btn:focus, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { color: #333333; background-color: #e6e6e6; *background-color: #d9d9d9; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003521}}
@@ -1466,13 +1466,13 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .btn.disabled, .btn[disabled] { cursor: default; background-image: none; opacity: 0.65; filter: alpha(opacity=65); -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\0000370}}
-.btn-large { padding: 11px 19px; font-size: 17.5px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
+.btn-large { padding: 11px 19px; font-size: 18.75px; -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\0000376}}
 .btn-large [class^="icon-"], .btn-large [class*=" icon-"] { margin-top: 4px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\0000381}}
-.btn-small { padding: 2px 10px; font-size: 11.9px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.btn-small { padding: 2px 10px; font-size: 12.75px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\0000387}}
 .btn-small [class^="icon-"], .btn-small [class*=" icon-"] { margin-top: 0; }
@@ -1481,7 +1481,7 @@ button.close { padding: 0; cursor: pointer; background: transparent; border: 0; 
 .btn-mini [class^="icon-"], .btn-mini [class*=" icon-"] { margin-top: -1px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\0000396}}
-.btn-mini { padding: 0px 6px; font-size: 10.5px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+.btn-mini { padding: 0px 6px; font-size: 11.25px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003106}}
 .btn-block { display: block; width: 100%; padding-left: 0; padding-right: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
@@ -1496,11 +1496,11 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .btn-primary.active, .btn-warning.active, .btn-danger.active, .btn-success.active, .btn-info.active, .btn-inverse.active { color: rgba(255, 255, 255, 0.75); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003145}}
-.btn-primary { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #006ccc; background-image: -moz-linear-gradient(top, #0088cc, #0044cc); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc)); background-image: -webkit-linear-gradient(top, #0088cc, #0044cc); background-image: -o-linear-gradient(top, #0088cc, #0044cc); background-image: linear-gradient(to bottom, #0088cc, #0044cc); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0088CC', endColorstr='#FF0044CC', GradientType=0); border-color: #0044cc #0044cc #002a80; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #0044cc; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+.btn-primary { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #25588b; background-image: -moz-linear-gradient(top, #336699, #114477); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#336699), to(#114477)); background-image: -webkit-linear-gradient(top, #336699, #114477); background-image: -o-linear-gradient(top, #336699, #114477); background-image: linear-gradient(to bottom, #336699, #114477); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF336699', endColorstr='#FF114477', GradientType=0); border-color: #114477 #114477 #071e34; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #114477; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003513}}
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { color: white; background-color: #0044cc; *background-color: #003bb3; }
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] { color: white; background-color: #114477; *background-color: #0e3761; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003521}}
-.btn-primary:active, .btn-primary.active { background-color: #003399 \9; }
+.btn-primary:active, .btn-primary.active { background-color: #0b2a4a \9; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003149}}
 .btn-warning { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #f9a732; background-image: -moz-linear-gradient(top, #fbb450, #f89406); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406)); background-image: -webkit-linear-gradient(top, #fbb450, #f89406); background-image: -o-linear-gradient(top, #fbb450, #f89406); background-image: linear-gradient(to bottom, #fbb450, #f89406); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFBB450', endColorstr='#FFF89406', GradientType=0); border-color: #f89406 #f89406 #ad6704; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #f89406; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
@@ -1510,25 +1510,25 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .btn-warning:active, .btn-warning.active { background-color: #c67605 \9; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003153}}
-.btn-danger { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #da4e49; background-image: -moz-linear-gradient(top, #ee5f5b, #bd362f); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ee5f5b), to(#bd362f)); background-image: -webkit-linear-gradient(top, #ee5f5b, #bd362f); background-image: -o-linear-gradient(top, #ee5f5b, #bd362f); background-image: linear-gradient(to bottom, #ee5f5b, #bd362f); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEE5F5B', endColorstr='#FFBD362F', GradientType=0); border-color: #bd362f #bd362f #802420; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #bd362f; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+.btn-danger { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #b71e1e; background-image: -moz-linear-gradient(top, #cc3333, #990000); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#cc3333), to(#990000)); background-image: -webkit-linear-gradient(top, #cc3333, #990000); background-image: -o-linear-gradient(top, #cc3333, #990000); background-image: linear-gradient(to bottom, #cc3333, #990000); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFCC3333', endColorstr='#FF990000', GradientType=0); border-color: #990000 #990000 #4d0000; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #990000; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003513}}
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] { color: white; background-color: #bd362f; *background-color: #a9302a; }
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] { color: white; background-color: #990000; *background-color: maroon; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003521}}
-.btn-danger:active, .btn-danger.active { background-color: #942a25 \9; }
+.btn-danger:active, .btn-danger.active { background-color: #660000 \9; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003157}}
-.btn-success { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #5bb65b; background-image: -moz-linear-gradient(top, #62c462, #51a351); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#62c462), to(#51a351)); background-image: -webkit-linear-gradient(top, #62c462, #51a351); background-image: -o-linear-gradient(top, #62c462, #51a351); background-image: linear-gradient(to bottom, #62c462, #51a351); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF62C462', endColorstr='#FF51A351', GradientType=0); border-color: #51a351 #51a351 #387038; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #51a351; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+.btn-success { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #2c8b3d; background-image: -moz-linear-gradient(top, #3d994d, #147827); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#3d994d), to(#147827)); background-image: -webkit-linear-gradient(top, #3d994d, #147827); background-image: -o-linear-gradient(top, #3d994d, #147827); background-image: linear-gradient(to bottom, #3d994d, #147827); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF3D994D', endColorstr='#FF147827', GradientType=0); border-color: #147827 #147827 #093612; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #147827; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003513}}
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] { color: white; background-color: #51a351; *background-color: #499249; }
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] { color: white; background-color: #147827; *background-color: #106220; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003521}}
-.btn-success:active, .btn-success.active { background-color: #408140 \9; }
+.btn-success:active, .btn-success.active { background-color: #0d4c19 \9; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003161}}
-.btn-info { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #49afcd; background-image: -moz-linear-gradient(top, #5bc0de, #2f96b4); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5bc0de), to(#2f96b4)); background-image: -webkit-linear-gradient(top, #5bc0de, #2f96b4); background-image: -o-linear-gradient(top, #5bc0de, #2f96b4); background-image: linear-gradient(to bottom, #5bc0de, #2f96b4); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2F96B4', GradientType=0); border-color: #2f96b4 #2f96b4 #1f6377; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #2f96b4; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
+.btn-info { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #e3eef9; background-image: -moz-linear-gradient(top, #eff6fc, #d1e4f6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eff6fc), to(#d1e4f6)); background-image: -webkit-linear-gradient(top, #eff6fc, #d1e4f6); background-image: -o-linear-gradient(top, #eff6fc, #d1e4f6); background-image: linear-gradient(to bottom, #eff6fc, #d1e4f6); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEFF6FC', endColorstr='#FFD1E4F6', GradientType=0); border-color: #d1e4f6 #d1e4f6 #91bee9; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #d1e4f6; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003513}}
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] { color: white; background-color: #2f96b4; *background-color: #2a85a0; }
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] { color: white; background-color: #d1e4f6; *background-color: #bcd7f2; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003521}}
-.btn-info:active, .btn-info.active { background-color: #24748c \9; }
+.btn-info:active, .btn-info.active { background-color: #a6cbee \9; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003165}}
 .btn-inverse { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #363636; background-image: -moz-linear-gradient(top, #444444, #222222); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#444444), to(#222222)); background-image: -webkit-linear-gradient(top, #444444, #222222); background-image: -o-linear-gradient(top, #444444, #222222); background-image: linear-gradient(to bottom, #444444, #222222); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF444444', endColorstr='#FF222222', GradientType=0); border-color: #222222 #222222 black; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); *background-color: #222222; /* Darken IE7 buttons by default so they stand out more given they won't have borders */ filter: progid:DXImageTransform.Microsoft.gradient(enabled=false); }
@@ -1552,10 +1552,10 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .btn-link, .btn-link:active, .btn-link[disabled] { background-color: transparent; background-image: none; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003212}}
-.btn-link { border-color: transparent; cursor: pointer; color: #0088cc; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+.btn-link { border-color: transparent; cursor: pointer; color: #4477aa; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003219}}
-.btn-link:hover, .btn-link:focus { color: #005580; text-decoration: underline; background-color: transparent; }
+.btn-link:hover, .btn-link:focus { color: #114477; text-decoration: underline; background-color: transparent; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_buttons\.scss}line{font-family:\00003225}}
 .btn-link[disabled]:hover, .btn-link[disabled]:focus { color: #333333; text-decoration: none; }
@@ -1580,16 +1580,16 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .btn-group > .btn + .btn { margin-left: -1px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\0000344}}
-.btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover { font-size: 14px; }
+.btn-group > .btn, .btn-group > .dropdown-menu, .btn-group > .popover { font-size: 15px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\0000349}}
-.btn-group > .btn-mini { font-size: 10.5px; }
+.btn-group > .btn-mini { font-size: 11.25px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\0000352}}
-.btn-group > .btn-small { font-size: 11.9px; }
+.btn-group > .btn-small { font-size: 12.75px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\0000355}}
-.btn-group > .btn-large { font-size: 17.5px; }
+.btn-group > .btn-large { font-size: 18.75px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\0000360}}
 .btn-group > .btn:first-child { margin-left: 0; -webkit-border-top-left-radius: 4px; -moz-border-radius-topleft: 4px; border-top-left-radius: 4px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-bottomleft: 4px; border-bottom-left-radius: 4px; }
@@ -1626,15 +1626,15 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\00003137}}
 .btn-group.open .btn.dropdown-toggle { background-color: #e6e6e6; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\00003140}}
-.btn-group.open .btn-primary.dropdown-toggle { background-color: #0044cc; }
+.btn-group.open .btn-primary.dropdown-toggle { background-color: #114477; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\00003143}}
 .btn-group.open .btn-warning.dropdown-toggle { background-color: #f89406; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\00003146}}
-.btn-group.open .btn-danger.dropdown-toggle { background-color: #bd362f; }
+.btn-group.open .btn-danger.dropdown-toggle { background-color: #990000; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\00003149}}
-.btn-group.open .btn-success.dropdown-toggle { background-color: #51a351; }
+.btn-group.open .btn-success.dropdown-toggle { background-color: #147827; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\00003152}}
-.btn-group.open .btn-info.dropdown-toggle { background-color: #2f96b4; }
+.btn-group.open .btn-info.dropdown-toggle { background-color: #d1e4f6; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_button-groups\.scss}line{font-family:\00003155}}
 .btn-group.open .btn-inverse.dropdown-toggle { background-color: #222222; }
 
@@ -1747,7 +1747,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .nav-list > li > a { padding: 3px 15px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_navs\.scss}line{font-family:\0000373}}
-.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); background-color: #0088cc; }
+.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus { color: white; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2); background-color: #4477aa; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_navs\.scss}line{font-family:\0000379}}
 .nav-list [class^="icon-"], .nav-list [class*=" icon-"] { margin-right: 2px; }
@@ -1786,7 +1786,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .nav-pills > li > a { padding-top: 8px; padding-bottom: 8px; margin-top: 2px; margin-bottom: 2px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_navs\.scss}line{font-family:\00003159}}
-.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus { color: white; background-color: #0088cc; }
+.nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus { color: white; background-color: #4477aa; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_navs\.scss}line{font-family:\00003170}}
 .nav-stacked > li { float: none; }
@@ -1822,10 +1822,10 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .nav-pills .dropdown-menu { -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_navs\.scss}line{font-family:\00003220}}
-.nav .dropdown-toggle .caret { border-top-color: #0088cc; border-bottom-color: #0088cc; margin-top: 6px; }
+.nav .dropdown-toggle .caret { border-top-color: #4477aa; border-bottom-color: #4477aa; margin-top: 6px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_navs\.scss}line{font-family:\00003226}}
-.nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret { border-top-color: #005580; border-bottom-color: #005580; }
+.nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret { border-top-color: #114477; border-bottom-color: #114477; }
 
 /* move down carets for tabs */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_navs\.scss}line{font-family:\00003231}}
@@ -2162,7 +2162,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .pagination-right { text-align: right; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_pagination\.scss}line{font-family:\0000381}}
-.pagination-large ul > li > a, .pagination-large ul > li > span { padding: 11px 19px; font-size: 17.5px; }
+.pagination-large ul > li > a, .pagination-large ul > li > span { padding: 11px 19px; font-size: 18.75px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_pagination\.scss}line{font-family:\0000386}}
 .pagination-large ul > li:first-child > a, .pagination-large ul > li:first-child > span { -webkit-border-top-left-radius: 6px; -moz-border-radius-topleft: 6px; border-top-left-radius: 6px; -webkit-border-bottom-left-radius: 6px; -moz-border-radius-bottomleft: 6px; border-bottom-left-radius: 6px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_pagination\.scss}line{font-family:\0000390}}
@@ -2174,10 +2174,10 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .pagination-mini ul > li:last-child > a, .pagination-mini ul > li:last-child > span, .pagination-small ul > li:last-child > a, .pagination-small ul > li:last-child > span { -webkit-border-top-right-radius: 3px; -moz-border-radius-topright: 3px; border-top-right-radius: 3px; -webkit-border-bottom-right-radius: 3px; -moz-border-radius-bottomright: 3px; border-bottom-right-radius: 3px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_pagination\.scss}line{font-family:\00003111}}
-.pagination-small ul > li > a, .pagination-small ul > li > span { padding: 2px 10px; font-size: 11.9px; }
+.pagination-small ul > li > a, .pagination-small ul > li > span { padding: 2px 10px; font-size: 12.75px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_pagination\.scss}line{font-family:\00003119}}
-.pagination-mini ul > li > a, .pagination-mini ul > li > span { padding: 0px 6px; font-size: 10.5px; }
+.pagination-mini ul > li > a, .pagination-mini ul > li > span { padding: 0px 6px; font-size: 11.25px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_pager\.scss}line{font-family:\000036}}
 .pager { margin: 20px 0; list-style: none; text-align: center; *zoom: 1; }
@@ -2335,7 +2335,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 .thumbnail { display: block; padding: 4px; line-height: 20px; border: 1px solid #ddd; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055); -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055); box-shadow: 0 1px 3px rgba(0, 0, 0, 0.055); -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_thumbnails\.scss}line{font-family:\0000338}}
-a.thumbnail:hover, a.thumbnail:focus { border-color: #0088cc; -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); }
+a.thumbnail:hover, a.thumbnail:focus { border-color: #4477aa; -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_thumbnails\.scss}line{font-family:\0000344}}
 .thumbnail > img { display: block; max-width: 100%; margin-left: auto; margin-right: auto; }
@@ -2368,7 +2368,7 @@ a.thumbnail:hover, a.thumbnail:focus { border-color: #0088cc; -webkit-box-shadow
 .media-list { margin-left: 0; list-style: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\000038}}
-.label, .badge { display: inline-block; padding: 2px 4px; font-size: 11.844px; font-weight: bold; line-height: 14px; color: white; vertical-align: baseline; white-space: nowrap; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #999999; }
+.label, .badge { display: inline-block; padding: 2px 4px; font-size: 12.69px; font-weight: bold; line-height: 14px; color: white; vertical-align: baseline; white-space: nowrap; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #999999; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000321}}
 .label { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
