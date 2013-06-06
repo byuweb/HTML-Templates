@@ -90,15 +90,19 @@ html.no-js(lang="en")
 				#header-top.wrapper
 					#logo
 						h2
-							a.byu(href='http://www.byu.edu/')
-								block byulink
+							block parentlink
+								a.byu(href='http://www.byu.edu/') Brigham Young University
 
 					// This should link to your organization's home page 
 					h1
 						a#site-name(href='#CHANGE-THIS-LINK')
 							block heading
+								| Organization Title
 
 					a.sign-in.button(href='http://home.byu.edu/home/cas') Sign in
+
+
+
 
 		//-	===============
 		//-	SEARCH
@@ -119,11 +123,46 @@ html.no-js(lang="en")
 
 
 
+		//-	===============
+		//-	MAIN CONTENT WRAPPER
+		//-	===============
 
-		//-	===============
-		//-	CONTENT
-		//-	===============
-		block content
+		#content.wrapper.clearfix(role='main')
+
+
+
+
+			//-	===============
+			//-	BREADCRUMB
+			//-	===============
+
+			block breadcrumb
+				// Breadcrumb
+				ul.breadcrumb
+					li
+						.dropdown
+							a.home.dropdown-toggle(href="", data-toggle="dropdown")
+								i.icon-home.icon-large 
+								span.visuallyhidden Home 
+								i.icon-caret-down
+							ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu")
+								li: a(href='www.byu.edu') BYU Home 
+								li: a(href='#') Organization Home 
+								li: a(href='#') Two Pages Above 
+							i.divider.icon-angle-right
+					li
+						a(href="#") One page above
+						i.divider.icon-angle-right
+					li.active Current Page
+
+
+
+
+
+			//-	===============
+			//-	CONTENT
+			//-	===============
+			block content
 
 
 

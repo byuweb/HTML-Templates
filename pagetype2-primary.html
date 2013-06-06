@@ -47,15 +47,19 @@
     </div>
     <div id="content" role="main" class="wrapper clearfix">
       <!-- Breadcrumb-->
-      <div id="breadcrumb" role="navigation">
-        <div id="breadcrumb-home"><a href="#">Home</a>
-          <ul class="bread-drop">
-            <li><a href="www.byu.edu">BYU Home </a></li>
-            <li><a href="#">Organization Home </a></li>
-            <li><a href="#">Two Pages Above </a></li>
-          </ul>
-        </div><a href="#">One Page Above </a><span class="currentPage">This page's main title</span>
-      </div>
+      <ul class="breadcrumb">
+        <li>
+          <div class="dropdown"><a href="" data-toggle="dropdown" class="home dropdown-toggle"><i class="icon-home icon-large"> </i><span class="visuallyhidden">Home </span><i class="icon-caret-down"></i></a>
+            <ul role="menu" aria-labelledby="dropdownMenu" class="dropdown-menu">
+              <li><a href="www.byu.edu">BYU Home </a></li>
+              <li><a href="#">Organization Home </a></li>
+              <li><a href="#">Two Pages Above </a></li>
+            </ul><i class="divider icon-angle-right"></i>
+          </div>
+        </li>
+        <li><a href="#">One page above</a><i class="divider icon-angle-right"></i></li>
+        <li class="active">Current Page</li>
+      </ul>
       <h1>Main Title</h1>
       <h2>Sub Title</h2>
       <p>See the <a href="https://web.byu.edu/styleguide">Style Guide </a>for layouts and code snippets that you can copy and paste.</p>
