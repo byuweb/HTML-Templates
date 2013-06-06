@@ -1,10 +1,11 @@
 {
-  "name": "HTML-Prototype-Starter",
-  "version": "0.1.0",
+  "name": "BYU Templates",
+  "version": "2.0.0",
   "devDependencies": {
     "grunt": "~0.4.0",
     "grunt-contrib-jade": "*",
     "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
     "grunt-regarde": "*",
     "grunt-contrib-connect": "*",
     "grunt-contrib-livereload": "*",

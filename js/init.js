@@ -1,6 +1,4 @@
-/***********************************************
-     Begin init.js 
-***********************************************/
+/*! init.js */
 
 $LAB
   .script("http://byuweb.github.com/Global-Assets/js/jquery-1.9.1.min.js").wait()

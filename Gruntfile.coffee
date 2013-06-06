@@ -11,9 +11,21 @@ module.exports = (grunt) ->
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
     
+    uglify:
+      options:
+        mangle: false
+        preserveComments: 'some'
+        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
+        '<%= grunt.template.today("yyyy-mm-dd") %> */'
+      my_target:
+        files:
+          'js/script.min.js' : ['src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js']
+          'js/slider-update.min.js' : 'src/js/slider-update.js'
+          'js/fonts.min.js' : 'src/js/fonts.js'
+
     sass:
       options:
-        style: 'compact',
+        style: 'compact'
         compass: 'config.rb'
         debugInfo: true
       compile:
@@ -26,10 +38,10 @@ module.exports = (grunt) ->
         pretty: true
       compile:
         files:[
-          expand: true,
-          cwd: 'src/jade/',
-          src: ['**/*.html.jade'],
-          dest: '',
+          expand: true
+          cwd: 'src/jade/'
+          src: ['**/*.html.jade']
+          dest: ''
           ext: '.html'
         ]
 #     coffee:
@@ -44,6 +56,9 @@ module.exports = (grunt) ->
           middleware: (connect, options) ->
             return [lrSnippet, folderMount(connect, '.')]
     regarde:
+      uglify:
+        files: ['src/js/**/*.js']
+        tasks: ['uglify', 'livereload']
       sass:
         files: ['src/sass/**/*.sass', 'src/sass/**/*.scss']
         tasks: ['sass', 'livereload']
@@ -58,12 +73,12 @@ module.exports = (grunt) ->
         tasks: ['livereload']
 
   # grunt.loadNpmTasks('grunt-contrib-coffee')
+  grunt.loadNpmTasks('grunt-contrib-uglify')
   grunt.loadNpmTasks('grunt-contrib-sass')
   grunt.loadNpmTasks('grunt-contrib-jade')
   grunt.loadNpmTasks('grunt-regarde')
   grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('grunt-contrib-livereload')
-  # grunt.loadNpmTasks('grunt-contrib-concat')
 
   # Default task(s).
   grunt.registerTask('compile', ['sass', 'jade'])
