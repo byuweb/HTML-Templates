@@ -128,10 +128,11 @@ body {
 .menu-button { display: inline-block;}
 body.sideNav {
     left: 75%;
+	overflow-x:visible;
     #main-header, #content, footer {
       @include box-shadow( -5px 0px 8px rgba($blue0, .65) );
-      z-index: 2;
       position: relative;
+      z-index: 2;
     }
   }
   

@@ -1,6 +1,9 @@
+//Document is ready
 $(function(){
   activateMenus();
 });
+
+
 
   /* Func: ActivateMenus
    * Desc: Get the menus going
@@ -11,7 +14,7 @@ $(function(){
     $('#header-top').delegate('.menu-button', 'click', function () {
       $('body').toggleClass('sideNav');
     });
-          
+		
     $('nav li:has(.mega, .sub) > a').click(function (e) {
       e.preventDefault();
       var li = $(this).parent();
@@ -49,8 +52,15 @@ $(function(){
       if (left > mega.parent().parent().outerWidth() - mega.outerWidth())
         mega.css('right', 0);
     });
+	
+  //Listener for if screen is resized to close sideNav
+  $(window).resize(function (){
+	if ($(window).width() > 768){
+		$('body').removeClass('sideNav');
+	}
+  });
+	
   }
-
 
   /* Func: SetPrimaryNavPosition
    * Desc: Move the nav around so it works in the sidebar
@@ -67,14 +77,12 @@ $(function(){
   * Args: @evt	- Event object. Automatically generated.
   */
   function rollOver(evt) {
-
     if (!$(this).hasClass('hover')) {
       clickOpened = false;
       $(this).addClass('hover');
       $('nav li').not(this).removeClass('hover');
       $(document).click(hideAllMenus);
     }
-    //if(evt !== undefined) evt.stopPropagation();
   }
 
   /* Func: RollOut
