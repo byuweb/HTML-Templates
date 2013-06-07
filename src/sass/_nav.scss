@@ -15,21 +15,20 @@ body {
 /* Menu button */
 .menu-button {
   border:1px solid $blue2;
-  bottom:2em;
-  display: none;
-  height: 1.5em;
+  bottom:.5em;
   left:32px;
   overflow: hidden;
   padding: .5em;
   position: relative;
   text-indent: -999em;
+  height: 1.5em;
   width: 1.75em;
   @include border-radius(3px);
   &:hover {
     background-color: $blue2;
     border-color: $blue3;
   }
-  &:before {
+  &:before { // These are the before and after bars
     content: "";
     position: absolute;
     left: 50%;
@@ -40,12 +39,10 @@ body {
     background: #fff;
     @include border-radius(1px);
     @include box-shadow(#{"0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff"});
-  }
-  
+  } 
 }
 
 /* Side Navigation */
-
 %sidenav {
   font-size: 1.2em;
     a {
@@ -128,6 +125,7 @@ body {
 .menu-button { display: inline-block;}
 body.sideNav {
     left: 75%;
+//	@include transform(translateX(240px));
 	overflow-x:visible;
     #main-header, #content, footer {
       @include box-shadow( -5px 0px 8px rgba($blue0, .65) );
@@ -233,7 +231,8 @@ body.sideNav {
 	}
 	.mega {
       @extend %tab-nav-submenu;
-      position: absolute;
+	  height:380px;
+	  position: absolute;
       padding: 1em 0 2em;
 	  width: 920px;
       @include border-radius(0 0 3px 3px);
@@ -249,53 +248,42 @@ body.sideNav {
 		position: absolute;
 		width: 222px;
 		a {border:none;}
-		.links {
-			width: 100%;
-		}
+		.links { width: 100%; }
 	}
-    li.hover .mega, li.hover .sub { display: block; }
-    .highlight, .featured, hr { display: block; }
+    li.hover .mega, li.hover .sub, .highlight, .featured, hr { display: block; }
 	
-    .links, .highlight {
-      width: 100%;
-      float: left;
-    }
     hr {
       border:none;
       border-top: 1px solid #ddd;
     }
     .featured { font-weight: bold; }
     .links {
+	  float:left;
+	  width:220px;
       &.double {
-        width: 63%;
+        width: 400px;
         .featured {
-          a {
-            padding-left: 5%;
-            padding-right: 5%;
-          }
-          .sublinks {
-            padding-left: 5%;
-          }
+          .sublinks { padding-left: 5%; }
         }
         .left {
           float: left;
           width: 50%;
         }
       }
-      a {
-        padding:.35em 10%;
-      }
-      ul.sublinks {
-        padding-bottom: .25em;
-        padding-left: 10%;
-        a {
-          padding: .25em 10%;
-        }
-      }
-    }
+      .sublinks { 
+		padding-bottom: 0 25px 0 .25em;  
+	    li a:before {
+			content: '\25B8';
+			padding-right:4px;
+			font-size: 10px;
+			list-style-type: none;
+		}
+	  } //.sublinks
+	 }
     .highlight {
-      padding-left: 3%;
-      font-size: 1.1em;
+		float: left;
+		padding-left: 3%;
+		width: 208px;
       a {
         padding: 0;
         color: $blue2;
