@@ -249,6 +249,9 @@ body.sideNav {
 		position: absolute;
 		width: 222px;
 		a {border:none;}
+		.links {
+			width: 100%;
+		}
 	}
     li.hover .mega, li.hover .sub { display: block; }
     .highlight, .featured, hr { display: block; }

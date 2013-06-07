@@ -2020,46 +2020,48 @@ body { -webkit-transition: left 0.2s ease; -moz-transition: left 0.2s ease; -o-t
   #primary-nav .sub { background-color: #fff; border-bottom: 3px solid #369; box-shadow: 0 1px 8px rgba(0, 0, 0, 0.7); display: none; margin-top: 0; padding: 10px; position: absolute; width: 222px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003251}}
   #primary-nav .sub a { border: none; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003253}}
-  #primary-nav li.hover .mega, #primary-nav li.hover .sub { display: block; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003254}}
-  #primary-nav .highlight, #primary-nav .featured, #primary-nav hr { display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003252}}
+  #primary-nav .sub .links { width: 100%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003256}}
+  #primary-nav li.hover .mega, #primary-nav li.hover .sub { display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003257}}
+  #primary-nav .highlight, #primary-nav .featured, #primary-nav hr { display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003259}}
   #primary-nav .links, #primary-nav .highlight { width: 100%; float: left; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003260}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003263}}
   #primary-nav hr { border: none; border-top: 1px solid #ddd; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003264}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003267}}
   #primary-nav .featured { font-weight: bold; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003266}}
-  #primary-nav .links.double { width: 63%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003269}}
+  #primary-nav .links.double { width: 63%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003272}}
   #primary-nav .links.double .featured a { padding-left: 5%; padding-right: 5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003276}}
   #primary-nav .links.double .featured .sublinks { padding-left: 5%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003277}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003280}}
   #primary-nav .links.double .left { float: left; width: 50%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003282}}
-  #primary-nav .links a { padding: .35em 10%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003285}}
-  #primary-nav .links ul.sublinks { padding-bottom: .25em; padding-left: 10%; }
+  #primary-nav .links a { padding: .35em 10%; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003288}}
+  #primary-nav .links ul.sublinks { padding-bottom: .25em; padding-left: 10%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003291}}
   #primary-nav .links ul.sublinks a { padding: .25em 10%; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003293}}
-  #primary-nav .highlight { padding-left: 3%; font-size: 1.1em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003296}}
-  #primary-nav .highlight a { padding: 0; color: #003366; }
+  #primary-nav .highlight { padding-left: 3%; font-size: 1.1em; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003299}}
+  #primary-nav .highlight a { padding: 0; color: #003366; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003302}}
   #primary-nav .highlight a:hover { color: #001948; text-decoration: underline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003310}}
   #secondary-nav { position: absolute; bottom: 42px; right: 9px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003316}}
   #secondary-nav li.hover .sub { display: block; position: absolute; left: auto; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003318}}
-  #secondary-nav a { display: inline-block; color: #d1e4f6; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003321}}
+  #secondary-nav a { display: inline-block; color: #d1e4f6; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003324}}
   #secondary-nav a:hover { background: transparent; color: #fff; } }
 /* Small adjustments for when the screen is wider than max body width */
-@media all and (min-width: 940px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003332}}
+@media all and (min-width: 940px) { @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/Lance\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003335}}
   #secondary-nav { right: 50%; margin-right: -470px; } }
 /* Slider styles (just copied from old templates for simplicity) */
 /* AnythingSlider v1.5.10+ Default (base) theme By Chris Coyier: http://css-tricks.com with major improvements by Doug Neiner: http://pixelgraphics.us/ based on work by Remy Sharp: http://jqueryfordesigners.com/
