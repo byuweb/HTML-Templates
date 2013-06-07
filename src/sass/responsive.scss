@@ -65,10 +65,7 @@
 	@import "bootstrap/utilities"; // Has to be last to override when necessary
 
 
-
-
 /* BYU Styles */
-
 @import "bootstrap-override";
 @import "font-awesome";
 @import "type";
@@ -78,12 +75,6 @@
 @import "slider"; 
 @import "slider-responsive";
 
-
-
-
-
-
-
 a.mybyu, a.sign-in, .open #search-button { @include transition(background-color .3s);  }
 
 #logo {
@@ -92,11 +83,10 @@ a.mybyu, a.sign-in, .open #search-button { @include transition(background-color 
 		background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
 	}
 }
-  
-	
-$break-large: 768px;  
+ 	
+$break-large: 48em;
 /* ------------ Desktops and laptops ----------- */
-@media only screen and (min-width : $break-large) {
+@media screen and (min-width : $break-large) {
 	
 	body{
 		background: url("../img/body-linen.png");
@@ -184,7 +174,6 @@ $break-large: 768px;
 }
 
 /* From h5bp */
-
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -204,5 +193,3 @@ $break-large: 768px;
 
 /* h5bp print styles */
 @import "print";
-
-

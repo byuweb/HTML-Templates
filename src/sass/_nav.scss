@@ -318,8 +318,14 @@ body.sideNav {
   
 }
 
-/* Small adjustments for when the screen is wider than max body width */
-@media all and (min-width:940px) {
+$min-width:37.5px; //600px
+$max-width:57.5em; //920px
+/*   Small adjustments for portrait mode and when the screen is wider than max body width  */
+@media screen and (min-width:$min-width) and (max-width:$max-width){
+	#primary-nav .mega{width:80%;}
+}
+
+@media screen and (min-width:940px) {
 	#secondary-nav {
 		right: 50%;
 		margin-right: -470px;
