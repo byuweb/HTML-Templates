@@ -21,7 +21,7 @@ module.exports = (grunt) ->
         files:
           'js/script.min.js' : ['src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js']
           'js/slider-update.min.js' : 'src/js/slider-update.js'
-          'js/fonts.min.js' : 'src/js/fonts.js'
+          'js/fonts.min.js' : ['src/js/google-fontloader.js', 'src/js/fonts.js']
 
     sass:
       options:
@@ -30,6 +30,7 @@ module.exports = (grunt) ->
         debugInfo: true
       compile:
         files:
+          'css/fonts.css' : 'src/sass/fonts.scss'
           'css/base.css' : 'src/sass/base.scss'
           'css/responsive.css' : 'src/sass/responsive.scss'
   
