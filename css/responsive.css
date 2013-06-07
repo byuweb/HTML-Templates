@@ -937,6 +937,87 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini { *padding-top: 1px; *pad
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_breadcrumbs\.scss}line{font-family:\0000321}}
 .breadcrumb .active { color: #999999; }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\000038}}
+.label, .badge { display: inline-block; padding: 2px 4px; font-size: 12.69px; font-weight: bold; line-height: 14px; color: white; vertical-align: baseline; white-space: nowrap; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25); background-color: #999999; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000321}}
+.label { -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000324}}
+.badge { padding-left: 9px; padding-right: 9px; -webkit-border-radius: 9px; -moz-border-radius: 9px; border-radius: 9px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000333}}
+.label:empty, .badge:empty { display: none; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000343}}
+a.label:hover, a.label:focus, a.badge:hover, a.badge:focus { color: white; text-decoration: none; cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000354}}
+.label-important { background-color: #b94a48; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000355}}
+.label-important[href] { background-color: #953b39; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000357}}
+.label-warning { background-color: #f89406; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000358}}
+.label-warning[href] { background-color: #c67605; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000360}}
+.label-success { background-color: #468847; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000361}}
+.label-success[href] { background-color: #356635; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000363}}
+.label-info { background-color: #3a87ad; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000364}}
+.label-info[href] { background-color: #2d6987; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000366}}
+.label-inverse { background-color: #333333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000367}}
+.label-inverse[href] { background-color: #1a1a1a; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000354}}
+.badge-important { background-color: #b94a48; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000355}}
+.badge-important[href] { background-color: #953b39; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000357}}
+.badge-warning { background-color: #f89406; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000358}}
+.badge-warning[href] { background-color: #c67605; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000360}}
+.badge-success { background-color: #468847; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000361}}
+.badge-success[href] { background-color: #356635; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000363}}
+.badge-info { background-color: #3a87ad; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000364}}
+.badge-info[href] { background-color: #2d6987; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000366}}
+.badge-inverse { background-color: #333333; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000367}}
+.badge-inverse[href] { background-color: #1a1a1a; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000373}}
+.btn .label, .btn .badge { position: relative; top: -1px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_labels-badges\.scss}line{font-family:\0000380}}
+.btn-mini .label, .btn-mini .badge { top: 0; }
+
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/bootstrap\/_utilities\.scss}line{font-family:\000037}}
 .pull-right { float: right; }
 
@@ -2056,7 +2137,7 @@ body { -webkit-transition: left 0.2s ease; -moz-transition: left 0.2s ease; -o-t
   #secondary-nav a:hover { background: transparent; color: #fff; } }
 /*   Small adjustments for portrait mode and when the screen is wider than max body width  */
 @media screen and (min-width: 37.5px) and (max-width: 57.5em) { @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003325}}
-  #primary-nav .mega { width: 80%; } }
+  #primary-nav .mega { width: 700px; } }
 @media screen and (min-width: 940px) { @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_nav\.scss}line{font-family:\00003329}}
   #secondary-nav { right: 50%; margin-right: -470px; } }
 /* Slider styles (just copied from old templates for simplicity) */
