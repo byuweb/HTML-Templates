@@ -3,13 +3,12 @@
 */
 
 @import "compass";
-
 @import "colors";
-@import "basics";
 
+@import "normalize"; // Great place to start
+@import "h5bp"; // Good defaults from HTML5 Boilerplate
 @import "prettify";
-@import "normalize";
-//@import "boilerplate";
+@import "basics";
 
 
 h1, h2{margin:0}
