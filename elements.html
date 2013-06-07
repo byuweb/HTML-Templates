@@ -74,6 +74,7 @@
            
           This means you can forget wondering what sort of button styles to use, or whether there's a good jQuery dropdown plugin around. It's all there from the start. We've updated the  <code>variables.scss</code>  file with colors, fonts, and sizes that are customized and compatible with BYU's style. 
         </p>
+        <hr class="bs-docs-separator">
         <h2>FontAwesome Icons </h2>
         <p>
            
@@ -108,11 +109,10 @@
             <li> <i class="icon-caret-right"> </i> icon-caret-right </li>
           </ul>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-bolt"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span><span class="pln"> Expeliarmus!</span> 
-<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-calendar"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span> Calendar 
-<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-cog"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span><span class="pln"> Settings</span> 
-<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-comment"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span><span class="pln"> Say something!</span> 
+        <pre class="prettyprint">&lt;i class="icon-bolt"&gt;&lt;/i&gt; Expeliarmus! 
+&lt;i class="icon-calendar"&gt;&lt;/i&gt; Calendar 
+&lt;i class="icon-cog"&gt;&lt;/i&gt; Settings 
+&lt;i class="icon-comment"&gt;&lt;/i&gt; Say something! 
 ...           </pre>
         <div class="bs-docs-example"> 
           <ul class="unstyled"> 
@@ -122,13 +122,44 @@
             <li> <i class="icon-search icon-3x"> </i> icon-3x </li>
           </ul>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span> 
-<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search icon-large"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span> 
-<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search icon-2x"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span> 
-<span class="tag">&lt;i</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"icon-search icon-3x"</span><span class="tag">&gt;</span><span class="tag">&lt;/i&gt;</span>
+        <pre class="prettyprint">&lt;i class="icon-search"&gt;&lt;/i&gt; 
+&lt;i class="icon-search icon-large"&gt;&lt;/i&gt; 
+&lt;i class="icon-search icon-2x"&gt;&lt;/i&gt; 
+&lt;i class="icon-search icon-3x"&gt;&lt;/i&gt;
 ... </pre>
+        <hr class="bs-docs-separator">
+        <h2>HTML5 Boilerplate (h5bp)</h2>
+        <p>
+           
+          We've borrowed liberally from the great <a href="h5bp.com">h5bp project</a>for the benefit of the research that some of the best minds in web development have given there. Below are documented some of the CSS helper classes you may find useful.
+        </p>
+        <h3>Image replacement</h3>
+        <h4><code>.ir</code></h4>
+        <p>This solves the common problem of replacing text with an image via CSS. It keeps your markup semantic and accessible, but provides most users with the an image rather than just plain text. It's really useful for logos and things like that. Notice that the markup looks like plain text, and the image </p>
+        <p> <span class="label label-warning">Note</span> When using the <code>.ir</code> class, make sure to specify the <code>background-image</code>, <code>width</code>, and <code>height</code>.</p>
+        <div class="bs-docs-example">
+          <div style="background-image:url('images/stretch_y.png'); width:100px; height:65px;" class="ir">Hidden text here</div>
+        </div>
+        <pre class="prettyprint html">&lt;div id="stretch-Y" class="ir"&gt;BYU Cougars&lt;/div&gt;</pre>
+        <p>The relevant css might look something like the following. </p>
+        <pre class="prettyprint css">#stretch-Y {
+  background-image:url('images/stretch_y.png');
+  width:100px;
+  height:65px;
+}</pre>
+        <h3>Hiding elements</h3>
+        <p>Again in the spirit of accessibility and semantics, there are several shades of visibility that may be more useful or desirable than just <code>display:none</code>. Add the following classes to any element to get just the right effect.</p>
+        <h4><code>.hidden</code></h4>
+        <p>Hide from both screenreaders and browsers <small>(<a href="http://h5bp.com/u">h5bp.com/u</a>)</small></p>
+        <h4><code>.visuallyhidden</code></h4>
+        <p>Hide only visually, but have it available for screenreaders (also available for focus by keyboard navigation)<small>(<a href="http://h5bp.com/v">h5bp.com/v</a>)</small></p>
+        <h4><code>.invisible</code></h4>
+        <p>Hide visually and from screenreaders, but maintain layout</p>
+        <h3>Clearfix</h3>
+        <h4><code>.clearfix</code></h4>
+        <p>The ever-useful clearfix available as a global class. Apply to any container that has floated elements which shouldn't extend outside said container.</p>
       </section>
+      <hr class="bs-docs-separator">
       <section id="typography"> 
         <div class="page-header"> 
           <h1>Typography </h1>
@@ -146,6 +177,7 @@
           <h5>h5. Heading 5  </h5>
           <h6>h6. Heading 6 </h6>
         </div>
+        <hr class="bs-docs-separator">
         <h2 id="body-copy">Body copy </h2>
         <p>
            
@@ -165,8 +197,7 @@
             Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. 
           </p>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;p&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span> </pre>
+        <pre class="prettyprint">&lt;p&gt;...&lt;/p&gt; </pre>
         <h3>Lead body copy </h3>
         <p>
            
@@ -178,8 +209,7 @@
             Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus. 
           </p>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"lead"</span><span class="tag">&gt;</span><span class="pln">...</span><span class="tag">&lt;/p&gt;</span> </pre>
+        <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt; </pre>
         <hr class="bs-docs-separator">
         <h2 id="emphasis">Emphasis </h2>
         <p>Make use of HTML's default emphasis tags with lightweight styles. </p>
@@ -191,10 +221,9 @@
         <div class="bs-docs-example"> 
           <p> <small>This line of text is meant to be treated as fine print. </small></p>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;p&gt;</span><span class="pln"> 
-  </span><span class="tag">&lt;small&gt;</span><span class="pln">This line of text is meant to be treated as fine print.</span><span class="tag">&lt;/small&gt;</span> 
-<span class="tag">&lt;/p&gt;</span> </pre>
+        <pre class="prettyprint">&lt;p&gt; 
+  &lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt; 
+&lt;/p&gt; </pre>
         <h3>Bold </h3>
         <p>For emphasizing a snippet of text with a heavier font-weight. </p>
         <div class="bs-docs-example"> 
@@ -203,8 +232,7 @@
             The following snippet of text is <strong>rendered as bold text </strong>. 
           </p>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;strong&gt;</span><span class="pln">rendered as bold text</span><span class="tag">&lt;/strong&gt;</span> </pre>
+        <pre class="prettyprint">&lt;strong&gt;rendered as bold text&lt;/strong&gt; </pre>
         <h3>Italics </h3>
         <p>For emphasizing a snippet of text with italics. </p>
         <div class="bs-docs-example"> 
@@ -213,9 +241,8 @@
             The following snippet of text is <em>rendered as italicized text </em>. 
           </p>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;em&gt;</span><span class="pln">rendered as italicized text</span><span class="tag">&lt;/em&gt;</span> </pre>
-        <p> <span class="label label-info">Heads up! </span>Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc. </p>
+        <pre class="prettyprint">&lt;em&gt;rendered as italicized text&lt;/em&gt; </pre>
+        <p> <span class="label label-info">Heads up! </span> Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc. </p>
         <h3>Alignment classes </h3>
         <p>Easily realign text to components with text alignment classes. </p>
         <div class="bs-docs-example"> 
@@ -223,8 +250,9 @@
           <p class="text-center">Center aligned text. </p>
           <p class="text-right">Right aligned text. </p>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-left"</span><span class="tag">&gt;</span><span class="pln">Left aligned text.</span><span class="tag">&lt;/p&gt;</span></li><li class="L1"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-center"</span><span class="tag">&gt;</span><span class="pln">Center aligned text.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-right"</span><span class="tag">&gt;</span><span class="pln">Right aligned text.</span><span class="tag">&lt;/p&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt; </pre>
         <h3>Emphasis classes </h3>
         <p>Convey meaning through color with a handful of emphasis utility classes. </p>
         <div class="bs-docs-example"> 
@@ -234,8 +262,11 @@
           <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis. </p>
           <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula. </p>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"muted"</span><span class="tag">&gt;</span><span class="pln">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</span><span class="tag">&lt;/p&gt;</span></li><li class="L1"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-warning"</span><span class="tag">&gt;</span><span class="pln">Etiam porta sem malesuada magna mollis euismod.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-error"</span><span class="tag">&gt;</span><span class="pln">Donec ullamcorper nulla non metus auctor fringilla.</span><span class="tag">&lt;/p&gt;</span></li><li class="L3"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-info"</span><span class="tag">&gt;</span><span class="pln">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</span><span class="tag">&lt;/p&gt;</span></li><li class="L4"><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"text-success"</span><span class="tag">&gt;</span><span class="pln">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</span><span class="tag">&lt;/p&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
+&lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+&lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
+&lt;p class="text-info"&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
+&lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt; </pre>
         <hr class="bs-docs-separator">
         <h2 id="abbreviations">Abbreviations </h2>
         <p>
@@ -253,8 +284,7 @@
             An abbreviation of the word attribute is <abbr title="attribute">attr </abbr>. 
           </p>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;abbr</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"attribute"</span><span class="tag">&gt;</span><span class="pln">attr</span><span class="tag">&lt;/abbr&gt;</span> </pre>
+        <pre class="prettyprint">&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt; </pre>
         <h3> <code>&lt;abbr class="initialism"&gt; </code></h3>
         <p>
            
@@ -263,8 +293,7 @@
         <div class="bs-docs-example"> 
           <p> <abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread. </p>
         </div>
-        <pre class="prettyprint"> 
-<span class="tag">&lt;abbr</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"HyperText Markup Language"</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"initialism"</span><span class="tag">&gt;</span><span class="pln">HTML</span><span class="tag">&lt;/abbr&gt;</span>...</pre>
+        <pre class="prettyprint">&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;...</pre>
         <hr class="bs-docs-separator">
         <h2 id="addresses">Addresses </h2>
         <p>Present contact information for the nearest ancestor or the entire body of work. </p>
@@ -277,8 +306,17 @@
           <address> <strong>Twitter, Inc. </strong><br>795 Folsom Ave, Suite 600 <br>San Francisco, CA 94107 <br><abbr title="Phone">P: </abbr>(123) 456-7890 </address>
           <address> <strong>Full Name </strong><br><a href="mailto:#">first.last@example.com </a></address>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;address&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;strong&gt;</span><span class="pln">Twitter, Inc.</span><span class="tag">&lt;/strong&gt;&lt;br&gt;</span></li><li class="L2"><span class="pln">  795 Folsom Ave, Suite 600</span><span class="tag">&lt;br&gt;</span></li><li class="L3"><span class="pln">  San Francisco, CA 94107</span><span class="tag">&lt;br&gt;</span></li><li class="L4"><span class="pln">  </span><span class="tag">&lt;abbr</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Phone"</span><span class="tag">&gt;</span><span class="pln">P:</span><span class="tag">&lt;/abbr&gt;</span><span class="pln"> (123) 456-7890</span></li><li class="L5"><span class="tag">&lt;/address&gt;</span></li><li class="L6"><span class="pln">&nbsp;</span></li><li class="L7"><span class="tag">&lt;address&gt;</span></li><li class="L8"><span class="pln">  </span><span class="tag">&lt;strong&gt;</span><span class="pln">Full Name</span><span class="tag">&lt;/strong&gt;&lt;br&gt;</span></li><li class="L9"><span class="pln">  </span><span class="tag">&lt;a</span><span class="pln"> </span><span class="atn">href</span><span class="pun">=</span><span class="atv">"mailto:#"</span><span class="tag">&gt;</span><span class="pln">first.last@example.com</span><span class="tag">&lt;/a&gt;</span></li><li class="L0"><span class="tag">&lt;/address&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;address&gt;
+  &lt;strong&gt;Twitter, Inc.&lt;/strong&gt;&lt;br&gt;
+  795 Folsom Ave, Suite 600&lt;br&gt; 
+  San Francisco, CA 94107&lt;br&gt; 
+  &lt;abbr title="Phone"&gt;P:&lt;/abbr&gt; (123) 456-7890
+&lt;/address&gt;&nbsp;
+ 
+&lt;address&gt;
+  &lt;strong&gt;Full Name&lt;/strong&gt;&lt;br&gt; 
+  &lt;a href="mailto:#"&gt;first.last@example.com&lt;/a&gt;
+&lt;/address&gt; </pre>
         <hr class="bs-docs-separator">
         <h2 id="blockquotes">Blockquotes </h2>
         <p>For quoting blocks of content from another source within your document. </p>
@@ -295,8 +333,9 @@
             </p>
           </blockquote>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;blockquote&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="tag">&lt;/blockquote&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;blockquote&gt; 
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;/blockquote&gt; </pre>
         <h3>Blockquote options </h3>
         <p>Style and content changes for simple variations on a standard blockquote. </p>
         <h4>Naming a source </h4>
@@ -315,8 +354,10 @@
               <cite title="Source Title">Source Title </cite></small>
           </blockquote>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;blockquote&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;p&gt;</span><span class="pln">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</span><span class="tag">&lt;/p&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;small&gt;</span><span class="pln">Someone famous </span><span class="tag">&lt;cite</span><span class="pln"> </span><span class="atn">title</span><span class="pun">=</span><span class="atv">"Source Title"</span><span class="tag">&gt;</span><span class="pln">Source Title</span><span class="tag">&lt;/cite&gt;&lt;/small&gt;</span></li><li class="L3"><span class="tag">&lt;/blockquote&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;blockquote&gt; 
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt; 
+  &lt;small&gt;Someone famous &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
+&lt;/blockquote&gt; </pre>
         <h4>Alternate displays </h4>
         <p>
            
@@ -333,8 +374,9 @@
               <cite title="Source Title">Source Title </cite></small>
           </blockquote>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;blockquote</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"pull-right"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  ...</span></li><li class="L2"><span class="tag">&lt;/blockquote&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;blockquote class="pull-right"&gt; 
+...
+&lt;/blockquote&gt; </pre>
         <hr class="bs-docs-separator"><!-- 
         <Lists> </Lists>-->
         <h2 id="lists">Lists </h2>
@@ -364,8 +406,9 @@
             <li>Eget porttitor lorem </li>
           </ul>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;ul&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ul&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;ul&gt; 
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt; </pre>
         <h3>Ordered </h3>
         <p>
            
@@ -383,8 +426,9 @@
             <li>Eget porttitor lorem </li>
           </ol>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;ol&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ol&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;ol&gt; 
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ol&gt; </pre>
         <h3>Unstyled </h3>
         <p>
            
@@ -411,8 +455,9 @@
             <li>Eget porttitor lorem </li>
           </ul>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"unstyled"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ul&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;ul class="unstyled"&gt; 
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt; </pre>
         <h3>Inline </h3>
         <p>
            
@@ -425,8 +470,9 @@
             <li>Nulla volutpat </li>
           </ul>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;ul</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"inline"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;li&gt;</span><span class="pln">...</span><span class="tag">&lt;/li&gt;</span></li><li class="L2"><span class="tag">&lt;/ul&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;ul class="inline"&gt; 
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt; </pre>
         <h3>Description (definition list) </h3>
         <p>A list of terms with their associated descriptions. </p>
         <div class="bs-docs-example"> 
@@ -440,8 +486,10 @@
             <dd>Etiam porta sem malesuada magna mollis euismod. </dd>
           </dl>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;dl&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;dt&gt;</span><span class="pln">...</span><span class="tag">&lt;/dt&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;dd&gt;</span><span class="pln">...</span><span class="tag">&lt;/dd&gt;</span></li><li class="L3"><span class="tag">&lt;/dl&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;dl&gt; 
+  &lt;dt&gt;...&lt;/dt&gt; 
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt; </pre>
         <h4>Horizontal description </h4>
         <p>
            
@@ -463,10 +511,13 @@
             </dd>
           </dl>
         </div>
-        <pre class="prettyprint linenums"> 
-<ol class="linenums"><li class="L0"><span class="tag">&lt;dl</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"dl-horizontal"</span><span class="tag">&gt;</span></li><li class="L1"><span class="pln">  </span><span class="tag">&lt;dt&gt;</span><span class="pln">...</span><span class="tag">&lt;/dt&gt;</span></li><li class="L2"><span class="pln">  </span><span class="tag">&lt;dd&gt;</span><span class="pln">...</span><span class="tag">&lt;/dd&gt;</span></li><li class="L3"><span class="tag">&lt;/dl&gt;</span></li></ol> </pre>
+        <pre class="prettyprint">&lt;dl class="dl-horizontal"&gt; 
+  &lt;dt&gt;...&lt;/dt&gt; 
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt; </pre>
         <p> <span class="label label-info">Heads up! </span>Horizontal description lists will truncate terms that are too long to fit in the left column fix <code>text-overflow</code> . In narrower viewports, they will change to the default stacked layout. </p>
       </section>
+      <hr class="bs-docs-separator">
       <section id="buttons"> 
         <div class="page-header"> 
           <h1>Buttons </h1>
@@ -1140,6 +1191,7 @@
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
-    <script src="js/prettify.js"> </script>
+    <script src="js/prettify.js"></script>
+    <script>prettyPrint();</script>
   </body>
 </html>
