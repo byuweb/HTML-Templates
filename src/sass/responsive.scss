@@ -83,8 +83,8 @@ a.mybyu, a.sign-in, .open #search-button { @include transition(background-color 
 		background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
 	}
 }
- 	
-$break-large: 48em;
+
+$break-large:48em; //768px	
 /* ------------ Desktops and laptops ----------- */
 @media screen and (min-width : $break-large) {
 	
