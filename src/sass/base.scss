@@ -18,7 +18,6 @@ h1, h2{margin:0}
 
 #header-top { 
   position: relative;
-  z-index: 10;
   h1 a { color: #fff; }
   a.sign-in {
     position: absolute;
@@ -68,6 +67,9 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 		position:absolute;
 		top:0;
 		background: $blue0;
+		
+		.gsc-results-wrapper-visible {z-index: 7;}
+		.gsc-modal-background-image {z-index: 6;}
 		
 		.gsc-control-cse {
 			background: none;
