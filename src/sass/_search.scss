@@ -31,7 +31,7 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 			@include border-radius(1em);
 			width: 75%;
 			border: 0;
-			padding: 5px;
+			padding: 7px;
 		}
 	
 		#search-submit {
@@ -46,7 +46,21 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 	.gcse-wrapper {
 		background: none;
 		.gsc-control-cse {
-			table td .gsc-input-box { background: none;}
+			table td .gsc-input-box {
+				background: none;
+			
+				input.gsc-input {
+					border: 0;
+					@include box-shadow(none);
+					
+					&::selection {
+						border: 0;
+					}
+				}
+			}
+			table td .gsc-input-box-hover, table td .gsc-input-box-focus {
+				@include box-shadow(none);
+			}
 			td.gsc-search-button {
 				padding: 0;				
 				input.gsc-search-button-v2 {
