@@ -278,8 +278,18 @@ Curabitur suscipit hendrerit lacus, vitae lobortis elit ornare et. In hac habita
 		</div>
 	</footer>
 	<!--CONTENT END-->
-  <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
+	
+	  <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
   <script>
+	  var hideSearch = function(){
+		  $('#basic-search').hide();
+	  }
+	
+		window.__gcse = {
+		parsetags: '',
+		callback: hideSearch
+		};
+	  
 		(function() {		
  			var cx = '009932716493032633443:hlqjz33kfkc';
 			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;

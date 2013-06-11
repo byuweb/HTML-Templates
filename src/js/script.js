@@ -5,6 +5,7 @@
 //Document ready
 $(function(){
   activateMenus();
+  loadSearch();
 });
 
 
@@ -66,7 +67,26 @@ if ($(window).width() > 768){
 
 }
 
-/* Func: SetPrimaryNavPosition
+/**
+* Loads the Google Custom Search
+*/
+function loadSearch(){
+		window.__gcse = {
+		parsetags: 'explicit',
+		callback: hideSearch
+		};
+	  
+		(function() {		
+ 			var cx = '009932716493032633443:hlqjz33kfkc';
+			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				'//www.google.com/cse/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+ 		})();
+}
+
+/** Func: SetPrimaryNavPosition
  * Desc: Move the nav around so it works in the sidebar
  * Args: none
  */
@@ -76,7 +96,7 @@ function setupNavPosition() {
 }
 
 
-/* Func: RollOver
+/** Func: RollOver
 * Desc: Show a dropdown menu on rollover. Called by the hoverIntent function.
 * Args: @evt	- Event object. Automatically generated.
 */
@@ -89,7 +109,7 @@ function rollOver(evt) {
   }
 }
 
-/* Func: RollOut
+/** Func: RollOut
 * Desc: Hide a dropdown menu on rollout. Called by the hoverIntent function.
 * Args: -
 */
@@ -97,7 +117,7 @@ function rollOut() {
   $(this).removeClass('hover');
 }
 
-/* Func: HideAllMenus
+/** Func: HideAllMenus
 * Desc: Hide all dropdown menus. Bound to click action.
 * Args: -
 */
@@ -108,4 +128,11 @@ function hideAllMenus() {
 
 function endsWith(str, suffix) {
   return str.indexOf(suffix, str.length - suffix.length) !== -1;
+}
+
+/**
+ * function set display to none if the Google CSE loads via jQuery
+ */
+function hideSearch() {
+	$('#basic-search').hide();
 }
