@@ -469,7 +469,7 @@ a.mybyu:hover, a.sign-in:hover, .open #search-button:hover, #search-submit:hover
 @media -sass-debug-info{filename{}line{font-family:\0000361}}
 #search-container #basic-search #search { margin-bottom: 0; vertical-align: top; }
 @media -sass-debug-info{filename{}line{font-family:\0000365}}
-#search-container #basic-search #search-submit { background-image: url(../img/search-button.png); background-position: 50% 50%; background-repeat: no-repeat; overflow: hidden; text-indent: -1000px; width: 90px; padding: 5px; }
+#search-container #basic-search #search-submit { background-image: url(../img/search-button.png); background-position: 50% 50%; background-repeat: no-repeat; overflow: hidden; text-indent: -1000px; width: 60px; padding: 5px; }
 @media -sass-debug-info{filename{}line{font-family:\0000375}}
 #search-container .gcse-wrapper { width: 100%; background: #001948; }
 @media -sass-debug-info{filename{}line{font-family:\0000379}}
