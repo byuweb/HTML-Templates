@@ -2373,7 +2373,7 @@ a.mybyu, a.sign-in, .open #search-button { -webkit-transition: background-color 
   /** All search box definitions will go in here  */
   /* The width of the entire search container, used to position the Sign In button, if there is one */
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000314}}
-  #search-container { display: inline-block; padding: 0; position: absolute; right: 0; top: 5.25px; width: 250px; height: 32px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; background: #4a79a7; background: -webkit-linear-gradient(top, #628cb6, #336699); background: -moz-linear-gradient(top, #628cb6, #336699); background: -ms-linear-gradient(top, #628cb6, #336699); background: -o-linear-gradient(top, #628cb6, #336699); background: linear-gradient(top, #628cb6, #336699); -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); /** Google Search Form resets **/ }
+  #search-container { display: inline-block; padding: 0; position: absolute; right: 0; top: 5.25px; width: 250px; height: 32px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; background: #4a79a7; background: -webkit-linear-gradient(top, #628cb6, #336699); background: -moz-linear-gradient(top, #628cb6, #336699); background: -ms-linear-gradient(top, #628cb6, #336699); background: -o-linear-gradient(top, #628cb6, #336699); background: linear-gradient(top, #628cb6, #336699); -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); /** Google Search Form resets **/ /** Styling for both search forms **/ }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000327}}
   #search-container .gcse-wrapper { background: none; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000330}}
@@ -2390,14 +2390,15 @@ a.mybyu, a.sign-in, .open #search-button { -webkit-transition: background-color 
   #search-container .gcse-wrapper .gsc-control-cse td.gsc-search-button { padding: 0; }
 @media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000350}}
   #search-container .gcse-wrapper .gsc-control-cse td.gsc-search-button input.gsc-search-button-v2 { background: none; border: none; text-indent: -1000px; overflow: hidden; margin: 0 0 0 -5px; padding: 8px 1.5em; }
-  /** Styling for both search forms **/
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000363}}
-  #basic-search, .gcse-wrapper { margin: 0; width: 250px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000367}}
-  #basic-search #search, #basic-search #gsc-i-id1, .gcse-wrapper #search, .gcse-wrapper #gsc-i-id1 { -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; width: 200px !important; border: 0 !important; padding: 6px !important; vertical-align: top; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000375}}
-  #basic-search #search-submit, #basic-search input.gsc-search-button.gsc-search-button-v2, .gcse-wrapper #search-submit, .gcse-wrapper input.gsc-search-button.gsc-search-button-v2 { background: url(../img/search-button.png) 50% 50% no-repeat; overflow: hidden; text-indent: -1000px; margin: 0; padding-left: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000384}}
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000362}}
+  #search-container #basic-search, #search-container .gcse-wrapper { margin: 0; width: 250px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000366}}
+  #search-container #basic-search #search, #search-container #basic-search #gsc-i-id1, #search-container .gcse-wrapper #search, #search-container .gcse-wrapper #gsc-i-id1 { -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; width: 200px !important; border: 0 !important; padding: 6px !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000373}}
+  #search-container #basic-search #search-submit, #search-container #basic-search input.gsc-search-button.gsc-search-button-v2, #search-container .gcse-wrapper #search-submit, #search-container .gcse-wrapper input.gsc-search-button.gsc-search-button-v2 { background: url(../img/search-button.png) 50% 50% no-repeat; overflow: hidden; text-indent: -1000px; margin: 0; padding-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000381}}
+  #search-container #basic-search #search-submit, #search-container .gcse-wrapper #search-submit { width: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/Users\/jbobo\/Documents\/GitHub\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000385}}
   #header-top a.sign-in { position: absolute; right: 259px; }
 @media -sass-debug-info{filename{}line{font-family:\00003115}}
   #site-name { left: 25px; position: relative; font-size: 36px; font-weight: normal; text-decoration: none; }

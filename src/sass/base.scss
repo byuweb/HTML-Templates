@@ -60,6 +60,16 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 		
 		#search {
 			margin-bottom: 0;
+			vertical-align: top;
+		}
+		#search-submit {
+			background-image: url(../img/search-button.png);
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			text-indent: -1000px;
+			width: 90px;
+			padding: 5px;
 		}
 	}
 	.gcse-wrapper {

@@ -58,8 +58,7 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 			}		
 		}
 	}
-}
-/** Styling for both search forms **/
+	/** Styling for both search forms **/
 	#basic-search, .gcse-wrapper {
 		margin: 0;
 		width: $search-width;
@@ -69,7 +68,6 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 			width: ($search-width*.8) !important;
 			border: 0 !important;
 			padding: 6px !important;
-			vertical-align: top;
 		}
 	
 		#search-submit, input.gsc-search-button.gsc-search-button-v2 {
@@ -79,7 +77,10 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 			margin: 0;
 			padding-left:0;
 		}
+	
+		#search-submit {width: 20px;}
 	}
+}
 
 #header-top a.sign-in {
 	position: absolute;
