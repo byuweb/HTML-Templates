@@ -18,40 +18,24 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 	right: 0;
 	top: 5.25px;
 	width: $search-width;
-	@include border-radius(1em);
+	height: 32px;
+	@include border-radius(15px);
 	@include vertical-gradient($blue5,$blue4);
 	@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
 	
-/** Basic Search Form **/
-	#basic-search{
-		margin: 0;
-		width: $search-width;
-		
-		#search {
-			@include border-radius(1em);
-			width: 75%;
-			border: 0;
-			padding: 7px;
-		}
-	
-		#search-submit {
-			background: url(../img/search-button.png) 50% 50% no-repeat;
-			overflow: hidden;
-			text-indent: -1000px;
-			margin: 0;
-			padding-left:0;
-		}
-	}
-/** Google Search Form **/	
+/** Google Search Form resets **/	
 	.gcse-wrapper {
 		background: none;
 		.gsc-control-cse {
+			td {vertical-align: top !important;}
 			table td .gsc-input-box {
 				background: none;
+				padding: 0;
 			
 				input.gsc-input {
 					border: 0;
 					@include box-shadow(none);
+					height: 20px !important;
 					
 					&::selection {
 						border: 0;
@@ -68,14 +52,34 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 					border: none;
 					text-indent: -1000px;
 					overflow: hidden;
-					margin: 0;
+					margin: 0 0 0 -5px;
 					padding: 8px 1.5em;
-					@include opacity(0);
 				}
 			}		
 		}
 	}
 }
+/** Styling for both search forms **/
+	#basic-search, .gcse-wrapper {
+		margin: 0;
+		width: $search-width;
+		
+		#search, #gsc-i-id1 {
+			@include border-radius(15px);
+			width: ($search-width*.8) !important;
+			border: 0 !important;
+			padding: 6px !important;
+			vertical-align: top;
+		}
+	
+		#search-submit, input.gsc-search-button.gsc-search-button-v2 {
+			background: url(../img/search-button.png) 50% 50% no-repeat;
+			overflow: hidden;
+			text-indent: -1000px;
+			margin: 0;
+			padding-left:0;
+		}
+	}
 
 #header-top a.sign-in {
 	position: absolute;

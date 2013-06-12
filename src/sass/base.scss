@@ -41,7 +41,7 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
   border-radius:1em;
   color:#fff;
   font-weight: bold;
-  padding:.35em 1.5em;
+  padding: 6px 28px;
   text-decoration: none;
   &:hover {
 	background-color: $blue4;
@@ -64,12 +64,12 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 	}
 	.gcse-wrapper {
 		width: 100%;
-		position:absolute;
-		top:0;
 		background: $blue0;
 		
 		.gsc-results-wrapper-visible {z-index: 7;}
 		.gsc-modal-background-image {z-index: 6;}
+		.gsc-input {padding: 0;}
+		form.gsc-search-box {margin:0;}
 		
 		.gsc-control-cse {
 			background: none;
@@ -84,6 +84,7 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 				
 				td {
 					border:none;
+					line-height: 12px;
 					
 					.gsc-input-box {
 						background: #fff;
