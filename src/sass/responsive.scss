@@ -108,7 +108,15 @@ $break-large:48em; //768px
 			@include vertical-gradient($blue5, $blue4);
 			@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
 		}
-	 }	
+	 }
+	 
+	.one-sidebar #main-content { float:left; margin-right:2%; width:73%;}
+	.two-sidebars #main-content { float:left; margin-right:2%; width:48%;}
+	.sidebar { float:left; margin-right:2%; width:23%}
+	
+//	.one-sidebar #main-content { float:left; margin-right:20px; width:700px;}
+//	.two-sidebars #main-content { float:left; margin-right:20px; width:460px;}
+//	.sidebar { float:left; margin-right:20px; width:220px;}
 	 
 	@import "search";
 	

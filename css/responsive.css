@@ -2370,6 +2370,12 @@ a.mybyu, a.sign-in, .open #search-button { -webkit-transition: background-color 
   #header-top h1 { margin: 0; }
 @media -sass-debug-info{filename{}line{font-family:\00003106}}
   #header-top a.sign-in { right: 220px; background: #4a79a7; background: -webkit-linear-gradient(top, #628cb6, #336699); background: -moz-linear-gradient(top, #628cb6, #336699); background: -ms-linear-gradient(top, #628cb6, #336699); background: -o-linear-gradient(top, #628cb6, #336699); background: linear-gradient(top, #628cb6, #336699); -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2); }
+@media -sass-debug-info{filename{}line{font-family:\00003113}}
+  .one-sidebar #main-content { float: left; margin-right: 2%; width: 73%; }
+@media -sass-debug-info{filename{}line{font-family:\00003114}}
+  .two-sidebars #main-content { float: left; margin-right: 2%; width: 48%; }
+@media -sass-debug-info{filename{}line{font-family:\00003115}}
+  .sidebar { float: left; margin-right: 2%; width: 23%; }
   /** All search box definitions will go in here  */
   /* The width of the entire search container, used to position the Sign In button, if there is one */
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000314}}
@@ -2400,43 +2406,43 @@ a.mybyu, a.sign-in, .open #search-button { -webkit-transition: background-color 
   #search-container #basic-search #search-submit, #search-container .gcse-wrapper #search-submit { width: 20px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_search\.scss}line{font-family:\0000385}}
   #header-top a.sign-in { position: absolute; right: 259px; }
-@media -sass-debug-info{filename{}line{font-family:\00003115}}
-  #site-name { left: 25px; position: relative; font-size: 36px; font-weight: normal; text-decoration: none; }
 @media -sass-debug-info{filename{}line{font-family:\00003123}}
+  #site-name { left: 25px; position: relative; font-size: 36px; font-weight: normal; text-decoration: none; }
+@media -sass-debug-info{filename{}line{font-family:\00003131}}
   #content { background: #fff; margin-top: 40px; padding: 18px 32px 27px; position: relative; min-height: 100%; -webkit-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); -moz-box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); box-shadow: 0 0 30px 0px rgba(222, 222, 222, 0.7); }
-@media -sass-debug-info{filename{}line{font-family:\00003132}}
+@media -sass-debug-info{filename{}line{font-family:\00003140}}
   #logo { background: transparent url("http://home.byu.edu/home/sites/default/files/global/img/byu-logo.png") 0px 0px no-repeat; border: none; height: auto; left: 20px; margin: 0; padding: 0; top: 12px; }
-@media -sass-debug-info{filename{}line{font-family:\00003143}}
+@media -sass-debug-info{filename{}line{font-family:\00003151}}
   #footer-links .col { display: inline-block; vertical-align: top; width: 18%; }
-@media -sass-debug-info{filename{}line{font-family:\00003147}}
+@media -sass-debug-info{filename{}line{font-family:\00003155}}
   #footer-links .double { width: 36%; }
-@media -sass-debug-info{filename{}line{font-family:\00003149}}
-  #footer-links .double .right, #footer-links .double .left { width: 49%; display: inline-block; }
-@media -sass-debug-info{filename{}line{font-family:\00003154}}
-  #footer-links h2 { margin: 0; }
 @media -sass-debug-info{filename{}line{font-family:\00003157}}
+  #footer-links .double .right, #footer-links .double .left { width: 49%; display: inline-block; }
+@media -sass-debug-info{filename{}line{font-family:\00003162}}
+  #footer-links h2 { margin: 0; }
+@media -sass-debug-info{filename{}line{font-family:\00003165}}
   .alpha { margin-left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003158}}
+@media -sass-debug-info{filename{}line{font-family:\00003166}}
   .omega { margin-right: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003161}}
-  body > footer .wrapper { padding-top: 9px; padding-bottom: 18px; }
-@media -sass-debug-info{filename{}line{font-family:\00003167}}
-  #footer-bottom { text-align: center; }
 @media -sass-debug-info{filename{}line{font-family:\00003169}}
+  body > footer .wrapper { padding-top: 9px; padding-bottom: 18px; }
+@media -sass-debug-info{filename{}line{font-family:\00003175}}
+  #footer-bottom { text-align: center; }
+@media -sass-debug-info{filename{}line{font-family:\00003177}}
   #footer-bottom a { display: inline-block; text-indent: -999em; }
-@media -sass-debug-info{filename{}line{font-family:\00003174}}
+@media -sass-debug-info{filename{}line{font-family:\00003182}}
   #footer-bottom a#copyright { text-indent: 0em; }
-@media -sass-debug-info{filename{}line{font-family:\00003178}}
+@media -sass-debug-info{filename{}line{font-family:\00003186}}
   #footer-bottom a#lds, #footer-bottom a#ldsbc, #footer-bottom a#byui, #footer-bottom a#byuh { background: transparent url("../img/footer_sprite.png") no-repeat; opacity: 0.7; }
-@media -sass-debug-info{filename{}line{font-family:\00003181}}
+@media -sass-debug-info{filename{}line{font-family:\00003189}}
   #footer-bottom a#lds:hover, #footer-bottom a#ldsbc:hover, #footer-bottom a#byui:hover, #footer-bottom a#byuh:hover { opacity: 1; }
-@media -sass-debug-info{filename{}line{font-family:\00003184}}
+@media -sass-debug-info{filename{}line{font-family:\00003192}}
   #footer-bottom a#lds { background-position: 0px -8px; height: 50px; width: 150px; }
-@media -sass-debug-info{filename{}line{font-family:\00003190}}
+@media -sass-debug-info{filename{}line{font-family:\00003198}}
   #footer-bottom a#ldsbc { background-position: -407px -8px; height: 55px; width: 70px; }
-@media -sass-debug-info{filename{}line{font-family:\00003196}}
+@media -sass-debug-info{filename{}line{font-family:\00003204}}
   #footer-bottom a#byui { background-position: -206px -8px; height: 42px; width: 72px; }
-@media -sass-debug-info{filename{}line{font-family:\00003202}}
+@media -sass-debug-info{filename{}line{font-family:\00003210}}
   #footer-bottom a#byuh { background-position: -308px -8px; height: 42px; width: 72px; } }
 /* From h5bp */
 /* ========================================================================== EXAMPLE Media Queries for Responsive Design. These examples override the primary ('mobile first') styles. Modify as content requires. ========================================================================== */
