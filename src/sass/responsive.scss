@@ -84,9 +84,9 @@ a.mybyu, a.sign-in, .open #search-button { @include transition(background-color 
 	}
 }
 
-$break-large:48em; //768px	
-/* ------------ Desktops and laptops ----------- */
-@media screen and (min-width : $break-large) {
+$tablet-profile:48em; //768px	
+/* ------------ Profile view on Tablet (iPad) ----------- */
+@media screen and (min-width : $tablet-profile) {
 	
 	body{
 		background: url("../img/body-linen.png");
@@ -109,14 +109,6 @@ $break-large:48em; //768px
 			@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
 		}
 	 }
-	 
-	.one-sidebar #main-content { float:left; margin-right:2%; width:73%;}
-	.two-sidebars #main-content { float:left; margin-right:2%; width:48%;}
-	.sidebar { float:left; margin-right:2%; width:23%}
-	
-//	.one-sidebar #main-content { float:left; margin-right:20px; width:700px;}
-//	.two-sidebars #main-content { float:left; margin-right:20px; width:460px;}
-//	.sidebar { float:left; margin-right:20px; width:220px;}
 	 
 	@import "search";
 	
@@ -215,6 +207,20 @@ $break-large:48em; //768px
 	}
 
 }
+
+$break-large:60em; //960px	
+/* ------------ Landscape of Tablet(iPad) and anything larger ----------- */
+@media screen and (min-width : $break-large) {
+	.one-sidebar #main-content { float:left; margin-right:2%; width:73%;}
+	.two-sidebars #main-content { float:left; margin-right:2%; width:48%;}
+	.sidebar { float:left; width:23%}
+	
+//	.one-sidebar #main-content { float:left; margin-right:20px; width:700px;}
+//	.two-sidebars #main-content { float:left; margin-right:20px; width:460px;}
+//	.sidebar { float:left; margin-right:20px; width:220px;}
+
+}
+
 
 /* From h5bp */
 /* ==========================================================================
