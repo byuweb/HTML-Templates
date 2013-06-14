@@ -174,43 +174,36 @@ $break-large:48em; //768px
 		a#copyright{
 			text-indent:0em;
 		}
-		a#lds {
-			background: transparent url('../img/footer_sprite.png') no-repeat;
-			background-position: 0 -42px;
-			height: 75px;
-			width: 145px;
-		}
-		a#lds:hover {
-			opacity: 0.7;
-		}
-		a#ldsbc {
-			background: transparent url('../img/footer_sprite.png') no-repeat;
-			background-position: -400px -42px;
-			height: 75px;
-			width: 100px;
-		}
-		a#ldsbc:hover {
-			opacity: 0.7;
-		}
-		a#byui {
-			background: transparent url('../img/footer_sprite.png') no-repeat;
-			background-position: -200px -42px;
-			height: 60px;
-			width: 100px;
-		}
-		a#byui:hover {
-			opacity: 0.7;
-		}
-		a#byuh {
-			background: transparent url('../img/footer_sprite.png') no-repeat;
-			background-position: -305px -42px;
-			height: 65px;
-			width: 87px;
-		}
-		a#byuh:hover {
-			opacity: 0.7;
+		
+		%school-link{
+		background: transparent url('../img/footer_sprite.png') no-repeat;
+		opacity:0.7;
+		&:hover{opacity:1;}
 		}
 		
+		a#lds {
+			@extend %school-link;
+			background-position: 0px -8px;
+			height: 50px;
+			width: 150px;}
+			
+		a#ldsbc {
+			@extend %school-link;
+			background-position: -407px -8px;
+			height: 55px;
+			width: 70px;}
+			
+		a#byui {
+			@extend %school-link;
+			background-position: -206px -8px;
+			height: 42px;
+			width: 72px;}	
+		
+		a#byuh {
+			@extend %school-link;
+			background-position: -308px -8px;
+			height: 42px;
+			width: 72px; }
 	}
 
 }
