@@ -64,7 +64,6 @@
 // Utility classes
 	@import "bootstrap/utilities"; // Has to be last to override when necessary
 
-
 /* BYU Styles */
 @import "bootstrap-override";
 @import "font-awesome";
@@ -88,11 +87,9 @@ a.mybyu, a.sign-in, .open #search-button { @include transition(background-color 
 $tablet-profile:48em; //768px	
 /* ------------ Profile view on Tablet (iPad) ----------- */
 @media screen and (min-width : $tablet-profile) {
-	
-	body{
+	body {
 		background: url("../img/body-linen.png");
-		color: #444;
-	}
+		color: #444; }
 
 	.wrapper, body > footer .wrapper{ 
 		max-width: 960px;
@@ -105,14 +102,13 @@ $tablet-profile:48em; //768px
 		height: 90px;
 		h1{ margin:0;}
 		a.sign-in {
-			right: 220px;
 			@include vertical-gradient($blue5, $blue4);
 			@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
 		}
 	 }
 	 
 	@import "search";
-	
+	 
 	#site-name{
 		left: 25px;
 		position: relative;

@@ -165,72 +165,46 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
     -webkit-transition-duration: 0;
 }
 
-
-
-
-
-
-
 /** MODIFICATIONS **/
-#slider
-{
+#slider {
 	list-style: none;
 	margin: 0;
-}
-
-#slider li
-{
-	position: relative;
+	li {position: relative;}
 }
 
 #slider .feature-image img {
 	width: 100%;
 }
 
-#feature
-{
+#feature {
 	overflow: hidden;
 	max-width: 1200px;
 	margin: 0 auto;
 	/* visibility: hidden; Why is this hidden? */
 }
 
-#feature h2
-{
+#feature h2 {
 	font: bold 20px/1.3 Arial, Helvetica, sans-serif;
 	border: 0;
 	padding: 0;
 	margin: 0;
 }
 
-#feature h2 a
-{
-	color: #036;
-}
-
-.feature-description
-{
-	padding: 20px 0;
+.feature-description {
 	background: #eff6fc;
-	-webkit-box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);
-    box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);
-	width: 100%;
+	opacity: .6;
+	padding: 20px 0;
 	text-align: center;
-}
-.feature-description p {display:none;}
-
-#feature .anythingSlider
-{
-	padding: 0;
-}
-
-#feature .anythingSlider.activeSlider .anythingWindow
-{
-	border: 0;
+	width: 100%;
+	height:393px;
+    box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);
+	-webkit-box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, .25);
+	h2 a {color: $blue2;} //#036
 }
 
-#feature .anythingSlider .back
-{
+#feature .anythingSlider { padding: 0;}
+#feature .anythingSlider.activeSlider .anythingWindow { border: 0;}
+#feature .anythingSlider .back {
 	top: 0;
 	left: 0;
 	width: 15%;
@@ -295,13 +269,25 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
     opacity: 0.25;
 }
 
-#feature .anythingSlider-hovered .thumbNav li a:hover {
-    opacity: 1;
-}
+#feature .anythingSlider-hovered .thumbNav li a:hover { opacity: 1; }
 
-#feature .anythingSlider .thumbNav a.cur
-{
-	background: #147;
-}
+#feature .anythingSlider .thumbNav a.cur { background: #147; }
 
-/* End of slider styles */
+$break-large:60em; //960px	
+@media all and (min-width: $break-large) {
+	/** RESPONSIVE MODIFICATIONS **/
+	.feature-description {
+		height: 297px;
+		padding: 48px 25px;
+		position:absolute;
+		right:0;
+		width:205px;
+		text-align: left; 
+		top:0;
+	}
+
+	.feature-description p {display:inline;}
+	#feature .anythingSlider .forward { right: 241px; }
+	#feature .anythingControls { bottom: 27px; }
+	#feature .thumbNav { margin-right: 241px; }
+}
