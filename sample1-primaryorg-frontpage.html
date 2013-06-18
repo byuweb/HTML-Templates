@@ -23,12 +23,28 @@
 	<link media="all and (min-width:200px)" rel="stylesheet" href="css/responsive.css">
 	
 	<!-- Scripts loaded via script loader. See notes in init.js file. -->
-	
-	<script src="http://byuweb.github.com/Global-Assets/js/modernizr-lab.min.js"></script>
+	<script src="http://byuweb.github.io/Global-Assets/js/modernizr-lab.min.js"></script>
 	<script src="js/init.js"></script>
 
-	<script src="js/slider-update.min.js"></script>
-	<script src="src/js/jquery.flexslider-min.js"></script>
+	<script> 
+	
+	$LAB
+		.script("js/slider-update.min.js")
+		.script("src/js/jquery.flexslider-min.js")
+		.wait(function(){
+			$('.flexslider').flexslider({
+				 animation: "slide"
+			});
+			
+			$('#slider').anythingSlider({
+				expand      	: true,
+				autoPlay     	: true,
+				resizeContents  : false,
+				buildStartStop  : false,
+				hashTags		: false,
+			});
+		});
+	</script>
 
 	
 </head>
@@ -352,28 +368,6 @@
 			<p><a href="http://home.byu.edu/home/copyright">Copyright&#169; 2011, All Rights Reserved</a></p>
 		</div>
 	</footer>
-	<!--CONTENT END-->
-	
-		<script>
-	$(window).load(function() {
-		$('.flexslider').flexslider({
-		  animation: "slide"
-		});
-	  });
-	</script>
-	
-	<script>
-	$(function () {
-		$('#slider').anythingSlider({
-			expand      	: true,
-			autoPlay     	: true,
-			resizeContents  : false,
-			buildStartStop  : false,
-			hashTags		: false,
-		});
-
-	});
-	</script>
-	
+	<!--CONTENT END-->	
 </body>
 </html>
