@@ -5,6 +5,6 @@ $LAB
   .script("http://byuweb.github.io/Global-Assets/js/jquery-migrate-1.1.1.min.js")
   .script("js/script.min.js");
 
-//if(Modernizr.fontface){
-//  $LAB
-//    .script("js/fonts.min.js"); }
+if(Modernizr.fontface){
+  $LAB
+    .script("js/fonts.min.js"); }
