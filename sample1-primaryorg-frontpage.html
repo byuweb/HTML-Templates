@@ -25,31 +25,11 @@
 	<!-- Scripts loaded via script loader. See notes in init.js file. -->
 	
 	<script src="http://byuweb.github.com/Global-Assets/js/modernizr-lab.min.js"></script>
-<!--	<script src="js/init.js"></script>-->
-	<script src="http://byuweb.github.com/Global-Assets/js/jquery-1.9.1.min.js"></script>
-	<script src="http://byuweb.github.com/Global-Assets/js/jquery-migrate-1.1.1.min.js"></script>
+	<script src="js/init.js"></script>
+
 	<script src="js/slider-update.min.js"></script>
 	<script src="src/js/jquery.flexslider-min.js"></script>
-	<script>
-	$(window).load(function() {
-		$('.flexslider').flexslider({
-		  animation: "slide"
-		});
-	  });
-	</script>
-	
-	<script>
-	$(function () {
-		$('#slider').anythingSlider({
-			expand      	: true,
-			autoPlay     	: true,
-			resizeContents  : false,
-			buildStartStop  : false,
-			hashTags		: false,
-		});
 
-	});
-	</script>
 	
 </head>
 
@@ -219,7 +199,7 @@
 	<div id="content" class="wrapper clearfix" role="main">
 	
 	<div id="feature">
-		
+		<!--Woo Themes FlexSlider-->
 		<div class="flexslider">
 			<ul class="slides">
 				<li>
@@ -253,7 +233,7 @@
 			</ul>
 		</div>
 		
-		
+		<!--Feature Slider-->
 		<ul id="slider">
 			<li>
 				<div class="feature-image">
@@ -373,26 +353,27 @@
 		</div>
 	</footer>
 	<!--CONTENT END-->
-  <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
-  <script>
-		(function() {		
- 			var cx = '009932716493032633443:hlqjz33kfkc';
-			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				'//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
- 		})();
+	
+		<script>
+	$(window).load(function() {
+		$('.flexslider').flexslider({
+		  animation: "slide"
+		});
+	  });
 	</script>
+	
+	<script>
+	$(function () {
+		$('#slider').anythingSlider({
+			expand      	: true,
+			autoPlay     	: true,
+			resizeContents  : false,
+			buildStartStop  : false,
+			hashTags		: false,
+		});
 
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
+	});
+	</script>
 	
 </body>
 </html>

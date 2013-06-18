@@ -1,14 +1,8 @@
-/*! 
-  Script.js 
-*/
-
 //Document ready
 $(function(){
   activateMenus();
   loadSearch();
 });
-
-
 
 /* Func: ActivateMenus
  * Desc: Get the menus going
@@ -72,7 +66,6 @@ if ($(window).width() > 768){
 */
 function loadSearch(){
 		window.__gcse = {
-		parsetags: 'explicit',
 		callback: hideSearch
 		};
 	  
@@ -84,6 +77,13 @@ function loadSearch(){
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(gcse, s);
  		})();
+}
+
+/**
+ * function set display to none if the Google CSE loads via jQuery
+ */
+function hideSearch() {
+	$('#basic-search').hide();
 }
 
 /** Func: SetPrimaryNavPosition
@@ -130,9 +130,3 @@ function endsWith(str, suffix) {
   return str.indexOf(suffix, str.length - suffix.length) !== -1;
 }
 
-/**
- * function set display to none if the Google CSE loads via jQuery
- */
-function hideSearch() {
-	$('#basic-search').hide();
-}
