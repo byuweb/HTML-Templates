@@ -15,7 +15,7 @@ function progress(message) {
 WebFont.load({
   custom: {
     families: ['OpenSans:n4,i4,n5,i5', 'CreteRound:n4,i4', 'DroidSerif:n4'],
-    urls : ['../css/fonts.css']
+    urls : ['css/fonts.css']
   },
   loading: function() {
     progress('loading');
@@ -40,7 +40,7 @@ WebFont.load({
 WebFont.load({
   custom: {
     families: ['FontAwesome'],
-    urls : ['../css/fonts.css']
+    urls : ['css/fonts.css']
   },
   loading: function() {
     progress('loading');
