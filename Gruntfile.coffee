@@ -15,8 +15,7 @@ module.exports = (grunt) ->
       options:
         mangle: false
         preserveComments: 'some'
-        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-        '<%= grunt.template.today("yyyy-mm-dd") %> */'
+        banner: '/*! <%= pkg.name %> - v<%= pkg.version %>  */'
       my_target:
         files:
           'js/script.min.js' : ['src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js']
