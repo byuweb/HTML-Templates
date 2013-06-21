@@ -14,9 +14,10 @@ function progress(message) {
 
 WebFont.load({
   custom: {
-    families: ['OpenSans:n4,i4,n5,i5', 'CreteRound:n4,i4', 'DroidSerif:n4'],
+    families: ['OpenSans:n4,i4,n5,i5'],
     urls : ['css/fonts.css']
   },
+/*  
   loading: function() {
     progress('loading');
   },
@@ -25,6 +26,39 @@ WebFont.load({
   },
   inactive: function() {
     progress('inactive');
+  },
+*/
+  fontloading: function(fontFamily, fontDescription) {
+    progress('fontloading: ' + fontFamily + ' (' + fontDescription + ')');
+  },
+  fontactive: function(fontFamily, fontDescription) {
+    progress('fontactive: ' + fontFamily + ' (' + fontDescription + ')');
+  },
+  fontinactive: function(fontFamily, fontDescription) {
+    progress('fontinactive: ' + fontFamily + ' (' + fontDescription + ')');
+  }
+});
+
+WebFont.load({
+  custom: {
+    families: ['CreteRound:n4,i4'],
+    urls : ['css/fonts.css']
+  },
+  fontloading: function(fontFamily, fontDescription) {
+    progress('fontloading: ' + fontFamily + ' (' + fontDescription + ')');
+  },
+  fontactive: function(fontFamily, fontDescription) {
+    progress('fontactive: ' + fontFamily + ' (' + fontDescription + ')');
+  },
+  fontinactive: function(fontFamily, fontDescription) {
+    progress('fontinactive: ' + fontFamily + ' (' + fontDescription + ')');
+  }
+});
+
+WebFont.load({
+  custom: {
+    families: ['DroidSerif:n4'],
+    urls : ['css/fonts.css']
   },
   fontloading: function(fontFamily, fontDescription) {
     progress('fontloading: ' + fontFamily + ' (' + fontDescription + ')');
@@ -42,15 +76,7 @@ WebFont.load({
     families: ['FontAwesome'],
     urls : ['css/fonts.css']
   },
-  loading: function() {
-    progress('loading');
-  },
-  active: function() {
-    progress('active');
-  },
-  inactive: function() {
-    progress('inactive');
-  },
+  timeout:2500,
   fontloading: function(fontFamily, fontDescription) {
     progress('fontloading: ' + fontFamily + ' (' + fontDescription + ')');
   },
