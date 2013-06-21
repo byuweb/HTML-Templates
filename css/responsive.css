@@ -2282,65 +2282,65 @@ div.anythingSlider, div.anythingSlider .anythingWindow, div.anythingSlider .thum
 #feature h2 { font: bold 20px/1.3 Arial, Helvetica, sans-serif; border: 0; padding: 0; margin: 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003193}}
-.feature-description { background: #eff6fc; opacity: .6; padding: 20px 0; text-align: center; width: 100%; height: 393px; box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, 0.25); -webkit-box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, 0.25); }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003202}}
+.feature-description { background: #eff6fc; padding: 20px 0; text-align: center; width: 100%; box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, 0.25); -webkit-box-shadow: inset 0px 0px 200px 0px #abc8e4, 0px 0px 20px 0px rgba(0, 0, 0, 0.25); }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003200}}
 .feature-description h2 a { color: #003366; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003203}}
 #feature .anythingSlider { padding: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003206}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003204}}
 #feature .anythingSlider.activeSlider .anythingWindow { border: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003207}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003205}}
 #feature .anythingSlider .back { top: 0; left: 0; width: 15%; height: 100%; z-index: 100; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003215}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003213}}
 #feature .anythingSlider .forward { top: 0; right: 0px; width: 15%; height: 100%; z-index: 12; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003220}}
 #feature .anythingSlider .arrow a { height: 100%; margin: 0; width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003225}}
 #feature .anythingSlider-hovered .arrow a { background: url("../img/arrow-left.png") no-repeat scroll left transparent; opacity: 0.25; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003231}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003229}}
 #feature .anythingSlider-hovered .forward a { background: url("../img/arrow-right.png") no-repeat scroll right transparent; opacity: 0.25; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003235}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003233}}
 #feature .anythingSlider-hovered .arrow a:hover { opacity: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003237}}
 #feature .anythingControls { right: 0; bottom: 50%; z-index: 1; position: absolute; width: 100%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003245}}
 #feature .thumbNav { text-align: center; margin-right: 0; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003250}}
 #feature .thumbNav li { display: inline; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003256}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003254}}
 #feature .thumbNav li a { width: 32px; height: 32px; opacity: 0; text-indent: -9999em; border-radius: 0; padding: 0; margin: 0 4px; /*border: 1px solid #a8aeb3;*/ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003265}}
 #feature .anythingSlider-hovered .thumbNav li a { background: #fff; opacity: 0.25; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003272}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003270}}
 #feature .anythingSlider-hovered .thumbNav li a:hover { opacity: 1; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003274}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003272}}
 #feature .anythingSlider .thumbNav a.cur { background: #147; }
 
 @media all and (min-width: 60em) { /** RESPONSIVE MODIFICATIONS **/
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003279}}
-  .feature-description { height: 297px; padding: 48px 25px; position: absolute; right: 0; width: 205px; text-align: left; top: 0; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003289}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003277}}
+  .feature-description { height: 297px; padding: 48px 25px; position: absolute; right: 0; width: 205px; text-align: left; top: 0; opacity: .6; }
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003288}}
   .feature-description p { display: inline; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003289}}
   #feature .anythingSlider .forward { right: 241px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003290}}
   #feature .anythingControls { bottom: 27px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003292}}
+@media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_slider\.scss}line{font-family:\00003291}}
   #feature .thumbNav { margin-right: 241px; } }
 /* jQuery FlexSlider v2.0 http://www.woothemes.com/flexslider/  Copyright 2012 WooThemes Free to use under the GPLv2 license. http://www.gnu.org/licenses/gpl-2.0.html  Contributing author: Tyler Smith (@mbmufffin) */
 /* Browser Resets */

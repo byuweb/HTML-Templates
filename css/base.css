@@ -412,7 +412,7 @@ dl, menu, ol, ul { padding: 0; }
 body, button, input, select, textarea { color: #444; font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; -webkit-text-size-adjust: 100%; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000373}}
-#header-top h1 { font-size: 2.2em; line-height: 40px; margin: 30px 32px 10px; }
+#header-top h1 { font-size: 2.2em; line-height: 40px; margin: 15px 32px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/c\:\/wamp\/www\/byu-responsive-dev\/src\/sass\/_basics\.scss}line{font-family:\0000374}}
 h2 { font-size: 1.8em; line-height: 30px; margin: 30px 32px 10px; }
