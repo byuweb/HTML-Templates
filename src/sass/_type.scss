@@ -1,17 +1,28 @@
 /*** Type ***/
 
-.wf-active #header-top h1 {
-  font-family: 'DroidSerif', 'CreteRound', sans-serif;
+h1, h2, h3, h4, h5, h6 {
+	font-family:Georgia, serif;
+	font-weight:normal;
 }
 
-.wf-active h1, .wf-active h2 {
-  font-family: 'CreteRound', sans-serif;
-  font-weight: normal;
-} 
+.wf-droidserif-n4-active {
+	#header-top h1 {
+	  font-family: 'DroidSerif', 'CreteRound', sans-serif;
+	}
+}
 
-.wf-active body, .wf-active button, .wf-active input, .wf-active select, .wf-active textarea {
-  font-family: 'OpenSans', "LucidaGrande","LucidaSansUnicode","LucidaSans",Helvetica,Arial,sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+.wf-creteround-n4-active {
+	h1, h2 {
+	  font-family: 'CreteRound', sans-serif;
+	  font-weight: normal;
+	} 
+}
+
+.wf-opensans-n4-active {
+	body, button, input, select, textarea {
+	  font-family: 'OpenSans', "LucidaGrande","LucidaSansUnicode","LucidaSans",Helvetica,Arial,sans-serif;
+	  font-size: 15px;
+	  line-height: 20px;
+	}
 }
 
