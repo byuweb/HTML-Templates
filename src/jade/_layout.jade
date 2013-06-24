@@ -46,21 +46,21 @@ html.no-js(lang="en")
 		head
 			meta(charset='UTF-8')
 			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-			title 
+			title
 				block pageTitle
 			meta(name='description', content='Description about your department.')
 			meta(name='author', content='Your Department Name')
 			meta(name='keywords', content='keyword 1, keyword 2, keyword 3')
 			meta(name='viewport', content='width=device-width, , initial-scale=1')
-			
-			// Place favicon.ico and apple-touch-icon.png in the root directory 
-			link(rel='shortcut icon', href='change-this-directory/img/favicon.ico')
-			
-			// Styles 
-			link(rel='stylesheet', href='css/base.css')
-			link(media='all and (min-width:200px)', rel='stylesheet', href='css/responsive.css')
 
-			// Scripts loaded via script loader. See notes in init.js file. 
+			// Place favicon.ico and apple-touch-icon.png in the root directory
+			link(rel='shortcut icon', href='favicon.ico')
+
+			// Styles
+			link(rel='stylesheet', href='css/base.css')
+			link(media='all and (min-width:250px)', rel='stylesheet', href='css/responsive.css')
+
+			// Scripts loaded via script loader. See notes in init.js file.
 			script(src='js/modernizr.js')
 			script(src='js/init.js')
 
@@ -93,7 +93,7 @@ html.no-js(lang="en")
 							block parentlink
 								a.byu(href='http://www.byu.edu/') Brigham Young University
 
-					// This should link to your organization's home page 
+					// This should link to your organization's home page
 					h1
 						a#site-name(href='#CHANGE-THIS-LINK')
 							block heading
@@ -109,15 +109,15 @@ html.no-js(lang="en")
 		//-	===============
 		block search
 			#search-container(role='search')
-		
+
 				//
-					| The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. 
-					| If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). 
+					| The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
+					| If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).
 				form#basic-search(action='http://home.byu.edu/home/search', role='form')
 					input#search(type='search', name='search')
 					input#search-submit(type='submit', value='Search')
-				
-				// This container holds the Google custom search, if enabled 
+
+				// This container holds the Google custom search, if enabled
 				.gcse-wrapper
 					gcse:search
 
@@ -142,13 +142,13 @@ html.no-js(lang="en")
 					li
 						.dropdown
 							a.home.dropdown-toggle(href="", data-toggle="dropdown")
-								i.icon-home.icon-large 
-								span.visuallyhidden Home 
+								i.icon-home.icon-large
+								span.visuallyhidden Home
 								i.icon-caret-down
 							ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu")
-								li: a(href='www.byu.edu') BYU Home 
-								li: a(href='#') Organization Home 
-								li: a(href='#') Two Pages Above 
+								li: a(href='www.byu.edu') BYU Home
+								li: a(href='#') Organization Home
+								li: a(href='#') Two Pages Above
 							i.divider.icon-angle-right
 					li
 						a(href="#") One page above
@@ -173,7 +173,7 @@ html.no-js(lang="en")
 		block nav
 			.nav-container
 
-				// Primary Nav 
+				// Primary Nav
 				nav#primary-nav(role='navigation'): ul
 					li
 						a(href='') Mega Dropdown Menu
@@ -227,7 +227,7 @@ html.no-js(lang="en")
 					li
 						a.single(href='') Direct Menu Link
 
-				// Secondary Nav 
+				// Secondary Nav
 				nav#secondary-nav(role='navigation'): ul
 					mixin secondaryMenuItem('SecMenu1', 4)
 					mixin secondaryMenuItem('SecMenu2', 4)
@@ -278,7 +278,7 @@ html.no-js(lang="en")
 
 			script
 				/* SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS */
-				
+
 				(function() {
 					var cx = '009932716493032633443:hlqjz33kfkc';
 					var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
