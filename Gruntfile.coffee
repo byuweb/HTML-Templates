@@ -10,7 +10,7 @@ module.exports = (grunt) ->
 
   grunt.initConfig
     pkg: grunt.file.readJSON('package.json')
-    
+
     uglify:
       options:
         mangle: false
@@ -18,7 +18,7 @@ module.exports = (grunt) ->
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %>  */'
       my_target:
         files:
-          'js/script.min.js' : ['src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js']
+          'js/script.min.js' : ['src/js/jrespond.js', 'src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js']
           'js/slider-update.min.js' : 'src/js/slider-update.js'
           'js/fonts.min.js' : ['src/js/google-fontloader.js', 'src/js/fonts.js']
 
@@ -32,7 +32,7 @@ module.exports = (grunt) ->
           'css/fonts.css' : 'src/sass/fonts.scss'
           'css/base.css' : 'src/sass/base.scss'
           'css/responsive.css' : 'src/sass/responsive.scss'
-  
+
     jade:
       options:
         pretty: true

@@ -6,24 +6,26 @@
 @import "compass";
 @import "colors";
 @import "mixins";
+@import "variables";
 
 
-
+$content-width:100%;
 $search-width: 250px; /* The width of the entire search container, used to position the Sign In button, if there is one */
+$search-buffer:10px;
 
 #search-container {
 	display: inline-block;
 	padding: 0;
 	position: absolute;
-	right: 0;
+	right: $search-buffer;
 	top: 5.25px;
 	width: $search-width;
 	height: 32px;
 	@include border-radius(15px);
 	@include vertical-gradient($blue5,$blue4);
 	@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
-	
-/** Google Search Form resets **/	
+
+/** Google Search Form resets **/
 	.gcse-wrapper {
 		background: none;
 		.gsc-control-cse {
@@ -31,12 +33,13 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 			table td .gsc-input-box {
 				background: none;
 				padding: 0;
-			
+
 				input.gsc-input {
 					border: 0;
 					@include box-shadow(none);
 					height: 20px !important;
-					
+
+
 					&::selection {
 						border: 0;
 					}
@@ -46,7 +49,7 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 				@include box-shadow(none);
 			}
 			td.gsc-search-button {
-				padding: 0;				
+				padding: 0;
 				input.gsc-search-button-v2 {
 					background: none;
 					border: none;
@@ -55,34 +58,50 @@ $search-width: 250px; /* The width of the entire search container, used to posit
 					margin: 0 0 0 -5px;
 					padding: 8px 1.5em;
 				}
-			}		
+			}
 		}
 	}
 	/** Styling for both search forms **/
 	#basic-search, .gcse-wrapper {
 		margin: 0;
 		width: $search-width;
-		
-		#search, #gsc-i-id1 {
+		position:absolute;
+		top:0;
+		left:0;
+
+		#search, .gsib_a .gsc-input {
 			@include border-radius(15px);
-			width: ($search-width*.8) !important;
+			width: ($search-width - 60) !important;
 			border: 0 !important;
-			padding: 6px !important;
+			padding: 6px 8px 6px 14px !important;
+			background-position:14px 50% !important;
 		}
-	
-		#search-submit, input.gsc-search-button.gsc-search-button-v2 {
-			background: url(../img/search-button.png) 50% 50% no-repeat;
+
+		#search-submit {
+			background: url(../img/search_box_icon.png) 8px 8px no-repeat;
 			overflow: hidden;
 			text-indent: -1000px;
 			margin: 0;
 			padding-left:0;
 		}
-	
+
 		#search-submit {width: 20px;}
 	}
 }
 
+
 #header-top a.sign-in {
 	position: absolute;
-	right: $search-width+9px;
+	right: $search-width + 12px;
+}
+
+
+/* 1024 px */
+@media all and (min-width: 1024px) {
+	$content-width:1024px;
+
+	#search-container {
+		right: 50%;
+		margin-right: -($content-width / 2);
+	}
 }
