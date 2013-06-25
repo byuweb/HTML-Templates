@@ -133,7 +133,7 @@ function loadSearch(){
 				'//www.google.com/cse/cse.js?cx=' + cx;
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(gcse, s);
-			//hideSearch();
+			hideSearch();
 		})();
 }
 
