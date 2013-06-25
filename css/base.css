@@ -409,19 +409,19 @@ dl, menu, ol, ul { padding: 0; }
 
 /*** Type ***/
 @media -sass-debug-info{filename{}line{font-family:\0000324}}
-body, button, input, select, textarea { color: #444; font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif; font-size: 13px; line-height: 18px; -webkit-text-size-adjust: 100%; }
+body, button, input, select, textarea { color: #444; font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif; font-size: 14px; line-height: 18px; -webkit-text-size-adjust: 100%; }
 
 @media -sass-debug-info{filename{}line{font-family:\0000332}}
-h1 { font-size: 2.2em; line-height: 40px; margin: 15px 32px; font-family: Georgia, serif; }
+h1 { font-size: 2em; line-height: 40px; margin: 15px 32px; font-family: Georgia, serif; }
 
 @media -sass-debug-info{filename{}line{font-family:\0000333}}
-h2 { font-size: 1.8em; line-height: 30px; margin: 30px 32px 10px; }
+h2 { font-size: 1.65em; line-height: 30px; margin: 30px 32px 10px; }
 
 @media -sass-debug-info{filename{}line{font-family:\0000334}}
-h3 { font-size: 1.3em; line-height: 30px; margin: 30px 32px 10px; }
+h3 { font-size: 1.25em; line-height: 30px; margin: 30px 32px 10px; }
 
 @media -sass-debug-info{filename{}line{font-family:\0000335}}
-h4 { font-size: 1.15em; line-height: 20px; margin: 20px 32px 10px; }
+h4 { font-size: 1.1em; line-height: 20px; margin: 20px 32px 10px; }
 
 @media -sass-debug-info{filename{}line{font-family:\0000336}}
 h5 { font-size: 1em; line-height: 20px; margin: 20px 32px 10px; }

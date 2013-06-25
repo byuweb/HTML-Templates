@@ -67,7 +67,6 @@
 /* BYU Styles */
 @import "bootstrap-override";
 @import "font-awesome";
-@import "type";
 @import "breadcrumb";
 @import "nav";
 
@@ -75,6 +74,8 @@
 @import "slider-responsive";
 @import "flexslider";
 @import "search";
+
+@import "type";
 
 a.mybyu, a.sign-in, .open #search-button { @include transition(background-color .3s);  }
 
