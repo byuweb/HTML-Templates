@@ -1,6 +1,6 @@
 // Global Variables
 var init = false;
-		small = 250,
+		small = 300,
 		full_menu = 768,
 		full = 1024,
 
@@ -36,13 +36,15 @@ $(function(){
 		log( 'Width: ' + $(window).width() );
 	});
 
+	loadSearch();
+
+
 	jRes.addFunc({
 		breakpoint: ['small', 'full_menu', 'full'],
 		enter: function() {
 			if( !init ) {
 				init = true;
 				activateMenus();
-				loadSearch();
 			}
 		}
 	});
@@ -131,7 +133,7 @@ function loadSearch(){
 				'//www.google.com/cse/cse.js?cx=' + cx;
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(gcse, s);
-			hideSearch();
+			//hideSearch();
 		})();
 }
 
