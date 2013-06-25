@@ -1,9 +1,10 @@
-/* Base.css 
+/* Base.css
 * The lowest common demoninator style definitions which all browsers will load. No CSS3.
 */
 
 @import "compass";
 @import "colors";
+@import "mixins";
 
 @import "normalize"; // Great place to start
 @import "h5bp"; // Good defaults from HTML5 Boilerplate
@@ -11,26 +12,67 @@
 @import "basics";
 
 
+
+
+
+/*** Type ***/
+
+$baseSize:16; // 16px
+$fontSize:13; // 14px
+$lineHeight:18; // 20px
+
+body, button, input, select, textarea {
+  color: #444;
+  font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+  font-size:$fontSize + px;
+  line-height:$lineHeight + px;
+  -webkit-text-size-adjust:100%; }
+
+
+h1 { font-size:  2.2em; line-height:40px; margin:15px 32px; font-family:Georgia, serif; } // 33px
+h2 { font-size:  1.8em; line-height:30px; margin:30px 32px 10px; } // 27px
+h3 { font-size:  1.3em; line-height:30px; margin:30px 32px 10px; } // 19.5px
+h4 { font-size: 1.15em; line-height:20px; margin:20px 32px 10px; } // 17.25px
+h5 { font-size:    1em; line-height:20px; margin:20px 32px 10px; } // 15px
+h6 { font-size:   .9em; line-height:20px; margin:20px 32px 10px; } // 13.5px
+h2, h3, h4, h5, h6 { color: #444; font-family:Georgia, serif; }
+p, pre { margin: 10px 0; }
+
+
 h1, h2{margin:0}
 
-/* Header */
+
+
+
+
+
+
+
+
+/*** Header ***/
+
 #main-header { background-color: $blue0;}
 
-#header-top { 
+
+#header-top {
   position: relative;
   h1 a { color: #fff; }
   a.sign-in {
     position: absolute;
     top: .35em;
 	right:5%;
-  } 
+  }
 }
 
 #logo {
-  background-color:$blue2; 
+  background-color:$blue2;
   border-bottom:1px solid $blue3;
   height:2em;
   padding:.35em 5%;
+  a.byu {
+    @include ir();
+    background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
+  }
   h2 { margin:0;}
   a  { display:block;}
 }
@@ -41,11 +83,11 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
   border-radius:1em;
   color:#fff;
   font-weight: bold;
-  padding: 6px 28px;
+  padding: 5px 18px;
   text-decoration: none;
   &:hover {
 	background-color: $blue4;
-    cursor:pointer; } 
+    cursor:pointer; }
 }
 
 /* Search box styling for mobile */
@@ -57,7 +99,7 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 
 	#basic-search {
 		width: 100%;
-		
+
 		#search {
 			margin-bottom: 0;
 			vertical-align: top;
@@ -75,45 +117,45 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 	.gcse-wrapper {
 		width: 100%;
 		background: $blue0;
-		
+
 		.gsc-results-wrapper-visible {z-index: 7;}
 		.gsc-modal-background-image {z-index: 6;}
 		.gsc-input {padding: 0;}
 		form.gsc-search-box {margin:0;}
-		
+
 		.gsc-control-cse {
 			background: none;
 			border: none;
 			padding: 0;
-							
+
 			input.gsc-search-button-v2 {margin:0;}
-			
+
 			table {
 				border: none;
 				margin: 0;
-				
+
 				td {
 					border:none;
 					line-height: 12px;
-					
+
 					.gsc-input-box {
 						background: #fff;
 						border-radius: 2px;
 						border: none;
 						padding:1px;
-						
+
 						.gsib_a {
 							padding: 0;
 							margin: 0;
 						}
-						
+
 						.gsib_b {display: none;}
 					}
 				}
 			}
 			.gsc-thumbnail-inside, .gsc-url-top {
 				padding-left: 0px;
-			}	
+			}
 		}
 	}
 }
@@ -121,32 +163,32 @@ a.mybyu, a.sign-in, .open #search-button, #search-submit {
 /* Main Content */
 .wrapper { margin: 0; }
 
-#content { 
+#content {
 	padding:1em 5% 2em;
 	h1{color: $blue1;}
 }
-  
+
 /* Calendar */
 #calendar {
-  h2 { margin-bottom:0; } 
+  h2 { margin-bottom:0; }
 }
 .day {
   a, span { display:block; }
   span.date {
-    margin-right:.33em; 
-    display: inline; 
-    font-weight:normal; } 
+    margin-right:.33em;
+    display: inline;
+    font-weight:normal; }
 }
 
 #calendars {
   margin:0;
-  padding:.5em 0 0; 
+  padding:.5em 0 0;
 }
 
 #calendar, #news {
   border-top:4px solid #f7f7f7;
   margin-top:1px;
-  padding-bottom:1em; 
+  padding-bottom:1em;
 }
 #calendar, #news, #feature { border-bottom:1px solid #ccc; }
 ul#calendars{ list-style: none}
@@ -195,10 +237,10 @@ body > footer {
     margin-top:0; border-top:none; }
   .addthis_default_style a {
     clear:left;padding:0;}
-  .addthis_toolbox a { 
+  .addthis_toolbox a {
     padding-left:0;
-    span { 
-      padding-right:10px; 
+    span {
+      padding-right:10px;
       margin:0; } } }
 
 #footer-bottom {

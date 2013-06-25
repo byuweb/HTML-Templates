@@ -1,28 +1,29 @@
 // Global Variables
-var small_width = 250,
-		full_menu_width = 768,
-		full_width = 1024,
+var init = false;
+		small = 250,
+		full_menu = 768,
+		full = 1024,
 
 		// Add breakpoints with jRespond
 		jRes = jRespond([
     {
         label: 'tiny',
         enter: 0,
-        exit: small_width - 1
+        exit: small - 1
     },
     {
         label: 'small',
-        enter: small_width,
-        exit: full_menu_width - 1
+        enter: small,
+        exit: full_menu - 1
     },
     {
         label: 'full_menu',
-        enter: full_menu_width,
-        exit: full_width - 1
+        enter: full_menu,
+        exit: full - 1
     },
     {
         label: 'full',
-        enter: full_width,
+        enter: full,
         exit: 10000
     }
 ]);
@@ -30,12 +31,19 @@ var small_width = 250,
 
 // Document ready
 $(function(){
+	log( 'Width: ' + $(window).width() );
+	$(window).resize(function(){
+		log( 'Width: ' + $(window).width() );
+	});
 
 	jRes.addFunc({
-		breakpoint: 'small',
+		breakpoint: ['small', 'full_menu', 'full'],
 		enter: function() {
-			activateMenus();
-			loadSearch();
+			if( !init ) {
+				init = true;
+				activateMenus();
+				loadSearch();
+			}
 		}
 	});
 
@@ -48,7 +56,6 @@ $(function(){
  * Args: none
  */
 function activateMenus() {
-	$('#header-top').append('<a href="#" class="menu-button">Menu</a>');
 	$('#header-top').delegate('.menu-button', 'click', function () {
 		$('body').toggleClass('sideNav');
 	});
@@ -112,6 +119,7 @@ function hideSearch() {
 * Loads the Google Custom Search
 */
 function loadSearch(){
+		log('Load search');
 		window.__gcse = {
 			callback: hideSearch
 		};
@@ -133,8 +141,8 @@ function loadSearch(){
  * Args: none
  */
 function setupNavPosition() {
-	$('#main-header').append('<div class="nav-container"></div>');
-	$('#secondary-nav, #primary-nav').detach().appendTo('.nav-container');
+	//$('#main-header').append('<div class="nav-container"></div>');
+	//$('#secondary-nav, #primary-nav').detach().appendTo('.nav-container');
 }
 
 

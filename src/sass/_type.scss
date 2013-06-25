@@ -1,5 +1,24 @@
 /*** Type ***/
 
+$baseSize:16; // 16px
+$fontSize:14; // 14px
+$lineHeight:18; // 20px
+
+body, button, input, select, textarea {
+  font-size:$fontSize + px;
+  line-height:$lineHeight + px; }
+
+
+h1 { font-size:  2.2em; line-height:40px; margin:15px 32px; font-family:Georgia, serif; } // 33px
+h2 { font-size:  1.8em; line-height:30px; margin:30px 32px 10px; } // 27px
+h3 { font-size:  1.3em; line-height:30px; margin:30px 32px 10px; } // 19.5px
+h4 { font-size: 1.15em; line-height:20px; margin:20px 32px 10px; } // 17.25px
+h5 { font-size:    1em; line-height:20px; margin:20px 32px 10px; } // 15px
+h6 { font-size:   .9em; line-height:20px; margin:20px 32px 10px; } // 13.5px
+h2, h3, h4, h5, h6 { color: #444; font-family:Georgia, serif; }
+p, pre { margin: 10px 0; }
+
+
 h1, h2, h3, h4, h5, h6 {
 	font-family:Georgia, serif;
 	font-weight:normal;
@@ -21,8 +40,6 @@ h1, h2, h3, h4, h5, h6 {
 .wf-opensans-n4-active {
 	body, button, input, select, textarea {
 		font-family: 'OpenSans', "LucidaGrande","LucidaSansUnicode","LucidaSans",Helvetica,Arial,sans-serif;
-		font-size: 15px;
-		line-height: 20px;
 	}
 }
 

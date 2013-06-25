@@ -1964,17 +1964,44 @@ ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] { width: .75em; }
 .icon-folder-open-alt:before { content: "\f115"; }
 
 /*** Type ***/
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\000033}}
-h1, h2, h3, h4, h5, h6 { font-family: Georgia, serif; font-weight: normal; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\000037}}
+body, button, input, select, textarea { font-size: 14px; line-height: 18px; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\000039}}
-.wf-droidserif-n4-active #header-top h1 { font-family: 'DroidSerif', 'CreteRound', sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000312}}
+h1 { font-size: 2.2em; line-height: 40px; margin: 15px 32px; font-family: Georgia, serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000313}}
+h2 { font-size: 1.8em; line-height: 30px; margin: 30px 32px 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000314}}
+h3 { font-size: 1.3em; line-height: 30px; margin: 30px 32px 10px; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000315}}
-.wf-creteround-n4-active h1, .wf-creteround-n4-active h2 { font-family: 'CreteRound', sans-serif; font-weight: normal; }
+h4 { font-size: 1.15em; line-height: 20px; margin: 20px 32px 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000316}}
+h5 { font-size: 1em; line-height: 20px; margin: 20px 32px 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000317}}
+h6 { font-size: .9em; line-height: 20px; margin: 20px 32px 10px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000318}}
+h2, h3, h4, h5, h6 { color: #444; font-family: Georgia, serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000319}}
+p, pre { margin: 10px 0; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000322}}
-.wf-opensans-n4-active body, .wf-opensans-n4-active button, .wf-opensans-n4-active input, .wf-opensans-n4-active select, .wf-opensans-n4-active textarea { font-family: 'OpenSans', "LucidaGrande","LucidaSansUnicode","LucidaSans",Helvetica,Arial,sans-serif; font-size: 15px; line-height: 20px; }
+h1, h2, h3, h4, h5, h6 { font-family: Georgia, serif; font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000328}}
+.wf-droidserif-n4-active #header-top h1 { font-family: 'DroidSerif', 'CreteRound', sans-serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000334}}
+.wf-creteround-n4-active h1, .wf-creteround-n4-active h2 { font-family: 'CreteRound', sans-serif; font-weight: normal; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000341}}
+.wf-opensans-n4-active body, .wf-opensans-n4-active button, .wf-opensans-n4-active input, .wf-opensans-n4-active select, .wf-opensans-n4-active textarea { font-family: 'OpenSans', "LucidaGrande","LucidaSansUnicode","LucidaSans",Helvetica,Arial,sans-serif; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_breadcrumb\.scss}line{font-family:\000032}}
 #breadcrumb .bread-drop { background-color: #eeeeee; border: 1px solid #cccccc; display: none; margin: -1px 0 0 -1px; padding: 10px; position: absolute; white-space: nowrap; -webkit-border-radius: 0 3px 3px 3px; -moz-border-radius: 0 3px 3px 3px; border-radius: 0 3px 3px 3px; }
@@ -2539,29 +2566,29 @@ a.mybyu, a.sign-in, .open #search-button { -webkit-transition: background-color 
 @media -sass-debug-info{filename{}line{font-family:\00003157}}
   body > footer .wrapper { padding-top: 9px; padding-bottom: 18px; }
 @media -sass-debug-info{filename{}line{font-family:\00003163}}
-  #footer-bottom { text-align: center; }
-@media -sass-debug-info{filename{}line{font-family:\00003165}}
+  #footer-bottom { text-align: center; padding-top: .5em; }
+@media -sass-debug-info{filename{}line{font-family:\00003166}}
   #footer-bottom a { display: inline-block; text-indent: -999em; }
-@media -sass-debug-info{filename{}line{font-family:\00003170}}
+@media -sass-debug-info{filename{}line{font-family:\00003171}}
   #footer-bottom a#copyright { text-indent: 0em; }
-@media -sass-debug-info{filename{}line{font-family:\00003174}}
-  #footer-bottom a#lds, #footer-bottom a#ldsbc, #footer-bottom a#byui, #footer-bottom a#byuh { background: transparent url("../img/footer_sprite.png") no-repeat; opacity: 0.7; }
-@media -sass-debug-info{filename{}line{font-family:\00003177}}
-  #footer-bottom a#lds:hover, #footer-bottom a#ldsbc:hover, #footer-bottom a#byui:hover, #footer-bottom a#byuh:hover { opacity: 1; }
+@media -sass-debug-info{filename{}line{font-family:\00003175}}
+  #footer-bottom a#lds, #footer-bottom a#ldsbc, #footer-bottom a#byui, #footer-bottom a#byuh { background: transparent url("../img/footer_sprite.png") no-repeat; opacity: 0.7; margin: 0 5px; }
 @media -sass-debug-info{filename{}line{font-family:\00003180}}
+  #footer-bottom a#lds:hover, #footer-bottom a#ldsbc:hover, #footer-bottom a#byui:hover, #footer-bottom a#byuh:hover { opacity: 1; }
+@media -sass-debug-info{filename{}line{font-family:\00003185}}
   #footer-bottom a#lds { background-position: 0px -8px; height: 50px; width: 150px; }
-@media -sass-debug-info{filename{}line{font-family:\00003186}}
+@media -sass-debug-info{filename{}line{font-family:\00003191}}
   #footer-bottom a#ldsbc { background-position: -407px -8px; height: 55px; width: 70px; }
-@media -sass-debug-info{filename{}line{font-family:\00003192}}
+@media -sass-debug-info{filename{}line{font-family:\00003197}}
   #footer-bottom a#byui { background-position: -206px -8px; height: 42px; width: 72px; }
-@media -sass-debug-info{filename{}line{font-family:\00003198}}
+@media -sass-debug-info{filename{}line{font-family:\00003203}}
   #footer-bottom a#byuh { background-position: -308px -8px; height: 42px; width: 72px; } }
 /* ------------ Landscape of Tablet(iPad) and anything larger ----------- */
-@media screen and (min-width: 60em) { @media -sass-debug-info{filename{}line{font-family:\00003210}}
+@media screen and (min-width: 60em) { @media -sass-debug-info{filename{}line{font-family:\00003215}}
   .one-sidebar #main-content { float: left; margin-right: 2%; width: 73%; }
-@media -sass-debug-info{filename{}line{font-family:\00003211}}
+@media -sass-debug-info{filename{}line{font-family:\00003216}}
   .two-sidebars #main-content { float: left; margin-right: 2%; width: 48%; }
-@media -sass-debug-info{filename{}line{font-family:\00003212}}
+@media -sass-debug-info{filename{}line{font-family:\00003217}}
   .sidebar { float: left; width: 23%; } }
 /* From h5bp */
 /* ========================================================================== EXAMPLE Media Queries for Responsive Design. These examples override the primary ('mobile first') styles. Modify as content requires. ========================================================================== */

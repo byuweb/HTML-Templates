@@ -162,6 +162,7 @@ $tablet-profile:48em; //768px
 
 	#footer-bottom{
 		text-align:center;
+		padding-top:.5em;
 		a{
 			display:inline-block;
 			text-indent: -999em;
@@ -172,9 +173,13 @@ $tablet-profile:48em; //768px
 		}
 
 		%school-link{
-		background: transparent url('../img/footer_sprite.png') no-repeat;
-		opacity:0.7;
-		&:hover{opacity:1;}
+			background: transparent url('../img/footer_sprite.png') no-repeat;
+			opacity:0.7;
+			margin: 0 5px;
+
+			&:hover {
+				opacity:1;
+			}
 		}
 
 		a#lds {
