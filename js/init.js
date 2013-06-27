@@ -1,6 +1,14 @@
-/*! init.js */
+/*! init.js 
+
+	This script loader uses Modernizr.load syntax (an alias of yepnope).
+	
+	Documentation found at: 
+		http://modernizr.com/docs/#load
+		http://yepnopejs.com/
+*/
 
 Modernizr.load([
+	// Load jQuery first
 	{
 		load: 'http://byuweb.github.io/Global-Assets/js/jquery-1.9.1.min.js',
 		complete: function () {
@@ -9,10 +17,10 @@ Modernizr.load([
 			}
 		}
 	},
-
+	// Load scripts required by jQuery second. Load fonts script only if web fonts are supported
 	{
 		test : Modernizr.fontface,
-		yep : "js/fonts.min.js",
-		both: "js/script.min.js"
-	},
+		load: "js/script.min.js",
+		yep : "js/fonts.min.js"
+	}
 ]);
