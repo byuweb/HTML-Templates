@@ -5,12 +5,12 @@
 @import "compass";
 @import "colors";
 @import "mixins";
+@import "variables";
 
-@import "normalize"; // Great place to start
-@import "h5bp"; // Good defaults from HTML5 Boilerplate
-@import "prettify";
-@import "basics";
-
+@import "base/normalize"; // Great place to start
+@import "base/h5bp"; // Good defaults from HTML5 Boilerplate
+@import "base/prettify";
+@import "base/basics";
 
 
 
@@ -51,7 +51,9 @@ p, pre { margin: 10px 0; }
 
 code {color:#d14}
 
-
+a {
+  transition: background .2s ease;
+}
 
 
 

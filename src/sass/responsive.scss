@@ -4,8 +4,9 @@
 
 @import "compass";
 
-@import "colors";
-@import "mixins";
+@import "shared/colors";
+@import "shared/mixins";
+@import "shared/variables";
 
 /*	Twitter Bootstrap (Scss version)
 	Loaded first, so it can be overrridden easily.
@@ -65,17 +66,17 @@
 	@import "bootstrap/utilities"; // Has to be last to override when necessary
 
 /* BYU Styles */
-@import "bootstrap-override";
-@import "font-awesome";
-@import "breadcrumb";
-@import "nav";
+@import "responsive/bootstrap-override";
+@import "responsive/font-awesome";
+@import "responsive/breadcrumb";
+@import "responsive/nav";
 
-@import "slider";
-@import "slider-responsive";
-@import "flexslider";
-@import "search";
+@import "responsive/slider";
+@import "responsive/slider-responsive";
+@import "responsive/flexslider";
+@import "responsive/search";
 
-@import "type";
+@import "responsive/type";
 
 a.mybyu, a.sign-in, .open #search-button { @include transition(background-color .3s);  }
 
@@ -243,4 +244,4 @@ $break-large:60em; //960px
 }
 
 /* h5bp print styles */
-@import "print";
+@import "responsive/print";

@@ -16,22 +16,38 @@ module.exports = (grunt) ->
         mangle: false
         preserveComments: 'some'
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %>  */'
-      my_target:
+      compile:
         files:
-          'js/script.min.js' : ['src/js/jrespond.js', 'src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js']
-          'js/slider-update.min.js' : 'src/js/slider-update.js'
-          'js/fonts.min.js' : ['src/js/google-fontloader.js', 'src/js/fonts.js']
+          'js/script.min.js' : ['src/js/plugins/jrespond.js', 'src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js']
+          'js/script-touch.min.js' : ['src/js/plugins/fastclick.js', 'src/js/plugins/jrespond.js', 'src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js', 'src/js/touch.js']
+          'js/slider.min.js' : 'src/js/slider-update.js'
+          'js/fonts.min.js' : ['src/js/plugins/google-fontloader.js', 'src/js/fonts.js']
+      compile_no_uglify:
+        options:
+          compress: false
+          mangle: false
+          preserveComments: 'all'
+          beautify: true
+          banner: ''
+        files:
+          'js/init.js' : 'src/js/init.js'
+          'js/modernizr.js' : 'src/js/plugins/modernizr.js'
 
     sass:
       options:
         style: 'compact'
         compass: 'config.rb'
         debugInfo: true
+        trace: true
+        loadPath: ['src/sass/','src/sass/shared/']
       compile:
-        files:
-          'css/fonts.css' : 'src/sass/fonts.scss'
-          'css/base.css' : 'src/sass/base.scss'
-          'css/responsive.css' : 'src/sass/responsive.scss'
+        files:[
+          expand: true
+          cwd: 'src/sass/'
+          src: ['*.scss', '*.sass']
+          dest: 'css/'
+          ext: '.css'
+        ]
 
     jade:
       options:
@@ -81,5 +97,5 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks('grunt-contrib-livereload')
 
   # Default task(s).
-  grunt.registerTask('compile', ['sass', 'jade'])
+  grunt.registerTask('compile', ['sass', 'jade', 'uglify'])
   grunt.registerTask('default', ['compile', 'livereload-start', 'connect', 'regarde'])
