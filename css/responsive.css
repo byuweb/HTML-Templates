@@ -2521,17 +2521,18 @@ h1, h2, h3, h4, h5, h6 { font-family: Georgia, serif; font-weight: normal; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000341}}
 .wf-opensans-n4-active body, .wf-opensans-n4-active button, .wf-opensans-n4-active input, .wf-opensans-n4-active select, .wf-opensans-n4-active textarea { font-family: 'OpenSans', "LucidaGrande","LucidaSansUnicode","LucidaSans",Helvetica,Arial,sans-serif; }
 
-@media all and (min-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000348}}
+/*** Full menu width ***/
+@media all and (min-width: 768px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000350}}
   h1 { font-size: 2.2em; line-height: 40px; margin: 15px 32px; font-family: Georgia, serif; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000349}}
-  h2 { font-size: 1.8em; line-height: 30px; margin: 30px 32px 10px; }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000350}}
-  h3 { font-size: 1.3em; line-height: 30px; margin: 30px 32px 10px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000351}}
-  h4 { font-size: 1.15em; line-height: 20px; margin: 20px 32px 10px; }
+  h2 { font-size: 1.8em; line-height: 30px; margin: 30px 32px 10px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000352}}
-  h5 { font-size: 1em; line-height: 20px; margin: 20px 32px 10px; }
+  h3 { font-size: 1.3em; line-height: 30px; margin: 30px 32px 10px; }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000353}}
+  h4 { font-size: 1.15em; line-height: 20px; margin: 20px 32px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000354}}
+  h5 { font-size: 1em; line-height: 20px; margin: 20px 32px 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/_type\.scss}line{font-family:\0000355}}
   h6 { font-size: .9em; line-height: 20px; margin: 20px 32px 10px; } }
 @media -sass-debug-info{filename{}line{font-family:\0000380}}
 a.mybyu, a.sign-in, .open #search-button { -webkit-transition: background-color 0.3s; -moz-transition: background-color 0.3s; -o-transition: background-color 0.3s; transition: background-color 0.3s; }
