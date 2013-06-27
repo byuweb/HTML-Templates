@@ -481,95 +481,124 @@ a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-
 #search-container .gcse-wrapper { background: none; position: absolute; padding: 0 5px; top: 1px; left: 0; }
 @media -sass-debug-info{filename{}line{font-family:\00003169}}
 #search-container .gcse-wrapper div, #search-container .gcse-wrapper table, #search-container .gcse-wrapper td, #search-container .gcse-wrapper form { padding: 0; margin: 0; border: 0; background: none; position: static; }
-@media -sass-debug-info{filename{}line{font-family:\00003179}}
+@media -sass-debug-info{filename{}line{font-family:\00003177}}
+#search-container .gcse-wrapper .gsc-results-wrapper-overlay { background: #fff; left: 1%; width: 92%; padding: 10px 3%; }
+@media -sass-debug-info{filename{}line{font-family:\00003183}}
+#search-container .gcse-wrapper .gsc-results-wrapper-overlay .gsc-above-wrapper-area { padding-right: 20px; }
+@media -sass-debug-info{filename{}line{font-family:\00003187}}
+#search-container .gcse-wrapper .gsc-results-wrapper-overlay .gsc-results-close-btn { top: 7px; right: 7px; }
+@media -sass-debug-info{filename{}line{font-family:\00003190}}
+#search-container .gcse-wrapper .gsc-results-wrapper-overlay .gsc-results-close-btn:before { content: "×"; font-size: 25px; position: absolute; top: 0; left: 0; color: #999; }
+@media -sass-debug-info{filename{}line{font-family:\00003198}}
+#search-container .gcse-wrapper .gsc-results-wrapper-overlay .gsc-results-close-btn:hover:before { color: #333; }
+@media -sass-debug-info{filename{}line{font-family:\00003204}}
+#search-container .gcse-wrapper .gsc-result { padding: .75em 0; }
+@media -sass-debug-info{filename{}line{font-family:\00003210}}
 #search-container #basic-search { position: relative; padding-right: 77px; padding-left: 5px; padding-top: 4px; }
-@media -sass-debug-info{filename{}line{font-family:\00003188}}
+@media -sass-debug-info{filename{}line{font-family:\00003219}}
 #search-container #search-submit { background-image: url(../img/search_box_icon.png); background-position: 50% 50%; background-repeat: no-repeat; overflow: hidden; text-indent: -1000px; padding: 5px; display: block; width: 50px; position: absolute; top: 4px; right: 5px; }
-@media -sass-debug-info{filename{}line{font-family:\00003200}}
+@media -sass-debug-info{filename{}line{font-family:\00003231}}
 #search-container #search-submit:hover, #search-container #search-submit:active { right: 7px; }
-@media -sass-debug-info{filename{}line{font-family:\00003205}}
+@media -sass-debug-info{filename{}line{font-family:\00003236}}
 #search-container .gsc-search-button, #search-container .gsc-search-button-v2 { background-color: #628cb6; background-image: none; padding: 7px 18px; position: relative; top: 1px; }
-@media -sass-debug-info{filename{}line{font-family:\00003211}}
+@media -sass-debug-info{filename{}line{font-family:\00003242}}
 #search-container .gsc-search-button:hover, #search-container .gsc-search-button:active, #search-container .gsc-search-button-v2:hover, #search-container .gsc-search-button-v2:active { margin: 0; margin-right: -2px; }
-@media -sass-debug-info{filename{}line{font-family:\00003218}}
+@media -sass-debug-info{filename{}line{font-family:\00003249}}
 #search-container #basic-search #search, #search-container input.gsc-input { margin-bottom: 0; vertical-align: top; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; padding: 5px 10px !important; border: 0 !important; font-size: 13px; display: block; width: 100%; }
-@media -sass-debug-info{filename{}line{font-family:\00003229}}
+@media -sass-debug-info{filename{}line{font-family:\00003260}}
 #search-container input.gsc-input { background-position: 14px 50% !important; }
-@media -sass-debug-info{filename{}line{font-family:\00003234}}
+@media -sass-debug-info{filename{}line{font-family:\00003265}}
 #search-container .gsc-input-box { padding-right: 20px !important; position: relative; }
 
-/*** Main Content ***/
-@media -sass-debug-info{filename{}line{font-family:\00003260}}
-.wrapper { margin: 0; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003262}}
-#content { padding: 1em 5% 2em; }
-@media -sass-debug-info{filename{}line{font-family:\00003264}}
-#content h1 { color: #002255; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003272}}
-.breadcrumb { display: none; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003281}}
-#calendar h2 { margin-bottom: 0; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003284}}
-.day a, .day span { display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003285}}
-.day span.date { margin-right: .33em; display: inline; font-weight: normal; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003291}}
-#calendars { margin: 0; padding: .5em 0 0; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003296}}
-#calendar, #news { border-top: 4px solid #f7f7f7; margin-top: 1px; padding-bottom: 1em; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003301}}
-#calendar, #news, #feature { border-bottom: 1px solid #ccc; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003302}}
-ul#calendars { list-style: none; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003303}}
-.day { padding: .75em 0 0; }
-
+/*** Navigation ***/
+@media -sass-debug-info{filename{}line{font-family:\00003290}}
+.nav-container a { font-size: 14px; padding: .5em 0; display: block; font-weight: bold; padding-left: 5%; padding-right: 5%; }
+@media -sass-debug-info{filename{}line{font-family:\00003297}}
+.nav-container a:hover, .nav-container a:active { background-color: #003366; color: white; text-decoration: none; }
 @media -sass-debug-info{filename{}line{font-family:\00003304}}
-a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top: 1.5em; padding-bottom: 1.5em; display: block; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003312}}
-.news-item { padding: .25em 0 0; }
-
+.nav-container .mega a, .nav-container .sub a, .nav-container .sublinks a { font-weight: normal; padding-left: 10%; }
+@media -sass-debug-info{filename{}line{font-family:\00003309}}
+.nav-container .featured, .nav-container .highlight { display: none; }
 @media -sass-debug-info{filename{}line{font-family:\00003313}}
-.briefs-item { padding: .1em 0 0; }
-
-@media -sass-debug-info{filename{}line{font-family:\00003314}}
-#briefs-container { border-bottom: 1px solid #eee; padding-bottom: .75em; margin-bottom: .5em; }
+.nav-container .sublinks { list-style: none; font-size: 13px; }
+@media -sass-debug-info{filename{}line{font-family:\00003316}}
+.nav-container .sublinks a { padding-left: 15%; }
 
 @media -sass-debug-info{filename{}line{font-family:\00003322}}
-body > footer { background-color: #eeebe9; border-top: 1px solid #fff; border-bottom: 2px solid transparent; }
-@media -sass-debug-info{filename{}line{font-family:\00003326}}
-body > footer a, body > footer a:link, body > footer a:visited { color: #807b73; display: block; padding: .35em 1%; font-size: .95em; }
-@media -sass-debug-info{filename{}line{font-family:\00003331}}
-body > footer a:hover, body > footer a:active, body > footer a:focus { color: #66625c; }
-@media -sass-debug-info{filename{}line{font-family:\00003333}}
-body > footer h2 { color: #66625c; margin-top: 1.5em; font-size: 1em; border-bottom: 1px solid #cccac6; }
-@media -sass-debug-info{filename{}line{font-family:\00003338}}
-body > footer h3 { font-weight: normal; color: #66625c; font-size: .95em; margin: 1em 0 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003343}}
-body > footer p { color: #807b73; font-size: .95em; }
+#primary-nav, #secondary-nav { border-top: 1px solid #ddd; padding: 10px 0; }
+
+/*** Main Content ***/
+@media -sass-debug-info{filename{}line{font-family:\00003344}}
+.wrapper { margin: 0; }
+
 @media -sass-debug-info{filename{}line{font-family:\00003346}}
+#content { padding: 1em 5% 2em; }
+@media -sass-debug-info{filename{}line{font-family:\00003348}}
+#content h1 { color: #002255; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003356}}
+.breadcrumb { display: none; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003365}}
+#calendar h2 { margin-bottom: 0; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003368}}
+.day a, .day span { display: block; }
+@media -sass-debug-info{filename{}line{font-family:\00003369}}
+.day span.date { margin-right: .33em; display: inline; font-weight: normal; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003375}}
+#calendars { margin: 0; padding: .5em 0 0; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003380}}
+#calendar, #news { border-top: 4px solid #f7f7f7; margin-top: 1px; padding-bottom: 1em; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003385}}
+#calendar, #news, #feature { border-bottom: 1px solid #ccc; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003386}}
+ul#calendars { list-style: none; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003387}}
+.day { padding: .75em 0 0; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003388}}
+a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top: 1.5em; padding-bottom: 1.5em; display: block; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003396}}
+.news-item { padding: .25em 0 0; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003397}}
+.briefs-item { padding: .1em 0 0; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003398}}
+#briefs-container { border-bottom: 1px solid #eee; padding-bottom: .75em; margin-bottom: .5em; }
+
+@media -sass-debug-info{filename{}line{font-family:\00003406}}
+body > footer { background-color: #eeebe9; border-top: 1px solid #fff; border-bottom: 2px solid transparent; }
+@media -sass-debug-info{filename{}line{font-family:\00003410}}
+body > footer a, body > footer a:link, body > footer a:visited { color: #807b73; display: block; padding: .35em 1%; font-size: .95em; }
+@media -sass-debug-info{filename{}line{font-family:\00003415}}
+body > footer a:hover, body > footer a:active, body > footer a:focus { color: #66625c; }
+@media -sass-debug-info{filename{}line{font-family:\00003417}}
+body > footer h2 { color: #66625c; margin-top: 1.5em; font-size: 1em; border-bottom: 1px solid #cccac6; }
+@media -sass-debug-info{filename{}line{font-family:\00003422}}
+body > footer h3 { font-weight: normal; color: #66625c; font-size: .95em; margin: 1em 0 0; }
+@media -sass-debug-info{filename{}line{font-family:\00003427}}
+body > footer p { color: #807b73; font-size: .95em; }
+@media -sass-debug-info{filename{}line{font-family:\00003430}}
 body > footer .wrapper { margin: 9px 5%; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003351}}
+@media -sass-debug-info{filename{}line{font-family:\00003435}}
 #footer-links { border-bottom: 1px solid #ccc; padding-bottom: 1.5em; }
-@media -sass-debug-info{filename{}line{font-family:\00003354}}
+@media -sass-debug-info{filename{}line{font-family:\00003438}}
 #footer-links div.alpha { margin-top: 0; border-top: none; }
-@media -sass-debug-info{filename{}line{font-family:\00003356}}
+@media -sass-debug-info{filename{}line{font-family:\00003440}}
 #footer-links .addthis_default_style a { clear: left; padding: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003358}}
+@media -sass-debug-info{filename{}line{font-family:\00003442}}
 #footer-links .addthis_toolbox a { padding-left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003360}}
+@media -sass-debug-info{filename{}line{font-family:\00003444}}
 #footer-links .addthis_toolbox a span { padding-right: 10px; margin: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003364}}
+@media -sass-debug-info{filename{}line{font-family:\00003448}}
 #footer-bottom { background-color: #e5e2df; border-top: 1px solid #fff; padding-bottom: 1.5em; }
