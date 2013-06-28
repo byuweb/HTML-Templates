@@ -17,8 +17,8 @@
 
 
 
-
-
+$sans-font-stack: "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans", Helvetica,Arial,sans-serif;
+$serif-font-stack: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
 
 
 /*** Type ***/
@@ -29,13 +29,13 @@ $lineHeight:18; // 20px
 
 body, button, input, select, textarea {
   color: #444;
-  font-family:"Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+  font-family: $sans-font-stack;
   font-size:$fontSize + px;
   line-height:$lineHeight + px;
   -webkit-text-size-adjust:100%; }
 
 h1, h2, h3, h4, h5, h6 { 
-  font-family:"Palatino", "DroidSerif", "Droid Serif", Georgia, serif; 
+  font-family: $serif-font-stack;
   line-height:1.2; 
   margin: 10px 0; 
   line-height:1.2; 
@@ -52,7 +52,7 @@ p, pre { margin: 10px 0; }
 code {color:#d14}
 
 a {
-  transition: background .2s ease;
+  transition: background .1s ease;
 }
 
 
@@ -89,11 +89,18 @@ a {
 #logo {
   background-color:$blue1;
   border-bottom: 1px solid $blue3;
-  height:2em;
   padding:.35em 0 .45em;
-  a.byu {
+  a.byu, a.byulink {
     @include ir();
     background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
+  }
+  a.parentlink {
+    text-transform: uppercase;
+    font-size: 15px;
+    display: block;
+    padding: 12px 8px 2px;
+    color: $blue8;
+    line-height: 1.2;
   }
   h2 { margin:0; line-height: 26px; }
   a  { display:block;}
@@ -297,9 +304,8 @@ $sidePadding:5px;
     padding-left:5%;
     padding-right:5%;
     &:hover, &:active {
-      background-color: $blue2;
-      color: white;
-      text-decoration: none;
+      background-color: #eeebe9;
+      color: $blue0;
     }
   }
   .mega, .sub, .sublinks {
