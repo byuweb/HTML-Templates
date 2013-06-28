@@ -31,10 +31,9 @@ var init = false;
 
 // Document ready
 $(function(){
-	log( 'Width: ' + $(window).width() );
-	$(window).resize(function(){
-		log( 'Width: ' + $(window).width() );
-	});
+
+	getWidth();
+	$(window).resize(getWidth);
 
 	loadSearch();
 
@@ -50,8 +49,19 @@ $(function(){
 	});
 
 
-
 });
+
+
+/* Func: getWidth
+ * Desc: Get the current width of the browser window
+ * Args: none
+ */
+function getWidth() {
+	var w = $(window).width();
+	log(w);
+	return w;
+}
+
 
 /* Func: ActivateMenus
  * Desc: Get the menus going

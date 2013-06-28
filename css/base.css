@@ -1,7 +1,7 @@
 /* Base.css
 * The lowest common demoninator style definitions which all browsers will load. No CSS3.
 */
-/* Sizes */
+/* Variables */
 /* normalize.css v2.1.1 | MIT License | git.io/normalize */
 /* ========================================================================== HTML5 display definitions ========================================================================== */
 /** Correct `block` display not defined in IE 8/9. */
@@ -413,198 +413,198 @@ dl, menu, ol, ul { padding: 0; }
 body, button, input, select, textarea { color: #444; font-family: "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Helvetica, Arial, sans-serif; font-size: 13px; line-height: 18px; -webkit-text-size-adjust: 100%; }
 
 @media -sass-debug-info{filename{}line{font-family:\0000337}}
-h1, h2, h3, h4, h5, h6 { font-family: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif; line-height: 1.2; margin: 10px 0; line-height: 1.2; }
+h1, h2, h3, h4, h5, h6 { font-family: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif; margin: 10px 0; line-height: 1.2; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000343}}
+@media -sass-debug-info{filename{}line{font-family:\0000342}}
 h2, h3, h4, h5, h6 { color: #444; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000344}}
+@media -sass-debug-info{filename{}line{font-family:\0000343}}
 h1 { font-size: 2em; margin: 20px 0 10px; line-height: 1.1; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000345}}
+@media -sass-debug-info{filename{}line{font-family:\0000344}}
 h2 { font-size: 1.65em; margin: 15px 0 10px; line-height: 1.1; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000346}}
+@media -sass-debug-info{filename{}line{font-family:\0000345}}
 h3 { font-size: 1.25em; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000347}}
+@media -sass-debug-info{filename{}line{font-family:\0000346}}
 h4 { font-size: 1.1em; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000348}}
+@media -sass-debug-info{filename{}line{font-family:\0000347}}
 h5 { font-size: 1em; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000349}}
+@media -sass-debug-info{filename{}line{font-family:\0000348}}
 h6 { font-size: .9em; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000350}}
+@media -sass-debug-info{filename{}line{font-family:\0000349}}
 p, pre { margin: 10px 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000352}}
+@media -sass-debug-info{filename{}line{font-family:\0000351}}
 code { color: #d14; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000354}}
+@media -sass-debug-info{filename{}line{font-family:\0000353}}
 a { transition: background .1s ease; }
 
 /*** Header ***/
-@media -sass-debug-info{filename{}line{font-family:\0000369}}
+@media -sass-debug-info{filename{}line{font-family:\0000368}}
 #main-header { background-color: #003366; border-bottom: 1px solid #003366; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000375}}
+@media -sass-debug-info{filename{}line{font-family:\0000374}}
 #header-top { position: relative; }
-@media -sass-debug-info{filename{}line{font-family:\0000377}}
+@media -sass-debug-info{filename{}line{font-family:\0000376}}
 #header-top h1 { font-size: 2.2em; margin: .5em 5% .25em; }
-@media -sass-debug-info{filename{}line{font-family:\0000380}}
+@media -sass-debug-info{filename{}line{font-family:\0000379}}
 #header-top h1 a { color: #fff; }
-@media -sass-debug-info{filename{}line{font-family:\0000382}}
+@media -sass-debug-info{filename{}line{font-family:\0000381}}
 #header-top a.sign-in { position: absolute; top: .35em; right: 5%; }
 
-@media -sass-debug-info{filename{}line{font-family:\0000389}}
+@media -sass-debug-info{filename{}line{font-family:\0000388}}
 #logo { background-color: #002255; border-bottom: 1px solid #114477; padding: .35em 0 .45em; }
-@media -sass-debug-info{filename{}line{font-family:\0000393}}
+@media -sass-debug-info{filename{}line{font-family:\0000392}}
 #logo a.byu, #logo a.byulink { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; background: transparent url("http://home.byu.edu/home/sites/default/files/global/img/byu-logo-sm.png") 0px 0px no-repeat; }
-@media -sass-debug-info{filename{}line{font-family:\0000397}}
+@media -sass-debug-info{filename{}line{font-family:\0000396}}
 #logo a.parentlink { text-transform: uppercase; font-size: 15px; display: block; padding: 12px 8px 2px; color: #d1e4f6; line-height: 1.2; }
-@media -sass-debug-info{filename{}line{font-family:\00003105}}
+@media -sass-debug-info{filename{}line{font-family:\00003104}}
 #logo h2 { margin: 0; line-height: 26px; }
-@media -sass-debug-info{filename{}line{font-family:\00003106}}
+@media -sass-debug-info{filename{}line{font-family:\00003105}}
 #logo a { display: block; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003109}}
+@media -sass-debug-info{filename{}line{font-family:\00003108}}
 a.mybyu, a.sign-in, .open #search-button, #search-submit, .gcse-wrapper input.gsc-search-button { background-color: #628cb6; border: none; color: #fff; font-weight: bold; padding: 5px 18px; text-decoration: none; -webkit-border-radius: 14px; -moz-border-radius: 14px; -ms-border-radius: 14px; -o-border-radius: 14px; border-radius: 14px; }
-@media -sass-debug-info{filename{}line{font-family:\00003117}}
+@media -sass-debug-info{filename{}line{font-family:\00003116}}
 a.mybyu:hover, a.mybyu:active, a.sign-in:hover, a.sign-in:active, .open #search-button:hover, .open #search-button:active, #search-submit:hover, #search-submit:active, .gcse-wrapper input.gsc-search-button:hover, .gcse-wrapper input.gsc-search-button:active { margin: -2px; background-color: #336699; border: 2px solid #abc8e4; cursor: pointer; -webkit-border-radius: 16px; -moz-border-radius: 16px; -ms-border-radius: 16px; -o-border-radius: 16px; border-radius: 16px; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003126}}
+@media -sass-debug-info{filename{}line{font-family:\00003125}}
 .menu-button { display: none; }
 
 /*** Search ***/
 /* Search box styling for mobile */
-@media -sass-debug-info{filename{}line{font-family:\00003151}}
+@media -sass-debug-info{filename{}line{font-family:\00003150}}
 #search-container { width: 100%; position: relative; display: block; background-color: #001948; border-top: 1px solid #114477; border-bottom: 1px solid #114477; height: 36px; }
-@media -sass-debug-info{filename{}line{font-family:\00003165}}
+@media -sass-debug-info{filename{}line{font-family:\00003164}}
 #search-container textarea:hover, #search-container input:hover, #search-container textarea:active, #search-container input:active, #search-container textarea:focus, #search-container input:focus { outline: 0px !important; -webkit-appearance: none; }
-@media -sass-debug-info{filename{}line{font-family:\00003171}}
+@media -sass-debug-info{filename{}line{font-family:\00003170}}
 #search-container .gcse-wrapper { background: none; position: absolute; padding: 0 5px; top: 1px; left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003178}}
+@media -sass-debug-info{filename{}line{font-family:\00003177}}
 #search-container .gcse-wrapper div, #search-container .gcse-wrapper table, #search-container .gcse-wrapper td, #search-container .gcse-wrapper form { padding: 0; margin: 0; border: 0; background: none; position: static; }
-@media -sass-debug-info{filename{}line{font-family:\00003186}}
+@media -sass-debug-info{filename{}line{font-family:\00003185}}
 #search-container .gcse-wrapper .gsc-results-wrapper-overlay { background: #fff; left: 1%; width: 92%; padding: 10px 3%; }
-@media -sass-debug-info{filename{}line{font-family:\00003192}}
+@media -sass-debug-info{filename{}line{font-family:\00003191}}
 #search-container .gcse-wrapper .gsc-results-wrapper-overlay .gsc-above-wrapper-area { padding-right: 20px; }
-@media -sass-debug-info{filename{}line{font-family:\00003196}}
+@media -sass-debug-info{filename{}line{font-family:\00003195}}
 #search-container .gcse-wrapper .gsc-results-wrapper-overlay .gsc-results-close-btn { top: 7px; right: 7px; }
-@media -sass-debug-info{filename{}line{font-family:\00003199}}
+@media -sass-debug-info{filename{}line{font-family:\00003198}}
 #search-container .gcse-wrapper .gsc-results-wrapper-overlay .gsc-results-close-btn:before { content: "×"; font-size: 25px; position: absolute; top: 0; left: 0; color: #999; }
-@media -sass-debug-info{filename{}line{font-family:\00003207}}
+@media -sass-debug-info{filename{}line{font-family:\00003206}}
 #search-container .gcse-wrapper .gsc-results-wrapper-overlay .gsc-results-close-btn:hover:before { color: #333; }
-@media -sass-debug-info{filename{}line{font-family:\00003213}}
+@media -sass-debug-info{filename{}line{font-family:\00003212}}
 #search-container .gcse-wrapper .gsc-result { padding: .75em 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003219}}
+@media -sass-debug-info{filename{}line{font-family:\00003218}}
 #search-container #basic-search { position: relative; padding-right: 77px; padding-left: 5px; padding-top: 4px; }
-@media -sass-debug-info{filename{}line{font-family:\00003228}}
+@media -sass-debug-info{filename{}line{font-family:\00003227}}
 #search-container #search-submit { background-image: url(../img/search_box_icon.png); background-position: 50% 50%; background-repeat: no-repeat; overflow: hidden; text-indent: -1000px; padding: 5px; display: block; width: 50px; position: absolute; top: 4px; right: 5px; }
-@media -sass-debug-info{filename{}line{font-family:\00003240}}
+@media -sass-debug-info{filename{}line{font-family:\00003239}}
 #search-container #search-submit:hover, #search-container #search-submit:active { right: 7px; }
-@media -sass-debug-info{filename{}line{font-family:\00003245}}
+@media -sass-debug-info{filename{}line{font-family:\00003244}}
 #search-container .gsc-search-button, #search-container .gsc-search-button-v2 { background-color: #628cb6; background-image: none; padding: 7px 18px; position: relative; top: 1px; }
-@media -sass-debug-info{filename{}line{font-family:\00003251}}
+@media -sass-debug-info{filename{}line{font-family:\00003250}}
 #search-container .gsc-search-button:hover, #search-container .gsc-search-button:active, #search-container .gsc-search-button-v2:hover, #search-container .gsc-search-button-v2:active { margin: 0; margin-right: -2px; }
-@media -sass-debug-info{filename{}line{font-family:\00003258}}
+@media -sass-debug-info{filename{}line{font-family:\00003257}}
 #search-container #basic-search #search, #search-container input.gsc-input { margin-bottom: 0; vertical-align: top; -webkit-border-radius: 15px; -moz-border-radius: 15px; -ms-border-radius: 15px; -o-border-radius: 15px; border-radius: 15px; padding: 5px 10px !important; border: 0 !important; font-size: 13px; display: block; width: 100%; }
-@media -sass-debug-info{filename{}line{font-family:\00003269}}
+@media -sass-debug-info{filename{}line{font-family:\00003268}}
 #search-container input.gsc-input { background-position: 14px 50% !important; }
-@media -sass-debug-info{filename{}line{font-family:\00003274}}
+@media -sass-debug-info{filename{}line{font-family:\00003273}}
 #search-container .gsc-input-box { padding-right: 20px !important; position: relative; }
 
 /*** Navigation ***/
-@media -sass-debug-info{filename{}line{font-family:\00003299}}
+@media -sass-debug-info{filename{}line{font-family:\00003298}}
 .nav-container a { font-size: 14px; padding: .5em 0; display: block; font-weight: bold; padding-left: 5%; padding-right: 5%; }
-@media -sass-debug-info{filename{}line{font-family:\00003306}}
+@media -sass-debug-info{filename{}line{font-family:\00003305}}
 .nav-container a:hover, .nav-container a:active { background-color: #eeebe9; color: #001948; }
-@media -sass-debug-info{filename{}line{font-family:\00003312}}
+@media -sass-debug-info{filename{}line{font-family:\00003311}}
 .nav-container .mega a, .nav-container .sub a, .nav-container .sublinks a { font-weight: normal; padding-left: 10%; }
-@media -sass-debug-info{filename{}line{font-family:\00003317}}
+@media -sass-debug-info{filename{}line{font-family:\00003316}}
 .nav-container .featured, .nav-container .highlight { display: none; }
-@media -sass-debug-info{filename{}line{font-family:\00003321}}
+@media -sass-debug-info{filename{}line{font-family:\00003320}}
 .nav-container .sublinks { list-style: none; font-size: 13px; }
-@media -sass-debug-info{filename{}line{font-family:\00003324}}
+@media -sass-debug-info{filename{}line{font-family:\00003323}}
 .nav-container .sublinks a { padding-left: 15%; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003330}}
+@media -sass-debug-info{filename{}line{font-family:\00003329}}
 #primary-nav, #secondary-nav { border-top: 1px solid #ddd; padding: 10px 0; }
 
 /*** Main Content ***/
-@media -sass-debug-info{filename{}line{font-family:\00003352}}
+@media -sass-debug-info{filename{}line{font-family:\00003351}}
 .wrapper { margin: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003354}}
+@media -sass-debug-info{filename{}line{font-family:\00003353}}
 #content { padding: 1em 5% 2em; }
-@media -sass-debug-info{filename{}line{font-family:\00003356}}
+@media -sass-debug-info{filename{}line{font-family:\00003355}}
 #content h1 { color: #002255; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003364}}
+@media -sass-debug-info{filename{}line{font-family:\00003363}}
 .breadcrumb { display: none; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003373}}
+@media -sass-debug-info{filename{}line{font-family:\00003372}}
 #calendar h2 { margin-bottom: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003376}}
+@media -sass-debug-info{filename{}line{font-family:\00003375}}
 .day a, .day span { display: block; }
-@media -sass-debug-info{filename{}line{font-family:\00003377}}
+@media -sass-debug-info{filename{}line{font-family:\00003376}}
 .day span.date { margin-right: .33em; display: inline; font-weight: normal; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003383}}
+@media -sass-debug-info{filename{}line{font-family:\00003382}}
 #calendars { margin: 0; padding: .5em 0 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003388}}
+@media -sass-debug-info{filename{}line{font-family:\00003387}}
 #calendar, #news { border-top: 4px solid #f7f7f7; margin-top: 1px; padding-bottom: 1em; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003393}}
+@media -sass-debug-info{filename{}line{font-family:\00003392}}
 #calendar, #news, #feature { border-bottom: 1px solid #ccc; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003394}}
+@media -sass-debug-info{filename{}line{font-family:\00003393}}
 ul#calendars { list-style: none; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003395}}
+@media -sass-debug-info{filename{}line{font-family:\00003394}}
 .day { padding: .75em 0 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003396}}
+@media -sass-debug-info{filename{}line{font-family:\00003395}}
 a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top: 1.5em; padding-bottom: 1.5em; display: block; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003404}}
+@media -sass-debug-info{filename{}line{font-family:\00003403}}
 .news-item { padding: .25em 0 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003405}}
+@media -sass-debug-info{filename{}line{font-family:\00003404}}
 .briefs-item { padding: .1em 0 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003406}}
+@media -sass-debug-info{filename{}line{font-family:\00003405}}
 #briefs-container { border-bottom: 1px solid #eee; padding-bottom: .75em; margin-bottom: .5em; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003414}}
+@media -sass-debug-info{filename{}line{font-family:\00003413}}
 body > footer { background-color: #eeebe9; border-top: 1px solid #fff; border-bottom: 2px solid transparent; }
-@media -sass-debug-info{filename{}line{font-family:\00003418}}
+@media -sass-debug-info{filename{}line{font-family:\00003417}}
 body > footer a, body > footer a:link, body > footer a:visited { color: #807b73; display: block; padding: .35em 1%; font-size: .95em; }
-@media -sass-debug-info{filename{}line{font-family:\00003423}}
+@media -sass-debug-info{filename{}line{font-family:\00003422}}
 body > footer a:hover, body > footer a:active, body > footer a:focus { color: #66625c; }
-@media -sass-debug-info{filename{}line{font-family:\00003425}}
+@media -sass-debug-info{filename{}line{font-family:\00003424}}
 body > footer h2 { color: #66625c; margin-top: 1.5em; font-size: 1em; border-bottom: 1px solid #cccac6; }
-@media -sass-debug-info{filename{}line{font-family:\00003430}}
+@media -sass-debug-info{filename{}line{font-family:\00003429}}
 body > footer h3 { font-weight: normal; color: #66625c; font-size: .95em; margin: 1em 0 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003435}}
+@media -sass-debug-info{filename{}line{font-family:\00003434}}
 body > footer p { color: #807b73; font-size: .95em; }
-@media -sass-debug-info{filename{}line{font-family:\00003438}}
+@media -sass-debug-info{filename{}line{font-family:\00003437}}
 body > footer .wrapper { margin: 9px 5%; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003443}}
+@media -sass-debug-info{filename{}line{font-family:\00003442}}
 #footer-links { border-bottom: 1px solid #ccc; padding-bottom: 1.5em; }
-@media -sass-debug-info{filename{}line{font-family:\00003446}}
+@media -sass-debug-info{filename{}line{font-family:\00003445}}
 #footer-links div.alpha { margin-top: 0; border-top: none; }
-@media -sass-debug-info{filename{}line{font-family:\00003448}}
+@media -sass-debug-info{filename{}line{font-family:\00003447}}
 #footer-links .addthis_default_style a { clear: left; padding: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003450}}
+@media -sass-debug-info{filename{}line{font-family:\00003449}}
 #footer-links .addthis_toolbox a { padding-left: 0; }
-@media -sass-debug-info{filename{}line{font-family:\00003452}}
+@media -sass-debug-info{filename{}line{font-family:\00003451}}
 #footer-links .addthis_toolbox a span { padding-right: 10px; margin: 0; }
 
-@media -sass-debug-info{filename{}line{font-family:\00003456}}
+@media -sass-debug-info{filename{}line{font-family:\00003455}}
 #footer-bottom { background-color: #e5e2df; border-top: 1px solid #fff; padding-bottom: 1.5em; }

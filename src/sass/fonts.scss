@@ -205,15 +205,3 @@ $fontPath:   "../font" !default;
     font-style: italic;
 
 }
-
-
-// Font Awesome
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('#{$fontPath}/font-awesome/full/fontawesome-webfont.eot?v=3.1.0');
-  src: url('#{$fontPath}/font-awesome/full/fontawesome-webfont.eot?#iefix&v=3.1.0') format('embedded-opentype'), url('#{$fontPath}/font-awesome/full/fontawesome-webfont.woff?v=3.1.0') format('woff'), url('#{$fontPath}/font-awesome/full/fontawesome-webfont.ttf?v=3.1.0') format('truetype'), url('#{$fontPath}/font-awesome/full/fontawesome-webfont.svg#fontawesomeregular?v=3.1.0') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
