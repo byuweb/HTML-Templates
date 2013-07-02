@@ -23,6 +23,10 @@ h1, h2 {
 	font-family: "CreteRound", $serif-font-stack;
 	font-weight: normal; }
 
+h2 .parentlink {
+	font-family: $sans-font-stack;
+}
+
 h3, h4, h5, h6 { 
   font-family: "OpenSans", $sans-font-stack; }
 

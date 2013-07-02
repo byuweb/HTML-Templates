@@ -4,7 +4,7 @@
   "devDependencies": {
     "grunt": "~0.4.0",
     "grunt-contrib-jade": "*",
-    "grunt-contrib-sass": "*",
+    "grunt-contrib-sass": "0.4.0",
     "grunt-contrib-uglify": "*",
     "grunt-regarde": "*",
     "grunt-contrib-connect": "*",

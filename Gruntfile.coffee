@@ -40,6 +40,7 @@ module.exports = (grunt) ->
         debugInfo: true
         trace: true
         loadPath: ['src/sass/','src/sass/shared/']
+        sourcemap: true
       compile:
         files:[
           expand: true
