@@ -33,18 +33,20 @@
         <h1><a id="site-name" href="#CHANGE-THIS-LINK">Primary Organization</a></h1><a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
       </div>
     </header>
-    <div id="search-container" role="search"><!--
-      The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
-      If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).-->
-      <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
-        <input id="search" type="search" name="search">
-        <input id="search-submit" type="submit" value="Search">
-      </form>
-      <!-- This container holds the Google custom search, if enabled-->
-      <div class="gcse-wrapper">
-        <gcse:search></gcse:search>
-      </div>
-    </div><a href="#primary-nav" class="menu-button">Menu</a>
+    <div id="search-menu">
+      <div id="search-container" role="search"><!--
+        The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
+        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).-->
+        <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
+          <input id="search" type="search" name="search">
+          <input id="search-submit" type="submit" value="Search">
+        </form>
+        <!-- This container holds the Google custom search, if enabled-->
+        <div class="gcse-wrapper">
+          <gcse:search></gcse:search>
+        </div>
+      </div><a href="#primary-nav" class="menu-button">Menu</a>
+    </div>
     <div id="content" role="main" class="wrapper clearfix">
       <!-- Breadcrumb-->
       <ul class="breadcrumb">

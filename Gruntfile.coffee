@@ -22,6 +22,7 @@ module.exports = (grunt) ->
           'js/script-touch.min.js' : ['src/js/plugins/fastclick.js', 'src/js/plugins/jrespond.js', 'src/js/bootstrap/bootstrap-dropdown.js', 'src/js/script.js', 'src/js/touch.js']
           'js/slider.min.js' : 'src/js/slider-update.js'
           'js/fonts.min.js' : ['src/js/plugins/google-fontloader.js', 'src/js/fonts.js']
+          'js/modernizr.js' : ['src/js/plugins/modernizr.js', 'src/js/plugins/modernizr-boxsizing.js']
       compile_no_uglify:
         options:
           compress: false
@@ -31,7 +32,6 @@ module.exports = (grunt) ->
           banner: ''
         files:
           'js/init.js' : 'src/js/init.js'
-          'js/modernizr.js' : 'src/js/plugins/modernizr.js'
 
     sass:
       options:
