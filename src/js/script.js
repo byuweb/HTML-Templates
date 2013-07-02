@@ -68,7 +68,9 @@ function getWidth() {
  * Args: none
  */
 function activateMenus() {
-	$('#header-top').delegate('.menu-button', 'click', function () {
+	$('#search-menu').delegate('.menu-button', 'click', function (e) {
+		e.stopPropagation();
+		e.preventDefault();
 		$('body').toggleClass('sideNav');
 	});
 
@@ -91,14 +93,6 @@ function activateMenus() {
 		e.stopPropagation();
 	});
 
-	// Menu config
-	var byuMenuConfig = {
-		sensitivity: 10,
-		interval: 75,
-		over: rollOver, // function = onMouseOver callback (REQUIRED)
-		timeout: 350, // number = milliseconds delay before onMouseOut
-		out: rollOut // function = onMouseOut callback (REQUIRED)
-	};
 	//$('#secondary-nav > ul > li, #primary-nav > ul > li').hoverIntent(byuMenuConfig);
 	$('nav.no-js').removeClass('no-js');
 

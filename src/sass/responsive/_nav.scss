@@ -12,34 +12,35 @@ body {
   left:0;
 }
 
+/* Reset from base */
+#primary-nav, #secondary-nav {
+  border-top: none;
+  padding: 0;
+}
+
+
 /* Menu button */
 .menu-button {
-  border:1px solid $blue2;
-  bottom:.5em;
-  left:32px;
-  overflow: hidden;
-  padding: .5em;
-  position: relative;
-  text-indent: -999em;
-  height: 1.5em;
-  width: 1.75em;
-  @include border-radius(3px);
-  &:hover {
-    background-color: $blue2;
-    border-color: $blue3;
-  }
-  &:before { // These are the before and after bars
-    content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  text-indent:-9999em;
+  border-right: 1px solid $blue3;
+  width: 60px;
+  height:45px;
+  @include background-image(linear-gradient($blue1, $blue0));
+  &:before {
+    content:"\f0c9";
+    font-family: "FontAwesome";
     position: absolute;
-    left: 50%;
-    top: .6em;
-    width: 1.5em;
-    margin-left:-.75em;
-    height: 0.2em;
-    background: #fff;
-    @include border-radius(1px);
-    @include box-shadow(#{"0 0.55em 0 0 #fff, 0 1.1em 0 0 #fff"});
-  } 
+    width:100%;
+    text-align: center;
+    top:  12px;
+    display: block;
+    text-indent:0;
+    font-size: 25px;
+    color:$blue8;
+  }
 }
 
 /* Side Navigation */
@@ -121,213 +122,29 @@ body {
 }
 
 
-@media all and (min-width:275px) {
 .menu-button { display: inline-block;}
+
+
+body {
+    overflow-x:visible;
+}
+
 body.sideNav {
-    left: 75%;
-//	@include transform(translateX(240px));
-	overflow-x:visible;
-    #main-header, #content, footer {
-      @include box-shadow( -5px 0px 8px rgba($blue0, .65) );
-      position: relative;
-      z-index: 2;
-    }
-  }
-  
-  .nav-container {
-    display: none;
-	height:100%;
-    padding-top:1em;
-    position: absolute;
-    right: 100%;
-    top:0;
-    width: 75%;
-    z-index: 1;
-    background-color: $blue1;
-    .sideNav & { display: block;}    
+  left: 75%;
+  #main-header, #content, footer {
+    @include box-shadow( -5px 0px 8px rgba($blue0, .65) );
+    position: relative;
+    z-index: 2;
   }
 }
 
-
-/*Full Screen Menus*/
-@media all and (min-width:$break-large) {
-  .menu-button { display: none;}
-  body.sideNav { left: 0;}
-  
-  .nav-container {
-    background-color: $blue0;
-    border-top: 1px solid $blue3;
-    border-bottom: 1px solid $blue3;
-    display: block;
-    height:auto;
-	left:0;
-    padding-top: 0;
-	position: absolute;
-    right:auto;
-    top:90px;
-    width:100%;
-	z-index:5;
-    @include box-shadow(0px 1px 8px rgba(#000, 0.35));
-  }
-
-  %tab-nav {
-    font-size: 1em;
-    > ul {
-      background: transparent;
-      > li { float:left; }
-    }
-    li {
-      border-top: 0px solid transparent;
-      border-bottom: 0px solid transparent;
-      &.hover {
-        overflow: visible;
-        > a {
-          @include border-radius(3px 3px 0 0);
-          position: relative;
-          z-index: 2;
-          box-shadow: 0px 3px 0px #fff;
-        }
-        a {
-          background: #fff;
-          color: $blue0;
-          @include text-shadow(none);
-        }
-        ul a:hover {
-          background: $blue2;
-        }
-      }
-    }
-    a {
-      padding: .6em .75em;
-    }
-  }
-  
-  %tab-nav-submenu {
-	background-color: #fff;
-    border-bottom: 2px solid $blue2;
-    display: none;
-	font-size: 13px;
-	left: 0;
-    position: absolute;
-    padding:.5em 0 1em;
-    width: 15em;
-    z-index: 1;
-    @include border-radius(3px);
-    @include box-shadow(0px 0px 12px rgba(#000, 0.5));
-    a {
-	  display: block;
-	  border: 0;
-      padding: .5em 1.5em;
-    }
-  }
-
-  #primary-nav {
-    padding-left: 2em;
-    @extend %tab-nav;
-	>ul{
-		width: 940px;
-		margin: 0 auto;
-		position: relative;
-	}
-	.mega {
-      @extend %tab-nav-submenu;
-	  height:415px;
-	  position: absolute;
-      padding: 1em 0 2em;
-	  width: 920px;
-      @include border-radius(0 0 3px 3px);
-      ul.links { margin-left: 1%; }
-    }
-	.sub { 
-		background-color: #fff;
-		border-bottom: 3px solid #369;
-		box-shadow: 0 1px 8px rgba(0,0,0,0.7);
-		display:none;
-		margin-top: 0; 
-		padding: 10px;
-		position: absolute;
-		width: 222px;
-		a {border:none;}
-		.links { width: 100%; }
-	}
-    li.hover .mega, li.hover .sub, .highlight, .featured, hr { display: block; }
-	
-    hr {
-      border:none;
-      border-top: 1px solid #ddd;
-    }
-    .featured { font-weight: bold; }
-    .links {
-	  float:left;
-	  width:220px;
-      &.double {
-        width: 400px;
-        .featured {
-          .sublinks { padding-left: 5%; }
-        }
-        .left {
-          float: left;
-          width: 50%;
-        }
-      }
-      .sublinks { 
-		padding-bottom: 0 25px 0 .25em;  
-	    li a:before {
-			content: '\25B8';
-			padding-right:4px;
-			font-size: 10px;
-			list-style-type: none;
-		}
-	  } //.sublinks
-	 }
-    .highlight {
-		float: left;
-		padding-left: 3%;
-		width: 208px;
-      a {
-        padding: 0;
-        color: $blue2;
-        &:hover {
-          color: $blue0;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-  
-  #secondary-nav {
-    position: absolute;
-	bottom: 42px;
-	right:9px;
-    @extend %tab-nav;
-    .sub { @extend %tab-nav-submenu; }
-    li.hover .sub {
-      display: block;
-	  position: absolute;
-	  left:auto;
-    }
-    a {
-	  display:inline-block;
-      color: $blue8;
-      &:hover {
-        background: transparent;
-        color: #fff;
-      }
-    }
-  }
-  
-}
-
-$min-width:48em; //768px
-$max-width:57.5em; //920px
-/*   Small adjustments for portrait mode and when the screen is wider than max body width  */
-@media screen and (min-width:$min-width) and (max-width:$max-width){
-	#primary-nav .mega{width:700px;}
-}
-
-@media screen and (min-width:940px) {
-	#secondary-nav {
-		right: 50%;
-		margin-right: -470px;
-	}
+.nav-container {
+  min-height:100%;
+  padding-top:1em;
+  position: absolute;
+  right: 100%;
+  top:0;
+  width: 75%;
+  z-index: 1;
+  background-color: $blue1;
 }

@@ -18,14 +18,9 @@ $search-buffer:10px;
 #search-menu {
 	height: auto;
 	padding: 5px;
-	padding-left: 60px;
+	padding-left: 75px;
 	@include box-sizing(border-box);
-
-	.menu-button {
-		position: absolute;
-		top:5px;
-		left:5px;
-	}
+	overflow: hidden;
 }
 
 .boxsizing #search-container {
@@ -82,6 +77,9 @@ $search-buffer:10px;
 
 	#basic-search {
 		padding-right:43px;	
+	}
+	.gcse-wrapper {
+		width:100%;
 	}
 
 	#search-submit {
