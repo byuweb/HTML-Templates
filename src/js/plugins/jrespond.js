@@ -1,4 +1,14 @@
-/*! jRespond.js v 0.10 | Author: Jeremy Fields [jeremy.fields@viget.com], 2013 | License: MIT */
+/*! 
+
+* @fileoverview jRespond.js
+* @version 0.10
+*
+* @author: Jeremy Fields [jeremy.fields@viget.com]
+* @see https://github.com/ten1seven/jRespond
+*
+* Copyright (c) 2013 Jeremy Fields
+* license: MIT 
+*/
 
 (function(win,doc,undefined) {
 

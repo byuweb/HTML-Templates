@@ -1,29 +1,40 @@
-/* touch.js */
+/*! 
+
+* @fileOverview Touch.js
+* @version 1.0
+* 
+* @author BYU Web Community
+* @see https://github.com/byuweb/
+* @see https://github.com/byuweb/byu-responsive-dev/
+* @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/touch.js
+*/
+
 
 $(function() {
 	//FastClick.attach(document.body);
 
-	document.addEventListener('touchmove', function(e) {
-	    e.preventDefault();
-	    var touch = e.touches[0];
-	    //log(touch.pageX + " / " + touch.pageY);
-	}, false);
+	var body = $('body');
 
-	$('body').on('swipeleft', function(e){
-		log('Swipe left');
-	});
-	$(window).on('swiperight', function(e){
-		log('Swipe right');
-	});
+	//Enable swiping...
+	$("#main-header, #search-menu, #content, #page-footer, .nav-container").swipe( {
 
-	$(window).on('movestart', function(e) {
-		log('movestart');
-		// If the movestart is heading off in an upwards or downwards
-		// direction, prevent it so that the browser scrolls normally.
-		if ((e.distX > e.distY && e.distX < -e.distY) || (e.distX < e.distY && e.distX > -e.distY)) {
-			
-			e.preventDefault();
-		}
+		
+		// Swipe left: close the side nav if it's open
+		swipeLeft:function(event, direction, distance, duration, fingerCount) {
+			if( body.hasClass('sideNav') ) {
+				body.toggleClass('sideNav');
+			}
+		},
+
+		// Swipe right: open the side nav if it's closed
+		swipeRight:function(event, direction, distance, duration, fingerCount) {
+			if( !body.hasClass('sideNav') ) {
+				body.toggleClass('sideNav');
+			}
+		},
+
+		//Default is 75px, set to 0 for demo so any distance triggers swipe
+		 threshold:50
 	});
 
 });

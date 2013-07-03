@@ -58,7 +58,10 @@ a {
 
 
 
-
+/** Positioning **/
+#main-header, #search-menu, #content, #page-footer, .nav-container {
+  position: relative;
+}
 
 
 

@@ -1,3 +1,14 @@
+/*! 
+
+* @fileOverview Script.js
+* @version 2.0
+* 
+* @author BYU Web Community
+* @see https://github.com/byuweb/
+* @see https://github.com/byuweb/byu-responsive-dev/
+* @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/script.js
+*/
+
 // Global Variables
 var init = false;
 		small = 300,
