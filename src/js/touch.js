@@ -33,7 +33,10 @@ $(function() {
 			}
 		},
 
-		//Default is 75px, set to 0 for demo so any distance triggers swipe
+		// Will trigger as soon as 50px is reached
+		triggerOnTouchEnd:false,
+
+		// Default is 75px, set to 0 for demo so any distance triggers swipe
 		 threshold:50
 	});
 

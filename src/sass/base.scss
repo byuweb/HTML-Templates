@@ -51,7 +51,7 @@ p, pre { margin: 10px 0; }
 code {color:#d14}
 
 a {
-  transition: background .1s ease;
+  @include transition( background .1s ease );
 }
 
 
@@ -99,6 +99,9 @@ a {
     height: 26px;
     width: 90px;
     background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
+    .svg & {
+      background-image: url($asset-base + 'img/byu-logo-sm.svg');
+    }
   }
 
   a.parentlink {

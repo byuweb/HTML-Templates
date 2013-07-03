@@ -71,19 +71,21 @@ WebFont.load({
   }
 });
 
-WebFont.load({
-  custom: {
-    families: ['FontAwesome'],
-    urls : ['css/fonts.css']
-  },
-  timeout:2500,
-  fontloading: function(fontFamily, fontDescription) {
-    progress('fontloading: ' + fontFamily + ' (' + fontDescription + ')');
-  },
-  fontactive: function(fontFamily, fontDescription) {
-    progress('fontactive: ' + fontFamily + ' (' + fontDescription + ')');
-  },
-  fontinactive: function(fontFamily, fontDescription) {
-    progress('fontinactive: ' + fontFamily + ' (' + fontDescription + ')');
-  }
-});
+
+
+// WebFont.load({
+//   custom: {
+//     families: ['FontAwesome'],
+//     urls : ['css/fonts.css']
+//   },
+//   timeout:2500,
+//   fontloading: function(fontFamily, fontDescription) {
+//     progress('fontloading: ' + fontFamily + ' (' + fontDescription + ')');
+//   },
+//   fontactive: function(fontFamily, fontDescription) {
+//     progress('fontactive: ' + fontFamily + ' (' + fontDescription + ')');
+//   },
+//   fontinactive: function(fontFamily, fontDescription) {
+//     progress('fontinactive: ' + fontFamily + ' (' + fontDescription + ')');
+//   }
+// });
