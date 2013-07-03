@@ -13,7 +13,17 @@
 $(function() {
 	//FastClick.attach(document.body);
 
-	var body = $('body');
+	var body = $('body'),
+			width = $(window).width(),
+			swipewidth = Math.floor(width * .16);
+
+	if( swipewidth > 150 ) {
+		swipewidth = 150;
+	}
+
+	if( swipewidth < 50 ) {
+		swipewidth = 50;
+	}
 
 	//Enable swiping...
 	$("#main-header, #search-menu, #content, #page-footer, .nav-container").swipe( {
@@ -37,7 +47,7 @@ $(function() {
 		triggerOnTouchEnd:false,
 
 		// Default is 75px, set to 0 for demo so any distance triggers swipe
-		 threshold:50
+		 threshold:swipewidth
 	});
 
 });
