@@ -1,0 +1,134 @@
+/**
+* All search box definitions will go in here
+*
+*/
+
+@import "compass";
+@import "colors";
+@import "mixins";
+@import "variables";
+
+
+$content-width:100%;
+$search-width: 250px; /* The width of the entire search container, used to position the Sign In button, if there is one */
+$search-buffer:10px;
+
+
+/* Small width */
+#search-menu {
+	height: auto;
+	padding: 5px;
+	padding-left: 75px;
+	@include box-sizing(border-box);
+	overflow: hidden;
+}
+
+.boxsizing #search-container {
+	padding: 0;
+	height: 32px;
+	position: relative;
+	@include border-radius(15px);
+	@include vertical-gradient($blue5,$blue4);
+	@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
+
+	.gcse-wrapper {
+		background: none;
+		.gsc-control-cse {
+			td {vertical-align: top !important;}
+			table td .gsc-input-box {
+				background: none;
+				padding: 0;
+
+				input.gsc-input {
+
+				}
+			}
+			table td .gsc-input-box-hover, table td .gsc-input-box-focus {
+				@include box-shadow(none);
+			}
+			td.gsc-search-button {
+				padding: 0;
+				input.gsc-search-button-v2 {
+					background: none;
+					border: none;
+					text-indent: -1000px;
+					overflow: hidden;
+					margin: 0 0 0 -5px;
+					padding: 8px 1.5em;
+				}
+			}
+		}
+	}
+
+	.gsc-input-box {
+		padding-right:0 !important;
+		height:auto;
+	}
+
+
+	/** Styling for both search forms **/
+	#basic-search, .gcse-wrapper {
+		margin: 0;
+		top:0;
+		left:0;
+		padding:0;
+		@include box-sizing(border-box);
+	}
+
+	#basic-search {
+		padding-right:43px;	
+	}
+	.gcse-wrapper {
+		width:100%;
+	}
+
+	#search-submit {
+		background: url(../img/search_box_icon.png) 8px 8px no-repeat;
+		overflow: hidden;
+		text-indent: -1000px;
+		margin: 0;
+		padding-left:0;
+		width:34px;
+		top:1px;
+	}
+
+	#basic-search #search, input.gsc-input {
+		border: 0 !important;
+		padding: 6px 8px 6px 14px !important;
+		background-position:14px 50% !important;
+		height: 32px;
+
+		@include box-sizing(border-box);
+		@include box-shadow(none);
+		@include border-radius(15px);
+
+		&::selection {
+			border: 0;
+		}	
+	}
+
+	input.gsc-input {
+		position: relative;
+		top: 1px;
+		height: 30px !important;
+	}
+}
+
+
+/* Medium width */
+
+@media all and (min-width:$med-width) {
+
+
+
+}
+
+/* 1024 px */
+@media all and (min-width: 1024px) {
+	$content-width:1024px;
+
+	#search-container {
+		right: 50%;
+		margin-right: -($content-width / 2);
+	}
+}

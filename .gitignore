@@ -1,3 +1,7 @@
 .sass-cache
 processform.php
 .DS_Store
+/nbproject
+/node_modules
+npm-debug.log
+Gruntfile.js

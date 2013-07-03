@@ -1,0 +1,104 @@
+// Sass Mixins
+
+@import "colors";
+
+@mixin clearfix() {
+	zoom:1;
+	&:after { clear: both; }
+	&:before, &:after {
+	  content:"";
+	  display: table; }
+}
+
+
+@mixin prefixed($prop, $val) {
+	-webkit-#{$prop}:#{$val};
+	-moz-#{$prop}:#{$val};
+	-ms-#{$prop}:#{$val};
+	-o-#{$prop}:#{$val};
+	#{$prop}:#{$val};
+}
+
+
+
+@mixin border-box() {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+// Image replacement
+@mixin ir() {
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+// Image :after
+@mixin icon($url, $urlPos, $width, $relative, $top:0, $left:0) {
+	@if $relative == true {
+	position:relative;
+	}
+	&:after {
+		content:" ";
+		position:absolute;
+		display: block;
+		width:$width;
+		height:$width;
+		top:$top;
+		left:$left;
+		background: transparent url($url) $urlPos no-repeat;
+	}
+}
+
+
+///// CSS3
+
+// column-count
+@mixin column-count($num:2) {
+ -webkit-column-count:$num;
+    -moz-column-count:$num;
+         column-count:$num;
+}
+
+
+
+// opacity
+@mixin opacity($decimal) {
+	zoom:1;
+	opacity: $decimal; // All other browsers
+	filter: alpha(opacity = ($decimal * 100)); // IE
+}
+
+// transform
+	//Examples: transform(rotate(7deg)) || transform(translateX(240px))
+@mixin transform($type...){
+	transform:$type;
+	-ms-transform:$type; /* IE 9 */
+	-webkit-transform:$type;/* Safari and Chrome */
+}
+
+
+// simple linear gradient
+@mixin vertical-gradient($top, $bottom, $topStop:0%, $bottomStop:100%) {
+	@if $topStop == 0% and $bottomStop == 100% {
+		background: mix($top, $bottom); // Old browsers
+		background:-webkit-linear-gradient(top, $top, $bottom); // Chrome10+,Safari5.1+
+		background:	  -moz-linear-gradient(top, $top, $bottom); // FF3.6+
+		background:	   -ms-linear-gradient(top, $top, $bottom); // IE10+
+		background:		-o-linear-gradient(top, $top, $bottom); // Opera 11.10+
+		background:		   linear-gradient(top, $top, $bottom); // W3C
+	}
+	@else {
+		background: mix($top, $bottom); // Old browsers
+		background:-webkit-linear-gradient(top, $top $topStop, $bottom $bottomStop); // Chrome10+,Safari5.1+
+		background:	  -moz-linear-gradient(top, $top $topStop, $bottom $bottomStop); // FF3.6+
+		background:	   -ms-linear-gradient(top, $top $topStop, $bottom $bottomStop); // IE10+
+		background:		-o-linear-gradient(top, $top $topStop, $bottom $bottomStop); // Opera 11.10+
+		background:		   linear-gradient(top, $top $topStop, $bottom $bottomStop); // W3C
+	}
+}

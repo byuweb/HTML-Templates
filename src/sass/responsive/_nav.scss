@@ -1,0 +1,201 @@
+@import "compass";
+@import "colors";
+@import "mixins";
+
+$break-large:48em; //768px
+
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/* Side slider navigation */
+
+body {
+  @include transition(left 0.2s ease);
+  position: relative;
+  left:0;
+  overflow:hidden;
+}
+
+#content {
+  background-color: white;
+}
+
+#main-header, #search-menu, #content, #page-footer {
+  z-index: 2;
+  left:0%;
+  @include transition(left 0.2s ease);
+}
+
+body.sideNav {
+
+  #main-header, #search-menu, #content, #page-footer {
+    left:75%;
+  }
+
+}
+
+.nav-container {
+  min-height:100%;
+  position: absolute;
+  left:0;
+  top:0;
+  width: 75%;
+  z-index: 1;
+  background-color: $blue1;
+
+  a:active {
+    background-color: transparent;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    width:15px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    @include background-image( linear-gradient(left, rgba($blue0, 0), rgba($blue0, .1) 25%, rgba($blue0, .65)) );
+  }
+}
+
+
+
+/* Reset from base */
+#primary-nav, #secondary-nav {
+  border-top: none;
+  padding: 0;
+}
+
+/* Menu button */
+.menu-button {
+  position: absolute;
+  top:0;
+  left:0;
+  text-indent:-9999em;
+  border-right: 1px solid $blue3;
+  width: 60px;
+  height:45px;
+  display: block;
+  @include background-image( linear-gradient($blue1, $blue0) );
+  &:hover {
+    @include background-image( linear-gradient($blue4, $blue3) );
+    &:before {
+      color: white;
+    }
+  }
+  &:before {
+    content:"\f0c9";
+    font-family: "FontAwesome";
+    position: absolute;
+    width:100%;
+    text-align: center;
+    top:  12px;
+    display: block;
+    text-indent:0;
+    font-size: 25px;
+    color:$blue8;
+  }
+}
+
+/* Side Navigation */
+%sidenav {
+  font-size: 1.2em;
+    a {
+    color: #fff;
+    padding: 1em 5%;
+    display: block;
+    @include text-shadow(0px -1px 0px #000);
+    &:hover {
+      text-decoration: none;
+      background-color: $blue0;
+    }
+  }
+  > ul {
+    padding:0;
+    background: $blue2;
+    border-right: 1px solid $blue3;
+  }
+
+  li {
+    display: block;
+    float:none;
+    padding:0;
+    border-bottom: 1px solid $blue1;
+    border-top: 1px solid $blue3;
+    overflow: hidden;
+    &.left, &.right { padding: 0; }
+    &.hover { background-color: $blue0; }
+  }
+}
+
+%submenu {
+  background-color:$blue1;
+  margin: 0;
+  max-height:0px;
+  position: relative;
+  @include transition(max-height 0.2s ease);
+  a {
+    padding-left:1.75em;
+    border-top: 1px solid $blue2;
+    border-bottom: 1px solid $blue0;
+    padding:.65em 10%;
+    padding-right:5%;
+    color: $blue9;
+    &:hover { color: #fff; }
+  }
+  ul {
+	.sublinks{ padding-left: 5%;}
+    padding: 0;
+    margin: 0;
+  }
+  li { border: none; }
+}
+
+%activemenu {  max-height:1500px;}
+
+/* Primary Nav */
+#primary-nav {
+  margin-top:1em;
+  @extend %sidenav;
+  .mega, .sub { @extend %submenu; }
+  li.hover .mega, li.hover .sub { @extend %activemenu;}
+  .highlight, .featured, hr { display: none; }
+}
+
+/* Secondary Nav */
+#secondary-nav {
+  @extend %sidenav;
+  > ul { background-color: $blue4; }
+  .sub { @extend %submenu; }
+  a:hover { background-color: $blue3;}
+  ul { padding: 0;}
+  li {
+    border-top-color: $blue5;
+    border-bottom-color: $blue3;
+    &.hover .sub { @extend %activemenu; }
+  }
+}
+
+
+
+
+
+
+/*** Medium width ***/
+@media all and ( min-width: $med-width ) {
+
+}
+
+/*** Full width ***/
+@media all and ( min-width: $full-width ) {
+
+}
+
+/*** Extra wide width ***/
+@media all and ( min-width:$extrawide-width ) {
+
+}
+

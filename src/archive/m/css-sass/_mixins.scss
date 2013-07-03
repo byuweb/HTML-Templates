@@ -1,0 +1,151 @@
+@import "colors";
+
+// Sass Mixins
+
+@mixin clearfix() {
+zoom:1;
+&:before, &:after {
+  content:"";
+  display: table; }
+&:after {
+  clear: both; }
+}
+
+
+// Image replacement
+@mixin ir() {
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	text-align: left;
+	direction: ltr;
+}
+
+// Image :after
+@mixin icon($url, $urlPos, $width, $relative, $top:0, $left:0) {
+	@if $relative == true {
+	position:relative;
+	}
+	&:after {
+		content:" ";
+		position:absolute;
+		display: block;
+		width:$width;
+		height:$width;
+		top:$top;
+		left:$left;
+		background: transparent url($url) $urlPos no-repeat;
+	}
+}
+
+
+///// CSS3
+
+// column-count
+@mixin column-count($num:2) {
+ -webkit-column-count:$num;
+    -moz-column-count:$num;
+         column-count:$num;
+}
+
+// border-radius
+@mixin border-radius($properties:3px) {
+ -webkit-border-radius: $properties;
+	-moz-border-radius: $properties;
+		 border-radius: $properties;
+}
+
+// box-shadow
+@mixin box-shadow($properties, $alpha: .5, $color: #000) {
+	@if $properties == none {
+	 -webkit-box-shadow:none;
+		-moz-box-shadow:none;
+			 box-shadow:none;	
+	}
+	@else if $alpha == 1 {
+	 -webkit-box-shadow: $properties $color;
+		-moz-box-shadow: $properties $color;
+			 box-shadow: $properties $color;
+	}		
+	@else {
+	 -webkit-box-shadow: $properties rgba($color, $alpha);
+		-moz-box-shadow: $properties rgba($color, $alpha);
+			 box-shadow: $properties rgba($color, $alpha);
+	}
+}
+
+// opacity
+@mixin opacity($decimal) {
+	zoom:1;
+	opacity: $decimal; // All other browsers
+	filter: alpha(opacity = ($decimal * 100)); // IE
+}
+
+// simple linear gradient
+@mixin linear-gradient($top, $bottom, $topStop:0%, $bottomStop:100%) {
+	@if $topStop == 0% and $bottomStop == 100% {
+		background: mix($top, $bottom); // Old browsers
+		background:-webkit-linear-gradient(top, $top, $bottom); // Chrome10+,Safari5.1+
+		background:	  -moz-linear-gradient(top, $top, $bottom); // FF3.6+
+		background:	   -ms-linear-gradient(top, $top, $bottom); // IE10+
+		background:		-o-linear-gradient(top, $top, $bottom); // Opera 11.10+
+		background:		   linear-gradient(top, $top, $bottom); // W3C
+	}
+	@else {
+		background: mix($top, $bottom); // Old browsers
+		background:-webkit-linear-gradient(top, $top $topStop, $bottom $bottomStop); // Chrome10+,Safari5.1+
+		background:	  -moz-linear-gradient(top, $top $topStop, $bottom $bottomStop); // FF3.6+
+		background:	   -ms-linear-gradient(top, $top $topStop, $bottom $bottomStop); // IE10+
+		background:		-o-linear-gradient(top, $top $topStop, $bottom $bottomStop); // Opera 11.10+
+		background:		   linear-gradient(top, $top $topStop, $bottom $bottomStop); // W3C
+	}
+}
+
+@mixin radial-gradient() {
+  background-color: transparent;
+  //background-image: -webkit-gradient(radial, center center, 0, center center, 141, from(black), to(white) ); /* old WebKit Syntax */  
+  background-image: -webkit-radial-gradient(110px 180px, ellipse closest-corner, rgba(255,255,255,1) 20%, rgba(255,255,255,.9), rgba(255,255,255,.5)); // New WebKit syntax 
+  background-image:    -moz-radial-gradient(110px 180px, ellipse closest-corner, rgba(255,255,255,1) 20%, rgba(255,255,255,.9), rgba(255,255,255,.5)); // Mozilla 
+  background-image:     -ms-radial-gradient(110px 180px, ellipse closest-corner, rgba(255,255,255,1) 20%, rgba(255,255,255,.9), rgba(255,255,255,.5)); // IE10+
+  background-image:      -o-radial-gradient(110px 180px, ellipse closest-corner, rgba(255,255,255,1) 20%, rgba(255,255,255,.9), rgba(255,255,255,.5)); // Opera
+  background-image:         radial-gradient(110px 180px, ellipse closest-corner, rgba(255,255,255,1) 20%, rgba(255,255,255,.9), rgba(255,255,255,.5)); // standard syntax
+} 
+
+@mixin byu-gradient($center:100px 20px) {
+  background-color: $blue2;
+  //background-image: -webkit-gradient(radial, center center, 0, center center, 141, from(black), to(white) ); /* old WebKit Syntax */  
+  background-image: -webkit-radial-gradient($center, ellipse closest-corner, $blue3, $blue1); // New WebKit syntax 
+  background-image:    -moz-radial-gradient($center, ellipse closest-corner, $blue3, $blue1); // Mozilla 
+  background-image:     -ms-radial-gradient($center, ellipse closest-corner, $blue3, $blue1); // IE10+
+  background-image:      -o-radial-gradient($center, ellipse closest-corner, $blue3, $blue1); // Opera
+  background-image:         radial-gradient($center, ellipse closest-corner, $blue3, $blue1); // standard syntax
+}
+
+// text-shadow
+@mixin text-shadow($properties, $alpha: 1, $color: #000) {
+	@if $properties == none {
+	 -webkit-text-shadow:none;
+		-moz-text-shadow:none;
+			 text-shadow:none;	
+	}
+	@else if $alpha == 1 {
+	 -webkit-text-shadow: $properties $color;
+		-moz-text-shadow: $properties $color;
+			 text-shadow: $properties $color;
+	}		
+	@else {
+	 -webkit-text-shadow: $properties rgba($color, $alpha);
+		-moz-text-shadow: $properties rgba($color, $alpha);
+			 text-shadow: $properties rgba($color, $alpha);
+	}
+}
+
+// transition
+@mixin transition($properties) {
+-webkit-transition: $properties; // Safari and Chrome
+   -moz-transition: $properties; // Firefox 4
+	-ms-transition: $properties; // Opera
+	 -o-transition: $properties; // Opera
+		transition: $properties;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "BYU-Templates",
+  "version": "2.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-sass": "0.4.0",
+    "grunt-contrib-uglify": "*",
+    "grunt-regarde": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-contrib-livereload": "*",
+    "coffee-script": "*"
+  }
+}

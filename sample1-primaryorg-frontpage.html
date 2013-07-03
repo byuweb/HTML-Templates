@@ -11,43 +11,53 @@
 	<title>Page Title</title>
 	<meta name="description" content="Description about your department." />
 	<meta name="author" content="Your Department Name" />
-	<meta name="keywords" content="keyword 1, keyword 2, keyword 3">
+	<meta name="keywords" content="keyword 1, keyword 2, keyword 3" />
 	
-	<meta name="viewport" content="width=device-width" />
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="change-this-directory/img/favicon.ico" />
 	
-	<link rel="shortcut icon" href="template/img/favicon.ico" />
-
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Styles -->
 	<link rel="stylesheet" href="css/base.css" />
 	<link media="all and (min-width:200px)" rel="stylesheet" href="css/responsive.css">
 	
 	<!-- Scripts loaded via script loader. See notes in init.js file. -->
-	<script src="http://byuweb.github.com/Global-Assets/js/modernizr-lab.min.js"></script>
-	<script src="http://byuweb.github.com/Global-Assets/js/jquery-1.9.1.min.js"></script>
-	<script src="http://byuweb.github.com/Global-Assets/js/jquery-migrate-1.1.1.min.js"></script>
-	<script src="js/slider-update.js"></script>
-	<script>
-	$(function () {
-		$('#slider').anythingSlider({
-			expand       : true,
-			autoPlay     : true,
-			resizeContents     : false,
-			buildStartStop      : false
-		});
+	<script src="http://byuweb.github.io/Global-Assets/js/modernizr-lab.min.js"></script>
+	<script src="js/init.js"></script>
 
-	});
+	<script> 
+	
+	$LAB
+		.script("js/slider-update.min.js")
+		.script("src/js/jquery.flexslider-min.js")
+		.wait(function(){
+			$('.flexslider').flexslider({
+				 animation: "slide"
+			});
+			
+			$('#slider').anythingSlider({
+				expand      	: true,
+				autoPlay     	: true,
+				resizeContents  : false,
+				buildStartStop  : false,
+				hashTags		: false,
+			});
+		});
 	</script>
+
 	
 </head>
 
 <body>
-  <!--[if lt IE 7]>
+<!--[if lt IE 7]>
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
   <![endif]-->
 
 	<header id="main-header" role="banner">
 		<div id="header-top" class="wrapper">
 			<div id="logo">
-				<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a> <span></span></h2>
+				<h2><a class="byu" href="http://www.byu.edu/">Brigham Young University</a><span></span></h2>
 			</div>
 		  
 		  <!-- This should link to your organization's home page -->
@@ -57,7 +67,7 @@
 
 			<div id="search-container" role="search">
   			<!-- This is the default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form. If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page). -->
-				<form class="basic-search" action="http://home.byu.edu/home/search" role="form">
+				<form id="basic-search" action="http://home.byu.edu/home/search" role="form">
 				  <input id="search" type="search" name="search" />
 				  <input id="search-submit" type="submit" value="Search" />
 				</form>
@@ -70,74 +80,10 @@
 			
 		</div>
 	</header>
-	
-	<div id="content" class="wrapper clearfix" role="main">
-	
-	<div id="feature">
-		<ul id="slider">
-			<li>
-				<div class="feature-image">
-					<img src="images/slider/feature-main.jpg" alt="" />
-				</div>
-				<div class="feature-description">
-					<h2><a href="#">Slider Feature 1</a></h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-			</li>
-			<li>
-				<div class="feature-image">
-					<img src="images/slider/feature-main-2.jpg" alt="" />
-				</div>
-				<div class="feature-description">
-					<h2><a href="#">Slider Feature 2</a></h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-								</div>
-			</li>
-			<li>
-				<div class="feature-image">
-					<img src="images/slider/feature-main-3.jpg" alt="" />
-				</div>
-				<div class="feature-description">
-					<h2><a href="#">Slider Feature 3</a></h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>				
-				</div>
-			</li>
-		</ul>
-	</div>
-	
-	<div id="calendar">
-			<h2>Calendar</h2>
-			<div id="calendarDays"></div>				
-			<ul id="calendars">
-				<li><a href="http://saas.byu.edu/calendar/">Academic Calendar</a></li>
-				<li><a href="http://arts.byu.edu/calendar/">Arts Events</a></li>
-				<li><a href="http://www.byucougars.com/schedule">Sports Schedules</a></li>
-			</ul>
-			<strong><a href="http://calendar.byu.edu/">Full Calendar</a></strong>
-		</div>
-	
-	<div id="news">
-		
-			<h2>News</h2>
-			<div id="news-container">
-				
-				<div class="news-item">
-					<img src="images/news/feature-1.jpg" height="157" width="262" alt=""/>
-					<h3><a href="#">News 1</a></h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				</div>
 
-			<div class="news-item omega">
-				<img src="images/news/feature-2.jpg" height="157" width="262" alt="" />
-				<h3><a href="#">News 2</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-			</div>
-		</div>
-			<strong><a href="#" class="baseline">Full News Page</a></strong>
-		</div>
-    </div>
-	
 	<!-- Primary Nav -->
-	<nav id="primary-nav" role="navigation">
+	<div class="nav-container">
+	<nav id="primary-nav" class="wrapper" role="navigation">
 		<ul>
 			<li><a href="">Mega Dropdown Menu</a>
 				<div class="mega">
@@ -240,27 +186,132 @@
 		<ul>
 			<li><a href="#">SecMenu1</a>
 				<ul class="sub">
-				<li><a href="">Link 1</a></li>
-				<li><a href="">Link 2</a></li>
-				<li><a href="">Link 3</a></li>
-				<li><a href="">Link 4</a></li></ul>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+				</ul>
 			</li>
 			<li><a href="#">SecMenu2</a>
 				<ul class="sub">
-				<li><a href="">Link 1</a></li>
-				<li><a href="">Link 2</a></li>
-				<li><a href="">Link 3</a></li>
-				<li><a href="">Link 4</a></li></ul>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+				</ul>
 			</li>
 			<li><a href="#">SecMenu3</a>
 				<ul class="sub">
-				<li><a href="">Link 1</a></li>
-				<li><a href="">Link 2</a></li>
-				<li><a href="">Link 3</a></li>
-				<li><a href="">Link 4</a></li></ul>
+					<li><a href="">Link 1</a></li>
+					<li><a href="">Link 2</a></li>
+					<li><a href="">Link 3</a></li>
+					<li><a href="">Link 4</a></li>
+				</ul>
 			</li>
 		</ul>
 	</nav>
+	</div>	
+	
+	<div id="content" class="wrapper clearfix" role="main">
+	
+	<div id="feature">
+		<!--Woo Themes FlexSlider-->
+		<div class="flexslider">
+			<ul class="slides">
+				<li>
+					<img src="images/slider/feature-main.jpg" alt="" />
+					<div class="feature-description">
+						<h2><a href="#">Slider Feature 1</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/slider/feature-main-2.jpg" alt="" />
+					<div class="feature-description">
+						<h2><a href="#">Slider Feature 2</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/slider/feature-main-3.jpg" alt="" />
+					<div class="feature-description">
+						<h2><a href="#">Slider Feature 3</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/slider/feature-main.jpg" alt="" />
+					<div class="feature-description">
+						<h2><a href="#">Slider Feature 4</a></h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+		
+		<!--Anything Slider-->
+		<ul id="slider">
+			<li>
+				<div class="feature-image">
+					<img src="images/slider/feature-main.jpg" alt="" />
+				</div>
+				<div class="feature-description">
+					<h2><a href="#">Slider Feature 1</a></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+			</li>
+			<li>
+				<div class="feature-image">
+					<img src="images/slider/feature-main-2.jpg" alt="" />
+				</div>
+				<div class="feature-description">
+					<h2><a href="#">Slider Feature 2</a></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+								</div>
+			</li>
+			<li>
+				<div class="feature-image">
+					<img src="images/slider/feature-main-3.jpg" alt="" />
+				</div>
+				<div class="feature-description">
+					<h2><a href="#">Slider Feature 3</a></h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>				
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="calendar">
+			<h2>Calendar</h2>
+			<div id="calendarDays"></div>				
+			<ul id="calendars">
+				<li><a href="http://saas.byu.edu/calendar/">Academic Calendar</a></li>
+				<li><a href="http://arts.byu.edu/calendar/">Arts Events</a></li>
+				<li><a href="http://www.byucougars.com/schedule">Sports Schedules</a></li>
+			</ul>
+			<strong><a href="http://calendar.byu.edu/">Full Calendar</a></strong>
+		</div>
+	
+	<div id="news">
+		
+			<h2>News</h2>
+			<div id="news-container">
+				
+				<div class="news-item">
+					<img src="images/news/feature-1.jpg" height="157" width="262" alt=""/>
+					<h3><a href="#">News 1</a></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+
+			<div class="news-item omega">
+				<img src="images/news/feature-2.jpg" height="157" width="262" alt="" />
+				<h3><a href="#">News 2</a></h3><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+			<strong><a href="#" class="baseline">Full News Page</a></strong>
+		</div>
+    </div>
+
     
 	<footer role="contentinfo">
 		<div id="footer-links">
@@ -317,27 +368,6 @@
 			<p><a href="http://home.byu.edu/home/copyright">Copyright&#169; 2011, All Rights Reserved</a></p>
 		</div>
 	</footer>
-	<!--CONTENT END-->
-  <!-- SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS -->
-  <script>
-		(function() {		
- 			var cx = '009932716493032633443:hlqjz33kfkc';
-			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				'//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
- 		})();
-	</script>
-
-
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
-	
+	<!--CONTENT END-->	
 </body>
 </html>

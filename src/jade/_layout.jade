@@ -1,0 +1,306 @@
+//-	===============
+//-	MIXINS
+//-	===============
+mixin secondaryMenuItem(title, num)
+	li
+		a(href='#') #{title}
+		ul.sub
+			mixin addListLinks(1,4)
+
+
+mixin addListLinks(start, end, title)
+	- if (title == undefined) title = 'Links';
+	- for (var i = start; i <= end; i++) {
+		li: a(href='') #{title} #{i}
+	- }
+
+mixin addLinks(start, end, title)
+	- if (title == undefined) title = 'Link';
+	- for (var i = start; i <= end; i++) {
+		a(href='') #{title} #{i}
+	- }
+
+
+
+
+
+
+
+//-	===============
+//-	PAGE START
+//-	===============
+
+!!! 5
+//[if lt IE 7]> <html lang="en" class="no-js oldie lt-ie9 lt-ie8 lt-ie7"><![endif]
+//[if IE 7]>    <html lang="en" class="no-js oldie lt-ie9 lt-ie8"><![endif]
+//[if IE 8]>    <html lang="en" class="no-js oldie lt-ie9"><![endif]
+//[if gt IE 8]><!
+html.no-js(lang="en")
+	// <![endif]
+
+
+	//-	===============
+	//-	HEAD
+	//-	===============
+	block head
+		head
+			meta(charset='UTF-8')
+			meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+			title
+				block pageTitle
+			meta(name='description', content='Description about your department.')
+			meta(name='author', content='Your Department Name')
+			meta(name='keywords', content='keyword 1, keyword 2, keyword 3')
+			meta(name='viewport', content='width=device-width, , initial-scale=1')
+
+			// Place favicon.ico and apple-touch-icon.png in the root directory
+			link(rel='shortcut icon', href='favicon.ico')
+
+			// Styles
+			link(rel='stylesheet', href='css/base.css')
+			link(media='all and (min-width:300px)', rel='stylesheet', href='css/responsive.css')
+
+			// Scripts loaded via script loader. See notes in init.js file.
+			script(src='js/modernizr.js')
+			script(src='js/init.js')
+
+
+	//-	===============
+	//-	BODY START
+	//-	===============
+	body
+		//if lt IE 7
+			p.chromeframe
+				| You are using an
+				strong outdated
+				| browser. Please
+				a(href='http://browsehappy.com/') upgrade your browser
+				| or
+				a(href='http://www.google.com/chromeframe/?redirect=true') activate Google Chrome Frame
+				| to improve your experience.
+
+
+
+
+		//-	===============
+		//-	HEADER
+		//-	===============
+		block header
+			header#main-header(role='banner')
+				#header-top.wrapper
+					#logo
+						h2
+							block parentlink
+								a.byu(href='http://www.byu.edu/') Brigham Young University
+
+					// This should link to your organization's home page
+					h1
+						a#site-name(href='#CHANGE-THIS-LINK')
+							block heading
+								| Organization Title
+
+					a.sign-in.button(href='http://home.byu.edu/home/cas') Sign in
+
+
+
+
+		//-	===============
+		//-	SEARCH
+		//-	===============
+		block search-menu
+			#search-menu
+				#search-container(role='search')
+
+					//
+						| The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
+						| If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).
+					form#basic-search(action='http://home.byu.edu/home/search', role='form')
+						input#search(type='search', name='search')
+						input#search-submit(type='submit', value='Search')
+
+					// This container holds the Google custom search, if enabled
+					.gcse-wrapper
+						gcse:search
+
+
+				//-	===============
+				//-	MENU BUTTON
+				//-	===============
+				a.menu-button(href="#primary-nav") Menu
+
+
+
+
+
+		//-	===============
+		//-	MAIN CONTENT WRAPPER
+		//-	===============
+
+		#content.wrapper.clearfix(role='main')
+
+
+
+
+			//-	===============
+			//-	BREADCRUMB
+			//-	===============
+
+			block breadcrumb
+				// Breadcrumb
+				ul.breadcrumb
+					li
+						.dropdown
+							a.home.dropdown-toggle.needsclick(href="", data-toggle="dropdown")
+								i.icon-home.icon-large
+								span.visuallyhidden Home
+								i.icon-caret-down
+							ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu")
+								li: a(href='www.byu.edu') BYU Home
+								li: a(href='#') Organization Home
+								li: a(href='#') Two Pages Above
+							i.divider.icon-angle-right
+					li
+						a(href="#") One page above
+						i.divider.icon-angle-right
+					li.active Current Page
+
+
+
+
+
+			//-	===============
+			//-	CONTENT
+			//-	===============
+			block content
+
+
+
+
+		//-	===============
+		//-	NAV
+		//-	===============
+		block nav
+			.nav-container
+
+				// Primary Nav
+				nav#primary-nav(role='navigation'): ul
+					li
+						a(href='') Mega Dropdown Menu
+						.mega
+							ul.links
+								li.featured: ul
+									mixin addListLinks(1,2,'Featured Link')
+								li
+									a(href='#') Link 1
+								li
+									a(href='#') Link 2
+									ul.sublinks
+										mixin addListLinks(1,3,'Sublink')
+								mixin addListLinks(3,6)
+							.highlight
+								a(href='#'): span.img.menu1.jpg(title='')
+								p: a(href='#') Picture Link
+								p Text text text text text.
+							.highlight
+								a(href='#'): span.img.menu2.jpg(title='')
+								p: a(href='#') Picture Link
+								p Text text text text text.
+					li
+						a(href='') Double Mega Dropdown Menu
+						.mega
+							ul.links.double
+								li.featured: ul
+									mixin addListLinks(1,2,'Featured Link')
+								li.left: ul
+									li
+										a(href='#') Link 1
+									li
+										a(href='#') Link 2
+										ul.sublinks
+											mixin addListLinks(1,5,'Sublink')
+									mixin addListLinks(3,6)
+								li.left: ul
+									mixin addListLinks(7,12)
+							.highlight
+								a(href='#'): span.img.menu1.jpg(title='')
+								p: a(href='#') Picture Link
+								p Text text text text text.
+							.highlight
+								a(href='#'): span.img.menu2.jpg(title='')
+								p: a(href='#') Picture Link
+								p Text text text text text.
+					li
+						a(href='') Basic Dropdown Menu
+						.sub: ul.links
+							mixin addListLinks(1,4)
+					li
+						a.single(href='') Direct Menu Link
+
+				// Secondary Nav
+				nav#secondary-nav(role='navigation'): ul
+					mixin secondaryMenuItem('SecMenu1', 4)
+					mixin secondaryMenuItem('SecMenu2', 4)
+					mixin secondaryMenuItem('SecMenu3', 4)
+
+
+
+		//-	===============
+		//-	FOOTER
+		//-	===============
+		block footer
+			footer#page-footer(role='contentinfo')
+				#footer-links
+					.wrapper
+						.col.alpha
+							h2 Footer Column 1
+							mixin addLinks(1,4)
+						.col
+							h2 Footer Column 2
+							mixin addLinks(1,4)
+						.col.double
+							h2 Footer Double Column
+							.left.alpha
+								mixin addLinks(1,4, "Left Link")
+							.right.omega
+								mixin addLinks(1,4, "Right Link")
+						.col.omega
+							h2 Footer Column 4
+							mixin addLinks(1,4)
+
+				#footer-bottom
+					.wrapper
+						p
+							a#lds(href='http://lds.org/') The Church of Jesus Christ of Latter-day Saints
+							a#byui(href='http://byui.edu/') BYU-Idaho
+							a#byuh(href='http://byuh.edu/') BYU-Hawaii
+							a#ldsbc(href='http://www.ldsbc.edu/') LDS Business College
+						p
+							a#copyright(href='http://home.byu.edu/home/copyright') Copyright© 2011, All Rights Reserved
+			//
+				| CONTENT END
+
+
+
+		//- ===============
+		//- END SCRIPTS
+		//- ===============
+		block end-scripts
+
+			script
+				/* SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS */
+
+				(function() {
+					var cx = '009932716493032633443:hlqjz33kfkc';
+					var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+					gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+					'//www.google.com/cse/cse.js?cx=' + cx;
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(gcse, s);
+				})();
+
+			script
+				/* Google Analytics: change UA-XXXXX-X to be your site's ID. */
+				var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+				g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+				s.parentNode.insertBefore(g,s)}(document,'script'));

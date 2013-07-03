@@ -1,0 +1,481 @@
+/* Base.css
+* The lowest common demoninator style definitions which all browsers will load. No CSS3.
+*/
+
+@import "compass";
+@import "colors";
+@import "mixins";
+@import "variables";
+
+@import "base/normalize"; // Great place to start
+@import "base/h5bp"; // Good defaults from HTML5 Boilerplate
+@import "base/prettify";
+@import "base/basics";
+
+
+
+
+
+
+$sans-font-stack: "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans", Helvetica,Arial,sans-serif;
+$serif-font-stack: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
+
+
+/*** Type ***/
+
+$baseSize:16; // 16px
+$fontSize:13; // 14px
+$lineHeight:18; // 20px
+
+body, button, input, select, textarea {
+  color: #444;
+  font-family: $sans-font-stack;
+  font-size:$fontSize + px;
+  line-height:$lineHeight + px;
+  -webkit-text-size-adjust:100%; }
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: $serif-font-stack;
+  margin: 10px 0; 
+  line-height:1.2;
+}
+h2, h3, h4, h5, h6 { color: #444; }
+h1 { font-size:    2em; margin: 20px 0 10px; line-height:1.1;  } // 28px
+h2 { font-size: 1.65em; margin: 15px 0 10px; line-height:1.1; } // 23.1px
+h3 { font-size: 1.25em; } // 17.5px
+h4 { font-size:  1.1em; } // 15.4px
+h5 { font-size:    1em; } // 14px
+h6 { font-size:   .9em; } // 12.6px
+p, pre { margin: 10px 0; }
+
+code {color:#d14}
+
+a {
+  @include transition( background .1s ease );
+}
+
+
+
+
+
+/** Positioning **/
+#main-header, #search-menu, #content, #page-footer, .nav-container {
+  position: relative;
+}
+
+
+
+
+/*** Header ***/
+
+#main-header {
+  background-color: $blue2;
+  border-bottom:1px solid $blue2;
+}
+
+
+#header-top {
+  position: relative;
+  h1 {
+    font-size: 2.2em;
+    margin: .5em 5% .25em;
+    a { color: #fff; }
+  }
+  a.sign-in {
+    position: absolute;
+    top: .35em;
+	right:5%;
+  }
+}
+
+#logo {
+  background-color:$blue1;
+  border-bottom: 1px solid $blue3;
+  padding:.35em 0 .45em;
+
+  a.byu, a.byulink {
+    @include ir();
+    display: inline-block;
+    height: 26px;
+    width: 90px;
+    background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
+    .svg & {
+      background-image: url($asset-base + 'img/byu-logo-sm.svg');
+    }
+  }
+
+  a.parentlink {
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 8px 2px;
+    color: $blue8;
+    line-height: 1.2;
+    height: 26px;
+    vertical-align: top;
+  }
+  h2 { 
+    margin:0;
+    margin-right: 100px; 
+    line-height: 26px;
+  }
+  a  { display:block;}
+}
+
+a.mybyu, a.sign-in, .open #search-button, #search-submit, .gcse-wrapper input.gsc-search-button {
+  background-color:$blue5;
+  border:none;
+  color:#fff;
+  font-weight: bold;
+  padding: 5px 18px;
+  text-decoration: none;
+  @include border-radius(14px);
+  &:hover, &:active {
+    margin: -2px;
+    background-color: $blue4;
+    border: 2px solid $blue7;
+    cursor:pointer;
+    @include border-radius(16px);
+  }
+}
+
+.menu-button {
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Search ***/
+
+$searchButtonWidth: 50px;
+$searchPadding: 10px;
+$sidePadding:5px;
+
+/* Search box styling for mobile */
+#search-menu {
+  width: 100%;
+  position:relative;
+  display: block;
+  background-color:$blue0;
+  border-top:   1px solid $blue3;
+  border-bottom:1px solid $blue3;
+  height: 36px;
+  padding-top: 1px;
+  padding-bottom: 4px;
+}
+
+#search-container {
+
+  textarea:hover,
+  input:hover,
+  textarea:active,
+  input:active,
+  textarea:focus,
+  input:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+  }
+
+  // Google Search Form reset
+  .gcse-wrapper {
+    background: none;
+    position:absolute;
+    padding: 0 $sidePadding;
+    top:1px;
+    left:0;
+
+    div, table, td, form {
+      padding:0;
+      margin:0;
+      border:0;
+      background:none;
+      position:static;
+    }
+
+    .gsc-results-wrapper-overlay {
+      background:#fff;
+      left:1%;
+      width:92%;
+      padding: 10px 3%;
+
+      .gsc-above-wrapper-area {
+        padding-right:20px;
+      }
+
+      .gsc-results-close-btn {
+        top: 7px;
+        right:7px;
+        &:before {
+          content:"×";
+          font-size: 25px;
+          position: absolute;
+          top:0;
+          left:0;
+          color:#999;
+        }
+        &:hover:before {
+          color:#333;
+        }
+      }
+    }
+
+    .gsc-result {
+      padding:.75em 0;
+    }
+  }
+
+  // Basic search container
+  #basic-search {
+    position: relative;
+    padding-right: ($searchPadding * 2) + $searchButtonWidth + $sidePadding + 2px;
+    padding-left:$sidePadding;
+    padding-top:4px;
+  }
+
+
+  // Basic submit button
+	#search-submit {
+		background-image: url(../img/search_box_icon.png);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		text-indent: -1000px;
+		padding: 5px;
+    display: block;
+    width:$searchButtonWidth;
+    position: absolute;
+    top:4px;
+    right:$sidePadding;
+    &:hover, &:active {
+      right:$sidePadding + 2;
+    }
+	}
+
+  .gsc-search-button, .gsc-search-button-v2 {
+    background-color: $blue5;
+    background-image: none;
+    padding: 7px 18px;
+    position: relative;
+    top:1px;
+    &:hover, &:active {
+      margin: 0;
+      margin-right:-2px;
+    }
+  }
+
+  // Textinput fields
+  #basic-search #search, input.gsc-input {
+    margin-bottom: 0;
+    vertical-align: top;
+    @include border-radius(15px);
+    padding: 5px $searchPadding !important;
+    border: 0 !important;
+    font-size: $fontSize + px;
+    display: block;
+    width: 100%;
+  }
+
+  input.gsc-input {
+    background-position:14px 50% !important;
+  }
+
+  // GCSE textinput container
+  .gsc-input-box {
+    padding-right:$searchPadding * 2 !important;
+    position: relative;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Navigation ***/
+.nav-container {
+  a {
+    font-size: 14px;
+    padding:.5em 0;
+    display: block;
+    font-weight: bold;
+    padding-left:5%;
+    padding-right:5%;
+    &:hover, &:active {
+      background-color: #eeebe9;
+      color: $blue0;
+    }
+  }
+  .mega, .sub, .sublinks {
+    a {
+      font-weight: normal;
+      padding-left:10%;
+    }
+  }
+  .featured, .highlight {
+    display: none;
+  }
+
+  .sublinks {
+    list-style: none;
+    font-size: 13px;
+    a {
+      padding-left: 15%;
+    }
+  }
+}
+
+#primary-nav, #secondary-nav {
+  border-top:1px solid #ddd;
+  padding:10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Main Content ***/
+
+.wrapper { margin: 0; }
+
+#content {
+	padding:1em 5% 2em;
+	h1{color: $blue1;}
+}
+
+
+
+
+
+// Breadcrumb
+.breadcrumb {
+  display: none;
+}
+
+
+
+
+// Calendar
+#calendar {
+  h2 { margin-bottom:0; }
+}
+.day {
+  a, span { display:block; }
+  span.date {
+    margin-right:.33em;
+    display: inline;
+    font-weight:normal; }
+}
+
+#calendars {
+  margin:0;
+  padding:.5em 0 0;
+}
+
+#calendar, #news {
+  border-top:4px solid #f7f7f7;
+  margin-top:1px;
+  padding-bottom:1em;
+}
+#calendar, #news, #feature { border-bottom:1px solid #ccc; }
+ul#calendars{ list-style: none}
+.day { padding:.75em 0 0}
+a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; padding-bottom:1.5em; display: block;}
+
+
+
+
+
+
+// News
+.news-item {padding:.25em 0 0}
+.briefs-item {padding:.1em 0 0}
+#briefs-container {border-bottom:1px solid #eee; padding-bottom:.75em; margin-bottom:.5em;}
+
+
+
+
+
+
+// Footer
+body > footer {
+  background-color:#eeebe9;
+  border-top:1px solid #fff;
+  border-bottom:2px solid transparent;
+  a, a:link, a:visited {
+    color: $brown1;
+    display: block;
+    padding:.35em 1%;
+    font-size:.95em; }
+  a:hover, a:active, a:focus {
+    color:$brown0; }
+  h2 {
+    color:$brown0;
+    margin-top:1.5em;
+    font-size:1em;
+    border-bottom:1px solid $brown3; }
+  h3 {
+    font-weight:normal;
+    color:$brown0;
+    font-size:.95em;
+    margin:1em 0 0; }
+  p {
+    color:$brown1;
+    font-size:.95em; }
+  .wrapper {
+    margin: 9px 5%;
+  }
+}
+
+#footer-links {
+  border-bottom:1px solid #ccc;
+  padding-bottom:1.5em;
+  div.alpha {
+    margin-top:0; border-top:none; }
+  .addthis_default_style a {
+    clear:left;padding:0;}
+  .addthis_toolbox a {
+    padding-left:0;
+    span {
+      padding-right:10px;
+      margin:0; } } }
+
+#footer-bottom {
+  background-color:#e5e2df;
+  border-top:1px solid #fff;
+  padding-bottom:1.5em;
+ }

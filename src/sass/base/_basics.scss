@@ -1,0 +1,56 @@
+// Basics.scss
+
+@import "colors";
+
+/*** Base tags ***/
+html, body { width:100%; overflow-x:hidden; }
+body em { font-style:italic; }
+body strong { font-weight:bold; }
+body, select, input, textarea { color: #444 }
+p a { text-decoration: underline}
+	/* Blockquotes */
+blockquote { font-style:italic; margin:1.5em 10px; padding:.5em 10px; background-color:#f4f4f4; border:1px solid #dedede; box-shadow:2px 3px 5px 0 #dedede; -moz-box-shadow:2px 3px 5px 0 #dedede; -webkit-box-shadow:2px 3px 5px 0 #dedede; color:#333; margin:25px 20px 25px 0; padding:3px 25px;}
+blockquote:before { color:#bbb; content:"\201C"; font-size:3em; line-height:.1em; margin-right:.2em; vertical-align:-.4em;}
+blockquote:after { color:#bbb; content:"\201D"; font-size:3em; line-height:.1em; vertical-align:-.45em;}
+blockquote :first-child { display:inline}
+
+/* Links */
+a, a:link { color:$blue4; text-decoration:none;}
+a:hover { color:$blue1; text-decoration:underline;}
+a:active { color: #c00}
+a:visited { color: #539}
+
+/* Images */
+img {max-width:100%}
+
+/* Tables */
+table { border-collapse:collapse; border-spacing:0; margin:0 0 9px;}
+table, td, th { border:1px solid #ddd}
+td, th { padding:.125em .5em; text-align:left; vertical-align:top;}
+td { border-left:1px dotted #eee; border-right:1px dotted #eee;}
+th { background:#f9f9f9; border-right:1px solid #e9e9e9; border-left:1px solid #e9e9e9;}
+table caption { color:#888; text-align:left; margin:.15em .25em; font-style:italic;}
+tfoot { font-weight:bold;
+td { color:#666; border-top-color:#666;} }
+td, td img { vertical-align:top}
+
+/* Lists */
+//ul, ol { margin-left: 1.5em }
+ol { list-style-type:decimal; margin-left:2em;
+  ol { list-style-type: lower-alpha;
+    ol { list-style-type: lower-roman;
+      ol { list-style-type: decimal;
+        ol { list-style-type: lower-alpha;
+          ol { list-style-type: lower-roman; } } } } } }
+ul { list-style-type:disc; margin-left:2em;
+  ul { list-style-type: circle;
+    ul { list-style-type: disc;
+      ul { list-style-type: circle;
+        ul { list-style-type: disc;
+          ul { list-style-type: circle; } } } } } }
+ul ul { margin-top:.25em; margin-bottom:.25em;}
+nav ul, nav ul ul { list-style:none}
+nav ul, nav li { margin:0;}
+dt { font-weight: bold }
+dd { padding: 0 0 .75em 1em }
+dl, menu, ol, ul { padding:0; }

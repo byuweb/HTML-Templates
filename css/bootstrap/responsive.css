@@ -1,0 +1,532 @@
+/*
+ * Bootstrap Responsive v2.3.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+@-ms-viewport { width: device-width; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000315}}
+.hidden { display: none; visibility: hidden; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000323}}
+.visible-phone { display: none !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000324}}
+.visible-tablet { display: none !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000327}}
+.hidden-desktop { display: none !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000328}}
+.visible-desktop { display: inherit !important; }
+
+@media (min-width: 768px) and (max-width: 979px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000333}}
+  .hidden-desktop { display: inherit !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000334}}
+  .visible-desktop { display: none !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000336}}
+  .visible-tablet { display: inherit !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000338}}
+  .hidden-tablet { display: none !important; } }
+@media (max-width: 767px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000344}}
+  .hidden-desktop { display: inherit !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000345}}
+  .visible-desktop { display: none !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000347}}
+  .visible-phone { display: inherit !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000349}}
+  .hidden-phone { display: none !important; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000353}}
+.visible-print { display: none !important; }
+
+@media print { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000357}}
+  .visible-print { display: inherit !important; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000358}}
+  .hidden-print { display: none !important; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000362}}
+.clearfix { *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000315}}
+.clearfix:before, .clearfix:after { display: table; content: ""; line-height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000322}}
+.clearfix:after { clear: both; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000367}}
+.hide-text { font: 0/0 a; color: transparent; text-shadow: none; background-color: transparent; border: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-utilities\.scss}line{font-family:\0000372}}
+.input-block-level { display: block; width: 100%; min-height: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+@media (min-width: 1200px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003567}}
+  .row { margin-left: -30px; *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000315}}
+  .row:before, .row:after { display: table; content: ""; line-height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000322}}
+  .row:after { clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003572}}
+  [class*="span"] { float: left; min-height: 1px; margin-left: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003582}}
+  .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 1170px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span1 { width: 70px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span2 { width: 170px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span3 { width: 270px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span4 { width: 370px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span5 { width: 470px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span6 { width: 570px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span7 { width: 670px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span8 { width: 770px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span9 { width: 870px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span10 { width: 970px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span11 { width: 1070px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span12 { width: 1170px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset1 { margin-left: 130px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset2 { margin-left: 230px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset3 { margin-left: 330px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset4 { margin-left: 430px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset5 { margin-left: 530px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset6 { margin-left: 630px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset7 { margin-left: 730px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset8 { margin-left: 830px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset9 { margin-left: 930px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset10 { margin-left: 1030px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset11 { margin-left: 1130px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset12 { margin-left: 1230px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003614}}
+  .row-fluid { width: 100%; *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000315}}
+  .row-fluid:before, .row-fluid:after { display: table; content: ""; line-height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000322}}
+  .row-fluid:after { clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003617}}
+  .row-fluid [class*="span"] { display: block; width: 100%; min-height: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; margin-left: 2.5641%; *margin-left: 2.51091%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003623}}
+  .row-fluid [class*="span"]:first-child { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003628}}
+  .row-fluid .controls-row [class*="span"] + [class*="span"] { margin-left: 2.5641%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span1 { width: 5.98291%; *width: 5.92971%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span2 { width: 14.52991%; *width: 14.47672%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span3 { width: 23.07692%; *width: 23.02373%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span4 { width: 31.62393%; *width: 31.57074%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span5 { width: 40.17094%; *width: 40.11775%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span6 { width: 48.71795%; *width: 48.66476%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span7 { width: 57.26496%; *width: 57.21177%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span8 { width: 65.81197%; *width: 65.75877%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span9 { width: 74.35897%; *width: 74.30578%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span10 { width: 82.90598%; *width: 82.85279%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span11 { width: 91.45299%; *width: 91.3998%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span12 { width: 100%; *width: 99.94681%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset1 { margin-left: 11.11111%; *margin-left: 11.00473%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset1:first-child { margin-left: 8.54701%; *margin-left: 8.44063%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset2 { margin-left: 19.65812%; *margin-left: 19.55174%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset2:first-child { margin-left: 17.09402%; *margin-left: 16.98763%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset3 { margin-left: 28.20513%; *margin-left: 28.09875%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset3:first-child { margin-left: 25.64103%; *margin-left: 25.53464%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset4 { margin-left: 36.75214%; *margin-left: 36.64575%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset4:first-child { margin-left: 34.18803%; *margin-left: 34.08165%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset5 { margin-left: 45.29915%; *margin-left: 45.19276%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset5:first-child { margin-left: 42.73504%; *margin-left: 42.62866%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset6 { margin-left: 53.84615%; *margin-left: 53.73977%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset6:first-child { margin-left: 51.28205%; *margin-left: 51.17567%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset7 { margin-left: 62.39316%; *margin-left: 62.28678%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset7:first-child { margin-left: 59.82906%; *margin-left: 59.72268%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset8 { margin-left: 70.94017%; *margin-left: 70.83379%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset8:first-child { margin-left: 68.37607%; *margin-left: 68.26969%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset9 { margin-left: 79.48718%; *margin-left: 79.3808%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset9:first-child { margin-left: 76.92308%; *margin-left: 76.81669%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset10 { margin-left: 88.03419%; *margin-left: 87.92781%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset10:first-child { margin-left: 85.47009%; *margin-left: 85.3637%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset11 { margin-left: 96.5812%; *margin-left: 96.47481%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset11:first-child { margin-left: 94.01709%; *margin-left: 93.91071%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset12 { margin-left: 105.12821%; *margin-left: 105.02182%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset12:first-child { margin-left: 102.5641%; *margin-left: 102.45772%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003671}}
+  input, textarea, .uneditable-input { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003676}}
+  .controls-row [class*="span"] + [class*="span"] { margin-left: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span1, textarea.span1, .uneditable-input.span1 { width: 56px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span2, textarea.span2, .uneditable-input.span2 { width: 156px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span3, textarea.span3, .uneditable-input.span3 { width: 256px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span4, textarea.span4, .uneditable-input.span4 { width: 356px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span5, textarea.span5, .uneditable-input.span5 { width: 456px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span6, textarea.span6, .uneditable-input.span6 { width: 556px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span7, textarea.span7, .uneditable-input.span7 { width: 656px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span8, textarea.span8, .uneditable-input.span8 { width: 756px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span9, textarea.span9, .uneditable-input.span9 { width: 856px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span10, textarea.span10, .uneditable-input.span10 { width: 956px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span11, textarea.span11, .uneditable-input.span11 { width: 1056px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span12, textarea.span12, .uneditable-input.span12 { width: 1156px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-1200px-min\.scss}line{font-family:\0000318}}
+  .thumbnails { margin-left: -30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-1200px-min\.scss}line{font-family:\0000321}}
+  .thumbnails > li { margin-left: 30px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-1200px-min\.scss}line{font-family:\0000324}}
+  .row-fluid .thumbnails { margin-left: 0; } }
+@media (min-width: 768px) and (max-width: 979px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003567}}
+  .row { margin-left: -20px; *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000315}}
+  .row:before, .row:after { display: table; content: ""; line-height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000322}}
+  .row:after { clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003572}}
+  [class*="span"] { float: left; min-height: 1px; margin-left: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003582}}
+  .container, .navbar-static-top .container, .navbar-fixed-top .container, .navbar-fixed-bottom .container { width: 724px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span1 { width: 42px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span2 { width: 104px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span3 { width: 166px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span4 { width: 228px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span5 { width: 290px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span6 { width: 352px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span7 { width: 414px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span8 { width: 476px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span9 { width: 538px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span10 { width: 600px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span11 { width: 662px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003593}}
+  .span12 { width: 724px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset1 { margin-left: 82px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset2 { margin-left: 144px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset3 { margin-left: 206px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset4 { margin-left: 268px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset5 { margin-left: 330px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset6 { margin-left: 392px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset7 { margin-left: 454px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset8 { margin-left: 516px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset9 { margin-left: 578px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset10 { margin-left: 640px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset11 { margin-left: 702px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003599}}
+  .offset12 { margin-left: 764px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003614}}
+  .row-fluid { width: 100%; *zoom: 1; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000315}}
+  .row-fluid:before, .row-fluid:after { display: table; content: ""; line-height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\0000322}}
+  .row-fluid:after { clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003617}}
+  .row-fluid [class*="span"] { display: block; width: 100%; min-height: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; float: left; margin-left: 2.76243%; *margin-left: 2.70924%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003623}}
+  .row-fluid [class*="span"]:first-child { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003628}}
+  .row-fluid .controls-row [class*="span"] + [class*="span"] { margin-left: 2.76243%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span1 { width: 5.8011%; *width: 5.74791%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span2 { width: 14.36464%; *width: 14.31145%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span3 { width: 22.92818%; *width: 22.87499%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span4 { width: 31.49171%; *width: 31.43852%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span5 { width: 40.05525%; *width: 40.00206%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span6 { width: 48.61878%; *width: 48.56559%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span7 { width: 57.18232%; *width: 57.12913%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span8 { width: 65.74586%; *width: 65.69266%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span9 { width: 74.30939%; *width: 74.2562%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span10 { width: 82.87293%; *width: 82.81974%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span11 { width: 91.43646%; *width: 91.38327%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003640}}
+  .row-fluid .span12 { width: 100%; *width: 99.94681%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset1 { margin-left: 11.32597%; *margin-left: 11.21958%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset1:first-child { margin-left: 8.56354%; *margin-left: 8.45715%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset2 { margin-left: 19.8895%; *margin-left: 19.78312%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset2:first-child { margin-left: 17.12707%; *margin-left: 17.02069%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset3 { margin-left: 28.45304%; *margin-left: 28.34666%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset3:first-child { margin-left: 25.69061%; *margin-left: 25.58422%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset4 { margin-left: 37.01657%; *margin-left: 36.91019%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset4:first-child { margin-left: 34.25414%; *margin-left: 34.14776%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset5 { margin-left: 45.58011%; *margin-left: 45.47373%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset5:first-child { margin-left: 42.81768%; *margin-left: 42.7113%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset6 { margin-left: 54.14365%; *margin-left: 54.03726%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset6:first-child { margin-left: 51.38122%; *margin-left: 51.27483%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset7 { margin-left: 62.70718%; *margin-left: 62.6008%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset7:first-child { margin-left: 59.94475%; *margin-left: 59.83837%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset8 { margin-left: 71.27072%; *margin-left: 71.16434%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset8:first-child { margin-left: 68.50829%; *margin-left: 68.4019%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset9 { margin-left: 79.83425%; *margin-left: 79.72787%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset9:first-child { margin-left: 77.07182%; *margin-left: 76.96544%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset10 { margin-left: 88.39779%; *margin-left: 88.29141%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset10:first-child { margin-left: 85.63536%; *margin-left: 85.52898%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset11 { margin-left: 96.96133%; *margin-left: 96.85494%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset11:first-child { margin-left: 94.1989%; *margin-left: 94.09251%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003646}}
+  .row-fluid .offset12 { margin-left: 105.52486%; *margin-left: 105.41848%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003647}}
+  .row-fluid .offset12:first-child { margin-left: 102.76243%; *margin-left: 102.65605%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003671}}
+  input, textarea, .uneditable-input { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003676}}
+  .controls-row [class*="span"] + [class*="span"] { margin-left: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span1, textarea.span1, .uneditable-input.span1 { width: 28px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span2, textarea.span2, .uneditable-input.span2 { width: 90px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span3, textarea.span3, .uneditable-input.span3 { width: 152px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span4, textarea.span4, .uneditable-input.span4 { width: 214px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span5, textarea.span5, .uneditable-input.span5 { width: 276px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span6, textarea.span6, .uneditable-input.span6 { width: 338px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span7, textarea.span7, .uneditable-input.span7 { width: 400px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span8, textarea.span8, .uneditable-input.span8 { width: 462px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span9, textarea.span9, .uneditable-input.span9 { width: 524px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span10, textarea.span10, .uneditable-input.span10 { width: 586px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span11, textarea.span11, .uneditable-input.span11 { width: 648px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_mixins\.scss}line{font-family:\00003688}}
+  input.span12, textarea.span12, .uneditable-input.span12 { width: 710px; } }
+@media (max-width: 767px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\000039}}
+  body { padding-left: 20px; padding-right: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000316}}
+  .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top { margin-left: -20px; margin-right: -20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000321}}
+  .container-fluid { padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000329}}
+  .dl-horizontal dt { float: none; clear: none; width: auto; text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000335}}
+  .dl-horizontal dd { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000343}}
+  .container { width: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000347}}
+  .row-fluid { width: 100%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000352}}
+  .row, .thumbnails { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000355}}
+  .thumbnails > li { float: none; margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000362}}
+  [class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"] { float: none; display: block; width: 100%; margin-left: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000370}}
+  .span12, .row-fluid .span12 { width: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000374}}
+  .row-fluid [class*="offset"]:first-child { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000387}}
+  .input-large, .input-xlarge, .input-xxlarge, input[class*="span"], select[class*="span"], textarea[class*="span"], .uneditable-input { display: block; width: 100%; min-height: 30px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000394}}
+  .input-prepend input, .input-append input, .input-prepend input[class*="span"], .input-append input[class*="span"] { display: inline-block; width: auto; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\0000398}}
+  .controls-row [class*="span"] + [class*="span"] { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003103}}
+  .modal { position: fixed; top: 20px; left: 20px; right: 20px; width: auto; margin: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003110}}
+  .modal.fade { top: -100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003111}}
+  .modal.fade.in { top: 20px; } }
+@media (max-width: 480px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003124}}
+  .nav-collapse { -webkit-transform: translate3d(0, 0, 0); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003129}}
+  .page-header h1 small { display: block; line-height: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003136}}
+  input[type="checkbox"], input[type="radio"] { border: 1px solid #ccc; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003142}}
+  .form-horizontal .control-label { float: none; width: auto; padding-top: 0; text-align: left; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003149}}
+  .form-horizontal .controls { margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003153}}
+  .form-horizontal .control-list { padding-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003157}}
+  .form-horizontal .form-actions { padding-left: 10px; padding-right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003166}}
+  .media .pull-left, .media .pull-right { float: none; display: block; margin-bottom: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003172}}
+  .media-object { margin-right: 0; margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003178}}
+  .modal { top: 10px; left: 10px; right: 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003183}}
+  .modal-header .close { padding: 10px; margin: -10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-767px-max\.scss}line{font-family:\00003189}}
+  .carousel-caption { position: static; } }
+@media (max-width: 979px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000313}}
+  body { padding-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000318}}
+  .navbar-fixed-top, .navbar-fixed-bottom { position: static; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000321}}
+  .navbar-fixed-top { margin-bottom: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000324}}
+  .navbar-fixed-bottom { margin-top: 20px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000328}}
+  .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner { padding: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000331}}
+  .navbar .container { width: auto; padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000336}}
+  .navbar .brand { padding-left: 10px; padding-right: 10px; margin: 0 0 0 -5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000345}}
+  .nav-collapse { clear: both; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000349}}
+  .nav-collapse .nav { float: none; margin: 0 0 10px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000353}}
+  .nav-collapse .nav > li { float: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000356}}
+  .nav-collapse .nav > li > a { margin-bottom: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000359}}
+  .nav-collapse .nav > .divider-vertical { display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000362}}
+  .nav-collapse .nav .nav-header { color: #777777; text-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000368}}
+  .nav-collapse .nav > li > a, .nav-collapse .dropdown-menu a { padding: 9px 15px; font-weight: bold; color: #777777; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000375}}
+  .nav-collapse .btn { padding: 4px 10px 4px; font-weight: normal; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000380}}
+  .nav-collapse .dropdown-menu li + li a { margin-bottom: 2px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000386}}
+  .nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus { background-color: #f2f2f2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000390}}
+  .navbar-inverse .nav-collapse .nav > li > a, .navbar-inverse .nav-collapse .dropdown-menu a { color: #999999; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\0000396}}
+  .navbar-inverse .nav-collapse .nav > li > a:hover, .navbar-inverse .nav-collapse .nav > li > a:focus, .navbar-inverse .nav-collapse .dropdown-menu a:hover, .navbar-inverse .nav-collapse .dropdown-menu a:focus { background-color: #111111; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003100}}
+  .nav-collapse.in .btn-group { margin-top: 5px; padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003105}}
+  .nav-collapse .dropdown-menu { position: static; top: auto; left: auto; float: none; display: none; max-width: none; margin: 0 15px; padding: 0; background-color: transparent; border: none; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003119}}
+  .nav-collapse .open > .dropdown-menu { display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003124}}
+  .nav-collapse .dropdown-menu:before, .nav-collapse .dropdown-menu:after { display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003127}}
+  .nav-collapse .dropdown-menu .divider { display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003132}}
+  .nav-collapse .nav > li > .dropdown-menu:before, .nav-collapse .nav > li > .dropdown-menu:after { display: none; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003138}}
+  .nav-collapse .navbar-form, .nav-collapse .navbar-search { float: none; padding: 10px 15px; margin: 10px 0; border-top: 1px solid #f2f2f2; border-bottom: 1px solid #f2f2f2; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1); }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003147}}
+  .navbar-inverse .nav-collapse .navbar-form, .navbar-inverse .nav-collapse .navbar-search { border-top-color: #111111; border-bottom-color: #111111; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003152}}
+  .navbar .nav-collapse .nav.pull-right { float: none; margin-left: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003158}}
+  .nav-collapse, .nav-collapse.collapse { overflow: hidden; height: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003163}}
+  .navbar .btn-navbar { display: block; }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003169}}
+  .navbar-static .navbar-inner { padding-left: 10px; padding-right: 10px; } }
+@media (min-width: 980px) { @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/byu-responsive-dev\/src\/sass\/bootstrap\/_responsive-navbar\.scss}line{font-family:\00003184}}
+  .nav-collapse.collapse { height: auto !important; overflow: visible !important; } }
