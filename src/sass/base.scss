@@ -92,19 +92,30 @@ a {
   background-color:$blue1;
   border-bottom: 1px solid $blue3;
   padding:.35em 0 .45em;
+
   a.byu, a.byulink {
     @include ir();
+    display: inline-block;
+    height: 26px;
+    width: 90px;
     background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
   }
+
   a.parentlink {
     text-transform: uppercase;
     font-size: 15px;
-    display: block;
-    padding: 12px 8px 2px;
+    display: inline-block;
+    padding: 6px 8px 2px;
     color: $blue8;
     line-height: 1.2;
+    height: 26px;
+    vertical-align: top;
   }
-  h2 { margin:0; line-height: 26px; }
+  h2 { 
+    margin:0;
+    margin-right: 100px; 
+    line-height: 26px;
+  }
   a  { display:block;}
 }
 

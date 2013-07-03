@@ -4,6 +4,11 @@
 
 $break-large:48em; //768px
 
+html {
+  overflow-x: hidden;
+  overflow-y:scroll;
+}
+
 /* Side slider navigation */
 
 body {
@@ -151,6 +156,8 @@ body.sideNav {
   width: 75%;
   z-index: 1;
   background-color: $blue1;
+
+  overflow-y: scroll;
 
   a:active {
     background-color: transparent;
