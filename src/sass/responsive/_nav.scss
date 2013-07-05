@@ -184,15 +184,79 @@ body.sideNav {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*** Medium width ***/
 @media all and ( min-width: $med-width ) {
 
+  .menu-button {
+    width: auto;
+    height: auto;
+    text-align: left;
+    text-indent:0;
+    border-right: 0;
+    background-image: none;
+    color: $blue7;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 9px 5% 12px 3%;
+    &:link, &:visited {
+      color: $blue7;
+    }
+    &:hover, &:active {
+      color: white;
+      text-decoration: none;
+    }
+    &:before {
+      display: inline-block;
+      position: relative;
+      width: 24px;
+      font-weight: normal;
+      top:3px;
+      margin-right: 9px;
+    }
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
 
 /*** Full width ***/
 @media all and ( min-width: $full-width ) {
 
 }
+
+
+
+
+
+
+
+
+
+
 
 /*** Extra wide width ***/
 @media all and ( min-width:$extrawide-width ) {

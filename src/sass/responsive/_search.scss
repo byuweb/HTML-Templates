@@ -9,18 +9,13 @@
 @import "variables";
 
 
-$content-width:100%;
-$search-width: 250px; /* The width of the entire search container, used to position the Sign In button, if there is one */
-$search-buffer:10px;
-
 
 /* Small width */
 #search-menu {
 	height: auto;
-	padding: 5px;
-	padding-left: 75px;
-	@include box-sizing(border-box);
+	padding: 5px 3% 5px 75px;
 	overflow: hidden;
+	@include box-sizing(border-box);
 }
 
 .boxsizing #search-container {
@@ -115,20 +110,40 @@ $search-buffer:10px;
 }
 
 
-/* Medium width */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Medium width ***/
 @media all and (min-width:$med-width) {
 
-
-
-}
-
-/* 1024 px */
-@media all and (min-width: 1024px) {
-	$content-width:1024px;
-
-	#search-container {
-		right: 50%;
-		margin-right: -($content-width / 2);
+	#search-menu {
+		padding-left: 37%;
+		text-align: right;
 	}
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+

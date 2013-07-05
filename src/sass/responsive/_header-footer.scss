@@ -7,12 +7,20 @@
 @import "mixins";
 
 
+#logo {
+	margin-left:3%;
+	h2 {
+		margin-left: -9px;
+	}
+}
+
 // Buttons
 a.mybyu, a.sign-in, .open #search-button { 
 	@include transition(background-color .3s); 
 }
 
-a.sign-in {
+#header-top a.sign-in {
+	right: 3%;
 	@include vertical-gradient($blue5,$blue4);
 	@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
 	&:hover {
@@ -22,15 +30,35 @@ a.sign-in {
 	}
 }
 
-// Logo
-#logo {
-	@media all and (min-width:$med-width) {
-		background-color: transparent;
-		padding-bottom: 0;
-		border: none;
+#site-name {
+	@include text-shadow(0 0 12px rgba($blue0, .5));
+}
+
+.parentlink {
+	@include text-shadow(0 0 6px rgba($blue0, .65));
+}
+
+#site-name, .parentlink {
+	&:hover {
+		text-decoration: none;
+		color: $yellow2;
+		@include text-shadow(0 0 20px rgba($blue0, 1))
 	}
 }
 
+// Logo
+#logo a.parentlink {
+	&:hover {
+		color: $yellow2;
+	}
+}
+
+
+
+
+
+
+/* Medium width */
 
 @media all and (min-width:$med-width) { 
 
@@ -56,11 +84,103 @@ a.sign-in {
 		letter-spacing: 1px;
 	}
 
+
+
+	#page-footer {
+		.wrapper {
+			margin-left:0;
+			margin-right:0;
+		}
+
+		#footer-bottom{
+			text-align:center;
+			padding-top:.5em;
+
+			a {
+				display:inline-block;
+				text-indent: -999em;
+			}
+
+			a#copyright{
+				text-indent:0em;
+			}
+
+			%school-link{
+				background: transparent url('../img/footer_sprite.png') no-repeat;
+				opacity:0.7;
+				margin: 0 5px;
+
+				&:hover {
+					opacity:1;
+				}
+			}
+
+			a#lds {
+				@extend %school-link;
+				background-position: 0px -8px;
+				height: 50px;
+				width: 150px;}
+
+			a#ldsbc {
+				@extend %school-link;
+				background-position: -407px -8px;
+				height: 55px;
+				width: 70px;}
+
+			a#byui {
+				@extend %school-link;
+				background-position: -206px -8px;
+				height: 42px;
+				width: 72px;}
+
+			a#byuh {
+				@extend %school-link;
+				background-position: -308px -8px;
+				height: 42px;
+				width: 72px; }
+		}
+	}
+
+	#footer-links{
+
+	 .col {
+		display:inline-block;
+		vertical-align:top;
+		width:42.5%;
+		margin-left: 5%;
+		padding-top:1em;
+	}
+		.double {
+			width:90%;
+			.right, .left{
+				width:49%;
+				display:inline-block;
+			}
+		}
+	 h2{margin:0}
+	}
+
+
 }
 
 
 
 
+
+
+
+
+
+
+
+
+@media all and (min-width: $full-width) {
+
+
+
+
+	
+}
 
 
 
@@ -134,77 +254,7 @@ a.sign-in {
 		top: 12px;
 		}
 
-	#footer-links{
-	 .col{
-		display:inline-block;
-		vertical-align:top;
-		width:18%;}
-		.double{
-			width:36%;
-			.right, .left{
-				width:49%;
-				display:inline-block;
-			}
-		}
-	 h2{margin:0}
-	}
 
-	.alpha{margin-left:0}
-	.omega{margin-right:0}
-
-	body > footer{
-		.wrapper {
-			padding-top: 9px;
-			padding-bottom: 18px;
-		}
-	}
-
-	#footer-bottom{
-		text-align:center;
-		padding-top:.5em;
-		a{
-			display:inline-block;
-			text-indent: -999em;
-		}
-
-		a#copyright{
-			text-indent:0em;
-		}
-
-		%school-link{
-			background: transparent url('../img/footer_sprite.png') no-repeat;
-			opacity:0.7;
-			margin: 0 5px;
-
-			&:hover {
-				opacity:1;
-			}
-		}
-
-		a#lds {
-			@extend %school-link;
-			background-position: 0px -8px;
-			height: 50px;
-			width: 150px;}
-
-		a#ldsbc {
-			@extend %school-link;
-			background-position: -407px -8px;
-			height: 55px;
-			width: 70px;}
-
-		a#byui {
-			@extend %school-link;
-			background-position: -206px -8px;
-			height: 42px;
-			width: 72px;}
-
-		a#byuh {
-			@extend %school-link;
-			background-position: -308px -8px;
-			height: 42px;
-			width: 72px; }
-	}
 
 }
 
