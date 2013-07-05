@@ -11,178 +11,178 @@
 $break-large:48em; //768px
 
 html {
-  overflow-x: hidden;
-  overflow-y: scroll;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 /* Side slider navigation */
 
 body {
-  @include transition(left 0.2s ease);
-  position: relative;
-  left:0;
-  overflow:hidden;
+	@include transition(left 0.2s ease);
+	position: relative;
+	left:0;
+	overflow:hidden;
 }
 
 #content {
-  background-color: white;
+	background-color: white;
 }
 
 #main-header, #search-menu, #content, #page-footer {
-  z-index: 2;
-  left:0%;
-  @include transition(left 0.2s ease);
+	z-index: 2;
+	left:0%;
+	@include transition(left 0.2s ease);
 }
 
 body.sideNav {
 
-  #main-header, #search-menu, #content, #page-footer {
-    left:75%;
-  }
+	#main-header, #search-menu, #content, #page-footer {
+		left:75%;
+	}
 
 }
 
 .nav-container {
-  min-height:100%;
-  position: absolute;
-  left:0;
-  top:0;
-  width: 75%;
-  z-index: 1;
-  background-color: $blue1;
+	min-height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	width: 75%;
+	z-index: 1;
+	background-color: $blue1;
 
-  a:active {
-    background-color: transparent;
-  }
+	a:active {
+		background-color: transparent;
+	}
 
-  &:after {
-    content: " ";
-    display: block;
-    width:15px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    @include background-image( linear-gradient(left, rgba($blue0, 0), rgba($blue0, .1) 25%, rgba($blue0, .65)) );
-  }
+	&:after {
+		content: " ";
+		display: block;
+		width:15px;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+		@include background-image( linear-gradient(left, rgba($blue0, 0), rgba($blue0, .1) 25%, rgba($blue0, .65)) );
+	}
 }
 
 
 
 /* Reset from base */
 #primary-nav, #secondary-nav {
-  border-top: none;
-  padding: 0;
+	border-top: none;
+	padding: 0;
 }
 
 /* Menu button */
 .menu-button {
-  position: absolute;
-  top:0;
-  left:0;
-  text-indent:-9999em;
-  border-right: 1px solid $blue3;
-  width: 60px;
-  height:45px;
-  display: block;
-  @include background-image( linear-gradient($blue1, $blue0) );
-  &:hover {
-    @include background-image( linear-gradient($blue4, $blue3) );
-    &:before {
-      color: white;
-    }
-  }
-  &:before {
-    content:"\f0c9";
-    font-family: "FontAwesome";
-    position: absolute;
-    width:100%;
-    text-align: center;
-    top:  12px;
-    display: block;
-    text-indent:0;
-    font-size: 25px;
-    color:$blue8;
-  }
+	position: absolute;
+	top:0;
+	left:0;
+	text-indent:-9999em;
+	border-right: 1px solid $blue3;
+	width: 60px;
+	height:45px;
+	display: block;
+	@include background-image( linear-gradient($blue1, $blue0) );
+	&:hover {
+		@include background-image( linear-gradient($blue4, $blue3) );
+		&:before {
+			color: white;
+		}
+	}
+	&:before {
+		content:"\f0c9";
+		font-family: "FontAwesome";
+		position: absolute;
+		width:100%;
+		text-align: center;
+		top:  12px;
+		display: block;
+		text-indent:0;
+		font-size: 25px;
+		color:$blue8;
+	}
 }
 
 /* Side Navigation */
 %sidenav {
-  font-size: 1.2em;
-    a {
-    color: #fff;
-    padding: 1em 5%;
-    display: block;
-    @include text-shadow(0px -1px 0px #000);
-    &:hover {
-      text-decoration: none;
-      background-color: $blue0;
-    }
-  }
-  > ul {
-    padding:0;
-    background: $blue2;
-    border-right: 1px solid $blue3;
-  }
+	font-size: 1.2em;
+		a {
+		color: #fff;
+		padding: 1em 5%;
+		display: block;
+		@include text-shadow(0px -1px 0px #000);
+		&:hover {
+			text-decoration: none;
+			background-color: $blue0;
+		}
+	}
+	> ul {
+		padding:0;
+		background: $blue2;
+		border-right: 1px solid $blue3;
+	}
 
-  li {
-    display: block;
-    float:none;
-    padding:0;
-    border-bottom: 1px solid $blue1;
-    border-top: 1px solid $blue3;
-    overflow: hidden;
-    &.left, &.right { padding: 0; }
-    &.hover { background-color: $blue0; }
-  }
+	li {
+		display: block;
+		float:none;
+		padding:0;
+		border-bottom: 1px solid $blue1;
+		border-top: 1px solid $blue3;
+		overflow: hidden;
+		&.left, &.right { padding: 0; }
+		&.hover { background-color: $blue0; }
+	}
 }
 
 %submenu {
-  background-color:$blue1;
-  margin: 0;
-  max-height:0px;
-  position: relative;
-  @include transition(max-height 0.2s ease);
-  a {
-    padding-left:1.75em;
-    border-top: 1px solid $blue2;
-    border-bottom: 1px solid $blue0;
-    padding:.65em 10%;
-    padding-right:5%;
-    color: $blue9;
-    &:hover { color: #fff; }
-  }
-  ul {
+	background-color:$blue1;
+	margin: 0;
+	max-height:0px;
+	position: relative;
+	@include transition(max-height 0.2s ease);
+	a {
+		padding-left:1.75em;
+		border-top: 1px solid $blue2;
+		border-bottom: 1px solid $blue0;
+		padding:.65em 10%;
+		padding-right:5%;
+		color: $blue9;
+		&:hover { color: #fff; }
+	}
+	ul {
 	.sublinks{ padding-left: 5%;}
-    padding: 0;
-    margin: 0;
-  }
-  li { border: none; }
+		padding: 0;
+		margin: 0;
+	}
+	li { border: none; }
 }
 
 %activemenu {  max-height:1500px;}
 
 /* Primary Nav */
 #primary-nav {
-  margin-top:1em;
-  @extend %sidenav;
-  .mega, .sub { @extend %submenu; }
-  li.hover .mega, li.hover .sub { @extend %activemenu;}
-  .highlight, .featured, hr { display: none; }
+	margin-top:1em;
+	@extend %sidenav;
+	.mega, .sub { @extend %submenu; }
+	li.hover .mega, li.hover .sub { @extend %activemenu;}
+	.highlight, .featured, hr { display: none; }
 }
 
 /* Secondary Nav */
 #secondary-nav {
-  @extend %sidenav;
-  > ul { background-color: $blue4; }
-  .sub { @extend %submenu; }
-  a:hover { background-color: $blue3;}
-  ul { padding: 0;}
-  li {
-    border-top-color: $blue5;
-    border-bottom-color: $blue3;
-    &.hover .sub { @extend %activemenu; }
-  }
+	@extend %sidenav;
+	> ul { background-color: $blue4; }
+	.sub { @extend %submenu; }
+	a:hover { background-color: $blue3;}
+	ul { padding: 0;}
+	li {
+		border-top-color: $blue5;
+		border-bottom-color: $blue3;
+		&.hover .sub { @extend %activemenu; }
+	}
 }
 
 
@@ -209,35 +209,59 @@ body.sideNav {
 /*** Medium width ***/
 @media all and ( min-width: $med-width ) {
 
-  .menu-button {
-    width: auto;
-    height: auto;
-    text-align: left;
-    text-indent:0;
-    border-right: 0;
-    background-image: none;
-    color: $blue7;
-    font-weight: bold;
-    font-size: 15px;
-    padding: 9px 5% 12px 3%;
-    &:link, &:visited {
-      color: $blue7;
-    }
-    &:hover, &:active {
-      color: white;
-      text-decoration: none;
-    }
-    &:before {
-      display: inline-block;
-      position: relative;
-      width: 24px;
-      font-weight: normal;
-      top:3px;
-      margin-right: 9px;
-    }
-  }
+	.menu-button {
+		width: auto;
+		height: auto;
+		text-align: left;
+		text-indent:0;
+		border-right: 0;
+		background-image: none;
+		color: $blue7;
+		font-weight: bold;
+		font-size: 15px;
+		padding: 9px 5% 12px 3%;
+		&:link, &:visited {
+			color: $blue7;
+		}
+		&:hover, &:active {
+			color: white;
+			text-decoration: none;
+		}
+		&:before {
+			display: inline-block;
+			position: relative;
+			width: 24px;
+			font-weight: normal;
+			top:3px;
+			margin-right: 9px;
+		}
+	}
 
 }
+
+
+
+
+
+
+
+
+
+/*** Full width ***/
+@media all and ( min-width: $full-width ) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -258,207 +282,221 @@ body.sideNav {
 * NOTE: The full-menu-width variable is found in variables.scss
 */
 @media all and ( min-width: $full-menu-width ) {
-  $header-top-height: 96px;
-  $search-width: 250px;
-  $menu-height:36px;
+	$header-top-height: 96px;
+	$search-width: 250px;
+	$menu-height:36px;
 
-  #header-top {
-    height: $header-top-height;
-    margin-right: 3%;
-    margin-bottom:$menu-height;
+	#header-top {
+		height: $header-top-height;
+		margin-right: 3%;
+		margin-bottom:$menu-height;
 
-    a.sign-in {
-      right: $search-width + 12px;
-    }
-  }
+		a.sign-in {
+			right: $search-width + 12px;
+		}
+	}
 
-  #search-menu {
-    width: $search-width;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: .35em;
-    left:auto;
-    right: 3%;
-    background-color: transparent;
-    z-index: 3;
-    .menu-button {
-      display: none;
-    }
-  }
-
-
-  .nav-container {
-    width: 100%;
-    display: block;
-    top: $header-top-height;
-    min-height: $menu-height;
-    height: $menu-height;
-    z-index: 5;
-    background-color: $blue1;
-    border-top: 1px solid $blue3;
-    border-bottom: 1px solid $blue0;
-  }
+	#search-menu {
+		width: $search-width;
+		margin: 0;
+		padding: 0;
+		position: absolute;
+		top: .35em;
+		left:auto;
+		right: 3%;
+		background-color: transparent;
+		z-index: 3;
+		.menu-button {
+			display: none;
+		}
+	}
 
 
+	.nav-container {
+		width: 100%;
+		display: block;
+		top: $header-top-height;
+		min-height: $menu-height;
+		height: $menu-height;
+		z-index: 5;
+		background-color: $blue0;
+		border-top: 1px solid $blue3;
+		border-bottom: 1px solid $blue4;
+		@include box-shadow(0 1px 10px rgba(black, .5));
+		&:after {
+			display: none;
+		}
+	}
 
 
-    %tab-nav {
-    font-size: 1em;
-    > ul {
-      background: transparent;
-      > li { float:left; }
-    }
-    li {
-      border-top: 0px solid transparent;
-      border-bottom: 0px solid transparent;
-      &.hover {
-        overflow: visible;
-        > a {
-          @include border-radius(3px 3px 0 0);
-          position: relative;
-          z-index: 2;
-          box-shadow: 0px 3px 0px #fff;
-        }
-        a {
-          background: #fff;
-          color: $blue0;
-          @include text-shadow(none);
-        }
-        ul a:hover {
-          background: $blue2;
-        }
-      }
-    }
-    a {
-      padding: .6em .75em;
-    }
-  }
-  
-  %tab-nav-submenu {
-  background-color: #fff;
-    border-bottom: 2px solid $blue2;
-    display: none;
-  font-size: 13px;
-  left: 0;
-    position: absolute;
-    padding:.5em 0 1em;
-    width: 15em;
-    z-index: 1;
-    @include border-radius(3px);
-    @include box-shadow(0px 0px 12px rgba(#000, 0.5));
-    a {
-    display: block;
-    border: 0;
-      padding: .5em 1.5em;
-    }
-  }
 
-  #primary-nav {
-    padding-left: 2em;
-    margin-top:0;
-    @extend %tab-nav;
-  >ul{
-    width: 940px;
-    margin: 0 auto;
-    position: relative;
-  }
-  .mega {
-      @extend %tab-nav-submenu;
-    height:415px;
-    position: absolute;
-      padding: 1em 0 2em;
-    width: 920px;
-      @include border-radius(0 0 3px 3px);
-      ul.links { margin-left: 1%; }
-    }
-  .sub { 
-    background-color: #fff;
-    border-bottom: 3px solid #369;
-    box-shadow: 0 1px 8px rgba(0,0,0,0.7);
-    display:none;
-    margin-top: 0; 
-    padding: 10px;
-    position: absolute;
-    width: 222px;
-    a {border:none;}
-    .links { width: 100%; }
-  }
-    li.hover .mega, li.hover .sub, .highlight, .featured, hr { display: block; }
 
-    hr {
-      border:none;
-      border-top: 1px solid #ddd;
-    }
-    .featured { font-weight: bold; }
-    .links {
-    float:left;
-    width:220px;
-      &.double {
-        width: 400px;
-        .featured {
-          .sublinks { padding-left: 5%; }
-        }
-        .left {
-          float: left;
-          width: 50%;
-        }
-      }
-      .sublinks { 
-    padding-bottom: 0 25px 0 .25em;  
-      li a:before {
-      content: '\25B8';
-      padding-right:4px;
-      font-size: 10px;
-      list-style-type: none;
-    }
-    } //.sublinks
-   }
-    .highlight {
-    float: left;
-    padding-left: 3%;
-    width: 208px;
-      a {
-        padding: 0;
-        color: $blue2;
-        &:hover {
-          color: $blue0;
-          text-decoration: underline;
-        }
-      }
-    }
-  }
-  
-  #secondary-nav {
-    position: absolute;
-  bottom: 42px;
-  right:9px;
-    @extend %tab-nav;
-    .sub { @extend %tab-nav-submenu; }
-    li.hover .sub {
-      display: block;
-    position: absolute;
-    left:auto;
-    }
-    a {
-    display:inline-block;
-      color: $blue8;
-      &:hover {
-        background: transparent;
-        color: #fff;
-      }
-    }
-  }
+
+
+	%tab-nav {
+		font-size: 1em;
+		> ul {
+			border-right: 0;
+			background: transparent;
+			> li { float:left; }
+		}
+		li {
+			border-top: 0px solid transparent;
+			border-bottom: 0px solid transparent;
+			&.hover {
+				overflow: visible;
+				> a {
+					@include border-radius(3px 3px 0 0);
+					position: relative;
+					z-index: 2;
+					box-shadow: 0px 3px 0px #fff;
+				}
+				a {
+					background: #fff;
+					color: $blue0;
+					@include text-shadow(none);
+				}
+				ul a:hover {
+					background: $blue2;
+				}
+			}
+		}
+		a {
+			padding: .6em .75em;
+		}
+	}
+		
+	%tab-nav-submenu {
+		background-color: #fff;
+		border-bottom: 2px solid $blue2;
+		display: none;
+		font-size: 13px;
+		left: 0;
+		position: absolute;
+		padding:.5em 0 1em;
+		width: 15em;
+		z-index: 1;
+		@include border-radius(3px);
+		@include box-shadow(0px 0px 12px rgba(#000, 0.5));
+		a {
+		display: block;
+		border: 0;
+			padding: .5em 1.5em;
+		}
+	}
+
+
+
+
+
+
+
+
+
+	#primary-nav {
+		@extend %tab-nav;
+		padding-left: 2%;
+		margin-top:0;
+		> ul {
+			margin: 0 auto;
+			position: relative;
+		}
+
+		.mega {
+			@extend %tab-nav-submenu;
+			min-height:400px;
+			position: absolute;
+			padding: 1em 0 2em;
+			width: 97.95%;
+			@include border-radius(0 0 3px 3px);
+			ul.links { margin-left: 1%; }
+		}
+		.sub { 
+			background-color: #fff;
+			border-bottom: 3px solid #369;
+			box-shadow: 0 1px 8px rgba(0,0,0,0.7);
+			display:none;
+			margin-top: 0; 
+			padding: 10px;
+			position: absolute;
+			width: 222px;
+			a {border:none;}
+			.links { width: 100%; }
+		}
+
+		li.hover .mega, 
+		li.hover .sub, 
+		.highlight, 
+		.featured, hr {
+			display: block;
+		}
+
+		hr {
+			border:none;
+			border-top: 1px solid #ddd;
+		}
+
+		.featured { font-weight: bold; }
+		.links {
+			float:left;
+			width:220px;
+			&.double {
+				width: 46%;
+				.featured {
+					.sublinks { padding-left: 5%; }
+				}
+				.left {
+					float: left;
+					width: 50%;
+				}
+			}
+			.sublinks { 
+				padding-bottom: 0 25px 0 .25em;
+				li a:before {
+					content: '\25B8';
+					padding-right:4px;
+					font-size: 10px;
+					list-style-type: none;
+				}
+			} 
+		}
+
+		.highlight {
+			float: left;
+			padding-left: 2%;
+			width: 24%;
+			a {
+				padding: 0;
+				color: $blue2;
+				&:hover {
+					color: $blue0;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	#secondary-nav {
+		position: absolute;
+		bottom: 42px;
+		right:9px;
+		@extend %tab-nav;
+		.sub { @extend %tab-nav-submenu; }
+		li.hover .sub {
+			display: block;
+			position: absolute;
+			left:auto;
+		}
+		a {
+			display:inline-block;
+			color: $blue8;
+			&:hover {
+				background: transparent;
+				color: #fff;
+			}
+		}
+	}
 }
-
-
-
-
-/*** Full width ***/
-@media all and ( min-width: $full-width ) {
-
-}
-
 
 
 

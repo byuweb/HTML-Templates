@@ -19,7 +19,7 @@ module.exports = (grunt) ->
 			compile:
 				files:
 					'js/script.min.js' : [
-						'src/js/plugins/jrespond.js', 
+						#'src/js/plugins/jrespond.js', 
 						'src/js/bootstrap/bootstrap-dropdown.js', 
 						'src/js/script.js']
 					'js/script-touch.min.js' : [

@@ -9,35 +9,7 @@
 * @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/script.js
 */
 
-// Global Variables
-var init = false;
-		small = 300,
-		full_menu = 768,
-		full = 1024,
 
-		// Add breakpoints with jRespond
-		jRes = jRespond([
-    {
-        label: 'tiny',
-        enter: 0,
-        exit: small - 1
-    },
-    {
-        label: 'small',
-        enter: small,
-        exit: full_menu - 1
-    },
-    {
-        label: 'full_menu',
-        enter: full_menu,
-        exit: full - 1
-    },
-    {
-        label: 'full',
-        enter: full,
-        exit: 10000
-    }
-]);
 
 
 // Document ready
@@ -47,18 +19,7 @@ $(function(){
 	$(window).resize(getWidth);
 
 	loadSearch();
-
-
-	jRes.addFunc({
-		breakpoint: ['small', 'full_menu', 'full'],
-		enter: function() {
-			if( !init ) {
-				init = true;
-				activateMenus();
-			}
-		}
-	});
-
+	activateMenus();
 
 });
 
