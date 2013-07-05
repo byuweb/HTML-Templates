@@ -17,16 +17,21 @@
 
 
 
-/*	Twitter Bootstrap (Scss version)
+/*!
+
+	Twitter Bootstrap (Scss version)
+
+*/
+/*	
 	Loaded first, so it can be overrridden easily.
 	Only uncomment the stuff that you really need */
 
 // Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+  @import "bootstrap/variables";
+  @import "bootstrap/mixins";
 
 // CSS Reset
-//@import "reset";
+//  @import "reset";
 
 // Grid system and page structure
 //	@import "bootstrap/scaffolding";
@@ -34,9 +39,9 @@
 //	@import "bootstrap/layouts";
 
 // Base CSS
-	//@import "bootstrap/type";
+//  @import "bootstrap/type";
 	@import "bootstrap/code";
-	@import "bootstrap/forms";
+//	@import "bootstrap/forms";
 	@import "bootstrap/tables";
 
 // Components: common
@@ -65,7 +70,7 @@
 // Components: Misc
 //	@import "bootstrap/thumbnails";
 //	@import "bootstrap/media";
-	@import "bootstrap/labels-badges";
+//	@import "bootstrap/labels-badges";
 //	@import "bootstrap/progress-bars";
 //	@import "bootstrap/accordion";
 //	@import "bootstrap/carousel";
@@ -78,29 +83,39 @@
 
 
 
+/*
 
+FontAwesome
 
-
-
-
-
-/* BYU Styles */
-@import "responsive/bootstrap-override";
+*/
 @import "responsive/font-awesome";
+
+
+
+
+
+/*!
+
+BYU Styles 
+
+*/
+@import "responsive/bootstrap-override";
 @import "responsive/header-footer";
 @import "responsive/breadcrumb";
+@import "responsive/search";
 @import "responsive/nav";
 
 @import "responsive/slider";
 @import "responsive/slider-responsive";
 @import "responsive/flexslider";
-@import "responsive/search";
 
 @import "responsive/type";
 
 
 
-/* h5bp print styles */
+/*!
+h5bp print styles 
+*/
 @import "responsive/print";
 
 

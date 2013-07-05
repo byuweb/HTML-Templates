@@ -1,3 +1,9 @@
+/*!
+
+* Navigation
+*
+*/
+
 @import "compass";
 @import "colors";
 @import "mixins";
@@ -238,7 +244,212 @@ body.sideNav {
 
 
 
+/*!
 
+*
+* Full menu width 
+*
+* This media query should be set to the width where the primary menu will fit 
+* in the top bar without wrapping. Make sure to test in lots of browsers,
+* and some buffer to account for differences in rendering.
+*
+*/
+/* 
+* NOTE: The full-menu-width variable is found in variables.scss
+*/
+@media all and ( min-width: $full-menu-width ) {
+  $header-top-height: 96px;
+  $search-width: 250px;
+  $menu-height:36px;
+
+  #header-top {
+    height: $header-top-height;
+    margin-right: 3%;
+    margin-bottom:$menu-height;
+
+    a.sign-in {
+      right: $search-width + 12px;
+    }
+  }
+
+  #search-menu {
+    width: $search-width;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: .35em;
+    left:auto;
+    right: 3%;
+    background-color: transparent;
+    z-index: 3;
+    .menu-button {
+      display: none;
+    }
+  }
+
+
+  .nav-container {
+    width: 100%;
+    display: block;
+    top: $header-top-height;
+    min-height: $menu-height;
+    height: $menu-height;
+    z-index: 5;
+    background-color: $blue1;
+    border-top: 1px solid $blue3;
+    border-bottom: 1px solid $blue0;
+  }
+
+
+
+
+    %tab-nav {
+    font-size: 1em;
+    > ul {
+      background: transparent;
+      > li { float:left; }
+    }
+    li {
+      border-top: 0px solid transparent;
+      border-bottom: 0px solid transparent;
+      &.hover {
+        overflow: visible;
+        > a {
+          @include border-radius(3px 3px 0 0);
+          position: relative;
+          z-index: 2;
+          box-shadow: 0px 3px 0px #fff;
+        }
+        a {
+          background: #fff;
+          color: $blue0;
+          @include text-shadow(none);
+        }
+        ul a:hover {
+          background: $blue2;
+        }
+      }
+    }
+    a {
+      padding: .6em .75em;
+    }
+  }
+  
+  %tab-nav-submenu {
+  background-color: #fff;
+    border-bottom: 2px solid $blue2;
+    display: none;
+  font-size: 13px;
+  left: 0;
+    position: absolute;
+    padding:.5em 0 1em;
+    width: 15em;
+    z-index: 1;
+    @include border-radius(3px);
+    @include box-shadow(0px 0px 12px rgba(#000, 0.5));
+    a {
+    display: block;
+    border: 0;
+      padding: .5em 1.5em;
+    }
+  }
+
+  #primary-nav {
+    padding-left: 2em;
+    margin-top:0;
+    @extend %tab-nav;
+  >ul{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .mega {
+      @extend %tab-nav-submenu;
+    height:415px;
+    position: absolute;
+      padding: 1em 0 2em;
+    width: 920px;
+      @include border-radius(0 0 3px 3px);
+      ul.links { margin-left: 1%; }
+    }
+  .sub { 
+    background-color: #fff;
+    border-bottom: 3px solid #369;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.7);
+    display:none;
+    margin-top: 0; 
+    padding: 10px;
+    position: absolute;
+    width: 222px;
+    a {border:none;}
+    .links { width: 100%; }
+  }
+    li.hover .mega, li.hover .sub, .highlight, .featured, hr { display: block; }
+
+    hr {
+      border:none;
+      border-top: 1px solid #ddd;
+    }
+    .featured { font-weight: bold; }
+    .links {
+    float:left;
+    width:220px;
+      &.double {
+        width: 400px;
+        .featured {
+          .sublinks { padding-left: 5%; }
+        }
+        .left {
+          float: left;
+          width: 50%;
+        }
+      }
+      .sublinks { 
+    padding-bottom: 0 25px 0 .25em;  
+      li a:before {
+      content: '\25B8';
+      padding-right:4px;
+      font-size: 10px;
+      list-style-type: none;
+    }
+    } //.sublinks
+   }
+    .highlight {
+    float: left;
+    padding-left: 3%;
+    width: 208px;
+      a {
+        padding: 0;
+        color: $blue2;
+        &:hover {
+          color: $blue0;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  
+  #secondary-nav {
+    position: absolute;
+  bottom: 42px;
+  right:9px;
+    @extend %tab-nav;
+    .sub { @extend %tab-nav-submenu; }
+    li.hover .sub {
+      display: block;
+    position: absolute;
+    left:auto;
+    }
+    a {
+    display:inline-block;
+      color: $blue8;
+      &:hover {
+        background: transparent;
+        color: #fff;
+      }
+    }
+  }
+}
 
 
 

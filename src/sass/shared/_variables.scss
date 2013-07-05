@@ -8,18 +8,19 @@ $asset-base: 'http://byuweb.github.com/Global-Assets/';
 
 
 
-// Screen sizes
+// Screen sizes & other measurements
 
-$full-menu-width: 700px; // Show the menu at this width
+$handheld-width:300px;     
+$med-width: 600px;         // Fonts bigger, slight header change
+$full-width: 900px;        // Footer links no longer stacked
+$extrawide-width: 1500px;  // For the lucky ones who have a huge screen...
 
-$handheld-width:300px;
-$med-width: 600px;
-$full-width: 900px;
-$extrawide-width: 1500px;
+$full-menu-width: 760px; // Menu should be in the header at this screen width. 
 
 
 
 // Fonts
-
 $sans-font-stack: "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans", Helvetica,Arial,sans-serif;
 $serif-font-stack: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
+
+
