@@ -73,3 +73,15 @@ dd {
 .bs-docs-separator {
 margin: 40px 0 39px;
 }
+
+a:link, a:visited {
+  &.btn {
+    color: #333;
+  }
+  &.btn-primary, &.btn-success, &.btn-warning, &.btn-danger, &.btn-inverse {
+    color: #fff;
+  }
+  &.btn-link, &.btn-info {
+    color: $blue4;
+  }
+}
