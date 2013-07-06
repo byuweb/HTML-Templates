@@ -9,10 +9,28 @@ body strong { font-weight:bold; }
 body, select, input, textarea { color: #444 }
 p a { text-decoration: underline}
 	/* Blockquotes */
-blockquote { font-style:italic; margin:1.5em 10px; padding:.5em 10px; background-color:#f4f4f4; border:1px solid #dedede; box-shadow:2px 3px 5px 0 #dedede; -moz-box-shadow:2px 3px 5px 0 #dedede; -webkit-box-shadow:2px 3px 5px 0 #dedede; color:#333; margin:25px 20px 25px 0; padding:3px 25px;}
-blockquote:before { color:#bbb; content:"\201C"; font-size:3em; line-height:.1em; margin-right:.2em; vertical-align:-.4em;}
+blockquote { 
+  margin:1.5em 10px; 
+  padding:.5em 10px;
+  color:#333; 
+  margin:25px 20px 25px 0; 
+  padding:3px 25px;
+  position: relative;
+}
+blockquote:before { 
+  color:#bbb; 
+  content:"\201C"; 
+  font-size:3em; 
+  line-height:.1em; 
+  vertical-align:-.4em;
+  display: block;
+  position: absolute;
+  top:15px;
+  left:1px;
+}
 blockquote:after { color:#bbb; content:"\201D"; font-size:3em; line-height:.1em; vertical-align:-.45em;}
 blockquote :first-child { display:inline}
+
 
 /* Links */
 a, a:link { color:$blue4; text-decoration:none;}
