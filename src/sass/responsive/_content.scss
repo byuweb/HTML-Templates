@@ -19,9 +19,37 @@
 }
 
 
-@media all and (min-width: $full-width) {
+@media all and (min-width: $large-width) {
 
-	.one-sidebar #main-content { float:left; margin-right:5%; width:58.7%;}
-	.two-sidebars #main-content { float:left; margin-right:2%; width:48%;}
-	.sidebar { float:left; width:36.3%}
+	.one-sidebar, .two-sidebars {
+		#main-content, .sidebar {
+			float: left;
+		}
+	}
+
+	.one-sidebar {
+		#main-content { 
+			margin-right:5%; 
+			width:58.7%;
+		}
+
+		.sidebar { 
+			width:36.3%
+		}
+	}
+	
+
+
+	.two-sidebars {
+		#main-content { 
+			margin-right:5%;
+			margin-left: 5%;
+			width:48%;
+		}
+
+		.sidebar {
+			width: 21%;
+			margin:0;
+		}
+	}
 }

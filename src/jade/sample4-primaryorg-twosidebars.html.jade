@@ -1,0 +1,45 @@
+extends _layout
+
+block pageTitle
+	| BYU - Sample 4
+
+block parentlink
+	a.byu(href='http://www.byu.edu/') Brigham Young University
+
+block heading
+	| Primary Organization
+
+block prepend contentwrapper
+	- var contentclasses = 'two-sidebars'
+
+block content
+	h1 Two Sidebar Sample 
+	h2 This is a sample page demonstrating the use of two sidebars
+	.sidebar.alpha
+		p This is the left sidebar. You might put navigation links here, or maybe in a dedicated nav sidebar, like in sample 5.
+		ul
+			li
+				a(href='#') Navigation 1
+			li
+				a(href='#') Navigation 2
+			li
+				a(href='#') Navigation 3
+			li
+				a(href='#') Navigation 4
+			li
+				a(href='#') Navigation 5
+			li
+				a(href='#') Navigation 6
+	#main-content
+		p This is the main content.
+		p
+			| Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis ligula lorem, consequat eget, tristique nec, auctor quis, purus. Vivamus ut sem. Fusce aliquam nunc vitae purus. Aenean viverra malesuada libero. Fusce ac quam. Donec neque. Nunc venenatis enim nec quam. Cras faucibus, justo vel accumsan aliquam, tellus dui fringilla quam, in condimentum augue lorem non tellus. Pellentesque id arcu non sem placerat iaculis. Curabitur posuere, pede vitae lacinia accumsan, enim nibh elementum orci, ut volutpat eros sapien nec sapien. Suspendisse neque arcu, ultrices commodo, pellentesque sit amet, ultricies ut, ipsum. Mauris et eros eget erat dapibus mollis. Mauris laoreet posuere odio. Nam ipsum ligula, ullamcorper eu, fringilla at, lacinia ut, augue. Nullam nunc.
+		p
+			| Sed et lectus in massa imperdiet tincidunt. Praesent neque tortor, sollicitudin non, euismod a, adipiscing a, est. Mauris diam metus, varius nec, faucibus at, faucibus sollicitudin, lectus. Nam posuere felis ac urna. Vestibulum tempor vestibulum urna. Nullam metus. Vivamus ac purus. Nullam interdum ullamcorper libero. Morbi vehicula imperdiet justo. Etiam mollis fringilla ante. Donec et dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Etiam mi libero, luctus nec, blandit ac, rutrum ac, lectus.
+		p
+			| Morbi consequat felis vitae enim. Nunc nec lacus. Vestibulum odio. Morbi egestas, urna et mollis bibendum, enim tellus posuere justo, eget elementum purus urna nec lacus. Nullam in nulla. Praesent ac lorem. Donec metus risus, accumsan ut, mollis non, porttitor eget, mi. Aliquam aliquet, tortor a elementum aliquam, erat odio sodales eros, suscipit blandit lectus dolor sit amet elit. In eros wisi, mollis vitae, tincidunt in, suscipit id, nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Phasellus ornare. Suspendisse potenti. Mauris convallis. Vestibulum nec mauris in augue porta mollis. Proin ut nunc. Mauris aliquam dui eget purus.
+	.sidebar.omega
+		p This is the right sidebar. Supplemental information is best placed here.
+		p Share This
+		p Like on Facebook
+		p Tweet
