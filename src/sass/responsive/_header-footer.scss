@@ -93,8 +93,8 @@ a.mybyu, a.sign-in, .open #search-button {
 
 	#page-footer {
 		.wrapper {
-			margin-left:0;
-			margin-right:0;
+			margin-left:4%;
+			margin-right:4%;
 		}
 
 		#footer-bottom{
@@ -148,18 +148,21 @@ a.mybyu, a.sign-in, .open #search-button {
 
 	#footer-links{
 
-	 .col {
-		display:inline-block;
-		vertical-align:top;
-		width:42.5%;
-		margin-left: 5%;
-		padding-top:1em;
-	}
+		.col {
+			display:inline-block;
+			vertical-align:top;
+			width:41.855%;
+			margin-left: 5.43%;
+			padding-top:1em;
+		}
 		.double {
-			width:90%;
+			width:89.14%;
 			.right, .left{
-				width:49%;
+				width:46%;
 				display:inline-block;
+			}
+			.right {
+				margin-left:7%;
 			}
 		}
 	 h2{margin:0}
@@ -180,11 +183,40 @@ a.mybyu, a.sign-in, .open #search-button {
 
 
 @media all and (min-width: $full-width) {
+	$col-margin: 2%;
+	$col-width: (90% - ($col-margin * 4))/5;
 
+	#page-footer {
+		.wrapper {
+			margin:1em 9% 2em;
+		}
+	}
 
-
-
-	
+	#footer-links{
+		.wrapper {
+			margin-right:0;
+		}
+		.col {
+			display:inline-block;
+			vertical-align:top;
+			width:$col-width;
+			margin-left: $col-margin;
+			padding-top:1em;
+		}
+		.double {
+			width:($col-width * 2) + $col-margin;
+			.right, .left{
+				width:43%;
+				display:inline-block;
+			}
+			.right {
+				margin-left:10%;
+			}
+		}
+		.col.alpha, .col:first-child {
+			margin-left: 0;
+		}
+	}
 }
 
 
@@ -263,18 +295,6 @@ a.mybyu, a.sign-in, .open #search-button {
 
 }
 
-$break-large:60em; //960px
-/* ------------ Landscape of Tablet(iPad) and anything larger ----------- */
-@media screen and (min-width : $break-large) {
-	.one-sidebar #main-content { float:left; margin-right:2%; width:73%;}
-	.two-sidebars #main-content { float:left; margin-right:2%; width:48%;}
-	.sidebar { float:left; width:23%}
-
-//	.one-sidebar #main-content { float:left; margin-right:20px; width:700px;}
-//	.two-sidebars #main-content { float:left; margin-right:20px; width:460px;}
-//	.sidebar { float:left; margin-right:20px; width:220px;}
-
-}
 
 
 /* From h5bp */

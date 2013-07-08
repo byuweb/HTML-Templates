@@ -19,8 +19,7 @@ mixin addLinks(start, end, title)
 	- for (var i = start; i <= end; i++) {
 		a(href='') #{title} #{i}
 	- }
-
-
+	
 
 
 
@@ -135,43 +134,43 @@ html.no-js(lang="en")
 		//-	===============
 		//-	MAIN CONTENT WRAPPER
 		//-	===============
+		block contentwrapper
+			- if( typeof(contentclasses) == 'undefined') { var contentclasses = '' }
+			#content(class='wrapper clearfix #{contentclasses}', role='main')
 
-		#content.wrapper.clearfix(role='main')
 
 
+				//-	===============
+				//-	BREADCRUMB
+				//-	===============
 
-
-			//-	===============
-			//-	BREADCRUMB
-			//-	===============
-
-			block breadcrumb
-				// Breadcrumb
-				ul.breadcrumb
-					li
-						.dropdown
-							a.home.dropdown-toggle.needsclick(href="", data-toggle="dropdown")
-								i.icon-home.icon-large
-								span.visuallyhidden Home
-								i.icon-caret-down
-							ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu")
-								li: a(href='www.byu.edu') BYU Home
-								li: a(href='#') Organization Home
-								li: a(href='#') Two Pages Above
+				block breadcrumb
+					// Breadcrumb
+					ul.breadcrumb
+						li
+							.dropdown
+								a.home.dropdown-toggle.needsclick(href="", data-toggle="dropdown")
+									i.icon-home.icon-large
+									span.visuallyhidden Home
+									i.icon-caret-down
+								ul.dropdown-menu(role="menu", aria-labelledby="dropdownMenu")
+									li: a(href='www.byu.edu') BYU Home
+									li: a(href='#') Organization Home
+									li: a(href='#') Two Pages Above
+								i.divider.icon-angle-right
+						li
+							a(href="#") One page above
 							i.divider.icon-angle-right
-					li
-						a(href="#") One page above
-						i.divider.icon-angle-right
-					li.active Current Page
+						li.active Current Page
 
 
 
 
 
-			//-	===============
-			//-	CONTENT
-			//-	===============
-			block content
+				//-	===============
+				//-	CONTENT
+				//-	===============
+				block content
 
 
 

@@ -1,0 +1,27 @@
+/*!
+
+* Content 
+*
+*/
+
+
+@import "variables";
+@import "colors";
+@import "mixins";
+
+
+@media all and (min-width: $med-width) {
+
+	#content {
+		padding: 1em 9% 4em;
+	}
+
+}
+
+
+@media all and (min-width: $full-width) {
+
+	.one-sidebar #main-content { float:left; margin-right:5%; width:58.7%;}
+	.two-sidebars #main-content { float:left; margin-right:2%; width:48%;}
+	.sidebar { float:left; width:36.3%}
+}

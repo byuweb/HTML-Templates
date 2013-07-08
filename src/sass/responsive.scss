@@ -27,8 +27,8 @@
 	Only uncomment the stuff that you really need */
 
 // Core variables and mixins
-  @import "bootstrap/variables";
-  @import "bootstrap/mixins";
+	@import "bootstrap/variables";
+	@import "bootstrap/mixins";
 
 // CSS Reset
 //  @import "reset";
@@ -39,7 +39,7 @@
 //	@import "bootstrap/layouts";
 
 // Base CSS
-    @import "bootstrap/type";
+	@import "bootstrap/type";
 	@import "bootstrap/code";
 //	@import "bootstrap/forms";
 	@import "bootstrap/tables";
@@ -109,6 +109,7 @@ BYU Styles
 @import "responsive/slider-responsive";
 @import "responsive/flexslider";
 
+@import "responsive/content";
 @import "responsive/type";
 
 
