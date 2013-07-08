@@ -19,6 +19,10 @@ Modernizr.load([ // Load jQuery first
     test: Modernizr.touch,
     nope: "js/script.min.js",
     yep: "js/script-touch.min.js"
+}, // If the variable "loadslider" is truthy
+{
+    test: loadslider,
+    yep: "js/slider.min.js"
 }, // Load other if fonts are supported and browser window is 600px wide or more.
 {
     test: Modernizr.fontface && Modernizr.mq("only all and (min-width: 600px)"),

@@ -1,0 +1,112 @@
+extends _layout
+
+block pageTitle
+	| BYU - Sample 1
+
+block parentlink
+	a.byu(href='http://www.byu.edu/') Brigham Young University
+
+block heading
+	| Primary Organization
+
+block loadSlider
+	script var loadslider = true;
+
+
+
+
+block prepend contentwrapper
+	- var contentclasses = ''
+
+block content
+
+	#feature
+		//
+			| Woo Themes FlexSlider
+		.flexslider
+			ul.slides
+				li
+					img(src='images/slider/feature-main.jpg', alt='')
+					.feature-description
+						h2
+							a(href='#') Slider Feature 1
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				li
+					img(src='images/slider/feature-main-2.jpg', alt='')
+					.feature-description
+						h2
+							a(href='#') Slider Feature 2
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				li
+					img(src='images/slider/feature-main-3.jpg', alt='')
+					.feature-description
+						h2
+							a(href='#') Slider Feature 3
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				li
+					img(src='images/slider/feature-main.jpg', alt='')
+					.feature-description
+						h2
+							a(href='#') Slider Feature 4
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+		//
+			| Anything Slider
+			ul#slider
+				li
+					.feature-image
+						img(src='images/slider/feature-main.jpg', alt='')
+					.feature-description
+						h2
+							a(href='#') Slider Feature 1
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				li
+					.feature-image
+						img(src='images/slider/feature-main-2.jpg', alt='')
+					.feature-description
+						h2
+							a(href='#') Slider Feature 2
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				li
+					.feature-image
+						img(src='images/slider/feature-main-3.jpg', alt='')
+					.feature-description
+						h2
+							a(href='#') Slider Feature 3
+						p
+							| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+	#calendar
+		h2 Calendar
+		#calendarDays
+			ul#calendars
+				li
+					a(href='http://saas.byu.edu/calendar/') Academic Calendar
+				li
+					a(href='http://arts.byu.edu/calendar/') Arts Events
+				li
+					a(href='http://www.byucougars.com/schedule') Sports Schedules
+			strong
+				a(href='http://calendar.byu.edu/') Full Calendar
+	#news
+		h2 News
+		#news-container
+			.news-item
+				img(src='images/news/feature-1.jpg', height='157', width='262', alt='')
+				h3
+					a(href='#') News 1
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+			.news-item.omega
+				img(src='images/news/feature-2.jpg', height='157', width='262', alt='')
+				h3
+					a(href='#') News 2
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		strong
+			a.baseline(href='#') Full News Page
