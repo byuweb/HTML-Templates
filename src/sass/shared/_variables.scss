@@ -10,10 +10,11 @@ $asset-base: 'http://byuweb.github.com/Global-Assets/';
 
 // Screen sizes & other measurements
 
-$handheld-width:300px;     
-$med-width: 600px;         // Fonts bigger, slight header change
-$full-width: 900px;        // Footer links no longer stacked
-$extrawide-width: 1500px;  // For the lucky ones who have a huge screen...
+$small-width:300px;	// Doesn't need to be explicitly used, as responsive styles aren't loaded until 300px
+$med-width: 600px;	// Tablets
+$large-width: 900px;	// Tablets, desktops
+$larger-width: 1100px;	// Desktops
+$extralarge-width: 1500px;	// For the lucky ones who have a huge screen...
 
 $full-menu-width: 790px; // Menu should be in the header at this screen width. 
 
