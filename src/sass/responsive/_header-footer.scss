@@ -59,6 +59,17 @@ a.mybyu, a.sign-in, .open #search-button {
 
 
 
+@media all and (min-width: 500px) {
+	#logo a.byu {
+		background-image: url($asset-base + 'img/byu-logo.png');
+		width: 350px;
+		.svg & {
+			background-image: url($asset-base + 'img/byu-logo.svg');
+		}
+	}
+}
+
+
 
 
 
@@ -182,7 +193,7 @@ a.mybyu, a.sign-in, .open #search-button {
 
 
 
-@media all and (min-width: $full-width) {
+@media all and (min-width: $large-width) {
 	$col-margin: 2%;
 	$col-width: (90% - ($col-margin * 4))/5;
 
