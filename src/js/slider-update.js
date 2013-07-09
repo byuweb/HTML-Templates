@@ -5,6 +5,7 @@ $(function(){
 		directionNav: true,
 		keyboard: true,
 		animationSpeed: 450,
+		slideshow: false,
 	});
 	//$('#slider').anythingSlider();
 });
