@@ -30,8 +30,9 @@ module.exports = (grunt) ->
 						'src/js/script.js',
 						'src/js/touch.js']
 					'js/slider.min.js' : [
-						#'src/js/plugins/anythingslider.js'
-						'src/js/plugins/jquery.flexslider-min.js', 
+						'src/js/plugins/anythingslider.js'
+						#'src/js/plugins/jquery.flexslider-min.js', 
+						#'src/js/plugins/bjqs.min.js',
 						'src/js/slider-update.js']
 			compile_no_uglify:
 				options:
