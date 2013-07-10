@@ -21,10 +21,11 @@ block prepend contentwrapper
 block content
 
 	#feature
+
 		//
 			| Anything Slider
 		ul#slider
-			li
+			li.feature
 				.feature-image
 					img(src='images/slider/feature-main.jpg', alt='')
 				.feature-description
@@ -34,7 +35,7 @@ block content
 						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			li
 				.feature-image
-					img(src='images/slider/feature-main-2.jpg', alt='')
+					img(src="", data-src='images/slider/feature-main-2.jpg', alt='')
 				.feature-description
 					h2
 						a(href='#') Slider Feature 2
@@ -42,13 +43,12 @@ block content
 						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 			li
 				.feature-image
-					img(src='images/slider/feature-main-3.jpg', alt='')
+					img(src="", data-src='images/slider/feature-main-3.jpg', alt='')
 				.feature-description
 					h2
 						a(href='#') Slider Feature 3
 					p
 						| Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		.slide-nav
 
 
 	#calendar
