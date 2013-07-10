@@ -25,8 +25,8 @@ $(function(){
 
 	  // startText           : "Start",   // Start button text
 	  // stopText            : "Stop",    // Stop button text
-	  // forwardText         : "&raquo;", // Link text used to move the slider forward (hidden by CSS, replaced with arrow image)
-	  // backText            : "&laquo;", // Link text used to move the slider back (hidden by CSS, replace with arrow image)
+	   forwardText         : "Next", // Link text used to move the slider forward (hidden by CSS, replaced with arrow image)
+	   backText            : "Previous", // Link text used to move the slider back (hidden by CSS, replace with arrow image)
 	  // tooltipClass        : "tooltip", // Class added to navigation & start/stop button (text copied to title if it is hidden by a negative text indent)
 
 	  // // Function
@@ -38,7 +38,7 @@ $(function(){
 	  // // Navigation
 	  // startPanel          : 1,         // This sets the initial panel
 	  // changeBy            : 1,         // Amount to go forward or back when changing panels.
-	  // hashTags            : true,      // Should links change the hashtag in the URL?
+	   hashTags            : false,      // Should links change the hashtag in the URL?
 	  // infiniteSlides      : true,      // if false, the slider will not wrap & not clone any panels
 	  // navigationFormatter : null,      // Details at the top of the file on this use (advanced use)
 	  // navigationSize      : false,     // Set this to the maximum number of visible navigation tabs; false to disable
