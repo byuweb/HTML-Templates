@@ -21,6 +21,15 @@
     margin: -1em -5.55% 0;
 }
 
+.feature-description {
+    margin:0 5%;
+    h2 {
+        font-size:18px;
+        line-height: 20px;
+        margin: 20px 0px 10px;
+    }
+}
+
 
 @media all and ( min-width:$med-width ) {
     #feature {

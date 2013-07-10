@@ -14,14 +14,14 @@ $(function(){
 	  // buildNavigation     : true,      // If true, builds a list of anchor links to link to each panel
 	   buildStartStop      : false,      // If true, builds the start/stop button
 
-	  // appendForwardTo     : null,      // Append forward arrow to a HTML element (jQuery Object, selector or HTMLNode), if not null
-	  // appendBackTo        : null,      // Append back arrow to a HTML element (jQuery Object, selector or HTMLNode), if not null
+	   appendForwardTo     : $('#feature .slide-nav'),      // Append forward arrow to a HTML element (jQuery Object, selector or HTMLNode), if not null
+	   appendBackTo        : $('#feature .slide-nav'),      // Append back arrow to a HTML element (jQuery Object, selector or HTMLNode), if not null
 	  // appendControlsTo    : null,      // Append controls (navigation + start-stop) to a HTML element (jQuery Object, selector or HTMLNode), if not null
-	  // appendNavigationTo  : null,      // Append navigation buttons to a HTML element (jQuery Object, selector or HTMLNode), if not null
+	   appendNavigationTo  : $('#feature .slide-nav'),      // Append navigation buttons to a HTML element (jQuery Object, selector or HTMLNode), if not null
 	  // appendStartStopTo   : null,      // Append start-stop button to a HTML element (jQuery Object, selector or HTMLNode), if not null
 
-	   toggleArrows        : true,     // If true, side navigation arrows will slide out on hovering & hide @ other times
-	   toggleControls      : true,     // if true, slide in controls (navigation + play/stop button) on hover and slide change, hide @ other times
+	  // toggleArrows        : true,     // If true, side navigation arrows will slide out on hovering & hide @ other times
+	  // toggleControls      : true,     // if true, slide in controls (navigation + play/stop button) on hover and slide change, hide @ other times
 
 	  // startText           : "Start",   // Start button text
 	  // stopText            : "Stop",    // Stop button text
@@ -65,10 +65,10 @@ $(function(){
 	  // onShowPause         : function(e, slider) {}, // Callback when slideshow pauses
 	  // onShowUnpause       : function(e, slider) {}, // Callback when slideshow unpauses - may not trigger properly if user clicks on any controls
 	  // onSlideInit         : function(e, slider) {}, // Callback when slide initiates, before control animation
-	   onSlideBegin        : function(e, slider) {
+	  // onSlideBegin        : function(e, slider) {
 	   		// keep the current navigation tab in view
-			slider.navWindow( slider.targetPage );
-	   }, // Callback before slide animates
+	//		slider.navWindow( slider.targetPage );
+	  // }, // Callback before slide animates
 	  // onSlideComplete     : function(slider) {},    // Callback when slide completes; this is the only callback without an event "e" parameter
 
 	  // // Interactivity
@@ -84,7 +84,9 @@ $(function(){
 	  // addWmodeToObject    : "opaque",  // If your slider has an embedded object, the script will automatically add a wmode parameter with this setting
 	  // isVideoPlaying      : function(base){ return false; } // return true if video is playing or false if not - used by video extension
 	});
+	
 
+	// Reset anythingslider on window resize
 	$(window).resize(function() {
 		$('#slider').anythingSlider();
 	});
