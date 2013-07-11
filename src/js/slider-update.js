@@ -1,3 +1,18 @@
+/*! 
+
+* @fileOverview slider-update.js
+* @version 1.0
+* 
+* @author BYU Web Community
+* @see https://github.com/byuweb/
+* @see https://github.com/byuweb/byu-responsive-dev/
+* @see https://github.com/byuweb/byu-responsive-dev/blob/gh-pages/src/js/slider-update.js
+*/
+
+
+
+// On page Load
+
 $(function(){
 
 	// load image function
@@ -12,6 +27,36 @@ $(function(){
 	};
 
 
+
+	var loadDescriptionColors = function() {
+		var descList = $('.feature-description');
+
+		if( !descList ) {
+			return;
+		}
+
+		for (var x = 0; x < descList.size(); x++ ) {
+			var desc = $(descList[x]),
+				
+			// Colors
+				background = desc.attr('data-background'),
+				shadow = desc.attr('data-shadow'),
+
+			// Conversions
+				insetShadow = 'inset 0 0 110px 5px ' + shadow + ', ',
+				boxShadow = '0 0 12px rgba(0,0,0,0.25)',
+				shadowCSSbase = insetShadow + boxShadow;
+
+			// Add CSS
+			desc.css("background-color", background);
+			desc.css("border-left-color", background);
+			desc.css("-webkit-box-shadow", shadowCSSbase);
+			desc.css("-moz-box-shadow", shadowCSSbase);
+			desc.css("box-shadow", shadowCSSbase);
+		}
+	}
+
+
 	$('#slider').anythingSlider({
 		mode                : "f",   // Set mode to "horizontal", "vertical" or "fade" (only first letter needed); replaces vertical option
 		resizeContents      : false,      // If true, solitary images/objects in the panel will expand to fit the viewport
@@ -21,6 +66,8 @@ $(function(){
 		hashTags            : false,      // Should links change the hashtag in the URL?
 		animationTime       : 400,       // How long the slideshow transition takes (in milliseconds)
 		
+		onBeforeInitialize: loadDescriptionColors,
+
 		onInitialized: function(e, slider) { // Callback when the plugin finished initializing
 			var start = slider.options.startPanel;
 			// allow start & cloned panel images to load

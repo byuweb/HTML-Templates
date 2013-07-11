@@ -153,6 +153,14 @@
 		}
 	}
 
+	#feature #slider {
+		width: 940px;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		padding-bottom:0;
+	}
+
 	.anythingSlider {
 		padding-bottom: 0;
 	}
@@ -161,17 +169,47 @@
 		width: 940px !important;
 		height: 393px !important;
 		margin:0 auto;
+		position: relative;
+	}
+
+	.anythingControls {
+		width: 240px;
+		right:50%;
+		bottom:15px;
+		margin-right: -470px;
 	}
 
 	.feature-description {
 		position: absolute;
 		top: 0;
 		right: 0;
-		width: 191px;
+		width: 190px;
 		margin: 0;
-		background-color: #eee;
+		background-color: $blue9;
 		height: 393px;
 		padding: 0 25px;
+		border-left:1px solid $blue9;
+		@include box-shadow( inset 0 0 110px 5px rgba($blue6, .5), 0 0 12px rgba(black, .25) );
+
+		a, a:link, a:visited, a:active, a:hover, a:focus {
+			color: $blue4;
+		}
+		&.lightText {
+			color: white;
+			* {
+				opacity: 0.75;
+			}
+			a, a:link, a:visited, a:active, a:hover, a:focus {
+				color: white;
+				opacity: 1;
+			}
+
+		}
 	}
+
+}
+
+
+@media all and ( min-width:$larger-width ) {
 
 }

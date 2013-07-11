@@ -28,6 +28,7 @@ Modernizr.load([
 	{
 		test: loadslider,
 		yep: "js/slider.min.js"
+		//yep: ['src/js/plugins/anythingslider.js', 'src/js/slider-update.js']
 	},
 
 	// Load other if fonts are supported and browser window is 600px wide or more.
