@@ -145,6 +145,16 @@
 
 
 
+
+
+@media all and( max-width:939px ) {
+	.feature-description {
+		border-left: none !important;
+		background-color: transparent !important;
+		@include box-shadow(none !important);
+	}
+}
+
 @media all and ( min-width:940px ) {
 	#feature {
 		border-bottom: none;

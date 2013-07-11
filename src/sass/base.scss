@@ -507,3 +507,12 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
   border-top:1px solid #fff;
   padding-bottom:1.5em;
  }
+
+
+@media all and( max-width:939px ) {
+  .feature-description {
+    border-left: none !important;
+    background-color: transparent !important;
+    @include box-shadow(none !important);
+  }
+}
