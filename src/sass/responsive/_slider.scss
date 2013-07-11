@@ -12,6 +12,9 @@
 	ul {
 		padding-bottom:0;
 	}
+	li {
+		display: list-item;
+	}
 }
 
 .anythingSlider {
@@ -104,7 +107,7 @@
 		margin:0 auto;
 	}
 	li {
-		display: inline-block;
+		display: inline-block !important;
 		margin:0 5px;
 	}
 	a {
@@ -115,7 +118,7 @@
 		background-color: black;
 		text-indent: -999em;
 		overflow: hidden;
-		opacity: .1;
+		opacity: .15;
 		&.cur, &:hover {
 			opacity: .3;
 		}
