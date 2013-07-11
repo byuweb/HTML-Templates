@@ -25,9 +25,10 @@ module.exports = (grunt) ->
 						'src/js/script.js']
 					'js/script-touch.min.js' : [
 						#'src/js/plugins/fastclick.js', 
-						'src/js/plugins/jrespond.js', 
+						#'src/js/plugins/jrespond.js', 
 						'src/js/plugins/touchswipe.js', 
 						'src/js/bootstrap/bootstrap-dropdown.js', 
+						'src/js/plugins/plugins.js',
 						'src/js/script.js',
 						'src/js/touch.js']
 					'js/slider.min.js' : [
