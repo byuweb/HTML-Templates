@@ -140,7 +140,38 @@
 			line-height: 30px;
 			margin: 20px 0px 10px;
 		}
-}
+	}
 }
 
 
+
+@media all and ( min-width:940px ) {
+	#feature {
+		border-bottom: none;
+		.feature-image {
+			text-align: left;
+		}
+	}
+
+	.anythingSlider {
+		padding-bottom: 0;
+	}
+
+	.anythingWindow {
+		width: 940px !important;
+		height: 393px !important;
+		margin:0 auto;
+	}
+
+	.feature-description {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 191px;
+		margin: 0;
+		background-color: #eee;
+		height: 393px;
+		padding: 0 25px;
+	}
+
+}
