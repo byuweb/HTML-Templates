@@ -26,6 +26,11 @@ $(function(){
 });
 
 
+
+
+
+
+
 /* Func: getWidth
  * Desc: Get the current width of the browser window
  * Args: none
