@@ -1,0 +1,184 @@
+@import 'compass';
+@import 'colors';
+@import 'mixins';
+
+
+$baseUrl: 'http://byuweb.github.com/Global-Assets';
+
+html, body {
+  margin:0;
+}
+
+
+
+#byu-bar {
+  font-size: 14px;
+  font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+  width:100%;
+  padding:2px 0;
+  background-color:#001948;
+  border-bottom: 1px solid #000;
+  min-width: 120px;
+  height:30px;
+  .svg & {
+    background-image: url($baseUrl + '/img/byu-header-bg.svg'); }
+
+  h1 {
+    margin: 0;
+    padding:0;
+    width:80px;
+    float: left;
+    margin-left: 3%;
+    position: absolute;
+    font-size: 1em;
+    a {
+      display: block;
+      height: 30px;
+      @include replace-text($baseUrl + '/img/byu-logo.svg', 0, 0); } }
+
+  a.sign-in {
+    background-color:$blue5;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+    padding: 5px 18px;
+    text-decoration: none;
+    position: absolute;
+    top:5px;
+    right: 3%;
+    @include border-radius(14px);
+    @include vertical-gradient($blue5,$blue4);
+    @include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
+    @include transition(background-color .3s); 
+    &:hover, &:active {
+      margin: -2px;
+      background-color: $blue4;
+      border: 2px solid $blue7;
+      cursor:pointer;
+      border: none;
+      margin:0;
+      @include border-radius(16px);
+      @include vertical-gradient(mix($blue5,$blue4),mix($blue4,$blue3)); } }
+
+  a.mybyu, .open #search-button {
+    font-size: 13px;
+    position:relative;
+    float:right;
+    margin-right:3%;
+    margin-top:2px;
+    background-color:$blue5;
+    color:#fff;
+    padding:.25em 1em .35em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius:1em;
+    border:none;
+    &:hover {
+      cursor:pointer; } }
+      
+  #search-container {
+    width:2em;
+    height:2em;
+    float:right;
+    z-index: 500;
+    margin-right: 3%;
+    .search {
+      display: block;
+    	text-indent: -999em;
+    	overflow: hidden;
+    	background-repeat: no-repeat;
+    	text-align: left;
+    	direction: ltr;
+      line-height:2em;
+      background:transparent url('../img/search.png') .45em center no-repeat;
+      .svg & {
+        background-image: url('../img/search-lg.svg') } } }
+  
+  #searchForm {
+    clear: left;
+    padding:0;
+    border-top:1px solid transparent;
+    margin-top:1em;  
+    margin:1em 5% 4em;
+    #q {
+      font-size:1.25em;
+      padding:.5em 1em; } }
+  
+  #search-button {
+    padding:.35em 1.5em;
+    margin:.25em 0;
+    background-color:$blue4;
+    color:#fff;
+    border:1px solid $blue5; }
+    
+  #searchForm {
+    display: none;
+    #search-container.open & { // Open search container
+      display:block;
+      position: absolute;
+      right:0;
+      top:1em;
+      background-color:$blue6;
+      @include border-radius(1em);
+      @include box-shadow(0 0 20px #000);
+      border: 1px solid $blue3;
+      padding:.5em .75em;
+      #search {
+        padding: .3em 1em .35em;
+        width:12em;
+        border:none;
+        position: relative;
+        z-index: 2;
+        background-color: $grayE;
+        @include border-radius(1em);
+        &:focus {
+          background-color: #fff;
+          outline: none; } } } }
+  
+  #content #searchForm {
+    display: block; }
+
+}
+
+
+@media all and (min-width:300px) {
+
+#byu-bar {
+  
+  a.mybyu, .open #search-button {
+    color: white;
+    display: block;
+    @include background-image(linear-gradient($blue5, $blue3));
+    @include border-radius(14px);
+    @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.25) inset,0 1px 8px rgba(0, 0, 0, 0.2));
+    padding:.25em 1.75em .35em;
+    //padding: 4px 28px;
+    //float: left;
+    //margin-right: 12px;
+    text-decoration: none;
+    font-weight: bold; }
+  
+  #search-container {
+    background-color: transparent;
+    border:none;
+    padding:0;
+    height: auto;
+    a.search {
+      background: transparent url('../img/search-lg.png') center center no-repeat;
+      .svg & {
+        background-image: url('../img/search-lg.svg'); } } } }
+}
+
+
+@media all and (min-width:500px) {
+
+  #byu-bar {  
+    h1 { 
+      margin-left: 15px;
+      a {
+        width:345px; } }
+    
+    a.mybyu, .open #search-button {
+      margin-right:15px; } }
+
+}
