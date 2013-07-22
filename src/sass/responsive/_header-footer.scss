@@ -28,7 +28,7 @@ a.mybyu, a.sign-in, .open #search-button {
 	&:hover {
 		border: none;
 		margin:0;
-		@include vertical-gradient($blue6,$blue5);
+		@include vertical-gradient(mix($blue5,$blue4),mix($blue4,$blue3));
 	}
 }
 
