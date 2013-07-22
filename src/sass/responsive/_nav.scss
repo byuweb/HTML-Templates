@@ -301,6 +301,13 @@ body.sideNav {
 	$search-width: 250px;
 	$menu-height:36px;
 
+	body.sideNav {
+		min-height: auto;
+		#main-header, #content, #page-footer, #search-menu {
+			left:auto;
+		}
+	}
+
 	#header-top {
 		height: $header-top-height;
 		margin-right: 3%;
