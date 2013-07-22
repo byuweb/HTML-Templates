@@ -242,6 +242,9 @@ $sidePadding:5px;
     padding-right: ($searchPadding * 2) + $searchButtonWidth + $sidePadding + 2px;
     padding-left:$sidePadding;
     padding-top:4px;
+    label {
+      color: #fff;
+    }
   }
 
 
@@ -492,6 +495,9 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
 #footer-links {
   border-bottom:1px solid #ccc;
   padding-bottom:1.5em;
+  a, a:link, a:visited {
+    color: $brown0;
+  }
   div.alpha {
     margin-top:0; border-top:none; }
   .addthis_default_style a {
