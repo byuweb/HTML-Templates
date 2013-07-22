@@ -495,9 +495,6 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
 #footer-links {
   border-bottom:1px solid #ccc;
   padding-bottom:1.5em;
-  a, a:link, a:visited {
-    color: $brown0;
-  }
   div.alpha {
     margin-top:0; border-top:none; }
   .addthis_default_style a {
@@ -512,6 +509,10 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
   background-color:#e5e2df;
   border-top:1px solid #fff;
   padding-bottom:1.5em;
+  
+  a, a:link, a:visited {
+    color: $brown0;
+  }
  }
 
 
