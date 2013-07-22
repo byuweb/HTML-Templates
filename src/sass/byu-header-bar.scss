@@ -7,6 +7,7 @@ $baseUrl: 'http://byuweb.github.com/Global-Assets';
 
 html, body {
   margin:0;
+  background-color: #ddd;
 }
 
 
@@ -17,7 +18,7 @@ html, body {
   width:100%;
   padding:2px 0;
   background-color:#001948;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid black;
   min-width: 120px;
   height:30px;
   .svg & {
@@ -36,7 +37,7 @@ html, body {
       height: 30px;
       @include replace-text($baseUrl + '/img/byu-logo.svg', 0, 0); } }
 
-  a.sign-in {
+  .sign-in {
     background-color:$blue5;
     border:none;
     color:#fff;
@@ -44,7 +45,7 @@ html, body {
     padding: 5px 18px;
     text-decoration: none;
     position: absolute;
-    top:5px;
+    top:4px;
     right: 3%;
     @include border-radius(14px);
     @include vertical-gradient($blue5,$blue4);
