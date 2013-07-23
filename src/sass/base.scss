@@ -3,9 +3,9 @@
 */
 
 @import "compass";
-@import "colors";
-@import "mixins";
-@import "variables";
+@import "shared/colors";
+@import "shared/mixins";
+@import "shared/variables";
 
 @import "base/normalize"; // Great place to start
 @import "base/h5bp"; // Good defaults from HTML5 Boilerplate
