@@ -1,70 +1,60 @@
-<!doctype html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	
-	<title>Page Title</title>
-	<meta name="description" content="Description about your department." />
-	<meta name="author" content="Your Department Name" />
-	<meta name="keywords" content="keyword 1, keyword 2, keyword 3">
-	
-	<meta name="viewport" content="width=device-width" />
-	
-	<link rel="shortcut icon" href="template/img/favicon.ico" />
-
-	<link rel="stylesheet" href="css/base.css" />
-	
-	<style>
-	 li.break { margin-bottom: .5em; }
-	</style>
-	
-</head>
-
-<body>
-  
-
-  <h2>Updates</h2>
-  <ul>
-    <!-- <li><a href="pagetype1.html">Page Type 1 - BYU Home Page</a></li> -->
-    <li><a href="pagetype2-update.html">Page Type 2 - Primary Organization</a></li>
-    <li><a href="pagetype3-update.html">Page Type 3 - Secondary Organization</a></li>
-    <li class="break"><a href="pagetype4-update.html">Page Type 4 - Simple Applications</a></li>
-
-    <li><a href="pageheader1.html">Page Header 1 - Application banner</a></li>
-    <!-- <li class="break"><a href="pageheader2.html">Page Header 2 - Application banner with search</a></li> -->
-    
-    <li><a href="sample1-primaryorg-frontpage.html">Sample 1 - Frontpage - Primary Organization</a></li>
-    <li><a href="sample2-primaryorg-page.html">Sample 2 - Simple page - Primary Organization</a></li>
-    <li><a href="sample3-primaryorg-onesidebar.html">Sample 3 - One Sidebar - Primary Organization</a></li>
-    <li><a href="sample4-primaryorg-twosidebars.html">Sample 4 - Two Sidebar - Primary Organization</a></li>
-    <!-- <li><a href="sample5-secondaryorg-sixcolumns.html">Sample 5 - Six Columns - Secondary Organization</a></li> -->
-  </ul>
-
-
-  <h2>Elements</h2>
-  <ul>
-    <li><a href="elements.html">Base HTML Elements</a></li>
-    <li><a href="test.html">Page test</a></li>
-  </ul>
-
-
-  <!-- <h2>Legacy</h2>
-  <ul>
-    <li><a href="Page Type 2 - Primary Organization.html">Page Type 2 - Primary Organization</a></li>
-    <li><a href="Page Type 3 - Secondary Organization.html">Page Type 3 - Secondary Organization</a></li>
-    <li><a href="Page Type 4 - Applications.html">Page Type 4 - Applications</a></li>
-    <li class="break"><a href="Page Type 4 - Simple Applications.html">Page Type 4 - Simple Applications</a></li>
-
-    <li><a href="Sample 1 - Frontpage - Primary Organization.html">Sample 1 - Frontpage - Primary Organization</a></li>
-    <li><a href="Sample 2 - Simple page - Primary Organization.html">Sample 2 - Simple page - Primary Organization</a></li>
-    <li><a href="Sample 3 - One Sidebar - Primary Organization.html">Sample 3 - One Sidebar - Primary Organization</a></li>
-    <li><a href="Sample 4 - Two Sidebar - Primary Organization.html">Sample 4 - Two Sidebar - Primary Organization</a></li>
-    <li><a href="Sample 5 - Six Columns - Secondary Organization.html">Sample 5 - Six Columns - Secondary Organization</a></li>
-  </ul> -->
-</body>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BYU Web Templates Testing</title>
+    <meta name="description" content="Description about your department.">
+    <meta name="author" content="Your Department Name">
+    <meta name="keywords" content="keyword 1, keyword 2, keyword 3">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="template/img/favicon.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/byu-header-bar.css">
+    <style>
+      li.break { margin-top: 1em; }
+      li a {display:block; padding:.15em 0;}
+    </style>
+    <script src="js/init.js"></script>
+  </head>
+  <body>
+    <div id="byu-bar">
+      <!-- BYU Logo -->
+      <h1><a href="http://www.byu.edu/" class="byu-bar-logo">BYU - Brigham Young University</a></h1>
+    </div>
+    <div id="content" role="main" class="wrapper clearfix">
+      <h1>BYU Web Templates</h1>
+      <p>
+         
+        The following are the currently available test pages implementing the responsive BYU web templates. Source code available at <a href="https://github.com/byuweb/byu-responsive-dev">github.com/byuweb/byu-responsive-dev</a>. Issues can be contributed and tracked on <a href="https://github.com/byuweb/byu-responsive-dev/issues">the project issues page</a>.
+      </p>
+      <h2>Functional test pages</h2>
+      <ul>
+        <li><a href="elements.html">HTML and CSS Elements (Style guide)</a></li>
+        <!-- li: a(href='pagetype1-update.html') Page Type 1 - BYU Home Page-->
+        <li class="break"><a href="pagetype2-update.html">Page Type 2 - Primary Organization</a></li>
+        <li><a href="pagetype3-update.html">Page Type 3 - Secondary Organization</a></li>
+        <li><a href="pagetype4-update.html">Page Type 4 - Simple Applications</a></li>
+        <li class="break"><a href="pageheader1.html">Page Header 1 - Application banner</a></li>
+        <li class="break"><a href="sample1-primaryorg-frontpage.html">Sample 1 - Frontpage - Primary Organization</a></li>
+        <li><a href="sample2-primaryorg-page.html">Sample 2 - Simple page - Primary Organization</a></li>
+        <li><a href="sample3-primaryorg-onesidebar.html">Sample 3 - One Sidebar - Primary Organization</a></li>
+        <li><a href="sample4-primaryorg-twosidebars.html">Sample 4 - Two Sidebar - Primary Organization</a></li>
+        <!-- li: a(href='sample5-secondaryorg-sixcolumns.html') Sample 5 - Six Columns - Secondary Organization-->
+      </ul><!--
+      <h2>Legacy pages</h2>
+      <ul>
+        <li><a href="Page Type 2 - Primary Organization.html">Page Type 2 - Primary Organization</a></li>
+        <li><a href="Page Type 3 - Secondary Organization.html">Page Type 3 - Secondary Organization</a></li>
+        <li><a href="Page Type 4 - Applications.html">Page Type 4 - Applications</a></li>
+        <li><a href="Page Type 4 - Simple Applications.html">Page Type 4 - Simple Applications</a></li>
+        <li class="break"><a href="Sample 1 - Frontpage - Primary Organization.html">Sample 1 - Frontpage - Primary Organization</a></li>
+        <li><a href="Sample 2 - Simple page - Primary Organization.html">Sample 2 - Simple page - Primary Organization</a></li>
+        <li><a href="Sample 3 - One Sidebar - Primary Organization.html">Sample 3 - One Sidebar - Primary Organization</a></li>
+        <li><a href="Sample 4 - Two Sidebar - Primary Organization.html">Sample 4 - Two Sidebar - Primary Organization</a></li>
+        <li><a href="Sample 5 - Six Columns - Secondary Organization.html">Sample 5 - Six Columns - Secondary Organization</a></li>
+      </ul>-->
+    </div>
+  </body>
 </html>
