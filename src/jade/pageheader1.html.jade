@@ -8,9 +8,6 @@ block head
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
 		title BYU - Page Header 1
-		meta(name='description', content='Description about your department.')
-		meta(name='author', content='Your Department Name')
-		meta(name='keywords', content='keyword 1, keyword 2, keyword 3')
 		meta(name='viewport', content='width=device-width, , initial-scale=1')
 
 		// Place favicon.ico and apple-touch-icon.png in the root directory
@@ -24,17 +21,18 @@ block head
 
 block header
 	// BYU HEADER BAR
-	#byu-bar
-		// BYU Logo 
+	#byu-bar.sign-in
+		// BYU Logo
 		h1
-			a.byu-bar-logo(href='http://www.byu.edu/') BYU - Brigham Young University
+			a.byu(href='http://www.byu.edu/') Brigham Young University
+
 		// Sign in Button 
 		a.sign-in(href='http://home.byu.edu/home/cas') Sign in
 	// END BYU HEADER BAR
 
 
 
-//- Others (removed)
+//- Other block overrides
 block contentwrapper
 	p(style="text-align:center") [App content goes here]
 
