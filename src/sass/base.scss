@@ -23,9 +23,9 @@ $serif-font-stack: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
 
 /*** Type ***/
 
-$baseSize:16; // 16px
-$fontSize:13; // 14px
-$lineHeight:18; // 20px
+$baseSize:16;
+$fontSize:13;
+$lineHeight:18;
 
 body, button, input, select, textarea {
   color: #444;
@@ -508,7 +508,7 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
   background-color:#e5e2df;
   border-top:1px solid #fff;
   padding-bottom:1.5em;
-  
+
   a, a:link, a:visited {
     color: $brown0;
   }
