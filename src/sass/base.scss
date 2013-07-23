@@ -258,7 +258,7 @@ $sidePadding:5px;
     display: block;
     width:$searchButtonWidth;
     position: absolute;
-    top:4px;
+    top:0px;
     right:$sidePadding;
     &:hover, &:active {
       right:$sidePadding + 2;
