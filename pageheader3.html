@@ -8,7 +8,7 @@
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>BYU - Page Header 2</title>
+    <title>BYU - Page Header 3</title>
     <meta name="viewport" content="width=device-width, , initial-scale=1">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
     <link rel="shortcut icon" href="favicon.ico">
@@ -20,10 +20,17 @@
   <body><!--[if lt IE 7]>
     <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p><![endif]-->
     <!-- BYU HEADER BAR-->
-    <div id="byu-bar" class="button">
-      <!-- BYU Logo-->
+    <div id="byu-bar" class="search">
+      <!-- BYU logo -->
       <h2><a href="http://www.byu.edu/" class="byu">Brigham Young University</a></h2>
-      <!-- Sign in Button --><a href="http://home.byu.edu/home/cas" class="sign-in">Sign in</a>
+      <!-- Basic search-->
+      <div id="search-container" role="search">
+        <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
+          <label for="search" class="visuallyhidden">Search</label>
+          <input id="search" type="search" name="search">
+          <input id="search-submit" type="submit" value="Search">
+        </form>
+      </div>
     </div>
     <!-- END BYU HEADER BAR-->
     <p style="text-align:center">[App content goes here]</p>
