@@ -67,14 +67,33 @@ $byubarSearchHeight: 27px;
 
 
 
-@media all and (min-width:600px) {
 
-  #byu-bar {  
-    h2 { 
-      a {
-        width:345px;
-      }
-    }
-  }
+
+@media all and (min-width:400px) {
+
+	#byu-bar h2 a { width:345px; }
+
+	#byu-bar.search,
+	#byu-bar.button {
+		h2 a {
+			width: 80px;
+		}
+	}
 
 }
+
+@media all and (min-width:500px) {
+	#byu-bar.button h2 a { width:345px; }
+	#byu-bar.search.button h2 a { width: 80px; }
+}
+
+@media all and (min-width:600px) {
+	#byu-bar.search h2 a { width:345px; }
+	#byu-bar.search.button h2 a { width: 80px; }
+}
+
+@media all and (min-width:700px) {
+	#byu-bar.search.button h2 a { width: 345px; }
+}
+
+
