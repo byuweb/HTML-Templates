@@ -63,6 +63,13 @@ $byubarSearchHeight: 27px;
 		}
 	}
 
+	&.search .sign-in {
+		margin-right: 35%;
+	}
+
+	&.button #search-container {
+		width: 35%;
+	}
 }
 
 
@@ -71,11 +78,11 @@ $byubarSearchHeight: 27px;
 
 @media all and (min-width:400px) {
 
-	#byu-bar h2 a { width:345px; }
+	#byu-bar a.byu { width:345px; }
 
 	#byu-bar.search,
 	#byu-bar.button {
-		h2 a {
+		a.byu {
 			width: 80px;
 		}
 	}
@@ -83,17 +90,17 @@ $byubarSearchHeight: 27px;
 }
 
 @media all and (min-width:500px) {
-	#byu-bar.button h2 a { width:345px; }
-	#byu-bar.search.button h2 a { width: 80px; }
+	#byu-bar.button a.byu { width:345px; }
+	#byu-bar.search.button a.byu { width: 80px; }
 }
 
 @media all and (min-width:600px) {
-	#byu-bar.search h2 a { width:345px; }
-	#byu-bar.search.button h2 a { width: 80px; }
+	#byu-bar.search a.byu { width:345px; }
+	#byu-bar.search.button a.byu { width: 80px; }
 }
 
-@media all and (min-width:700px) {
-	#byu-bar.search.button h2 a { width: 345px; }
+@media all and (min-width:720px) {
+	#byu-bar.search.button a.byu { width: 345px; }
 }
 
 
