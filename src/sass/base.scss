@@ -522,3 +522,6 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
     @include box-shadow(none !important);
   }
 }
+
+
+@import "responsive/byu-bar";
