@@ -1,0 +1,80 @@
+// BYU Header Bar
+
+@import "shared/variables";
+
+
+
+$byubarSearchHeight: 27px;
+
+#byu-bar {
+	font-size: 14px;
+	font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
+	width:100%;
+	padding:2px 0;
+	background-color:#001948;
+	border-bottom: 1px solid black;
+	min-width: 120px;
+	height:30px;
+
+	h2 {
+		margin: 0;
+		padding:0;
+		width:80px;
+		float: left;
+		margin-left: 3%;
+		position: absolute;
+		font-size: 1em;
+		a.byu {
+			display: block;
+			height: 30px;
+			@include replace-text($asset-base + '/img/byu-logo.png', 0, 0);
+			.svg & {
+				background-image: url($asset-base + '/img/byu-logo.svg');
+			}
+		} 
+	}
+
+	.svg & {
+		background-image: url($asset-base + '/img/byu-header-bg.svg'); 
+	}
+
+	h2 {
+		margin-left: 6px;
+	}
+
+	#search-container {
+		height: $byubarSearchHeight;
+		position: absolute;
+		top: 4px;
+    	right: 6px;
+   	    width: 40%;
+   	    min-width: 120px;
+   	    max-width: 400px;
+	}
+
+ 	#basic-search #search {
+ 		height: $byubarSearchHeight;
+	}
+
+	#search-submit {
+		top: 0;
+		&:active, &:hover {
+			right:5px;
+		}
+	}
+
+}
+
+
+
+@media all and (min-width:600px) {
+
+  #byu-bar {  
+    h2 { 
+      a {
+        width:345px;
+      }
+    }
+  }
+
+}

@@ -1,9 +1,9 @@
-@import 'compass';
-@import 'shared/colors';
-@import 'shared/mixins';
+@import "compass";
+@import "shared/colors";
+@import "shared/mixins";
+@import "shared/variables";
 
 
-$baseUrl: 'http://byuweb.github.com/Global-Assets';
 $fontSize:14; 
 
 html, body {
@@ -12,37 +12,6 @@ html, body {
 
 
 #byu-bar {
-  font-size: 14px;
-  font-family:"Lucida Grande","Lucida Sans Unicode","Lucida Sans",Helvetica,Arial,sans-serif;
-  width:100%;
-  padding:2px 0;
-  background-color:#001948;
-  border-bottom: 1px solid black;
-  min-width: 120px;
-  height:30px;
-
-  .svg & {
-    background-image: url($baseUrl + '/img/byu-header-bg.svg'); }
-
-
-// BYU Logo
-
-  h1 {
-    margin: 0;
-    padding:0;
-    width:80px;
-    float: left;
-    margin-left: 3%;
-    position: absolute;
-    font-size: 1em;
-    a.byu {
-      display: block;
-      height: 30px;
-      @include replace-text($baseUrl + '/img/byu-logo.svg', 0, 0); 
-    } 
-  }
-
-
 
 // SIGN IN BUTTON
 
@@ -79,6 +48,15 @@ html, body {
   $sidePadding:5px;
 
   #search-container {
+    width: 300px;
+    padding: 0;
+    height: 32px;
+    position: relative;
+
+    @include border-radius(15px);
+    @include vertical-gradient($blue5,$blue4);
+    @include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
+
     textarea:hover,
     input:hover,
     textarea:active,
@@ -96,6 +74,14 @@ html, body {
     padding-right: ($searchPadding * 2) + $searchButtonWidth + $sidePadding + 2px;
     padding-left:$sidePadding;
     padding-top:4px;
+
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    padding-right: 43px;
+    @include box-sizing(border-box);
+
     label {
       color: #fff;
     }
@@ -113,26 +99,6 @@ html, body {
     width: 100%;
   }
 
-  // Basic submit button
-  #search-submit {
-    background-image: url(../img/search_box_icon.png);
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    overflow: hidden;
-    text-indent: -1000px;
-    padding: 5px;
-    display: block;
-    position: absolute;
-    right:$sidePadding;
-    overflow: hidden;
-    margin: 0;
-    width:34px;
-    top:1px;
-    &:hover, &:active {
-      right:$sidePadding + 2;
-    }
-  }
-
   #basic-search #search {
     border: 0 !important;
     padding: 6px 8px 6px 14px !important;
@@ -148,36 +114,44 @@ html, body {
     } 
   }
 
-}
+    // Basic submit button
+  #search-submit {
+    display: block;
+    position: absolute;
+    background: url(../img/search_box_icon.png) 8px 8px no-repeat;
+    overflow: hidden;
+    text-indent: -1000px;
+    margin: 0;
+    padding: 5px;
+    padding-left: 0;
+    width: 34px;
+    top: 1px;
+    right: 5px;
 
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
 
-@media all and (min-width:300px) {
-
-  #byu-bar {
-    
-    h1 a.byu {
-      color: white;
-      display: block;
-      @include background-image(linear-gradient($blue5, $blue3));
-      @include border-radius(14px);
-      @include box-shadow(0 1px 0 rgba(255, 255, 255, 0.25) inset,0 1px 8px rgba(0, 0, 0, 0.2));
-      padding:.25em 1.75em .35em;
-      text-decoration: none;
-      font-weight: bold; 
-    }
-  }
-}
-
-
-@media all and (min-width:500px) {
-
-  #byu-bar {  
-    h1 { 
-      margin-left: 15px;
-      a {
-        width:345px;
-      }
+    &:active, &:hover {
+      right:7px;
+      cursor: pointer;
     }
   }
 
 }
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+
+@import "responsive/byu-bar"
