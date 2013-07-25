@@ -21,7 +21,7 @@ block head
 
 block header
 	// BYU HEADER BAR
-	#byu-bar.button.search
+	#byu-bar.button
 		// BYU Logo
 		h2
 			a.byulink(href="#") Brigham Young University
@@ -30,12 +30,6 @@ block header
 		// Sign in Button 
 		a.sign-in(href='http://home.byu.edu/home/cas') Sign in
 
-		// Basic search
-		#search-container(role='search')
-			form#basic-search(action='http://home.byu.edu/home/search', role='form')
-				label.visuallyhidden(for='search') Search
-				input#search(type='search', name='search')
-				input#search-submit(type='submit', value='Search')
 	// END BYU HEADER BAR
 
 
