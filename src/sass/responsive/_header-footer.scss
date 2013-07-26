@@ -77,7 +77,7 @@ a.mybyu, a.sign-in, .open #search-button {
 
 	#main-header {
 		background: $blue2 url($asset-base + 'img/byu-header-bg.png') top left no-repeat;
-		background-size: 100% 96px;
+		background-size: 100% 100%;
 		.svg & {
 			background-image: url($asset-base + 'img/byu-header-bg.svg');
 		}
