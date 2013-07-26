@@ -8,7 +8,7 @@
 */
 
 Modernizr.load([
-	// Load jQuery first
+	// Load jQuery first. If it doesn't make it from our location, get it from Google.
 	{
 		load: 'http://byuweb.github.io/Global-Assets/js/jquery-1.9.1.min.js',
 		complete: function () {
@@ -17,21 +17,20 @@ Modernizr.load([
 			}
 		}
 	},
-	// Load scripts required by jQuery. If touch is enabled, load alternate script file with touch support added.
+	// Next load scripts that require jQuery. If touch is enabled, load alternate script file with touch support added.
 	{
 		test: Modernizr.touch,
 		nope: "js/script.min.js",
 		yep: 'js/script-touch.min.js'
 	},
 
-	// If the variable "loadslider" is truthy
+	// If the variable "loadslider" is truthy, load the slider script
 	{
 		test: loadslider,
 		yep: "js/slider.min.js"
-		//yep: ['src/js/plugins/anythingslider.js', 'src/js/slider-update.js']
 	},
 
-	// Load other if fonts are supported and browser window is 600px wide or more.
+	// If fonts are supported and the browser window is 600px wide or more, load the fonts
 	{
 		test : Modernizr.fontface && Modernizr.mq( 'only all and (min-width: 600px)' ),
 		yep : "js/fonts.min.js"
