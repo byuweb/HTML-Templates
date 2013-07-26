@@ -378,9 +378,11 @@ body.sideNav {
 					background: #fff;
 					color: $blue0;
 					@include text-shadow(none);
+					@include transition(background-color, 0.05s ease);
 				}
 				ul a:hover {
-					background: $blue2;
+					background: $blue8;
+					color: $blue0;
 				}
 			}
 		}
@@ -425,6 +427,12 @@ body.sideNav {
 			position: relative;
 		}
 
+		li.hover ul {
+			a:hover {
+				@include border-radius(3px);
+			}
+		}
+
 		.mega {
 			@extend %tab-nav-submenu;
 			min-height:400px;
@@ -432,7 +440,6 @@ body.sideNav {
 			padding: 1em 0 2em;
 			width: 97.95%;
 			@include border-radius(0 0 3px 3px);
-			ul.links { margin-left: 1%; }
 		}
 		.sub { 
 			background-color: #fff;
@@ -447,6 +454,7 @@ body.sideNav {
 			.links { width: 100%; }
 		}
 
+
 		li.hover .mega, 
 		li.hover .sub, 
 		.highlight, 
@@ -459,12 +467,23 @@ body.sideNav {
 			border-top: 1px solid #ddd;
 		}
 
-		.featured { font-weight: bold; }
-		.links {
+		.mega li.featured {
+			margin-bottom: 1em;
+			padding-top: .5em;
+			padding-bottom: 1em;
+			border-bottom: 1px solid #ddd;
+			a {
+				font-weight: bold;
+			} 
+		}
+		.mega .links {
 			float:left;
-			width:220px;
+			width:34%;
+			margin-left: 3%;
+			margin-right: 3%;
 			&.double {
-				width: 46%;
+				width: 44%;
+				margin-right: 0;
 				.featured {
 					.sublinks { padding-left: 5%; }
 				}
@@ -488,10 +507,17 @@ body.sideNav {
 			float: left;
 			padding-left: 2%;
 			width: 24%;
+
+			img {
+				margin-bottom: 15px;
+			}
+
 			a {
 				padding: 0;
 				color: $blue2;
 				&:hover {
+					background-color: transparent;
+					background-image: none;
 					color: $blue0;
 					text-decoration: underline;
 				}
