@@ -356,6 +356,38 @@ $sidePadding:5px;
 }
 
 
+/* Sidebar nav */
+nav.sidebar {
+  display: none;
+}
+
+
+.sidebar-navigation {
+
+  nav.sidebar {
+    border-top: 1px solid #ddd;
+    display: block;
+    padding-top: .5em;
+    margin-top:1em;
+
+    a {
+      padding: .2em 0;
+      display: block;
+      color: $blue2;
+      &:hover {
+        text-decoration: underline;
+        background-color: #eeebe9;
+        color: $blue0;
+      }
+    }
+    .current a {
+      color: #666;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
 
 
 

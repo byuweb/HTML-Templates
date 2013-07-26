@@ -140,6 +140,7 @@ html.no-js(lang="en")
 		block contentwrapper
 			- if( typeof(contentclasses) == 'undefined') { var contentclasses = '' }
 			#content(class='wrapper clearfix #{contentclasses}', role='main')
+				
 
 
 
@@ -169,13 +170,17 @@ html.no-js(lang="en")
 
 
 
-
 				//-	===============
 				//-	CONTENT
 				//-	===============
 				block content
 
 
+
+				//-	===============
+				//-	CONTENT
+				//-	===============
+				block sidenav
 
 
 		//-	===============

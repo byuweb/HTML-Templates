@@ -223,7 +223,6 @@
 	  .time {
 	    width:25%; } }
 
-
 }
 
 
@@ -247,6 +246,10 @@
 		padding-left: 103px;
 		padding-right:103px;
 		@include box-shadow(0 0 30px 0px rgba(222, 222, 222, 0.7));
+	}
+
+	#content.sidebar-navigation {
+		width: 720px;
 	}
 
 

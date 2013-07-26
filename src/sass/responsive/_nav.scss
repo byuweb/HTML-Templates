@@ -203,6 +203,39 @@ body.sideNav {
 
 
 
+/* Sidebar nav */
+.sidebar-navigation {
+
+	nav.sidebar {
+		background-color: $blue8;
+		padding: .5em 0 1em;
+		margin: 3em -5.55% -2em;
+		border-top: 1px solid $blue7;
+
+		a {
+			padding: .4em 5%;
+			font-weight: bold;
+			border: 1px solid transparent;
+			border-right: none;
+			&:hover {
+				text-decoration: none;
+				background-color: $blue9;
+				color: $blue0;
+			}
+		}
+		.current a {
+			background-color: rgba(white, .35);
+			color: $blue0;
+		}
+	}
+}
+
+
+
+
+
+
+
 
 
 
@@ -252,20 +285,20 @@ body.sideNav {
 		}
 	}
 
-}
-
-
-
-
-
-
-
-
-
-/*** Large width ***/
-@media all and ( min-width: $large-width ) {
+	#content.sidebar-navigation {
+		nav.sidebar {
+			margin: 4em -11% -4em;
+			a {
+				padding-left: 9%;
+				padding-right: 9%;
+			}
+		}
+	}
 
 }
+
+
+
 
 
 
@@ -545,11 +578,53 @@ body.sideNav {
 			}
 		}
 	}
+
+
+
+	#content.sidebar-navigation {
+		@include background-image(
+			linear-gradient(90deg, $blue8 0px, $blue8 219px, $blue7 219px, $blue7 220px, transparent 220px)
+			);
+		background-size: 220px 100%;
+		background-repeat: no-repeat;
+		padding-left:  280px;
+		padding-right: 70px;
+
+		nav.sidebar {
+			padding: 1.5em 0;
+			width: 220px;
+			position: absolute;
+			background-color: transparent;
+			top:0;
+			left:0;
+			margin:0;
+			border: none;
+			a {
+				padding: .3em 1em .4em 1.5em;
+			}
+			.current a {
+				background-color: white;
+				border-color: $blue7;
+			}
+		}
+	}
+
+	
 }
 
 
 
 
+
+
+
+
+
+
+/*** Large width ***/
+@media all and ( min-width: $large-width ) {
+
+}
 
 
 

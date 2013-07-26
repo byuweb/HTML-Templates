@@ -1,0 +1,27 @@
+extends _layout
+
+block pageTitle
+	| BYU - Sample 5
+
+block parentlink
+	a.byulink(href="#") Brigham Young University
+	a.parentlink(href='#') Parent Organization
+
+block heading
+	| Application with Sidebar
+
+block prepend contentwrapper
+	- var contentclasses = 'sidebar-navigation'
+
+
+block sidenav
+	nav.sidebar(role="navigation")
+		ul
+			li.current: a(href="#") Side nav 1
+			li: a(href="#") Side nav 2
+			li: a(href="#") Side nav 3
+			li: a(href="#") Side nav 4
+
+block content
+	h1 Main title
+	p Content for app goes here
