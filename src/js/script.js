@@ -92,9 +92,7 @@
 		$(window).resize(function (){
 			if ($(window).width() > 768){
 				$('body').removeClass('sideNav');
-			}
-
-			if ($(window).width() < 768 && $(".hover")[0]){
+			} else if ($(window).width() < 768 && $(".hover")[0]){
 				$("body").addClass("sideNav");
 			}
 		});
@@ -115,12 +113,12 @@
 	 * Desc: Hide basic search if the Google CSE loads
 	 * Args: none
 	 */
-	function hideSearch() {
-		$('#basic-search').hide();
-	}
-
-
-
+	var hideSearch = function() {
+	if (document.readyState == 'complete') {
+		// CSE has successfully loaded. Go ahead and hide the basic search.
+    $("#basic-search").hide();
+  }
+}
 
 
 	/* Func: loadSearch
@@ -128,24 +126,17 @@
 	 * Args: none
 	 */
 	function loadSearch(){
-			log('Load search');
-			window.__gcse = {
+		window.__gcse = {
 				callback: hideSearch
-			};
+		};
 
-			(function() {
-				var cx = '009932716493032633443:hlqjz33kfkc';
-				var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-				gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-					'//www.google.com/cse/cse.js?cx=' + cx;
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(gcse, s);
-			})();
+		(function() {
+			var cx = '009932716493032633443:hlqjz33kfkc';
+			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		})();
 	}
 
-
-
-
 }());
-
-
