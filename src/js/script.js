@@ -114,11 +114,11 @@
 	 * Args: none
 	 */
 	var hideSearch = function() {
-	if (document.readyState == 'complete') {
-		// CSE has successfully loaded. Go ahead and hide the basic search.
-    $("#basic-search").hide();
-  }
-}
+		if (document.readyState == 'complete') {
+			// CSE has successfully loaded. Go ahead and hide the basic search.
+	    $("#basic-search").hide();
+	  }
+	};
 
 
 	/* Func: loadSearch
