@@ -72,11 +72,11 @@
 	/* Func: checkSliderSwipe
 	 * Desc: If the anythingSlider is there, apply the swipe to that. If it's successful, return true.
 	 * Args: @target - Target of swipe event (event.target)
-	 *		 @direction - Direction passed from swipe functions above
+	 *       @direction - Direction passed from swipe functions above
 	 */
 	function checkSliderSwipe(target, direction) {
 
-		var sliderLoaded = typeof($.anythingSlider) == "function",
+		var sliderLoaded = typeof($.anythingSlider) === "function",
 			sliderSwipe = sliderLoaded && $(target).closest('.anythingSlider').size(),
 			sliderTargetID,
 			sliderTarget;
@@ -88,7 +88,7 @@
 		sliderTargetID = $(target).closest('.anythingSlider').find('.anythingBase').attr('id');
 		sliderTarget = $('#' + sliderTargetID);
 
-		if( direction == 'right' ){
+		if( direction === 'right' ){
 			sliderTarget.data('AnythingSlider').goBack();
 		} 
 		else {
