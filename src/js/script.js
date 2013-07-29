@@ -17,7 +17,7 @@
 // Document ready
 $(function(){
 
-	getWidth();
+	log( getWidth() );
 	$(window).resize(getWidth);
 
 	loadSearch();
@@ -37,7 +37,6 @@ $(function(){
  */
 function getWidth() {
 	var w = $(window).width();
-	log(w);
 	return w;
 }
 
@@ -83,12 +82,12 @@ function activateMenus() {
 			mega.css('right', 0);
 	});
 
-//Listener for if screen is resized to close sideNav
-$(window).resize(function (){
-if ($(window).width() > 768){
-	$('body').removeClass('sideNav');
-}
-});
+	//Listener for if screen is resized to close sideNav
+	$(window).resize(function (){
+		if ($(window).width() > 768){
+			$('body').removeClass('sideNav');
+		}
+	});
 
 }
 
@@ -120,51 +119,10 @@ function loadSearch(){
 		})();
 }
 
-
-/** Func: SetPrimaryNavPosition
- * Desc: Move the nav around so it works in the sidebar
- * Args: none
- */
-function setupNavPosition() {
-	//$('#main-header').append('<div class="nav-container"></div>');
-	//$('#secondary-nav, #primary-nav').detach().appendTo('.nav-container');
+function clearMenus() {
+    $(".dropdown-backdrop").remove(), $(toggle).each(function () {
+        getParent($(this)).removeClass("open")
+    })
 }
-
-
-/** Func: RollOver
-* Desc: Show a dropdown menu on rollover. Called by the hoverIntent function.
-* Args: @evt	- Event object. Automatically generated.
-*/
-function rollOver(evt) {
-	if (!$(this).hasClass('hover')) {
-		clickOpened = false;
-		$(this).addClass('hover');
-		$('nav li').not(this).removeClass('hover');
-		$(document).click(hideAllMenus);
-	}
-}
-
-/** Func: RollOut
-* Desc: Hide a dropdown menu on rollout. Called by the hoverIntent function.
-* Args: -
-*/
-function rollOut() {
-	$(this).removeClass('hover');
-}
-
-/** Func: HideAllMenus
-* Desc: Hide all dropdown menus. Bound to click action.
-* Args: -
-*/
-function hideAllMenus() {
-	$('nav li').removeClass('hover');
-	$(document).unbind('click');
-}
-
-function endsWith(str, suffix) {
-	return str.indexOf(suffix, str.length - suffix.length) !== -1;
-}
-
-
 
 
