@@ -14,6 +14,7 @@
 	height: auto;
 	padding: 5px 3% 5px 75px;
 	overflow: hidden;
+	z-index: 3;
 	@include box-sizing(border-box);
 }
 
@@ -51,6 +52,13 @@
 					padding: 8px 1.5em;
 				}
 			}
+		}
+
+
+		.gsc-results-wrapper-overlay {
+			left: 2%;
+			width: 86%;
+			padding: 10px 5%;
 		}
 	}
 
