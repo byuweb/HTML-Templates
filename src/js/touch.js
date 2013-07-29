@@ -10,84 +10,94 @@
 */
 
 
-$(function() {
+(function () {
 
-	var body = $('body'),
-			width = $(window).width(),
-			swipewidth = Math.floor(width * .16);
+	"use strict";
 
-	if( swipewidth > 150 ) {
-		swipewidth = 150;
-	}
 
-	if( swipewidth < 50 ) {
-		swipewidth = 50;
-	}
+	// Document ready - Execute on page load
+	$(function() {
 
-	//Enable swiping...
-	$("#main-header, #search-menu, #content, #page-footer, .nav-container").swipe( {
+		var body = $('body'),
+				width = $(window).width(),
+				swipewidth = Math.floor(width * 0.16);
 
-		
-		// Swipe left: close the side nav if it's open
-		swipeLeft:function(event, direction, distance, duration, fingerCount) {
+		if( swipewidth > 150 ) {
+			swipewidth = 150;
+		}
 
-			var slider = checkSliderSwipe(event.target, direction);
+		if( swipewidth < 50 ) {
+			swipewidth = 50;
+		}
 
-			if( !slider && body.hasClass('sideNav') ) {
-				body.toggleClass('sideNav');
-			}
-		},
+		//Enable swiping...
+		$("#main-header, #search-menu, #content, #page-footer, .nav-container").swipe( {
 
-		// Swipe right: open the side nav if it's closed
-		swipeRight:function(event, direction, distance, duration, fingerCount) {
 			
-			var slider = checkSliderSwipe(event.target, direction);
+			// Swipe left: close the side nav if it's open
+			swipeLeft:function(event, direction, distance, duration, fingerCount) {
 
-			if( slider ) {
+				var slider = checkSliderSwipe(event.target, direction);
 
-			}
+				if( !slider && body.hasClass('sideNav') ) {
+					body.toggleClass('sideNav');
+				}
+			},
 
-			if( !slider && !body.hasClass('sideNav') ) {
-				body.toggleClass('sideNav');
-			}
-		},
+			// Swipe right: open the side nav if it's closed
+			swipeRight:function(event, direction, distance, duration, fingerCount) {
+				
+				var slider = checkSliderSwipe(event.target, direction);
 
-		// Will trigger as soon as 50px is reached
-		triggerOnTouchEnd:false,
+				if( slider ) {
 
-		// Default is 75px, set to 0 for demo so any distance triggers swipe
-		 threshold:swipewidth
+				}
+
+				if( !slider && !body.hasClass('sideNav') ) {
+					body.toggleClass('sideNav');
+				}
+			},
+
+			// Will trigger as soon as swipewidth is reached rather than waiting until the end of the swipe
+			triggerOnTouchEnd:false,
+
+			// Default is 75px. Set to swipewidth (defined above)
+			threshold:swipewidth
+		});
+
+
 	});
 
 
-});
+	/* Func: checkSliderSwipe
+	 * Desc: If the anythingSlider is there, apply the swipe to that. If it's successful, return true.
+	 * Args: @target - Target of swipe event (event.target)
+	 *		 @direction - Direction passed from swipe functions above
+	 */
+	function checkSliderSwipe(target, direction) {
 
+		var sliderLoaded = typeof($.anythingSlider) == "function",
+			sliderSwipe = sliderLoaded && $(target).closest('.anythingSlider').size(),
+			sliderTargetID,
+			sliderTarget;
 
+		if ( !sliderSwipe ) {
+			return false;
+		}
+		
+		sliderTargetID = $(target).closest('.anythingSlider').find('.anythingBase').attr('id');
+		sliderTarget = $('#' + sliderTargetID);
 
-function checkSliderSwipe(target, direction) {
+		if( direction == 'right' ){
+			sliderTarget.data('AnythingSlider').goBack();
+		} 
+		else {
+			sliderTarget.data('AnythingSlider').goForward();
+		}
 
-	var sliderLoaded = typeof($.anythingSlider) == "function",
-		sliderSwipe = sliderLoaded && $(target).closest('.anythingSlider').size(),
-		sliderTargetID,
-		sliderTarget;
-
-	if ( !sliderSwipe ) {
-		return false;
+		return true;
 	}
-	
-	sliderTargetID = $(target).closest('.anythingSlider').find('.anythingBase').attr('id');
-	sliderTarget = $('#' + sliderTargetID);
-
-	if( direction == 'right' ){
-		sliderTarget.data('AnythingSlider').goBack();
-	} 
-	else {
-		sliderTarget.data('AnythingSlider').goForward();
-	}
-
-	return true;
-}
 
 
-
+}());
 
