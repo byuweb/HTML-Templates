@@ -12,13 +12,13 @@
 
 
 
-
-
 // Document ready
 $(function(){
 
-	log( getWidth() );
-	$(window).resize(getWidth);
+	var w = getWidth();
+	log( w );
+
+	$(window).resize( w );
 
 	loadSearch();
 	activateMenus();
@@ -30,15 +30,16 @@ $(function(){
 
 
 
-
 /* Func: getWidth
  * Desc: Get the current width of the browser window
  * Args: none
  */
 function getWidth() {
-	var w = $(window).width();
-	return w;
+	return $(window).width();
 }
+
+
+
 
 
 /* Func: ActivateMenus
@@ -54,7 +55,9 @@ function activateMenus() {
 
 	$('nav li:has(.mega, .sub) > a').click(function (e) {
 		e.preventDefault();
+
 		var li = $(this).parent();
+
 		// Only close menu if user clicked to open it
 		if (li.hasClass('hover') && clickOpened) {
 			li.removeClass('hover');
@@ -71,9 +74,6 @@ function activateMenus() {
 		e.stopPropagation();
 	});
 
-	//$('#secondary-nav > ul > li, #primary-nav > ul > li').hoverIntent(byuMenuConfig);
-	$('nav.no-js').removeClass('no-js');
-
 	/* Positions menu divs */
 	$('nav li .sub').each(function () {
 		var mega = $(this);
@@ -87,9 +87,27 @@ function activateMenus() {
 		if ($(window).width() > 768){
 			$('body').removeClass('sideNav');
 		}
+
+		if ($(window).width() < 768 && $(".hover")[0]){
+			$("body").addClass("sideNav");
+		}
 	});
 
+	$("body").click(function(){
+		$(".hover").removeClass("hover");
+	}), 
+	
+	$("#content").click(function(){
+		$("body").removeClass("sideNav");
+	})
+
 }
+
+
+function endsWith(str, suffix) {
+    return -1 !== str.indexOf(suffix, str.length - suffix.length)
+}
+
 
 /**
  * function set display to none if the Google CSE loads via jQuery
@@ -97,6 +115,8 @@ function activateMenus() {
 function hideSearch() {
 	$('#basic-search').hide();
 }
+
+
 
 
 /**
@@ -115,14 +135,11 @@ function loadSearch(){
 				'//www.google.com/cse/cse.js?cx=' + cx;
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(gcse, s);
-			hideSearch();
 		})();
 }
 
-function clearMenus() {
-    $(".dropdown-backdrop").remove(), $(toggle).each(function () {
-        getParent($(this)).removeClass("open")
-    })
-}
+
+
+
 
 
