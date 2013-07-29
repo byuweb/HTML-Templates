@@ -52,6 +52,24 @@ module.exports = (grunt) ->
 						'src/js/plugins/google-fontloader.js', 
 						'src/js/fonts.js']
 
+		jshint:
+			options:
+				"camelcase" : false
+				"es3" : false
+				"trailing" : false
+				"white" : false
+				"smarttabs" : true
+				"jquery" : true
+				"browser" : true
+			files:[
+				'src/js/fonts.js', 
+				'src/js/init.js', 
+				'src/js/script.js', 
+				'src/js/slider-update.js', 
+				'src/js/touch.js'
+			]
+
+
 		sass:
 			options:
 				style: 'compressed'
@@ -94,7 +112,7 @@ module.exports = (grunt) ->
 		regarde:
 			uglify:
 				files: ['src/js/**/*.js']
-				tasks: ['uglify', 'livereload']
+				tasks: ['jshint', 'uglify', 'livereload']
 			sass:
 				files: ['src/sass/**/*.sass', 'src/sass/**/*.scss']
 				tasks: ['sass', 'livereload']
@@ -115,7 +133,8 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks('grunt-regarde')
 	grunt.loadNpmTasks('grunt-contrib-connect')
 	grunt.loadNpmTasks('grunt-contrib-livereload')
+	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	# Default task(s).
-	grunt.registerTask('compile', ['sass', 'jade', 'uglify'])
+	grunt.registerTask('compile', ['sass', 'jade', 'jshint', 'uglify'])
 	grunt.registerTask('default', ['compile', 'livereload-start', 'connect', 'regarde'])
