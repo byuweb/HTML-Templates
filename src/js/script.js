@@ -15,34 +15,61 @@
    "use strict";
 
 	var clickOpened = false;
+	var scriptsActivated = false;
+	var activationSizeThreshold = 250;
 
 
 	// Document ready - Execute on page load
 	$( function () {
 
-		var w = getWidth();
-		log( w );
+		var w = $(window).width();
+		log( 'Initial window width: ' + w + 'px' );
 
-		$(window).resize( w );
-
-		loadSearch();
-		activateMenus();
-
+		if( w > activationSizeThreshold ) {
+			activateScripts();
+		} 
+		else {
+			$(window).resize( checkActivation );
+		}
 	});
 
 
 
 
 
-
-	/* Func: getWidth
-	 * Desc: Get the current width of the browser window
+	/* Func: checkActivation
+	 * Desc: Check to see if search and menus have been activated, and activate them if needed
 	 * Args: none
 	 */
-	function getWidth() {
-		return $(window).width();
+	function checkActivation() {
+		
+		// If the scripts have not been activated, and the size threshold has been crossed
+		if( !scriptsActivated && $(window).width() > activationSizeThreshold ) {
+
+			// Activate the scripts
+			activateScripts();
+
+			// Turn off the resize checking
+			$(window).off('resize', checkActivation);
+		}
+
 	}
 
+
+
+
+
+	/* Func: activateScript
+	 * Desc: Activate the search and menu scripts
+	 * Args: none
+	 */
+	function activateScripts() {
+		
+		activateMenus();
+		loadSearch();
+
+		scriptsActivated = true;
+	}
 
 
 
@@ -109,18 +136,6 @@
 
 
 
-	/* Func: hideSearch
-	 * Desc: Hide basic search if the Google CSE loads
-	 * Args: none
-	 */
-	var hideSearch = function() {
-		if (document.readyState == 'complete') {
-			// CSE has successfully loaded. Go ahead and hide the basic search.
-	    $("#basic-search").hide();
-	  }
-	};
-
-
 	/* Func: loadSearch
 	 * Desc: Load the Google Custom Search
 	 * Args: none
@@ -138,5 +153,21 @@
 			s.parentNode.insertBefore(gcse, s);
 		})();
 	}
+
+
+
+
+	/* Func: hideSearch
+	 * Desc: Hide basic search if the Google CSE loads
+	 * Args: none
+	 */
+	var hideSearch = function() {
+		if (document.readyState == 'complete') {
+			// CSE has successfully loaded. Go ahead and hide the basic search.
+	    $("#basic-search").hide();
+	  }
+	};
+
+
 
 }());
