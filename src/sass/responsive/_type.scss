@@ -15,7 +15,9 @@
 $fontSize:14px; 
 $lineHeight:19px;
 
-body, button, input, select, textarea {
+body, button, input, select, textarea, 
+#search-container .gsc-control-cse, 
+#search-container .gsc-control-cse .gsc-table-result {
   font-size: $fontSize;
   line-height: $lineHeight;
   font-family: "OpenSans", $sans-font-stack; }

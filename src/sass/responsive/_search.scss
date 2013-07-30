@@ -7,6 +7,9 @@
 @import "shared/mixins";
 @import "shared/variables";
 
+$searchButtonWidth: 50px;
+$searchPadding: 10px;
+$sidePadding:5px;
 
 
 /* Small width */
@@ -14,9 +17,10 @@
 	height: auto;
 	padding: 5px 3% 5px 75px;
 	overflow: hidden;
-	z-index: 3;
+	z-index: 10;
 	@include box-sizing(border-box);
 }
+
 
 #search-container {
 	padding: 0;
@@ -28,6 +32,21 @@
 
 	.gcse-wrapper {
 		background: none;
+		position:absolute;
+		padding: 0 $sidePadding;
+		top:1px;
+		left:0;
+		text-align: left;
+
+		div, table, td, form {
+			padding:0;
+			margin:0;
+			border:0;
+			background:none;
+			position:static;
+		}
+
+		
 		.gsc-control-cse {
 			td {vertical-align: top !important;}
 			table td .gsc-input-box {
@@ -56,13 +75,90 @@
 
 
 		.gsc-results-wrapper-overlay {
+			background:#fff;
 			left: 2%;
 			width: 86%;
 			padding: 10px 5%;
+			border: 1px solid #bbb;
+			@include box-shadow(0 0 200px 50px rgba(black, .25));
+
+			a, a b {
+				color: mix($blue4, blue, 75);
+			}
+			a:visited, a:visited b {
+				color: #539;
+			}
+
+			.gsc-above-wrapper-area {
+				padding:8px 0;
+				border-bottom: 1px solid #ddd;
+			}
+
+			.gsc-results-close-btn {
+				top: 7px;
+				right:7px;
+				background-color: #ddd;
+				width: 2em;
+				height: 2em;
+				@include border-radius(5px);
+
+				&:before {
+					content:"×";
+					font-size: 2em;
+					position: absolute;
+					top:0;
+					left:0;
+					width: 100%;
+					text-align: center;
+					color:#999;
+					line-height: 1em;
+				}
+				&:hover:before {
+					color:#333;
+				}
+			}
+
+		}
+
+		.gsc-result {
+			padding:.75em 0;
+		}
+
+		.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
+			//color: #339947;
+			color: mix($blue5, #555);
+		}
+
+		.gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-fileFormatType {
+			color: #555;
+		}
+
+		.gsc-url-top {
+			margin:.2em 0 .4em;
+		}
+	}
+	
+
+	.gsc-search-button, .gsc-search-button-v2 {
+		background-color: $blue5;
+		background-image: none;
+		padding: 7px 18px;
+		position: relative;
+		top:1px;
+		&:hover, &:active {
+			margin: 0;
+			margin-right:-2px;
 		}
 	}
 
+	input.gsc-input {
+		background-position:14px 50% !important;
+	}
+
+	// GCSE textinput container
 	.gsc-input-box {
+		padding-right:$searchPadding * 2 !important;
+		position: relative;
 		padding-right:0 !important;
 		height:auto;
 	}

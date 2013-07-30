@@ -365,7 +365,8 @@ body.sideNav {
 		left:auto;
 		right: 3%;
 		background-color: transparent;
-		z-index: 3;
+		z-index: 10;
+		overflow: visible;
 		.menu-button {
 			display: none;
 			color: $blue0;
