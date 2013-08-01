@@ -12,6 +12,7 @@
 	"use strict";
 
 	Modernizr.load([
+
 		// Load jQuery first. If it doesn't make it from our location, get it from Google.
 		{
 			load: 'http://byuweb.github.io/Global-Assets/js/jquery-1.9.1.min.js',
@@ -21,6 +22,7 @@
 				}
 			}
 		},
+		
 		// Next load scripts that require jQuery. If touch is enabled, load alternate script file with touch support added.
 		{
 			test: Modernizr.touch,
