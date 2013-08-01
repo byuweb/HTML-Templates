@@ -15,12 +15,43 @@
 
 	"use strict";
 
+	var sliderActivated = false;
+	var activationSizeThreshold = 250;
+
 	// On page Load
 	$(function(){
 
-		initializeSlider();
+		var w = $(window).width();
+		log( 'Initial window width: ' + w + 'px' );
+
+		if( w > activationSizeThreshold ) {
+			initializeSlider();
+		} 
+		else {
+			$(window).resize( checkActivation );
+		}
 
 	});
+
+
+
+	/* Func: checkActivation
+	 * Desc: Check to see if search and menus have been activated, and activate them if needed
+	 * Args: none
+	 */
+	function checkActivation() {
+		
+		// If the scripts have not been activated, and the size threshold has been crossed
+		if( !sliderActivated && $(window).width() > activationSizeThreshold ) {
+
+			// Activate the scripts
+			initializeSlider();
+
+			// Turn off the resize checking
+			$(window).off('resize', checkActivation);
+		}
+
+	}
 
 
 
@@ -90,6 +121,8 @@
 		$(window).resize(function() {
 			$('#slider').anythingSlider();
 		});
+
+		sliderActivated = true;
 
 	}
 
