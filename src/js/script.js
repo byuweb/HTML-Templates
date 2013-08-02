@@ -15,9 +15,6 @@
    "use strict";
 
 	var clickOpened = false;
-	var scriptsActivated = false;
-	var activationSizeThreshold = 250;
-
 
 	// Document ready - Execute on page load
 	$( function () {
@@ -25,51 +22,11 @@
 		var w = $(window).width();
 		log( 'Initial window width: ' + w + 'px' );
 
-		if( w > activationSizeThreshold ) {
-			activateScripts();
-		} 
-		else {
-			$(window).resize( checkActivation );
-		}
+		// Execute menu activation and search load only after window width exceeds 250px
+		executeAfterBreakpoint( [ activateMenus, loadSearch ], 250);
 	});
 
 
-
-
-
-	/* Func: checkActivation
-	 * Desc: Check to see if search and menus have been activated, and activate them if needed
-	 * Args: none
-	 */
-	function checkActivation() {
-		
-		// If the scripts have not been activated, and the size threshold has been crossed
-		if( !scriptsActivated && $(window).width() > activationSizeThreshold ) {
-
-			// Activate the scripts
-			activateScripts();
-
-			// Turn off the resize checking
-			$(window).off('resize', checkActivation);
-		}
-
-	}
-
-
-
-
-
-	/* Func: activateScript
-	 * Desc: Activate the search and menu scripts
-	 * Args: none
-	 */
-	function activateScripts() {
-		
-		activateMenus();
-		loadSearch();
-
-		scriptsActivated = true;
-	}
 
 
 
