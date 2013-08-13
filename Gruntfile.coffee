@@ -86,6 +86,15 @@ module.exports = (grunt) ->
 					dest: 'css/'
 					ext: '.css'
 				]
+		autoprefixer:
+			compile:
+				files:[
+					expand: true
+					cwd: 'css/'
+					src: '*.css'
+					dest: 'css/'
+					ext: '.css'
+				]
 
 		jade:
 			options:
@@ -98,10 +107,6 @@ module.exports = (grunt) ->
 					dest: ''
 					ext: '.html'
 				]
-#     coffee:
-#       compile:
-#         files:
-#           'js/main.js': 'js/main.coffee'
 		connect:
 			livereload:
 				options:
@@ -115,13 +120,10 @@ module.exports = (grunt) ->
 				tasks: ['jshint', 'uglify', 'livereload']
 			sass:
 				files: ['src/sass/**/*.sass', 'src/sass/**/*.scss']
-				tasks: ['sass', 'livereload']
+				tasks: ['sass', 'autoprefixer', 'livereload']
 			jade:
 				files: ['src/jade/**/*.jade']
 				tasks: ['jade', 'livereload']
-#      coffee:
-#        files: ['js/*.coffee']
-#        tasks: ['coffee', 'livereload']
 			image:
 				files: ['img/*']
 				tasks: ['livereload']
@@ -129,6 +131,7 @@ module.exports = (grunt) ->
 	# grunt.loadNpmTasks('grunt-contrib-coffee')
 	grunt.loadNpmTasks('grunt-contrib-uglify')
 	grunt.loadNpmTasks('grunt-contrib-sass')
+	grunt.loadNpmTasks('grunt-autoprefixer')
 	grunt.loadNpmTasks('grunt-contrib-jade')
 	grunt.loadNpmTasks('grunt-regarde')
 	grunt.loadNpmTasks('grunt-contrib-connect')
@@ -136,5 +139,5 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 
 	# Default task(s).
-	grunt.registerTask('compile', ['sass', 'jade', 'jshint', 'uglify'])
+	grunt.registerTask('compile', ['sass', 'autoprefixer', 'jade', 'jshint', 'uglify'])
 	grunt.registerTask('default', ['compile', 'livereload-start', 'connect', 'regarde'])
