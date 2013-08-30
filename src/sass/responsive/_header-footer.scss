@@ -105,54 +105,6 @@ a.mybyu, a.sign-in, .open #search-button {
 			margin-left:4%;
 			margin-right:4%;
 		}
-
-		#footer-bottom{
-			text-align:center;
-			padding-top:.5em;
-
-			a {
-				display:inline-block;
-				text-indent: -999em;
-			}
-
-			a#copyright{
-				text-indent:0em;
-			}
-
-			%school-link{
-				background: transparent url('../img/footer_sprite.png') no-repeat;
-				opacity:0.7;
-				margin: 0 5px;
-
-				&:hover {
-					opacity:1;
-				}
-			}
-
-			a#lds {
-				@extend %school-link;
-				background-position: 0px -8px;
-				height: 50px;
-				width: 150px;}
-
-			a#ldsbc {
-				@extend %school-link;
-				background-position: -407px -8px;
-				height: 55px;
-				width: 70px;}
-
-			a#byui {
-				@extend %school-link;
-				background-position: -206px -8px;
-				height: 42px;
-				width: 72px;}
-
-			a#byuh {
-				@extend %school-link;
-				background-position: -308px -8px;
-				height: 42px;
-				width: 72px; }
-		}
 	}
 
 	#footer-links{
@@ -199,6 +151,69 @@ a.mybyu, a.sign-in, .open #search-button {
 		.wrapper {
 			margin:1em auto 2em;
 		}
+
+		#footer-bottom{
+			padding:.5em 9% 1px;
+
+			a {
+				display:inline-block;
+				text-indent: -999em;
+			}
+
+			a#copyright{
+				text-indent:0em;
+			}
+			
+			$logo-padding:5px;
+
+			%school-link{
+				background: transparent url('../img/footer-logos.png') no-repeat;
+				opacity:0.7;
+				margin: 0 $logo-padding;
+				height: 51px;
+				width: 70px;
+				@include transition(opacity 0.2s ease);
+
+				.svg & {
+					background-image: url('../img/footer-logos.svg');
+				}
+
+				&:hover {
+					opacity:1;
+				}
+			}
+
+			a#lds {
+				@extend %school-link;
+				background-position: -425px 0;
+				width: 160px;
+				opacity: .9;
+				float:right;
+				margin-right: -($logo-padding + 1);
+			}
+
+			a#ldsbc {
+				@extend %school-link;
+				background-position: -300px 0;
+				}
+
+			a#byui {
+				@extend %school-link;
+				background-position: -210px 0;
+				}
+
+			a#byuh {
+				@extend %school-link;
+				background-position: -110px 0;
+				}
+			a#byu {
+				@extend %school-link;
+				background-position:-8px -9px;
+				margin-left: -($logo-padding + 1);
+				width:80px;
+				}
+		}
+
 	}
 
 	#footer-links{
