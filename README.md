@@ -16,7 +16,7 @@ To speed up development, we're using SCSS with Compass for CSS, and Jade for HTM
 - **Node.js** (Including the node package manager <code>npm</code>) - Javascript-based server software. Installation info at [nodejs.org](http://nodejs.org/)
 - **Ruby** - Pre-installed on Mac. For Windows, installation info at [ruby-lang.org](http://www.ruby-lang.org/en/downloads/), or use an installer package like [RubyInstaller](http://rubyinstaller.org/).
 - **Grunt** - Javascript task runner. Automates compiling and other repetitive tasks. Installation info at [gruntjs.com](http://gruntjs.com/getting-started)  
-- **Sass** - Compiler for CSS. Once Ruby is installed, run the command <code>gem install sass</code> in the command line to install. Info at [sass-lang.com](http://sass-lang.com/)
+- **Sass** - Compiler for CSS. Once Ruby is installed, run the command <code>gem install sass</code> in the command line to install. Info at [sass-lang.com](http://sass-lang.com/). (HEADS UP-- See the Sass Gotcha section below)
 - **Compass** - Sass extension with pre-built mixins and variables. In the command line, run <code>gem install compass</code> to install. Info at [compass-style.org](http://compass-style.org/).
 
 ### Sass gotcha
