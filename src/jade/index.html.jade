@@ -1,0 +1,88 @@
+!!! 5
+html.no-js(lang='en')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		
+		title BYU Web Templates Testing
+		
+		meta(name='description', content='Description about your department.')
+		meta(name='author', content='Your Department Name')
+		meta(name='keywords', content='keyword 1, keyword 2, keyword 3')
+		meta(name='viewport', content='width=device-width')
+		link(rel='shortcut icon', href='template/img/favicon.ico')
+
+		link(rel='stylesheet', href='css/base.css')
+		link(rel='stylesheet', href='css/responsive.css')
+
+		style
+			li.break { margin-top: 1em; }
+			li a {display:block; padding:.15em 0;}
+		
+		script(src="js/modernizr.js")
+		script(src="js/init.js")
+
+	body
+		#byu-bar
+			// BYU Logo 
+			h2
+				a.byu(href='http://www.byu.edu/') BYU - Brigham Young University
+
+		#content(class='wrapper clearfix', role='main')
+			h1 BYU Web Templates
+
+			p 
+				| Source code at 
+				strong: a(href="https://github.com/byuweb/byu-responsive-dev") github.com/byuweb/byu-responsive-dev
+				| . Track and contribute ssues on 
+				a(href="https://github.com/byuweb/byu-responsive-dev/issues") the project issues page
+				| .
+
+
+
+			h4 Styles
+			p Info on built-in styles, including HTML5 boilerplate, Twitter bootstrap, FontAwesome icons, and styling for most basic HTML elements. 
+
+			ul
+				li: a(href='elements.html') HTML and CSS Elements (Style guide)
+
+			h4 Page types
+			ul
+				// li: a(href='pagetype1-update.html') Page Type 1 - BYU Home Page
+				li.break: a(href='pagetype2-update.html') Page Type 2 - Primary Organization
+				li: a(href='pagetype3-update.html') Page Type 3 - Secondary Organization
+				li: a(href='pagetype4-update.html') Page Type 4 - Simple Applications
+			
+
+			h4 Samples
+			ul
+				li.break: a(href='sample1-primaryorg-frontpage.html') Sample 1 - Frontpage - Primary Organization
+				li: a(href='sample2-primaryorg-page.html') Sample 2 - Simple page - Primary Organization
+				li: a(href='sample3-primaryorg-onesidebar.html') Sample 3 - One Sidebar - Primary Organization
+				li: a(href='sample4-primaryorg-twosidebars.html') Sample 4 - Two Sidebar - Primary Organization
+				li: a(href='sample5-application-sidenav.html') Sample 5 - Application with sidebar navigation
+				// li: a(href='sample5-secondaryorg-sixcolumns.html') Sample 5 - Six Columns - Secondary Organization
+
+
+			h4 Application banners
+			p Used for pages that do not use the main BYU page templates
+			ul
+				li.break: a(href='pageheader1.html') Page Header 1 - BYU banner with BYU logo only
+				li: a(href='pageheader2.html') Page Header 2 - BYU banner with sign-in button
+				li: a(href='pageheader3.html') Page Header 3 - BYU banner with search
+				li: a(href='pageheader4.html') Page Header 4 - BYU banner with sign-in and search
+				li: a(href='pageheader5.html') Page Header 5 - BYU banner parent organization name
+
+			//
+				h2 Legacy pages
+				ul
+					li: a(href='Page Type 2 - Primary Organization.html') Page Type 2 - Primary Organization
+					li: a(href='Page Type 3 - Secondary Organization.html') Page Type 3 - Secondary Organization
+					li: a(href='Page Type 4 - Applications.html') Page Type 4 - Applications
+					li: a(href='Page Type 4 - Simple Applications.html') Page Type 4 - Simple Applications
+
+					li.break: a(href='Sample 1 - Frontpage - Primary Organization.html') Sample 1 - Frontpage - Primary Organization
+					li: a(href='Sample 2 - Simple page - Primary Organization.html') Sample 2 - Simple page - Primary Organization
+					li: a(href='Sample 3 - One Sidebar - Primary Organization.html') Sample 3 - One Sidebar - Primary Organization
+					li: a(href='Sample 4 - Two Sidebar - Primary Organization.html') Sample 4 - Two Sidebar - Primary Organization
+					li: a(href='Sample 5 - Six Columns - Secondary Organization.html') Sample 5 - Six Columns - Secondary Organization

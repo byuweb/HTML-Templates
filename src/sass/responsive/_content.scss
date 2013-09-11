@@ -1,0 +1,64 @@
+/*!
+* Content 
+*
+*/
+
+
+@import "shared/variables";
+@import "shared/colors";
+@import "shared/mixins";
+
+
+@media all and (min-width: $med-width) {
+	#content { padding: 1em 9% 4em; }
+}
+
+@media all and (min-width: $large-width) {
+	.one-sidebar, .two-sidebars {
+		#main-content, .sidebar { float: left; }
+	}
+
+	.one-sidebar {
+		#main-content { 
+			margin-right:5%; 
+			width:58.7%;
+		}
+		.sidebar { width:36.3% }
+	}
+	
+	.two-sidebars {
+		#main-content { 
+			margin-right:5%;
+			margin-left: 5%;
+			width:48%;
+		}
+
+		.sidebar {
+			width: 21%;
+			margin:0;
+		}
+	}
+}
+
+@media screen and (min-width : $larger-width) {
+	body {
+		background: url("../img/body-linen.png");
+		color: #444; }
+
+	.wrapper {
+		max-width: 940px;
+		margin: 0 auto; }
+
+	#content{
+		position: relative;
+		min-height:100%;
+		width:940px;
+		padding-left: 103px;
+		padding-right:103px;
+		@include box-shadow(0 0 30px 0px rgba(222, 222, 222, 0.7));
+	}
+
+	#content.sidebar-navigation {
+		width: 720px;
+	}
+}

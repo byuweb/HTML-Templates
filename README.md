@@ -16,8 +16,16 @@ To speed up development, we're using SCSS with Compass for CSS, and Jade for HTM
 - **Node.js** (Including the node package manager <code>npm</code>) - Javascript-based server software. Installation info at [nodejs.org](http://nodejs.org/)
 - **Ruby** - Pre-installed on Mac. For Windows, installation info at [ruby-lang.org](http://www.ruby-lang.org/en/downloads/), or use an installer package like [RubyInstaller](http://rubyinstaller.org/).
 - **Grunt** - Javascript task runner. Automates compiling and other repetitive tasks. Installation info at [gruntjs.com](http://gruntjs.com/getting-started)  
-- **Sass** - Compiler for CSS. Once Ruby is installed, run the command <code>gem install sass</code> in the command line to install. Info at [sass-lang.com](http://sass-lang.com/)
+- **Sass** - Compiler for CSS. Once Ruby is installed, run the command <code>gem install sass</code> in the command line to install. Info at [sass-lang.com](http://sass-lang.com/). (HEADS UP-- Don't forget to read the Sass Gotcha section below)
 - **Compass** - Sass extension with pre-built mixins and variables. In the command line, run <code>gem install compass</code> to install. Info at [compass-style.org](http://compass-style.org/).
+
+### Sass gotcha
+
+Google Chrome has changed the way they do [source mapping](http://net.tutsplus.com/tutorials/tools-and-tips/source-maps-101/). (If you're not familiar with source mapping, imagine the Chrome inspector telling you locations of your CSS in the pre-compiled sass files rather than compiled CSS. Very useful.)
+
+Anyway, the source mapping in the currently released version of sass (v3.2.9 as of July 29, 2013) doesn't work in Chrome anymore. However, there's a pre-release version that does work. Install it like so:
+
+<code>gem install sass -v 3.3.0.alpha.141 --pre</code>
 
 ### Setup
 
@@ -37,7 +45,11 @@ Each time you want to work on the project, navigate in your command line to the 
 
 <code>grunt</code>
 
-If there are no errors, you should see in your terminal a list of several tasks that have started running. Whenever you save a watched file you'll see the list of tasks updated based on the file you've saved. For instance, your SASS and Jade files should automatically compile.
+or
+
+<code>grunt --force</code>
+
+If there are no errors, you should see in your terminal a list of several tasks that have started running. Whenever you save a watched file you'll see the list of tasks updated based on the file you've saved. For instance, your SASS and Jade files should automatically compile. If you use the <code>--force</code> flag, grunt will continue running even if errors happen in any of the tasks (otherwise, you'll have to restart grunt after any error).
 
 ### Stop grunt
 

@@ -1,52 +1,17 @@
-#breadcrumb{
-	.bread-drop{
-		background-color: $grayE; 
-		border: 1px solid $grayC;
-		display:none;
-		margin: -1px 0 0 -1px;
-		padding:10px;
-		position:absolute;
-		white-space:nowrap;
-		@include border-radius(0 3px 3px 3px);
-		&:before{
-			background-color: $grayE;
-			content:" ";
-			height:1px; 
-			left:0;
-			margin-top: -1px;
-			position:absolute;
-			top:0;
-			width:20px;
-		}
-		li{margin-bottom:5px;}
+.breadcrumb {
+	display: block;
+	padding: 0;
+
+	a, a:link, a:visited {
+		color: $blue4;
 	}
-	
-	#breadcrumb-home{
-		display:inline-block;
-		position:relative;
-		padding:1px;
-		&:after {
-			background-color: #FFF;
-			box-shadow: -2px 2px 0 $grayE;
-			border: 1px solid $grayC;
-			border-bottom-left-radius: 5px;
-			border-width: 0 0 1px 1px;
-			display:none;
-			content: " ";
-			position: absolute;
-			bottom:0;
-			right:-6px;
-			height: 5px;
-			width: 5px;
-		}
-		&:hover{ 
-			background-color: $grayE;
-			border: 1px solid $grayC;
-			border-bottom: 1px solid $grayE;
-			padding:0px;
-			@include border-radius(3px 3px 3px 0);
-			&:after{display:block;}
-			.bread-drop{display:block;}	
-		}
+
+	a:hover, a:active, a:focus {
+		text-decoration: none;
+		color: $blue2;
 	}
-}  
+
+	.divider {
+		width: 10px;
+	}
+}

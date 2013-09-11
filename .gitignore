@@ -3,5 +3,7 @@ processform.php
 .DS_Store
 /nbproject
 /node_modules
+/browser testing
 npm-debug.log
 Gruntfile.js
+/css/*.css.map

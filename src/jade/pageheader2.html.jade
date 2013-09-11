@@ -1,0 +1,43 @@
+extends _layout
+
+//- OVERRIDE LAYOUT BLOCKS
+
+//- Header (banner defined here)
+block head
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		title BYU - Page Header 2
+		meta(name='viewport', content='width=device-width, , initial-scale=1')
+
+		// Place favicon.ico and apple-touch-icon.png in the root directory
+		link(rel='shortcut icon', href='favicon.ico')
+
+		// Incorporate these styles into your stylesheet.
+		link(rel="stylesheet", href="css/byu-header-bar.css")
+
+		// Modernizr not required, but SVG support helpful.
+		script(src='js/modernizr.js')
+
+block header
+	// BYU HEADER BAR
+	#byu-bar.button
+		// BYU Logo
+		h2
+			a.byu(href='http://www.byu.edu/') Brigham Young University
+
+		// Sign in Button 
+		a.sign-in(href='http://home.byu.edu/home/cas') Sign in
+	// END BYU HEADER BAR
+
+
+
+//- Other block overrides
+block contentwrapper
+	p(style="text-align:center") [App content goes here]
+
+block content
+block footer
+block search-menu
+block nav
+block end-scripts

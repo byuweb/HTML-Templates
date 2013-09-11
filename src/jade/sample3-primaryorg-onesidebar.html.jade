@@ -1,0 +1,101 @@
+
+extends _layout
+
+block pageTitle
+	| BYU - Sample 3
+
+block parentlink
+	a.byu(href='http://www.byu.edu/') Brigham Young University
+
+block heading
+	| Primary Organization
+
+block prepend contentwrapper
+	- var contentclasses = 'one-sidebar'
+
+block content
+
+	header
+		h1 BYU museum exhibit receives national award
+		h2 "Beneath Your Feet: Discovering the Archaeology of Utah Valley" now on display
+	main#main-content
+		div(style='position: relative; padding-bottom: 60%; margin:0 0 2em;')
+				iframe(style='width: 100%; height: 100%; position: absolute; left: 0; top: 0;', src='http://www.youtube.com/embed/RYuO-LSURvI', frameborder='0', allowfullscreen='allowfullscreen')
+		p
+			| The award will be presented at the 66th Leadership in History Awards ceremony during the association's 2011 Annual Meeting in Richmond, Va., in September.
+		p
+			| "The Leadership in History Awards is AASLH's highest distinction, and the winners represent the best in the field," said Terry Davis, AASLH president and CEO. "This year, we are pleased to distinguish each recipient's commitment and innovation to the interpretation of history, as well as their leadership for the future of state and local history."
+		p
+			| "I think it's great to get this recognition, especially for the students who helped create it," said Kari Nelson, curator of education at the museum. "The visitors enjoy the exhibit so much, but it's nice for the students' work to be recognized by an institution and see it is nationally viewed as high quality."
+		p
+			| Developed and installed by BYU students, "Beneath Your Feet" opened April 2010. The exhibit focuses on the archaeology of Utah Valley with an emphasis on the Fremont culture.
+		p
+			| "The primary goal of this exhibit is to increase awareness of the archaeology that is in the community that the museum serves," Nelson said.  "Along with the artifacts from Utah Valley that are on display, several cases illustrate how and why archaeology is conducted."
+		p
+			| Many students, children and members of the community have experienced the exhibit through the museum's education programs, tours, Boy Scout programs and date nights.
+		p
+			| "My students were able to go on a field trip to the museum," said Christine Whatcott, a teacher at Wasatch Elementary. "This exhibit enabled me to reinforce with 'real' objects, maps, etc.—the things that we learned about in class. The kids came away from the experience excited to learn more."
+		p
+			| Headquartered in Nashville, Tenn., AASLH is a non-profit organization that provides leadership, service and support for its members who preserve and interpret state and local history in order to make the past more meaningful in American society. The AASLH awards program was initiated in 1945 to establish and encourage standards of excellence in the collection, preservation and interpretation of state and local history throughout the United States.
+		p
+			| For more information about the Leadership in History Awards, contact AASLH at (615) 320-3203 or visit
+			a(href='http://aaslh.org/', target='_blank') aaslh.org
+			| .
+		p
+			| "Beneath Your Feet" remains at the museum until April 2012. Call to schedule educational activities and tours. Admission is free. The museum is open Monday through Friday from 9 a.m. to 5 p.m. and is located on 100 E. and 700 N. in Provo.
+		p
+			| For more information about the exhibit, visit
+			a(href='http://mpc.byu.edu/', target='_blank') mpc.byu.edu
+			| , email
+			a(href='mailto:mpc@byu.edu', target='_blank') mpc@byu.edu
+			| or call (801) 422-0020.
+		div(style='border-top: 1px solid #ddd; ;padding-top: 18px; padding-bottom: 14px; border-bottom: 1px solid #ddd;')
+			.clearfix(style='border-bottom: 1px solid #ddd; padding-bottom: 20px;')
+				div(style='float: left; width: 33%;')
+					h4(style='margin: 0; margin-bottom: 2px;') Media Contact
+					p(style='margin: 0;')
+						| Cecelia Fielding
+						br
+						| 801-422-4377
+				div(style='float: left; width: 32%;')
+					h4(style='margin: 0; margin-bottom: 2px;') Writers
+					p(style='margin: 0;') Mel Gardner
+				div(style='float: left; width: 32%;')
+					h4(style='margin: 0; margin-bottom: 2px;') Photography
+					p(style='margin: 0;') Jaren Wilkey/BYU
+			h4(style='clear: both; margin-top: 18px;') Related Stories
+			ul
+				li
+					a(href='') BYU study adds a 'twist' to stars' death throes
+				li
+					a(href='') Triple play: Three BYU studies in top science journal
+	aside.sidebar
+		p
+			script(src='http://connect.facebook.net/en_US/all.js#xfbml=1')
+			fb:like(href='', show_faces='true', width='250', action='recommend', font='')
+		#ctl00_ContentPlaceHolder1_LPhotos
+			div(style='margin-bottom: 18px; border-top: 1px solid #ddd; ;padding-top: 20px; padding-bottom: 20px; border-bottom: 1px solid #ddd;')
+				h4(style='margin-top: 0;') Story Highlights
+				ul(style='margin-left: 0; padding-left: 16px;')
+					li
+						| Afghan villages have a long tradition of making decisions through local councils, says Choate.
+					li "I bring back to my students the idea that world history has not ended."
+					li
+						| "Our special operations forces are sacrificing and accomplishing so much to help our Afghan allies in their own battle for independence."
+			div(style='margin-bottom: 2em;')
+				a(href='http://news.byu.edu/releases/archive11/Jul/mpcaward/utahvalley1.jpg')
+					img(style='padding-bottom: 2px; border: 0px;', src='http://news.byu.edu/releases/archive11/Jul/mpcaward/m-utahvalley1.jpg', alt='')
+				br
+				a(href='http://news.byu.edu/releases/archive11/Jul/mpcaward/utahvalley1.jpg') Click here to download
+				br
+				span(style='font-size: 95%; color: #444;')
+					| "Beneath Your Feet: Discovering the Archaeology of Utah Valley" is now on display at the Museum of Peoples and Cultures.
+			div(style='margin-bottom: 2em;')
+				a(href='http://news.byu.edu/releases/archive11/Jul/mpcaward/figure.jpg')
+					img(style='padding-bottom: 2px; border: 0px;', src='http://news.byu.edu/releases/archive11/Jul/mpcaward/m-figure.jpg', alt='')
+				br
+				a(href='http://news.byu.edu/releases/archive11/Jul/mpcaward/figure.jpg') Click here to download
+				br
+				span(style='font-size: 95%; color: #444;') Figurines were a popular artifact found in the museum's research.
+	p(style='clear: both; padding-top: 30px;')
+		a(href='') Return to BYU News page.

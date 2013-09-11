@@ -1,0 +1,266 @@
+/*!
+
+* Header & Footer
+*
+*/
+
+//@import "compass";
+
+@import "shared/variables";
+@import "shared/colors";
+@import "shared/mixins";
+
+
+#logo {
+	padding-left:3%;
+	h2 { margin-left: -9px;	}
+}
+
+// Buttons
+a.mybyu, a.sign-in, .open #search-button { 
+	@include transition(background-color .3s); 
+}
+
+#header-top a.sign-in {
+	right: 3%;
+	@include vertical-gradient($blue5,$blue4);
+	@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
+	&:hover {
+		border: none;
+		margin:0;
+		@include vertical-gradient(mix($blue5,$blue4),mix($blue4,$blue3));
+	}
+}
+
+#site-name {
+	@include text-shadow(0 0 12px rgba($blue0, .5));
+}
+
+.parentlink {
+	@include text-shadow(0 0 6px rgba($blue0, .65));
+}
+
+#site-name, .parentlink {
+	&:hover {
+		text-decoration: none;
+		color: $yellow2;
+		@include text-shadow(0 0 20px rgba($blue0, 1))
+	}
+}
+
+// Logo
+#logo a.parentlink {
+	&:hover {
+		color: $yellow2;
+	}
+}
+
+
+
+@media all and (min-width: 500px) {
+	#logo a.byu {
+		background-image: url($asset-base + 'img/byu-logo.png');
+		width: 350px;
+		.svg & {
+			background-image: url($asset-base + 'img/byu-logo.svg');
+		}
+	}
+}
+
+
+
+
+
+/* Medium width */
+
+@media all and (min-width:$med-width) { 
+
+	#main-header {
+		background: $blue2 url($asset-base + 'img/byu-header-bg.png') top left no-repeat;
+		background-size: 100% 100%;
+		.svg & {
+			background-image: url($asset-base + 'img/byu-header-bg.svg');
+		}
+	}
+
+	#header-top h1 {
+		margin:.25em 4% .4em;
+	}
+
+	// Logo
+	#logo {
+		background-color: transparent;
+		padding-bottom: 0;
+		border: none;
+	}
+
+	.parentlink {
+		letter-spacing: 1px;
+	}
+
+
+
+	#page-footer {
+		.wrapper {
+			margin-left:4%;
+			margin-right:4%;
+		}
+	}
+
+	#footer-links{
+
+		.col {
+			display:inline-block;
+			vertical-align:top;
+			width:41.855%;
+			margin-left: 5.43%;
+			padding-top:1em;
+		}
+		.double {
+			width:89.14%;
+			.right, .left{
+				width:46%;
+				display:inline-block;
+			}
+			.right {
+				margin-left:7%;
+			}
+		}
+	 h2{margin:0}
+	}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width: $large-width) {
+	$col-margin: 2%;
+	$col-width: (90% - ($col-margin * 4))/5;
+
+	#page-footer {
+		.wrapper {
+			margin:1em auto 2em;
+		}
+
+		#footer-bottom{
+			padding:.5em 9% 1px;
+
+			a {
+				display:inline-block;
+				text-indent: -999em;
+			}
+
+			a#copyright{
+				text-indent:0em;
+			}
+			
+			$logo-padding:5px;
+
+			%school-link{
+				background: transparent url('../img/footer-logos.png') no-repeat;
+				opacity:0.7;
+				margin: 0 $logo-padding;
+				height: 51px;
+				width: 70px;
+				@include transition(opacity 0.2s ease);
+
+				.svg & {
+					background-image: url('../img/footer-logos.svg');
+				}
+
+				&:hover {
+					opacity:1;
+				}
+			}
+
+			a#lds {
+				@extend %school-link;
+				background-position: -425px 0;
+				width: 160px;
+				opacity: .9;
+				float:right;
+				margin-right: -($logo-padding + 1);
+			}
+
+			a#ldsbc {
+				@extend %school-link;
+				background-position: -300px 0;
+				}
+
+			a#byui {
+				@extend %school-link;
+				background-position: -210px 0;
+				}
+
+			a#byuh {
+				@extend %school-link;
+				background-position: -110px 0;
+				}
+			a#byu {
+				@extend %school-link;
+				background-position:-8px -9px;
+				margin-left: -($logo-padding + 1);
+				width:80px;
+				}
+		}
+
+	}
+
+	#footer-links{
+		.wrapper {
+			margin-right:0;
+			margin-left:9%;
+		}
+		.col {
+			display:inline-block;
+			vertical-align:top;
+			width:$col-width;
+			margin-left: $col-margin;
+			padding-top:1em;
+		}
+		.double {
+			width:($col-width * 2) + $col-margin;
+			.right, .left{
+				width:43%;
+				display:inline-block;
+			}
+			.right {
+				margin-left:10%;
+			}
+		}
+		.col.alpha, .col:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/* From h5bp */
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}

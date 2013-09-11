@@ -9,24 +9,19 @@
 @import "shared/variables";
 
 
-
-
-
-
-
-
-
-
-/*	Twitter Bootstrap (Scss version)
+/*!
+	Twitter Bootstrap (Scss version)
+*/
+/*	
 	Loaded first, so it can be overrridden easily.
 	Only uncomment the stuff that you really need */
 
 // Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+	@import "bootstrap/variables";
+	@import "bootstrap/mixins";
 
 // CSS Reset
-//@import "reset";
+//  @import "reset";
 
 // Grid system and page structure
 //	@import "bootstrap/scaffolding";
@@ -34,9 +29,9 @@
 //	@import "bootstrap/layouts";
 
 // Base CSS
-	//@import "bootstrap/type";
+	@import "bootstrap/type";
 	@import "bootstrap/code";
-	@import "bootstrap/forms";
+//	@import "bootstrap/forms";
 	@import "bootstrap/tables";
 
 // Components: common
@@ -65,7 +60,7 @@
 // Components: Misc
 //	@import "bootstrap/thumbnails";
 //	@import "bootstrap/media";
-	@import "bootstrap/labels-badges";
+//	@import "bootstrap/labels-badges";
 //	@import "bootstrap/progress-bars";
 //	@import "bootstrap/accordion";
 //	@import "bootstrap/carousel";
@@ -78,29 +73,87 @@
 
 
 
+/*
 
+FontAwesome
 
-
-
-
-
-/* BYU Styles */
-@import "responsive/bootstrap-override";
+*/
 @import "responsive/font-awesome";
-@import "responsive/header";
+
+
+
+
+
+/*!
+
+BYU Styles 
+
+*/
+@import "responsive/bootstrap-override";
+@import "responsive/header-footer";
 @import "responsive/breadcrumb";
+@import "responsive/search";
 @import "responsive/nav";
 
+@import "responsive/anythingslider";
 @import "responsive/slider";
-@import "responsive/slider-responsive";
-@import "responsive/flexslider";
-@import "responsive/search";
 
+@import "responsive/calendar";
+@import "responsive/content";
 @import "responsive/type";
 
 
 
-/* h5bp print styles */
+
+/*** Larger width ***/
+@media all and ( min-width:$larger-width ) {
+	$display_width:1008px;
+	$side_padding: 12px;
+
+	#primary-nav {
+		width: $display_width;
+		margin:0 auto;
+		padding-left: 0;
+		.mega {
+			width: 100%;
+		}
+	}
+
+	#primary-nav, #secondary-nav {
+		a {
+			padding-left: $side_padding;
+			padding-right: $side_padding;
+		}
+	}
+
+	#logo {
+		padding-left: $side_padding;
+	}
+
+	#header-top {
+		max-width: $display_width;
+		margin-right: auto;
+	}
+
+	#search-menu, #secondary-nav {
+		right:50%;
+		margin-right: -$display_width/2;
+	}
+
+	#footer-links .wrapper {
+		max-width: $larger-width * .91;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 8%;
+	}
+
+}
+
+
+
+/*!
+h5bp print styles 
+*/
 @import "responsive/print";
 
 

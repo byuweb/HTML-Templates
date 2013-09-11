@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html lang="en" class="no-js oldie lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]>    <html lang="en" class="no-js oldie lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]>    <html lang="en" class="no-js oldie lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" class="no-js">
+  <!-- <![endif]-->
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>BYU - Page Elements</title>
+    <meta name="description" content="Description about your department.">
+    <meta name="author" content="Your Department Name">
+    <meta name="keywords" content="keyword 1, keyword 2, keyword 3">
+    <meta name="viewport" content="width=device-width, , initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory-->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Styles-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/responsive.css" media="all and (min-width:250px)">
+    <!-- Scripts loaded via script loader. See notes in init.js file.-->
+    <script src="js/modernizr.js"></script>
+    <script>var loadslider = false;</script>
+    <script src="js/init.js"></script>
+  </head>
+  <body><!--[if lt IE 7]>
+    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p><![endif]-->
+    <h1>header here</h1>
+    <div id="content" role="main" class="wrapper clearfix ">
+      <!-- Breadcrumb-->
+      <ul class="breadcrumb">
+        <li>
+          <div class="dropdown"><a href="" data-toggle="dropdown" class="home dropdown-toggle needsclick"><i class="icon-home icon-large"></i><span class="visuallyhidden">Home</span><i class="icon-caret-down"></i></a>
+            <ul role="menu" aria-labelledby="dropdownMenu" class="dropdown-menu">
+              <li><a href="www.byu.edu">BYU Home</a></li>
+              <li><a href="#">Organization Home</a></li>
+              <li><a href="#">Two Pages Above</a></li>
+            </ul><i class="divider icon-angle-right"></i>
+          </div>
+        </li>
+        <li><a href="#">One page above</a><i class="divider icon-angle-right"></i></li>
+        <li class="active">Current Page</li>
+      </ul>
+      <!-- App content here-->
+    </div>
+    <script>
+      /* SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS */
+      
+      (function() {
+       var cx = '009932716493032633443:hlqjz33kfkc';
+       var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+       gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+       '//www.google.com/cse/cse.js?cx=' + cx;
+       var s = document.getElementsByTagName('script')[0];
+       s.parentNode.insertBefore(gcse, s);
+      })();
+      
+    </script>
+    <script>
+      /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
+  </body>
+</html>

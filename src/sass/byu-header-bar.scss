@@ -1,0 +1,189 @@
+@import "compass";
+@import "shared/colors";
+@import "shared/mixins";
+@import "shared/variables";
+
+
+$fontSize:14; 
+
+html, body {
+  margin:0;
+}
+
+
+#byu-bar {
+
+// SIGN IN BUTTON
+
+  .sign-in {
+    background-color:$blue5;
+    border:none;
+    color:#fff;
+    font-weight: bold;
+    padding: 5px 18px;
+    text-decoration: none;
+    position: absolute;
+    top:4px;
+    right: 3%;
+    @include border-radius(14px);
+    @include vertical-gradient($blue5,$blue4);
+    @include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
+    @include transition(background-color .3s); 
+    &:hover, &:active {
+      margin: -2px;
+      background-color: $blue4;
+      border: 2px solid $blue7;
+      cursor:pointer;
+      border: none;
+      margin:0;
+      @include border-radius(16px);
+      @include vertical-gradient(mix($blue5,$blue4),mix($blue4,$blue3)); } }
+
+  a.byulink {
+    @include ir();
+    display: inline-block;
+    height: 26px;
+    width: 90px;
+    background: transparent url($asset-base + "img/byu-logo-sm.png") 0px 0px no-repeat;
+    .svg & {
+      background-image: url($asset-base + "img/byu-logo-sm.svg");
+    }
+  }
+
+  a.byu {
+    @include ir();
+    display: block;
+    height: 30px;
+  }
+
+  a.parentlink {
+    font-family: "DroidSerif","CreteRound","Palatino","DroidSerif","Droid Serif",Georgia,serif;
+    text-shadow: 0 0 6px rgba(0,25,72,0.65);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    display: inline-block;
+    padding: 6px 8px 2px;
+    color: #d1e4f6;
+    line-height: 1.2;
+    height: 26px;
+    vertical-align: top;
+    &:hover {
+      color: #ffe;
+    }
+  }
+
+// SEARCH
+
+  $searchButtonWidth: 50px;
+  $searchPadding: 10px;
+  $sidePadding:5px;
+
+  #search-container {
+    width: 300px;
+    padding: 0;
+    height: 32px;
+    position: relative;
+
+    @include border-radius(15px);
+    @include vertical-gradient($blue5,$blue4);
+    @include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
+
+    textarea:hover,
+    input:hover,
+    textarea:active,
+    input:active,
+    textarea:focus,
+    input:focus {
+      outline:0px !important;
+      -webkit-appearance:none;
+    }
+  }
+
+  // Basic search container
+  #basic-search {
+    position: relative;
+    padding-right: ($searchPadding * 2) + $searchButtonWidth + $sidePadding + 2px;
+    padding-left:$sidePadding;
+    padding-top:4px;
+
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    padding-right: 43px;
+    @include box-sizing(border-box);
+
+    label {
+      color: #fff;
+    }
+  }
+
+  // Textinput fields
+  #basic-search #search {
+    margin-bottom: 0;
+    vertical-align: top;
+    @include border-radius(15px);
+    padding: 5px $searchPadding !important;
+    border: 0 !important;
+    font-size: $fontSize + px;
+    display: block;
+    width: 100%;
+  }
+
+  #basic-search #search {
+    border: 0 !important;
+    padding: 6px 8px 6px 14px !important;
+    background-position:14px 50% !important;
+    height: 32px;
+
+    @include box-sizing(border-box);
+    @include box-shadow(none);
+    @include border-radius(15px);
+
+    &::selection {
+      border: 0;
+    } 
+  }
+
+    // Basic submit button
+  #search-submit {
+    display: block;
+    position: absolute;
+    background: url(../img/search_box_icon.png) 8px 8px no-repeat;
+    overflow: hidden;
+    text-indent: -1000px;
+    margin: 0;
+    padding: 5px;
+    padding-left: 0;
+    width: 34px;
+    top: 1px;
+    right: 5px;
+
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+
+    &:active, &:hover {
+      right:7px;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+
+@import "responsive/byu-bar"

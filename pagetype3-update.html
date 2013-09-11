@@ -17,9 +17,10 @@
     <link rel="shortcut icon" href="favicon.ico">
     <!-- Styles-->
     <link rel="stylesheet" href="css/base.css">
-    <link media="all and (min-width:300px)" rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive.css" media="all and (min-width:250px)">
     <!-- Scripts loaded via script loader. See notes in init.js file.-->
     <script src="js/modernizr.js"></script>
+    <script>var loadslider = false;</script>
     <script src="js/init.js"></script>
   </head>
   <body><!--[if lt IE 7]>
@@ -30,7 +31,7 @@
           <h2><a href="#" class="byulink">Brigham Young University</a><a href="#" class="parentlink">Parent Organization</a></h2>
         </div>
         <!-- This should link to your organization's home page-->
-        <h1><a id="site-name" href="#CHANGE-THIS-LINK">Secondary Organization</a></h1><a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
+        <h1><a id="site-name" href="#" title="Change this link to your organization's home page">Secondary Organization</a></h1><a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
       </div>
     </header>
     <div id="search-menu">
@@ -38,6 +39,7 @@
         The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
         If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).-->
         <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
+          <label for="search" class="visuallyhidden">Search</label>
           <input id="search" type="search" name="search">
           <input id="search-submit" type="submit" value="Search">
         </form>
@@ -47,12 +49,12 @@
         </div>
       </div><a href="#primary-nav" class="menu-button">Menu</a>
     </div>
-    <div id="content" role="main" class="wrapper clearfix">
+    <div id="content" role="main" class="wrapper clearfix ">
       <!-- Breadcrumb-->
       <ul class="breadcrumb">
         <li>
           <div class="dropdown"><a href="" data-toggle="dropdown" class="home dropdown-toggle needsclick"><i class="icon-home icon-large"></i><span class="visuallyhidden">Home</span><i class="icon-caret-down"></i></a>
-            <ul role="menu" aria-labelledby="dropdownMenu" class="dropdown-menu">
+            <ul class="dropdown-menu">
               <li><a href="www.byu.edu">BYU Home</a></li>
               <li><a href="#">Organization Home</a></li>
               <li><a href="#">Two Pages Above</a></li>
@@ -70,6 +72,7 @@
       <!-- Primary Nav-->
       <nav id="primary-nav" role="navigation">
         <ul>
+          <li> <a href="#" class="single current">Current tab</a></li>
           <li><a href="">Mega Dropdown Menu</a>
             <div class="mega">
               <ul class="links">
@@ -79,24 +82,24 @@
                     <li><a href="">Featured Link 2</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Link 1</a></li>
-                <li><a href="#">Link 2</a>
+                <li><a href="#">Menu item 1</a></li>
+                <li><a href="#">Menu item 2</a>
                   <ul class="sublinks">
-                    <li><a href="">Sublink 1</a></li>
-                    <li><a href="">Sublink 2</a></li>
-                    <li><a href="">Sublink 3</a></li>
+                    <li><a href="">Submenu item 1</a></li>
+                    <li><a href="">Submenu item 2</a></li>
+                    <li><a href="">Submenu item 3</a></li>
                   </ul>
                 </li>
-                <li><a href="">Links 3</a></li>
-                <li><a href="">Links 4</a></li>
-                <li><a href="">Links 5</a></li>
-                <li><a href="">Links 6</a></li>
+                <li><a href="">Menu item 3</a></li>
+                <li><a href="">Menu item 4</a></li>
+                <li><a href="">Menu item 5</a></li>
+                <li><a href="">Menu item 6</a></li>
               </ul>
-              <div class="highlight"><a href="#"><span title="" class="img menu1 jpg"></span></a>
+              <div class="highlight"><a href="#"><img src="images/menu/menu1.jpg" alt="Menu image 1"></a>
                 <p><a href="#">Picture Link</a></p>
                 <p>Text text text text text.</p>
               </div>
-              <div class="highlight"><a href="#"><span title="" class="img menu2 jpg"></span></a>
+              <div class="highlight"><a href="#"><img src="images/menu/menu2.jpg" alt="Menu image 2"></a>
                 <p><a href="#">Picture Link</a></p>
                 <p>Text text text text text.</p>
               </div>
@@ -113,38 +116,38 @@
                 </li>
                 <li class="left">
                   <ul>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a>
+                    <li><a href="#">Menu item 1</a></li>
+                    <li><a href="#">Menu item 2</a>
                       <ul class="sublinks">
-                        <li><a href="">Sublink 1</a></li>
-                        <li><a href="">Sublink 2</a></li>
-                        <li><a href="">Sublink 3</a></li>
-                        <li><a href="">Sublink 4</a></li>
-                        <li><a href="">Sublink 5</a></li>
+                        <li><a href="">Submenu item 1</a></li>
+                        <li><a href="">Submenu item 2</a></li>
+                        <li><a href="">Submenu item 3</a></li>
+                        <li><a href="">Submenu item 4</a></li>
+                        <li><a href="">Submenu item 5</a></li>
                       </ul>
                     </li>
-                    <li><a href="">Links 3</a></li>
-                    <li><a href="">Links 4</a></li>
-                    <li><a href="">Links 5</a></li>
-                    <li><a href="">Links 6</a></li>
+                    <li><a href="">Menu item 3</a></li>
+                    <li><a href="">Menu item 4</a></li>
+                    <li><a href="">Menu item 5</a></li>
+                    <li><a href="">Menu item 6</a></li>
                   </ul>
                 </li>
                 <li class="left">
                   <ul>
-                    <li><a href="">Links 7</a></li>
-                    <li><a href="">Links 8</a></li>
-                    <li><a href="">Links 9</a></li>
-                    <li><a href="">Links 10</a></li>
-                    <li><a href="">Links 11</a></li>
-                    <li><a href="">Links 12</a></li>
+                    <li><a href="">Menu item 7</a></li>
+                    <li><a href="">Menu item 8</a></li>
+                    <li><a href="">Menu item 9</a></li>
+                    <li><a href="">Menu item 10</a></li>
+                    <li><a href="">Menu item 11</a></li>
+                    <li><a href="">Menu item 12</a></li>
                   </ul>
                 </li>
               </ul>
-              <div class="highlight"><a href="#"><span title="" class="img menu1 jpg"></span></a>
+              <div class="highlight"><a href="#"><img src="images/menu/menu1.jpg" alt="Menu image 3"></a>
                 <p><a href="#">Picture Link</a></p>
                 <p>Text text text text text.</p>
               </div>
-              <div class="highlight"><a href="#"><span title="" class="img menu2 jpg"></span></a>
+              <div class="highlight"><a href="#"><img src="images/menu/menu2.jpg" alt="Menu image 4"></a>
                 <p><a href="#">Picture Link</a></p>
                 <p>Text text text text text.</p>
               </div>
@@ -153,10 +156,10 @@
           <li><a href="">Basic Dropdown Menu</a>
             <div class="sub">
               <ul class="links">
-                <li><a href="">Links 1</a></li>
-                <li><a href="">Links 2</a></li>
-                <li><a href="">Links 3</a></li>
-                <li><a href="">Links 4</a></li>
+                <li><a href="">Menu item 1</a></li>
+                <li><a href="">Menu item 2</a></li>
+                <li><a href="">Menu item 3</a></li>
+                <li><a href="">Menu item 4</a></li>
               </ul>
             </div>
           </li>
@@ -168,26 +171,26 @@
         <ul>
           <li><a href="#">SecMenu1</a>
             <ul class="sub">
-              <li><a href="">Links 1</a></li>
-              <li><a href="">Links 2</a></li>
-              <li><a href="">Links 3</a></li>
-              <li><a href="">Links 4</a></li>
+              <li><a href="">Menu item 1</a></li>
+              <li><a href="">Menu item 2</a></li>
+              <li><a href="">Menu item 3</a></li>
+              <li><a href="">Menu item 4</a></li>
             </ul>
           </li>
           <li><a href="#">SecMenu2</a>
             <ul class="sub">
-              <li><a href="">Links 1</a></li>
-              <li><a href="">Links 2</a></li>
-              <li><a href="">Links 3</a></li>
-              <li><a href="">Links 4</a></li>
+              <li><a href="">Menu item 1</a></li>
+              <li><a href="">Menu item 2</a></li>
+              <li><a href="">Menu item 3</a></li>
+              <li><a href="">Menu item 4</a></li>
             </ul>
           </li>
           <li><a href="#">SecMenu3</a>
             <ul class="sub">
-              <li><a href="">Links 1</a></li>
-              <li><a href="">Links 2</a></li>
-              <li><a href="">Links 3</a></li>
-              <li><a href="">Links 4</a></li>
+              <li><a href="">Menu item 1</a></li>
+              <li><a href="">Menu item 2</a></li>
+              <li><a href="">Menu item 3</a></li>
+              <li><a href="">Menu item 4</a></li>
             </ul>
           </li>
         </ul>
@@ -197,10 +200,10 @@
       <div id="footer-links">
         <div class="wrapper">
           <div class="col alpha">
-            <h2>Footer Column 1</h2><a href="">Link 1</a><a href="">Link 2</a><a href="">Link 3</a><a href="">Link 4</a>
+            <h2>Footer Column 1</h2><a href="">Menu item 1</a><a href="">Menu item 2</a><a href="">Menu item 3</a><a href="">Menu item 4</a>
           </div>
           <div class="col">
-            <h2>Footer Column 2</h2><a href="">Link 1</a><a href="">Link 2</a><a href="">Link 3</a><a href="">Link 4</a>
+            <h2>Footer Column 2</h2><a href="">Menu item 1</a><a href="">Menu item 2</a><a href="">Menu item 3</a><a href="">Menu item 4</a>
           </div>
           <div class="col double">
             <h2>Footer Double Column</h2>
@@ -210,30 +213,16 @@
             </div>
           </div>
           <div class="col omega">
-            <h2>Footer Column 4</h2><a href="">Link 1</a><a href="">Link 2</a><a href="">Link 3</a><a href="">Link 4</a>
+            <h2>Footer Column 4</h2><a href="">Menu item 1</a><a href="">Menu item 2</a><a href="">Menu item 3</a><a href="">Menu item 4</a>
           </div>
         </div>
       </div>
       <div id="footer-bottom">
         <div class="wrapper">
-          <p><a id="lds" href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a><a id="byui" href="http://byui.edu/">BYU-Idaho</a><a id="byuh" href="http://byuh.edu/">BYU-Hawaii</a><a id="ldsbc" href="http://www.ldsbc.edu/">LDS Business College</a></p>
-          <p><a id="copyright" href="http://home.byu.edu/home/copyright">Copyright© 2011, All Rights Reserved</a></p>
+          <p><a id="byu" href="http://byu.edu/">Brigham Young University</a><a id="byui" href="http://byui.edu/">BYU-Idaho</a><a id="byuh" href="http://byuh.edu/">BYU-Hawaii</a><a id="ldsbc" href="http://www.ldsbc.edu/">LDS Business College</a><a id="lds" href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a></p>
         </div>
       </div>
     </footer><!--CONTENT END-->
-    <script>
-      /* SEARCH - Google Custom Search Engine Script configured to use entire BYU search as default; change cx if you create your own department GCS */
-      
-      (function() {
-       var cx = '009932716493032633443:hlqjz33kfkc';
-       var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-       gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-       '//www.google.com/cse/cse.js?cx=' + cx;
-       var s = document.getElementsByTagName('script')[0];
-       s.parentNode.insertBefore(gcse, s);
-      })();
-      
-    </script>
     <script>
       /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

@@ -1,6 +1,10 @@
-/*** Type ***/
+/*!
 
-@import "variables";
+* Type 
+*
+*/
+
+@import "shared/variables";
 
 
 
@@ -11,7 +15,9 @@
 $fontSize:14px; 
 $lineHeight:19px;
 
-body, button, input, select, textarea {
+body, button, input, select, textarea, 
+#search-container .gsc-control-cse, 
+#search-container .gsc-control-cse .gsc-table-result {
   font-size: $fontSize;
   line-height: $lineHeight;
   font-family: "OpenSans", $sans-font-stack; }
@@ -30,13 +36,12 @@ h2 .parentlink {
 h3, h4, h5, h6 { 
   font-family: "OpenSans", $sans-font-stack; }
 
-h1 { margin:30px 0px 10px; }
-h2 { margin:25px 0px 10px; }
-h3 { margin:20px 0px 10px; line-height:1.25; }
-h4 { margin:15px 0px 10px; line-height:1.3; }
-h5 { margin:10px 0px 10px; line-height:1.3; }
-h6 { margin:10px 0px 10px; line-height:1.3; }
-
+h1 { font-size:    2em; margin:30px 0px 10px; }
+h2 { font-size: 1.65em; margin:25px 0px 10px; }
+h3 { font-size: 1.25em; margin:20px 0px 10px; line-height:1.25; }
+h4 { font-size:  1.1em; margin:15px 0px 10px; line-height:1.3; }
+h5 { font-size:    1em; margin:10px 0px 10px; line-height:1.3; }
+h6 { font-size:   .9em; margin:10px 0px 10px; line-height:1.3; }
 
 
 
@@ -54,8 +59,8 @@ h6 { margin:10px 0px 10px; line-height:1.3; }
 		font-size: $fontSize;
 		line-height: $lineHeight; }
 
-	h1 { font-size:  2.2em; line-height:40px; margin:30px 0px 10px; } // 33px
-	h2 { font-size:  1.8em; line-height:30px; margin:30px 0px 10px; } // 27px
+	h1 { font-size:  2.2em; line-height:40px; margin:30px 0px 20px; } // 33px
+	h2 { font-size:  1.8em; line-height:30px; margin:30px 0px 20px; } // 27px
 	h3 { font-size:  1.3em; line-height:25px; margin:25px 0px 10px; } // 19.5px
 	h4 { font-size: 1.15em; line-height:20px; margin:25px 0px 10px; } // 17.25px
 	h5 { font-size:    1em; line-height:20px; margin:20px 0px 10px; } // 15px
@@ -69,8 +74,8 @@ h6 { margin:10px 0px 10px; line-height:1.3; }
 
 
 
-/*** Full width ***/
-@media all and ( min-width: $full-width ) {
+/*** Large width ***/
+@media all and ( min-width: $large-width ) {
 
 }
 
@@ -78,11 +83,17 @@ h6 { margin:10px 0px 10px; line-height:1.3; }
 
 
 
+/*** Larger width ***/
+@media all and ( min-width: $larger-width ) {
+
+}
 
 
 
-/*** Extra wide width ***/
-@media all and ( min-width:$extrawide-width ) {
+
+
+/*** Extra large width ***/
+@media all and ( min-width:$extralarge-width ) {
 
 	$fontSize:16px;
 	$lineHeight:22px;
