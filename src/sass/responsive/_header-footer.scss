@@ -154,12 +154,13 @@ a.mybyu, a.sign-in, .open #search-button {
 
 		#footer-bottom{
 			padding:.5em 9% 1px;
-
+			text-align: center;
 			a {
 				display:inline-block;
 				text-indent: -999em;
 			}
-
+			#lds{text-indent: 0em;}
+				
 			a#copyright{
 				text-indent:0em;
 			}
@@ -184,12 +185,15 @@ a.mybyu, a.sign-in, .open #search-button {
 			}
 
 			a#lds {
+				font-size:1.1em;
+				/**
 				@extend %school-link;
 				background-position: -425px 0;
 				width: 160px;
 				opacity: .9;
 				float:right;
 				margin-right: -($logo-padding + 1);
+				*/
 			}
 
 			a#ldsbc {
