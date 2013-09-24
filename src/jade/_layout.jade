@@ -62,8 +62,14 @@ html.no-js(lang="en")
 
 			// Scripts loaded via script loader. See notes in init.js file.
 			script(src='js/modernizr.js')
-			block loadSlider
-				script var loadslider = false;
+			block settings
+				script.
+					var BYUsettings = {
+						jQueryURL:     "http://byuweb.github.io/Global-Assets/js/jquery-1.10.2.min.js", // Use this default, or load jQuery from somewhere else
+						jQueryVersion: "1.10.2", // The jQuery version for fallback in case there's a problem loading jQuery
+						loadslider:    false, // Whether the image slider is present on the page
+						loadScripts:   [] // Array of strings specifying URLs for additional scripts to load
+					}
 			script(src='js/init.js')
 
 
