@@ -148,16 +148,14 @@ body.sideNav {
 		padding-left:1.75em;
 		border-top: 1px solid $blue2;
 		border-bottom: 1px solid $blue0;
-		padding:.65em 10%;
+		padding:.4em 10%;
 		padding-right:5%;
 		color: $blue9;
 		&:hover { color: #fff; }
 	}
 	ul {
 		padding: 0;
-		margin: 0;		
-		.sublinks a { 
-			padding-left: 15%;}
+		margin: 0;
 	}
 	li { border: none; }
 }
@@ -426,7 +424,7 @@ body.sideNav {
 			}
 		}
 		a {
-			padding: .6em .75em;
+			padding: .6em 1.2em;
 		}
 	}
 		
@@ -443,9 +441,9 @@ body.sideNav {
 		@include border-radius(3px);
 		@include box-shadow(0px 0px 12px rgba(#000, 0.5));
 		a {
-		display: block;
-		border: 0;
-			padding: .5em 1.5em;
+			display: block;
+			border: 0;
+			padding: .4em 1.5em;
 		}
 	}
 
@@ -466,12 +464,6 @@ body.sideNav {
 			position: relative;
 		}
 
-		li.hover ul {
-			a:hover {
-				@include border-radius(3px);
-			}
-		}
-
 		.mega {
 			@extend %tab-nav-submenu;
 			min-height:400px;
@@ -479,6 +471,7 @@ body.sideNav {
 			padding: 1em 0 2em;
 			width: 97.95%;
 			@include border-radius(0 0 3px 3px);
+			a {@include border-radius(3px);}
 		}
 		.sub { 
 			background-color: #fff;
@@ -489,6 +482,7 @@ body.sideNav {
 			padding: 10px;
 			position: absolute;
 			width: 222px;
+			li { margin-left: -10px; margin-right:-10px; }
 			a {border:none;}
 			.links { width: 100%; }
 		}
@@ -534,10 +528,14 @@ body.sideNav {
 			.sublinks { 
 				padding-bottom: 0 25px 0 .25em;
 				li a:before {
-					content: '\25B8';
-					padding-right:4px;
-					font-size: 10px;
+					font-family: 'fontawesome';
+					content: '\f105';
+					padding-right: 8px;
 					list-style-type: none;
+					color: #ddd;
+				}
+				li a:hover:before {
+					color: #fff;
 				}
 			} 
 		}
