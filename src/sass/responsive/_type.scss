@@ -63,6 +63,12 @@ body {
 	strong, dt {
 		font-weight: 600; } }
 
+.sc, .small-caps {
+	font-family: 'Whitney SSm SC A', 'Whitney SSm SC B';
+	font-weight: 400; 
+	font-style: normal;
+}
+
 
 /*** Medium width ***/
 @media all and ( min-width: $med-width ) {
