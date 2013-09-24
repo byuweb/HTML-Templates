@@ -25,9 +25,5 @@
     {
         test: loadslider,
         yep: "js/slider.min.js"
-    }, // If fonts are supported and the browser window is 600px wide or more, load the fonts
-    {
-        test: Modernizr.fontface && Modernizr.mq("only all and (min-width: 600px)"),
-        yep: "js/fonts.min.js"
     } ]);
 })();
