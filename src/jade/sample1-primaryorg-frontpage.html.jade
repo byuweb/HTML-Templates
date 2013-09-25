@@ -9,8 +9,14 @@ block parentlink
 block heading
 	| Primary Organization
 
-block loadSlider
-	script var loadslider = true;
+block settings
+	script.
+		var pageSettings = {
+			jQueryURL:     "http://byuweb.github.io/Global-Assets/js/jquery-1.10.2.min.js", // Use this default, or load jQuery from somewhere else
+			jQueryVersion: "1.10.2", // The jQuery version for fallback in case there's a problem loading jQuery
+			loadslider:    true, // Whether the image slider is present on the page
+			loadScripts:   [] // Array of strings specifying URLs for additional scripts to load
+		}
 
 
 block breadcrumb

@@ -48,9 +48,6 @@ module.exports = (grunt) ->
 					'js/modernizr.js' : [
 						'src/js/plugins/modernizr.js', 
 						'src/js/plugins/modernizr-boxsizing.js']
-					'js/fonts.min.js' : [
-						'src/js/plugins/google-fontloader.js', 
-						'src/js/fonts.js']
 
 		jshint:
 			options:

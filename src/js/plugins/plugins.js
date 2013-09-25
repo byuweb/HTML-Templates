@@ -18,7 +18,7 @@
  =======================
  */
 
-
+var plugins = (function ($) {
 
 /*!
 Func: ExecuteAfterBreakpoint
@@ -106,7 +106,7 @@ window.executeAfterBreakpoint = function(functionObject, breakpoint) {
 
 };
 
-
+})(jQuery);
 
 
 

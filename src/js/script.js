@@ -10,7 +10,7 @@
 */
 
 
-(function () {
+var byu_template = (function ($) {
 
    "use strict";
 
@@ -20,7 +20,7 @@
 	$( function () {
 
 		var w = $(window).width();
-		log( 'Initial window width: ' + w + 'px' );
+		//log( 'Initial window width: ' + w + 'px' );
 
 		// Execute menu activation and search load only after window width exceeds 250px
 		executeAfterBreakpoint( [ activateMenus, loadSearch ], 250);
@@ -127,4 +127,4 @@
 
 
 
-}());
+}(jQuery));

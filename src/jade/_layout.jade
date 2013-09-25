@@ -56,13 +56,20 @@ html.no-js(lang="en")
 			link(rel='shortcut icon', href='favicon.ico')
 
 			// Styles
+			link(rel='stylesheet', href='//cloud.typography.com/75214/740862/css/fonts.css')
 			link(rel='stylesheet', href='css/base.css')
 			link(rel='stylesheet', href='css/responsive.css', media='all and (min-width:250px)')
 
 			// Scripts loaded via script loader. See notes in init.js file.
 			script(src='js/modernizr.js')
-			block loadSlider
-				script var loadslider = false;
+			block settings
+				script.
+					var pageSettings = {
+						jQueryURL:     "http://byuweb.github.io/Global-Assets/js/jquery-1.10.2.min.js", // Use this default, or load jQuery from somewhere else
+						jQueryVersion: "1.10.2", // The jQuery version for fallback in case there's a problem loading jQuery
+						loadslider:    false, // Whether the image slider is present on the page
+						loadScripts:   [] // Array of strings specifying URLs for additional scripts to load
+					}
 			script(src='js/init.js')
 
 
@@ -295,7 +302,7 @@ html.no-js(lang="en")
 		//- ===============
 		block end-scripts
 
-			script
+			script.
 				/* Google Analytics: change UA-XXXXX-X to be your site's ID. */
 				var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
 				(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

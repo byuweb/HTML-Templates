@@ -13,6 +13,8 @@
 // jQuery.event.special.swipe.settings.threshold
 // jQuery.event.special.swipe.settings.sensitivity
 
+function ($) {
+
 (function (module) {
 	if (typeof define === 'function' && define.amd) {
 		// AMD. Register as an anonymous module.
@@ -128,3 +130,5 @@
 		settings: settings
 	};
 });
+
+})(jQuery);
