@@ -11,10 +11,10 @@
     Modernizr.load([ // Load jQuery first. If it doesn't make it from our location, get it from Google.
     {
         test: typeof jQuery !== "undefined",
-        nope: BYUsettings.jQueryURL,
+        nope: pageSettings.jQueryURL,
         complete: function() {
             if (!window.jQuery) {
-                Modernizr.load("//ajax.googleapis.com/ajax/libs/jquery/" + BYUsettings.jQueryVersion + "/jquery.min.js");
+                Modernizr.load("//ajax.googleapis.com/ajax/libs/jquery/" + pageSettings.jQueryVersion + "/jquery.min.js");
             }
         }
     }, // Next, load scripts that require jQuery. If touch is enabled, load alternate script file with touch support added.
@@ -24,11 +24,11 @@
         yep: "js/script-touch.min.js"
     }, // If settings.loadslider is truthy, load the slider script
     {
-        test: BYUsettings.loadslider,
+        test: pageSettings.loadslider,
         yep: "js/slider.min.js"
     }, // Add an array of url strings to the page settings object to load additional scripts
     {
-        test: BYUsettings.loadScripts.length,
-        load: BYUsettings.loadScripts
+        test: pageSettings.loadScripts.length,
+        load: pageSettings.loadScripts
     } ]);
 })();
