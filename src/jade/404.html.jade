@@ -1,66 +1,71 @@
 extends _layout
 
-//- OVERRIDE LAYOUT BLOCKS
+block pageTitle
+	| BYU - Page not found
 
-//- Header (banner defined here)
-block head
-	head
-		meta(charset='UTF-8')
-		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
-		title BYU - Page Not Found
-		meta(name='viewport', content='width=device-width, , initial-scale=1')
+block parentlink
+	a.byu(href='http://www.byu.edu/') Brigham Young University
 
-		// Place favicon.ico and apple-touch-icon.png in the root directory
-		link(rel='shortcut icon', href='favicon.ico')
+block heading
+	| Primary Organization
 
-		// Incorporate these styles into your stylesheet.
-		link(rel='stylesheet', href='//cloud.typography.com/75214/740862/css/fonts.css')
-		link(rel="stylesheet", href="css/byu-header-bar.css")
+block append head
 
 		style.
-			#content {
-				width:90%;
-				margin: 0 auto;
-				font-family: 'Whitney SSm A', 'Whitney SSm B', Helvetica, Arial, sans-serif;
-			}
 			.script, .rtl {
 				font-size: 18px
+			}
+			.big {
+				font-size: 21px
 			}
 			.rtl {
 				direction: rtl;
 				unicode-bidi: embed;
 				text-indent: 3em;
 				text-align: right;
+				border-right: 1px solid #ddd;
+				border-left: 1px solid #fff;
 			}
 			.lost {
-				font-size: 15px;
-				max-width: 23em;
-			}
-			.lost td {
-				padding: .25em .5em;
-				vertical-align: top;
-				border-bottom: 1px solid #eee;
+				width:90%;
+				margin-top:2em;
 			}
 			.program {
 				//background-color: #ffd;
 			}
 
-		// Modernizr not required, but SVG support helpful.
-		script(src='js/modernizr.js')
-
-
-block header
-	// BYU HEADER BAR
-	#byu-bar
-		// BYU Logo
-		h2
-			a.byu(href='http://www.byu.edu/') Brigham Young University
-	// END BYU HEADER BAR
-
-
 block content
-	h1 404 - Page not found
-	
+	h1 Oops, we couldn't find that page on our server
+	p Maybe we misplaced something, or perhaps you've discovered an outdated link (sorry about that).
+
+	// Insert links to your home page and your most popular pages here
+	h2 Popular destinations
+	ul
+		li
+			a(href="/") This site's home page
+		li
+			a(href="byu.edu") BYU Home
+		li
+			a(href="learningsuite.byu.edu") BYU Learning Suite
+		li
+			a(href="my.byu.edu") myBYU
+		li
+			a(href="mfc.byu.edu") My Financial Center
+		li
+			a(href="http://saas.byu.edu/calendar/2013.php") Academic Calendar
+		li
+			a(href="http://besmart.com/admissions") Apply to BYU
+
+	h2 Search
+	p 
+
+	h2 I'm still lost
+	p 
+		| If none of that is helpful, maybe you'll enjoy a list of ways to say "I'm lost" in various languages. You can take courses in most of these languages, 
+		a(href="http://cls.byu.edu/languages") plus a lot more
+		| , right here at BYU (hat tip to 
+		a(href="http://www.ibiblio.org/404/") ibiblio's awesome 404 page
+		| ).
 
 	table.lost
 		tr.program
@@ -74,10 +79,10 @@ block content
 			td Unë jam i humbur
 		tr.program
 			td Arabic
-			td.rtl أنا تائه
+			td.rtl.big أنا تائه
 		tr
 			td Armenian
-			td Ես կորցրել եմ
+			td.script Ես կորցրել եմ
 		//tr
 			td Aymara
 			td 
@@ -116,7 +121,7 @@ block content
 			td Ko nga nawala
 		tr
 			td Chinese
-			td 我迷路了
+			td.script 我迷路了
 		tr
 			td Croatian
 			td Ja sam izgubljen
@@ -155,7 +160,7 @@ block content
 			td 
 		tr
 			td Georgian
-			td მე დაკარგა
+			td.script მე დაკარგა
 		tr.program
 			td German
 			td Ich bin verloren
@@ -164,7 +169,7 @@ block content
 			td Χάθηκα
 		tr
 			td Guarani
-			td હું હારી છું
+			td.script હું હારી છું
 		tr
 			td Haitian Creole
 			td Mwen pèdi
@@ -179,7 +184,7 @@ block content
 			td 
 		tr
 			td Hindi
-			td मैं हार गया हूँ
+			td.script मैं हार गया हूँ
 		tr
 			td Hmong
 			td Kuv poob
@@ -209,7 +214,7 @@ block content
 			td Mi sono perso
 		tr.program
 			td Japanese
-			td 迷ってしまいました
+			td.script 迷ってしまいました
 		tr
 			td Javanese
 			td Aku ilang
@@ -219,12 +224,15 @@ block content
 		//tr
 			td Kazakh
 			td 
+		tr
+			td Klingon
+			td DaqwIj vISovbe'
 		tr.program
 			td Korean
-			td 내가 잃었어요
+			td.script 내가 잃었어요
 		tr
 			td Laotian
-			td ຂ້າພະເຈົ້າໄດ້ສູນເສຍ
+			td.script ຂ້າພະເຈົ້າໄດ້ສູນເສຍ
 		tr.program
 			td Latin
 			td Ego perdidi
@@ -243,9 +251,9 @@ block content
 		tr
 			td Malay
 			td Saya hilang
-		tr
+		//tr
 			td Mandarin
-			td 我迷路了
+			td 
 		//tr
 			td Maori
 			td 
@@ -272,7 +280,7 @@ block content
 			td Jeg tapte
 		tr
 			td Persian
-			td.rtl من گم شده ام
+			td.rtl.big من گم شده ام
 		tr.program
 			td Polish
 			td Jestem zagubiony
@@ -321,9 +329,12 @@ block content
 		//tr
 			td Taiwanese
 			td 
+		//tr
+			td Tennyson
+			td 'Tis better to have loved and lost than never to have loved at all
 		tr
 			td Thai
-			td ฉันหลงทาง
+			td.script ฉันหลงทาง
 		tr
 			td Tolkein
 			td Not all those who wander are lost
@@ -341,7 +352,7 @@ block content
 			td Я заблукав
 		tr
 			td Urdu
-			td.rtl میں کھو گیا ہوں
+			td.rtl.big میں کھو گیا ہوں
 		//tr
 			td Vanuatu
 			td 
@@ -355,10 +366,6 @@ block content
 			td Welsh
 			td Rwy'n colli
 
-	p (Hat tip to ibiblio's awesome 404 page)
+	
 
 block breadcrumb
-block footer
-block search-menu
-block nav
-block end-scripts
