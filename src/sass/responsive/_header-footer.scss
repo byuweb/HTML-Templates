@@ -59,10 +59,10 @@ a.mybyu, a.sign-in, .open #search-button {
 
 @media all and (min-width: 500px) {
 	#logo a.byu {
-		background-image: url($asset-base + 'img/byu-logo.png');
-		width: 350px;
+		background-image: url($asset-base + 'img/byu-logo-header.png');
+		width: 380px;
 		.svg & {
-			background-image: url($asset-base + 'img/byu-logo.svg');
+			background-image: url($asset-base + 'img/byu-logo-header.svg');
 		}
 	}
 }
