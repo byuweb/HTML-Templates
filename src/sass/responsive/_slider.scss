@@ -26,7 +26,7 @@
 		@include transition(opacity 0.2s ease);
 		opacity: 0;
 	}
-	&.anythingSlider-hovered {
+	&.anythingSlider-hovered, .touch & {
 		.arrow a {
 			opacity: .1;
 		}
@@ -44,12 +44,12 @@
 		display: block;
 		position: absolute;
 		z-index: 3;
-		top: 0;
+		top: 50%;
 		left: 0;
-		width: 50px;
-		height: 100%;
-		overflow: hidden;
-		@include transition(width 0.2s ease);
+		width: 60px;
+		height: 60px;
+		margin-top:-30px;
+		@include border-radius(25px);
 
 		&:after {
 			pointer-events: none;
@@ -65,7 +65,7 @@
 			height: 30px;
 			top: 50%;
 			left: 50%;
-			margin: -15px 0 0 -10px;
+			margin: -12px 0 0 -10px;
 		}
 
 		a {
@@ -88,7 +88,6 @@
 		}
 		&:hover {
 			opacity: 1;
-			width: 60px;
 		}
 	}
 
