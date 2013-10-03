@@ -22,8 +22,10 @@ $full-menu-width: 899px; // Menu should be in the header at this screen width.
 
 // Fonts
 $sans-font-stack: "Whitney SSm A", "Whitney SSm B", /*"OpenSans", "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans",*/ Helvetica,Arial,sans-serif;
-$sans-font-weight: 500;
-$serif-font-stack: "Sentinel SSm A", "Sentinel SSm B", "CreteRound", "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
+$sans-font-weight: 400;
+$serif-font-stack: "Sentinel A", "Sentinel B", "CreteRound", "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
 $serif-font-weight: 500;
+$serif-ssm-font-stack: "Sentinel SSm A", "Sentinel SSm B", "CreteRound", "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
+$serif-ssm-font-weight: 300;
 $byu-font-stack: "Requiem Text A", "Requiem Text B", "Palatino", Georgia, serif;
 $byu-font-weight: 400;
