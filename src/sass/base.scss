@@ -103,10 +103,10 @@ a {
     @include ir();
     display: inline-block;
     height: 26px;
-    width: 90px;
-    background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
+    width: 70px;
+    background: transparent url($asset-base + 'img/byu-logo-header-sm.png') 0px 0px no-repeat;
     .svg & {
-      background-image: url($asset-base + 'img/byu-logo-sm.svg');
+      background-image: url($asset-base + 'img/byu-logo-header-sm.svg');
     }
   }
 
