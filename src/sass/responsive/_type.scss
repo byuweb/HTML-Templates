@@ -49,29 +49,34 @@ h6 { font-size:   .9em; margin:10px 0px 10px; line-height:1.3; }
 
 a.mybyu, a.sign-in, .open #search-button, #search-submit, .gcse-wrapper input.gsc-search-button, .nav-container a {
 	font-family: $sans-font-stack;
-	font-weight: 500; }
+	font-weight: $sans-font-weight; }
 
 .nav-container .mega a, .nav-container .sub a {
-	font-weight: 500; }
+	font-weight: $sans-font-weight; }
 
 #primary-nav .mega li.featured a {
-	font-weight: 600; }
+	font-weight: $sans-font-weight-bold; }
 
 body {
 	th, tfoot {
-		font-weight: 500; }
+		font-weight: $sans-font-weight; }
 	strong, dt {
-		font-weight: 600; } }
+		font-weight: $sans-font-weight-bold; } }
 
 .sc, .small-caps {
 	font-family: 'Whitney SSm SC A', 'Whitney SSm SC B', $sans-font-stack;
-	font-weight: 400; 
+	font-weight: $sans-font-weight; 
+	font-style: normal;
+}
+.lnum, .lining-numbers {
+	font-family: 'Whitney SSm Lining Num A', 'Whitney SSm Lining Num B', $sans-font-stack;
+	font-weight: $sans-font-weight; 
 	font-style: normal;
 }
 
 #page-footer h2 {
 	font-family: $sans-font-stack;
-	font-weight: 600;
+	font-weight: $sans-font-weight-bold;
 }
 
 
