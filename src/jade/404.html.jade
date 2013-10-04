@@ -1,0 +1,374 @@
+extends _layout
+
+block pageTitle
+	| BYU - Page not found
+
+block parentlink
+	a.byu(href='http://www.byu.edu/') Brigham Young University
+
+block heading
+	| Primary Organization
+
+block append head
+
+		style.
+			.script, .rtl {
+				font-size: 18px
+			}
+			.big {
+				font-size: 21px
+			}
+			.rtl {
+				direction: rtl;
+				unicode-bidi: embed;
+				text-indent: 3em;
+				text-align: right;
+				border-right: 1px solid #ddd;
+				border-left: 1px solid #fff;
+			}
+			.lost {
+				width:90%;
+				margin-top:2em;
+			}
+			.program {
+				//background-color: #ffd;
+			}
+
+block content
+	h1 Oops, we couldn't find that page on our server
+	p Maybe we misplaced something, or perhaps you've discovered an outdated link (sorry about that).
+
+	// Insert links to your home page and your most popular pages here
+	h2 Popular destinations
+	ul
+		li
+			a(href="/") This site's home page
+		li
+			a(href="byu.edu") BYU Home
+		li
+			a(href="learningsuite.byu.edu") BYU Learning Suite
+		li
+			a(href="my.byu.edu") myBYU
+		li
+			a(href="mfc.byu.edu") My Financial Center
+		li
+			a(href="http://saas.byu.edu/calendar/2013.php") Academic Calendar
+		li
+			a(href="http://besmart.com/admissions") Apply to BYU
+
+	h2 Search
+	p 
+
+	h2 I'm still lost
+	p 
+		| If none of that is helpful, maybe you'll enjoy a list of ways to say "I'm lost" in various languages. You can take courses in most of these languages, 
+		a(href="http://cls.byu.edu/languages") plus a lot more
+		| , right here at BYU (hat tip to 
+		a(href="http://www.ibiblio.org/404/") ibiblio's awesome 404 page
+		| ).
+
+	table.lost
+		tr.program
+			td Afrikaans
+			td Ek is verlore
+		tr
+			td Akan
+			td Me m yerae
+		tr
+			td Albanian
+			td Unë jam i humbur
+		tr.program
+			td Arabic
+			td.rtl.big أنا تائه
+		tr
+			td Armenian
+			td.script Ես կորցրել եմ
+		//tr
+			td Aymara
+			td 
+		tr
+			td Base 64
+			td SSdtIGxvc3Q=
+		tr
+			td Basque
+			td Ez dut galdu
+		//tr
+			td Bicolano
+			td 
+		tr
+			td Binary
+			td 01001001 01011100 00100111 01101101 00100000 01101100 01101111 01110011 01110100
+		tr.program
+			td Bulgarian
+			td Аз съм загубен
+		//tr
+			td Burmese
+			td 
+		//tr
+			td Cakchiquel
+			td 
+		//tr
+			td Cambodian
+			td 
+		//tr.program
+			td Cantonese
+			td 
+		tr
+			td Catalan
+			td Estic perdut
+		tr
+			td Cebuano
+			td Ko nga nawala
+		tr
+			td Chinese
+			td.script 我迷路了
+		tr
+			td Croatian
+			td Ja sam izgubljen
+		tr.program
+			td Czech
+			td Ztratil jsem se
+		tr.program
+			td Danish
+			td Jeg mistede
+		tr.program
+			td Dutch
+			td Ik ben verloren
+		tr.program
+			td English
+			td I'm lost
+		tr.program
+			td Estonian
+			td Ma olen eksinud
+		//tr
+			td Fijian
+			td 
+		tr.program
+			td Finnish
+			td Olen hukassa
+		//tr
+			td FLANG
+			td 
+		tr.program
+			td French
+			td Je suis perdu
+		tr
+			td Freshman
+			td 
+				| Could you tell me where the 
+				span.sc MARB
+				|  is?
+		//tr
+			td Ga
+			td 
+		tr
+			td Georgian
+			td.script მე დაკარგა
+		tr.program
+			td German
+			td Ich bin verloren
+		tr.program
+			td Greek
+			td Χάθηκα
+		tr
+			td Guarani
+			td.script હું હારી છું
+		tr
+			td Haitian Creole
+			td Mwen pèdi
+		//tr
+			td Hawaiian
+			td 
+		tr.program
+			td Hebrew
+			td.rtl אני אבוד
+		//tr
+			td Hiligaynon
+			td 
+		tr
+			td Hindi
+			td.script मैं हार गया हूँ
+		tr
+			td Hmong
+			td Kuv poob
+		tr.program
+			td Hungarian
+			td Elvesztem
+		tr.program
+			td Icelandic
+			td Ég er týndur
+		//tr
+			td Ilangot
+			td 
+		//tr
+			td Ilocano
+			td 
+		//tr
+			td Ilonggo/Hiligaynon
+			td 
+		tr
+			td Indonesian
+			td Saya tersesat
+		tr
+			td IPA (Phonetic Transcription)
+			td [I'm] ˈlɔst
+		tr.program
+			td Italian
+			td Mi sono perso
+		tr.program
+			td Japanese
+			td.script 迷ってしまいました
+		tr
+			td Javanese
+			td Aku ilang
+		//tr
+			td K'iche
+			td 
+		//tr
+			td Kazakh
+			td 
+		tr
+			td Klingon
+			td DaqwIj vISovbe'
+		tr.program
+			td Korean
+			td.script 내가 잃었어요
+		tr
+			td Laotian
+			td.script ຂ້າພະເຈົ້າໄດ້ສູນເສຍ
+		tr.program
+			td Latin
+			td Ego perdidi
+		tr.program
+			td Latvian
+			td Es esmu pazaudējis
+		tr
+			td L337
+			td 1'/\/\ L0$7
+		tr.program
+			td Lithuanian
+			td Aš pasiklydau
+		//tr
+			td Malagasy
+			td 
+		tr
+			td Malay
+			td Saya hilang
+		//tr
+			td Mandarin
+			td 
+		//tr
+			td Maori
+			td 
+		//tr
+			td Marshallese
+			td 
+		//tr
+			td Maya/Mopan
+			td 
+		//tr
+			td Mongolian
+			td 
+		//tr
+			td Navajo
+			td 
+		//tr
+			td Niuean
+			td 
+		//tr
+			td Norse
+			td 
+		tr.program
+			td Norwegian
+			td Jeg tapte
+		tr
+			td Persian
+			td.rtl.big من گم شده ام
+		tr.program
+			td Polish
+			td Jestem zagubiony
+		tr.program
+			td Portuguese
+			td Eu estou perdido
+		//tr
+			td Quechua
+			td 
+		//tr
+			td Rarotongan
+			td 
+		tr.program
+			td Romanian
+			td I-am pierdut
+		tr.program
+			td Russian
+			td Я заблудился
+		//tr
+			td Samoan
+			td 
+		tr.program
+			td Serbian/Croatian
+			td Изгубио сам се
+		tr
+			td Skywalker
+			td I’m Luke Skywalker, I’m here to rescue you
+		tr.program
+			td Slovenian
+			td Izgubil sem
+		tr.program
+			td Spanish
+			td Estoy perdido
+		tr
+			td Swahili
+			td Mimi nina kupotea
+		tr.program
+			td Swedish
+			td Jag förlorade
+		tr
+			td Tagalog
+			td Naliligaw ako
+		//tr
+			td Tahitian
+			td 
+		//tr
+			td Taiwanese
+			td 
+		//tr
+			td Tennyson
+			td 'Tis better to have loved and lost than never to have loved at all
+		tr
+			td Thai
+			td.script ฉันหลงทาง
+		tr
+			td Tolkein
+			td Not all those who wander are lost
+		//tr
+			td Tongan
+			td 
+		//tr
+			td Trukese
+			td 
+		tr
+			td Turkish
+			td Kayboldum
+		tr.program
+			td Ukrainian
+			td Я заблукав
+		tr
+			td Urdu
+			td.rtl.big میں کھو گیا ہوں
+		//tr
+			td Vanuatu
+			td 
+		tr
+			td Vietnamese
+			td Tôi bị mất
+		//tr
+			td Waray-Waray
+			td 
+		tr.program
+			td Welsh
+			td Rwy'n colli
+
+	
+
+block breadcrumb

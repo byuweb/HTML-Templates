@@ -103,10 +103,10 @@ a {
     @include ir();
     display: inline-block;
     height: 26px;
-    width: 90px;
-    background: transparent url($asset-base + 'img/byu-logo-sm.png') 0px 0px no-repeat;
+    width: 70px;
+    background: transparent url($asset-base + 'img/byu-logo-header-sm.png') 0px 0px no-repeat;
     .svg & {
-      background-image: url($asset-base + 'img/byu-logo-sm.svg');
+      background-image: url($asset-base + 'img/byu-logo-header-sm.svg');
     }
   }
 
@@ -431,8 +431,8 @@ a.baseline, #calendar > strong, a.more { font-weight: bold; margin-top:1.5em; pa
 
 // Footer
 #page-footer {
-  background-color:#eeebe9;
-  border-top:1px solid #fff;
+  background-color: $brown5;
+  border-top:1px solid $brown4;
   border-bottom:1px solid $brown4;
   a, a:link, a:visited {
     color: $brown1;

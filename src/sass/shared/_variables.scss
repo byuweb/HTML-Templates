@@ -3,27 +3,70 @@
 
 
 // Paths
+//$asset-base: 'http://localhost:8888/Global-Assets/';
 $asset-base: 'http://byuweb.github.com/Global-Assets/';
 //$asset-base: 'http://home.byu.edu/home/sites/default/files/global/';
 
 
+// Screen width breakpoints
 
-// Screen sizes & other measurements
+$small-width: 16em;	// 256px - Doesn't need to be explicitly used, as responsive styles aren't loaded in the markup until this point
+$med-width: 37.5em;		// 600px - Tablets
+$large-width: 56.25em;	// 900px - Tablets, desktops
+$larger-width: 71.625em;	// 1146px - Desktops (940px content width with 9% margins)
+$extralarge-width: 95em;	// 1520px - It's huuuge!
 
-$small-width:300px;	// Doesn't need to be explicitly used, as responsive styles aren't loaded until 300px
-$med-width: 600px;	// Tablets
-$large-width: 900px;	// Tablets, desktops
-$larger-width: 1146px;	// Desktops
-$extralarge-width: 1500px;	// For the lucky ones who have a huge screen...
-
-$full-menu-width: 899px; // Menu should be in the header at this screen width. 
+// THIS CAN CHANGE FOR EACH SITE THAT USES THE TEMPLATE.
+// Probably the lowest threshold that should be used is 45em.
+$full-menu-width: 60em;	// 960px - Menu should be in the header at this screen width. 
 
 
 
 // Fonts
-$sans-font-stack: "Whitney SSm A", "Whitney SSm B", /*"OpenSans", "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans",*/ Helvetica,Arial,sans-serif;
-$sans-font-weight: 400;
-$serif-font-stack: "Sentinel SSm A", "Sentinel SSm B", "CreteRound", "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
+$sans-font-stack: "Whitney SSm A", "Whitney SSm B", "OpenSans", "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans", Helvetica,Arial,sans-serif;
+$sans-font-weight: 500;
+$sans-font-weight-bold: 600;
+$serif-font-stack: "Sentinel A", "Sentinel B", "CreteRound", "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
 $serif-font-weight: 500;
+$serif-ssm-font-stack: "Sentinel SSm A", "Sentinel SSm B", "Sentinel A", "Sentinel B", "CreteRound", "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
+$serif-ssm-font-weight: 300;
 $byu-font-stack: "Requiem Text A", "Requiem Text B", "Palatino", Georgia, serif;
 $byu-font-weight: 400;
+
+
+// Body background
+
+$body-bg: "redox_01";
+$body-bg-size: 600px 375px;
+
+//$body-bg: "brillant";
+//$body-bg-size: 3px 3px;
+
+//$body-bg: "corrugation";
+//$body-bg-size: 8px 5px;
+
+//$body-bg: "debut_light";
+//$body-bg-size: 200px 200px;
+
+//$body-bg: "extra_clean_paper";
+//$body-bg-size: 512px 512px;
+
+//$body-bg: "fabric_of_squares_gray";
+//$body-bg-size: 410px 410px;
+
+//$body-bg: "linen";
+//$body-bg-size: 400px 300px;
+
+//$body-bg: "soft_wallpaper";
+//$body-bg-size: 666px 666px;
+
+//$body-bg: "subtlenet2";
+//$body-bg-size: 60px 60px;
+
+//$body-bg: "white_bed_sheet";
+//$body-bg-size: 54px 54px;
+
+//$body-bg: "white_wave";
+//$body-bg-size: 23px 12px;
+
+

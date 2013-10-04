@@ -58,7 +58,7 @@ html.no-js(lang="en")
 			// Styles
 			link(rel='stylesheet', href='//cloud.typography.com/75214/740862/css/fonts.css')
 			link(rel='stylesheet', href='css/base.css')
-			link(rel='stylesheet', href='css/responsive.css', media='all and (min-width:250px)')
+			link(rel='stylesheet', href='css/responsive.css', media='all and (min-width:16em)')
 
 			// Scripts loaded via script loader. See notes in init.js file.
 			script(src='js/modernizr.js')
@@ -284,13 +284,13 @@ html.no-js(lang="en")
 							mixin addLinks(1,4)
 
 				#footer-bottom
-					.wrapper
+					.wrapper.clearfix
+						//a#byu(href='http://byu.edu/') Brigham Young University
+						a#byui.ir(href='http://byui.edu/') BYU-Idaho
+						a#byuh.ir(href='http://byuh.edu/') BYU-Hawaii
+						a#ldsbc.ir(href='http://www.ldsbc.edu/') LDS Business College
+
 						a#lds(href='http://lds.org/') The Church of Jesus Christ of Latter-day Saints
-						p
-							//a#byu(href='http://byu.edu/') Brigham Young University
-							a#byui(href='http://byui.edu/') BYU-Idaho
-							a#byuh(href='http://byuh.edu/') BYU-Hawaii
-							a#ldsbc(href='http://www.ldsbc.edu/') LDS Business College
 
 			//
 				| CONTENT END
