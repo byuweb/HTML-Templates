@@ -8,14 +8,16 @@ $asset-base: 'http://byuweb.github.com/Global-Assets/';
 //$asset-base: 'http://home.byu.edu/home/sites/default/files/global/';
 
 
-// Screen sizes & other measurements
+// Screen width breakpoints
 
 $small-width: 16em;	// 256px - Doesn't need to be explicitly used, as responsive styles aren't loaded in the markup until this point
-$med-width: 37.5em;		// 600px - Tablets3
+$med-width: 37.5em;		// 600px - Tablets
 $large-width: 56.25em;	// 900px - Tablets, desktops
-$larger-width: 71.625em;	// 1146px - Desktops
-$extralarge-width: 93.75em;	// 1500px - For the lucky ones who have a huge screen...
+$larger-width: 71.625em;	// 1146px - Desktops (940px content width with 9% margins)
+$extralarge-width: 95em;	// 1520px - It's huuuge!
 
+// THIS CAN CHANGE FOR EACH SITE THAT USES THE TEMPLATE.
+// Probably the lowest threshold that should be used is 45em.
 $full-menu-width: 60em;	// 960px - Menu should be in the header at this screen width. 
 
 

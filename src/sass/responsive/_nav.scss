@@ -319,13 +319,17 @@ body.sideNav {
 *
 * Full menu width 
 *
+* YOU CAN MAKE ADJUSTMENTS HERE BASED ON YOUR SITE'S MENU
+*
 * This media query should be set to the width where the primary menu will fit 
 * in the top bar without wrapping. Make sure to test in lots of browsers,
-* and some buffer to account for differences in rendering.
+* and some buffer to account for differences in rendering. NOTE: If you use
+* a width smaller than 45em, some other parts of the header may need to be
+* adjusted--especially the BYU logo (it will run into the sign in button).
 *
 */
 /* 
-* NOTE: The full-menu-width variable is found in variables.scss
+* NOTE: The full-menu-width variable is found in _variables.scss
 */
 @media all and ( min-width: $full-menu-width ) {
 	$header-top-height: 96px;
@@ -564,7 +568,7 @@ body.sideNav {
 	
 	#secondary-nav {
 		position: absolute;
-		bottom: 42px;
+		top: -41px;
 		right:9px;
 		@extend %tab-nav;
 		.sub { @extend %tab-nav-submenu; }
