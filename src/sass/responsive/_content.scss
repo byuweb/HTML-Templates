@@ -42,7 +42,7 @@
 
 @media screen and (min-width : $larger-width) {
 	body {
-		background: url("../img/body-linen.png");
+		background: url("../img/background-patterns/" + $body-bg + ".png") top center repeat;
 		color: #444; }
 
 	.wrapper {
@@ -61,4 +61,13 @@
 	#content.sidebar-navigation {
 		width: 720px;
 	}
+}
+
+@media 
+(min-width : $larger-width),
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+    /* Retina-specific stuff here */
+    background-image: url("../img/background-patterns/" + $body-bg + "@2x.png");
+    background-size: $body-bg-size;
 }
