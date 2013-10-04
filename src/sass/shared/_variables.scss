@@ -10,13 +10,13 @@ $asset-base: 'http://byuweb.github.com/Global-Assets/';
 
 // Screen sizes & other measurements
 
-$small-width:300px;	// Doesn't need to be explicitly used, as responsive styles aren't loaded until 300px
-$med-width: 600px;	// Tablets
-$large-width: 900px;	// Tablets, desktops
-$larger-width: 1146px;	// Desktops
-$extralarge-width: 1500px;	// For the lucky ones who have a huge screen...
+$small-width: 16em;	// 256px - Doesn't need to be explicitly used, as responsive styles aren't loaded in the markup until this point
+$med-width: 37.5em;		// 600px - Tablets3
+$large-width: 56.25em;	// 900px - Tablets, desktops
+$larger-width: 71.625em;	// 1146px - Desktops
+$extralarge-width: 93.75em;	// 1500px - For the lucky ones who have a huge screen...
 
-$full-menu-width: 960px; // Menu should be in the header at this screen width. 
+$full-menu-width: 60em;	// 960px - Menu should be in the header at this screen width. 
 
 
 
