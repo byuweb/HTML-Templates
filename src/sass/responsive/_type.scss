@@ -69,6 +69,11 @@ body {
 	font-style: normal;
 }
 
+#page-footer h2 {
+	font-family: $sans-font-stack;
+	font-weight: 600;
+}
+
 
 /*** Medium width ***/
 @media all and ( min-width: $med-width ) {
