@@ -18,7 +18,7 @@
     <!-- Styles-->
     <link rel="stylesheet" href="//cloud.typography.com/75214/740862/css/fonts.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/responsive.css" media="all and (min-width:250px)">
+    <link rel="stylesheet" href="css/responsive.css" media="all and (min-width:16em)">
     <!-- Scripts loaded via script loader. See notes in init.js file.-->
     <script src="js/modernizr.js"></script>
     <script>
@@ -31,8 +31,10 @@
     </script>
     <script src="js/init.js"></script>
   </head>
-  <body><!--[if lt IE 7]>
-    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p><![endif]-->
+  <body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p>
+    <![endif]-->
     <header id="main-header" role="banner">
       <div id="header-top" class="wrapper">
         <div id="logo">
@@ -43,9 +45,11 @@
       </div>
     </header>
     <div id="search-menu">
-      <div id="search-container" role="search"><!--
+      <div id="search-container" role="search">
+        <!--
         The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
-        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).-->
+        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).
+        -->
         <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
           <label for="search" class="visuallyhidden">Search</label>
           <input id="search" type="search" name="search">
@@ -71,14 +75,16 @@
         </li>
         <li><a href="#">One page above</a><i class="divider icon-angle-right"></i></li>
         <li class="active">Current Page</li>
-      </ul><!--
-      <Add>the Breadcrumb Code Here</Add>-->
+      </ul>
+      <!--
+      <Add>the Breadcrumb Code Here</Add>
+      -->
       <section id="bootstrap">
         <div class="page-header">
           <h1>Built-in frameworks</h1>
         </div>
         <h2>Bootstrap Styles</h2>
-        <p>BYU's templates have some core features of <a href="http://twitter.github.com/bootstrap">Twitter Bootstrap</a> built in.</p>
+        <p>BYU's templates have some core features of <a href="http://getbootstrap.com/2.3.2/">Twitter Bootstrap</a> built in.</p>
         <p>This means you can forget wondering what sort of button styles to use, or whether there's a good jQuery dropdown plugin around. It's all there from the start. We've updated the <code>variables.scss</code>  file with colors, fonts, and sizes that are customized and compatible with BYU's style.</p>
         <hr class="bs-docs-separator">
         <h2>FontAwesome Icons</h2>
@@ -321,8 +327,10 @@
         <pre class="prettyprint">&lt;blockquote class="pull-right"&gt;
 ...
 &lt;/blockquote&gt;</pre>
-        <hr class="bs-docs-separator"><!--
-        <Lists></Lists>-->
+        <hr class="bs-docs-separator">
+        <!--
+        <Lists></Lists>
+        -->
         <h2 id="lists">Lists</h2>
         <h3>Unordered</h3>
         <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
@@ -949,7 +957,9 @@
           <!--a#byu(href='http://byu.edu/') Brigham Young University--><a id="byui" href="http://byui.edu/" class="ir">BYU-Idaho</a><a id="byuh" href="http://byuh.edu/" class="ir">BYU-Hawaii</a><a id="ldsbc" href="http://www.ldsbc.edu/" class="ir">LDS Business College</a><a id="lds" href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>
         </div>
       </div>
-    </footer><!--CONTENT END-->
+    </footer>
+    <!--CONTENT END
+    -->
     <script>
       /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
