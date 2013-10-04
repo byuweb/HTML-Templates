@@ -64,7 +64,7 @@ body {
 		font-weight: 600; } }
 
 .sc, .small-caps {
-	font-family: 'Whitney SSm SC A', 'Whitney SSm SC B';
+	font-family: 'Whitney SSm SC A', 'Whitney SSm SC B', $sans-font-stack;
 	font-weight: 400; 
 	font-style: normal;
 }
