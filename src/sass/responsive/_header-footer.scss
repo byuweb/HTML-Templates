@@ -55,6 +55,11 @@ a.mybyu, a.sign-in, .open #search-button {
 	}
 }
 
+// Footer
+#page-footer {
+	@include box-shadow(0 -1px 0px $brown4);
+	border-top: 1px solid #fff;
+}
 
 
 @media all and (min-width: 500px) {
@@ -249,25 +254,4 @@ a.mybyu, a.sign-in, .open #search-button {
 			margin-left: 0;
 		}
 	}
-}
-
-
-
-
-
-
-
-
-
-
-
-/* From h5bp */
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
 }
