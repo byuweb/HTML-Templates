@@ -154,10 +154,10 @@ a.mybyu, a.sign-in, .open #search-button {
 
 		#footer-bottom{
 			padding:.5em 9% 1px;
-			text-align: center;
 			a {
 				display:inline-block;
 				text-indent: -999em;
+
 			}
 			#lds{text-indent: 0em;}
 				
@@ -174,6 +174,7 @@ a.mybyu, a.sign-in, .open #search-button {
 				height: 51px;
 				width: 70px;
 				@include transition(opacity 0.2s ease);
+				float:left;
 
 				.svg & {
 					background-image: url('../img/footer-logos.svg');
@@ -185,14 +186,15 @@ a.mybyu, a.sign-in, .open #search-button {
 			}
 
 			a#lds {
-				font-size:1.1em;
-				/**
+				width:14em;
+				text-align: right;
+				opacity: .9;
+				float:right;
+				margin-right: -($logo-padding + 10);
+				/*
 				@extend %school-link;
 				background-position: -425px 0;
 				width: 160px;
-				opacity: .9;
-				float:right;
-				margin-right: -($logo-padding + 1);
 				*/
 			}
 
@@ -204,6 +206,7 @@ a.mybyu, a.sign-in, .open #search-button {
 			a#byui {
 				@extend %school-link;
 				background-position: -210px 0;
+				margin-left: -($logo-padding + 1);
 				}
 
 			a#byuh {
