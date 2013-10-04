@@ -97,9 +97,12 @@ $sidePadding:5px;
 			.gsc-results-close-btn {
 				top: 7px;
 				right:7px;
-				background-color: #ddd;
-				width: 2em;
-				height: 2em;
+				@include vertical-gradient($blue9,$blue8);
+				//@include box-shadow( 0 1px 0 rgba(255, 255, 255, 0.25) inset, 0 1px 8px rgba(0, 0, 0, 0.2) );
+				//background-color: $blue9;
+				border: 1px solid $blue6;
+				width: 2.3em;
+				height: 2.3em;
 				@include border-radius(5px);
 
 				&:before {
@@ -110,14 +113,60 @@ $sidePadding:5px;
 					left:0;
 					width: 100%;
 					text-align: center;
-					color:#999;
+					color:$blue4;
 					line-height: 1em;
 				}
+				&:hover {
+					@include vertical-gradient(mix($blue9,$blue8),mix($blue8,$blue7));
+					border-color: $blue5;
+				}
 				&:hover:before {
-					color:#333;
+					color:$blue0;
 				}
 			}
 
+		}
+
+		.gsc-results {
+
+			.gsc-cursor-box {
+				margin: 2em 0 3em;
+
+				.gsc-cursor-page {
+					padding: .75em;
+					background-color: #eee;
+					border: 2px solid #fff;
+					@include border-radius(5px);
+					@include background-clip(padding-box);
+					&:hover {
+						background-color: $blue3;
+						color: #fff;
+						text-decoration: none;
+					}
+				}
+				.gsc-cursor-current-page {
+					background-color: $blue4;
+					color: #fff;
+				}
+			}
+			.gsc-cursor {
+				display: inline;
+			}
+
+		}
+
+		.gsib_b div {
+			position: absolute;
+			top: 5px;
+			right:48px;
+			a {
+				span {
+					color: #aaa;
+				}
+				&:hover span {
+					color: #777;
+				}
+			}
 		}
 
 		.gsc-result {
@@ -126,7 +175,7 @@ $sidePadding:5px;
 
 		.gs-webResult div.gs-visibleUrl, .gs-imageResult div.gs-visibleUrl {
 			//color: #339947;
-			color: mix($blue5, #555);
+			//color: mix($blue5, #555);
 		}
 
 		.gs-webResult .gs-snippet, .gs-imageResult .gs-snippet, .gs-fileFormatType {
@@ -181,7 +230,7 @@ $sidePadding:5px;
 	}
 
 	#search-submit {
-		background: url(../img/search_box_icon.png) 8px 8px no-repeat;
+		background: url(../img/search_box_icon.png) 9px 8px no-repeat;
 		overflow: hidden;
 		text-indent: -1000px;
 		margin: 0;

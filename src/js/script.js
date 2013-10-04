@@ -23,7 +23,7 @@ var byu_template = (function ($) {
 		//log( 'Initial window width: ' + w + 'px' );
 
 		// Execute menu activation and search load only after window width exceeds 250px
-		executeAfterBreakpoint( [ activateMenus, loadSearch ], 250);
+		executeAfterBreakpoint( [ activateMenus, loadSearch ], 256);
 	});
 
 
@@ -99,31 +99,22 @@ var byu_template = (function ($) {
 	 */
 	function loadSearch(){
 		window.__gcse = {
-				callback: hideSearch
+			callback: function() {
+					if (document.readyState == 'complete') {
+					// CSE has successfully loaded. Go ahead and hide the basic search.
+						$("#basic-search").hide();
+					}
+				}
 		};
 
 		(function() {
-			var cx = '009932716493032633443:hlqjz33kfkc';
+			var cx = '009932716493032633443:hlqjz33kfkc'; // Insert your own Custom Search engine ID here
 			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
 			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
 			var s = document.getElementsByTagName('script')[0];
 			s.parentNode.insertBefore(gcse, s);
 		})();
 	}
-
-
-
-
-	/* Func: hideSearch
-	 * Desc: Hide basic search if the Google CSE loads
-	 * Args: none
-	 */
-	var hideSearch = function() {
-		if (document.readyState == 'complete') {
-			// CSE has successfully loaded. Go ahead and hide the basic search.
-	    $("#basic-search").hide();
-	  }
-	};
 
 
 
