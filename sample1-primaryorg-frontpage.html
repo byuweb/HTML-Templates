@@ -26,7 +26,10 @@
        jQueryURL:     "http://byuweb.github.io/Global-Assets/js/jquery-1.10.2.min.js", // Use this default, or load jQuery from somewhere else
        jQueryVersion: "1.10.2", // The jQuery version for fallback in case there's a problem loading jQuery
        loadslider:    true, // Whether the image slider is present on the page
-       loadScripts:   [] // Array of strings specifying URLs for additional scripts to load
+       additionalScripts:   [], // Array of strings specifying URLs for additional scripts to load
+       gcse_search:    true, // Use the Google Custom Search Engine for the site's search?
+       gcse_search_id: '009932716493032633443:hlqjz33kfkc',  // Use this BYU GCSE id, or insert your own
+       analytics_key:  'UA-XXXXX-X' // Insert your Google Analytics key
       }
       
       
@@ -294,7 +297,7 @@
     -->
     <script>
       /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      var _gaq=[['_setAccount', pageSettings.google_analytics_key],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
