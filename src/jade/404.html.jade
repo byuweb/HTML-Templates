@@ -30,19 +30,16 @@ block append head
 				width:90%;
 				margin-top:2em;
 			}
-			.program {
-				//background-color: #ffd;
-			}
 
 block content
-	h1 Oops, we couldn't find that page on our server
+	h1 Oops, we couldn&rsquo;t find that page on our server
 	p Maybe we misplaced something, or perhaps you've discovered an outdated link (sorry about that).
 
 	// Insert links to your home page and your most popular pages here
 	h2 Popular destinations
 	ul
 		li
-			a(href="/") This site's home page
+			a(href="/") This site&rsquo;s home page
 		li
 			a(href="byu.edu") BYU Home
 		li
@@ -57,14 +54,18 @@ block content
 			a(href="http://besmart.com/admissions") Apply to BYU
 
 	h2 Search
-	p 
+	form(action='http://home.byu.edu/home/search', role='form')
+		label.visuallyhidden(for='search') Search
+		input(type='search', name='search')
+		input.search-submit(type='submit', value='Search')
 
-	h2 I'm still lost
+
+	h2 I&rsquo;m still lost
 	p 
-		| If none of that is helpful, maybe you'll enjoy a list of ways to say "I'm lost" in various languages. You can take courses in most of these languages, 
+		| If none of that is helpful, maybe you&rsquo;ll enjoy a list of ways to say &ldquo;I&rsquo;m lost&rdquo; in various languages. You can take courses in most of these languages, 
 		a(href="http://cls.byu.edu/languages") plus a lot more
 		| , right here at BYU (hat tip to 
-		a(href="http://www.ibiblio.org/404/") ibiblio's awesome 404 page
+		a(href="http://www.ibiblio.org/404/") ibiblio&rsquo;s awesome 404 page
 		| ).
 
 	table.lost
@@ -79,7 +80,7 @@ block content
 			td Unë jam i humbur
 		tr.program
 			td Arabic
-			td.rtl.big أنا تائه
+			td.rtl.big انا ضائعة
 		tr
 			td Armenian
 			td.script Ես կորցրել եմ
@@ -91,7 +92,7 @@ block content
 			td SSdtIGxvc3Q=
 		tr
 			td Basque
-			td Ez dut galdu
+			td Nago galdu
 		//tr
 			td Bicolano
 			td 
@@ -118,13 +119,13 @@ block content
 			td Estic perdut
 		tr
 			td Cebuano
-			td Ko nga nawala
+			td Ako nga nawala
 		tr
 			td Chinese
 			td.script 我迷路了
 		tr
 			td Croatian
-			td Ja sam izgubljen
+			td Ja sam izgubila
 		tr.program
 			td Czech
 			td Ztratil jsem se
@@ -139,13 +140,13 @@ block content
 			td I'm lost
 		tr.program
 			td Estonian
-			td Ma olen eksinud
+			td Olen kaotanud
 		//tr
 			td Fijian
 			td 
 		tr.program
 			td Finnish
-			td Olen hukassa
+			td Olen menettänyt
 		//tr
 			td FLANG
 			td 
@@ -169,9 +170,9 @@ block content
 			td Ich bin verloren
 		tr.program
 			td Greek
-			td Χάθηκα
+			td Είμαι χαθεί
 		tr
-			td Guarani
+			td Gujarati
 			td.script હું હારી છું
 		tr
 			td Haitian Creole
@@ -298,10 +299,10 @@ block content
 			td 
 		tr.program
 			td Romanian
-			td I-am pierdut
+			td Am pierdut
 		tr.program
 			td Russian
-			td Я заблудился
+			td Я потерялся
 		//tr
 			td Samoan
 			td 

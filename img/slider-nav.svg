@@ -1,0 +1,17 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="345px" height="40px" viewBox="0 0 345 40" >
+<defs>
+  <filter id="shadow" x="0" y="0" width="200%" height="200%">
+    <feOffset result="offOut" in="SourceAlpha" dx="0" dy="0" />
+    <feColorMatrix result="matrixOut" in="offOut" type="matrix"
+      values="0.0 0 0 0 0 0 0.098 0 0 0 0 0 0.2812 0 0 0 0 0 0.75 0" />
+    <feGaussianBlur result="blurOut" in="matrixOut" stdDeviation="2.25" />
+    <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+  </filter>
+</defs>
+
+<g>
+	<polygon fill="#FFFFFF" filter="url(#shadow)" points="54.201,20 39.201,35 41.457,35 56.457,20 41.457,5 39.201,5 "/>
+	<polygon fill="#FFFFFF" filter="url(#shadow)" points="5.799,20 20.799,5 18.543,5 3.543,20 18.543,35 20.799,35 "/>
+
+</g>
+</svg>

@@ -153,6 +153,9 @@ body.sideNav {
 		color: $blue9;
 		&:hover { color: #fff; }
 	}
+	.sublinks a {
+		padding-left:15%;
+	}
 	ul {
 		padding: 0;
 		margin: 0;
@@ -290,6 +293,13 @@ body.sideNav {
 				padding-left: 9%;
 				padding-right: 9%;
 			}
+		}
+	}
+	#primary-nav .mega, 
+	#primary-nav .sub, 
+	#secondary-nav .sub {
+		.sublinks a {
+			padding-left: 12.5%;
 		}
 	}
 
@@ -531,6 +541,9 @@ body.sideNav {
 			}
 			.sublinks { 
 				padding-bottom: 0 25px 0 .25em;
+				a {
+					padding-left: 1.5em;
+				}
 				li a:before {
 					font-family: 'fontawesome';
 					content: '\f105';
