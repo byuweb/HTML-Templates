@@ -344,7 +344,7 @@ body.sideNav {
 @media all and ( min-width: $full-menu-width ) {
 	$header-top-height: 96px;
 	$search-width: 250px;
-	$menu-height:36px;
+	$menu-height: 36px;
 
 
 	#main-header {
@@ -352,9 +352,9 @@ body.sideNav {
 	}
 
 	body.sideNav {
-		min-height: auto;
+		min-height: 0;
 		#main-header, #content, #page-footer, #search-menu {
-			left:auto;
+			left: auto;
 		}
 	}
 
@@ -540,7 +540,7 @@ body.sideNav {
 				}
 			}
 			.sublinks { 
-				padding-bottom: 0 25px 0 .25em;
+				padding: 0 25px 0 .25em;
 				a {
 					padding-left: 1.5em;
 				}
