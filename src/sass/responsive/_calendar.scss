@@ -127,17 +127,17 @@
 }
 
 
-@media all and (min-width 800px) {
+@media all and (min-width 50em) {
 	.briefs-item h3 { font-size: 1em; }
-	.day { font-size: 1em;
-	  a { width:72%; }
-	  .time { width:27%; }
+	.day { 
+		font-size: 1em;
+		a { width: 72%; }
+		.time { width: 27%; }
 	}
 }
 
 
 @media all and (min-width: $large-width) {
-	
 
 	#calendar { width:34.755%; }
 	  
@@ -160,5 +160,5 @@
 	  a { width:74%; }
 	  .time { width:25%; } 
 	}
-
 }
+
