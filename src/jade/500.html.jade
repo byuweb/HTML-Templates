@@ -1,1 +1,48 @@
-p You've broken the server!
+extends _layout
+
+block pageTitle
+	| BYU - Error
+
+block parentlink
+	a.byu(href='http://www.byu.edu/') Brigham Young University
+
+block heading
+	| Primary Organization
+
+block append head
+
+		style.
+			.script, .rtl {
+				font-size: 18px
+			}
+			.big {
+				font-size: 21px
+			}
+			.rtl {
+				direction: rtl;
+				unicode-bidi: embed;
+				text-indent: 3em;
+				text-align: right;
+				border-right: 1px solid #ddd;
+				border-left: 1px solid #fff;
+			}
+			.lost {
+				width:90%;
+				margin-top:2em;
+			}
+
+block content
+	h1 Yikes! It looks like something&rsquo;s not working
+	// EDIT HERE: 
+	// The best thing would be to have your site notify the administrator automatically if there's an error. In that case, change the text above to reflect that. 
+	// If that's not feasible, be sure to at least include a way to contact the site administrator in the text below.
+	p We&rsquo;ve run into an error, which means this page may not be available for awhile. You can try back later, or report this problem to the site administrator.
+
+	h2 Search
+		form(action='http://home.byu.edu/home/search', role='form')
+			label.visuallyhidden(for='search') Search
+			input(type='search', name='search')
+			input.search-submit(type='submit', value='Search')
+
+
+block breadcrumb

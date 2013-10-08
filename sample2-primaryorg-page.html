@@ -22,19 +22,23 @@
     <!-- Scripts loaded via script loader. See notes in init.js file.-->
     <script src="js/modernizr.js"></script>
     <script>
-      var pageSettings = {
-       jQueryURL:     "http://byuweb.github.io/Global-Assets/js/jquery-1.10.2.min.js", // Use this default, or load jQuery from somewhere else
-       jQueryVersion: "1.10.2", // The jQuery version for fallback in case there's a problem loading jQuery
-       loadslider:    false, // Whether the image slider is present on the page
-       loadScripts:   [] // Array of strings specifying URLs for additional scripts to load
+      // Use these settings to control the default scripts in the BYU template
+      window.pageSettings = {
+       jQueryURL:      "http://byuweb.github.io/Global-Assets/js/jquery-1.10.2.min.js", // Use this default, or load jQuery from somewhere else
+       jQueryVersion:  "1.10.2", // The jQuery version for fallback in case there's a problem loading jQuery
+       additionalScripts: [], // Array of strings specifying URLs for additional scripts to load
+       
+       loadslider:     false, // Whether the image slider is present on the page
+       gcse_search:    true, // Use the Google Custom Search Engine for the site's search?
+       gcse_search_id: '009932716493032633443:hlqjz33kfkc',  // Use this BYU GCSE id, or insert your own
+       
+       analytics_key:  'UA-XXXXX-X' // Insert your Google Analytics key
       }
     </script>
     <script src="js/init.js"></script>
   </head>
-  <body>
-    <!--[if lt IE 7]>
-    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p>
-    <![endif]-->
+  <body><!--[if lt IE 7]>
+    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p><![endif]-->
     <header id="main-header" role="banner">
       <div id="header-top" class="wrapper">
         <div id="logo">
@@ -45,11 +49,9 @@
       </div>
     </header>
     <div id="search-menu">
-      <div id="search-container" role="search">
-        <!--
+      <div id="search-container" role="search"><!--
         The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
-        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).
-        -->
+        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).-->
         <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
           <label for="search" class="visuallyhidden">Search</label>
           <input id="search" type="search" name="search">
@@ -242,12 +244,10 @@
           <!--a#byu(href='http://byu.edu/') Brigham Young University--><a id="byui" href="http://byui.edu/" class="ir">BYU-Idaho</a><a id="byuh" href="http://byuh.edu/" class="ir">BYU-Hawaii</a><a id="ldsbc" href="http://www.ldsbc.edu/" class="ir">LDS Business College</a><a id="lds" href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>
         </div>
       </div>
-    </footer>
-    <!--CONTENT END
-    -->
+    </footer><!--CONTENT END-->
     <script>
       /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      var _gaq=[['_setAccount', pageSettings.google_analytics_key],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));

@@ -98,22 +98,38 @@ var byu_template = (function ($) {
 	 * Args: none
 	 */
 	function loadSearch(){
-		window.__gcse = {
-			callback: function() {
-					if (document.readyState == 'complete') {
-					// CSE has successfully loaded. Go ahead and hide the basic search.
-						$("#basic-search").hide();
-					}
-				}
-		};
 
-		(function() {
-			var cx = '009932716493032633443:hlqjz33kfkc'; // Insert your own Custom Search engine ID here
-			var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
-			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
-			var s = document.getElementsByTagName('script')[0];
-			s.parentNode.insertBefore(gcse, s);
-		})();
+		// Check for settings, set default if absent
+		if ( typeof window.pageSettings == 'undefined') {
+			window.pageSettings = {};
+		}
+		if ( typeof window.pageSettings.gcse_search == 'undefined' || typeof window.pageSettings.gcse_search_id == 'undefined' ) {
+			window.pageSettings.gcse_search = false;
+		}
+
+
+		// Run the GCSE search script if set to do so
+		if ( window.pageSettings.gcse_search === true ) {
+
+			window.__gcse = {
+				callback: function() {
+						if (document.readyState == 'complete') {
+						// CSE has successfully loaded. Go ahead and hide the basic search.
+							$("#basic-search").hide();
+						}
+					}
+			};
+
+			(function() {
+				var cx = window.pageSettings.gcse_search_id; // Insert your own Custom Search engine ID here
+				var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+				gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(gcse, s);
+			})();
+
+		}
+
 	}
 
 
