@@ -36,7 +36,7 @@ By default we have set loadslider to true for front pages and false for inside p
 Read the comments in this file. Note, for example, Line 41, where full menu width is explained. Note that the min-width of 60em should be reset depending on your layout. Also, please note that ems work much better with responsive layouts than pixels.
 
 ### Breakpoints
-Screen width breakpoints are central to the responsive strategy. They are found in responsive.css. Please read the comments in this file.
+Screen width breakpoints are central to the responsive strategy. They are found on Line 57 in responsive.css. Please read the comments in this file.
 
 We have set standard breakpoints for phones, tablets, desktops, and large displays. Your layout may vary and may “break” at different points. Please adjust accordingly.
 
