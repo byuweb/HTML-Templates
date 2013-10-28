@@ -1,6 +1,6 @@
 ## Documentation for HTML Templates 2.0
 
-<i>For developers who want to use SCSS, Jade, and Grunt to compile pages, see a more detailed documentation page.</i><br>
+<i>For developers who want to use SCSS, Jade, and Grunt to compile pages, <a href="https://github.com/byuweb/byu-responsive-dev/wiki/Documentation">see a more detailed documentation page</a> on the Wiki.</i><br>
 
 Thank you for downloading BYU’s responsive HTML templates. This gives you a set of static pages that you can modify and copy to fill out your website. If you wish to modify styles, please add your own style sheet rather than edit style sheets in the template. This will protect you from going back and editing everything when the templates are updated or corrected.
 Please be aware that we put the content before the nav in our code.
