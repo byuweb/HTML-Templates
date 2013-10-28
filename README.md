@@ -26,7 +26,7 @@ HTML pages have a “load slider” routine that sets up a sliding photo display
   &nbsp;&lt;/script&gt;<br>
 &lt;/head&gt;<br>
 
-By default we have set loadslider to true for front pages and false for inside pages. If it says false then the slider scripts won’t load. This and other issues are explained in comments in the code for <b>elements.html</b>. That’s an essential page to read.
+By default we have set loadslider to true for front pages and false for inside pages. If it says false then the slider scripts won’t load. This and other issues are explained in comments in the code for <b><a href="http://byuweb.github.io/byu-responsive-dev/elements.html">elements.html</a></b>. That’s an essential page to read.
 
 ### Responsive.css
 Read the comments in this file. Note, for example, Line 41, where full menu width is explained. Note that the min-width of 60em should be reset depending on your layout. Also, please note that ems work much better with responsive layouts than pixels.
