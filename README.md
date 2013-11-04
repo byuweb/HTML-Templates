@@ -1,70 +1,44 @@
-# Contributing to byu-responsive-dev
+## Documentation for HTML Templates 2.0
 
-Development for BYU responsive theme
+<i>For a quick index of the HTML templates, see <a href="http://byuweb.github.io/byu-responsive-dev/">byuweb.github.io/byu-responsive-dev</a>.</i><br>
 
-BYU HTML Responsive Templates  
-Version: 1.2
+<i>To download the templates, go to the <a href="https://github.com/byuweb/byu-responsive-dev/releases">release page</a></u>.<br> 
 
-This is the development repository of the BYU responsive templates
+<i>For developers who want to use SCSS, Jade, and Grunt to compile pages, <a href="https://github.com/byuweb/byu-responsive-dev/wiki/Documentation">see a more detailed documentation page</a> on the Wiki.</i><br>
 
-## Development Setup
+Thank you for downloading BYU’s responsive HTML templates. This gives you a set of static pages that you can modify and copy to fill out your website. If you wish to modify styles, please add your own style sheet rather than edit style sheets in the template. This will protect you from going back and editing everything when the templates are updated or corrected.
+Please be aware that we put the content before the nav in our code.
 
-To speed up development, we're using SCSS with Compass for CSS, and Jade for HTML compiling. These tasks are run via grunt task, which also includes a test server complete with livereload.
+For your benefit, comments are sprinkled liberally throughout the code on all pages, as well as in css and js files. Use them as a guide.
 
-### Requirements
+Before you get started, please be aware of the following issues:
 
-- **Node.js** (Including the node package manager <code>npm</code>) - Javascript-based server software. Installation info at [nodejs.org](http://nodejs.org/)
-- **Ruby** - Pre-installed on Mac. For Windows, installation info at [ruby-lang.org](http://www.ruby-lang.org/en/downloads/), or use an installer package like [RubyInstaller](http://rubyinstaller.org/).
-- **Grunt** - Javascript task runner. Automates compiling and other repetitive tasks. Installation info at [gruntjs.com](http://gruntjs.com/getting-started)  
-- **Sass** - Compiler for CSS. Once Ruby is installed, run the command <code>gem install sass</code> in the command line to install. Info at [sass-lang.com](http://sass-lang.com/). (HEADS UP-- Don't forget to read the Sass Gotcha section below)
-- **Compass** - Sass extension with pre-built mixins and variables. In the command line, run <code>gem install compass</code> to install. Info at [compass-style.org](http://compass-style.org/).
+### Scripts
+In the &lt;head&gt; section of each HTML page you will see a section containing some of these elements:<br>
+&lt;script&gt;<br>
+&nbsp;Window.pageSettings = {<br>
+   &nbsp;&nbsp;AdditionalScripts: [ ]<br>
+&lt;/script&gt;<br>
+The AdditionalScripts line is where you would add scripts that are not included in the template.
 
-### Sass gotcha
+### Slider
+HTML pages have a “load slider” routine that sets up a sliding photo display. Init.js checks to see if it’s true or false. Please be aware of the loadslider variable in the head of the HTML page you’re using:<br>
+&lt;head&gt;<br>
+  &nbsp;&lt;script&gt;<br>
+    &nbsp;&nbsp;var pageSettings = {<br>
+       &nbsp;&nbsp;&nbsp;loadslider: false,<br>
+  &nbsp;&lt;/script&gt;<br>
+&lt;/head&gt;<br>
 
-Google Chrome has changed the way they do [source mapping](http://net.tutsplus.com/tutorials/tools-and-tips/source-maps-101/). (If you're not familiar with source mapping, imagine the Chrome inspector telling you locations of your CSS in the pre-compiled sass files rather than compiled CSS. Very useful.)
+By default we have set loadslider to true for front pages and false for inside pages. If it says false then the slider scripts won’t load. This and other issues are explained in comments in the code for <b><a href="http://byuweb.github.io/byu-responsive-dev/elements.html">elements.html</a></b>. That’s an essential page to read.
 
-Anyway, the source mapping in the currently released version of sass (v3.2.9 as of July 29, 2013) doesn't work in Chrome anymore. However, there's a pre-release version that does work. Install it like so:
+### Responsive.css
+Read the comments in this file. Note, for example, Line 41, where full menu width is explained. Note that the min-width of 60em should be reset depending on your layout. Also, please note that ems work much better with responsive layouts than pixels.
 
-<code>gem install sass -v 3.3.0.alpha.141 --pre</code>
+### Breakpoints
+Screen width breakpoints are central to the responsive strategy. They are found on Line 57 in responsive.css. Please read the comments in this file.
 
-### Setup
+We have set standard breakpoints for phones, tablets, desktops, and large displays. Your layout may vary and may “break” at different points. Please adjust accordingly.
 
-Once you've downloaded the repo, you'll need to run an initial setup command so that Node will download the required grunt plugins.
-
-First, navigate in your command line to the site directory.
-
-Run this command *once* for your environment:
-
-<code>npm install</code>
-
-You should see a list of items downloading to a node_modules directory. You now have all the dependencies for this project.
-
-### Run grunt
-
-Each time you want to work on the project, navigate in your command line to the site directory, and  run the command:
-
-<code>grunt</code>
-
-or
-
-<code>grunt --force</code>
-
-If there are no errors, you should see in your terminal a list of several tasks that have started running. Whenever you save a watched file you'll see the list of tasks updated based on the file you've saved. For instance, your SASS and Jade files should automatically compile. If you use the <code>--force</code> flag, grunt will continue running even if errors happen in any of the tasks (otherwise, you'll have to restart grunt after any error).
-
-### Stop grunt
-
-To quit watching files and directories, just use your standard command line exit keys, probably <code>Control + C</code>.
-
-## Development Server
-
-With grunt running, you've got an automatic test server for the project. Navigate in a browser to <code>localhost:9001</code> to see the index page for the project. 
-
-### Livereload
-
-You may notice that whenever you save a file one of the grunt tasks that runs is "livereload." This will automatically push any changes to the site out to browsers that happen to be viewing it. This could be a browser on your computer, or a browser on another device that is connected to your computer's server at port 9001. This enables easy testing and updating of multiple browsers and devices.
-
-## Support
-
-If you have any trouble with setup, contact one of the other project contributors and we can probably set you straight.
-
-## Happy coding!
+### Notes
+Go into 404.html and 500.html error pages and modify them to suit your own organization.
