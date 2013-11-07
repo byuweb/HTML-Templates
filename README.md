@@ -38,5 +38,10 @@ Screen width breakpoints are central to the responsive strategy. They are found 
 
 We have set standard breakpoints for phones, tablets, desktops, and large displays. Your layout may vary and may “break” at different points. Please adjust accordingly.
 
-### Notes
+### Global Assets
+BYU logos and other assets common to BYU sites are served from a central server to facilitate caching of shared assets and the ability to update assets across multiple BYU sites. Information about these assets and their usage can be found on the [BYU Global Assets page](http://byuweb.github.io/Global-Assets/) and the [associated repo](http://github.com/byuweb/Global-Assets).
+
+### Error Pages
 Go into 404.html and 500.html error pages and modify them to suit your own organization.
+
+
