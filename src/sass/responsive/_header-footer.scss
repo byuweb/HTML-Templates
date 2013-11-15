@@ -43,16 +43,13 @@ a.mybyu, a.sign-in, .open #search-button {
 #site-name, .parentlink {
 	&:hover {
 		text-decoration: none;
-		color: $yellow2;
 		@include text-shadow(0 0 20px rgba($blue0, 1))
 	}
 }
 
 // Logo
-#logo a.parentlink {
-	&:hover {
-		color: $yellow2;
-	}
+#logo a.parentlink:hover {
+	color: #fff;
 }
 
 // Footer
