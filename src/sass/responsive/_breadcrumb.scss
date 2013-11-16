@@ -3,6 +3,10 @@
 	padding: 0;
 	background-color: transparent;
 
+	> li a {
+		@include text-shadow(none);
+	}
+
 	a, a:link, a:visited {
 		color: $blue4;
 	}
