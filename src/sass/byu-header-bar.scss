@@ -43,10 +43,10 @@ html, body {
     @include ir();
     display: inline-block;
     height: 26px;
-    width: 90px;
-    background: transparent url($asset-base + "img/byu-logo-sm.png") 0px 0px no-repeat;
+    width: 70px;
+    background: transparent url($asset-base + "img/byu-logo-header.png") 0px 0px no-repeat;
     .svg & {
-      background-image: url($asset-base + "img/byu-logo-sm.svg");
+      background-image: url($asset-base + "img/byu-logo-header.svg");
     }
   }
 
@@ -57,19 +57,18 @@ html, body {
   }
 
   a.parentlink {
-    font-family: "DroidSerif","CreteRound","Palatino","DroidSerif","Droid Serif",Georgia,serif;
+    font-weight: normal;
     text-shadow: 0 0 6px rgba(0,25,72,0.65);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     display: inline-block;
     padding: 6px 8px 2px;
-    color: #d1e4f6;
+    color: $blue9;
     line-height: 1.2;
-    height: 26px;
     vertical-align: top;
     &:hover {
-      color: #ffe;
+      color: #fff;
     }
   }
 

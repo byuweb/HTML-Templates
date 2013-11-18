@@ -18,7 +18,7 @@ $byubarSearchHeight: 27px;
 	white-space: nowrap;
 
 	.svg & {
-		background-image: url($asset-base + '/img/byu-header-bg.svg'); 
+		background-image: url($asset-base + '/img/byu-header-bg.svg');
 	}
 
 	h2 {
@@ -31,17 +31,15 @@ $byubarSearchHeight: 27px;
 	}
 
 	a.byu {
-		background-image: url($asset-base + '/img/byu-logo.png');
+		background-image: url($asset-base + '/img/byu-logo-header.png');
+		width: 70px;
 	    .svg & {
-	      background-image: url($asset-base + '/img/byu-logo.svg');
+	      background-image: url($asset-base + '/img/byu-logo-header.svg');
 	    }
 	}
 
-	a.byulink {
-		margin-left: 6px;
-	}
-
 	a.parentlink {
+		font-family: $byu-font-stack;
 		width: 100%;
 		white-space: nowrap;
 		display: block;
@@ -49,10 +47,11 @@ $byubarSearchHeight: 27px;
 		width: 100%;
 		top: 0;
 		left: 0;
-		padding-left: 98px;
+		padding-left: 73px;
 		padding-right: 6px;
 		overflow: hidden;
 		text-overflow: ellipsis;
+		letter-spacing: 2px;
 		@include box-sizing(border-box);
 	}
 
@@ -74,7 +73,7 @@ $byubarSearchHeight: 27px;
 		position: absolute;
 		top: 4px;
     	right: 6px;
-   	    width: 40%;
+   	    width: 60%;
    	    min-width: 120px;
    	    max-width: 400px;
 	}
@@ -102,32 +101,42 @@ $byubarSearchHeight: 27px;
 
 
 
-
 @media all and (min-width:400px) {
 
-	#byu-bar a.byu { width:345px; }
+	#byu-bar {
+		a.byu { width:350px; }
+		#search-container { width: 75% }
+	}
 
 	#byu-bar.search,
 	#byu-bar.button {
 		a.byu {
-			width: 80px;
+			width: 70px;
 		}
 	}
 
 }
 
 @media all and (min-width:500px) {
-	#byu-bar.button a.byu { width:345px; }
-	#byu-bar.search.button a.byu { width: 80px; }
+	#byu-bar.button a.byu { width:350px; }
+	#byu-bar.search.button a.byu { width: 70px; }
 }
 
 @media all and (min-width:600px) {
-	#byu-bar.search a.byu { width:345px; }
-	#byu-bar.search.button a.byu { width: 80px; }
+	#byu-bar.search {
+		a.byu { width:350px; }
+		#search-container { width: 40% }
+	}
+	#byu-bar.search.button {
+		a.byu { width: 70px; }
+		#search-container { width: 35% }
+	}
 }
 
 @media all and (min-width:720px) {
-	#byu-bar.search.button a.byu { width: 345px; }
+	#byu-bar.search.button {
+		a.byu { width: 350px; }
+	}
 }
 
 

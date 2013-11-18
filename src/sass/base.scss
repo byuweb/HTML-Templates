@@ -104,9 +104,9 @@ a {
     display: inline-block;
     height: 26px;
     width: 70px;
-    background: transparent url($asset-base + 'img/byu-logo-header-sm.png') 0px 0px no-repeat;
+    background: transparent url($asset-base + 'img/byu-logo-header.png') 0px 0px no-repeat;
     .svg & {
-      background-image: url($asset-base + 'img/byu-logo-header-sm.svg');
+      background-image: url($asset-base + 'img/byu-logo-header.svg');
     }
   }
 
