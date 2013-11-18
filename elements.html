@@ -37,21 +37,25 @@
     </script>
     <script src="js/init.js"></script>
   </head>
-  <body><!--[if lt IE 7]>
-    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p><![endif]-->
+  <body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p>
+    <![endif]-->
     <header id="main-header" role="banner">
       <div id="header-top" class="wrapper">
         <div id="logo">
           <h2><a href="http://www.byu.edu/" class="byu">Brigham Young University</a></h2>
         </div>
         <!-- This should link to your organization's home page-->
-        <h1><a id="site-name" href="#" title="Change this link to your organization's home page">Elements</a></h1><a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
+        <h1><a id="site-name" href="#" title="Change this link to your organization's home page">Style Guide</a></h1><a href="http://home.byu.edu/home/cas" class="sign-in button">Sign in</a>
       </div>
     </header>
     <div id="search-menu">
-      <div id="search-container" role="search"><!--
+      <div id="search-container" role="search">
+        <!--
         The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
-        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).-->
+        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).
+        -->
         <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
           <label for="search" class="visuallyhidden">Search</label>
           <input id="search" type="search" name="search">
@@ -63,9 +67,8 @@
         </div>
       </div><a href="#primary-nav" class="menu-button">Menu</a>
     </div>
-    <div id="content" role="main" class="wrapper clearfix "><!--
-      <Add>the Breadcrumb Code Here</Add>-->
-      <section id="bootstrap">
+    <div id="content" role="main" class="wrapper clearfix ">
+      <section id="frameworks">
         <div class="page-header">
           <h1>Built-in frameworks</h1>
         </div>
@@ -76,48 +79,49 @@
         <h2>FontAwesome Icons</h2>
         <p>We've also included a <em>sweet</em> icon set for your UI pleasure. Again, no need to reinvent the wheel here.</p>
         <p>The latest and greatest in icon design is vectors; specifically, icon fonts. They're scalable, colorable, and completely accessible. Yes, they're that good. Happy designing. Some examples below.</p>
-        <p><a href="http://fortawesome.github.com/Font-Awesome/">Check out the full icon set and usage guidelines.</a></p>
+        <p><a href="http://fortawesome.github.io/Font-Awesome/icons/">Check out the full icon set </a>(369 icons) and the useful <a href="http://fortawesome.github.io/Font-Awesome/examples/">usage guidelines.</a></p>
         <div class="bs-docs-example">
           <ul class="unstyled">
-            <li><i class="icon-bolt"></i> icon-bolt</li>
-            <li><i class="icon-calendar"></i> icon-calendar</li>
-            <li><i class="icon-cog"></i> icon-cog</li>
-            <li><i class="icon-comment"></i> icon-comment</li>
-            <li><i class="icon-envelope"></i> icon-envelope</li>
-            <li><i class="icon-flag"></i> icon-flag</li>
-            <li><i class="icon-heart"></i> icon-heart</li>
-            <li><i class="icon-home"></i> icon-home</li>
-            <li><i class="icon-lock"></i> icon-lock</li>
-            <li><i class="icon-magic"></i> icon-magic</li>
-            <li><i class="icon-ok"></i> icon-ok</li>
-            <li><i class="icon-pencil"></i> icon-pencil</li>
-            <li><i class="icon-print"></i> icon-print</li>
-            <li><i class="icon-refresh"></i> icon-refresh</li>
-            <li><i class="icon-remove"></i> icon-remove</li>
-            <li><i class="icon-search"></i> icon-search</li>
-            <li><i class="icon-shopping-cart"></i> icon-shopping-cart</li>
-            <li><i class="icon-trash"></i> icon-trash</li>
-            <li><i class="icon-caret-down"></i> icon-caret-down</li>
-            <li><i class="icon-caret-right"></i> icon-caret-right</li>
+            <li><i class="fa fa-fw fa-bars"></i> fa-bars</li>
+            <li><i class="fa fa-fw fa-bolt"></i> fa-bolt</li>
+            <li><i class="fa fa-fw fa-calendar"></i> fa-calendar</li>
+            <li><i class="fa fa-fw fa-check"></i> fa-check</li>
+            <li><i class="fa fa-fw fa-cog"></i> fa-cog</li>
+            <li><i class="fa fa-fw fa-comment"></i> fa-comment</li>
+            <li><i class="fa fa-fw fa-lock"></i> fa-lock</li>
+            <li><i class="fa fa-fw fa-refresh"></i> fa-refresh</li>
+            <li><i class="fa fa-fw fa-search"></i> fa-search</li>
+            <li><i class="fa fa-fw fa-trash-o"></i> fa-trash-o</li>
+            <li><i class="fa fa-fw fa-caret-down"></i> fa-caret-down</li>
+            <li><i class="fa fa-fw fa-caret-right"></i> fa-caret-right</li>
           </ul>
         </div>
-        <pre class="prettyprint">&lt;i class="icon-bolt"&gt;&lt;/i&gt; Expeliarmus!
-&lt;i class="icon-calendar"&gt;&lt;/i&gt; Calendar
-&lt;i class="icon-cog"&gt;&lt;/i&gt; Settings
-&lt;i class="icon-comment"&gt;&lt;/i&gt; Say something!
+        <pre class="prettyprint">&lt;i class="fa fa-bolt"&gt;&lt;/i&gt; Expeliarmus!
+&lt;i class="fa fa-calendar"&gt;&lt;/i&gt; Calendar
+&lt;i class="fa fa-cog"&gt;&lt;/i&gt; Settings
+&lt;i class="fa fa-comment"&gt;&lt;/i&gt; Say something!
 ...</pre>
         <div class="bs-docs-example">
           <ul class="unstyled">
-            <li><i class="icon-search"></i> [standard size]</li>
-            <li><i class="icon-search icon-large"></i> icon-large</li>
-            <li><i class="icon-search icon-2x"></i> icon-2x</li>
-            <li><i class="icon-search icon-3x"></i> icon-3x</li>
+            <li><i class="fa fa-search"></i> [standard size]</li>
+            <li><i class="fa fa-search fa-lg"></i> fa-lg</li>
+            <li><i class="fa fa-search fa-2x"></i> fa-2x</li>
+            <li><i class="fa fa-search fa-3x"></i> fa-3x</li>
           </ul>
         </div>
-        <pre class="prettyprint">&lt;i class="icon-search"&gt;&lt;/i&gt;
-&lt;i class="icon-search icon-large"&gt;&lt;/i&gt;
-&lt;i class="icon-search icon-2x"&gt;&lt;/i&gt;
-&lt;i class="icon-search icon-3x"&gt;&lt;/i&gt;
+        <pre class="prettyprint">&lt;i class="fa fa-search"&gt;&lt;/i&gt;
+&lt;i class="fa fa-search fa-lg"&gt;&lt;/i&gt;
+&lt;i class="fa fa-search fa-2x"&gt;&lt;/i&gt;
+&lt;i class="fa fa-search fa-3x"&gt;&lt;/i&gt;
+...</pre>
+        <div class="bs-docs-example">
+          <ul class="unstyled">
+            <li><i class="fa fa-spin fa-refresh"></i> Spinning icon</li>
+          </ul>
+        </div>
+        <pre class="prettyprint">&lt;i class="fa fa-spin fa-cog"&gt;&lt;/i&gt;
+&lt;i class="fa fa-spin fa-spinner"&gt;&lt;/i&gt;
+&lt;i class="fa fa-spin fa-refresh"&gt;&lt;/i&gt;
 ...</pre>
         <hr class="bs-docs-separator">
         <h2>HTML5 Boilerplate (h5bp)</h2>
@@ -148,295 +152,11 @@
         <h4><code>.clearfix</code></h4>
         <p>The ever-useful clearfix available as a global class. Apply to any container that has floated elements which shouldn't extend outside said container.</p>
       </section>
-      <hr class="bs-docs-separator">
-      <section id="typography">
-        <div class="page-header">
-          <h1>Typography</h1>
-        </div>
-        <h2 id="headings">Headings</h2>
-        <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are styled.</p>
-        <div class="bs-docs-example">
-          <h1>h1. Heading 1</h1>
-          <h2>h2. Heading 2</h2>
-          <h3>h3. Heading 3</h3>
-          <h4>h4. Heading 4</h4>
-          <h5>h5. Heading 5</h5>
-          <h6>h6. Heading 6</h6>
-        </div>
-        <div class="bs-docs-example">
-          <h1>h1. Heading 1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h2>h2. Heading 2</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h3>h3. Heading 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h4>h4. Heading 4</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h5>h5. Heading 5</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <h6>h6. Heading 6</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <hr class="bs-docs-separator">
-        <h2 id="body-copy">Body copy</h2>
-        <p>BYU's global default <code>font-size</code> is <strong>15px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
-        <div class="bs-docs-example">
-          <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-        </div>
-        <pre class="prettyprint">&lt;p&gt;...&lt;/p&gt;</pre>
-        <h3>Lead body copy</h3>
-        <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
-        <div class="bs-docs-example">
-          <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
-        </div>
-        <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
-        <hr class="bs-docs-separator">
-        <h2 id="emphasis">Emphasis</h2>
-        <p>Make use of HTML's default emphasis tags with lightweight styles.</p>
-        <h3><code>&lt;small&gt;</code></h3>
-        <p>For de-emphasizing inline or blocks of text, small use the <code>&lt;small&gt;</code>  tag.</p>
-        <div class="bs-docs-example">
-          <p><small>This line of text is meant to be treated as fine print.</small></p>
-        </div>
-        <pre class="prettyprint">&lt;p&gt;
-  &lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;
-&lt;/p&gt;</pre>
-        <h3>Bold</h3>
-        <p>For emphasizing a snippet of text with a heavier font-weight.</p>
-        <div class="bs-docs-example">
-          <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
-        </div>
-        <pre class="prettyprint">&lt;strong&gt;rendered as bold text&lt;/strong&gt;</pre>
-        <h3>Italics</h3>
-        <p>For emphasizing a snippet of text with italics.</p>
-        <div class="bs-docs-example">
-          <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
-        </div>
-        <pre class="prettyprint">&lt;em&gt;rendered as italicized text&lt;/em&gt;</pre>
-        <p><span class="label label-info">Heads up!</span> Feel free to use <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code> in HTML5. <code>&lt;b&gt;</code> is meant to highlight words or phrases without conveying additional importance while <code>&lt;i&gt;</code> is mostly for voice, technical terms, etc. </p>
-        <h3>Alignment classes</h3>
-        <p>Easily realign text to components with text alignment classes.</p>
-        <div class="bs-docs-example">
-          <p class="text-left">Left aligned text.</p>
-          <p class="text-center">Center aligned text.</p>
-          <p class="text-right">Right aligned text.</p>
-        </div>
-        <pre class="prettyprint">&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
-&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
-&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;</pre>
-        <h3>Emphasis classes</h3>
-        <p>Convey meaning through color with a handful of emphasis utility classes.</p>
-        <div class="bs-docs-example">
-          <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
-          <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-          <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
-          <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
-          <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-        </div>
-        <pre class="prettyprint">&lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
-&lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
-&lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
-&lt;p class="text-info"&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
-&lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;</pre>
-        <hr class="bs-docs-separator">
-        <h2 id="abbreviations">Abbreviations</h2>
-        <p>Stylized implementation of HTML's <code>&lt;abbr&gt;</code> element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a <code>title</code> attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.</p>
-        <h3><code>&lt;abbr&gt;</code></h3>
-        <p>For expanded text on long hover of an abbreviation, include the <code>title</code> attribute.</p>
-        <div class="bs-docs-example">
-          <p>An abbreviation of the word attribute is <abbr title="attribute">attr</abbr>.</p>
-        </div>
-        <pre class="prettyprint">&lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;</pre>
-        <h3><code>&lt;abbr class="initialism"&gt;</code></h3>
-        <p>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size. </p>
-        <div class="bs-docs-example">
-          <p><abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is the best thing since sliced bread.</p>
-        </div>
-        <pre class="prettyprint">&lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;...</pre>
-        <hr class="bs-docs-separator">
-        <h2 id="addresses">Addresses</h2>
-        <p>Present contact information for the nearest ancestor or the entire body of work.</p>
-        <h3><code>&lt;address&gt;</code></h3>
-        <p>Preserve formatting by ending all lines with <code>&lt;br&gt;</code> . </p>
-        <div class="bs-docs-example">
-          <address><strong>Twitter, Inc.</strong><br>795 Folsom Ave, Suite 600<br>San Francisco, CA 94107<br><abbr title="Phone">P:</abbr>(123) 456-7890</address>
-          <address><strong>Full Name</strong><br><a href="mailto:#">first.last@example.com</a></address>
-        </div>
-        <pre class="prettyprint">&lt;address&gt;
-  &lt;strong&gt;Twitter, Inc.&lt;/strong&gt;&lt;br&gt;
-  795 Folsom Ave, Suite 600&lt;br&gt;
-  San Francisco, CA 94107&lt;br&gt;
-  &lt;abbr title="Phone"&gt;P:&lt;/abbr&gt; (123) 456-7890
-&lt;/address&gt;&nbsp;
-|
-&lt;address&gt;
-  &lt;strong&gt;Full Name&lt;/strong&gt;&lt;br&gt;
-  &lt;a href="mailto:#"&gt;first.last@example.com&lt;/a&gt;
-&lt;/address&gt;</pre>
-        <hr class="bs-docs-separator">
-        <h2 id="blockquotes">Blockquotes</h2>
-        <p>For quoting blocks of content from another source within your document.</p>
-        <h3>Default blockquote</h3>
-        <p>Wrap <code>&lt;blockquote&gt;</code> around any <abbr title="HyperText Markup Language">HTML</abbr>as the quote. For straight quotes we recommend a <code>&lt;p&gt;</code> . </p>
-        <div class="bs-docs-example">
-          <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          </blockquote>
-        </div>
-        <pre class="prettyprint">&lt;blockquote&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-&lt;/blockquote&gt;</pre>
-        <h3>Blockquote options</h3>
-        <p>Style and content changes for simple variations on a standard blockquote.</p>
-        <h4>Naming a source</h4>
-        <p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code> .</p>
-        <div class="bs-docs-example">
-          <blockquote>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. </p><small>Someone famous in 
-              <cite title="Source Title">Source Title</cite></small>
-          </blockquote>
-        </div>
-        <pre class="prettyprint">&lt;blockquote&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-  &lt;small&gt;Someone famous &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
-&lt;/blockquote&gt;</pre>
-        <h4>Alternate displays</h4>
-        <p>Use <code>.pull-right</code> for a floated, right-aligned blockquote. </p>
-        <div style="overflow: hidden;" class="bs-docs-example">
-          <blockquote class="pull-right">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in
-              <cite title="Source Title">Source Title</cite></small>
-          </blockquote>
-        </div>
-        <pre class="prettyprint">&lt;blockquote class="pull-right"&gt;
-...
-&lt;/blockquote&gt;</pre>
-        <hr class="bs-docs-separator"><!--
-        <Lists></Lists>-->
-        <h2 id="lists">Lists</h2>
-        <h3>Unordered</h3>
-        <p>A list of items in which the order does <em>not</em> explicitly matter.</p>
-        <div class="bs-docs-example">
-          <ul>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>Nulla volutpat aliquam velit
-              <ul>
-                <li>Phasellus iaculis neque</li>
-                <li>Purus sodales ultricies</li>
-                <li>Vestibulum laoreet porttitor sem</li>
-                <li>Ac tristique libero volutpat at</li>
-              </ul>
-            </li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-          </ul>
-        </div>
-        <pre class="prettyprint">&lt;ul&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;</pre>
-        <h3>Ordered</h3>
-        <p>A list of items in which the order <em>does</em> explicitly matter.</p>
-        <div class="bs-docs-example">
-          <ol>
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>Nulla volutpat aliquam velit</li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-          </ol>
-        </div>
-        <pre class="prettyprint">&lt;ol&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ol&gt;</pre>
-        <h3>Unstyled</h3>
-        <p>Remove the default <code>list-style</code> and left padding on list items (immediate children only).</p>
-        <div class="bs-docs-example">
-          <ul class="unstyled">
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Integer molestie lorem at massa</li>
-            <li>Facilisis in pretium nisl aliquet</li>
-            <li>Nulla volutpat aliquam velit
-              <ul>
-                <li>Phasellus iaculis neque</li>
-                <li>Purus sodales ultricies</li>
-                <li>Vestibulum laoreet porttitor sem</li>
-                <li>Ac tristique libero volutpat at</li>
-              </ul>
-            </li>
-            <li>Faucibus porta lacus fringilla vel</li>
-            <li>Aenean sit amet erat nunc</li>
-            <li>Eget porttitor lorem</li>
-          </ul>
-        </div>
-        <pre class="prettyprint">&lt;ul class="unstyled"&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;</pre>
-        <h3>Inline</h3>
-        <p>Place all list items on a single line with <code>inline-block</code> and some light padding.</p>
-        <div class="bs-docs-example">
-          <ul class="inline">
-            <li>Lorem ipsum</li>
-            <li>Phasellus iaculis</li>
-            <li>Nulla volutpat</li>
-          </ul>
-        </div>
-        <pre class="prettyprint">&lt;ul class="inline"&gt;
-  &lt;li&gt;...&lt;/li&gt;
-&lt;/ul&gt;</pre>
-        <h3>Description (definition list)</h3>
-        <p>A list of terms with their associated descriptions.</p>
-        <div class="bs-docs-example">
-          <dl>
-            <dt>Description lists</dt>
-            <dd>A description list is perfect for defining terms.</dd>
-            <dt>Euismod</dt>
-            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-            <dt>Malesuada porta</dt>
-            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-          </dl>
-        </div>
-        <pre class="prettyprint">&lt;dl&gt;
-  &lt;dt&gt;...&lt;/dt&gt;
-  &lt;dd&gt;...&lt;/dd&gt;
-&lt;/dl&gt;</pre>
-        <h4>Horizontal description</h4>
-        <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.</p>
-        <div class="bs-docs-example">
-          <dl class="dl-horizontal">
-            <dt>Description lists</dt>
-            <dd>A description list is perfect for defining terms.</dd>
-            <dt>Euismod</dt>
-            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
-            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
-            <dt>Malesuada porta</dt>
-            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
-            <dt>Felis euismod semper eget lacinia</dt>
-            <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
-          </dl>
-        </div>
-        <pre class="prettyprint">&lt;dl class="dl-horizontal"&gt;
-  &lt;dt&gt;...&lt;/dt&gt;
-  &lt;dd&gt;...&lt;/dd&gt;
-&lt;/dl&gt;</pre>
-        <p><span class="label label-info">Heads up!</span>Horizontal description lists will truncate terms that are too long to fit in the left column fix <code>text-overflow</code> . In narrower viewports, they will change to the default stacked layout.</p>
-      </section>
-      <hr class="bs-docs-separator">
+      <!--hr.bs-docs-separator-->
       <section id="buttons">
         <div class="page-header">
           <h1>Buttons</h1>
         </div>
-        <h2>Default buttons</h2>
         <p>Button styles can be applied to anything with the <code>.btn</code> class applied. However, typically you'll want to apply these to only <code>&lt;a&gt;</code> and <code>&lt;button&gt;</code> elements for the best rendering.</p>
         <table class="table table-bordered table-striped">
           <thead>
@@ -535,17 +255,9 @@
           </div>
         </div>
         <h2>Disabled state</h2>
-        <p>Make buttons look unclickable by fading them back 50%.</p>
-        <h3>Anchor element</h3>
-        <p>Add the <code>.disabled</code> class to <code>&lt;a&gt;</code> buttons.</p>
-        <p class="bs-docs-example"><a href="#" class="btn btn-large btn-primary disabled">Primary link</a><a href="#" class="btn btn-large disabled">Link</a></p>
+        <p>Make buttons look unclickable by fading them back 50%. Just add the <code>.disabled</code> class.</p>
+        <p class="bs-docs-example"><a href="#" class="btn btn-large btn-primary disabled">Primary link </a><a href="#" class="btn btn-large disabled">Link</a></p>
         <p><span class="label label-info">Heads up!</span>We use <code>.disabled</code> as a utility class here, similar to the common <code>.active</code> class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.</p>
-        <h3>Button element</h3>
-        <p>Add the <code>disabled</code> attribute to <code>&lt;button&gt;</code> buttons.</p>
-        <p class="bs-docs-example">
-          <button type="button" disabled="disabled" class="btn btn-large btn-primary disabled">Primary button</button>
-          <button type="button" disabled="" class="btn btn-large">Button</button>
-        </p>
         <h2>One class, multiple tags</h2>
         <p>Use the <code>.btn</code> class on an <code>&lt;a&gt;</code> , <code>&lt;button&gt;</code> , or <code>&lt;input&gt;</code> element.</p>
         <form class="bs-docs-example"><a href="" class="btn">Link</a>
@@ -553,239 +265,392 @@
           <input type="button" value="Input" class="btn">
           <input type="submit" value="Submit" class="btn">
         </form>
-        <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code> , use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
+        <p>As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an <code>input</code>, use an <code>&lt;input type="submit"&gt;</code> for your button.</p>
       </section>
-      <hr class="bs-docs-separator">
-      <div class="container showgrid">
-        <h1>HTML elements</h1>
-        <h2>A test for all the HTML elements
-          <h5>PARAGRAPHS<span class="alt">&</span>BOXES</h5>
-          <div class="span-8">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<sub>sub text</sub>ut labore et<sup>sup text</sup>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!-- hr.bs-docs-separator-->
+      <!-- .container.showgrid
+      <h1>HTML elements</h1>
+      <h2>A test for all the HTML elements
+        <h5>PARAGRAPHS<span class="alt">&</span>BOXES</h5>
+        <div class="span-8">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<sub>sub text</sub>ut labore et<sup>sup text</sup>magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="span-8">
+          <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="span-8 last">
+          <div class="box">
+            <p class="last">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div class="span-8">
-            <p class="small">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="clearfix">
+            <h1>Two Sidebar  Sample</h1>
+            <h2>This is a sample page demonstrating the use of two columns</h2>
+            <div class="sidebar">This is the left sidebar. Navigation links are best placed here.</div>
+            <div id="main-content">This is the main content.</div>
+            <div class="sidebar omega">This is the right sidebar. Supplemental information is best placed here.</div>
           </div>
-          <div class="span-8 last">
-            <div class="box">
-              <p class="last">Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            <div class="clearfix">
-              <h1>Two Sidebar  Sample</h1>
-              <h2>This is a sample page demonstrating the use of two columns</h2>
-              <div class="sidebar">This is the left sidebar. Navigation links are best placed here.</div>
-              <div id="main-content">This is the main content.</div>
-              <div class="sidebar omega">This is the right sidebar. Supplemental information is best placed here.</div>
-            </div>
-            <blockquote>
-              <p>This is a blockquote. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </blockquote>
-          </div>
-          <h5>LISTS</h5>
-          <div class="span-8">
-            <ul>
-              <li>Unordered list test</li>
-              <li>Another list element. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-              <li>Yet another element in the list</li>
-              <li>Some long text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            </ul>
-            <ol>
-              <li>Ordered list test</li>
-              <li>Another list element</li>
-              <li>Yet another element in the list</li>
-            </ol>
-          </div>
-          <div class="span-8">
-            <ol>
-              <li>Ordered list</li>
-              <li>Here's a nested unordered list
-                <ul>
-                  <li>Nested Unordered list</li>
-                  <li>Nested ordered list
-                    <ol>
-                      <li>The first</li>
-                      <li>And the second</li>
-                    </ol>
-                  </li>
-                </ul>
-              </li>
-              <li>Ordered List item</li>
-              <li>Nested Ordered list
-                <ol>
-                  <li>Some point</li>
-                  <li>Nested Unordered list
-                    <ul>
-                      <li>The first</li>
-                      <li>And the second</li>
-                    </ul>
-                  </li>
-                </ol>
-              </li>
-            </ol>
-          </div>
-          <div class="span-8 last">
-            <dl>
-              <dt>definition list dt</dt>
-              <dd>definition list dd</dd>
-              <dt>definition list dt</dt>
-              <dd>definition list dd</dd>
-              <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
-              <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
-              <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
-            </dl>
-          </div>
-          <h5>HEADINGS</h5>
-          <div class="span-8">
-            <h1>H1: Lorem ipsum dolor sit amet</h1>
-            <h2>H2: Lorem ipsum dolor sit amet, consectetur elit</h2>
-            <h3>H3: Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
-            <h4>H4: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipis</h4>
-            <h5>H5: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</h5>
-            <h6>H6: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</h6>
-          </div>
-          <div class="span-8">
-            <h1>Heading 1</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
-          </div>
-          <h5>MISC ELEMENTS</h5>
-          <div class="span-8">
-            <p><strong>&lt;strong&gt;</strong><br>
-              <del>&lt;del&gt; deleted</del><br>
-              <dfn>&lt;dfn&gt; dfn</dfn><br><em>&lt;em&gt; emphasis</em>
-            </p>
-            <p><a>&lt;a&gt; anchor</a><br><a href="#">&lt;a&gt; a + href</a></p>
-            <p><abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr><br><acronym title="extended acronym text should show when mouse over">&lt;acronym&gt; acronym - extended text when mouseover.</acronym></p>
-            <address>&lt;address&gt;<br>Donald Duck<br>Box 555<br>Disneyland</address>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore.</p>
-            <h4>Example Form</h4>
-            <form role="form">Example Form</form>
-            <button>Button Style 1</button>
-            <button>Button Style 2</button>
-          </div>
-          <div class="span-8">
-            <table summary="This is the summary text for this table." border="0" cellspacing="0" cellpadding="0">
-              <caption><em>A standard test table with a caption, tr, td elements</em></caption>
+          <blockquote>
+            <p>This is a blockquote. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </blockquote>
+        </div>
+        <h5>LISTS</h5>
+        <div class="span-8">
+          <ul>
+            <li>Unordered list test</li>
+            <li>Another list element. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+            <li>Yet another element in the list</li>
+            <li>Some long text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+          </ul>
+          <ol>
+            <li>Ordered list test</li>
+            <li>Another list element</li>
+            <li>Yet another element in the list</li>
+          </ol>
+        </div>
+        <div class="span-8">
+          <ol>
+            <li>Ordered list</li>
+            <li>Here's a nested unordered list
+              <ul>
+                <li>Nested Unordered list</li>
+                <li>Nested ordered list
+                  <ol>
+                    <li>The first</li>
+                    <li>And the second</li>
+                  </ol>
+                </li>
+              </ul>
+            </li>
+            <li>Ordered List item</li>
+            <li>Nested Ordered list
+              <ol>
+                <li>Some point</li>
+                <li>Nested Unordered list
+                  <ul>
+                    <li>The first</li>
+                    <li>And the second</li>
+                  </ul>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+        <div class="span-8 last">
+          <dl>
+            <dt>definition list dt</dt>
+            <dd>definition list dd</dd>
+            <dt>definition list dt</dt>
+            <dd>definition list dd</dd>
+            <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
+            <dt>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</dd>
+          </dl>
+        </div>
+        <h5>HEADINGS</h5>
+        <div class="span-8">
+          <h1>H1: Lorem ipsum dolor sit amet</h1>
+          <h2>H2: Lorem ipsum dolor sit amet, consectetur elit</h2>
+          <h3>H3: Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+          <h4>H4: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipis</h4>
+          <h5>H5: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</h5>
+          <h6>H6: Lorem ipsum dolor sit amet, consectetur adipisicing elit adipisicing elit adipisicing elit</h6>
+        </div>
+        <div class="span-8">
+          <h1>Heading 1</h1>
+          <h2>Heading 2</h2>
+          <h3>Heading 3</h3>
+          <h4>Heading 4</h4>
+          <h5>Heading 5</h5>
+          <h6>Heading 6</h6>
+        </div>
+        <h5>MISC ELEMENTS</h5>
+        <div class="span-8">
+          <p><strong>&lt;strong&gt;</strong><br>
+            <del>&lt;del&gt; deleted</del><br>
+            <dfn>&lt;dfn&gt; dfn</dfn><br><em>&lt;em&gt; emphasis</em>
+          </p>
+          <p><a>&lt;a&gt; anchor</a><br><a href="#">&lt;a&gt; a + href</a></p>
+          <p><abbr title="extended abbr text should show when mouse over">&lt;abbr&gt; abbr - extended text when mouseover.</abbr><br><acronym title="extended acronym text should show when mouse over">&lt;acronym&gt; acronym - extended text when mouseover.</acronym></p>
+          <address>&lt;address&gt;<br>Donald Duck<br>Box 555<br>Disneyland</address>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore.</p>
+          <h4>Example Form</h4>
+          <form role="form">Example Form</form>
+          <button>Button Style 1</button>
+          <button>Button Style 2</button>
+        </div>
+        <div class="span-8">
+          <table summary="This is the summary text for this table." border="0" cellspacing="0" cellpadding="0">
+            <caption><em>A standard test table with a caption, tr, td elements</em></caption>
+            <tr>
+              <th class="span-4">Table Header One</th>
+              <th class="span-4 last">Table Header Two</th>
+            </tr>
+            <tr>
+              <td>TD One</td>
+              <td>TD Two</td>
+            </tr>
+            <tr>
+              <td colspan="2">TD colspan 2</td>
+            </tr>
+          </table>
+          <table summary="This is the summary text for this table." border="0" cellspacing="0" cellpadding="0">
+            <caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
+            <thead>
               <tr>
                 <th class="span-4">Table Header One</th>
                 <th class="span-4 last">Table Header Two</th>
               </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <td colspan="2">tfoot footer</td>
+              </tr>
+            </tfoot>
+            <tbody>
               <tr>
                 <td>TD One</td>
                 <td>TD Two</td>
               </tr>
               <tr>
-                <td colspan="2">TD colspan 2</td>
+                <td>TD One</td>
+                <td>TD Two</td>
               </tr>
-            </table>
-            <table summary="This is the summary text for this table." border="0" cellspacing="0" cellpadding="0">
-              <caption><em>A test table with a thead, tfoot, and tbody elements</em></caption>
-              <thead>
-                <tr>
-                  <th class="span-4">Table Header One</th>
-                  <th class="span-4 last">Table Header Two</th>
-                </tr>
-              </thead>
-              <tfoot>
-                <tr>
-                  <td colspan="2">tfoot footer</td>
-                </tr>
-              </tfoot>
-              <tbody>
-                <tr>
-                  <td>TD One</td>
-                  <td>TD Two</td>
-                </tr>
-                <tr>
-                  <td>TD One</td>
-                  <td>TD Two</td>
-                </tr>
-              </tbody>
-              <tbody>
-                <tr>
-                  <td>TD One</td>
-                  <td>TD Two</td>
-                </tr>
-                <tr>
-                  <td>TD One</td>
-                  <td>TD Two</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="span-8 last">
-            <pre>&lt;pre&gt;
-              <pre> space1</pre>
-              <pre> space1</pre>
-              <pre>   space2</pre>
-              <pre>   space2</pre>
-              <pre>tab</pre>
-              <pre>tab</pre></pre><code>&lt;code&gt;
-              <Not>indented</Not>
-              <indent1></indent1>
-              <indent1></indent1>
-              <indent2></indent2>
-              <indent3></indent3></code>
-            <tt>
-              &lt;tt&gt;
-              This tt text should be monospaced
-              and
-              wrap as if
-              one line of text
-              even though the code has newlines, spaces, and tabs.
-               It should be the same size as &lt;p&gt; text.
-            </tt>
-          </div>
-        </h2>
-      </div>
-      <table border="1" cellpadding="1" cellspacing="1" style="width: 500px;">
-        <thead>
-          <tr>
-            <th scope="row"></th>
-            <th scope="col">Top Heading</th>
-            <th scope="col">Top Heading</th>
-            <th scope="col">Top Heading</th>
-            <th scope="col">Top Heading</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Left Heading</th>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <th scope="row">Left Heading</th>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-          </tr>
-          <tr>
-            <th scope="row">Left Heading</th>
-            <td>9</td>
-            <td>10</td>
-            <td>11</td>
-            <td>12</td>
-          </tr>
-          <tr>
-            <th scope="row"></th>
-            <td>13</td>
-            <td>14</td>
-            <td>15</td>
-            <td>16</td>
-          </tr>
-        </tbody>
-      </table>
+            </tbody>
+            <tbody>
+              <tr>
+                <td>TD One</td>
+                <td>TD Two</td>
+              </tr>
+              <tr>
+                <td>TD One</td>
+                <td>TD Two</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="span-8 last">
+          <pre>&lt;pre&gt;
+            <pre> space1</pre>
+            <pre> space1</pre>
+            <pre>   space2</pre>
+            <pre>   space2</pre>
+            <pre>tab</pre>
+            <pre>tab</pre></pre><code>&lt;code&gt;
+            <Not>indented</Not>
+            <indent1></indent1>
+            <indent1></indent1>
+            <indent2></indent2>
+            <indent3></indent3></code>
+          <tt>
+            &lt;tt&gt;
+            This tt text should be monospaced
+            and
+            wrap as if
+            one line of text
+            even though the code has newlines, spaces, and tabs.
+             It should be the same size as &lt;p&gt; text.
+          </tt>
+        </div>
+      </h2>
+      -->
+      <!-- table(border='1', cellpadding='1', cellspacing='1', style='width: 500px;')
+      <thead>
+        <tr>
+          <th scope="row"></th>
+          <th scope="col">Top Heading</th>
+          <th scope="col">Top Heading</th>
+          <th scope="col">Top Heading</th>
+          <th scope="col">Top Heading</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Left Heading</th>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <th scope="row">Left Heading</th>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <th scope="row">Left Heading</th>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <th scope="row"></th>
+          <td>13</td>
+          <td>14</td>
+          <td>15</td>
+          <td>16</td>
+        </tr>
+      </tbody>
+      -->
+      <!-- hr.bs-docs-separator-->
+      <section id="typography">
+        <div class="page-header">
+          <h1>Typography</h1>
+        </div>
+        <h2 id="headings">Headings</h2>
+        <p>All HTML headings, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> are styled.</p>
+        <div class="bs-docs-example">
+          <h1>h1. Heading 1</h1>
+          <h2>h2. Heading 2</h2>
+          <h3>h3. Heading 3</h3>
+          <h4>h4. Heading 4</h4>
+          <h5>h5. Heading 5</h5>
+          <h6>h6. Heading 6</h6>
+        </div>
+        <!-- .bs-docs-example
+        <h1>h1. Heading 1</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2>h2. Heading 2</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h3>h3. Heading 3</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h4>h4. Heading 4</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h5>h5. Heading 5</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h6>h6. Heading 6</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        -->
+        <hr class="bs-docs-separator">
+        <h2 id="body-copy">Body copy</h2>
+        <p>BYU's global default <code>font-size</code> is <strong>15px</strong>, with a <code>line-height</code> of <strong>20px</strong>. This is applied to the <code>&lt;body&gt;</code> and all paragraphs. In addition, <code>&lt;p&gt;</code> (paragraphs) receive a bottom margin of half their line-height (10px by default).</p>
+        <div class="bs-docs-example">
+          <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+          <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+        </div>
+        <pre class="prettyprint">&lt;p&gt;...&lt;/p&gt;</pre>
+        <h3>Lead body copy</h3>
+        <p>Make a paragraph stand out by adding <code>.lead</code>.</p>
+        <div class="bs-docs-example">
+          <p class="lead">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+        </div>
+        <pre class="prettyprint">&lt;p class="lead"&gt;...&lt;/p&gt;</pre>
+        <hr class="bs-docs-separator">
+        <h2 id="extras">Extras</h2>
+        <h3>Alignment classes</h3>
+        <p>Easily realign text to components with text alignment classes.</p>
+        <div class="bs-docs-example">
+          <p class="text-left">Left aligned text.</p>
+          <p class="text-center">Center aligned text.</p>
+          <p class="text-right">Right aligned text.</p>
+        </div>
+        <pre class="prettyprint">&lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;</pre>
+        <h3>Emphasis classes</h3>
+        <p>Convey meaning through color with a handful of emphasis utility classes.</p>
+        <div class="bs-docs-example">
+          <p class="muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+          <p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+          <p class="text-error">Donec ullamcorper nulla non metus auctor fringilla.</p>
+          <p class="text-info">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.</p>
+          <p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+        </div>
+        <pre class="prettyprint">&lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
+&lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+&lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
+&lt;p class="text-info"&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
+&lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;</pre>
+        <h3>Blockquote options</h3>
+        <p>Style and content changes for simple variations on a standard blockquote.</p>
+        <h4>Naming a source</h4>
+        <p>Add <code>&lt;small&gt;</code> tag for identifying the source. Wrap the name of the source work in <code>&lt;cite&gt;</code> .</p>
+        <div class="bs-docs-example">
+          <blockquote>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. </p><small>Someone famous in 
+              <cite title="Source Title">Source Title</cite></small>
+          </blockquote>
+        </div>
+        <pre class="prettyprint">&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+  &lt;small&gt;Someone famous &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
+&lt;/blockquote&gt;</pre>
+        <h4>Alternate displays</h4>
+        <p>Use <code>.pull-right</code> for a floated, right-aligned blockquote. </p>
+        <div style="overflow: hidden;" class="bs-docs-example">
+          <blockquote class="pull-right">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p><small>Someone famous in
+              <cite title="Source Title">Source Title</cite></small>
+          </blockquote>
+        </div>
+        <pre class="prettyprint">&lt;blockquote class="pull-right"&gt;
+...
+&lt;/blockquote&gt;</pre>
+        <h3>List options</h3>
+        <h4>Unstyled</h4>
+        <p>Remove the default <code>list-style</code> and left padding on list items (immediate children only).</p>
+        <div class="bs-docs-example">
+          <ul class="unstyled">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Consectetur adipiscing elit</li>
+            <li>Integer molestie lorem at massa</li>
+            <li>Facilisis in pretium nisl aliquet</li>
+            <li>Nulla volutpat aliquam velit
+              <ul>
+                <li>Phasellus iaculis neque</li>
+                <li>Purus sodales ultricies</li>
+                <li>Vestibulum laoreet porttitor sem</li>
+                <li>Ac tristique libero volutpat at</li>
+              </ul>
+            </li>
+            <li>Faucibus porta lacus fringilla vel</li>
+            <li>Aenean sit amet erat nunc</li>
+            <li>Eget porttitor lorem</li>
+          </ul>
+        </div>
+        <pre class="prettyprint">&lt;ul class="unstyled"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</pre>
+        <h4>Inline</h4>
+        <p>Place all list items on a single line with <code>inline-block</code> and some light padding.</p>
+        <div class="bs-docs-example">
+          <ul class="inline">
+            <li>Lorem ipsum</li>
+            <li>Phasellus iaculis</li>
+            <li>Nulla volutpat</li>
+          </ul>
+        </div>
+        <pre class="prettyprint">&lt;ul class="inline"&gt;
+  &lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;</pre>
+        <h4>Horizontal description list</h4>
+        <p>Make terms and descriptions in <code>&lt;dl&gt;</code> line up side-by-side.</p>
+        <div class="bs-docs-example">
+          <dl class="dl-horizontal">
+            <dt>Description lists</dt>
+            <dd>A description list is perfect for defining terms.</dd>
+            <dt>Euismod</dt>
+            <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+            <dd>Donec id elit non mi porta gravida at eget metus.</dd>
+            <dt>Malesuada porta</dt>
+            <dd>Etiam porta sem malesuada magna mollis euismod.</dd>
+            <dt>Felis euismod semper eget lacinia</dt>
+            <dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+          </dl>
+        </div>
+        <pre class="prettyprint">&lt;dl class="dl-horizontal"&gt;
+  &lt;dt&gt;...&lt;/dt&gt;
+  &lt;dd&gt;...&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+        <p><span class="label text-warning">Heads up! </span>Horizontal description lists will truncate terms that are too long to fit in the left column fix <code>text-overflow</code> . In narrower viewports, they will change to the default stacked layout.</p>
+      </section>
     </div>
     <div class="nav-container">
       <!-- Primary Nav-->
@@ -941,7 +806,9 @@
           <!--a#byu(href='http://byu.edu/') Brigham Young University--><a id="byui" href="http://byui.edu/" class="ir">BYU-Idaho</a><a id="byuh" href="http://byuh.edu/" class="ir">BYU-Hawaii</a><a id="ldsbc" href="http://www.ldsbc.edu/" class="ir">LDS Business College</a><a id="lds" href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>
         </div>
       </div>
-    </footer><!--CONTENT END-->
+    </footer>
+    <!--CONTENT END
+    -->
     <script>
       /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
       var _gaq=[['_setAccount', pageSettings.google_analytics_key],['_trackPageview']];

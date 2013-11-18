@@ -4,7 +4,7 @@ block pageTitle
 	| BYU - Page Elements
 
 block heading
-	| Elements
+	| Style Guide
 
 block byulink
 	| Brigham Young University
@@ -18,9 +18,7 @@ block breadcrumb
 
 block content
 
-	//
-		Add the Breadcrumb Code Here
-	section#bootstrap
+	section#frameworks
 		.page-header
 			h1 Built-in frameworks
 		h2 Bootstrap Styles
@@ -33,6 +31,8 @@ block content
 			code variables.scss
 			|   file with colors, fonts, and sizes that are customized and compatible with BYU's style.
 		hr.bs-docs-separator
+
+
 		h2 FontAwesome Icons
 		p
 			| We've also included a 
@@ -41,96 +41,85 @@ block content
 		p
 			| The latest and greatest in icon design is vectors; specifically, icon fonts. They're scalable, colorable, and completely accessible. Yes, they're that good. Happy designing. Some examples below.
 		p
-			a(href='http://fortawesome.github.com/Font-Awesome/') Check out the full icon set and usage guidelines.
+			a(href='http://fortawesome.github.io/Font-Awesome/icons/') Check out the full icon set 
+			| (369 icons) and the useful 
+			a(href='http://fortawesome.github.io/Font-Awesome/examples/') usage guidelines.
 		.bs-docs-example
 			ul.unstyled
 				li
-					i.icon-bolt
-					|  icon-bolt
+					i.fa.fa-fw.fa-bars
+					|  fa-bars
 				li
-					i.icon-calendar
-					|  icon-calendar
+					i.fa.fa-fw.fa-bolt
+					|  fa-bolt
 				li
-					i.icon-cog
-					|  icon-cog
+					i.fa.fa-fw.fa-calendar
+					|  fa-calendar
 				li
-					i.icon-comment
-					|  icon-comment
+					i.fa.fa-fw.fa-check
+					|  fa-check
 				li
-					i.icon-envelope
-					|  icon-envelope
+					i.fa.fa-fw.fa-cog
+					|  fa-cog
 				li
-					i.icon-flag
-					|  icon-flag
+					i.fa.fa-fw.fa-comment
+					|  fa-comment
 				li
-					i.icon-heart
-					|  icon-heart
+					i.fa.fa-fw.fa-lock
+					|  fa-lock
 				li
-					i.icon-home
-					|  icon-home
+					i.fa.fa-fw.fa-refresh
+					|  fa-refresh
 				li
-					i.icon-lock
-					|  icon-lock
+					i.fa.fa-fw.fa-search
+					|  fa-search
 				li
-					i.icon-magic
-					|  icon-magic
+					i.fa.fa-fw.fa-trash-o
+					|  fa-trash-o
 				li
-					i.icon-ok
-					|  icon-ok
+					i.fa.fa-fw.fa-caret-down
+					|  fa-caret-down
 				li
-					i.icon-pencil
-					|  icon-pencil
-				li
-					i.icon-print
-					|  icon-print
-				li
-					i.icon-refresh
-					|  icon-refresh
-				li
-					i.icon-remove
-					|  icon-remove
-				li
-					i.icon-search
-					|  icon-search
-				li
-					i.icon-shopping-cart
-					|  icon-shopping-cart
-				li
-					i.icon-trash
-					|  icon-trash
-				li
-					i.icon-caret-down
-					|  icon-caret-down
-				li
-					i.icon-caret-right
-					|  icon-caret-right
-		pre.prettyprint &lt;i class="icon-bolt"&gt;&lt;/i&gt; Expeliarmus!
-			&lt;i class="icon-calendar"&gt;&lt;/i&gt; Calendar
-			&lt;i class="icon-cog"&gt;&lt;/i&gt; Settings
-			&lt;i class="icon-comment"&gt;&lt;/i&gt; Say something!
+					i.fa.fa-fw.fa-caret-right
+					|  fa-caret-right
+		pre.prettyprint &lt;i class="fa fa-bolt"&gt;&lt;/i&gt; Expeliarmus!
+			&lt;i class="fa fa-calendar"&gt;&lt;/i&gt; Calendar
+			&lt;i class="fa fa-cog"&gt;&lt;/i&gt; Settings
+			&lt;i class="fa fa-comment"&gt;&lt;/i&gt; Say something!
 			...
 		.bs-docs-example
 			ul.unstyled
 				li
-					i.icon-search
+					i.fa.fa-search
 					|  [standard size]
 				li
-					i.icon-search.icon-large
-					|  icon-large
+					i.fa.fa-search.fa-lg
+					|  fa-lg
 				li
-					i.icon-search.icon-2x
-					|  icon-2x
+					i.fa.fa-search.fa-2x
+					|  fa-2x
 				li
-					i.icon-search.icon-3x
-					|  icon-3x
-		pre.prettyprint &lt;i class="icon-search"&gt;&lt;/i&gt;
-			&lt;i class="icon-search icon-large"&gt;&lt;/i&gt;
-			&lt;i class="icon-search icon-2x"&gt;&lt;/i&gt;
-			&lt;i class="icon-search icon-3x"&gt;&lt;/i&gt;
+					i.fa.fa-search.fa-3x
+					|  fa-3x
+		pre.prettyprint &lt;i class="fa fa-search"&gt;&lt;/i&gt;
+			&lt;i class="fa fa-search fa-lg"&gt;&lt;/i&gt;
+			&lt;i class="fa fa-search fa-2x"&gt;&lt;/i&gt;
+			&lt;i class="fa fa-search fa-3x"&gt;&lt;/i&gt;
+			...
+		.bs-docs-example
+			ul.unstyled
+				li
+					i.fa.fa-spin.fa-refresh
+					|  Spinning icon
+		pre.prettyprint &lt;i class="fa fa-spin fa-cog"&gt;&lt;/i&gt;
+			&lt;i class="fa fa-spin fa-spinner"&gt;&lt;/i&gt;
+			&lt;i class="fa fa-spin fa-refresh"&gt;&lt;/i&gt;
 			...
 
-		hr.bs-docs-separator
 
+
+
+		hr.bs-docs-separator
 		h2 HTML5 Boilerplate (h5bp)
 
 		p
@@ -191,404 +180,13 @@ block content
 		h4: code .clearfix
 		p The ever-useful clearfix available as a global class. Apply to any container that has floated elements which shouldn't extend outside said container.
 
-	hr.bs-docs-separator
 
-	section#typography
-		.page-header
-			h1 Typography
-		h2#headings Headings
-		p
-			| All HTML headings, 
-			code &lt;h1&gt;
-			|  through 
-			code &lt;h6&gt;
-			|  are styled.
-		.bs-docs-example
-			h1 h1. Heading 1
-			h2 h2. Heading 2
-			h3 h3. Heading 3
-			h4 h4. Heading 4
-			h5 h5. Heading 5
-			h6 h6. Heading 6
 
-		.bs-docs-example
-			h1 h1. Heading 1
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			h2 h2. Heading 2
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			h3 h3. Heading 3
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			h4 h4. Heading 4
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			h5 h5. Heading 5
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-			h6 h6. Heading 6
-			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
-		hr.bs-docs-separator
-		h2#body-copy Body copy
-		p
-			| BYU's global default 
-			code font-size
-			|  is 
-			strong 15px
-			| , with a 
-			code line-height
-			|  of 
-			strong 20px
-			| . This is applied to the 
-			code &lt;body&gt;
-			|  and all paragraphs. In addition, 
-			code &lt;p&gt;
-			|  (paragraphs) receive a bottom margin of half their line-height (10px by default).
-		.bs-docs-example
-			p
-				| Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-			p
-				| Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
-			p
-				| Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
-		pre.prettyprint &lt;p&gt;...&lt;/p&gt;
-
-		h3 Lead body copy
-		p
-			| Make a paragraph stand out by adding 
-			code .lead
-			| .
-		.bs-docs-example
-			p.lead
-				| Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
-		pre.prettyprint &lt;p class="lead"&gt;...&lt;/p&gt;
-
-		hr.bs-docs-separator
-		h2#emphasis Emphasis
-		p Make use of HTML's default emphasis tags with lightweight styles.
-		h3
-			code &lt;small&gt;
-		p
-			| For de-emphasizing inline or blocks of text, small use the 
-			code &lt;small&gt;
-			|   tag.
-		.bs-docs-example
-			p
-				small This line of text is meant to be treated as fine print.
-		pre.prettyprint &lt;p&gt;
-			|   &lt;small&gt;This line of text is meant to be treated as fine print.&lt;/small&gt;
-			&lt;/p&gt;
-
-		h3 Bold
-		p For emphasizing a snippet of text with a heavier font-weight.
-		.bs-docs-example
-			p
-				| The following snippet of text is 
-				strong rendered as bold text
-				| .
-		pre.prettyprint &lt;strong&gt;rendered as bold text&lt;/strong&gt;
-
-		h3 Italics
-		p For emphasizing a snippet of text with italics.
-		.bs-docs-example
-			p
-				| The following snippet of text is 
-				em rendered as italicized text
-				| .
-		pre.prettyprint &lt;em&gt;rendered as italicized text&lt;/em&gt;
-
-		p
-			span.label.label-info Heads up!
-			|  Feel free to use 
-			code &lt;b&gt;
-			|  and 
-			code &lt;i&gt;
-			|  in HTML5. 
-			code &lt;b&gt;
-			|  is meant to highlight words or phrases without conveying additional importance while 
-			code &lt;i&gt;
-			|  is mostly for voice, technical terms, etc. 
-		h3 Alignment classes
-		p Easily realign text to components with text alignment classes.
-		.bs-docs-example
-			p.text-left Left aligned text.
-			p.text-center Center aligned text.
-			p.text-right Right aligned text.
-		pre.prettyprint &lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
-			&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
-			&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
-
-		h3 Emphasis classes
-		p Convey meaning through color with a handful of emphasis utility classes.
-		.bs-docs-example
-			p.muted Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
-			p.text-warning Etiam porta sem malesuada magna mollis euismod.
-			p.text-error Donec ullamcorper nulla non metus auctor fringilla.
-			p.text-info Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
-			p.text-success Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-		pre.prettyprint &lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
-			&lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
-			&lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
-			&lt;p class="text-info"&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
-			&lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
-
-		hr.bs-docs-separator
-		h2#abbreviations Abbreviations
-		p
-			| Stylized implementation of HTML's 
-			code &lt;abbr&gt;
-			|  element for abbreviations and acronyms to show the expanded version on hover. Abbreviations with a 
-			code title
-			|  attribute have a light dotted bottom border and a help cursor on hover, providing additional context on hover.
-		h3
-			code &lt;abbr&gt;
-		p
-			| For expanded text on long hover of an abbreviation, include the 
-			code title
-			|  attribute.
-		.bs-docs-example
-			p
-				| An abbreviation of the word attribute is 
-				abbr(title='attribute') attr
-				| .
-		pre.prettyprint &lt;abbr title="attribute"&gt;attr&lt;/abbr&gt;
-
-		h3
-			code &lt;abbr class="initialism"&gt;
-		p
-			| Add 
-			code .initialism
-			|  to an abbreviation for a slightly smaller font-size. 
-		.bs-docs-example
-			p
-				abbr.initialism(title='HyperText Markup Language') HTML
-				|  is the best thing since sliced bread.
-		pre.prettyprint &lt;abbr title="HyperText Markup Language" class="initialism"&gt;HTML&lt;/abbr&gt;...
-
-		hr.bs-docs-separator
-		h2#addresses Addresses
-		p Present contact information for the nearest ancestor or the entire body of work.
-		h3
-			code &lt;address&gt;
-		p
-			| Preserve formatting by ending all lines with 
-			code &lt;br&gt;
-			|  . 
-		.bs-docs-example
-			address
-				strong Twitter, Inc.
-				br
-				| 795 Folsom Ave, Suite 600
-				br
-				| San Francisco, CA 94107
-				br
-				abbr(title='Phone') P:
-				| (123) 456-7890
-			address
-				strong Full Name
-				br
-				a(href='mailto:#') first.last@example.com
-		pre.prettyprint &lt;address&gt;
-			|   &lt;strong&gt;Twitter, Inc.&lt;/strong&gt;&lt;br&gt;
-			|   795 Folsom Ave, Suite 600&lt;br&gt;
-			|   San Francisco, CA 94107&lt;br&gt;
-			|   &lt;abbr title="Phone"&gt;P:&lt;/abbr&gt; (123) 456-7890
-			| &lt;/address&gt;&nbsp;
-			|
-			| &lt;address&gt;
-			|   &lt;strong&gt;Full Name&lt;/strong&gt;&lt;br&gt;
-			|   &lt;a href="mailto:#"&gt;first.last@example.com&lt;/a&gt;
-			| &lt;/address&gt;
-
-		hr.bs-docs-separator
-		h2#blockquotes Blockquotes
-		p For quoting blocks of content from another source within your document.
-		h3 Default blockquote
-		p
-			| Wrap 
-			code &lt;blockquote&gt;
-			|  around any 
-			abbr(title='HyperText Markup Language') HTML
-			| as the quote. For straight quotes we recommend a 
-			code &lt;p&gt;
-			|  . 
-		.bs-docs-example
-			blockquote
-				p
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-		pre.prettyprint &lt;blockquote&gt;
-			|   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-			| &lt;/blockquote&gt;
-
-		h3 Blockquote options
-		p Style and content changes for simple variations on a standard blockquote.
-		h4 Naming a source
-		p
-			| Add 
-			code &lt;small&gt;
-			|  tag for identifying the source. Wrap the name of the source work in 
-			code &lt;cite&gt;
-			|  .
-		.bs-docs-example
-			blockquote
-				p
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. 
-				small
-					| Someone famous in 
-					cite(title='Source Title') Source Title
-		pre.prettyprint &lt;blockquote&gt;
-			|   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
-			|   &lt;small&gt;Someone famous &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
-			| &lt;/blockquote&gt;
-
-		h4 Alternate displays
-		p
-			| Use 
-			code .pull-right
-			|  for a floated, right-aligned blockquote. 
-		.bs-docs-example(style='overflow: hidden;')
-			blockquote.pull-right
-				p
-					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-				small
-					| Someone famous in
-					cite(title='Source Title') Source Title
-		pre.prettyprint &lt;blockquote class="pull-right"&gt;
-			...
-			&lt;/blockquote&gt;
-
-		hr.bs-docs-separator
-		//
-			Lists
-		h2#lists Lists
-		h3 Unordered
-		p
-			| A list of items in which the order does 
-			em not
-			|  explicitly matter.
-		.bs-docs-example
-			ul
-				li Lorem ipsum dolor sit amet
-				li Consectetur adipiscing elit
-				li Integer molestie lorem at massa
-				li Facilisis in pretium nisl aliquet
-				li
-					| Nulla volutpat aliquam velit
-					ul
-						li Phasellus iaculis neque
-						li Purus sodales ultricies
-						li Vestibulum laoreet porttitor sem
-						li Ac tristique libero volutpat at
-				li Faucibus porta lacus fringilla vel
-				li Aenean sit amet erat nunc
-				li Eget porttitor lorem
-		pre.prettyprint &lt;ul&gt;
-			|   &lt;li&gt;...&lt;/li&gt;
-			| &lt;/ul&gt;
-
-		h3 Ordered
-		p
-			| A list of items in which the order 
-			em does
-			|  explicitly matter.
-		.bs-docs-example
-			ol
-				li Lorem ipsum dolor sit amet
-				li Consectetur adipiscing elit
-				li Integer molestie lorem at massa
-				li Facilisis in pretium nisl aliquet
-				li Nulla volutpat aliquam velit
-				li Faucibus porta lacus fringilla vel
-				li Aenean sit amet erat nunc
-				li Eget porttitor lorem
-		pre.prettyprint &lt;ol&gt;
-			|   &lt;li&gt;...&lt;/li&gt;
-			| &lt;/ol&gt;
-
-		h3 Unstyled
-		p
-			| Remove the default 
-			code list-style
-			|  and left padding on list items (immediate children only).
-		.bs-docs-example
-			ul.unstyled
-				li Lorem ipsum dolor sit amet
-				li Consectetur adipiscing elit
-				li Integer molestie lorem at massa
-				li Facilisis in pretium nisl aliquet
-				li
-					| Nulla volutpat aliquam velit
-					ul
-						li Phasellus iaculis neque
-						li Purus sodales ultricies
-						li Vestibulum laoreet porttitor sem
-						li Ac tristique libero volutpat at
-				li Faucibus porta lacus fringilla vel
-				li Aenean sit amet erat nunc
-				li Eget porttitor lorem
-		pre.prettyprint &lt;ul class="unstyled"&gt;
-			|   &lt;li&gt;...&lt;/li&gt;
-			| &lt;/ul&gt;
-
-		h3 Inline
-		p
-			| Place all list items on a single line with 
-			code inline-block
-			|  and some light padding.
-		.bs-docs-example
-			ul.inline
-				li Lorem ipsum
-				li Phasellus iaculis
-				li Nulla volutpat
-		pre.prettyprint &lt;ul class="inline"&gt;
-			|   &lt;li&gt;...&lt;/li&gt;
-			| &lt;/ul&gt;
-
-		h3 Description (definition list)
-		p A list of terms with their associated descriptions.
-		.bs-docs-example
-			dl
-				dt Description lists
-				dd A description list is perfect for defining terms.
-				dt Euismod
-				dd Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-				dd Donec id elit non mi porta gravida at eget metus.
-				dt Malesuada porta
-				dd Etiam porta sem malesuada magna mollis euismod.
-		pre.prettyprint &lt;dl&gt;
-			|   &lt;dt&gt;...&lt;/dt&gt;
-			|   &lt;dd&gt;...&lt;/dd&gt;
-			| &lt;/dl&gt;
-
-		h4 Horizontal description
-		p
-			| Make terms and descriptions in 
-			code &lt;dl&gt;
-			|  line up side-by-side.
-		.bs-docs-example
-			dl.dl-horizontal
-				dt Description lists
-				dd A description list is perfect for defining terms.
-				dt Euismod
-				dd Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-				dd Donec id elit non mi porta gravida at eget metus.
-				dt Malesuada porta
-				dd Etiam porta sem malesuada magna mollis euismod.
-				dt Felis euismod semper eget lacinia
-				dd
-					| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-		pre.prettyprint &lt;dl class="dl-horizontal"&gt;
-			|   &lt;dt&gt;...&lt;/dt&gt;
-			|   &lt;dd&gt;...&lt;/dd&gt;
-			| &lt;/dl&gt;
-
-		p
-			span.label.label-info Heads up!
-			| Horizontal description lists will truncate terms that are too long to fit in the left column fix 
-			code text-overflow
-			|  . In narrower viewports, they will change to the default stacked layout.
-	hr.bs-docs-separator
+	//hr.bs-docs-separator
 	section#buttons
 		.page-header
 			h1 Buttons
-		h2 Default buttons
 		p
 			| Button styles can be applied to anything with the 
 			code .btn
@@ -690,16 +288,12 @@ block content
 				button.btn.btn-large.btn-block.btn-primary(type='button') Block level button
 				button.btn.btn-large.btn-block(type='button') Block level button
 		h2 Disabled state
-		p Make buttons look unclickable by fading them back 50%.
-		h3 Anchor element
 		p
-			| Add the 
+			| Make buttons look unclickable by fading them back 50%. Just add the 
 			code .disabled
-			|  class to 
-			code &lt;a&gt;
-			|  buttons.
+			|  class.
 		p.bs-docs-example
-			a.btn.btn-large.btn-primary.disabled(href='#') Primary link
+			a.btn.btn-large.btn-primary.disabled(href='#') Primary link 
 			a.btn.btn-large.disabled(href='#') Link
 		p
 			span.label.label-info Heads up!
@@ -708,16 +302,6 @@ block content
 			|  as a utility class here, similar to the common 
 			code .active
 			|  class, so no prefix is required. Also, this class is only for aesthetic; you must use custom JavaScript to disable links here.
-		h3 Button element
-		p
-			| Add the 
-			code disabled
-			|  attribute to 
-			code &lt;button&gt;
-			|  buttons.
-		p.bs-docs-example
-			button.btn.btn-large.btn-primary.disabled(type='button', disabled='disabled') Primary button
-			button.btn.btn-large(type='button', disabled='') Button
 		h2 One class, multiple tags
 		p
 			| Use the 
@@ -737,11 +321,16 @@ block content
 		p
 			| As a best practice, try to match the element for your context to ensure matching cross-browser rendering. If you have an 
 			code input
-			|  , use an 
+			| , use an 
 			code &lt;input type="submit"&gt;
 			|  for your button.
-	hr.bs-docs-separator
-	.container.showgrid
+
+
+
+
+
+	// hr.bs-docs-separator
+	// .container.showgrid
 		h1 HTML elements
 		h2
 			| A test for all the HTML elements
@@ -935,7 +524,7 @@ block content
 					| one line of text
 					| even though the code has newlines, spaces, and tabs.
 					|  It should be the same size as &lt;p&gt; text.
-	table(border='1', cellpadding='1', cellspacing='1', style='width: 500px;')
+	// table(border='1', cellpadding='1', cellspacing='1', style='width: 500px;')
 		thead
 			tr
 				th(scope='row')
@@ -986,4 +575,208 @@ block content
 				td
 					| 16
 
+
+
+
+	// hr.bs-docs-separator
+	section#typography
+		.page-header
+			h1 Typography
+		h2#headings Headings
+		p
+			| All HTML headings, 
+			code &lt;h1&gt;
+			|  through 
+			code &lt;h6&gt;
+			|  are styled.
+		.bs-docs-example
+			h1 h1. Heading 1
+			h2 h2. Heading 2
+			h3 h3. Heading 3
+			h4 h4. Heading 4
+			h5 h5. Heading 5
+			h6 h6. Heading 6
+
+		// .bs-docs-example
+			h1 h1. Heading 1
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			h2 h2. Heading 2
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			h3 h3. Heading 3
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			h4 h4. Heading 4
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			h5 h5. Heading 5
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			h6 h6. Heading 6
+			p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+		hr.bs-docs-separator
+		h2#body-copy Body copy
+		p
+			| BYU's global default 
+			code font-size
+			|  is 
+			strong 15px
+			| , with a 
+			code line-height
+			|  of 
+			strong 20px
+			| . This is applied to the 
+			code &lt;body&gt;
+			|  and all paragraphs. In addition, 
+			code &lt;p&gt;
+			|  (paragraphs) receive a bottom margin of half their line-height (10px by default).
+		.bs-docs-example
+			p
+				| Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+			p
+				| Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.
+			p
+				| Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+		pre.prettyprint &lt;p&gt;...&lt;/p&gt;
+
+		h3 Lead body copy
+		p
+			| Make a paragraph stand out by adding 
+			code .lead
+			| .
+		.bs-docs-example
+			p.lead
+				| Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.
+		pre.prettyprint &lt;p class="lead"&gt;...&lt;/p&gt;
+
+		hr.bs-docs-separator
+		h2#extras Extras
+
+		h3 Alignment classes
+		p Easily realign text to components with text alignment classes.
+		.bs-docs-example
+			p.text-left Left aligned text.
+			p.text-center Center aligned text.
+			p.text-right Right aligned text.
+		pre.prettyprint &lt;p class="text-left"&gt;Left aligned text.&lt;/p&gt;
+			&lt;p class="text-center"&gt;Center aligned text.&lt;/p&gt;
+			&lt;p class="text-right"&gt;Right aligned text.&lt;/p&gt;
+
+		h3 Emphasis classes
+		p Convey meaning through color with a handful of emphasis utility classes.
+		.bs-docs-example
+			p.muted Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.
+			p.text-warning Etiam porta sem malesuada magna mollis euismod.
+			p.text-error Donec ullamcorper nulla non metus auctor fringilla.
+			p.text-info Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.
+			p.text-success Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+		pre.prettyprint &lt;p class="muted"&gt;Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.&lt;/p&gt;
+			&lt;p class="text-warning"&gt;Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+			&lt;p class="text-error"&gt;Donec ullamcorper nulla non metus auctor fringilla.&lt;/p&gt;
+			&lt;p class="text-info"&gt;Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis.&lt;/p&gt;
+			&lt;p class="text-success"&gt;Duis mollis, est non commodo luctus, nisi erat porttitor ligula.&lt;/p&gt;
+
+
+		h3 Blockquote options
+		p Style and content changes for simple variations on a standard blockquote.
+		h4 Naming a source
+		p
+			| Add 
+			code &lt;small&gt;
+			|  tag for identifying the source. Wrap the name of the source work in 
+			code &lt;cite&gt;
+			|  .
+		.bs-docs-example
+			blockquote
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. 
+				small
+					| Someone famous in 
+					cite(title='Source Title') Source Title
+		pre.prettyprint &lt;blockquote&gt;
+			|   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+			|   &lt;small&gt;Someone famous &lt;cite title="Source Title"&gt;Source Title&lt;/cite&gt;&lt;/small&gt;
+			| &lt;/blockquote&gt;
+
+		h4 Alternate displays
+		p
+			| Use 
+			code .pull-right
+			|  for a floated, right-aligned blockquote. 
+		.bs-docs-example(style='overflow: hidden;')
+			blockquote.pull-right
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+				small
+					| Someone famous in
+					cite(title='Source Title') Source Title
+		pre.prettyprint &lt;blockquote class="pull-right"&gt;
+			...
+			&lt;/blockquote&gt;
+
+		h3 List options
+
+		h4 Unstyled
+		p
+			| Remove the default 
+			code list-style
+			|  and left padding on list items (immediate children only).
+		.bs-docs-example
+			ul.unstyled
+				li Lorem ipsum dolor sit amet
+				li Consectetur adipiscing elit
+				li Integer molestie lorem at massa
+				li Facilisis in pretium nisl aliquet
+				li
+					| Nulla volutpat aliquam velit
+					ul
+						li Phasellus iaculis neque
+						li Purus sodales ultricies
+						li Vestibulum laoreet porttitor sem
+						li Ac tristique libero volutpat at
+				li Faucibus porta lacus fringilla vel
+				li Aenean sit amet erat nunc
+				li Eget porttitor lorem
+		pre.prettyprint &lt;ul class="unstyled"&gt;
+			|   &lt;li&gt;...&lt;/li&gt;
+			| &lt;/ul&gt;
+
+		h4 Inline
+		p
+			| Place all list items on a single line with 
+			code inline-block
+			|  and some light padding.
+		.bs-docs-example
+			ul.inline
+				li Lorem ipsum
+				li Phasellus iaculis
+				li Nulla volutpat
+		pre.prettyprint &lt;ul class="inline"&gt;
+			|   &lt;li&gt;...&lt;/li&gt;
+			| &lt;/ul&gt;
+
+		h4 Horizontal description list
+		p
+			| Make terms and descriptions in 
+			code &lt;dl&gt;
+			|  line up side-by-side.
+		.bs-docs-example
+			dl.dl-horizontal
+				dt Description lists
+				dd A description list is perfect for defining terms.
+				dt Euismod
+				dd Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
+				dd Donec id elit non mi porta gravida at eget metus.
+				dt Malesuada porta
+				dd Etiam porta sem malesuada magna mollis euismod.
+				dt Felis euismod semper eget lacinia
+				dd
+					| Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+		pre.prettyprint &lt;dl class="dl-horizontal"&gt;
+			|   &lt;dt&gt;...&lt;/dt&gt;
+			|   &lt;dd&gt;...&lt;/dd&gt;
+			| &lt;/dl&gt;
+
+		p
+			span.label.text-warning Heads up! 
+			| Horizontal description lists will truncate terms that are too long to fit in the left column fix 
+			code text-overflow
+			|  . In narrower viewports, they will change to the default stacked layout.
 

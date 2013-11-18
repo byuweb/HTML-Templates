@@ -37,8 +37,10 @@
     </script>
     <script src="js/init.js"></script>
   </head>
-  <body><!--[if lt IE 7]>
-    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p><![endif]-->
+  <body>
+    <!--[if lt IE 7]>
+    <p class="chromeframe">You are using an<strong>outdated</strong>browser. Please<a href="http://browsehappy.com/">upgrade your browser</a>or<a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a>to improve your experience.</p>
+    <![endif]-->
     <header id="main-header" role="banner">
       <div id="header-top" class="wrapper">
         <div id="logo">
@@ -49,9 +51,11 @@
       </div>
     </header>
     <div id="search-menu">
-      <div id="search-container" role="search"><!--
+      <div id="search-container" role="search">
+        <!--
         The default search form, linking to BYU's search page. If a user does not have javascript enabled, they'll get this form.
-        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).-->
+        If they have javascript, this content will be replaced with Google's custom search (from the script at the bottom of the page).
+        -->
         <form id="basic-search" action="http://home.byu.edu/home/search" role="form">
           <label for="search" class="visuallyhidden">Search</label>
           <input id="search" type="search" name="search">
@@ -67,15 +71,15 @@
       <!-- Breadcrumb-->
       <ul class="breadcrumb">
         <li>
-          <div class="dropdown"><a href="" data-toggle="dropdown" class="home dropdown-toggle needsclick"><i class="icon-home icon-large"></i><span class="visuallyhidden">Home</span><i class="icon-caret-down"></i></a>
+          <div class="dropdown"><a href="" data-toggle="dropdown" class="home dropdown-toggle needsclick"><i class="fa fa-home fa-lg"></i><span class="visuallyhidden">Home</span><i class="fa fa-caret-down"></i></a>
             <ul class="dropdown-menu">
               <li><a href="www.byu.edu">BYU Home</a></li>
               <li><a href="#">Organization Home</a></li>
               <li><a href="#">Two Pages Above</a></li>
-            </ul><i class="divider icon-angle-right"></i>
+            </ul><i class="divider fa fa-angle-right"></i>
           </div>
         </li>
-        <li><a href="#">One page above</a><i class="divider icon-angle-right"></i></li>
+        <li><a href="#">One page above</a><i class="divider fa fa-angle-right"></i></li>
         <li class="active">Current Page</li>
       </ul>
       <header>
@@ -293,7 +297,9 @@
           <!--a#byu(href='http://byu.edu/') Brigham Young University--><a id="byui" href="http://byui.edu/" class="ir">BYU-Idaho</a><a id="byuh" href="http://byuh.edu/" class="ir">BYU-Hawaii</a><a id="ldsbc" href="http://www.ldsbc.edu/" class="ir">LDS Business College</a><a id="lds" href="http://lds.org/">The Church of Jesus Christ of Latter-day Saints</a>
         </div>
       </div>
-    </footer><!--CONTENT END-->
+    </footer>
+    <!--CONTENT END
+    -->
     <script>
       /* Google Analytics: change UA-XXXXX-X to be your site's ID. */
       var _gaq=[['_setAccount', pageSettings.google_analytics_key],['_trackPageview']];
