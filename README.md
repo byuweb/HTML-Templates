@@ -2,9 +2,9 @@
 
 **To download the templates, go to the [release page](http://github.com/byuweb/HTML-Templates/releases).**
 
-**For developers who want to use SCSS, Jade, and Grunt to compile pages, [see the developer documentation page](http://github.com/byuweb/HTML-Templates/wiki/Documentation-for-Developers).**
-
 **For examples of working pages, [visit the demo pages](http://byuweb.github.io/HTML-Templates/), and especially take a look at the [style guide page](http://byuweb.github.io/HTML-Templates/elements.html), which outlines some of the useful frameworks and features included in these templates.**
+
+**For developers who want to use SCSS, Jade, and Grunt to compile pages, [see the developer documentation page](http://github.com/byuweb/HTML-Templates/wiki/Documentation-for-Developers).**
 
 Thank you for downloading BYU’s responsive HTML templates. This gives you a set of static pages that you can modify and copy to fill out your website. If you wish to modify styles, please add your own style sheet rather than edit style sheets in the template. This will protect you from going back and editing everything when the templates are updated or corrected.
 Please be aware that we put the content before the nav in our code.
