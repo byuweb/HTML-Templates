@@ -1,0 +1,45 @@
+
+$sans-font-stack: "Thonburi", "DroidSans", "Droid Sans", "sans-serif", "Lucida Grande","Lucida Sans Unicode","Lucida Sans", Helvetica,Arial,sans-serif;
+$serif-font-stack: "Palatino", "DroidSerif", "Droid Serif", Georgia, serif;
+
+
+/*** Type ***/
+
+$baseSize:16;
+$fontSize:13;
+$lineHeight:18;
+
+/* Make this the same color as the bottom footer */
+html {
+  background-color: $brown4;
+}
+body {
+  background-color: #fff;
+}
+
+body, button, input, select, textarea {
+  color: #444;
+  font-family: $sans-font-stack;
+  font-size:$fontSize + px;
+  line-height:$lineHeight + px;
+  -webkit-text-size-adjust:100%; }
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: $serif-font-stack;
+  margin: 10px 0; 
+  line-height:1.2;
+}
+h2, h3, h4, h5, h6 { color: #444; }
+h1 { font-size:    2em; margin: 20px 0 10px; line-height:1.1;  } // 28px
+h2 { font-size: 1.65em; margin: 15px 0 10px; line-height:1.1; } // 23.1px
+h3 { font-size: 1.25em; } // 17.5px
+h4 { font-size:  1.1em; } // 15.4px
+h5 { font-size:    1em; } // 14px
+h6 { font-size:   .9em; } // 12.6px
+p, pre { margin: 10px 0; }
+
+code {color:#d14}
+
+a {
+  @include transition( background .1s ease );
+}

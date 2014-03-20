@@ -8,7 +8,7 @@ images_dir = "img"
 javascripts_dir = "js"
 fonts_dir = "font"
 
-output_style = :compressed
+output_style = :compact
 # sass_options = {:debug_info => true}
 
 # To enable relative paths to assets via compass helper functions. Uncomment:

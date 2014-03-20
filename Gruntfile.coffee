@@ -69,7 +69,7 @@ module.exports = (grunt) ->
 
 		sass:
 			options:
-				style: 'compressed'
+				style: 'compact'
 				compass: 'config.rb'
 				#debugInfo: true
 				trace: true

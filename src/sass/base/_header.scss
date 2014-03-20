@@ -1,0 +1,83 @@
+/** Positioning **/
+#main-header, #search-menu, #content, #page-footer, .nav-container {
+  position: relative;
+}
+
+
+
+
+/*** Header ***/
+
+#main-header {
+  background-color: $blue2;
+  border-bottom:1px solid $blue2;
+}
+
+
+#header-top {
+  position: relative;
+  h1 {
+    font-size: 2.2em;
+    margin: 0 5% .25em;
+    a { color: #fff; }
+  }
+  a.sign-in {
+    position: absolute;
+    top: .35em;
+	right:5%;
+  }
+}
+
+#logo, #byu-bar {
+  padding:.35em 0 .45em;
+
+  a.byu, a.byulink {
+    @include ir();
+    display: inline-block;
+    height: 26px;
+    width: 70px;
+    background: transparent url($asset-base + 'img/byu-logo-header.png') 0px 0px no-repeat;
+    .svg & {
+      background-image: url($asset-base + 'img/byu-logo-header.svg');
+    }
+  }
+
+  a.parentlink {
+    text-transform: uppercase;
+    font-size: 14px;
+    display: inline-block;
+    padding: 6px 3px 2px;
+    color: $blue9;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    //min-height: 26px;
+    vertical-align: top;
+  }
+  h2 { 
+    margin:0;
+    margin-right: 100px; 
+    line-height: 26px;
+  }
+  a  { display:block;}
+}
+
+a.mybyu, a.sign-in, .open #search-button, #search-submit, .search-submit, .gcse-wrapper input.gsc-search-button {
+  background-color:$blue5;
+  border:none;
+  color:#fff;
+  font-weight: bold;
+  padding: 5px 18px;
+  text-decoration: none;
+  @include border-radius(14px);
+  &:hover, &:active {
+    margin: -2px;
+    background-color: $blue4;
+    border: 2px solid $blue7;
+    cursor:pointer;
+    @include border-radius(16px);
+  }
+}
+
+.menu-button {
+  display: none;
+}
