@@ -1,0 +1,72 @@
+/*** Search ***/
+
+$searchButtonWidth: 50px;
+$searchPadding: 10px;
+$sidePadding:5px;
+
+/* Search box styling for mobile */
+#search-menu {
+  width: 100%;
+  position:relative;
+  display: block;
+  background-color:$blue0;
+  border-top:   1px solid $blue3;
+  border-bottom:1px solid $blue3;
+  height: 36px;
+  padding-top: 1px;
+  padding-bottom: 4px;
+}
+
+#search-container {
+
+  textarea:hover,
+  input:hover,
+  textarea:active,
+  input:active,
+  textarea:focus,
+  input:focus {
+    outline:0px !important;
+    -webkit-appearance:none;
+  }
+
+  // Basic search container
+  #basic-search {
+    position: relative;
+    padding-right: ($searchPadding * 2) + $searchButtonWidth + $sidePadding + 2px;
+    padding-left:$sidePadding;
+    label {
+      color: #fff;
+    }
+  }
+
+  // Basic submit button
+	#search-submit {
+		background-image: url(../img/search_box_icon.png);
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		overflow: hidden;
+		text-indent: -1000px;
+		padding: 5px;
+    display: block;
+    width:$searchButtonWidth;
+    position: absolute;
+    top:0px;
+    right:$sidePadding;
+    &:hover, &:active {
+      right:$sidePadding + 2;
+    }
+	}
+
+  // Textinput fields
+  #basic-search #search, input.gsc-input {
+    margin-bottom: 0;
+    vertical-align: top;
+    @include border-radius(15px);
+    padding: 5px $searchPadding !important;
+    border: 0 !important;
+    font-size: $fontSize + px;
+    display: block;
+    width: 100%;
+  }
+
+}

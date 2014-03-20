@@ -18,6 +18,7 @@ $sidePadding:5px;
 	padding: 5px 3% 5px 75px;
 	overflow: hidden;
 	z-index: 10;
+	min-height: 42px;
 	@include box-sizing(border-box);
 }
 

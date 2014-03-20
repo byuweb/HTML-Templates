@@ -113,8 +113,8 @@ html.no-js(lang="en")
 						a#site-name(href='#', title="Change this link to your organization's home page")
 							block heading
 								| Organization Title
-
-					a.sign-in.button(href='http://home.byu.edu/home/cas') Sign in
+					block sign-in
+						a.sign-in.button(href='http://home.byu.edu/home/cas') Sign in
 
 
 
@@ -142,7 +142,8 @@ html.no-js(lang="en")
 				//-	===============
 				//-	MENU BUTTON
 				//-	===============
-				a.menu-button(href="#primary-nav") Menu
+				block menu-button
+					a.menu-button(href="#primary-nav") Menu
 
 
 

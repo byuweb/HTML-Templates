@@ -1,0 +1,42 @@
+extends _layout
+
+block head
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(name='viewport', content='width=device-width, , initial-scale=1')
+
+		title BYU Header
+
+		// Place favicon.ico and apple-touch-icon.png in the root directory
+		link(rel='shortcut icon', href='favicon.ico')
+
+		// Styles
+		link(rel='stylesheet', href='//cloud.typography.com/75214/740862/css/fonts.css')
+		link(rel='stylesheet', href='css/header-nav.css')
+
+		// Modernizr for SVG image fallbacks and script loading
+		// If you use your own Modernizr build, make sure it has SVG test and the Modernizr.load option.
+		script(src='js/modernizr.js')
+		script.
+			// Use these settings to control the default scripts in the BYU template
+			window.pageSettings = {
+				jQueryURL:      "http://home.byu.edu/home/sites/default/files/global/js/jquery-1.9.1.min.js", // Use this default, or load jQuery from somewhere else
+				jQueryVersion:  "1.9.1", // The jQuery version for fallback in case there's a problem loading jQuery
+				additionalScripts: [], // Array of strings specifying URLs for additional scripts to load
+				analytics_key:  'UA-XXXXX-X' // Insert your Google Analytics key
+			}
+		// Scripts loaded via script loader
+		script(src='js/init.js')
+
+block search-menu
+	#search-menu
+		a.menu-button(href="#primary-nav") Menu
+
+block contentwrapper
+	#content
+
+//- Block removal
+block content
+block sign-in
+block footer

@@ -1,0 +1,216 @@
+/*!
+********************************
+
+header.css
+BYU Web Community
+
+Contains normalize and basic element styles for a 
+web site, as well as a BYU  header and typography
+for any BYU-affiliated web site. Include this file 
+before your site-specific CSS. 
+
+********************************
+*/
+
+// Compass
+@import "compass";
+
+// Variables and mixins
+@import "shared/colors";
+@import "shared/mixins";
+@import "shared/variables";
+
+/*!
+
+
+
+
+
+************************
+
+Normalize
+
+ _normalize.scss
+ _h5bp.scss
+
+************************
+
+
+
+ */
+
+@import "base/normalize"; // Great place to start
+@import "base/h5bp"; // Good defaults from HTML5 Boilerplate
+//@import "base/prettify";
+
+/*!
+
+
+
+
+
+************************
+
+BYU Base styles
+
+ _basics.scss
+ _type.scss
+ _header.scss
+ _search.scss
+ _nav.scss
+ _byu-bar.scss
+
+************************
+
+
+
+ */
+@import "base/basics";
+$brown4: transparent !global; // Reset html background color
+@import "base/type";
+@import "base/header";
+@import "base/search";
+@import "base/nav";
+//@import "base/content";
+@import "responsive/byu-bar";
+
+/*!
+
+
+
+
+
+************************
+
+Twitter Bootstrap
+
+ _variables.scss
+ _mixins.scss
+ _type.scss
+ _code.scss
+ _tables.scss
+ _utilities.scss
+
+************************
+
+
+
+*/
+/*	
+	Loaded first, so it can be overrridden easily.
+	Only uncomment the stuff that you really need */
+
+// Core variables and mixins
+	@import "bootstrap/variables";
+	@import "bootstrap/mixins";
+
+// CSS Reset
+//  @import "reset";
+
+// Grid system and page structure
+//	@import "bootstrap/scaffolding";
+//	@import "bootstrap/grid";
+//	@import "bootstrap/layouts";
+
+// Base CSS
+	@import "bootstrap/type";
+	@import "bootstrap/code";
+//	@import "bootstrap/forms";
+	@import "bootstrap/tables";
+
+// Components: common
+//	@import "bootstrap/sprites";
+ //	@import "bootstrap/dropdowns";
+//	@import "bootstrap/component-animations";
+//	@import "bootstrap/close";
+
+// Components: Buttons & Alerts
+ //	@import "bootstrap/buttons";
+ //	@import "bootstrap/button-groups";
+//	@import "bootstrap/alerts"; // Note: alerts share common CSS with buttons and thus have styles in buttons
+
+// Components: Nav
+//	@import "bootstrap/navs";
+//	@import "bootstrap/navbar";
+ //	@import "bootstrap/breadcrumbs";
+//	@import "bootstrap/pagination";
+//	@import "bootstrap/pager";
+
+// Components: Popovers
+//	@import "bootstrap/modals";
+//	@import "bootstrap/tooltip";
+//	@import "bootstrap/popovers";
+
+// Components: Misc
+//	@import "bootstrap/thumbnails";
+//	@import "bootstrap/media";
+//	@import "bootstrap/labels-badges";
+//	@import "bootstrap/progress-bars";
+//	@import "bootstrap/accordion";
+//	@import "bootstrap/carousel";
+//	@import "bootstrap/hero-unit";
+
+// Utility classes
+	@import "bootstrap/utilities"; // Has to be last to override when necessary
+
+/*!
+
+
+
+
+
+************************
+
+Responsive BYU Styles
+
+ _header-footer.scss
+ _nav.scss
+ _type.scss
+ _query-larger.scss
+
+************************
+
+
+
+*/
+//@import "responsive/bootstrap-override";
+@import "responsive/header-footer";
+// @import "responsive/breadcrumb";
+@import "responsive/search";
+@import "responsive/nav";
+// @import "responsive/anythingslider";
+// @import "responsive/slider";
+// @import "responsive/calendar";
+// @import "responsive/content";
+@import "responsive/type";
+@import "responsive/query-larger";
+
+/* Make sure you can see the menu */
+#content {
+	min-height: 450px;
+	transition: all 0.2s ease;
+}
+.sideNav #content {
+	min-height: 1600px;
+}
+
+/*!
+
+
+
+
+
+************************
+
+h5bp print styles
+
+ _print.scss
+
+************************
+
+
+
+*/
+@import "responsive/print";
+
+
