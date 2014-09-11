@@ -64,7 +64,7 @@
 				// load first cloned slide #0
 				loadImg(slider, 0);
 				// load last cloned slide #6
-				loadImg(slider, slider.pages+1);
+				loadImg(slider, slider.pages-1);
 				// trigger slide complete to preload the next slide image
 				slider.$el.trigger('slide_complete', slider);
 
@@ -79,6 +79,8 @@
 			onSlideComplete: function(slider) {
 				// *** PRELOAD THE NEXT SLIDE IMAGE ***
 				loadImg(slider, slider.currentPage + 1);
+				// *** PRELOAD THE PREVIOUS SLIDE IMAGE ***
+				loadImg(slider, slider.currentPage - 2);
 			}
 
 			// Interactivity
