@@ -1,0 +1,57 @@
+// Below is the CSS from H&Co. I've checked out the network tab to see what was actually being loaded, and noted it.
+
+/*
+	Copyright (C) 2013 Hoefler & Frere-Jones 
+	
+	This software is the property of Hoefler & Frere-Jones (H&FJ).
+	Your right to access and use this software is subject to the
+	applicable License Agreement, or Terms of Service, that exists
+	between you and H&FJ. If no such agreement exists, you may not
+	access or use this software for any purpose.
+	
+	This software may only be hosted at the locations specified in
+	the applicable License Agreement or Terms of Service, and only
+	for the purposes expressly set forth therein.  You may not copy,
+	modify, convert, create derivative works from or distribute this
+	software in any way, or make it accessible to any third party,
+	without first obtaining the written permission of H&FJ.
+
+	For more information, please visit H&FJ at http://typography.com.
+	2324-65076-20131114
+*/
+
+@font-face{ font-family: "Requiem Text A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AACSCAA0AAAAARKwAAQ ... ); font-weight:400; font-style:normal; } %
+@font-face{ font-family: "Requiem Text B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABVOAAsAAAAAHWQAAQ ... ); font-weight:400; font-style:normal; } %
+
+@font-face{ font-family: "Sentinel SSm A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AACxuAA0AAAAASOgAAQ ... ); font-weight:300; font-style:normal; } *+%
+@font-face{ font-family: "Sentinel SSm B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABXeAAsAAAAAHdgAAQ ... ); font-weight:300; font-style:normal; } *+%
+@font-face{ font-family: "Sentinel SSm A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AAC+uAA0AAAAATtQAAQ ... ); font-weight:300; font-style:italic; } --
+@font-face{ font-family: "Sentinel SSm B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABciAAsAAAAAH2gAAQ ... ); font-weight:300; font-style:italic; } --
+
+@font-face{ font-family: "Whitney SSm A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AADsOAA0AAAAAYZgAAQ ... ); font-weight:500; font-style:normal; } *+%
+@font-face{ font-family: "Whitney SSm B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABWCAAsAAAAAHYwAAQ ... ); font-weight:500; font-style:normal; } *+%
+@font-face{ font-family: "Whitney SSm A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AADxuAA0AAAAAYXwAAQ ... ); font-weight:500; font-style:italic; } *+
+@font-face{ font-family: "Whitney SSm B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABXKAAsAAAAAHfAAAQ ... ); font-weight:500; font-style:italic; } *+
+@font-face{ font-family: "Whitney SSm A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AADvHAA0AAAAAYtwAAQ ... ); font-weight:600; font-style:normal; } *+%
+@font-face{ font-family: "Whitney SSm B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABWfAAsAAAAAHbQAAQ ... ); font-weight:600; font-style:normal; } *+%
+@font-face{ font-family: "Whitney SSm A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AAD0aAA0AAAAAYqgAAQ ... ); font-weight:600; font-style:italic; }
+@font-face{ font-family: "Whitney SSm B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABXuAAsAAAAAHhgAAQ ... ); font-weight:600; font-style:italic; }
+
+@font-face{ font-family: "Whitney SSm SC A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AAA0GAA0AAAAAE3QAAQ ... ); font-weight:500; font-style:normal; } +!!
+@font-face{ font-family: "Whitney SSm SC B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AAAxCAAsAAAAAEnwAAQ ... ); font-weight:500; font-style:normal; } +!!
+
+@font-face{ font-family: "Sentinel A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AADdTAA0AAAAAbbAAAQ ... ); font-weight:500; font-style:normal; } *+%
+@font-face{ font-family: "Sentinel B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABaPAAsAAAAAHogAAQ ... ); font-weight:500; font-style:normal; } *+%
+@font-face{ font-family: "Sentinel A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AADtCAA0AAAAAeKwAAQ ... ); font-weight:500; font-style:italic; }
+@font-face{ font-family: "Sentinel B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AABfCAAsAAAAAIBAAAQ ... ); font-weight:500; font-style:italic; }
+
+@font-face{ font-family: "Whitney SSm Lining Num A"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AAA4WAA0AAAAAFYQAAQ ... ); font-weight:500; font-style:normal; } +
+@font-face{ font-family: "Whitney SSm Lining Num B"; src: url(data:application/x-font-woff;base64,d09GRk9UVE8AAA8KAAsAAAAAFXAAAQ ... ); font-weight:500; font-style:normal; } +
+
+
+* = Listed in network tab for byu.edu
++ = Listed in network tab for style guide (should include sc and lnum)
+% = Listed in network tab for secondary page
+
+!! = No glyphs in preview
+-- = To be removed

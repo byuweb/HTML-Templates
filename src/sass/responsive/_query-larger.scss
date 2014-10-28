@@ -35,3 +35,22 @@
 	}
 
 }
+
+/*** Responsive Modal Markup ***/
+@media (max-width: 767px) {
+
+       .modal {
+           position: fixed;
+           top: 20px;
+           left: 20px;
+           right: 20px;
+           width: auto;
+           margin: 0;
+       }
+       .modal.fade {
+           top: -100px;
+       }
+       .modal.fade.in {
+           top: 20px;
+       }
+}
