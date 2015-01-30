@@ -2,14 +2,16 @@
   "name": "BYU-Templates",
   "version": "2.0.0",
   "devDependencies": {
-    "grunt": "~0.4.0",
+    "grunt": "~0.4.x",
+    "grunt-contrib-sass": "0.4.x",
+    "grunt-contrib-watch": "*",
     "grunt-contrib-jade": "*",
-    "grunt-contrib-sass": "0.4.0",
-    "grunt-contrib-uglify": "*",
-    "grunt-regarde": "*",
-    "grunt-contrib-connect": "*",
-    "grunt-contrib-livereload": "*",
     "grunt-contrib-jshint": "*",
-    "coffee-script": "*"
+    "grunt-contrib-uglify": "*",
+    "grunt-autoprefixer": "0.6.x",
+    "coffee-script": "*",
+    "load-grunt-tasks": "*",
+    "grunt-contrib-connect": "*",
+    "grunt-newer": "*"
   }
 }
