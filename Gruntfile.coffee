@@ -115,6 +115,7 @@ module.exports = (grunt) ->
 			server:
 				options:
 					port: 9001
+					livereload: 9002
 		
 		watch:
 			options:
@@ -142,4 +143,4 @@ module.exports = (grunt) ->
 
 	# Default task(s).
 	grunt.registerTask('compile', ['sass', 'autoprefixer', 'jade', 'jshint', 'uglify'])
-	grunt.registerTask('default', ['compile', 'connect', 'watch'])
+	grunt.registerTask('default', ['connect', 'watch'])
