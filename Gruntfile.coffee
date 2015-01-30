@@ -74,7 +74,6 @@ module.exports = (grunt) ->
 				#debugInfo: true
 				trace: true
 				loadPath: ['src/sass/','src/sass/shared/']
-				sourcemap: true
 			compile:
 				files:[
 					expand: true
@@ -83,15 +82,13 @@ module.exports = (grunt) ->
 					dest: 'css/'
 					ext: '.css'
 				]
-		# autoprefixer:
-		# 	compile:
-		# 		files:[
-		# 			expand: true
-		# 			cwd: 'css/'
-		# 			src: '*.css'
-		# 			dest: 'css/'
-		# 			ext: '.css'
-		# 		]
+
+		autoprefixer:
+			options:
+				map: true
+				browsers: ['last 4 versions', '> 1%']
+			files: 
+				src: 'css/*.css'
 
 		jade:
 			options:
@@ -104,37 +101,45 @@ module.exports = (grunt) ->
 					dest: ''
 					ext: '.html'
 				]
+
+		newer:
+			options:
+				override: (detail, include) ->
+					if detail.task is 'sass' or detail.task is 'jade'
+						include true
+						# checkForModifiedImports grunt, detail.path, detail.time, include
+					else
+						include false
+
 		connect:
-			livereload:
+			server:
 				options:
-					hostname: '0.0.0.0'
 					port: 9001
-					middleware: (connect, options) ->
-						return [lrSnippet, folderMount(connect, '.')]
-		regarde:
-			uglify:
-				files: ['src/js/**/*.js']
-				tasks: ['jshint', 'uglify', 'livereload']
+		
+		watch:
+			options:
+				spawn: false
 			sass:
 				files: ['src/sass/**/*.sass', 'src/sass/**/*.scss']
-				tasks: ['sass', 'livereload']
+				tasks: ['newer:sass']
+			css:
+				options:
+					livereload: true
+				files: ['css/**/*']
+				tasks: ['newer:autoprefixer']
 			jade:
 				files: ['src/jade/**/*.jade']
-				tasks: ['jade', 'livereload']
-			image:
-				files: ['img/*']
-				tasks: ['livereload']
+				tasks: ['newer:jade']
+			js:
+				files: ['src/js/script.js', 'src/js/touch.js']
+				tasks: ['newer:jshint', 'newer:uglify']
+			livereload:
+				files: ['img/*', '*.html', 'js/*.min.js']
+				options:
+					livereload: true
 
-	# grunt.loadNpmTasks('grunt-contrib-coffee')
-	grunt.loadNpmTasks('grunt-contrib-uglify')
-	grunt.loadNpmTasks('grunt-contrib-sass')
-	#grunt.loadNpmTasks('grunt-autoprefixer')
-	grunt.loadNpmTasks('grunt-contrib-jade')
-	grunt.loadNpmTasks('grunt-regarde')
-	grunt.loadNpmTasks('grunt-contrib-connect')
-	grunt.loadNpmTasks('grunt-contrib-livereload')
-	grunt.loadNpmTasks('grunt-contrib-jshint');
+	require('load-grunt-tasks')(grunt);
 
 	# Default task(s).
-	grunt.registerTask('compile', ['sass', 'jade', 'jshint', 'uglify'])
-	grunt.registerTask('default', ['compile', 'livereload-start', 'connect', 'regarde'])
+	grunt.registerTask('compile', ['sass', 'autoprefixer', 'jade', 'jshint', 'uglify'])
+	grunt.registerTask('default', ['compile', 'connect', 'watch'])

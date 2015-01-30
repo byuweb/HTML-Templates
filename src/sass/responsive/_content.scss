@@ -64,8 +64,8 @@
 }
 
 @media 
-(min-width : $larger-width),
-(-webkit-min-device-pixel-ratio: 2), 
+(min-width : $larger-width) and
+(-webkit-min-device-pixel-ratio: 2) and
 (min-resolution: 192dpi) { 
     /* Retina-specific stuff here */
     background-image: url("../img/background-patterns/" + $body-bg + "@2x.png");
